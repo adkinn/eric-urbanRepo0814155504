@@ -1,0 +1,1 @@
+The name of a state if the user's geographical intent can be determined. The state is set if the user's intent is a state or sub geography of the state, and not necessarily if they are physically located in the state.
