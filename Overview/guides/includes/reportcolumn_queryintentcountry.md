@@ -1,0 +1,1 @@
+The name of a country if the user's geographical intent can be determined. The country is set if the user's intent is a country or sub geography of the country, and not necessarily if they are physically located in the country.

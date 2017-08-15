@@ -1,0 +1,1 @@
+The name of a city if the user's geographical intent can be determined. The city is set if the user's intent is a city, and not necessarily if they are physically located in the city. For example, the user's search query was rental cars in Portland.
