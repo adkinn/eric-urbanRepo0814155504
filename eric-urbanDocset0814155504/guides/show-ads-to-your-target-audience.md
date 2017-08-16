@@ -15,7 +15,7 @@ manager: "ehansen"
 # Show Ads to Your Target Audience
 Getting your ad in front of the right people; that's what targeting is all about. With targeting, [!INCLUDE[brand](../guides/includes/brand.md)] can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
-Targets are stored in a library that can be accessed by any campaign or ad group across all accounts within a customer. You may associate the target with one or more ad groups or campaigns. An ad group or campaign can be associated with only one target. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-and-limits.md).
+Targets are stored in a library that can be accessed by any campaign or ad group across all accounts within a customer. You may associate the target with one or more ad groups or campaigns. An ad group or campaign can be associated with only one target. For more information, see [Entity Hierarchy and Limits](../Topic/Entity%20Hierarchy%20and%20Limits.md).
 
 You should specify your minimum target requirements at the campaign level and then use ad group targeting to narrow or refine your targeting requirements.
 
@@ -39,7 +39,7 @@ For details about managing your targets, see the following sections.
 
 -   [Bid Adjustments](#bidadjust)
 
-For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../guides/targets-in-csharp.md) | [Java](../guides/targets-in-java.md) | [PHP](../guides/targets-in-php.md) | [Python](../guides/targets-in-python.md).
+For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../Topic/Targets%20in%20C%23.md) | [Java](../Topic/Targets%20in%20Java.md) | [PHP](../Topic/Targets%20in%20PHP.md) | [Python](../Topic/Targets%20in%20Python.md).
 
 ## <a name="targettypes"></a>Target Types
 The sub targets in the following sections are available within the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object.
@@ -100,7 +100,7 @@ Use the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a5
 
 -   [StateTargetBid](http://msdn.microsoft.com/library/63b931d3-d22f-4e99-82cb-d3e30b8081b1)
 
-For information on location codes to use for each target bid value, see [Geographical Location Codes](../guides/geographical-location-codes.md).
+For information on location codes to use for each target bid value, see [Geographical Location Codes](../Topic/Geographical%20Location%20Codes.md).
 
 #### Location Intent Options
 Set `IntentOption` to `PeopleInOrSearchingForOrViewingPages` if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) includes London and `IntentOption` is `PeopleInOrSearchingForOrViewingPages`, then someone physically located in Florida searching for London hotels will see the ad.
@@ -160,7 +160,7 @@ To create a target that you can associate with an ad group or campaign, complete
 1.  Create an instance of the object that represents the desired target and assign it to the appropriate element of the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object. For example to target users in a specific country, create an instance of the [CountryTarget](http://msdn.microsoft.com/library/3615a843-e24c-4c54-bf7c-7022dc1c6c1b) object within the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) and assign it to the target's `Location` element. Specify the target country and bid adjustment percentage by creating an instance of the [CountryTargetBid](http://msdn.microsoft.com/library/a66ee965-4501-4b1b-980f-47433a9dd3c6) object, and then assign it to the `Bids` element of the `CountryTarget`.
 
     > [!NOTE]
-    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../guides/geographical-location-codes.md).
+    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../Topic/Geographical%20Location%20Codes.md).
 
 2.  To add the `Target` object to your target library, call the [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) operation. Save or keep track of the target identifier that [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) returns.
 
@@ -256,5 +256,5 @@ If you had set `TargetAllDays=true` and `TargetAllHours=true` in version 9, then
 
 ## See Also
 [Campaign Management Service Reference](http://msdn.microsoft.com/library/5f50ed8a-6bca-4d30-8340-7290bc074f0e)
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

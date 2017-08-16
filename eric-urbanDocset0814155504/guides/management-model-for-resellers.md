@@ -16,7 +16,7 @@ manager: "ehansen"
 The reseller role is offered to a limited set of partners that offer search-marketing tools and services to a large number of advertisers. The reseller role allows partners to programmatically create new customer accounts. The reseller is billed by invoice for all advertising costs incurred by their customers. The advertiser does not sign up for [!INCLUDE[brand](../guides/includes/brand.md)] credentials, and may pay a fee to the reseller. The following sections describe the entity model and credentials for resellers.
 
 ## Reseller Entity Model
-As described in [Entity Hierarchy and Limits](../guides/entity-hierarchy-and-limits.md) all advertising activity is organized by customer, which can have one or more accounts. Two or more customer entities play a role in the reseller model. The reseller customer is required, and then the reseller's aggregator user may programmatically create one or more managed customers with the [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx) service operation. The aggregator user role is required for [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx), and is provided solely to resellers.
+As described in [Entity Hierarchy and Limits](../Topic/Entity%20Hierarchy%20and%20Limits.md) all advertising activity is organized by customer, which can have one or more accounts. Two or more customer entities play a role in the reseller model. The reseller customer is required, and then the reseller's aggregator user may programmatically create one or more managed customers with the [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx) service operation. The aggregator user role is required for [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx), and is provided solely to resellers.
 
 Upon initial provisioning the reseller customer does not have any accounts to manage. There is an empty customer shell and an Aggregator user. Every time [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx) is called, the following entities are created outside of the reseller customer.
 -   A managed customer is created  
@@ -42,12 +42,12 @@ The following are the header elements and the corresponding identifiers that a r
 |DeveloperToken|The reseller’s token.<br /><br />**Note:** A single-user (SU) developer token is sufficient to authenticate with the corresponding user. For more information on token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer e.g. child customer created via [SignupCustomer](https://msdn.microsoft.com/library/dn451287.aspx), you should use that customer ID instead of your own customer ID. |
 |CustomerAccountId|A managed customer's account ID.|
-For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md).
+For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md).
 
 ## <a name="reseller_signup"></a>How to Get Reseller API Credentials
 To request reseller API credentials, please contact your designated account management team for details about getting the API Reseller role. If you are not currently a reseller but would like to become one, see [Become a Microsoft Advertising Authorized Reseller](http://go.microsoft.com/fwlink/?LinkId=269633).
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  
-[Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
 

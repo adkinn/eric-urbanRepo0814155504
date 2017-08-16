@@ -28,7 +28,7 @@ The technical guides below describe core advertising scenarios using [!INCLUDE[b
 |[Reports](../guides/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
 
 ## See Also
-[Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md)  
-[Bing Ads API Overview](../guides/bing-ads-api-overview.md)  
-[Bing Ads API Reference](../guides/bing-ads-api-reference.md)  
+[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
+[Bing Ads API Overview](../Topic/Bing%20Ads%20API%20Overview.md)  
+[Bing Ads API Reference](../Topic/Bing%20Ads%20API%20Reference.md)  
 

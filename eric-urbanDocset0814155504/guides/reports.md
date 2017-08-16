@@ -1,7 +1,7 @@
 ---
 title: "Reports"
 ms.custom: na
-ms.date: "08/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -184,5 +184,5 @@ Each report request includes the *ReturnOnlyCompleteData* element that you can s
 [Report Attributes and Performance Statistics](../guides/report-attributes-and-performance-statistics.md)  
 [Report Types](../guides/report-types.md)  
 [Request and Download a Report](../guides/request-and-download-a-report.md)  
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
 

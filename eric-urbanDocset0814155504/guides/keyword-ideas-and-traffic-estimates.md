@@ -59,4 +59,4 @@ The result is a [KeywordEstimate](https://msdn.microsoft.com/library/bing-ads-ad
 
 ## See Also
 [Ad Insight Service Reference](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx)  
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  

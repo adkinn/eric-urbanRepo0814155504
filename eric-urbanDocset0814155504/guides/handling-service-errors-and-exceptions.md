@@ -38,7 +38,7 @@ When an operation fails, it can return one of the following faults. To determine
 
 All fault objects are derived from the *ApplicationFault* object. The *ApplicationFault* object defines the *TrackingId* element, which uniquely identifies the log entry that contains the details of the API call.
 
-The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../guides/bing-ads-api-error-codes.md).
+The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../Topic/Bing%20Ads%20API%20Error%20Codes.md).
 
 Available fault and data objects vary per service. The following table describes the fault model and links to error data objects for each service.
 
@@ -105,7 +105,7 @@ You can follow these steps to capture the SOAP envelopes from a Java application
 #### Spring Framework and Apache CXF Options
 You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application in Eclipse.
 
-1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](../guides/getting-started-using-java-with-bing-ads-services.md). 
+1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md). 
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
@@ -209,6 +209,6 @@ You should not call the *Close* method in the finally block to release the servi
 For the same reason, the use of the **using** statement is not recommended. For more information, see [Avoiding Problems with the Using Statement](http://go.microsoft.com/fwlink/?LinkID=219970).
 
 ## See Also
-[Bing Ads API Error Codes](../guides/bing-ads-api-error-codes.md)  
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)  
+[Bing Ads API Error Codes](../Topic/Bing%20Ads%20API%20Error%20Codes.md)  
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
 

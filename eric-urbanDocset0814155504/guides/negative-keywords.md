@@ -25,9 +25,9 @@ You can [assign negative keywords](#assignednegativekeywords) to an individual c
 
 ![negative_keywords_structured](../guides/media/negative_keywords_structured.png "negative_keywords_structured")
 
-For negative keyword limits per entity, please see [Negative Keywords](../guides/entity-hierarchy-and-limits.md#negativekeywords).
+For negative keyword limits per entity, please see [Negative Keywords](../Topic/Entity%20Hierarchy%20and%20Limits.md#negativekeywords).
 
-For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [C&#35;](../guides/negative-keywords-in-csharp.md) | [Java](../guides/negative-keywords-in-java.md) | [PHP](../guides/negative-keywords-in-php.md) | [Python](../guides/negative-keywords-in-python.md).
+For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [C&#35;](../Topic/Negative%20Keywords%20in%20C%23.md) | [Java](../Topic/Negative%20Keywords%20in%20Java.md) | [PHP](../Topic/Negative%20Keywords%20in%20PHP.md) | [Python](../Topic/Negative%20Keywords%20in%20Python.md).
 
 ## <a name="assignednegativekeywords"></a>Assigned Negative Keywords
 You may choose to assign a set of negative keywords to an individual campaign or ad group. An assigned set of negative keywords cannot be shared with other campaigns or ad groups. You can manage an assigned set of negative keywords with the [AddNegativeKeywordsToEntities](https://msdn.microsoft.com/en-us/library/dn743724.aspx), [DeleteNegativeKeywordsFromEntities](https://msdn.microsoft.com/en-us/library/dn743725.aspx), and [GetNegativeKeywordsByEntityIds](https://msdn.microsoft.com/en-us/library/dn743730.aspx) operations.
@@ -52,5 +52,5 @@ To associate a negative keyword list with a campaign, specify an array of [Share
 The reporting service provides a negative-keyword conflict report that lists the negative keywords that you also specify as keywords. Specifying a negative keyword that is also a keyword negates the keyword. For more information, see the [NegativeKeywordConflictReportRequest](https://msdn.microsoft.com/en-us/library/hh560534.aspx) request.
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

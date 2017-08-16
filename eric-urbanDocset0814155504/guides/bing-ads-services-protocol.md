@@ -16,7 +16,7 @@ manager: "ehansen"
 You can write your [!INCLUDE[brand](../guides/includes/brand.md)] application in any language that supports web services. A web services description language (WSDL) document is defined for each web service. The WSDL defines the operations that a web service offers and the format of the request and response messages that the client sends to and receives from the operations. The request and response messages define the names and types of the data that the client exchanges with the operation. For more information about WSDLs, see the [W3C WSDL specification](http://go.microsoft.com/fwlink/?LinkID=103361&clcid=0x409).
 
 ## SOAP for Bing Ads API
-[!INCLUDE[brand](../guides/includes/brand.md)] services support Simple Object Access Protocol (SOAP). Some languages, such as C# and Java, provide tools that generate proxy classes from the WSDL. If your language of choice does not provide a tool to generate proxy classes, you will need to generate your own proxy classes or SOAP envelopes. To generate the proxy classes, you need the web address of the WSDL document of the service that you want to use. The [!INCLUDE[brand](../guides/includes/brand.md)] sandbox and production environments each have a unique address. The addresses also include the version number of the WSDL that is specific to a major [!INCLUDE[brand](../guides/includes/brand.md)] API release. For production and sandbox service WSDLs of the latest [!INCLUDE[brand](../guides/includes/brand.md)] API version, see [Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md).
+[!INCLUDE[brand](../guides/includes/brand.md)] services support Simple Object Access Protocol (SOAP). Some languages, such as C# and Java, provide tools that generate proxy classes from the WSDL. If your language of choice does not provide a tool to generate proxy classes, you will need to generate your own proxy classes or SOAP envelopes. To generate the proxy classes, you need the web address of the WSDL document of the service that you want to use. The [!INCLUDE[brand](../guides/includes/brand.md)] sandbox and production environments each have a unique address. The addresses also include the version number of the WSDL that is specific to a major [!INCLUDE[brand](../guides/includes/brand.md)] API release. For production and sandbox service WSDLs of the latest [!INCLUDE[brand](../guides/includes/brand.md)] API version, see [Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md).
 
 ## <a name="element_order"></a>SOAP XML Element Order
 When you create a SOAP request message, the order of the elements within the SOAP body is critical. The elements must be in the same order as defined in the web services description language (WSDL). If the required elements are out of order, the call will fail. If the optional elements are out of order, the call may fail or the elements will be ignored. The WSDL syntax, which shows the correct order of the elements, is included with each request message, response message, and data object documented in the reference content. In addition, each request and response message shows an example SOAP envelope.
@@ -83,9 +83,9 @@ Should you hit the service call limit, you will see the following error:
 
 If you observe this error, you can resubmit your request after waiting up to 15 minutes.
 
-Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows.
+Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](Sandbox.md) the limit is 20K rows.
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)  
-[Bing Ads API Overview](../guides/bing-ads-api-overview.md)  
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Bing Ads API Overview](../Topic/Bing%20Ads%20API%20Overview.md)  
 

@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Customer Accounts
-Whether you are managing your own [!INCLUDE[brand](../guides/includes/brand.md)] account as a direct advertiser, building commercial tools, or managing campaigns on behalf of other customers, we will introduce opportunities and quickly get you oriented. Manage customer, account, and user entities programmatically with the Customer Management service. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-and-limits.md).
+Whether you are managing your own [!INCLUDE[brand](../guides/includes/brand.md)] account as a direct advertiser, building commercial tools, or managing campaigns on behalf of other customers, we will introduce opportunities and quickly get you oriented. Manage customer, account, and user entities programmatically with the Customer Management service. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../Topic/Entity%20Hierarchy%20and%20Limits.md).
 
 -   [Account Management Models](#accountmodels)  
 -   [Account Permissions and the Developer Token](#accountpermissions)  
@@ -41,7 +41,7 @@ There are two types of [!INCLUDE[brand](../guides/includes/brand.md)] developer 
 
 -   Multi-user token can authenticate with any valid user credentials, and permits API access to the accounts available to each respective user based on their managed access rights. For example if you are developing an application that will be used by multiple Bing Ads users, then you will likely want to request a multi-user account instead of getting a single-user token for each user.
 
-You can request the token type when requesting API access, or upgrade at a later date through the [Bing Ads Developer Portal](https://developers.bingads.microsoft.com/Account). For information on requesting a developer token, see [Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md).
+You can request the token type when requesting API access, or upgrade at a later date through the [Bing Ads Developer Portal](https://developers.bingads.microsoft.com/Account). For information on requesting a developer token, see [Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md).
 
 ## <a name="userroles"></a>User Roles and Available Service Operations
 The user role granted by a customer’s super admin or the [!INCLUDE[brand](../guides/includes/brand.md)] system administrator determines service availability. For example a user with the advertiser campaign manager role may add and update campaigns, but may not create or update users. Unless otherwise noted in the reference content per service operation, the following table describes the service restrictions per user role.
@@ -91,7 +91,7 @@ Resellers can create an account for a managed customer by calling the [SignupCus
 ### Getting Accounts
 To get a list of the accounts that you own or manage, call the [GetAccountsInfo](https://msdn.microsoft.com/library/dn451289.aspx) operation. The operation returns an array of objects that contain the name, identifier, and status of each account. To get the details of each account in the list, such as the account’s financial status, pass the account identifier to the [GetAccount](https://msdn.microsoft.com/library/dn451273.aspx) operation. You can also search for accounts that match a specified filter criteria using the [SearchAccounts](https://msdn.microsoft.com/library/dn743757.aspx) operation.
 
-For code examples that show how to search for accounts that can be managed by the current authenticated user, see [C&#35;](../guides/search-accounts-by-user-in-csharp.md) | [Java](../guides/search-accounts-by-user-in-java.md) | [PHP](../guides/search-accounts-by-user-in-php.md) | [Python](../guides/search-accounts-by-user-in-python.md).
+For code examples that show how to search for accounts that can be managed by the current authenticated user, see [C&#35;](../Topic/Search%20Accounts%20by%20User%20in%20C%23.md) | [Java](../Topic/Search%20Accounts%20by%20User%20in%20Java.md) | [PHP](../Topic/Search%20Accounts%20by%20User%20in%20PHP.md) | [Python](../Topic/Search%20Accounts%20by%20User%20in%20Python.md).
 
 ### Updating Accounts
 Only a super admin or aggregator user can update accounts. Because the update operation requires the time stamp of the previous write operation that was performed against the account, you must first call the [GetAccount](https://msdn.microsoft.com/library/dn451273.aspx) operation. The [GetAccount](https://msdn.microsoft.com/library/dn451273.aspx) operation returns the account’s data, which includes the time stamp.
@@ -144,5 +144,5 @@ You cannot delete a user who is specified as the primary user of one or more acc
 
 ## See Also
 [Customer Management service Reference](http://msdn.microsoft.com/library/96bc289f-8575-4225-be0d-a9949b78e089)
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

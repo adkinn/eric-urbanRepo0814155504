@@ -18,7 +18,7 @@ Ad extensions are additional pieces of information about your business, like a p
 > [!TIP]
 > Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the changes of additional space being allocated and increasing clicks for your ad.
 
-Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more details on associating ad extensions, see [Managing Ad Extensions with the Bulk Service](#bulkservice) and [Managing Ad Extensions with the Campaign Management Service](#campaignservice) in the sections below. For ad extension association limits per entity, please see [Entity Limits for Ad Extensions](../guides/entity-hierarchy-and-limits.md#adextensions).
+Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more details on associating ad extensions, see [Managing Ad Extensions with the Bulk Service](#bulkservice) and [Managing Ad Extensions with the Campaign Management Service](#campaignservice) in the sections below. For ad extension association limits per entity, please see [Entity Limits for Ad Extensions](Entity%20Hierarchy%20and%20Limits.md#adextensions).
 
 > [!NOTE]
 > Call ad extensions can only be associated at the campaign level. 
@@ -158,12 +158,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
 -   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../guides/bulk-ad-extensions-in-csharp.md)| [Java](../guides/bulk-ad-extensions-in-java.md) | [Python](../guides/bulk-ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](Bulk%20Ad%20Extensions%20in%20C%23.md)| [Java](Bulk%20Ad%20Extensions%20in%20Java.md) | [Python](Bulk%20Ad%20Extensions%20in%20Python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../guides/ad-extensions-in-csharp.md) | [Java](../guides/ad-extensions-in-java.md) | [PHP](../guides/ad-extensions-in-php.md) | [Python](../guides/ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](Ad%20Extensions%20in%20C%23.md) | [Java](Ad%20Extensions%20in%20Java.md) | [PHP](Ad%20Extensions%20in%20PHP.md) | [Python](Ad%20Extensions%20in%20Python.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
@@ -216,5 +216,5 @@ You can use the following reports to get statistics about the effectiveness of t
 For more information about reporting, see [Reports](../guides/reports.md) and [Request and Download a Report](../guides/request-and-download-a-report.md).
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

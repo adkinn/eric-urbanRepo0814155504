@@ -62,7 +62,7 @@ If the unlink process fails, possibly due to a billing transition error, the cli
 
 *Figure: Unlink Status Flow*
 
-For code examples that show how to add and update a client link invitation, see [ C&#35;](../guides/link-to-client-accounts-in-csharp.md) | [Java](../guides/link-to-client-accounts-in-java.md) | [PHP](../guides/link-to-client-accounts-in-php.md) | [Python](../guides/link-to-client-accounts-in-python.md).
+For code examples that show how to add and update a client link invitation, see [ C&#35;](../Topic/Link%20to%20Client%20Accounts%20in%20C%23.md) | [Java](../Topic/Link%20to%20Client%20Accounts%20in%20Java.md) | [PHP](../Topic/Link%20to%20Client%20Accounts%20in%20PHP.md) | [Python](../Topic/Link%20to%20Client%20Accounts%20in%20Python.md).
 
 ## Credentials and Account Access
 The following are the header elements and the corresponding identifiers that an agency would use.
@@ -78,9 +78,9 @@ The following are the header elements and the corresponding identifiers that an 
 |DeveloperToken|The agency’s token.<br /><br />**Note:** It is recommended for an agency to use the multi-user developer token to authenticate with any agency user. An agency needs only one such token. It is not necessary to request a single-user token for each user. For more information about token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID. |
 |CustomerAccountId|A managed customer's account ID.|
-For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md).
+For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md).
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  
-[Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
 

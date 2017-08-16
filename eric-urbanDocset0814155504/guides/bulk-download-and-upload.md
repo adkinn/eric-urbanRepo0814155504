@@ -18,9 +18,9 @@ With the [bulk service](https://msdn.microsoft.com/library/bing-ads-bulk-service
 > [!IMPORTANT]
     > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/bing-ads-client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids.aspx) and [GetBulkDownloadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkdownloadstatus.aspx) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [C#](../guides/getting-started-using-csharp-with-bing-ads-services.md#bulkservicemanager) | [Java](../guides/getting-started-using-java-with-bing-ads-services.md#bulkservicemanager) | [Python](../guides/getting-started-using-python-with-bing-ads-services.md#bulkservicemanager).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids.aspx) and [GetBulkDownloadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkdownloadstatus.aspx) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [C#](Getting%20Started%20Using%20C%23%20with%20Bing%20Ads%20Services.md#bulkservicemanager) | [Java](Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md#bulkservicemanager) | [Python](Getting%20Started%20Using%20Python%20with%20Bing%20Ads%20Services.md#bulkservicemanager).
 
-For a code example that shows how to download and upload campaigns using the Bulk service with the workflow described below, see [Download and Upload Campaigns in PHP](../guides/download-and-upload-campaigns-in-php.md).
+For a code example that shows how to download and upload campaigns using the Bulk service with the workflow described below, see [Download and Upload Campaigns in PHP](../Topic/Download%20and%20Upload%20Campaigns%20in%20PHP.md).
 
 ## <a name="bulkdownload"></a>Bulk Download
 To download an account’s campaign data, call the [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids.aspx) operation. To download the data of specific campaigns, call the [DownloadCampaignsByCampaignIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbycampaignids.aspx) operation.
@@ -74,7 +74,7 @@ You may request all of the campaign’s data or only the data that has changed s
 You can submit your bulk upload file with HTTP POST to a Url provided by the bulk service.
 
 > [!NOTE]
-> The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows.
+> The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](../Topic/Sandbox.md) the limit is 20K rows.
 
 For information about the schema you should use for the upload file, see [Bulk File Schema](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx).
 
@@ -90,7 +90,7 @@ The following is an overview of the request settings and upload workflow.
 3.  Use the *UploadUrl* returned with the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx) response to submit your bulk upload file with HTTP POST. The content type must be *multipart/form-data*. UTF-8 files must include the byte order mark (BOM). The ZIP-compressed upload should contain one file formatted as either **Csv** or **Tsv**. The ZIP file must be properly structured, including an end of central directory record.
 
     > [!NOTE]
-    > The HTTP standard Authorization header is not used. To authenticate you must add and set the [!INCLUDE[brand](../guides/includes/brand.md)] custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](../guides/authentication-with-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](../guides/getting-started-with-the-bing-ads-api.md#where_to_use).
+    > The HTTP standard Authorization header is not used. To authenticate you must add and set the [!INCLUDE[brand](../guides/includes/brand.md)] custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](../guides/authentication-with-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md#where_to_use).
     >
     > You must use the same user credentials throughout the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx), HTTP POST, and [GetBulkUploadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadstatus.aspx) workflow.  
 
@@ -105,7 +105,7 @@ The following is an overview of the request settings and upload workflow.
     Content-Type: multipart/form-data;
     ```
 
-4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](../guides/bing-ads-operation-error-codes.md) for example, in the range of 3220 - 3227. 
+4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](Bing%20Ads%20Operation%20Error%20Codes.md) for example, in the range of 3220 - 3227. 
 
     Here is an example error response message that the URL had already been used to upload a bulk file.
     ```
@@ -150,5 +150,5 @@ Please consider these tips to maximize Bulk upload performance.
 
 ## See Also
 [Bulk Service Reference](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx)  
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

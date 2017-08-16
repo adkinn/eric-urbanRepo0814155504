@@ -97,5 +97,5 @@ For more information about reporting, see [Reports](../guides/reports.md) and [R
 You can also get performance data for Native ads using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). You can get performance data for Native ads when downloading the [Campaign](https://msdn.microsoft.com/library/dn764752.aspx), [Ad Group](https://msdn.microsoft.com/library/dn764731.aspx), and [Keyword](https://msdn.microsoft.com/library/dn764751.aspx) records.
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
 

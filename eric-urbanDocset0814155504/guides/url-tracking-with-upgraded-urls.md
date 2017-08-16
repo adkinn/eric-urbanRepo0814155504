@@ -21,7 +21,7 @@ If you have set up [tracking in Bing Ads](https://help.bingads.microsoft.com/#ap
 > If you are currently using Destination URLs, you must eventually replace them with Final URLs. This will be required no earlier than calendar year 2017.  
 
 By separating the tracking template details from the final URLs you can take advantage of the following benefits:
--   You can define tracking templates for one or more account, campaign, ad group, keyword, ad, or Sitelink Extension. If you use a common tracking template for all ads in your campaign for example, you can update it once at the campaign level instead of making changes to all of your ads. Tracking templates and custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-and-limits.md).  
+-   You can define tracking templates for one or more account, campaign, ad group, keyword, ad, or Sitelink Extension. If you use a common tracking template for all ads in your campaign for example, you can update it once at the campaign level instead of making changes to all of your ads. Tracking templates and custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../Topic/Entity%20Hierarchy%20and%20Limits.md).  
 -   When you update your tracking template information, the URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. Editorial review is only required when you change your actual ads, keywords or extensions.  
 -   Doing so helps [!INCLUDE[brand](../guides/includes/brand.md)] understand what information is URL versus tracking template information, and reduces crawling on your website.  
 
@@ -130,5 +130,5 @@ The *FinalURL* and *FinalMobileURL* columns for upgraded URLs are available in t
 
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

@@ -36,9 +36,9 @@ The following are the header elements and the corresponding identifiers that a t
 |DeveloperToken|The tool provider’s token.<br /><br />**Note:** A tool provider should use the multi-user developer token to authenticate with users of their application. A tool provider needs only one such token. You should not ask clients to provide their own single-user token. For more information about token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.<br /><br />**Note:** The customer ID may vary for each user of a given tool.|
 |CustomerAccountId|A customer's account ID.|
-For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md).
+For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md).
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  
-[Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
 

@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Campaigns
-The [!INCLUDE[brand](../guides/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-and-limits.md).
+The [!INCLUDE[brand](../guides/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../Topic/Entity%20Hierarchy%20and%20Limits.md).
 
 |Topic|Description|
 |---------|---------------|
@@ -28,5 +28,5 @@ The [!INCLUDE[brand](../guides/includes/brand.md)] API provides access to all of
 |[URL Tracking with Upgraded URLs](../guides/url-tracking-with-upgraded-urls.md)|URL tracking allows you to find out how people got to your website by adding tracking parameters in Bing Ads and then using a third-party tracking tool or service to analyze the data. When an ad is served, the tracking parameters are dynamically appended to your landing page URL. This landing page URL is recorded on your web server and then a third-party tracking tool, like Adobe or Google Analytics, can interpret the data.<br/><br/>If you have set up tracking in Bing Ads by adding URL parameters to your destination URLs, you will be interested in Upgraded URLs. Upgraded URLs separate the landing page URL from the tracking or URL parameters so if you want to edit your URL parameters, your ad doesn't have to go through another editorial review. It also allows you to define a separate mobile landing page URL if you have a website that is optimized for smaller devices.|
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
 

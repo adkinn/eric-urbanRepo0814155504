@@ -50,7 +50,7 @@ These are the [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] entities th
 -   [Ad Group Product Partition](https://msdn.microsoft.com/library/cc540184.aspx)
 -   [Product Ad](https://msdn.microsoft.com/library/dn764755.aspx)
 
-For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaigns using the Bulk service, see [C&#35;](../guides/bulk-shopping-campaigns-in-csharp.md) | [Java](../guides/bulk-shopping-campaigns-in-java.md) | [Python](../guides/bulk-shopping-campaigns-in-python.md).
+For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaigns using the Bulk service, see [C&#35;](../Topic/Bulk%20Shopping%20Campaigns%20in%20C%23.md) | [Java](../Topic/Bulk%20Shopping%20Campaigns%20in%20Java.md) | [Python](../Topic/Bulk%20Shopping%20Campaigns%20in%20Python.md).
 
 To create a [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaign, follow these steps.
 
@@ -133,7 +133,7 @@ These are the [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] entities th
 |[ProductAd](https://msdn.microsoft.com/library/jj738612.aspx)|[AddAds](https://msdn.microsoft.com/library/dn277506.aspx)<br /><br />[GetAdsByAdGroupId](https://msdn.microsoft.com/library/dn277534.aspx)<br /><br />[DeleteAds](https://msdn.microsoft.com/library/dn236310.aspx)<br /><br />[GetAdsByEditorialStatus](https://msdn.microsoft.com/library/dn277538.aspx)<br /><br />[GetAdsByIds](https://msdn.microsoft.com/library/dn236296.aspx)<br /><br />[UpdateAds](https://msdn.microsoft.com/library/dn277531.aspx)|
 |[BiddableAdGroupCriterion](https://msdn.microsoft.com/library/jj689538.aspx)<br /><br />**Note:** Currently the only supported [BiddableAdGroupCriterion](https://msdn.microsoft.com/library/jj689538.aspx) is used for a [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaign [ProductPartition](https://msdn.microsoft.com/library/dn913123.aspx). You cannot update or delete a product partition, so [ApplyProductPartitionActions](https://msdn.microsoft.com/library/dn913134.aspx) is used for all write operations. [AddAdGroupCriterions](https://msdn.microsoft.com/library/dn277499.aspx), [DeleteAdGroupCriterions](https://msdn.microsoft.com/library/dn236302.aspx), and [UpdateAdGroupCriterions](https://msdn.microsoft.com/library/dn277527.aspx) operations are not supported for managing [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaigns.|[ApplyProductPartitionActions](https://msdn.microsoft.com/library/dn913134.aspx)<br /><br />[GetAdGroupCriterionsByIds](https://msdn.microsoft.com/library/dn277520.aspx)
 
-For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaigns using the Campaign Management service, see [C&#35;](../guides/shopping-campaigns-in-csharp.md) | [Java](../guides/shopping-campaigns-in-java.md) | [PHP](../guides/shopping-campaigns-in-php.md) | [Python](../guides/shopping-campaigns-in-python.md).
+For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaigns using the Campaign Management service, see [C&#35;](../Topic/Shopping%20Campaigns%20in%20C%23.md) | [Java](../Topic/Shopping%20Campaigns%20in%20Java.md) | [PHP](../Topic/Shopping%20Campaigns%20in%20PHP.md) | [Python](../Topic/Shopping%20Campaigns%20in%20Python.md).
 
 To create a [!INCLUDE[brand_bsc](../guides/includes/brand_bsc.md)] campaign, follow these steps.
 

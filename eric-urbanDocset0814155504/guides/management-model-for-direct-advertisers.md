@@ -36,9 +36,9 @@ The following are the header elements and the corresponding identifiers that a d
 |DeveloperToken|The direct advertiser’s token.<br /><br />**Note:** A single-user (SU) developer token is sufficient to authenticate with the corresponding user. For more information on token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The direct advertiser’s customer ID.|
 |CustomerAccountId|A direct advertiser’s account ID.|
-For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md).
+For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md).
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  
-[Getting Started With the Bing Ads API](../guides/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
 
