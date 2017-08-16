@@ -353,7 +353,7 @@ Each location criterion defines a location code for the accompanying criterion b
 The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000.  
 
 > [!NOTE]
-> Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../docset-overview/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads. To exclude a location, see [Negative Location Criterion](#negativelocationcriterion).
+> Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../api-reference/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads. To exclude a location, see [Negative Location Criterion](#negativelocationcriterion).
 
 ### <a name="locationintentcriterion"></a>Location Intent Criterion
 Set the location intent criterion to *PeopleInOrSearchingForOrViewingPages* if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [Location Criterion](#locationcriterion) includes London and the location intent criterion is *PeopleInOrSearchingForOrViewingPages*, then someone physically located in Florida searching for London hotels will see the ad.
@@ -369,7 +369,7 @@ The maximum number of location intent criterions that you can specify per campai
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
 
 ### <a name="negativelocationcriterion"></a>Negative Location Criterion
-Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../docset-overview/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads.
+Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../api-reference/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads.
 
 Each negative location criterion defines a location code where you do not want your ads to show. If you are using the Campaign Management service, add the *LocationCriterion* to either the *NegativeCampaignCriterion* or *NegativeAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Negative Location Criterion](Campaign%20Negative%20Location%20Criterion.md) or [Ad Group Negative Location Criterion](Ad%20Group%20Negative%20Location%20Criterion.md) records. 
 

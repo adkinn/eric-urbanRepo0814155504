@@ -189,12 +189,12 @@ For information about the changes to the Bing Ads services included in this rele
 -   [Dynamic Search Ads Reports](#reporting_v11_dsa_may2017)  
 
 ### <a name="v11_ga_may2017"></a>Bing Ads API Version 11 General Availability
-Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../docset-overview/version-11-api-reference.md).
+Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../api-reference/version-11-api-reference.md).
 
-[!INCLUDE[v10_sunset](../docset-overview/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../api-reference/includes/v10_sunset.md)]
 
 ### <a name="sdk_may2017"></a>Bing Ads PHP Software Development Kit (SDK)
-The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](../docset-overview/bing-ads-web-service-addresses.md). This release enables you to [upgrade](../docset-overview/migrating-to-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
+The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](../api-reference/bing-ads-web-service-addresses.md). This release enables you to [upgrade](../docset-overview/migrating-to-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
 
 Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will be added to the .NET, Java, and Python SDKs in a future release.
 
@@ -216,7 +216,7 @@ For information about the changes to the Bing Ads services included in this rele
 -   [Bing Shopping Product Search Query Performance Report](#productsearchqueryperformancereport_april2017)  
 
 ### <a name="v11_preview_april2017"></a>Bing Ads API Version 11 Preview
-A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../docset-overview/version-11-api-reference.md).
+A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../api-reference/version-11-api-reference.md).
 
 ### <a name="php_sdk_april2017"></a>Bing Ads PHP Software Development Kit (SDK)
 The Bing Ads PHP SDK is now available. 

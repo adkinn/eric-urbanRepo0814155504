@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Management Model for Tool Providers
-A tool provider builds a [!INCLUDE[brand](../docset-overview/includes/brand.md)] application for other companies to manage their advertising campaigns, and is not necessarily billed by [!INCLUDE[brand](../docset-overview/includes/brand.md)]. The advertiser user owns the accounts, is billed directly by Microsoft for valid ad clicks, and may pay a fee to the tool provider. The following sections describe the entity model and credentials for tool providers.
+A tool provider builds a [!INCLUDE[brand](../api-reference/includes/brand.md)] application for other companies to manage their advertising campaigns, and is not necessarily billed by [!INCLUDE[brand](../api-reference/includes/brand.md)]. The advertiser user owns the accounts, is billed directly by Microsoft for valid ad clicks, and may pay a fee to the tool provider. The following sections describe the entity model and credentials for tool providers.
 
 ## Tool Provider Entity Model
 The following figure shows multiple customers using the same third-party tool.
 
 ![Management Model Tool Provider](../docset-overview/media/management-model-tool-provider.png "Management Model Tool Provider")
 
-Third-party tools may be used to manage some or all aspects of an advertiser account. Your users may also manage their respective account through the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application or another third-party tool. You should design your application to be flexible and robust considering that data may have changed state since the last time a client used your application.
+Third-party tools may be used to manage some or all aspects of an advertiser account. Your users may also manage their respective account through the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application or another third-party tool. You should design your application to be flexible and robust considering that data may have changed state since the last time a client used your application.
 
 ## Credentials and Account Access
 The following are the header elements and the corresponding identifiers that a tool provider would use.

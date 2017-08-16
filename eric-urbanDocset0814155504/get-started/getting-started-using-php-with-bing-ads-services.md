@@ -13,10 +13,10 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using PHP with Bing Ads Services
-To get started developing Bing Ads applications with PHP, [install the SDK](#installation) and either start with the provided examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20PHP.md) application. You can also browse the [PHP Examples for Bing Ads](../Topic/PHP%20Examples%20for%20Bing%20Ads.md) on MSDN. The examples have been developed with the Bing Ads PHP SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with PHP, [install the SDK](#installation) and either start with the provided examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20PHP.md) application. You can also browse the [PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads PHP SDK in the environment described below. Your custom configuration may vary.
 
 > [!NOTE]
-> Please note the deprecated [PHP Classes for Bing Ads API examples](http://go.microsoft.com/fwlink/?LinkId=329042) will be removed from MSDN at the end of October, so when you [migrate to API version 11](Migrating%20to%20Bing%20Ads%20API%20Version%2011.md) you should [upgrade](#upgrade) to the new SDK.
+> Please note the deprecated [PHP Classes for Bing Ads API examples](http://go.microsoft.com/fwlink/?LinkId=329042) will be removed from MSDN at the end of October, so when you [migrate to API version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) you should [upgrade](#upgrade) to the new SDK.
 > 
 > Unlike other Bing Ads SDKs, the PHP SDK does not suppport *BulkServiceManager* or *ReportingServiceManager*. 
 
@@ -31,11 +31,11 @@ To get started developing Bing Ads applications with PHP, [install the SDK](#ins
 -   [Upgrade from Deprecated Examples](#upgrade)  
 
 ## <a name="requirements"></a>Setting Up the Development Environment
-You need user credentials with access to [!INCLUDE[brand](../get-started/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../get-started/getting-started-with-the-bing-ads-api.md) and [Sandbox](../Topic/Sandbox.md).
+You need user credentials with access to [!INCLUDE[brand](../api-reference/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md) and [Sandbox](../docset-overview/sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../Topic/Customer%20Accounts.md#managingusers) an existing [!INCLUDE[brand](../get-started/includes/brand.md)] account. You also must [register](../Topic/Authentication%20with%20OAuth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../docset-overview/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../api-reference/includes/brand.md)] account. You also must [register](../docset-overview/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
 
-The examples provided at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/) and the examples within [PHP Examples for Bing Ads](../Topic/PHP%20Examples%20for%20Bing%20Ads.md) have been developed and run in a similar environment as described below. Your custom configuration may vary.
+The examples provided at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/) and the examples within [PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md) have been developed and run in a similar environment as described below. Your custom configuration may vary.
 
 -   PHP 5.6.30 has been installed from [PHP](http://go.microsoft.com/fwlink/?LinkID=103371&clcid=0x409).
 
@@ -62,10 +62,10 @@ You can install the Bing Ads PHP SDK using the [Composer](https://getcomposer.or
 3.  To get updates going forward, type `composer update`. If any updates are available at packagist, composer will install the latest version.
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads PHP SDK installed you can either browse the [PHP Examples for Bing Ads](../Topic/PHP%20Examples%20for%20Bing%20Ads.md), download the examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/), or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20PHP.md) application.
+Once you have the Bing Ads PHP SDK installed you can either browse the [PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md), download the examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/), or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20PHP.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
-You must initialize a new instance of [ServiceClient](#serviceclient) with *AuthorizationData*. The *AuthorizationData* class contains properties that [!INCLUDE[brand](../get-started/includes/brand.md)] uses to authorize a user. 
+You must initialize a new instance of [ServiceClient](#serviceclient) with *AuthorizationData*. The *AuthorizationData* class contains properties that [!INCLUDE[brand](../api-reference/includes/brand.md)] uses to authorize a user. 
 
 The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
@@ -84,9 +84,9 @@ The *Authentication* property must be set to an Authentication-derived class suc
 ## <a name="oauth"></a>Using OAuth
 The OAuth classes in the SDK abstract the low level user authorization details, so you can focus at a high level on your security requirements. The SDK objects take care of low level details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream.
 
-To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *AuthorizationData* object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). The steps below describe the procedural workflow, and references code blocks from the [Walkthrough: Bing Ads Web Application in PHP](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../Topic/Authentication%20with%20OAuth.md).
+To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *AuthorizationData* object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). The steps below describe the procedural workflow, and references code blocks from the [Walkthrough: Bing Ads Web Application in PHP](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
 
-1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *ClientId*, *ClientSecret*, and *RedirectUri* with the values configured in [Registering Your Application](../Topic/Authentication%20with%20OAuth.md#registerapplication).
+1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *ClientId*, *ClientSecret*, and *RedirectUri* with the values configured in [Registering Your Application](../docset-overview/authentication-with-oauth.md#registerapplication).
 
     ```php
     // Prepare the OAuth object for use with the authorization code grant flow. 
@@ -114,11 +114,11 @@ To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *A
     header('Location: '. $_SESSION['AuthorizationData']->Authentication->GetAuthorizationEndpoint());
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3.  Use the authorization code to request the access token and refresh token. Pass the full callback Url to the *RequestOAuthTokensByResponseUri* method of your *OAuthWebAuthCodeGrant* instance. This method uses the authorization code fragment to request the access token and refresh token.
 
@@ -141,7 +141,7 @@ To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *A
     }
     ```
     
-    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../get-started/includes/brand.md)] accounts. To call [!INCLUDE[brand](../get-started/includes/brand.md)] services, you should initialize the ServiceClient with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. To call [!INCLUDE[brand](../api-reference/includes/brand.md)] services, you should initialize the ServiceClient with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorizationdata) and [Using ServiceClient](#serviceclient).
 
@@ -164,13 +164,13 @@ $customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion1
 )
 ```
 
-Depending on the *Authentication* type specified in [AuthorizationData](#authorizationdata), the corresponding [Service Request Header](../Topic/Authentication%20with%20OAuth.md#serviceheaders) fields are set when you create a new *ServiceClient*. For example if you use the *OAuthWebAuthCodeGrant* authentication type, the *AuthenticationToken* service request header will be set. If you use *PasswordAuthentication*, the *UserName* and *Password* headers will be set instead of *AuthenticationToken*.
+Depending on the *Authentication* type specified in [AuthorizationData](#authorizationdata), the corresponding [Service Request Header](../docset-overview/authentication-with-oauth.md#serviceheaders) fields are set when you create a new *ServiceClient*. For example if you use the *OAuthWebAuthCodeGrant* authentication type, the *AuthenticationToken* service request header will be set. If you use *PasswordAuthentication*, the *UserName* and *Password* headers will be set instead of *AuthenticationToken*.
 
 
 ## <a name="exceptionhandling"></a>Exception Handling
 In addition to handling PHP framework exceptions, your application should be prepared to handle Bing Ads API service level exceptions and Bing Ads PHP SDK wrapper exceptions. 
 
-Bing Ads API service level exceptions include AdApiFaultDetail, ApiBatchFault, ApiFault, ApiFaultDetail, and EditorialApiFaultDetail. For more information, see [Handling Service Errors and Exceptions](Handling%20Service%20Errors%20and%20Exceptions.md). 
+Bing Ads API service level exceptions include AdApiFaultDetail, ApiBatchFault, ApiFault, ApiFaultDetail, and EditorialApiFaultDetail. For more information, see [Handling Service Errors and Exceptions](../docset-overview/handling-service-errors-and-exceptions.md). 
 
 You should also handle the *OAuthTokenRequestException*, which is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
 
@@ -184,7 +184,7 @@ $customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion1
 ```
 
 ## <a name="upgrade"></a>Upgrade from Deprecated Examples
-Please note the deprecated [PHP Classes for Bing Ads API examples](http://go.microsoft.com/fwlink/?LinkId=329042) will be removed from MSDN at the end of October, so when you [migrate to API version 11](Migrating%20to%20Bing%20Ads%20API%20Version%2011.md) you should use the new SDK.
+Please note the deprecated [PHP Classes for Bing Ads API examples](http://go.microsoft.com/fwlink/?LinkId=329042) will be removed from MSDN at the end of October, so when you [migrate to API version 11](../docset-overview/migrating-to-bing-ads-api-version-11.md) you should use the new SDK.
 
 ### <a name="autoload"></a>Use Autoloading
 The deprecated samples explicity included each proxy file.
@@ -235,6 +235,6 @@ $campaignProxy = new ServiceClient(ServiceClientType::CampaignManagementVersion1
 ```
 
 ## See Also
-[Sandbox](../Topic/Sandbox.md)  
-[PHP Examples for Bing Ads](../Topic/PHP%20Examples%20for%20Bing%20Ads.md)  
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Sandbox](../docset-overview/sandbox.md)  
+[PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  

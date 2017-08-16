@@ -91,7 +91,7 @@ Potential customers like to know about other customers’ experiences when searc
 ### <a name="sitelinkextensions"></a>Sitelink Extensions
 Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
-You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../docset-overview/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
+You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../api-reference/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
 
 ![overview_sitelinkadextension](../docset-overview/media/overview_sitelinkadextension.png "overview_sitelinkadextension")
 
@@ -158,12 +158,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
 -   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../docset-overview/bulk-ad-extensions-in-csharp.md)| [Java](../docset-overview/bulk-ad-extensions-in-java.md) | [Python](../docset-overview/bulk-ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../code-examples/bulk-ad-extensions-in-csharp.md)| [Java](../code-examples/bulk-ad-extensions-in-java.md) | [Python](../code-examples/bulk-ad-extensions-in-python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../docset-overview/ad-extensions-in-csharp.md) | [Java](../docset-overview/ad-extensions-in-java.md) | [PHP](../docset-overview/ad-extensions-in-php.md) | [Python](../docset-overview/ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../code-examples/ad-extensions-in-csharp.md) | [Java](../code-examples/ad-extensions-in-java.md) | [PHP](../code-examples/ad-extensions-in-php.md) | [Python](../code-examples/ad-extensions-in-python.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
@@ -216,5 +216,5 @@ You can use the following reports to get statistics about the effectiveness of t
 For more information about reporting, see [Reports](../docset-overview/reports.md) and [Request and Download a Report](../docset-overview/request-and-download-a-report.md).
 
 ## See Also
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)
 

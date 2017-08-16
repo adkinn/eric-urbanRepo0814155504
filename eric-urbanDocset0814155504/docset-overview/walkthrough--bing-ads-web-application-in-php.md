@@ -202,6 +202,6 @@ For more information about getting started with PHP, please see [Setting Up the 
 6. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). 
 
 ## See Also
-[PHP Examples for Bing Ads](../docset-overview/php-examples-for-bing-ads.md)  
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

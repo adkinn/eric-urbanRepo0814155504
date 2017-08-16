@@ -29,14 +29,14 @@ To find ads or keywords that failed the editorial review process, call the respe
 
 To determine the reason why an ad or keyword failed the review and whether it’s appealable, call the respective [GetEditorialReasonsByIds](http://msdn.microsoft.com/library/c6c8b301-c2d3-4f50-82a6-47fa74f59e22) operation. The operation returns an array of [EditorialReasonCollection](http://msdn.microsoft.com/library/ab58a13a-3e7c-4f55-81b0-d60d7854b261) objects. The rejection is appealable if the `AppealStatus` element of `EditorialReasonCollection` is set to Appealable. For possible status values, see [AppealStatus](http://msdn.microsoft.com/library/c30bf88f-f5bc-4388-8f7e-b1672093ec32).
 
-For a list of the possible reason codes for an ad or keyword that failed editorial review, see [Bing Ads Editorial Failure Reason Codes](../Topic/Bing%20Ads%20Editorial%20Failure%20Reason%20Codes.md). The codes can be returned in the `ReasonCode` element of the [EditorialReason](http://msdn.microsoft.com/library/8855cb88-dd05-4e4f-9059-e15718849c43) object.
+For a list of the possible reason codes for an ad or keyword that failed editorial review, see [Bing Ads Editorial Failure Reason Codes](../api-reference/bing-ads-editorial-failure-reason-codes.md). The codes can be returned in the `ReasonCode` element of the [EditorialReason](http://msdn.microsoft.com/library/8855cb88-dd05-4e4f-9059-e15718849c43) object.
 
 If the failure is appealable, call the [AppealEditorialRejections](http://msdn.microsoft.com/library/ba87645c-f131-4a6a-addc-53e459f633a2) operation to appeal the rejection. You can request a maximum of 2,000 appeals per account per 24-hour rolling window. For example, if you request 2,000 appeals at 10:00 AM PST today, you cannot request new appeals until after 10:00 AM PST tomorrow. The maximum number of appeals that you can have pending for a single account is 10,000.
 
 You cannot call `AppealEditorialRejections` to appeal ad extensions that failed editorial review.
 
 ## <a name="entitydeliverystatus"></a>Entities and Delivery Status
-The respective [KeywordEditorialStatus](http://msdn.microsoft.com/library/f1b1c9e5-3989-4207-bf56-0f5fd7e17068) and [AdEditorialStatus](http://msdn.microsoft.com/library/e79f0dfa-2c74-4219-86a8-c2e1a1b810a0) values for keywords and ads may differ from the corresponding delivery status shown in the [!INCLUDE[brand](../guides/includes/brand.md)] web application.
+The respective [KeywordEditorialStatus](http://msdn.microsoft.com/library/f1b1c9e5-3989-4207-bf56-0f5fd7e17068) and [AdEditorialStatus](http://msdn.microsoft.com/library/e79f0dfa-2c74-4219-86a8-c2e1a1b810a0) values for keywords and ads may differ from the corresponding delivery status shown in the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application.
 
 For example after adding a new keyword or ad which must go through the offline review process, read operations such as `GetKeywordsByIds` or `GetAdsByIds` will return `Disapproved`, and the delivery status in the web application will indicate that the entity is pending editorial review. The delivery status in the web application will indicate that the entity is disapproved if and when all elements of the keyword or ad are rejected.
 
@@ -73,5 +73,5 @@ If the status of an ad group is `Draft`, the keywords will begin the in-depth re
 
 ## See Also
 [Campaign Management Service Reference](http://msdn.microsoft.com/library/5f50ed8a-6bca-4d30-8340-7290bc074f0e)
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)
 

@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using Python with Bing Ads Services
-To get started developing Bing Ads applications with Python, [install the SDK](#installation) and either start with the [provided examples](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Web](../get-started/walkthrough--bing-ads-web-application-in-python.md) or [Desktop](../get-started/walkthrough--bing-ads-desktop-application-in-python.md) application. You can also browse the [Python Examples for Bing Ads](../Topic/Python%20Examples%20for%20Bing%20Ads.md) on MSDN. The examples have been developed with the Bing Ads Python SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with Python, [install the SDK](#installation) and either start with the [provided examples](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-python.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-python.md) application. You can also browse the [Python Examples for Bing Ads](../code-examples/python-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads Python SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -30,11 +30,11 @@ To get started developing Bing Ads applications with Python, [install the SDK](#
 ## <a name="requirements"></a>Setting Up the Development Environment
 
 ### Credentials
-You need user credentials with access to [!INCLUDE[brand](../get-started/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../get-started/getting-started-with-the-bing-ads-api.md) and [Sandbox](../Topic/Sandbox.md).
+You need user credentials with access to [!INCLUDE[brand](../api-reference/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md) and [Sandbox](../docset-overview/sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../Topic/Customer%20Accounts.md#managingusers) an existing [!INCLUDE[brand](../get-started/includes/brand.md)] account. You also must [register](../Topic/Authentication%20with%20OAuth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../docset-overview/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../api-reference/includes/brand.md)] account. You also must [register](../docset-overview/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
 
-For a web application, you will need to deploy to a server with a publicly available redirection URL. For more information, see [Walkthrough: Bing Ads Web Application in Python](../get-started/walkthrough--bing-ads-web-application-in-python.md).
+For a web application, you will need to deploy to a server with a publicly available redirection URL. For more information, see [Walkthrough: Bing Ads Web Application in Python](../docset-overview/walkthrough--bing-ads-web-application-in-python.md).
 
 ### Tools
 The Python Examples for Bing Ads are developed with the [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/).
@@ -43,7 +43,7 @@ The Python Examples for Bing Ads are developed with the [Python Tools for Visual
 The Bing Ads Python SDK supports Python 2.6, 2.7, 3.3, and 3.4. You should install and run one of the supported versions.
 
 ### Dependencies
-The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all of [!INCLUDE[brand](../get-started/includes/brand.md)] web services. For more information about using Suds with [!INCLUDE[brand](../get-started/includes/brand.md)], see [Using Suds](#suds).
+The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all of [!INCLUDE[brand](../api-reference/includes/brand.md)] web services. For more information about using Suds with [!INCLUDE[brand](../api-reference/includes/brand.md)], see [Using Suds](#suds).
 
 ## <a name="installation"></a>Installing the SDK
 To install the Bing Ads Python SDK for the first time, run the following either from your IDE or command line prompt.
@@ -63,10 +63,10 @@ pip.exe install --upgrade bingads
 ```
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads Python SDK installed, you can either download the examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Walkthrough: Bing Ads Web Application in Python](../get-started/walkthrough--bing-ads-web-application-in-python.md) or [Walkthrough: Bing Ads Desktop Application in Python](../get-started/walkthrough--bing-ads-desktop-application-in-python.md) application.
+Once you have the Bing Ads Python SDK installed, you can either download the examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Walkthrough: Bing Ads Web Application in Python](../docset-overview/walkthrough--bing-ads-web-application-in-python.md) or [Walkthrough: Bing Ads Desktop Application in Python](../docset-overview/walkthrough--bing-ads-desktop-application-in-python.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
-You must initialize a new instance of *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../get-started/includes/brand.md)] uses to authorize a user. The *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *customer_id*, *account_id*, and *developer_token* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+You must initialize a new instance of *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../api-reference/includes/brand.md)] uses to authorize a user. The *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *customer_id*, *account_id*, and *developer_token* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
 The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *customer_id*, *account_id*, and *developer_token* properties.
 
@@ -78,16 +78,16 @@ authorization_data = AuthorizationData(
     developer_token = '<DeveloperTokenGoesHere>'
 )
 ```
-The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. When *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* call [!INCLUDE[brand](../get-started/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../Topic/Authentication%20with%20OAuth.md#serviceheaders), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager)
+The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. When *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* call [!INCLUDE[brand](../api-reference/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../docset-overview/authentication-with-oauth.md#serviceheaders), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager)
 
 Some services such as Customer Management do not accept *customer_id* and *account_id* headers, so they will be ignored if you specified them in the *AuthorizationData* object.
 
 ## <a name="oauth"></a>Using OAuth
 The OAuth classes in the SDK abstract the low level user authorization details, so you can focus at a high level on your security requirements. The SDK objects take care of low level details such as formatting the authorization and redirect URIs and setting the request headers.
 
-To use OAuth with the Bing Ads Python SDK, the *Authentication* property of your AuthorizationData object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../Topic/Authentication%20with%20OAuth.md).
+To use OAuth with the Bing Ads Python SDK, the *Authentication* property of your AuthorizationData object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
 
-1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI* with the values configured in [Registering Your Application](../Topic/Authentication%20with%20OAuth.md#registerapplication).
+1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI* with the values configured in [Registering Your Application](../docset-overview/authentication-with-oauth.md#registerapplication).
 
     ```python
     oauth_web_auth_code_grant = OAuthWebAuthCodeGrant(
@@ -107,11 +107,11 @@ To use OAuth with the Bing Ads Python SDK, the *Authentication* property of your
     oauth_web_auth_code_grant.get_authorization_endpoint()
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their [!INCLUDE[brand](../get-started/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3.  Use the authorization code to request the *access_token*, *refresh_token*, and *access_token_expires_in_seconds* values from the *oauth_tokens* property of your *OAuthWebAuthCodeGrant* instance. Pass the full callback Url to the *request_oauth_tokens_by_response_uri* method of your *OAuthWebAuthCodeGrant* instance. This method uses the authorization code fragment to request the access token and refresh token.
 
@@ -124,11 +124,11 @@ To use OAuth with the Bing Ads Python SDK, the *Authentication* property of your
     access_token = oauth_tokens.access_token
     ```
        
-    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../get-started/includes/brand.md)] accounts. To call [!INCLUDE[brand](../get-started/includes/brand.md)] services, you should initialize either *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. To call [!INCLUDE[brand](../api-reference/includes/brand.md)] services, you should initialize either *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorizationdata), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
     
-4.  When calling [!INCLUDE[brand](../get-started/includes/brand.md)] services with *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to register a callback function to automatically save the refresh token anytime it is refreshed. For example if you defined have a save_refresh_token() method that securely stores your refresh token, set the authentication token_refreshed_callback property of each *OAuthWebAuthCodeGrant* instance.
+4.  When calling [!INCLUDE[brand](../api-reference/includes/brand.md)] services with *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to register a callback function to automatically save the refresh token anytime it is refreshed. For example if you defined have a save_refresh_token() method that securely stores your refresh token, set the authentication token_refreshed_callback property of each *OAuthWebAuthCodeGrant* instance.
 
     ```python
     oauth_web_auth_code_grant.token_refreshed_callback=save_refresh_token
@@ -147,7 +147,7 @@ To use OAuth with the Bing Ads Python SDK, the *Authentication* property of your
     You may need to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
 
 ## <a name="serviceclient"></a>Using ServiceClient
-To call the corresponding methods of a [!INCLUDE[brand](../get-started/includes/brand.md)] service, you can use an instance of the *ServiceClient* class and set its *service* property to one of the following string values.
+To call the corresponding methods of a [!INCLUDE[brand](../api-reference/includes/brand.md)] service, you can use an instance of the *ServiceClient* class and set its *service* property to one of the following string values.
 
 -   *AdInsightService*
 -   *BulkService*
@@ -188,7 +188,7 @@ The *BulkServiceManager* supports the following workflows.
 
 -   If for any reason you have to resume from a previous application state, you can use an existing download or upload request identifier and use it to download the result file. For more information, see [Download Results with BulkServiceManager](#downloadresults).
 
--   If you are migrating from a deprecated bulk file format version, you can use an instance of *ServiceClient*, where its *service* property is set to *BulkService*, to upload and download campaigns using any format version [Bulk File Schema](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient](#serviceclient) and [Bulk Download and Upload](../Topic/Bulk%20Download%20and%20Upload.md).
+-   If you are migrating from a deprecated bulk file format version, you can use an instance of *ServiceClient*, where its *service* property is set to *BulkService*, to upload and download campaigns using any format version [Bulk File Schema](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient](#serviceclient) and [Bulk Download and Upload](../docset-overview/bulk-download-and-upload.md).
 
 ### <a name="backgroundcompletion"></a>Background Completion with BulkServiceManager
 You can submit a download or upload request and the *BulkServiceManager* will automatically return results. The *BulkServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling.
@@ -421,7 +421,7 @@ print("Status: {0}\n".format(reporting_operation_status.status))
 ```
 
 ## <a name="suds"></a>Using Suds
-The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programming elements for the Bing Ads API i.e., service operations, data objects, and value sets. You will pass Suds factory objects via either a *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* class. Since Suds is included as an SDK dependency, you can use Suds directly to call any of the [!INCLUDE[brand](../get-started/includes/brand.md)] web services.
+The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programming elements for the Bing Ads API i.e., service operations, data objects, and value sets. You will pass Suds factory objects via either a *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* class. Since Suds is included as an SDK dependency, you can use Suds directly to call any of the [!INCLUDE[brand](../api-reference/includes/brand.md)] web services.
 
 Please keep in mind the following rules, suggestions, and tips related to Suds in the Bing Ads Python SDK.
 
@@ -514,18 +514,18 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ads.Ad.append(expanded_text_ad)
     ```
 
--   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](https://msdn.microsoft.com/library/bing-ads-campaign-management-adeditorialstatus.aspx), even though the [!INCLUDE[brand](../get-started/includes/brand.md)] services do not require such elements.
+-   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](https://msdn.microsoft.com/library/bing-ads-campaign-management-adeditorialstatus.aspx), even though the [!INCLUDE[brand](../api-reference/includes/brand.md)] services do not require such elements.
 
--   [!INCLUDE[brand](../get-started/includes/brand.md)] Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
+-   [!INCLUDE[brand](../api-reference/includes/brand.md)] Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
 
-To call the corresponding methods of a [!INCLUDE[brand](../get-started/includes/brand.md)] service, you can use an instance of the *ServiceClient* class and pass the Suds factory object. For more information, see [Using ServiceClient](#serviceclient).
+To call the corresponding methods of a [!INCLUDE[brand](../api-reference/includes/brand.md)] service, you can use an instance of the *ServiceClient* class and pass the Suds factory object. For more information, see [Using ServiceClient](#serviceclient).
 
 ## <a name="exceptionhandling"></a>Exception Handling
 One of the most common exceptions we hear about is *ERROR:suds.resolver:(ClassGoesHere) not-found*. Usually this can be resolved by using the namespace prefix for the Suds object. For more information see [Using Suds](#suds).
 
 In addition to handling Python platform exceptions, your application should be prepared to handle Bing Ads API service level exceptions and Bing Ads Python SDK wrapper exceptions. 
 
-Bing Ads API service level exceptions include AdApiFaultDetail, ApiBatchFault, ApiFault, ApiFaultDetail, and EditorialApiFaultDetail. For more information, see [Handling Service Errors and Exceptions](Handling%20Service%20Errors%20and%20Exceptions.md). 
+Bing Ads API service level exceptions include AdApiFaultDetail, ApiBatchFault, ApiFault, ApiFaultDetail, and EditorialApiFaultDetail. For more information, see [Handling Service Errors and Exceptions](../docset-overview/handling-service-errors-and-exceptions.md). 
 
 You should also handle the following Bing Ads Python SDK exceptions, which abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
 
@@ -546,10 +546,10 @@ TimeoutException      |BingAds         |This exception is thrown if timeout occu
      
 Some exceptions are only returned when using *BulkServiceManager* (using BingAds.Bulk or BingAds.V11.Bulk) or ReportingServiceManager (using BingAds.V11.Reporting). The *BulkServiceManager* will automatically retry upload, download, and polling operations up to the maximum timeout duration that you specified. You can set the maximum retry timeout duration for the *BulkServiceManager* by passing a value for the *timeout_in_milliseconds* parameter to the *upload_entities*, *download_entities*, *upload_file*, *download_file*, or *track* operations, as shown in the [Background Completion](#backgroundcompletion), [Submit and Download](#submitdownload), and [Download Results](#downloadresults) examples in the sections above. If no timeout is specified, the *BulkServiceManager* will continue to retry until the server returns a timeout or internal error. Likewise, the *ReportingServiceManager* will automatically retry download and polling operations up to the maximum timeout duration that you specify. You can set the maximum retry timeout duration for the *ReportingServiceManager* by passing a value for the *timeout_in_milliseconds* parameter to the *download_file* or *track* operations, as shown in the [Background Completion](#reportingbackgroundcompletion), [Submit and Download](#reportingsubmitdownload), and [Download Results](#reportingdownloadresults) examples in the sections above. If no timeout is specified, the *ReportingServiceManager* will continue to retry until the server returns a timeout or internal error. 
 
-For code examples showing how to handle Bing Ads API service and Bing Ads Python SDK exceptions, see [Python Examples for Bing Ads](Python%20Examples%20for%20Bing%20Ads.md).
+For code examples showing how to handle Bing Ads API service and Bing Ads Python SDK exceptions, see [Python Examples for Bing Ads](../code-examples/python-examples-for-bing-ads.md).
 
 ## <a name="sandbox"></a>Configuring Sandbox
-To use the [Sandbox](../Topic/Sandbox.md) environment set the environment property of each *ServiceClient* instance to 'sandbox' (not case sensitive). If the sandbox environment setting is malformed or missing, the default environment is production.
+To use the [Sandbox](../docset-overview/sandbox.md) environment set the environment property of each *ServiceClient* instance to 'sandbox' (not case sensitive). If the sandbox environment setting is malformed or missing, the default environment is production.
 
 ```python
 bulk_service_manager = BulkServiceManager(

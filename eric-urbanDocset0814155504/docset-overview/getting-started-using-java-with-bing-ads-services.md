@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using Java with Bing Ads Services
-To get started developing Bing Ads applications with Java, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-java.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-java.md) application. You can also browse the [Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads Java SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with Java, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-java.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-java.md) application. You can also browse the [Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads Java SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -27,13 +27,13 @@ To get started developing Bing Ads applications with Java, [install the SDK](#in
 -   [Configuring Sandbox](#sandbox)  
 
 ## <a name="requirements"></a>Setting Up the Development Environment
-You need user credentials with access to [!INCLUDE[brand](../docset-overview/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md) and [Sandbox](../docset-overview/sandbox.md).
+You need user credentials with access to [!INCLUDE[brand](../api-reference/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md) and [Sandbox](../docset-overview/sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../docset-overview/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../docset-overview/includes/brand.md)] account. You also must [register](../docset-overview/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../docset-overview/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../api-reference/includes/brand.md)] account. You also must [register](../docset-overview/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
 
 You must install a Java Runtime Environment (JRE), version 1.6 or later.
 
-The [Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md) are developed and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
+The [Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md) are developed and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
 
 For [Authentication with OAuth](../docset-overview/authentication-with-oauth.md) in a web application, you will need to deploy to a server with a publicly available redirection URL. For more information, see [Deploying a Web Application](../docset-overview/walkthrough--bing-ads-web-application-in-java.md#deploy).
 
@@ -58,10 +58,10 @@ When you create a Maven project and include the *microsoft.bingads* Maven artifa
 > Version 10.4.12 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads Java SDK installed, you can either browse the [Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329040) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525443)) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-java.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-java.md) application.
+Once you have the Bing Ads Java SDK installed, you can either browse the [Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329040) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525443)) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-java.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-java.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
-You must initialize a new instance of *ServiceClient* or *BulkServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../docset-overview/includes/brand.md)] uses to authorize a user. The *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+You must initialize a new instance of *ServiceClient* or *BulkServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../api-reference/includes/brand.md)] uses to authorize a user. The *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
 The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
@@ -72,7 +72,7 @@ authorizationData.setCustomerId("<CustomerIdGoesHere>");
 authorizationData.setAccountId("<AccountIdGoesHere>");
 authorizationData.setDeveloperToken("<DeveloperTokenGoesHere>");
 ```
-The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. When *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* call [!INCLUDE[brand](../docset-overview/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../docset-overview/authentication-with-oauth.md#serviceheaders), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. When *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* call [!INCLUDE[brand](../api-reference/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../docset-overview/authentication-with-oauth.md#serviceheaders), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the *AuthorizationData* object.
 
@@ -98,11 +98,11 @@ To use OAuth with the Bing Ads Java SDK, the *Authentication* property of your A
     response.sendRedirect(authorizationEndpoint.toString());
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts:  *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts:  *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3.  Use the authorization code to request the *AccessToken*, *RefreshToken*, and *ExpiresIn* values from the *OAuthTokens* property of your *OAuthWebAuthCodeGrant* instance.  Pass the full callback Url to the *requestAccessAndRefreshTokens* method of your *OAuthWebAuthCodeGrant* instance. This method uses the authorization code fragment to request the access token and refresh token.
 
@@ -118,11 +118,11 @@ To use OAuth with the Bing Ads Java SDK, the *Authentication* property of your A
     }
     ```
     
-    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts. To call [!INCLUDE[brand](../docset-overview/includes/brand.md)] services, you should initialize either *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts. To call [!INCLUDE[brand](../api-reference/includes/brand.md)] services, you should initialize either *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorizationdata), [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
     
-4.  When calling [!INCLUDE[brand](../docset-overview/includes/brand.md)] services with *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to implement event handling using the *NewOAuthTokensReceivedListener*. 
+4.  When calling [!INCLUDE[brand](../api-reference/includes/brand.md)] services with *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to implement event handling using the *NewOAuthTokensReceivedListener*. 
 
     ```java
     oAuthWebAuthCodeGrant.setNewTokensListener(new NewOAuthTokensReceivedListener() {
@@ -526,7 +526,7 @@ ReportingOperationInProgressException     |com.microsoft.bingads.V11.reporting  
      
 Some exceptions are only returned when using *BulkServiceManager* (using com.microsoft.bingads.bulk or com.microsoft.bingads.V11.bulk) or ReportingServiceManager (using com.microsoft.bingads.V11.reporting). The *BulkServiceManager* will automatically retry upload, download, and polling operations up to the maximum timeout duration that you specified. You can set the maximum retry timeout duration for the *BulkServiceManager* when calling the *uploadFileAsync*, *downloadFileAsync*, or *trackAsync* operations, as shown in the [Background Completion](#backgroundcompletion), [Submit and Download](#submitdownload), and [Download Results](#downloadresults) examples in the sections above. If no timeout is specified, the *BulkServiceManager* will continue to retry until the server returns a timeout or internal error. Likewise, the *ReportingServiceManager* will automatically retry download and polling operations up to the maximum timeout duration that you specify. You can set the maximum retry timeout duration for the *ReportingServiceManager* when calling the *uploadEntitiesAsync*, *downloadEntitiesAsync*, *uploadFileAsync*, *downloadFileAsync* or *trackAsync* operations, as shown in the [Background Completion](#reportingbackgroundcompletion), [Submit and Download](#reportingsubmitdownload), and [Download Results](#reportingdownloadresults) examples in the sections above. If no timeout is specified, the *ReportingServiceManager* will continue to retry until the server returns a timeout or internal error.  
 
-For code examples showing how to handle Bing Ads API service and Bing Ads Java SDK exceptions, see [Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md). 
+For code examples showing how to handle Bing Ads API service and Bing Ads Java SDK exceptions, see [Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md). 
 
 ## <a name="sandbox"></a>Configuring Sandbox
 To use the [Sandbox](../docset-overview/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
@@ -564,6 +564,6 @@ authorizationData.setAuthentication(passwordAuthentication);
 ## See Also
 [Sandbox](../docset-overview/sandbox.md)  
 [Javadocs](http://BingAds.github.io/BingAds-Java-SDK/)  
-[Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md)  
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

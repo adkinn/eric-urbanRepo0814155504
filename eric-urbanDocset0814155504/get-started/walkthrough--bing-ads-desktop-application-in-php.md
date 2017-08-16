@@ -15,7 +15,7 @@ This guide describes how you can download samples from the [GitHub source](https
 > [!IMPORTANT] 
 > Be sure to test in sandbox before running samples in production. Also note that some samples might require additional information e.g. within *ManageClient.php* you'll need to supply a valid $ClientAccountId.
 
-For more information about getting started with PHP, please see [Setting Up the Development Environment](../get-started/getting-started-using-php-with-bing-ads-services.md#requirements). 
+For more information about getting started with PHP, please see [Setting Up the Development Environment](../docset-overview/getting-started-using-php-with-bing-ads-services.md#requirements). 
 
 
 ## <a name="desktopapp"></a>Desktop Application Example Walk-Through
@@ -24,7 +24,7 @@ For more information about getting started with PHP, please see [Setting Up the 
 2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](Get%20Started%20Using%20PHP%20with%20Bing%20Ads%20Services.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
 3.  Copy both *AuthHelper.php* and the *V11* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
-    ![Sample PHP Project Directory](../get-started/media/sample-php-project-directory.PNG)  
+    ![Sample PHP Project Directory](../docset-overview/media/sample-php-project-directory.PNG)  
     > [!NOTE]
     > You have alternative options for example, changing the path of *autoload.php* within *AuthHelper.php* and within each sample that you want to run. You could also write your application from scratch in the *c:\dev\BingAdsPHP* directory. 
     
@@ -63,6 +63,6 @@ To authenticate with OAuth you'll need a refresh token to get started.
    
 
 ## See Also
-[PHP Examples for Bing Ads](../Topic/PHP%20Examples%20for%20Bing%20Ads.md)  
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

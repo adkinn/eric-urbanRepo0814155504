@@ -1,7 +1,7 @@
 ---
 title: "Ad Extensions"
 ms.custom: na
-ms.date: "08/12/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Ad extensions are additional pieces of information about your business, like a p
 > [!TIP]
 > Providing extension data allows our algorithms to evaluate all the possible layouts for your ad. It increases the changes of additional space being allocated and increasing clicks for your ad.
 
-Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more details on associating ad extensions, see [Managing Ad Extensions with the Bulk Service](#bulkservice) and [Managing Ad Extensions with the Campaign Management Service](#campaignservice) in the sections below. For ad extension association limits per entity, please see [Entity Limits for Ad Extensions](Entity%20Hierarchy%20and%20Limits.md#adextensions).
+Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more details on associating ad extensions, see [Managing Ad Extensions with the Bulk Service](#bulkservice) and [Managing Ad Extensions with the Campaign Management Service](#campaignservice) in the sections below. For ad extension association limits per entity, please see [Entity Limits for Ad Extensions](../docset-overview/entity-hierarchy-and-limits.md#adextensions).
 
 > [!NOTE]
 > Call ad extensions can only be associated at the campaign level. 
@@ -50,55 +50,55 @@ You can manage ad extensions with either the [Bulk Service](https://msdn.microso
 ### <a name="appextensions"></a>App Extensions
 You can associate app ad extensions with your campaigns and ad groups, and your ads will include a link to install an application.
 
-![overview_appadextension](../guides/media/overview_appadextension.png "overview_appadextension")
+![overview_appadextension](../docset-overview/media/overview_appadextension.png "overview_appadextension")
 
 ### <a name="callextensions"></a>Call Extensions
 With Call Extensions, you can provide a phone number that is not associated with a particular location, but is appropriate for all locations where your ads display. In comparison, you typically use Location Extensions to provide an address and local phone number associated with a local location.
 
 If the campaign is also associated with a [Location Extensions](#locationextensions), the call extension phone number will override the location extension phone number.
 
-![overview_calladextension](../guides/media/overview_calladextension.png "overview_calladextension")
+![overview_calladextension](../docset-overview/media/overview_calladextension.png "overview_calladextension")
 
 ### <a name="calloutextensions"></a>Callout Extensions
 With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad’s description. Providing additional details about your store can make your ad more relevant to potential customers.
 
 Each account, campaign, or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your account, campaign, or ad group, no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
-![Callout ad extension](../guides/media/callout-ad-extension.png)
+![Callout ad extension](../docset-overview/media/callout-ad-extension.png)
 
 ### <a name="imageextensions"></a>Image Extensions
 You can associate image ad extensions with your campaigns and ad groups, and your ads may include an image or alternative text.
 
-![Image Ad Extension](../guides/media/image-ad-extension.png)
+![Image Ad Extension](../docset-overview/media/image-ad-extension.png)
 
 ### <a name="locationextensions"></a>Location Extensions
 When you enable Location Extensions, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call.
 
 If the campaign is also associated with a [Call Extensions](#callextensions), the phone number in the call extension will override the location extension phone number.
 
-![overview_locationadextension](../guides/media/overview_locationadextension.png "overview_locationadextension")
+![overview_locationadextension](../docset-overview/media/overview_locationadextension.png "overview_locationadextension")
 
 ### <a name="priceextensions"></a>Price Extensions
 You can use Price Extensions to display your products or services with their corresponding prices to potential customers on mobile devices. Price Extensions only show on ads listed at the top of the results page, helping to increase your clicks. Keep in mind that though Price Extensions are free to add to your ad, they may not always show for every query.
 
-![Price Ad Extension](../guides/media/price-ad-extension.png)
+![Price Ad Extension](../docset-overview/media/price-ad-extension.png)
 
 ### <a name="reviewextensions"></a>Review Extensions
 Potential customers like to know about other customers’ experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
 
-![Review ad extension](../guides/media/review-ad-extension.png)
+![Review ad extension](../docset-overview/media/review-ad-extension.png)
 
 ### <a name="sitelinkextensions"></a>Sitelink Extensions
 Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
-You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../guides/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
+You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../api-reference/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
 
-![overview_sitelinkadextension](../guides/media/overview_sitelinkadextension.png "overview_sitelinkadextension")
+![overview_sitelinkadextension](../docset-overview/media/overview_sitelinkadextension.png "overview_sitelinkadextension")
 
 ### <a name="structuredsnippetextensions"></a>Structured Snippet Extensions
 Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header “Brands:” and the values “Windows, Xbox, Skype” to let customers know about what brands are available at your store.
 
-![Structured Snippet Ad Extension](../guides/media/structured-snippet-ad-extension.png)
+![Structured Snippet Ad Extension](../docset-overview/media/structured-snippet-ad-extension.png)
 
 This extension is not clickable and, similar to other extensions, will appear beneath your ad’s description. Structured Snippets have no impact on the other extensions you’re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
@@ -106,7 +106,7 @@ An ad will only include one structured snippet (one headline with 3 - 10 values)
 
 
 ## <a name="bulkservice"></a>Managing Ad Extensions with the Bulk Service
-You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../guides/bulk-download-and-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
+You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../docset-overview/bulk-download-and-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
 The following Bulk records are available for managing ad extensions and ad extension associations. 
 
@@ -158,12 +158,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
 -   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](Bulk%20Ad%20Extensions%20in%20C%23.md)| [Java](Bulk%20Ad%20Extensions%20in%20Java.md) | [Python](Bulk%20Ad%20Extensions%20in%20Python.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../code-examples/bulk-ad-extensions-in-csharp.md)| [Java](../code-examples/bulk-ad-extensions-in-java.md) | [Python](../code-examples/bulk-ad-extensions-in-python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](Ad%20Extensions%20in%20C%23.md) | [Java](Ad%20Extensions%20in%20Java.md) | [PHP](Ad%20Extensions%20in%20PHP.md) | [Python](Ad%20Extensions%20in%20Python.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../code-examples/ad-extensions-in-csharp.md) | [Java](../code-examples/ad-extensions-in-java.md) | [PHP](../code-examples/ad-extensions-in-php.md) | [Python](../code-examples/ad-extensions-in-python.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
@@ -199,10 +199,10 @@ These are the [Campaign Management Service](https://msdn.microsoft.com/library/b
 > 
 > Partial success is not supported when adding, updating, and deleting ad extensions. For example if you submit 10 ad extensions and 2 fail, the entire batch will fail.
 > 
-> Partial success is supported for [GetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionsassociations.aspx) and [SetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-setadextensionsassociations.aspx). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../guides/handling-service-errors-and-exceptions.md#partialsuccess).
+> Partial success is supported for [GetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionsassociations.aspx) and [SetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-setadextensionsassociations.aspx). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../docset-overview/handling-service-errors-and-exceptions.md#partialsuccess).
 
 ## <a name="editorial"></a>Editorial Review
-When you associate an ad extension with a campaign or ad group, the extension goes through an initial editorial review. For more information, see [Ad Extension Editorial Review](../guides/editorial-review-and-appeals.md#adextensioneditorialreview).
+When you associate an ad extension with a campaign or ad group, the extension goes through an initial editorial review. For more information, see [Ad Extension Editorial Review](../docset-overview/editorial-review-and-appeals.md#adextensioneditorialreview).
 
 ## <a name="reporting"></a>Reporting
 You can use the following reports to get statistics about the effectiveness of the ad extensions that you've included in your ads.
@@ -213,8 +213,8 @@ You can use the following reports to get statistics about the effectiveness of t
 
 -   [AdExtensionDimensionReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensiondimensionreportrequest.aspx) – Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 
-For more information about reporting, see [Reports](../guides/reports.md) and [Request and Download a Report](../guides/request-and-download-a-report.md).
+For more information about reporting, see [Reports](../docset-overview/reports.md) and [Request and Download a Report](../docset-overview/request-and-download-a-report.md).
 
 ## See Also
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)
 

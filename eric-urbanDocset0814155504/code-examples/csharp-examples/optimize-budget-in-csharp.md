@@ -1,7 +1,7 @@
 ---
 title: "Optimize Budget in C#"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in C#
 This example shows how to get the budget opportunities for each campaign in the current authenticated account.
 
-[!INCLUDE[csharp_header](../../code-examples/csharp-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -99,4 +99,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../Topic/Getting%20Started%20Using%20C%23%20with%20Bing%20Ads%20Services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../docset-overview/getting-started-using-csharp-with-bing-ads-services.md)  

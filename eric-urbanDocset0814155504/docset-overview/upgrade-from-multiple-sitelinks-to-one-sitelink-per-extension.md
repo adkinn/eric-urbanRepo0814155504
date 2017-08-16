@@ -55,5 +55,5 @@ When using the [Bulk](https://msdn.microsoft.com/library/bing-ads-bulk-service-r
 
 
 ## See Also
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

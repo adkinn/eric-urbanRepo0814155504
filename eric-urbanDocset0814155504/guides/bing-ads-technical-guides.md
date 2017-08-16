@@ -13,22 +13,22 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Technical Guides
-The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../guides/includes/brand.md)] services.
+The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../api-reference/includes/brand.md)] services.
 
 ## Guides
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](../guides/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../guides/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
-|[Bing Ads Services Protocol](../guides/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../guides/includes/brand.md)] services efficiently.|
-|[Handling Service Errors and Exceptions](../guides/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
-|[Customer Accounts](../guides/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
-|[Campaigns](../guides/campaigns.md)|Set your campaign budget and bid strategy.|
-|[Ads](../guides/ads.md)|Setup campaigns for specific ad types. Use ad extensions to decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions.|
-|[Reports](../guides/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
+|[Authentication with OAuth](../docset-overview/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
+|[Bing Ads Services Protocol](../docset-overview/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../api-reference/includes/brand.md)] services efficiently.|
+|[Handling Service Errors and Exceptions](../docset-overview/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
+|[Customer Accounts](../docset-overview/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
+|[Campaigns](../docset-overview/campaigns.md)|Set your campaign budget and bid strategy.|
+|[Ads](../docset-overview/ads.md)|Setup campaigns for specific ad types. Use ad extensions to decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions.|
+|[Reports](../docset-overview/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
 
 ## See Also
-[Getting Started With the Bing Ads API](../Topic/Getting%20Started%20With%20the%20Bing%20Ads%20API.md)  
-[Bing Ads API Overview](../Topic/Bing%20Ads%20API%20Overview.md)  
-[Bing Ads API Reference](../Topic/Bing%20Ads%20API%20Reference.md)  
+[Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md)  
+[Bing Ads API Overview](../docset-overview/bing-ads-api-overview.md)  
+[Bing Ads API Reference](../api-reference/bing-ads-api-reference.md)  
 

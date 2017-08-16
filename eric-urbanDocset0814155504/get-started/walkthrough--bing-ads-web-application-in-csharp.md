@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Bing Ads Web Application in C#"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Web Application in C#
-The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../get-started/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../get-started/getting-started-using-csharp-with-bing-ads-services.md#requirements). 
+The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../api-reference/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../docset-overview/getting-started-using-csharp-with-bing-ads-services.md#requirements). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -26,7 +26,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 3.  Select the **MVC** project template and click **OK**.
 
-4.  Within the BingAdsWebApp project, install the SDK through NuGet. For more information, see [Installing the SDK](../get-started/getting-started-using-csharp-with-bing-ads-services.md#installation).
+4.  Within the BingAdsWebApp project, install the SDK through NuGet. For more information, see [Installing the SDK](../docset-overview/getting-started-using-csharp-with-bing-ads-services.md#installation).
 
 5.  Within the **Views** -&gt; **Home** folder of the BingAdsWebApp project, open the Index.cshtml file and replace its contents with the following code block. This defines the web page view that displays results of the service calls that will be written further below.
 
@@ -414,8 +414,8 @@ To use sandbox, follow these additional steps.
 -   Optionally you should remove any unused local variables that had been used for OAuth in production.
 
 ## See Also
-[Sandbox](../Topic/Sandbox.md)  
-[Bing Ads .NET SDK Reference](../Topic/Bing%20Ads%20.NET%20SDK%20Reference.md)  
-[C&#35; Examples for Bing Ads](../Topic/C%23%20Examples%20for%20Bing%20Ads.md)  
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Sandbox](../docset-overview/sandbox.md)  
+[Bing Ads .NET SDK Reference](../api-reference/bing-ads-.net-sdk-reference.md)  
+[C&#35; Examples for Bing Ads](../code-examples/csharp-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

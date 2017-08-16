@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Show Ads to Your Target Audience
-Getting your ad in front of the right people; that's what targeting is all about. With targeting, [!INCLUDE[brand](../docset-overview/includes/brand.md)] can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
+Getting your ad in front of the right people; that's what targeting is all about. With targeting, [!INCLUDE[brand](../api-reference/includes/brand.md)] can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
 Targets are stored in a library that can be accessed by any campaign or ad group across all accounts within a customer. You may associate the target with one or more ad groups or campaigns. An ad group or campaign can be associated with only one target. For more information, see [Entity Hierarchy and Limits](../docset-overview/entity-hierarchy-and-limits.md).
 
@@ -39,7 +39,7 @@ For details about managing your targets, see the following sections.
 
 -   [Bid Adjustments](#bidadjust)
 
-For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../docset-overview/targets-in-csharp.md) | [Java](../docset-overview/targets-in-java.md) | [PHP](../docset-overview/targets-in-php.md) | [Python](../docset-overview/targets-in-python.md).
+For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../code-examples/targets-in-csharp.md) | [Java](../code-examples/targets-in-java.md) | [PHP](../code-examples/targets-in-php.md) | [Python](../code-examples/targets-in-python.md).
 
 ## <a name="targettypes"></a>Target Types
 The sub targets in the following sections are available within the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object.
@@ -83,7 +83,7 @@ When you target by location, you can choose to show ads to potential customers i
 Use the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) object to define a list of one or more locations to target your ads. The [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) object includes elements that can contain one or more of the following granular target bids.
 
 > [!NOTE]
-> Although location targeting is most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../docset-overview/includes/brand.md)] also lets you target locations you specifically want to exclude from seeing your ads. To exclude a target set the `IsExcluded` element to true within any of the following target bids except `RadiusTargetBid`. The default value for `IsExcluded` is False.
+> Although location targeting is most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../api-reference/includes/brand.md)] also lets you target locations you specifically want to exclude from seeing your ads. To exclude a target set the `IsExcluded` element to true within any of the following target bids except `RadiusTargetBid`. The default value for `IsExcluded` is False.
 
 -   [CityTargetBid](http://msdn.microsoft.com/library/5ddec602-5502-4ccb-ac73-2f3a78068b52)
 
@@ -100,7 +100,7 @@ Use the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a5
 
 -   [StateTargetBid](http://msdn.microsoft.com/library/63b931d3-d22f-4e99-82cb-d3e30b8081b1)
 
-For information on location codes to use for each target bid value, see [Geographical Location Codes](../docset-overview/geographical-location-codes.md).
+For information on location codes to use for each target bid value, see [Geographical Location Codes](../api-reference/geographical-location-codes.md).
 
 #### Location Intent Options
 Set `IntentOption` to `PeopleInOrSearchingForOrViewingPages` if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) includes London and `IntentOption` is `PeopleInOrSearchingForOrViewingPages`, then someone physically located in Florida searching for London hotels will see the ad.
@@ -112,7 +112,7 @@ Set `IntentOption` to `PeopleSearchingForOrViewingPages` if you want to show ads
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0-500).
 
 ## <a name="defaulttargets"></a>Default Target Settings
-For campaigns and ad groups created using the [!INCLUDE[brand](../docset-overview/includes/brand.md)] API, there is no associated target defined by default. For example if you call [GetTargetsByCampaignIds](http://msdn.microsoft.com/library/379faa2e-6f20-4674-9fc2-466b4b3d6ac5), the response would include a nil target as follows.
+For campaigns and ad groups created using the [!INCLUDE[brand](../api-reference/includes/brand.md)] API, there is no associated target defined by default. For example if you call [GetTargetsByCampaignIds](http://msdn.microsoft.com/library/379faa2e-6f20-4674-9fc2-466b4b3d6ac5), the response would include a nil target as follows.
 
 ```xml
 <Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -121,7 +121,7 @@ For campaigns and ad groups created using the [!INCLUDE[brand](../docset-overvie
 ```
 This is the effective equivalent of targeting all ages, days, genders, hours, and locations worldwide.
 
-As a best practice you should consider at minimum adding a location target corresponding to the customer market country. For example, by default in the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application, **All locations worldwide** is not the default setting. If your [Customer](http://msdn.microsoft.com/library/a4c8e03e-e494-4fb7-9dbb-3bea2f095249) market country is set to  US, then by default when creating a new campaign in the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application your campaign will target the United States within **Selected cities, metro areas, states/provinces, and countries/regions**. When getting targets the service will return the corresponding [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) as follows.
+As a best practice you should consider at minimum adding a location target corresponding to the customer market country. For example, by default in the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application, **All locations worldwide** is not the default setting. If your [Customer](http://msdn.microsoft.com/library/a4c8e03e-e494-4fb7-9dbb-3bea2f095249) market country is set to  US, then by default when creating a new campaign in the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application your campaign will target the United States within **Selected cities, metro areas, states/provinces, and countries/regions**. When getting targets the service will return the corresponding [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) as follows.
 
 ```xml
 <Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -160,7 +160,7 @@ To create a target that you can associate with an ad group or campaign, complete
 1.  Create an instance of the object that represents the desired target and assign it to the appropriate element of the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object. For example to target users in a specific country, create an instance of the [CountryTarget](http://msdn.microsoft.com/library/3615a843-e24c-4c54-bf7c-7022dc1c6c1b) object within the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) and assign it to the target's `Location` element. Specify the target country and bid adjustment percentage by creating an instance of the [CountryTargetBid](http://msdn.microsoft.com/library/a66ee965-4501-4b1b-980f-47433a9dd3c6) object, and then assign it to the `Bids` element of the `CountryTarget`.
 
     > [!NOTE]
-    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../docset-overview/geographical-location-codes.md).
+    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../api-reference/geographical-location-codes.md).
 
 2.  To add the `Target` object to your target library, call the [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) operation. Save or keep track of the target identifier that [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) returns.
 
@@ -250,11 +250,11 @@ If you had set `TargetAllDays=true` and `TargetAllHours=true` in version 9, then
 > Once you or another application set the version 10 DayTime target, then the version 9 Day and Hour targets will be nil when retrieved. Any subsequent Day and Hour target updates via the version 9 [UpdateTargetsInLibrary](http://msdn.microsoft.com/library/52b6e364-48ff-4c42-a308-f311b6093dcf) operation will be accepted and overwrite a previously specified DayTime target.
 
 > [!NOTE]
-> If your ad group uses either the version 9 `DayTarget` or version 9 `HourTarget` (not both types), and then you set a version 10 [DayTimeTarget](http://msdn.microsoft.com/library/661202b8-9a21-487e-b344-080a6693cbcd) for the campaign, the [!INCLUDE[brand](../docset-overview/includes/brand.md)] system adds the missing `DayTarget` or `HourTarget` to the ad group.
+> If your ad group uses either the version 9 `DayTarget` or version 9 `HourTarget` (not both types), and then you set a version 10 [DayTimeTarget](http://msdn.microsoft.com/library/661202b8-9a21-487e-b344-080a6693cbcd) for the campaign, the [!INCLUDE[brand](../api-reference/includes/brand.md)] system adds the missing `DayTarget` or `HourTarget` to the ad group.
 > 
-> Remember that when a target type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example if you had a campaign hour target from 11am - 3pm and an ad group day target on Monday, the effective ad group delivery time is Monday, 11am - 3pm. If you then changed the campaign target to a day and time range from 1pm - 1:15pm on Tuesday, [!INCLUDE[brand](../docset-overview/includes/brand.md)] helps preserve your original effective delivery range of Monday, 11am - 3pm by adding an hour target of 11am - 3pm to the ad group target.
+> Remember that when a target type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example if you had a campaign hour target from 11am - 3pm and an ad group day target on Monday, the effective ad group delivery time is Monday, 11am - 3pm. If you then changed the campaign target to a day and time range from 1pm - 1:15pm on Tuesday, [!INCLUDE[brand](../api-reference/includes/brand.md)] helps preserve your original effective delivery range of Monday, 11am - 3pm by adding an hour target of 11am - 3pm to the ad group target.
 
 ## See Also
 [Campaign Management Service Reference](http://msdn.microsoft.com/library/5f50ed8a-6bca-4d30-8340-7290bc074f0e)
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)
 

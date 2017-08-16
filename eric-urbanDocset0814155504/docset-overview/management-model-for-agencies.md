@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Management Model for Agencies
-An agency builds a [!INCLUDE[brand](../docset-overview/includes/brand.md)] application for their company to manage the campaigns of their advertising clients. Agencies may manage some or all aspects of an advertiser account. When sending the invitation to manage a client account, the agency may specify whether the client or agency is responsible for billing. For more information about becoming an agency, see [Getting started as an agency with Bing Ads](http://help.bingads.microsoft.com/#apex/3/en/52083/3) or the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
+An agency builds a [!INCLUDE[brand](../api-reference/includes/brand.md)] application for their company to manage the campaigns of their advertising clients. Agencies may manage some or all aspects of an advertiser account. When sending the invitation to manage a client account, the agency may specify whether the client or agency is responsible for billing. For more information about becoming an agency, see [Getting started as an agency with Bing Ads](http://help.bingads.microsoft.com/#apex/3/en/52083/3) or the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
 
 > [!NOTE]
 > The client account must be set up for post-pay billing. Prepaid accounts are not supported for management by agencies.
@@ -40,7 +40,7 @@ To update a client link, the *TimeStamp* element is required for validation, so 
 The client may only use the *UpdateClientLinks* operation to update the status as LinkAccepted or LinkDeclined.
 
 > [!NOTE]
-> The client may accept or decline through an application built on the [!INCLUDE[brand](../docset-overview/includes/brand.md)] API, or through the **Accounts &amp; Billing** tab in the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application. In either case the client credentials must be used to accept or decline. For more information, see [Accept an agency request](http://advertise.bingads.microsoft.com/help-topic/how-to/moonshot_proc_acceptagencyinvitation.htm/accept-an-agency-request).
+> The client may accept or decline through an application built on the [!INCLUDE[brand](../api-reference/includes/brand.md)] API, or through the **Accounts &amp; Billing** tab in the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application. In either case the client credentials must be used to accept or decline. For more information, see [Accept an agency request](http://advertise.bingads.microsoft.com/help-topic/how-to/moonshot_proc_acceptagencyinvitation.htm/accept-an-agency-request).
 
 If the client sets the status to LinkDeclined, the client link lifecycle ends. You may not update a declined client link, and you must send a new invitation to manage the client account. If the client sets the status to LinkAccepted, the status transitions to LinkInProgress. If the link process succeeds, the service updates the client link status to Active.
 
@@ -62,7 +62,7 @@ If the unlink process fails, possibly due to a billing transition error, the cli
 
 *Figure: Unlink Status Flow*
 
-For code examples that show how to add and update a client link invitation, see [ C&#35;](../docset-overview/link-to-client-accounts-in-csharp.md) | [Java](../docset-overview/link-to-client-accounts-in-java.md) | [PHP](../docset-overview/link-to-client-accounts-in-php.md) | [Python](../docset-overview/link-to-client-accounts-in-python.md).
+For code examples that show how to add and update a client link invitation, see [ C&#35;](../code-examples/link-to-client-accounts-in-csharp.md) | [Java](../code-examples/link-to-client-accounts-in-java.md) | [PHP](../code-examples/link-to-client-accounts-in-php.md) | [Python](../code-examples/link-to-client-accounts-in-python.md).
 
 ## Credentials and Account Access
 The following are the header elements and the corresponding identifiers that an agency would use.

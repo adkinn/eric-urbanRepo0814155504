@@ -89,6 +89,6 @@ To add, get, update, or delete the ad group remarketing list association between
 
 ## See Also
 
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 [FAQ: Universal Event Tracking](https://help.bingads.microsoft.com/#apex/3/en/53056/2)  
 [FAQ: Remarketing in Paid Search](https://help.bingads.microsoft.com/#apex/3/en/56727/1)  

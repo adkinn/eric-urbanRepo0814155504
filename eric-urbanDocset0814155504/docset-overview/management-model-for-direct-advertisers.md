@@ -13,17 +13,17 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Management Model for Direct Advertisers
-A direct advertiser builds a [!INCLUDE[brand](../docset-overview/includes/brand.md)] application for its own advertising campaigns and is billed directly by [!INCLUDE[brand](../docset-overview/includes/brand.md)] for valid ad clicks. The following sections describe the entity model and credentials for direct advertisers.
+A direct advertiser builds a [!INCLUDE[brand](../api-reference/includes/brand.md)] application for its own advertising campaigns and is billed directly by [!INCLUDE[brand](../api-reference/includes/brand.md)] for valid ad clicks. The following sections describe the entity model and credentials for direct advertisers.
 
 ## Direct Advertiser Entity Model
 The following figure shows how one or more accounts can be managed directly within one customer.
 
 ![Management Model Direct Advertiser](../docset-overview/media/management-model-direct-advertiser.png "Management Model Direct Advertiser")
 
-The users of a direct advertiser can programmatically manage any designated accounts within their own customer, for example Account A and Account B. An application owned and operated by the direct advertiser may be used to manage some or all aspects of an advertiser account. Users can also manage their respective account through the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application or a third-party tool.
+The users of a direct advertiser can programmatically manage any designated accounts within their own customer, for example Account A and Account B. An application owned and operated by the direct advertiser may be used to manage some or all aspects of an advertiser account. Users can also manage their respective account through the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application or a third-party tool.
 
 ## Credentials and Account Access
-The following are the header elements and the corresponding identifiers that a direct advertiser would use to authenticate with [!INCLUDE[brand](../docset-overview/includes/brand.md)] services. The direct advertiser is the only customer entity in this model and owns each element.
+The following are the header elements and the corresponding identifiers that a direct advertiser would use to authenticate with [!INCLUDE[brand](../api-reference/includes/brand.md)] services. The direct advertiser is the only customer entity in this model and owns each element.
 
 > [!NOTE]
 > If you use the *AuthenticationToken*, the *UserName* and *Password* elements are ignored. For more information, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).

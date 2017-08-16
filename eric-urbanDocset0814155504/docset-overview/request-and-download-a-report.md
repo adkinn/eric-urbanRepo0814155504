@@ -17,7 +17,7 @@ The following procedure outlines the steps to submit a report request and to dow
 
 If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../docset-overview/bing-ads-client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-submitgeneratereport.aspx#request) and [PollGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-pollgeneratereport.aspx#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [C#](../docset-overview/getting-started-using-csharp-with-bing-ads-services.md#reportingservicemanager) | [Java](../docset-overview/getting-started-using-java-with-bing-ads-services.md#reportingservicemanager) | [Python](../docset-overview/getting-started-using-python-with-bing-ads-services.md#reportingservicemanager).
 
-For a code example that shows how to download a report using the Reporting service with the workflow described below, see [Report Requests in PHP](../docset-overview/report-requests-in-php.md).
+For a code example that shows how to download a report using the Reporting service with the workflow described below, see [Report Requests in PHP](../code-examples/report-requests-in-php.md).
 
 #### Request a Report
 

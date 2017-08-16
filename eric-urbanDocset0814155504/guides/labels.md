@@ -15,7 +15,7 @@ ms.author: "eur"
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../guides/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../docset-overview/includes/pilot_comingsoon.md)]
 > 
 > Reporting for labels is not yet available via Bing Ads API. You can use Reporting in the Bing Ads web applicationn. 
 
@@ -27,10 +27,10 @@ With labels, you could:
 
 The important thing is that it’s all up to you. You decide what your labels mean and how to apply them to your campaigns, ad groups, ads, and keywords.
 
-![Labels in the Bing Ads Web Application](../guides/media/labels-in-the-bing-ads-web-application.png)
+![Labels in the Bing Ads Web Application](../docset-overview/media/labels-in-the-bing-ads-web-application.png)
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
-You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../guides/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../docset-overview/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
 
 The following Bulk records are available for managing labels and label associations. 
 

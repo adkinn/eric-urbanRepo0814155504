@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Desktop Application in Java
-The example desktop application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../get-started/includes/brand.md)] services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. For more information, please see [Setting Up the Development Environment](../get-started/getting-started-using-java-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443).
+The example desktop application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../api-reference/includes/brand.md)] services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. For more information, please see [Setting Up the Development Environment](../docset-overview/getting-started-using-java-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -275,7 +275,7 @@ The example desktop application sends authentication requests to the Microsoft a
 9. Right-click OAuthDesktopApplication.java, and click **Run As** -&gt; **Java Application**.
 
 ## <a name="sandbox"></a>Configuring Sandbox
-To use the [Sandbox](../Topic/Sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
+To use the [Sandbox](../docset-overview/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
 
 ```
 environment=Sandbox
@@ -297,7 +297,7 @@ CustomerService = new ServiceClient<ICustomerManagementService>(
 ```
 
 ## See Also
-[Sandbox](../Topic/Sandbox.md)  
-[Java Examples for Bing Ads](../Topic/Java%20Examples%20for%20Bing%20Ads.md)  
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Sandbox](../docset-overview/sandbox.md)  
+[Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

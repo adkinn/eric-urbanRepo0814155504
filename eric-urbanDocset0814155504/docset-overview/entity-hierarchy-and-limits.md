@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Entity Hierarchy and Limits
-The following figure shows the high level [!INCLUDE[brand](../docset-overview/includes/brand.md)] entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage [!INCLUDE[brand](../docset-overview/includes/brand.md)] entities, see [Bing Ads API Overview](../docset-overview/bing-ads-api-overview.md).
+The following figure shows the high level [!INCLUDE[brand](../api-reference/includes/brand.md)] entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage [!INCLUDE[brand](../api-reference/includes/brand.md)] entities, see [Bing Ads API Overview](../docset-overview/bing-ads-api-overview.md).
 
 ![Entity Hierarchy](../docset-overview/media/entity-hierarchy.png)  
 
@@ -397,5 +397,5 @@ The maximum number of radius criterions that you can specify per campaign or ad 
 
 ## See Also
 [Bing Ads API Overview](../docset-overview/bing-ads-api-overview.md)  
-[Bing Ads API Reference](../docset-overview/bing-ads-api-reference.md)  
+[Bing Ads API Reference](../api-reference/bing-ads-api-reference.md)  
 

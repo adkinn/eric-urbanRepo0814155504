@@ -17,13 +17,13 @@ Get started developing Bing Ads applications in any programming language which s
 
 ## In This Section
 
--   [C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md)  
--   [Java Examples for Bing Ads](../docset-overview/java-examples-for-bing-ads.md)  
--   [PHP Examples for Bing Ads](../docset-overview/php-examples-for-bing-ads.md)  
--   [Python Examples for Bing Ads](../docset-overview/python-examples-for-bing-ads.md)
+-   [C&#35; Examples for Bing Ads](../code-examples/csharp-examples-for-bing-ads.md)  
+-   [Java Examples for Bing Ads](../code-examples/java-examples-for-bing-ads.md)  
+-   [PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md)  
+-   [Python Examples for Bing Ads](../code-examples/python-examples-for-bing-ads.md)
 
 ## Related Sections
 
 -   [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md)  
--   [Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
--   [Bing Ads API Reference](../docset-overview/bing-ads-api-reference.md)  
+-   [Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
+-   [Bing Ads API Reference](../api-reference/bing-ads-api-reference.md)  

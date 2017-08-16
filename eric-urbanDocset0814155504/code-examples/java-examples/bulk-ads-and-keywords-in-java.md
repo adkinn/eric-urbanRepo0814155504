@@ -1,7 +1,7 @@
 ---
 title: "Bulk Ads and Keywords in Java"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Ads and Keywords in Java
-The following example shows how to add ads and keywords to a new ad group using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+The following example shows how to add ads and keywords to a new ad group using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../docset-overview/bing-ads-client-libraries.md).
 
-[!INCLUDE[java_header](../../code-examples/java-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -482,4 +482,4 @@ public class BulkKeywordsAds extends BulkExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../Topic/Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md)  
+[Getting Started Using Java with Bing Ads Services](../../docset-overview/getting-started-using-java-with-bing-ads-services.md)  

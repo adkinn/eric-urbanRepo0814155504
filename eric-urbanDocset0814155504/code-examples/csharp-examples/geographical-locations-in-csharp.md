@@ -1,7 +1,7 @@
 ---
 title: "Geographical Locations in C#"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Geographical Locations in C#
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../code-examples/csharp-examples/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../Topic/Geographical%20Location%20Codes.md).
+ that can be used with [!INCLUDE[brand](../../api-reference/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
@@ -175,4 +175,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../Topic/Getting%20Started%20Using%20C%23%20with%20Bing%20Ads%20Services.md)   
+[Getting Started Using C&#35; with Bing Ads Services](../../docset-overview/getting-started-using-csharp-with-bing-ads-services.md)   

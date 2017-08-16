@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Native Ads
-Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by [!INCLUDE[brand](../docset-overview/includes/brand.md)] leveraging all of your [!INCLUDE[brand](../docset-overview/includes/brand.md)] creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard [!INCLUDE[brand](../docset-overview/includes/brand.md)] campaigns on the search network and support all of the targeting available from [!INCLUDE[brand](../docset-overview/includes/brand.md)]. Native ads have CPC pricing. Native ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.
+Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by [!INCLUDE[brand](../api-reference/includes/brand.md)] leveraging all of your [!INCLUDE[brand](../api-reference/includes/brand.md)] creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard [!INCLUDE[brand](../api-reference/includes/brand.md)] campaigns on the search network and support all of the targeting available from [!INCLUDE[brand](../api-reference/includes/brand.md)]. Native ads have CPC pricing. Native ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.
 
 > [!NOTE]
 > [!INCLUDE[pilot_comingsoon](../docset-overview/includes/pilot_comingsoon.md)]
@@ -29,7 +29,7 @@ You can manage native ads settings with either the [Bulk Service](https://msdn.m
 ## <a name="bulkservice"></a>Managing Native Ads Settings with the Bulk Service
 The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../docset-overview/bulk-download-and-upload.md).
 
-These are the [!INCLUDE[brand](../docset-overview/includes/brand.md)] entities with properties for managing Native ads that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). Use the *Bid Adjustment* column of the following records to get and set the Native ads bid adjustment.
+These are the [!INCLUDE[brand](../api-reference/includes/brand.md)] entities with properties for managing Native ads that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). Use the *Bid Adjustment* column of the following records to get and set the Native ads bid adjustment.
 
 -   [Campaign](https://msdn.microsoft.com/library/dn764752.aspx)  
 -   [Ad Group](https://msdn.microsoft.com/library/dn764731.aspx)  
@@ -97,5 +97,5 @@ For more information about reporting, see [Reports](../docset-overview/reports.m
 You can also get performance data for Native ads using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). You can get performance data for Native ads when downloading the [Campaign](https://msdn.microsoft.com/library/dn764752.aspx), [Ad Group](https://msdn.microsoft.com/library/dn764731.aspx), and [Keyword](https://msdn.microsoft.com/library/dn764751.aspx) records.
 
 ## See Also
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

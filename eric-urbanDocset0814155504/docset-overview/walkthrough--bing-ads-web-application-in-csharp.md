@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Web Application in C#
-The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../docset-overview/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../docset-overview/getting-started-using-csharp-with-bing-ads-services.md#requirements). 
+The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../api-reference/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../docset-overview/getting-started-using-csharp-with-bing-ads-services.md#requirements). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -415,7 +415,7 @@ To use sandbox, follow these additional steps.
 
 ## See Also
 [Sandbox](../docset-overview/sandbox.md)  
-[Bing Ads .NET SDK Reference](../docset-overview/bing-ads-.net-sdk-reference.md)  
-[C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md)  
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[Bing Ads .NET SDK Reference](../api-reference/bing-ads-.net-sdk-reference.md)  
+[C&#35; Examples for Bing Ads](../code-examples/csharp-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

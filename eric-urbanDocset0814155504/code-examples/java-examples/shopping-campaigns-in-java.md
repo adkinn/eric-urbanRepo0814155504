@@ -1,7 +1,7 @@
 ---
 title: "Shopping Campaigns in Java"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in Java
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../code-examples/java-examples/includes/brand_bsc.md)] campaigns..
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../code-examples/includes/brand_bsc.md)] campaigns..
 
-[!INCLUDE[java_header](../../code-examples/java-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -924,4 +924,4 @@ public class ShoppingCampaigns extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../Topic/Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md)  
+[Getting Started Using Java with Bing Ads Services](../../docset-overview/getting-started-using-java-with-bing-ads-services.md)  

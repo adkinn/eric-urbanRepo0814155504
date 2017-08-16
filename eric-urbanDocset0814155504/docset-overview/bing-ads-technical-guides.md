@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Technical Guides
-The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../docset-overview/includes/brand.md)] services.
+The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../api-reference/includes/brand.md)] services.
 
 ## Guides
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](../docset-overview/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../docset-overview/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
-|[Bing Ads Services Protocol](../docset-overview/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../docset-overview/includes/brand.md)] services efficiently.|
+|[Authentication with OAuth](../docset-overview/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../api-reference/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
+|[Bing Ads Services Protocol](../docset-overview/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../api-reference/includes/brand.md)] services efficiently.|
 |[Handling Service Errors and Exceptions](../docset-overview/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
 |[Customer Accounts](../docset-overview/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
 |[Campaigns](../docset-overview/campaigns.md)|Set your campaign budget and bid strategy.|
@@ -30,5 +30,5 @@ The technical guides below describe core advertising scenarios using [!INCLUDE[b
 ## See Also
 [Getting Started With the Bing Ads API](../docset-overview/getting-started-with-the-bing-ads-api.md)  
 [Bing Ads API Overview](../docset-overview/bing-ads-api-overview.md)  
-[Bing Ads API Reference](../docset-overview/bing-ads-api-reference.md)  
+[Bing Ads API Reference](../api-reference/bing-ads-api-reference.md)  
 

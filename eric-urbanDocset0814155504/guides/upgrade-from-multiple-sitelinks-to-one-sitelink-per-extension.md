@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Upgrade from Multiple Sitelinks to One Sitelink Per Extension
 > [!IMPORTANT]
-> [!INCLUDE[sitelinks_migration_eta](../guides/includes/sitelinks_migration_eta.md)]
+> [!INCLUDE[sitelinks_migration_eta](../docset-overview/includes/sitelinks_migration_eta.md)]
 
 Use this guide to prepare for migration from multiple sitelinks to one sitelink per ad extension. The sections below describe what you can expect before, during, and after migration.
 
@@ -55,5 +55,5 @@ When using the [Bulk](https://msdn.microsoft.com/library/bing-ads-bulk-service-r
 
 
 ## See Also
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

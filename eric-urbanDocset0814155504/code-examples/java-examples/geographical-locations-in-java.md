@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Geographical Locations in Java
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../code-examples/java-examples/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../Topic/Geographical%20Location%20Codes.md).
+ that can be used with [!INCLUDE[brand](../../api-reference/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
@@ -189,4 +189,4 @@ public class GeographicalLocations extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../Topic/Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md)  
+[Getting Started Using Java with Bing Ads Services](../../docset-overview/getting-started-using-java-with-bing-ads-services.md)  

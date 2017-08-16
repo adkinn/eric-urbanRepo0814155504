@@ -38,7 +38,7 @@ When an operation fails, it can return one of the following faults. To determine
 
 All fault objects are derived from the *ApplicationFault* object. The *ApplicationFault* object defines the *TrackingId* element, which uniquely identifies the log entry that contains the details of the API call.
 
-The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../Topic/Bing%20Ads%20API%20Error%20Codes.md).
+The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../api-reference/bing-ads-api-error-codes.md).
 
 Available fault and data objects vary per service. The following table describes the fault model and links to error data objects for each service.
 
@@ -61,7 +61,7 @@ Typically indicates usage of an incorrect username, password, or developer token
 Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example, calling *SubmitGenerateReport* where the specified user does not have permissions to the specified account identifier.
 
 ### HTTP 500
-All [!INCLUDE[brand](../guides/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
+All [!INCLUDE[brand](../api-reference/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
 
 ```
 HTTP/1.1 500 Internal Server Error
@@ -105,7 +105,7 @@ You can follow these steps to capture the SOAP envelopes from a Java application
 #### Spring Framework and Apache CXF Options
 You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application in Eclipse.
 
-1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](Getting%20Started%20Using%20Java%20with%20Bing%20Ads%20Services.md). 
+1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](../docset-overview/getting-started-using-java-with-bing-ads-services.md). 
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
@@ -180,7 +180,7 @@ use SOAP::Lite ( +trace => all, maptype => {} );
 ```
 
 ## <a name="engagesupport"></a>Engaging Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../guides/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
+To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../api-reference/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
 
 To resolve the issue efficiently, please provide support with the following information up front.
 
@@ -189,7 +189,7 @@ To resolve the issue efficiently, please provide support with the following info
     > [!NOTE]
     > If you are managing user authentication with OAuth, and escalating an issue related to error code *105* or *106*, please also include the user identifier corresponding to the Microsoft Account.
     > 
-    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../guides/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../guides/authentication-with-oauth.md).
+    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../api-reference/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
 
 -   **Issue or Error**: Include all elements of the SOAP response, and please also note the date and time when the error occurred.
 
@@ -200,7 +200,7 @@ To resolve the issue efficiently, please provide support with the following info
 -   **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
 
 ## <a name="wcf"></a>WCF Exceptions using C#
-Generic SOAP faults that are not specific to [!INCLUDE[brand](../guides/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
+Generic SOAP faults that are not specific to [!INCLUDE[brand](../api-reference/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
 
 For information about exceptions that you should expect from WCF, see [Expected Exceptions](http://go.microsoft.com/fwlink/?LinkID=219973).
 
@@ -209,6 +209,6 @@ You should not call the *Close* method in the finally block to release the servi
 For the same reason, the use of the **using** statement is not recommended. For more information, see [Avoiding Problems with the Using Statement](http://go.microsoft.com/fwlink/?LinkID=219970).
 
 ## See Also
-[Bing Ads API Error Codes](../Topic/Bing%20Ads%20API%20Error%20Codes.md)  
-[Bing Ads Web Service Addresses](../Topic/Bing%20Ads%20Web%20Service%20Addresses.md)  
+[Bing Ads API Error Codes](../api-reference/bing-ads-api-error-codes.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 

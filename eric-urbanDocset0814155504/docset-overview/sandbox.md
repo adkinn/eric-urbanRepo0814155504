@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Sandbox
-[!INCLUDE[brand](../docset-overview/includes/brand.md)] provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
+[!INCLUDE[brand](../api-reference/includes/brand.md)] provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
 
-Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md).
+Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](http://go.microsoft.com/fwlink/?LinkId=269628).
@@ -34,7 +34,7 @@ The sandbox and production environments use separate credentials. To get access 
 
 When you sign up for an account, append _sbx to the username that you choose, for example contosoapi_sbx. In addition, do not specify a payment instrument.
 
-All [!INCLUDE[brand](../docset-overview/includes/brand.md)] customers may use the following multi-user developer token in sandbox: **BBD37VB98**
+All [!INCLUDE[brand](../api-reference/includes/brand.md)] customers may use the following multi-user developer token in sandbox: **BBD37VB98**
 
 > [!NOTE]
 > Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Managing User Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
@@ -48,7 +48,7 @@ Sandbox should not be used in the same capacity as production.
 -   Please do not use more than one thread.    
 
 ## <a name="adinsight"></a>Ad Insight Service
-Opportunities are updated daily in sandbox for existing campaigns, ad groups, and keywords to test the end to end coding workflow. You may get test opportunities for up to 1,000 keywords across all accounts per [!INCLUDE[brand](../docset-overview/includes/brand.md)] customer. You should not use the test data to infer or expect similar performance for your campaigns, ad groups, or keywords in production.
+Opportunities are updated daily in sandbox for existing campaigns, ad groups, and keywords to test the end to end coding workflow. You may get test opportunities for up to 1,000 keywords across all accounts per [!INCLUDE[brand](../api-reference/includes/brand.md)] customer. You should not use the test data to infer or expect similar performance for your campaigns, ad groups, or keywords in production.
 
 > [!NOTE]
 > Sandbox opportunity data is refreshed and updated each weekend, and is available by Monday.
@@ -147,9 +147,9 @@ If you specified a term using the following components, the resulting term would
     -   Approved in IE
 
 ### <a name="productads"></a>Product Ads
-Product ads are supported in sandbox in the United States. To be auto-approved you must create a catalog and a [!INCLUDE[storebrand](../docset-overview/includes/storebrand.md)] store that ends with "sandbox" as follows.
+Product ads are supported in sandbox in the United States. To be auto-approved you must create a catalog and a [!INCLUDE[storebrand](../api-reference/includes/storebrand.md)] store that ends with "sandbox" as follows.
 
-1.  In the [!INCLUDE[brand](../docset-overview/includes/brand.md)] web application click on **Tools**.
+1.  In the [!INCLUDE[brand](../api-reference/includes/brand.md)] web application click on **Tools**.
 
 2.  Under **Management Tools**, click on **Bing Merchant Center**.
 

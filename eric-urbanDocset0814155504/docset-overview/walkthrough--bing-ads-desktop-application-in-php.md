@@ -63,6 +63,6 @@ To authenticate with OAuth you'll need a refresh token to get started.
    
 
 ## See Also
-[PHP Examples for Bing Ads](../docset-overview/php-examples-for-bing-ads.md)  
-[Bing Ads Web Service Addresses](../docset-overview/bing-ads-web-service-addresses.md)  
+[PHP Examples for Bing Ads](../code-examples/php-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../api-reference/bing-ads-web-service-addresses.md)  
 
