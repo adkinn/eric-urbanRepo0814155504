@@ -1,0 +1,2 @@
+The product partition type.
+
