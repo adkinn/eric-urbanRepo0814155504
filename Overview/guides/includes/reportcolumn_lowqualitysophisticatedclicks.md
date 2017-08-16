@@ -1,1 +1,0 @@
-Invalid clicks that use sophisticated means to appear valid. You are not billed for these clicks. For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).
