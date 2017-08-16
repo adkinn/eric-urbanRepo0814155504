@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
 ms.assetid: b44626f9-f7b9-4d40-8f4a-271cba046b43
-caps.latest.revision: 5
+caps.latest.revision: 6
 author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
