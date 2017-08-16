@@ -1,19 +1,19 @@
 ---
 title: "Getting Started Using C# with Bing Ads Services"
 ms.custom: na
-ms.date: "07/20/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: "article"
 ms.assetid: 2c64b3f2-5b05-458c-a876-e51d013f4435
-caps.latest.revision: 26
+caps.latest.revision: 27
 author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using C# with Bing Ads Services
-To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-csharp.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-csharp.md) application. You can also browse the [C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application. You can also browse the [C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -58,7 +58,7 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 2.  Within the console command line, type Install-Package Microsoft.BingAds.SDK.
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](../docset-overview/walkthrough--bing-ads-web-application-in-csharp.md) or [Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-csharp.md) application.
+Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
 You must initialize a new instance of *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../docset-overview/includes/brand.md)] uses to authorize a user. The *ServiceClient&lt;TService&gt;*, *BulkServiceManager* and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
@@ -83,7 +83,7 @@ Some services such as Customer Management do not accept *CustomerId* and *Custom
 ## <a name="oauth"></a>Using OAuth
 The OAuth classes in the SDK abstract the low level user authorization details, so you can focus at a high level on your security requirements. The SDK objects take care of low level details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream.
 
-To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your *AuthorizationData* object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). The steps below describe the procedural workflow, and references code blocks from the [Walkthrough: Bing Ads Web Application in C&#35;](../docset-overview/walkthrough--bing-ads-web-application-in-csharp.md). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
+To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your *AuthorizationData* object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/draft-ietf-oauth-v2-15#section-4.1). The steps below describe the procedural workflow, and references code blocks from the [Walkthrough: Bing Ads Web Application in C&#35;](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md). For more information both about authorization code and implicit grant flows, see [Authentication with OAuth](../docset-overview/authentication-with-oauth.md).
 
 1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *ClientId*, *ClientSecret*, and *RedirectionUri* with the values configured in [Registering Your Application](../docset-overview/authentication-with-oauth.md#registerapplication).
 
@@ -528,7 +528,7 @@ Some exceptions are only returned when using *BulkServiceManager* (using Microso
 For code examples showing how to handle Bing Ads API service and Bing Ads .NET SDK exceptions, see [C# Examples for Bing Ads](../docset-overview/csharp-examples-for-bing-ads.md). 
 
 ## <a name="sandbox"></a>Configuring Sandbox
-Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* ([Web](../docset-overview/walkthrough--bing-ads-web-application-in-csharp.md) application) or *App.config* ([Desktop](../docset-overview/walkthrough--bing-ads-desktop-application-in-csharp.md) application) file.
+Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* ([Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) application) or *App.config* ([Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application) file.
 
 ```c#
 <add key="BingAdsEnvironment" value ="Sandbox"/>

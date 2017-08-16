@@ -1,7 +1,7 @@
 ---
 title: "Bing Ads Client Libraries"
 ms.custom: na
-ms.date: "07/10/2017"
+ms.date: "08/16/2017"
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
