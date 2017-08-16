@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> With the availability of Bing Ads API version 11, the previous versions of the API (v10 for Ad Insight, Bulk, and Campaign Management services and v9 for Customer Billing, Customer Management, and Reporting services) are now deprecated. We will sunset (i.e., shut down these services) on October 31st. To avoid any disruption to your tools after the older services sunset, migrate to the v11 services as soon as possible. For more information, see [Migrating to Bing Ads API Version 11](Migrating%20to%20Bing%20Ads%20API%20Version%2011.md).
