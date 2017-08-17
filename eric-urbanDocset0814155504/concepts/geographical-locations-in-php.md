@@ -20,7 +20,7 @@ The following example shows how to download the comma separated value (CSV) file
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -129,7 +129,7 @@ try
     printf("LastModifiedTimeUtc: %s\n", $lastModifiedTimeUtc);
     
     // Download the file if it was modified since the previous download.
-    if($previousSyncTimeUtc \< $lastModifiedTimeUtc)
+    if($previousSyncTimeUtc < $lastModifiedTimeUtc)
     {
         printf("Downloading the file locally: %s\n", $GLOBALS['LocalFile']);
         DownloadFile($fileUrl);

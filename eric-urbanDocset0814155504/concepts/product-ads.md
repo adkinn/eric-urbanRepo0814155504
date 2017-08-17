@@ -231,8 +231,8 @@ If you request a report using account level scope, then the performance reports 
 
 ```xml
 <Scope>
-    \<AccountIds i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    \<AdGroups i:nil="true" />
+    <AccountIds i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <AdGroups i:nil="true" />
     <Campaigns>
     <CampaignReportScope>
         <AccountId>AccountIdGoesHere</AccountId>

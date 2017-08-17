@@ -161,8 +161,8 @@ The *ServiceClient&lt;TService&gt;* class handles common request header fields f
 The primary method of the *ServiceClient&lt;TService&gt;* class is *CallAsync*. The *method* parameter is the delegate for the service operation that you want to call. The *request* parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.
 
 ```csharp
-public TResponse CallAsync\<TRequest, TResponse>(
-    Func\<TService, TRequest, TResponse> method,
+public TResponse CallAsync<TRequest, TResponse>(
+    Func<TService, TRequest, TResponse> method,
     TRequest request
 )
 ```

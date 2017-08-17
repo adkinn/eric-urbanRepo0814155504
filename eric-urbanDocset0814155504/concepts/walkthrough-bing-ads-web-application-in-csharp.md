@@ -159,7 +159,7 @@ The example web application sends authentication requests to the Microsoft accou
                     return View();
                 }
                 // Bulk service operations can throw AdApiFaultDetail.
-                catch (FaultException\<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
                 {
                     ViewBag.Errors = string.Format("Error when calling the Bulk service: ");
                     ViewBag.Errors += string.Join("; ",
@@ -168,7 +168,7 @@ The example web application sends authentication requests to the Microsoft accou
                     return View();
                 }
                 // Customer Management service operations can throw AdApiFaultDetail.
-                catch (FaultException\<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
                 {
                     ViewBag.Errors = string.Format("Error when calling the Customer Management service: ");
                     ViewBag.Errors += string.Join("; ",
@@ -206,7 +206,7 @@ The example web application sends authentication requests to the Microsoft accou
             /// <summary>
             /// Uses the BulkService class to add a campaign. 
             /// </summary>
-            private async Task\<long?> AddCampaignInBulkAsync(AuthorizationData authorizationData)
+            private async Task<long?> AddCampaignInBulkAsync(AuthorizationData authorizationData)
             {
                 _bulkService = new BulkServiceManager(authorizationData);
                 _bulkService.StatusPollIntervalInMilliseconds = 1000;
@@ -304,7 +304,7 @@ The example web application sends authentication requests to the Microsoft accou
             /// </summary>
             /// <param name="userId">The Bing Ads user identifier.</param>
             /// <returns>List of accounts that the user can manage.</returns>
-            private async Task\<Account[]> SearchAccountsByUserIdAsync(long? userId)
+            private async Task<Account[]> SearchAccountsByUserIdAsync(long? userId)
             {
                 var predicate = new Predicate
                 {
@@ -337,7 +337,7 @@ The example web application sends authentication requests to the Microsoft accou
             /// multi-dimensional array.</param>
             private void SetUserDataByAccountIndex(int accountIndex)
             {
-                if (accountIndex \< 0 || accountIndex > _accountCustomerIds.Length) return;
+                if (accountIndex < 0 || accountIndex > _accountCustomerIds.Length) return;
 
                 var accountId = _accountCustomerIds[accountIndex, 0];
                 var customerId = _accountCustomerIds[accountIndex, 1];

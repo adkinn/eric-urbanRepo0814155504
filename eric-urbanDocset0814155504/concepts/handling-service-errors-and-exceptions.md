@@ -109,7 +109,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
-    \<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
       <modelVersion>4.0.0</modelVersion>
       <groupId>com.microsoft.bingads.examples</groupId>
       <artifactId>BingAdsDesktopApp</artifactId>
@@ -133,17 +133,17 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
    
 2.  Add cxf.xml to your project, and add the following xml.
     ```xml
-    \<beans xmlns="http://www.springframework.org/schema/beans"
+    <beans xmlns="http://www.springframework.org/schema/beans"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:cxf="http://cxf.apache.org/core"
         xsi:schemaLocation="
         http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-      \<cxf:bus>
-        \<cxf:features>
-          \<cxf:logging/>
-        \</cxf:features>
-      \</cxf:bus> 
+      <cxf:bus>
+        <cxf:features>
+          <cxf:logging/>
+        </cxf:features>
+      </cxf:bus> 
     </beans>
     ```
     

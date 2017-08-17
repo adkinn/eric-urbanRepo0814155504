@@ -18,7 +18,7 @@ The following example shows how to search for customers that can be managed by t
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 

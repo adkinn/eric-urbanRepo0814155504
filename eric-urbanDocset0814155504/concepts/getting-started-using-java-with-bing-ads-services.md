@@ -43,7 +43,7 @@ The Bing Ads Java SDK depends on the libraries listed at the [Maven Repository](
 When you create a Maven project and include the *microsoft.bingads* Maven artifact as shown below, additional dependencies are installed automatically. If you are not using a Maven project, you must include the correct version of each dependency. For more information, please see the [Walkthrough: Bing Ads Web Application in Java](../concepts/walkthrough-bing-ads-web-application-in-java.md) or [Walkthrough: Bing Ads Desktop Application in Java](../concepts/walkthrough-bing-ads-desktop-application-in-java.md) application examples.
 
 ```xml
-\<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   ...
   <dependencies>
     <dependency>

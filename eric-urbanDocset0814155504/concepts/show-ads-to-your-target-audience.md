@@ -115,8 +115,8 @@ For more information and examples, please see [How can I get my ads in front of 
 For campaigns and ad groups created using the [!INCLUDE[brand](../concepts/includes/brand.md)] API, there is no associated target defined by default. For example if you call [GetTargetsByCampaignIds](http://msdn.microsoft.com/library/379faa2e-6f20-4674-9fc2-466b4b3d6ac5), the response would include a nil target as follows.
 
 ```xml
-\<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  \<Target i:nil="true"/>
+<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Target i:nil="true"/>
 </Targets>
 ```
 This is the effective equivalent of targeting all ages, days, genders, hours, and locations worldwide.
@@ -124,16 +124,16 @@ This is the effective equivalent of targeting all ages, days, genders, hours, an
 As a best practice you should consider at minimum adding a location target corresponding to the customer market country. For example, by default in the [!INCLUDE[brand](../concepts/includes/brand.md)] web application, **All locations worldwide** is not the default setting. If your [Customer](http://msdn.microsoft.com/library/a4c8e03e-e494-4fb7-9dbb-3bea2f095249) market country is set to  US, then by default when creating a new campaign in the [!INCLUDE[brand](../concepts/includes/brand.md)] web application your campaign will target the United States within **Selected cities, metro areas, states/provinces, and countries/regions**. When getting targets the service will return the corresponding [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) as follows.
 
 ```xml
-\<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
    <Target>
-     \<Age i:nil="true"/>
-     \<DayTime i:nil="true"/>
-     \<ForwardCompatibilityMap xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
-     \<Gender i:nil="true"/>
+     <Age i:nil="true"/>
+     <DayTime i:nil="true"/>
+     <ForwardCompatibilityMap xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+     <Gender i:nil="true"/>
      <Id>TargetIdGoesHere</Id>
      <IsLibraryTarget>true</IsLibraryTarget>
      <Location>
-        \<CityTarget i:nil="true"/>
+        <CityTarget i:nil="true"/>
         <CountryTarget>
           <Bids>
            <CountryTargetBid>
@@ -144,10 +144,10 @@ As a best practice you should consider at minimum adding a location target corre
         </Bids>
         </CountryTarget>
         <IntentOption>PeopleInOrSearchingForOrViewingPages</IntentOption>
-        \<MetroAreaTarget i:nil="true"/>
-        \<PostalCodeTarget i:nil="true"/>
-        \<RadiusTarget i:nil="true"/>
-        \<StateTarget i:nil="true"/>
+        <MetroAreaTarget i:nil="true"/>
+        <PostalCodeTarget i:nil="true"/>
+        <RadiusTarget i:nil="true"/>
+        <StateTarget i:nil="true"/>
      </Location>
      <Name>targetgroup1</Name>
   </Target>

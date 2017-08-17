@@ -42,7 +42,7 @@ The example web application sends authentication requests to the Microsoft accou
     > For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
 
     ```xml
-    \<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
       <modelVersion>4.0.0</modelVersion>
       <groupId>com.microsoft.bingads.examples</groupId>
@@ -75,10 +75,10 @@ The example web application sends authentication requests to the Microsoft accou
 11. Open the Index.jsp file and replace its contents with the following code block.
 
     ```java
-    \<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-    \<%@ page import="java.net.URL" %>
-    \<%@ page import="com.microsoft.bingads.*" %>
-    \<%@ page import="com.microsoft.bingads.v11.customermanagement.*" %>
+    <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+    <%@ page import="java.net.URL" %>
+    <%@ page import="com.microsoft.bingads.*" %>
+    <%@ page import="com.microsoft.bingads.v11.customermanagement.*" %>
 
     <%! 
     	static AuthorizationData authorizationData;
@@ -92,7 +92,7 @@ The example web application sends authentication requests to the Microsoft accou
     	static long accountsCount = 0;
      %>
 
-     \<%! 
+     <%! 
     	//Gets a User object by the specified Bing Ads user identifier.
 
     	 static User getUser(java.lang.Long userId) throws Exception
@@ -228,10 +228,10 @@ The example web application sends authentication requests to the Microsoft accou
         }	
     %>
 
-    \<!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
     <head>
-        \<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <title>Bing Ads Web Application Example</title>
         <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
     </head>
@@ -239,7 +239,7 @@ The example web application sends authentication requests to the Microsoft accou
         <div id="content" class="container">
         	<div>
         		<br/>    		    		
-        		<b>You have \<%= accountsCount %> accounts</b>    		
+        		<b>You have <%= accountsCount %> accounts</b>    		
 
         	</div> 
         </div>

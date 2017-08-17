@@ -18,7 +18,7 @@ The following example shows how to request and retrieve a keyword performance re
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -148,7 +148,7 @@ try
     // If the call succeeds, stop polling. If the call or 
     // download fails, the call throws a fault.
     
-    for ($i = 0; $i \< 10; $i++)
+    for ($i = 0; $i < 10; $i++)
     {
     	sleep($waitTime);
     

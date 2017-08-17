@@ -86,7 +86,7 @@ namespace BingAdsExamplesLibrary.V11
                     // devices, genders, and locations. As a best practice you should consider at minimum 
                     // adding a campaign location criterion corresponding to the customer market country.
 
-                    if (campaignCriterions == null || campaignCriterions.Count \<= 0)
+                    if (campaignCriterions == null || campaignCriterions.Count <= 0)
                     {
                         campaignCriterions.Add(new BiddableCampaignCriterion
                         {

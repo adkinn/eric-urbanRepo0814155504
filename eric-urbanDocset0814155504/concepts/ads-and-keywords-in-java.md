@@ -290,7 +290,7 @@ public class KeywordsAds extends ExampleBase {
             // Update shared budgets in Budget objects.
             if (getBudgetIds.getLongs() != null && getBudgetIds.getLongs().size() > 0)
             {
-                ArrayList\<java.lang.Long> distinctBudgetIds = new ArrayList\<java.lang.Long>(new HashSet<Long>(getBudgetIds.getLongs()));
+                ArrayList<java.lang.Long> distinctBudgetIds = new ArrayList<java.lang.Long>(new HashSet<Long>(getBudgetIds.getLongs()));
                 com.microsoft.bingads.v11.campaignmanagement.ArrayOflong getDistinctBudgetIds = new com.microsoft.bingads.v11.campaignmanagement.ArrayOflong();
                 for(java.lang.Long id : distinctBudgetIds){
                     getDistinctBudgetIds.getLongs().add(id);
@@ -306,7 +306,7 @@ public class KeywordsAds extends ExampleBase {
 
                 outputStatusMessage("List of campaigns that share each budget:\n");
                 ArrayOfIdCollection getCampaignIdCollection = getCampaignIdsByBudgetIds(getDistinctBudgetIds).getCampaignIdCollection();
-                for(int index = 0; index \< getCampaignIdCollection.getIdCollections().size(); index++)
+                for(int index = 0; index < getCampaignIdCollection.getIdCollections().size(); index++)
                 {
                     outputStatusMessage(String.format("BudgetId: %s", getDistinctBudgetIds.getLongs().get(index)));
                     outputStatusMessage("Campaign Ids:");

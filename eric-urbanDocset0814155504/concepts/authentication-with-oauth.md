@@ -221,15 +221,15 @@ Parameter  |Description
 When making a service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows.
 
 ```xml
-\<DeveloperToken i:nil="false"></DeveloperToken>
-\<Password i:nil="false"></Password>
-\<UserName i:nil="false"></UserName>
+<DeveloperToken i:nil="false"></DeveloperToken>
+<Password i:nil="false"></Password>
+<UserName i:nil="false"></UserName>
 ```
 You may specify the *AuthenticationToken* instead of the *UserName* and *Password* for a given user. Set the *AuthenticationToken* element to the value of the access token returned via OAuth, as described in the sections above. The *DeveloperToken* is still required as follows.
 
 ```xml
-\<AuthenticationToken i:nil="false"></AuthenticationToken>
-\<DeveloperToken i:nil="false"></DeveloperToken>
+<AuthenticationToken i:nil="false"></AuthenticationToken>
+<DeveloperToken i:nil="false"></DeveloperToken>
 ```
 > [!NOTE]
 > If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.

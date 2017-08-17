@@ -12,6 +12,7 @@
 ## [Version 11 API Reference](version-11-api-reference.md)
 ### [Ad Insight Version 11](..\adinsight-api\TOC.md)
 ### [Bulk Version 11](..\bulk-api\TOC.md)
+### [Campaign Management Version 11](..\campaign-api\TOC.md)
 # [Walkthrough: Bing Ads Desktop Application in C#](walkthrough-bing-ads-desktop-application-in-csharp.md)
 # [Python Examples for Bing Ads](python-examples-for-bing-ads.md)
 # [Geographical Locations in C#](geographical-locations-in-csharp.md)

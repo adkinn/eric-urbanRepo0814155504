@@ -315,7 +315,7 @@ def main(authorization_data):
                 upload_entities.append(entity)
         
         for entity in get_campaign_results:
-            if entity.campaign.BudgetId == None or entity.campaign.BudgetId \<= 0:
+            if entity.campaign.BudgetId == None or entity.campaign.BudgetId <= 0:
                 # Increase budget by 20 %
                 entity.campaign.DailyBudget *= 1.2
                 upload_entities.append(entity)

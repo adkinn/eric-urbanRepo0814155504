@@ -18,7 +18,7 @@ This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../c
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -1061,7 +1061,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index \< count($campaigns); $index++ )
+    for ($index = 0; $index < count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -1115,7 +1115,7 @@ function OutputAdGroupsWithPartialErrors($adGroups, $adGroupIds, $partialErrors)
 
     // Output the identifier of each successfully added ad group.
 
-    for ($index = 0; $index \< count($adGroups); $index++ )
+    for ($index = 0; $index < count($adGroups); $index++ )
     {
         // The array of ad group identifiers equals the size of the attempted ad group. If the element 
         // is not empty, the ad group at that index was added successfully and has an ad group identifer. 
@@ -1168,7 +1168,7 @@ function OutputAdIdentifiers($adIds, $partialErrors)
 
 	$count = count($adIds);
 
-	for ($i = 0; $i \< $count; $i++)
+	for ($i = 0; $i < $count; $i++)
 	{
 		if (!empty($adIds[$i]))
 		{
@@ -1211,7 +1211,7 @@ function OutputCriterionIds($criterionIds, $partialErrors)
 
 	$count = count($criterionIds);
 
-	for ($i = 0; $i \< $count; $i++)
+	for ($i = 0; $i < $count; $i++)
 	{
 		if (!empty($criterionIds[$i]))
 		{
@@ -1244,7 +1244,7 @@ function OutputCampaignCriterionIdentifiers($criterionIds, $partialErrors)
 
 	$count = count($criterionIds);
 
-	for ($i = 0; $i \< $count; $i++)
+	for ($i = 0; $i < $count; $i++)
 	{
 		if (!empty($criterionIds[$i]))
 		{

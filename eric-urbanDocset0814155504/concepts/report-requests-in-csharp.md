@@ -130,11 +130,11 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Reporting service exceptions
-            catch (FaultException\<Microsoft.BingAds.V11.Reporting.AdApiFaultDetail> ex)
+            catch (FaultException<Microsoft.BingAds.V11.Reporting.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(String.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException\<Microsoft.BingAds.V11.Reporting.ApiFaultDetail> ex)
+            catch (FaultException<Microsoft.BingAds.V11.Reporting.ApiFaultDetail> ex)
             {
                 OutputStatusMessage(String.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(String.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));

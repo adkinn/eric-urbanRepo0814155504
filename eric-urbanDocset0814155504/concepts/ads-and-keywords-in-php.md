@@ -18,7 +18,7 @@ The following example shows how to add ads and keywords to a new ad group, and h
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -275,7 +275,7 @@ try
 
     $ads = array();
 
-    for ($index = 0; $index \< 5; $index++)
+    for ($index = 0; $index < 5; $index++)
     {
         $expandedTextAd = new ExpandedTextAd();
         $expandedTextAd->TitlePart1 = "Contoso";
@@ -403,7 +403,7 @@ try
 
         print("List of campaigns that share each budget:\n\n");
         $getCampaignIdCollection = GetCampaignIdsByBudgetIds($top100BudgetIds)->CampaignIdCollection;
-        for($index = 0; $index \< count($getCampaignIdCollection); $index++)
+        for($index = 0; $index < count($getCampaignIdCollection); $index++)
         {
             printf("BudgetId: %s\n", $top100BudgetIds[$index]);
             print("Campaign Ids:\n");
@@ -445,7 +445,7 @@ try
         // The UpdateCampaigns operation only accepts 100 Campaign objects per call. 
         // To simply the example we will update the first 100.
         $index=0;
-        while($index < 100 && $index \< count($getCampaigns))
+        while($index < 100 && $index < count($getCampaigns))
         {
             $campaign = $getCampaigns->Campaign[$index];
             print("Campaign:\n");
@@ -1033,7 +1033,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 {
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index \< count($campaigns); $index++ )
+    for ($index = 0; $index < count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -1082,7 +1082,7 @@ function OutputAdGroupsWithPartialErrors($adGroups, $adGroupIds, $partialErrors)
 {
     // Output the identifier of each successfully added ad group.
 
-    for ($index = 0; $index \< count($adGroups); $index++ )
+    for ($index = 0; $index < count($adGroups); $index++ )
     {
         // The array of ad group identifiers equals the size of the attempted ad group. If the element 
         // is not empty, the ad group at that index was added successfully and has an ad group identifer. 
@@ -1132,7 +1132,7 @@ function OutputKeywordsWithPartialErrors($keywords, $keywordIds, $partialErrors)
 {
     // Output the identifier of each successfully added keyword.
 
-    for ($index = 0; $index \< count($keywords); $index++ )
+    for ($index = 0; $index < count($keywords); $index++ )
     {
         // The array of keyword identifiers equals the size of the attempted keywords. If the element 
         // is not empty, the keyword at that index was added successfully and has a keyword identifer. 
@@ -1184,7 +1184,7 @@ function OutputAdsWithPartialErrors($ads, $adIds, $partialErrors)
 
     // Output the identifier of each successfully added ad.
 
-    for ($index = 0; $index \< count($ads); $index++ )
+    for ($index = 0; $index < count($ads); $index++ )
     {
         // Determine the type of ad. Prepare the corresponding attribute value to be printed,
         // both for successful new ads and partial errors. 

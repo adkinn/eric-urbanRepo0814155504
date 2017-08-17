@@ -19,7 +19,7 @@ For more information about getting started with PHP, please see [Setting Up the 
 1.  Create a new file named *Index.php*, and add the code as shown in the following example.
 
     ```php
-    \<?php
+    <?php
     namespace Microsoft\BingAds\Samples;
         
     require_once "./vendor/autoload.php";
@@ -31,7 +31,7 @@ For more information about getting started with PHP, please see [Setting Up the 
     
     ?>
     
-    \<!-- 
+    <!-- 
     Display a small form with a login button. In your application, you would implement code to allow
     the user to either log into your service or create a new account. 
     -->
@@ -40,19 +40,19 @@ For more information about getting started with PHP, please see [Setting Up the 
     <p>This application would like to manage your Bing Ads data. Click below to login and authorize this application.</p>
     
     <p>When you click OK below, you'll be redirected to the following URI:</p>
-    <p>\<?php echo WebAuthHelper::RedirectUri ?></p>
+    <p><?php echo WebAuthHelper::RedirectUri ?></p>
     
-    \<!-- 
+    <!-- 
     When the user presses this button, they will be redirected to fully formed URL to request an authorization token. 
     From here, the user will be redirected to the redirectUriPath where the authorization token can be extracted. 
     -->
-    <input type="button" onClick="return window.location='\<?php echo WebAuthHelper::RedirectUri;?>';" value="OK" />
+    <input type="button" onClick="return window.location='<?php echo WebAuthHelper::RedirectUri;?>';" value="OK" />
     ```
 
 2.  Create a new file named *OAuth2Callback.php*, and add the code as shown in the following example.
 
     ```php
-    \<?php
+    <?php
     namespace Microsoft\BingAds\Samples;
         
     require_once "./vendor/autoload.php";
@@ -130,7 +130,7 @@ For more information about getting started with PHP, please see [Setting Up the 
 3.  Create a new file named *CallBingAdsServices.php*, and add the code as shown in the following example.
 
     ```php
-    \<?php
+    <?php
     namespace Microsoft\BingAds\Samples;
         
     require_once "./vendor/autoload.php";
@@ -179,7 +179,7 @@ For more information about getting started with PHP, please see [Setting Up the 
 4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. Edit the *ClientId*, *ClientSecret*, *RedirectUri*, and *DeveloperToken* values with your own credentials. 
 
     ```php
-    \<?php
+    <?php
 
     namespace Microsoft\BingAds\Samples;
             

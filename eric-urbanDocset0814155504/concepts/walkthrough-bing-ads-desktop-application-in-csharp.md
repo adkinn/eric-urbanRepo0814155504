@@ -29,7 +29,7 @@ The example desktop application sends authentication requests to the Microsoft a
 4.  Open the MainWindow.xaml file and replace its contents with the following code block. This defines the presentation view that displays results of the service calls that will be written further below.
 
     ```xaml
-    \<Window x:Class="BingAdsDesktopApp.MainWindow"
+    <Window x:Class="BingAdsDesktopApp.MainWindow"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             Title="MainWindow" SizeToContent="Height" Width="525">
@@ -143,14 +143,14 @@ The example desktop application sends authentication requests to the Microsoft a
                                     "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
                                 );
                             }
-                            catch (FaultException\<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
+                            catch (FaultException<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
                             {
                                 MessageBox.Show(
                                     string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
                                     "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
                                 );
                             }
-                            catch (FaultException\<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
+                            catch (FaultException<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
                             {
                                 MessageBox.Show(
                                     string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
@@ -178,14 +178,14 @@ The example desktop application sends authentication requests to the Microsoft a
                         "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
                     );
                 }
-                catch (FaultException\<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
                 {
                     MessageBox.Show(
                         string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
                         "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
                     );
                 }
-                catch (FaultException\<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
                 {
                     MessageBox.Show(
                         string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
@@ -220,7 +220,7 @@ The example desktop application sends authentication requests to the Microsoft a
             /// <summary>
             /// Uses the BulkServiceManager class to add a campaign. 
             /// </summary>
-            private async Task\<long?> AddCampaignInBulkAsync(AuthorizationData authorizationData)
+            private async Task<long?> AddCampaignInBulkAsync(AuthorizationData authorizationData)
             {
                 _bulkService = new BulkServiceManager(authorizationData);
                 _bulkService.StatusPollIntervalInMilliseconds = 1000;
@@ -320,7 +320,7 @@ The example desktop application sends authentication requests to the Microsoft a
             /// </summary>
             /// <param name="userId">The Bing Ads user identifier.</param>
             /// <returns>List of accounts that the user can manage.</returns>
-            private async Task\<Account[]> SearchAccountsByUserIdAsync(long? userId)
+            private async Task<Account[]> SearchAccountsByUserIdAsync(long? userId)
             {
                 var predicate = new Predicate
                 {
@@ -353,7 +353,7 @@ The example desktop application sends authentication requests to the Microsoft a
             /// multi-dimensional array.</param>
             private void SetUserDataByAccountIndex(int accountIndex)
             {
-                if (accountIndex \< 0 || accountIndex > _accountCustomerIds.Length) return;
+                if (accountIndex < 0 || accountIndex > _accountCustomerIds.Length) return;
 
                 var accountId = _accountCustomerIds[accountIndex, 0];
                 var customerId = _accountCustomerIds[accountIndex, 1];

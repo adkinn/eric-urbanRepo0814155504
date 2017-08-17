@@ -18,7 +18,7 @@ This example shows how to associate negative keywords and negative keyword lists
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -803,7 +803,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index \< count($campaigns); $index++ )
+    for ($index = 0; $index < count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -856,7 +856,7 @@ function OutputNegativeKeywordIds($idCollections)
         return;
     }
 
-    for ($index = 0; $index \< count($idCollections); $index++)
+    for ($index = 0; $index < count($idCollections); $index++)
     {
         printf("NegativeKeyword Ids at entity index %d:\n\n", $index);
         foreach ($idCollections[$index]->Ids->long as $id)
@@ -913,7 +913,7 @@ function GetAndOutputSharedEntityIdentifiers($sharedEntityType)
 
     if((count((array)$sharedEntities) != 0) && is_array($sharedEntities->SharedEntity))
     {
-        for ($index = 0; $index \< count($sharedEntities->SharedEntity); $index++)
+        for ($index = 0; $index < count($sharedEntities->SharedEntity); $index++)
         {
             $sharedEntity = $sharedEntities->SharedEntity[$index];
             if(!is_null($sharedEntity->Id))
@@ -970,7 +970,7 @@ function OutputNegativeKeywordResults(
         return;
     }
 
-    for ($index = 0; $index \< count($sharedListItemIds); $index++)
+    for ($index = 0; $index < count($sharedListItemIds); $index++)
     {
         // Determine if the SharedListItem is a NegativeKeyword. 
         if($sharedListItems[$index]->enc_stype === "NegativeKeyword")

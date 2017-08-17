@@ -18,7 +18,7 @@ This example shows how to get the budget opportunities which have not expired fo
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
 ```php
-\<?php
+<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
