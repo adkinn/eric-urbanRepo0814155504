@@ -1,0 +1,2 @@
+The most specific location used to deliver ads. For example if the city and country are both identified, this column will include the same value as the *City* column. If postal code information is available, then it will be included in the report instead of city or country.
+
