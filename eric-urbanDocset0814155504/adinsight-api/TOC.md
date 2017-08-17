@@ -1,6 +1,6 @@
 # [Ad Insight Service Operations](ad-insight-service-operations.md)
-## [GetKeywordLocations Service Operation](getkeywordlocations-service-operation.md)
-## [GetBidOpportunities Service Operation](getbidopportunities-service-operation.md)
+## [GetKeywordLocations](getkeywordlocations-service-operation.md)
+## [GetBidOpportunities](getbidopportunities-service-operation.md)
 ## [GetKeywordIdeaCategories Service Operation](getkeywordideacategories-service-operation.md)
 ## [GetEstimatedPositionByKeywordIds Service Operation](getestimatedpositionbykeywordids-service-operation.md)
 ## [GetEstimatedBidByKeywords Service Operation](getestimatedbidbykeywords-service-operation.md)
