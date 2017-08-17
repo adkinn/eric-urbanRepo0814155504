@@ -1,0 +1,1 @@
+The format of the report data. For example, you can request the data in comma-separated values (Csv) format or tab-separated values (Tsv) format.<br /><br />The default value is Csv.<br /><br />**Note**: All downloaded files are ZIP compressed.
