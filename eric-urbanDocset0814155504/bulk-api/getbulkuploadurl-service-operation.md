@@ -39,24 +39,24 @@ The *GetBulkUploadUrlRequest* object defines the elements of the request’s bod
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetBulkUploadUrl</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetBulkUploadUrlRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <ResponseMode></ResponseMode>
       <AccountId></AccountId>
     </GetBulkUploadUrlRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBulkUploadUrlResponse Message
@@ -74,17 +74,17 @@ The following example shows the complete request envelope.
 The following example shows the complete SOAP response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetBulkUploadUrlResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<RequestId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestId>
-      \<UploadUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></UploadUrl>
+      <RequestId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestId>
+      <UploadUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></UploadUrl>
     </GetBulkUploadUrlResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

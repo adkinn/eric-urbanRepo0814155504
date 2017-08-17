@@ -18,12 +18,12 @@ Defines the possible compression types for the file to download.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="CompressionType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Zip" />
-    \<xs:enumeration value="GZip" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="CompressionType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Zip" />
+    <xs:enumeration value="GZip" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

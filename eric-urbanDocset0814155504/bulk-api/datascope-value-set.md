@@ -18,14 +18,14 @@ Defines the scope or types of data to download.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="DataScope">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="EntityData" />
-    \<xs:enumeration value="EntityPerformanceData" />
-    \<xs:enumeration value="QualityScoreData" />
-    \<xs:enumeration value="BidSuggestionsData" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="DataScope">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="EntityData" />
+    <xs:enumeration value="EntityPerformanceData" />
+    <xs:enumeration value="QualityScoreData" />
+    <xs:enumeration value="BidSuggestionsData" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

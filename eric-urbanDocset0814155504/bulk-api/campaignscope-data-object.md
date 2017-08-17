@@ -18,12 +18,12 @@ Defines an object that identifies a campaign to download.
 ## Syntax
 
 ```xml
-\<xs:complexType name="CampaignScope">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="CampaignId" type="xs:long" />
-    \<xs:element minOccurs="0" name="ParentAccountId" type="xs:long" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CampaignScope">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
+    <xs:element minOccurs="0" name="ParentAccountId" type="xs:long" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

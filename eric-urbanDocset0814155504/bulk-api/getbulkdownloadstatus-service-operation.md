@@ -41,23 +41,23 @@ The *GetBulkDownloadStatusRequest* object defines the elements of the request’
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetBulkDownloadStatus</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetBulkDownloadStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<RequestId i:nil="false"></RequestId>
+      <RequestId i:nil="false"></RequestId>
     </GetBulkDownloadStatusRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBulkDownloadStatusResponse Message
@@ -78,32 +78,32 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetBulkDownloadStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<Errors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      <Errors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <OperationError>
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<Message p4:nil="false"></Message>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <Message p4:nil="false"></Message>
         </OperationError>
       </Errors>
-      \<ForwardCompatibilityMap xmlns:e1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e1:KeyValuePairOfstringstring>
-          \<e1:key p5:nil="false">\</e1:key>
-          \<e1:value p5:nil="false">\</e1:value>
-        \</e1:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e1:KeyValuePairOfstringstring>
+          <e1:key p5:nil="false"></e1:key>
+          <e1:value p5:nil="false"></e1:value>
+        </e1:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete></PercentComplete>
-      \<RequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestStatus>
-      \<ResultFileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></ResultFileUrl>
+      <RequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestStatus>
+      <ResultFileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></ResultFileUrl>
     </GetBulkDownloadStatusResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## Remarks

@@ -18,13 +18,13 @@ Defines a calendar date by month, day, and year.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Date">
-  \<xs:sequence>
-    \<xs:element type="xs:int" name="Day"/>
-    \<xs:element type="xs:int" name="Month"/>
-    \<xs:element type="xs:int" name="Year"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Date">
+  <xs:sequence>
+    <xs:element type="xs:int" name="Day"/>
+    <xs:element type="xs:int" name="Month"/>
+    <xs:element type="xs:int" name="Year"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## Elements
