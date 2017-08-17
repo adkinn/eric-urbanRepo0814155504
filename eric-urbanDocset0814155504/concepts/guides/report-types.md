@@ -97,7 +97,7 @@ You can use the targeting reports to determine whether your ads are reaching the
 ## <a name="analytics"></a>Campaign Analytics
 If you enable account analytics, you can use the conversion tracking data to measure the effectiveness of the account’s ad campaigns, primarily in terms of return on investment. In addition, you can use the reports to learn which pages on your website are most commonly abandoned by visitors and then use this information to change the design of your website to improve conversions.
 
-[!INCLUDE[available_with_analytics](../../concepts/includes/available_with_analytics.md)]
+[!INCLUDE[available_with_analytics](../../concepts/guides/includes/available_with_analytics.md)]
 
 |Report|Description|
 |----------|---------------|

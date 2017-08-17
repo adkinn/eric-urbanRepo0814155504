@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ads and Keywords in Java
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[java_header](../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -748,4 +748,4 @@ public class KeywordsAds extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  

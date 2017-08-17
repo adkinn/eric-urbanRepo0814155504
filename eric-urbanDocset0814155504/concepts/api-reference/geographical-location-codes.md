@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Geographical Location Codes
-Geographical locations data can be used to for [Location Targeting](../../concepts/show-ads-to-your-target-audience.md#locationtarget). You can call the [GetGeoLocationsFileUrl](http://msdn.microsoft.com/library/bing-ads-campaign-management-getgeolocationsfileurl.aspx) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
+Geographical locations data can be used to for [Location Targeting](../../concepts/guides/show-ads-to-your-target-audience.md#locationtarget). You can call the [GetGeoLocationsFileUrl](http://msdn.microsoft.com/library/bing-ads-campaign-management-getgeolocationsfileurl.aspx) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
 
 > [!IMPORTANT]
 > As a best practice you should download the file instead of opening it directly through an application such as Microsoft Excel. If you view the locations data in a text editor, be sure to use UTF-8 encoding instead of ANSI, otherwise some characters will not be displayed accurately.
@@ -52,5 +52,5 @@ PostalCode     |PostalSubCode, StateSubCode CountryCode         |98052, WA US (I
 
 
 ## See Also
-[Show Ads to Your Target Audience](../../concepts/show-ads-to-your-target-audience.md)  
+[Show Ads to Your Target Audience](../../concepts/guides/show-ads-to-your-target-audience.md)  
 

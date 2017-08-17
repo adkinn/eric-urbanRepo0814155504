@@ -15,7 +15,7 @@ manager: "ehansen"
 # Shopping Campaigns in Java
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns..
 
-[!INCLUDE[java_header](../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -924,4 +924,4 @@ public class ShoppingCampaigns extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  

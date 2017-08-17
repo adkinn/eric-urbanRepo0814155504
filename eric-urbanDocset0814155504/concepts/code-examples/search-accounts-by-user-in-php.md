@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in PHP
 The following example shows how to search for customers that can be managed by the current authenticated user.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -332,4 +332,4 @@ function OutputCampaign($campaign)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  

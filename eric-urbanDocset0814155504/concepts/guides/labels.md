@@ -27,10 +27,10 @@ With labels, you could:
 
 The important thing is that it’s all up to you. You decide what your labels mean and how to apply them to your campaigns, ad groups, ads, and keywords.
 
-![Labels in the Bing Ads Web Application](../../concepts/media/labels-in-the-bing-ads-web-application.png)
+![Labels in the Bing Ads Web Application](../../concepts/guides/media/labels-in-the-bing-ads-web-application.png)
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
-You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../../concepts/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
 
 The following Bulk records are available for managing labels and label associations. 
 

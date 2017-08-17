@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Report Requests in Python
-The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
+The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 from auth_helper import *
@@ -393,4 +393,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

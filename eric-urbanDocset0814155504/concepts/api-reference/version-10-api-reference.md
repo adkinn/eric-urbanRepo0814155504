@@ -16,7 +16,7 @@ manager: "ehansen"
 For [!INCLUDE[brand](../../concepts/includes/brand.md)] version 10 reference content, see the following sections.
 
 ## Bing Ads API Version 10 Services
-[!INCLUDE[v10_sunset](../../concepts/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
 
 |Topic|Description|
 |---------|---------------|

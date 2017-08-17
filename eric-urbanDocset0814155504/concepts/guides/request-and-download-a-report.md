@@ -15,13 +15,13 @@ manager: "ehansen"
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-submitgeneratereport.aspx#request) and [PollGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-pollgeneratereport.aspx#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [C#](../../concepts/getting-started-using-csharp-with-bing-ads-services.md#reportingservicemanager) | [Java](../../concepts/getting-started-using-java-with-bing-ads-services.md#reportingservicemanager) | [Python](../../concepts/getting-started-using-python-with-bing-ads-services.md#reportingservicemanager).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-submitgeneratereport.aspx#request) and [PollGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-pollgeneratereport.aspx#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#reportingservicemanager) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#reportingservicemanager) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#reportingservicemanager).
 
-For a code example that shows how to download a report using the Reporting service with the workflow described below, see [Report Requests in PHP](../../concepts/report-requests-in-php.md).
+For a code example that shows how to download a report using the Reporting service with the workflow described below, see [Report Requests in PHP](../../concepts/code-examples/report-requests-in-php.md).
 
 #### Request a Report
 
-1.  Determine the report that you want to request. For a list of reports that you can request, see [Report Types](../../concepts/report-types.md).
+1.  Determine the report that you want to request. For a list of reports that you can request, see [Report Types](../../concepts/guides/report-types.md).
 
 2.  Create an instance of the report request object. Some of the elements of the report request are required and some are optional. Set the elements as appropriate for your application. The elements of the report request determine, among others, the scope of data to include in the report, the columns of data to include in the report, and whether to generate the report only if all the data is available.
 

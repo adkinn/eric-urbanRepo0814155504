@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Ad Extensions in Python
-The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
+The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 from auth_helper import *
@@ -643,4 +643,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

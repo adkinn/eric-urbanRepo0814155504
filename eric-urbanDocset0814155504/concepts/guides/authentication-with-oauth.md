@@ -20,7 +20,7 @@ manager: "ehansen"
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md).
 
-A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including [!INCLUDE[brand](../../concepts/includes/brand.md)]. Advertisers may associate a Microsoft Account with a [!INCLUDE[brand](../../concepts/includes/brand.md)] account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../../concepts/customer-accounts.md#managingusers) to manage an existing [!INCLUDE[brand](../../concepts/includes/brand.md)] account. Advertisers must use their Microsoft Account to grant your application access to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including [!INCLUDE[brand](../../concepts/includes/brand.md)]. Advertisers may associate a Microsoft Account with a [!INCLUDE[brand](../../concepts/includes/brand.md)] account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../../concepts/guides/customer-accounts.md#managingusers) to manage an existing [!INCLUDE[brand](../../concepts/includes/brand.md)] account. Advertisers must use their Microsoft Account to grant your application access to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!NOTE]
 > To take advantage of advanced security, users should turn on [two-step verification](http://windows.microsoft.com/en-us/windows/two-step-verification-faq?woldogcb=0) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
@@ -48,30 +48,30 @@ Before you can manage authentication for users of your [!INCLUDE[brand](../../co
 
 2.  Under **Converged applications**, click **Add an app**.
 
-    ![Register add app](../../concepts/media/register-add-app.png)
+    ![Register add app](../../concepts/guides/media/register-add-app.png)
     
     If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. We recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. If migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
 3.  Provide the application name and click **Create application**.
 
-    ![Create application](../../concepts/media/create-application.png)
+    ![Create application](../../concepts/guides/media/create-application.png)
 
 4.  Click **Add Platform** and choose *Web* if you want to register a web application, and otherwise select *Native Application*. 
 
-    ![Register add platform](../../concepts/media/register-add-platform.PNG)
+    ![Register add platform](../../concepts/guides/media/register-add-platform.PNG)
     
     If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix).
 
 5.  Under **Advanced Options**, check the box for **Live SDK support**.
 
-    ![Live SDK support](../../concepts/media/live-sdk-support.png)
+    ![Live SDK support](../../concepts/guides/media/live-sdk-support.png)
 
 6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with [!INCLUDE[brand](../../concepts/includes/brand.md)]. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
-For details about how to get access and refresh tokens using the Bing Ads SDKs, see Using OAuth in [C#](../../concepts/getting-started-using-csharp-with-bing-ads-services.md#oauth) | [Java](../../concepts/getting-started-using-java-with-bing-ads-services.md#oauth) | [Python](../../concepts/getting-started-using-python-with-bing-ads-services.md#oauth).
+For details about how to get access and refresh tokens using the Bing Ads SDKs, see Using OAuth in [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#oauth) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#oauth) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#oauth).
 
 ### <a name="implicit"></a>Implicit Grant Flow
 For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
@@ -136,7 +136,7 @@ For repeat or long term authentication, you should follow the authorization code
     client_id=000A1A1A1&code=a1a1861bc-c5a1-c7a1-8ba1-846c6271a1a1&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
     ```
     > [!IMPORTANT]
-    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see Using OAuth in [.NET](../../concepts/getting-started-using-csharp-with-bing-ads-services.md#oauth) | [Java](../../concepts/getting-started-using-java-with-bing-ads-services.md#oauth) | [Python](../../concepts/getting-started-using-python-with-bing-ads-services.md#oauth).
+    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see Using OAuth in [.NET](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#oauth) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#oauth) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#oauth).
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
@@ -235,5 +235,5 @@ You may specify the *AuthenticationToken* instead of the *UserName* and *Passwor
 > If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
 
 ## See Also
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)
 

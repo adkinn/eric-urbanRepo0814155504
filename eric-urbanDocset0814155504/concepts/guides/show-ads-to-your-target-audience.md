@@ -29,17 +29,17 @@ For details about managing your targets, see the following sections.
 
 -   [Default Target Settings](#defaulttargets)
 
--   [Adding Targets](../../concepts/show-ads-to-your-target-audience.md#Adding_Targets)
+-   [Adding Targets](../../concepts/guides/show-ads-to-your-target-audience.md#Adding_Targets)
 
--   [Getting Targets](../../concepts/show-ads-to-your-target-audience.md#Get_Target)
+-   [Getting Targets](../../concepts/guides/show-ads-to-your-target-audience.md#Get_Target)
 
--   [Updating Targets](../../concepts/show-ads-to-your-target-audience.md#Update_Targets)
+-   [Updating Targets](../../concepts/guides/show-ads-to-your-target-audience.md#Update_Targets)
 
--   [Deleting Targets](../../concepts/show-ads-to-your-target-audience.md#Delete_Targets)
+-   [Deleting Targets](../../concepts/guides/show-ads-to-your-target-audience.md#Delete_Targets)
 
 -   [Bid Adjustments](#bidadjust)
 
-For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../../concepts/targets-in-csharp.md) | [Java](../../concepts/targets-in-java.md) | [PHP](../../concepts/targets-in-php.md) | [Python](../../concepts/targets-in-python.md).
+For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../../concepts/code-examples/targets-in-csharp.md) | [Java](../../concepts/code-examples/targets-in-java.md) | [PHP](../../concepts/code-examples/targets-in-php.md) | [Python](../../concepts/code-examples/targets-in-python.md).
 
 ## <a name="targettypes"></a>Target Types
 The sub targets in the following sections are available within the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object.
@@ -100,7 +100,7 @@ Use the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a5
 
 -   [StateTargetBid](http://msdn.microsoft.com/library/63b931d3-d22f-4e99-82cb-d3e30b8081b1)
 
-For information on location codes to use for each target bid value, see [Geographical Location Codes](../../concepts/geographical-location-codes.md).
+For information on location codes to use for each target bid value, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 #### Location Intent Options
 Set `IntentOption` to `PeopleInOrSearchingForOrViewingPages` if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) includes London and `IntentOption` is `PeopleInOrSearchingForOrViewingPages`, then someone physically located in Florida searching for London hotels will see the ad.
@@ -160,7 +160,7 @@ To create a target that you can associate with an ad group or campaign, complete
 1.  Create an instance of the object that represents the desired target and assign it to the appropriate element of the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object. For example to target users in a specific country, create an instance of the [CountryTarget](http://msdn.microsoft.com/library/3615a843-e24c-4c54-bf7c-7022dc1c6c1b) object within the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) and assign it to the target's `Location` element. Specify the target country and bid adjustment percentage by creating an instance of the [CountryTargetBid](http://msdn.microsoft.com/library/a66ee965-4501-4b1b-980f-47433a9dd3c6) object, and then assign it to the `Bids` element of the `CountryTarget`.
 
     > [!NOTE]
-    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../../concepts/geographical-location-codes.md).
+    > For information on location codes to use for each target bid value, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 2.  To add the `Target` object to your target library, call the [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) operation. Save or keep track of the target identifier that [AddTargetsToLibrary](http://msdn.microsoft.com/library/6e709477-2b67-420e-b865-8df78cb8f388) returns.
 
@@ -256,5 +256,5 @@ If you had set `TargetAllDays=true` and `TargetAllHours=true` in version 9, then
 
 ## See Also
 [Campaign Management Service Reference](http://msdn.microsoft.com/library/5f50ed8a-6bca-4d30-8340-7290bc074f0e)
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)
 

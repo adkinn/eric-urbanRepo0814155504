@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Ad Extensions in C#
-The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../../concepts/bing-ads-client-libraries.md).
+The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
 
-[!INCLUDE[csharp_header](../../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -941,4 +941,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  

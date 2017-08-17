@@ -17,7 +17,7 @@ The topics below contain lists of currency, language, time zone, and location st
 
 |Topic|Description|
 |---------|---------------|
-|[Ad Languages](../../concepts/ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
-|[Currencies](../../concepts/currencies.md)|Contains a list of available currencies for [!INCLUDE[brand](../../concepts/includes/brand.md)] advertising accounts.|
-|[Geographical Location Codes](../../concepts/geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area, and city codes.|
-|[Time Zones](../../concepts/time-zones.md)|Lists the possible time zone values.|
+|[Ad Languages](../../concepts/api-reference/ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
+|[Currencies](../../concepts/api-reference/currencies.md)|Contains a list of available currencies for [!INCLUDE[brand](../../concepts/includes/brand.md)] advertising accounts.|
+|[Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area, and city codes.|
+|[Time Zones](../../concepts/api-reference/time-zones.md)|Lists the possible time zone values.|

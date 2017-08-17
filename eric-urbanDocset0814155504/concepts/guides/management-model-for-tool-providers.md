@@ -18,7 +18,7 @@ A tool provider builds a [!INCLUDE[brand](../../concepts/includes/brand.md)] app
 ## Tool Provider Entity Model
 The following figure shows multiple customers using the same third-party tool.
 
-![Management Model Tool Provider](../../concepts/media/management-model-tool-provider.png "Management Model Tool Provider")
+![Management Model Tool Provider](../../concepts/guides/media/management-model-tool-provider.png "Management Model Tool Provider")
 
 Third-party tools may be used to manage some or all aspects of an advertiser account. Your users may also manage their respective account through the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application or another third-party tool. You should design your application to be flexible and robust considering that data may have changed state since the last time a client used your application.
 
@@ -26,19 +26,19 @@ Third-party tools may be used to manage some or all aspects of an advertiser acc
 The following are the header elements and the corresponding identifiers that a tool provider would use.
 
 > [!NOTE]
-> If you use the *AuthenticationToken*, the *UserName* and *Password* elements are ignored. For more information, see [Authentication with OAuth](../../concepts/authentication-with-oauth.md).
+> If you use the *AuthenticationToken*, the *UserName* and *Password* elements are ignored. For more information, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
 
 |Header Element|Owner|
 |------------------|---------|
 |AuthenticationToken|The OAuth access token corresponding to the tool user's linked Microsoft Account.|
-|UserName|The sign-in user name.<br /><br />**Note:** The user of a tool may have any role. For more information see [Account Permissions and the Developer Token](../../concepts/customer-accounts.md#accountpermissions) and [User Roles and Available Service Operations](../../concepts/customer-accounts.md#userroles) within [Managing Customer Accounts](../../concepts/customer-accounts.md).|
+|UserName|The sign-in user name.<br /><br />**Note:** The user of a tool may have any role. For more information see [Account Permissions and the Developer Token](../../concepts/guides/customer-accounts.md#accountpermissions) and [User Roles and Available Service Operations](../../concepts/guides/customer-accounts.md#userroles) within [Managing Customer Accounts](../../concepts/guides/customer-accounts.md).|
 |Password|The sign-in password of the user specified in UserName.|
-|DeveloperToken|The tool provider’s token.<br /><br />**Note:** A tool provider should use the multi-user developer token to authenticate with users of their application. A tool provider needs only one such token. You should not ask clients to provide their own single-user token. For more information about token types, see [Account Permissions and the Developer Token](../../concepts/customer-accounts.md#accountpermissions).|
+|DeveloperToken|The tool provider’s token.<br /><br />**Note:** A tool provider should use the multi-user developer token to authenticate with users of their application. A tool provider needs only one such token. You should not ask clients to provide their own single-user token. For more information about token types, see [Account Permissions and the Developer Token](../../concepts/guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.<br /><br />**Note:** The customer ID may vary for each user of a given tool.|
 |CustomerAccountId|A customer's account ID.|
 For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md).
 
 ## See Also
-[Customer Accounts](../../concepts/customer-accounts.md)  
+[Customer Accounts](../../concepts/guides/customer-accounts.md)  
 [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md)  
 

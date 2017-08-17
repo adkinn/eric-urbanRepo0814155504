@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ad Extensions in C#
 The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
-[!INCLUDE[csharp_header](../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -737,5 +737,5 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  
 

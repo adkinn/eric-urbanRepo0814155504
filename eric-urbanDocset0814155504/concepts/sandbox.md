@@ -15,7 +15,7 @@ manager: "ehansen"
 # Sandbox
 [!INCLUDE[brand](../concepts/includes/brand.md)] provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
 
-Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../concepts/bing-ads-web-service-addresses.md).
+Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../concepts/api-reference/bing-ads-web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](http://go.microsoft.com/fwlink/?LinkId=269628).
@@ -37,7 +37,7 @@ When you sign up for an account, append _sbx to the username that you choose, fo
 All [!INCLUDE[brand](../concepts/includes/brand.md)] customers may use the following multi-user developer token in sandbox: **BBD37VB98**
 
 > [!NOTE]
-> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Managing User Authentication with OAuth](../concepts/authentication-with-oauth.md).
+> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Managing User Authentication with OAuth](../concepts/guides/authentication-with-oauth.md).
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
 Sandbox should not be used in the same capacity as production.
@@ -96,7 +96,7 @@ Ad Insight service operations differ from production, and limitations are descri
 |[SuggestKeywordsFromExistingKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-suggestkeywordsfromexistingkeywords.aspx)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
 ## <a name="bulk"></a>Bulk Service
-The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
+The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../concepts/guides/bulk-download-and-upload.md).
 
 ## <a name="campaign"></a>Campaign Management Service
 

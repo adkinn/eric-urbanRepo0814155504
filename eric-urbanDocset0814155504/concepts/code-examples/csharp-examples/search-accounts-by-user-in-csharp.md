@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in C#
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[csharp_header](../../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -126,5 +126,5 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  
 

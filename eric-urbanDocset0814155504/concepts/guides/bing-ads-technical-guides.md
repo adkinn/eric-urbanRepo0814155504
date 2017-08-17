@@ -19,13 +19,13 @@ The technical guides below describe core advertising scenarios using [!INCLUDE[b
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](../../concepts/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
-|[Bing Ads Services Protocol](../../concepts/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../../concepts/includes/brand.md)] services efficiently.|
-|[Handling Service Errors and Exceptions](../../concepts/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
-|[Customer Accounts](../../concepts/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
-|[Campaigns](../../concepts/campaigns.md)|Set your campaign budget and bid strategy.|
-|[Ads](../../concepts/ads.md)|Setup campaigns for specific ad types. Use ad extensions to decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions.|
-|[Reports](../../concepts/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
+|[Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
+|[Bing Ads Services Protocol](../../concepts/guides/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../../concepts/includes/brand.md)] services efficiently.|
+|[Handling Service Errors and Exceptions](../../concepts/guides/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
+|[Customer Accounts](../../concepts/guides/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
+|[Campaigns](../../concepts/guides/campaigns.md)|Set your campaign budget and bid strategy.|
+|[Ads](../../concepts/guides/ads.md)|Setup campaigns for specific ad types. Use ad extensions to decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions.|
+|[Reports](../../concepts/guides/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
 
 ## See Also
 [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md)  

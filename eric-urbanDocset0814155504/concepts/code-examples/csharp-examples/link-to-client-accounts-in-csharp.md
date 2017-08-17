@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in C#
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[csharp_header](../../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -264,4 +264,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  

@@ -18,14 +18,14 @@ This tutorial describes how to get started running a [!INCLUDE[brand](../../conc
 ## <a name="webapp"></a>Example Web Application Overview
 By the end of this tutorial you will have a web application running on Azure that will authenticate your [!INCLUDE[brand](../../concepts/includes/brand.md)] user credentials and display your campaigns data. You can then add multiple web application users, who can enable access for your application to use their [!INCLUDE[brand](../../concepts/includes/brand.md)] credentials. Your new web application provides a one to one mapping of a web application user e.g. ContosoUser to a [!INCLUDE[brand](../../concepts/includes/brand.md)] user. For information about how to modify the data model, please see [Django documentation](https://docs.djangoproject.com/) for more information. If your web application user enables access to their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts with a Microsoft account, a refresh token is stored in the SQL Lite database on your web server.
 
-![pythonsdk_ExampleWebApp_EnableBingAdsAccess](../../concepts/media/pythonsdk_examplewebapp_enablebingadsaccess.png "pythonsdk_ExampleWebApp_EnableBingAdsAccess")
+![pythonsdk_ExampleWebApp_EnableBingAdsAccess](../../concepts/get-started/media/pythonsdk_examplewebapp_enablebingadsaccess.png "pythonsdk_ExampleWebApp_EnableBingAdsAccess")
 
 ## <a name="requirements"></a>Prerequisites
 To complete this tutorial, you need an Azure account. You can [activate your MSDN subscriber benefits](http://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) or [sign up for a free trial](http://azure.microsoft.com/pricing/free-trial/). You can complete this tutorial and deploy locally without an Azure website, and the application will work with [!INCLUDE[brand](../../concepts/includes/brand.md)] legacy *UserName* and *Password* credentials. To authenticate a Microsoft account for a web application using OAuth, you must deploy to a server with a publicly accessible DNS, for example an Azure website.
 
 If you want to get started with [Azure App Service](http://azure.microsoft.com/services/app-service/) before signing up for an account, go to [https://tryappservice.azure.com/](https://tryappservice.azure.com/), where you can immediately create a short-lived starter site for free. Before kicking off the short-lived starter site, to maximize your time experiencing Azure you should first complete the tutorial steps to deploy on your local machine.
 
-To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](https://microsoft.github.io/PTVS) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system, web framework, or development environment, you can browse this guide for context and then see [Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md) for an overview of the Python SDK. For more information about deploying Azure websites using other environments and web frameworks, please see Microsoft Azure tutorials on [Django](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-django-app/), [Flask](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-flask-app), or [Bottle](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-bottle-app).
+To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](https://microsoft.github.io/PTVS) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system, web framework, or development environment, you can browse this guide for context and then see [Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md) for an overview of the Python SDK. For more information about deploying Azure websites using other environments and web frameworks, please see Microsoft Azure tutorials on [Django](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-django-app/), [Flask](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-flask-app), or [Bottle](http://azure.microsoft.com/documentation/articles/web-sites-python-create-deploy-bottle-app).
 
 You will need to install either Python 2.7 or 3.4 in your development environment. Unless you have scaled up your Azure website to 64-bit, the default platform is 32-bit, so you should use a 32-bit Python installation.
 
@@ -46,11 +46,11 @@ To use the OAuth 2.0 features of this web application, you will need to register
 ## Website Creation on Azure Portal
 Create a Django website from the Azure Websites gallery. Login to the [Microsoft Azure Portal](https://manage.windowsazure.com/) and click the **NEW** button in the bottom left corner. A window will appear. Click **COMPUTE**, **WEB SITE**, then **FROM GALLERY**.
 
-![pythonsdk_AzurePortalCreateDjangoSite_1](../../concepts/media/pythonsdk_azureportalcreatedjangosite_1.png "pythonsdk_AzurePortalCreateDjangoSite_1")
+![pythonsdk_AzurePortalCreateDjangoSite_1](../../concepts/get-started/media/pythonsdk_azureportalcreatedjangosite_1.png "pythonsdk_AzurePortalCreateDjangoSite_1")
 
 A window will appear, listing apps available in the gallery. Click the **APP FRAMEWORKS** category on the left, and select **Django**.
 
-![pythonsdk_AzurePortalCreateDjangoSite_2](../../concepts/media/pythonsdk_azureportalcreatedjangosite_2.png "pythonsdk_AzurePortalCreateDjangoSite_2")
+![pythonsdk_AzurePortalCreateDjangoSite_2](../../concepts/get-started/media/pythonsdk_azureportalcreatedjangosite_2.png "pythonsdk_AzurePortalCreateDjangoSite_2")
 
 In the next page, enter a *URL* and a *WEBSCALEGROUP* for your site, and press the complete (checkmark) button.
 
@@ -61,14 +61,14 @@ Click on **Reset your deployment credentials**. Choose a username and password t
 
 Next, you will add support for publishing via Git. This can be done by choosing **Set up deployment from source control**. From the **Set up deployment** dialog, scroll down and select the **Local Git repository** option. Click the right arrow to continue. After setting up Git publishing, you will momentarily see a page informing you the repository is being created. When it is ready, you will see instructions on how to connect.
 
-![pythonsdk_AzurePortalIntegrateSourceControl](../../concepts/media/pythonsdk_azureportalintegratesourcecontrol.png "pythonsdk_AzurePortalIntegrateSourceControl")
+![pythonsdk_AzurePortalIntegrateSourceControl](../../concepts/get-started/media/pythonsdk_azureportalintegratesourcecontrol.png "pythonsdk_AzurePortalIntegrateSourceControl")
 
 ## Clone the example repository
 For this tutorial, instead of using the source of your default Django site from Azure, let's replace it with the [!INCLUDE[brand](../../concepts/includes/brand.md)] with Django example that is provided on GitHub.
 
 In Visual Studio, go to **Team** -&gt; **Connect to Team Foundation Server** -&gt; **Local Git Repositories** -&gt; **Clone**. To clone the Visual Studio solution from the [!INCLUDE[brand](../../concepts/includes/brand.md)] with Django example repository, set the remote repository path to *https://github.com/BingAds/BingAds-Python-SDK.git*. Then browse to an empty directory where you want to sync locally, and press **Clone**. Then open the solution file (.sln) that is included in the web example directory.
 
-![pythonsdk_CloneRemoteGitRepository](../../concepts/media/pythonsdk_cloneremotegitrepository.PNG "pythonsdk_CloneRemoteGitRepository")
+![pythonsdk_CloneRemoteGitRepository](../../concepts/get-started/media/pythonsdk_cloneremotegitrepository.PNG "pythonsdk_CloneRemoteGitRepository")
 
 ## Edit your local files
 Open */DjangoWebProject/settings.py* and edit these settings with your own credentials: *DEVELOPER_TOKEN*, *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI*.
@@ -101,7 +101,7 @@ We'll create a virtual environment for local development. In your project right-
 
 Django and the Bing Ads Python SDK packages are included in the example *requirements.txt* file, and will be installed in your virtual environment.
 
-![pythonsdk_PTVS_AddVirtualEnv](../../concepts/media/pythonsdk_ptvs_addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
+![pythonsdk_PTVS_AddVirtualEnv](../../concepts/get-started/media/pythonsdk_ptvs_addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
 
 > [!NOTE]
 > For more information about Python virtual environments, see [PEP 405 - Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/).
@@ -116,7 +116,7 @@ You can now deploy locally without an Azure website, and the application will wo
 
 Go ahead and Press F5 to start debugging, and you can view the Django web application running locally in your default web browser.
 
-![pythonsdk_ExampleWebApp_Login](../../concepts/media/pythonsdk_examplewebapp_login.png "pythonsdk_ExampleWebApp_Login")
+![pythonsdk_ExampleWebApp_Login](../../concepts/get-started/media/pythonsdk_examplewebapp_login.png "pythonsdk_ExampleWebApp_Login")
 
 ## <a name="azuredeploy"></a>Deploy to Azure
 To use all features of this web application, including authentication of a Microsoft account for [!INCLUDE[brand](../../concepts/includes/brand.md)] access using OAuth, let's now deploy to Azure.
@@ -131,7 +131,7 @@ If publishing completed successfully your default browser should be launched and
 
 You can now login with your superuser, press **Authenticate Microsoft Account**, and follow the authorization flow to grant your web application with permissions to manage [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. When redirected back to the home page, you should see a message confirming that your user has access to [!INCLUDE[brand](../../concepts/includes/brand.md)] with an option to revoke access. Without revoking access, try the Log off menu option, close your browser, and then log in again. Since your refresh token is stored in your web site's database, you should still be authenticated and see the option to revoke access.
 
-![pythonsdk_ExampleWebApp_RevokeBingAdsAccess](../../concepts/media/pythonsdk_examplewebapp_revokebingadsaccess.png "pythonsdk_ExampleWebApp_RevokeBingAdsAccess")
+![pythonsdk_ExampleWebApp_RevokeBingAdsAccess](../../concepts/get-started/media/pythonsdk_examplewebapp_revokebingadsaccess.png "pythonsdk_ExampleWebApp_RevokeBingAdsAccess")
 
 Next, go ahead and press **Revoke Bing Ads Access**. Your refresh token will be deleted from the database, and you can enable access with a different [!INCLUDE[brand](../../concepts/includes/brand.md)] user.
 
@@ -168,5 +168,5 @@ Currently the web application only supports a single user, and only one refresh 
     ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  
 

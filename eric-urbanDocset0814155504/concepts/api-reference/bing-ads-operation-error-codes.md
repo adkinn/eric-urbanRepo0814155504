@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bing Ads Operation Error Codes
 [!INCLUDE[brand](../../concepts/includes/brand.md)] service operations may return error codes depending on the context. The list provided below includes error codes across all [!INCLUDE[brand](../../concepts/includes/brand.md)] services. For information about error codes per service operation, see the reference page for each operation.
 
-For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](../../concepts/handling-service-errors-and-exceptions.md).
+For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](../../concepts/guides/handling-service-errors-and-exceptions.md).
 
 ## Error Codes
 In the list below, the **Numeric Code** and **Symbolic Error Code** headers correspond to the respective *Code* and *ErrorCode* elements of the returned error data object.
@@ -102,7 +102,7 @@ The account identifier is invalid.
 AuthenticationTokenExpired
 
 **Description**
-Authentication token expired. Please renew it or obtain a new token. For more information, see [Authentication with OAuth](../../concepts/authentication-with-oauth.md).
+Authentication token expired. Please renew it or obtain a new token. For more information, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
 
 ***
 
@@ -839,7 +839,7 @@ The negative website URLs exceeded maximum allowed limit.
 CampaignServiceTimeZoneValueInvalid
 
 **Description**
-The time zone value is not valid. See [Time Zones](../../concepts/time-zones.md) for list of valid time zone values.
+The time zone value is not valid. See [Time Zones](../../concepts/api-reference/time-zones.md) for list of valid time zone values.
 
 ***
 
@@ -1006,7 +1006,7 @@ CampaignServiceEditorialValidationError
 **Description**
 The specified entity did not pass editorial validation. Please see the *ReasonCode* element of this error object for details.
 
-**Note:** For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../../concepts/bing-ads-editorial-failure-reason-codes.md).
+**Note:** For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../../concepts/api-reference/bing-ads-editorial-failure-reason-codes.md).
 
 ***
 

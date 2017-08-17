@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ad Extensions in PHP
 The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -1429,4 +1429,4 @@ function SetReadOnlyAdExtensionElementsToNull($extension)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  

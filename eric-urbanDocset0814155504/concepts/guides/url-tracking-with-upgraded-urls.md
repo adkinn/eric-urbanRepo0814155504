@@ -45,18 +45,18 @@ Tracking templates can be used in tandem with final URLs to assemble the landing
 
 **Tracking template:** *{lpurl}?ref=bing&keyword={Keyword}&cmpid={CampaignID}&agid={AdGroupID}&adid={AdID}*. The *{lpurl}* tag references the Landing Page URL. Bing will replace this with your Final URL when your ad is served.
 
-[!INCLUDE[validationrules_trackingurltemplate](../../concepts/includes/validationrules_trackingurltemplate.md)]
+[!INCLUDE[validationrules_trackingurltemplate](../../concepts/guides/includes/validationrules_trackingurltemplate.md)]
 
 For an account, campaign, or ad group level tracking template, please note the following:
 
--   [!INCLUDE[validationrules_trackingurltemplate_account_through_adgroup](../../concepts/includes/validationrules_trackingurltemplate_account_through_adgroup.md)]
+-   [!INCLUDE[validationrules_trackingurltemplate_account_through_adgroup](../../concepts/guides/includes/validationrules_trackingurltemplate_account_through_adgroup.md)]
 
 We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](https://msdn.microsoft.com/library/bb671588.aspx).
 
 **Important:** Only super admin and standard users can update an account.
 
 ## <a name="finalurlvalidation"></a>Final URLs
-[!INCLUDE[validationrules_finalurls](../../concepts/includes/validationrules_finalurls.md)]
+[!INCLUDE[validationrules_finalurls](../../concepts/guides/includes/validationrules_finalurls.md)]
 
 Also note the following validation rules for ad and site link final URLs.
 
@@ -72,10 +72,10 @@ Custom parameters work exactly the same as URL parameters with respect to dynami
 
 Custom parameters are helpful with sharing dynamic information across multiple URLs in a meaningful way for you to report on. Similarly how dynamic texts are provided by Bing Ads to give you more campaign insights on your performance. Custom parameters are advertiser created. 
 
-[!INCLUDE[validationrules_customparameters](../../concepts/includes/validationrules_customparameters.md)]
+[!INCLUDE[validationrules_customparameters](../../concepts/guides/includes/validationrules_customparameters.md)]
 
 ## <a name="bulkservice"></a>URL Tracking with the Bulk Service
-The [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/bulk-download-and-upload.md).
+The [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md).
 
 These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx).
 
@@ -130,5 +130,5 @@ The *FinalURL* and *FinalMobileURL* columns for upgraded URLs are available in t
 
 
 ## See Also
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)
 

@@ -15,7 +15,7 @@ manager: "ehansen"
 # Shopping Campaigns in Python
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] using the following Campaign Management service operations.
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 from auth_helper import *
@@ -791,4 +791,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

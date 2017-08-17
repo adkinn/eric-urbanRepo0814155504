@@ -19,9 +19,9 @@ This section identifies error codes that the [!INCLUDE[brand](../../concepts/inc
 
 |Title|Description|
 |---------|---------------|
-|[Bing Ads Operation Error Codes](../../concepts/bing-ads-operation-error-codes.md)|Defines the *Code* and *ErrorCode* elements that may be returned in an error data object.|
-|[Bing Ads Editorial Failure Reason Codes](../../concepts/bing-ads-editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
+|[Bing Ads Operation Error Codes](../../concepts/api-reference/bing-ads-operation-error-codes.md)|Defines the *Code* and *ErrorCode* elements that may be returned in an error data object.|
+|[Bing Ads Editorial Failure Reason Codes](../../concepts/api-reference/bing-ads-editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
 
 ## See Also
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in PHP
 This example shows how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -1048,4 +1048,4 @@ function OutputNestedPartialErrors($nestedPartialErrors)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  

@@ -15,7 +15,7 @@ manager: "ehansen"
 # Shopping Campaigns in PHP
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -1280,4 +1280,4 @@ function OutputCampaignCriterionIdentifiers($criterionIds, $partialErrors)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  

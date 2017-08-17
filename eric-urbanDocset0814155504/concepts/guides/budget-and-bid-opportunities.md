@@ -85,5 +85,5 @@ For operations that suggest keywords, such as [SuggestKeywordsFromExistingKeywor
 
 ## See Also
 [Ad Insight Service Reference](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx)  
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

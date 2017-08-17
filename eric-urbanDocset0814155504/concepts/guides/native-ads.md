@@ -27,7 +27,7 @@ You can manage native ads settings with either the [Bulk Service](https://msdn.m
 -   [Getting Performance Reports for Native Ads](#reporting)  
 
 ## <a name="bulkservice"></a>Managing Native Ads Settings with the Bulk Service
-The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/bulk-download-and-upload.md).
+The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md).
 
 These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with properties for managing Native ads that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). Use the *Bid Adjustment* column of the following records to get and set the Native ads bid adjustment.
 
@@ -59,7 +59,7 @@ For example you can follow these steps to set up an image ad extension for nativ
 These are the Native ads entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bb671719.aspx). You can create, read, update, and delete these entities.
 
 > [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../../concepts/handling-service-errors-and-exceptions.md#partialsuccess).
+> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../../concepts/guides/handling-service-errors-and-exceptions.md#partialsuccess).
 
 |Entities|Create|Read|Update|Delete|
 |------------|----------|--------|----------|----------|
@@ -92,10 +92,10 @@ For Native ads reporting and analysis you can use the Native ad distribution val
 
 Performance data for native ads will be included in existing reports by default, with a few exceptions. The *SearchQueryPerformanceReport* ([Request](https://msdn.microsoft.com/library/ee703962.aspx) | [Filter](https://msdn.microsoft.com/library/ee703961.aspx) | [Column](https://msdn.microsoft.com/library/ee703958.aspx)) and *ShareOfVoiceReport* ([Request](https://msdn.microsoft.com/library/jj592909.aspx) | [Filter](https://msdn.microsoft.com/library/jj592908.aspx) | [Column](https://msdn.microsoft.com/library/jj592910.aspx)) reports will not have Native performance metrics even when ad distribution is an included column or included filter.
 
-For more information about reporting, see [Reports](../../concepts/reports.md) and [Request and Download a Report](../../concepts/request-and-download-a-report.md).
+For more information about reporting, see [Reports](../../concepts/guides/reports.md) and [Request and Download a Report](../../concepts/guides/request-and-download-a-report.md).
 
 You can also get performance data for Native ads using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). You can get performance data for Native ads when downloading the [Campaign](https://msdn.microsoft.com/library/dn764752.aspx), [Ad Group](https://msdn.microsoft.com/library/dn764731.aspx), and [Keyword](https://msdn.microsoft.com/library/dn764751.aspx) records.
 
 ## See Also
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

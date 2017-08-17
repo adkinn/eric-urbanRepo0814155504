@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ad Extensions in Python
 The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 from auth_helper import *
@@ -538,4 +538,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

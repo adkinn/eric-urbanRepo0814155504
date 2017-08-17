@@ -12,7 +12,7 @@ caps.latest.revision: 7
 # Walkthrough: Bing Ads Web Application in PHP
 This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. 
 
-For more information about getting started with PHP, please see [Setting Up the Development Environment](../../concepts/getting-started-using-php-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](https://go.microsoft.com/fwlink/?linkid=838593).
+For more information about getting started with PHP, please see [Setting Up the Development Environment](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](https://go.microsoft.com/fwlink/?linkid=838593).
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
@@ -202,6 +202,6 @@ For more information about getting started with PHP, please see [Setting Up the 
 6. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). 
 
 ## See Also
-[PHP Examples for Bing Ads](../../concepts/php-examples-for-bing-ads.md)  
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[PHP Examples for Bing Ads](../../concepts/code-examples/php-examples-for-bing-ads.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

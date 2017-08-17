@@ -38,7 +38,7 @@ When an operation fails, it can return one of the following faults. To determine
 
 All fault objects are derived from the *ApplicationFault* object. The *ApplicationFault* object defines the *TrackingId* element, which uniquely identifies the log entry that contains the details of the API call.
 
-The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../../concepts/bing-ads-api-error-codes.md).
+The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads API Error Codes](../../concepts/api-reference/bing-ads-api-error-codes.md).
 
 Available fault and data objects vary per service. The following table describes the fault model and links to error data objects for each service.
 
@@ -105,7 +105,7 @@ You can follow these steps to capture the SOAP envelopes from a Java application
 #### Spring Framework and Apache CXF Options
 You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application in Eclipse.
 
-1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md). 
+1.  Set up the development environment as described in [Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md). 
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
@@ -189,7 +189,7 @@ To resolve the issue efficiently, please provide support with the following info
     > [!NOTE]
     > If you are managing user authentication with OAuth, and escalating an issue related to error code *105* or *106*, please also include the user identifier corresponding to the Microsoft Account.
     > 
-    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/authentication-with-oauth.md).
+    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
 
 -   **Issue or Error**: Include all elements of the SOAP response, and please also note the date and time when the error occurred.
 
@@ -209,6 +209,6 @@ You should not call the *Close* method in the finally block to release the servi
 For the same reason, the use of the **using** statement is not recommended. For more information, see [Avoiding Problems with the Using Statement](http://go.microsoft.com/fwlink/?LinkID=219970).
 
 ## See Also
-[Bing Ads API Error Codes](../../concepts/bing-ads-api-error-codes.md)  
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[Bing Ads API Error Codes](../../concepts/api-reference/bing-ads-api-error-codes.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

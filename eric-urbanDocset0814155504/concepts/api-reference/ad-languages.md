@@ -65,7 +65,7 @@ The following country codes are supported per customer language e.g. you can use
 
 		
 ## <a name="countdownlanguage"></a>Countdown Language
-Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The following language codes are supported for [countdown functions](../../concepts/expanded-text-ads.md#countdown).
+Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The following language codes are supported for [countdown functions](../../concepts/guides/expanded-text-ads.md#countdown).
 
 |Language Code|Language|Countdown Length|
 |------------|------------|------------------|

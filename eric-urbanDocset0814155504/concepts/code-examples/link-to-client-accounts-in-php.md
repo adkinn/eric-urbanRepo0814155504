@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in PHP
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -463,5 +463,5 @@ function PrintPartialErrors($operationErrors, $partialErrors)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  
 

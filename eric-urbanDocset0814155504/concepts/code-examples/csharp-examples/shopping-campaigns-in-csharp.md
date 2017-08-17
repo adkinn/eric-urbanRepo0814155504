@@ -16,7 +16,7 @@ manager: "ehansen"
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand_bsc.md)] campaigns.
 
 
-[!INCLUDE[csharp_header](../../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 // This source is subject to the Microsoft Public License.
@@ -873,4 +873,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  

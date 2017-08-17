@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in Python
 This example shows how to associate targets with a campaign and ad group using the following Campaign Management service operations.
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 from bingads.service_client import ServiceClient
@@ -703,4 +703,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

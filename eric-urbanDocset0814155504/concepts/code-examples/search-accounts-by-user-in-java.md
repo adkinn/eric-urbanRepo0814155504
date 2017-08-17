@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in Java
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[java_header](../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -174,4 +174,4 @@ public class SearchUserAccounts extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  

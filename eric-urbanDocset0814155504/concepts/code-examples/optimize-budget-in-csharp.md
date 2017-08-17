@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in C#
 This example shows how to get the budget opportunities for each campaign in the current authenticated account.
 
-[!INCLUDE[csharp_header](../../concepts/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
 
 ```c#
 using System;
@@ -99,4 +99,4 @@ namespace BingAdsExamplesLibrary.V11
 ```
 
 ## See Also
-[Getting Started Using C&#35; with Bing Ads Services](../../concepts/getting-started-using-csharp-with-bing-ads-services.md)  
+[Getting Started Using C&#35; with Bing Ads Services](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md)  

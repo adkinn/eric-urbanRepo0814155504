@@ -14,7 +14,7 @@ ms.author: "eur"
 # Keyword Ideas and Traffic Estimates
 Choosing keywords is one of the most important aspects of creating and maintaining a successful advertising campaign. But where to start? How do you identify the many possible keywords that describe your business? How much should you bid on those keywords to be competitive with other advertisers?
 
-This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx) service. The results are similar to using the Keyword Planner tool in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](../../concepts/budget-and-bid-opportunities.md). 
+This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx) service. The results are similar to using the Keyword Planner tool in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](../../concepts/guides/budget-and-bid-opportunities.md). 
 
 > [!NOTE]
 > Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.
@@ -24,7 +24,7 @@ Given a list of existing keywords, the [GetKeywordIdeas](https://msdn.microsoft.
 
 With the Bing Ads web application's Keyword Planner tool you search for new keywords using a phrase, website, or category as shown in the screen shot below.
  
-![GetKeywordIdeas to Keyword Planner UI](../../concepts/media/getkeywordideas-to-keyword-planner-ui.png)
+![GetKeywordIdeas to Keyword Planner UI](../../concepts/guides/media/getkeywordideas-to-keyword-planner-ui.png)
 
 Likewise with the [GetKeywordIdeas](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordideas.aspx) operation you must specify one or more of the corresponding search parameters.
 -  The [QuerySearchParameter](https://msdn.microsoft.com/library/bing-ads-ad-insight-querysearchparameter.aspx) corresponds to filling in *Product or service*.
@@ -42,7 +42,7 @@ Once you have already settled on an initial set of keywords, the [GetKeywordTraf
 
 With the Bing Ads web application's Keyword Planner tool under *Get performance and cost estimates* you are prompted to either enter keywords or upload a file with keywords. The [GetKeywordTrafficEstimates](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordtrafficestimates.aspx) operation requires that you already have a list of keywords e.g., retrieved via the [GetKeywordIdeas](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordideas.aspx) operation. 
 
-![GetKeywordTrafficEstimates to Keyword Planner UI](../../concepts/media/getkeywordtrafficestimates-to-keyword-planner-ui.png)
+![GetKeywordTrafficEstimates to Keyword Planner UI](../../concepts/guides/media/getkeywordtrafficestimates-to-keyword-planner-ui.png)
 
 The following inputs are required for the [GetKeywordTrafficEstimates](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordtrafficestimates.aspx) operation.
 -  In the *Criteria* element of the [CampaignEstimator](https://msdn.microsoft.com/library/bing-ads-ad-insight-campaignestimator.aspx) object you must specify all of these criteria: [LanguageCriterion](https://msdn.microsoft.com/library/bing-ads-ad-insight-languagecriterion.aspx), [LocationCriterion](https://msdn.microsoft.com/library/bing-ads-ad-insight-locationcriterion.aspx), and [NetworkCriterion](https://msdn.microsoft.com/library/bing-ads-ad-insight-networkcriterion.aspx).
@@ -59,4 +59,4 @@ The result is a [KeywordEstimate](https://msdn.microsoft.com/library/bing-ads-ad
 
 ## See Also
 [Ad Insight Service Reference](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx)  
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  

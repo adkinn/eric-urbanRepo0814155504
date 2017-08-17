@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Geographical Locations in PHP
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/geographical-location-codes.md).
+ that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
@@ -278,4 +278,4 @@ function DownloadFile($fileUrl){
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)    
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)    

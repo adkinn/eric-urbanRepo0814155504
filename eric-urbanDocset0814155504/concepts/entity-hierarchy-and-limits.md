@@ -47,7 +47,7 @@ The following table defines limits for [AdvertiserAccount](https://msdn.microsof
 |Name|The string can contain a maximum of 100 characters and must be unique within the customer.|
 
 ## <a name="adextensions"></a>Ad Extensions
-Ad extensions let you decorate text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](../concepts/ad-extensions.md).
+Ad extensions let you decorate text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](../concepts/guides/ad-extensions.md).
 
 An account can contain up to 1,500,000 sitelink2 ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
 
@@ -353,7 +353,7 @@ Additionally a campaign can be associated with any or all negative keyword lists
 
 If you specify negative keywords at both levels, both lists will be used in comparison to the user’s query. Thus an ad group could effectively have 140,000 negative keywords applied via the sum of the 20,000 negative keywords exclusively set for that ad group, the 20,000 negative keywords exclusively set for the ad group's parent campaign, and the 100,000 negative keywords in lists shared with the ad group's parent campaign.
 
-For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](../concepts/negative-keywords.md).
+For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](../concepts/guides/negative-keywords.md).
 
 ## <a name="negativesites"></a>Negative Site Placements
 To prevent your ad from appearing on specific web sites within the search network you can configure website exclusions, also known as negative site placements. To explicitly opt out from having your search ads displayed on partner websites sites, you can specify negative sites at the campaign and ad group level. For search ads, you can specify only syndicated search websites. Ad-group-level website exclusions override campaign-level website exclusions.
@@ -363,7 +363,7 @@ You can manage negative site placements using the Campaign Management service ([
 Each ad group or campaign can contain up to 2,500 negative site placements. Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not.
 
 ## <a name="productgroup"></a>Product Group
-Product groups are used to specify which products from your Bing Merchant Center catalog should be included in a particular ad group. In order to understand product groups, first make sure you are familiar with [Product Ads](../concepts/product-ads.md).
+Product groups are used to specify which products from your Bing Merchant Center catalog should be included in a particular ad group. In order to understand product groups, first make sure you are familiar with [Product Ads](../concepts/guides/product-ads.md).
 
 After you create a shopping campaign, Bing Ads creates a default ad group. That ad group includes a product group containing all of the products in your Bing Merchant Center catalog feed. However, you don't typically want an ad group to contain all products. Instead, you likely want each ad group to contain only very closely related products in order more effectively manage which ads show, and when. With product groups you can narrow down that default group to a customized list of specific products.
 
@@ -375,7 +375,7 @@ For more information, see the Bing Ads Help article [Understand and use product 
 
 
 ## <a name="targets"></a>Targets
-You can set criteria to show your ads based on age, day and time, device, gender, and location. Starting with Bing Ads API version 11 you must use *Criterion* objects instead of *Target* objects. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the technical guides [Show Ads to Your Target Audience](../concepts/show-ads-to-your-target-audience.md) and [Upgrade Targets to Criterions](../concepts/upgrade-targets-to-criterions.md).
+You can set criteria to show your ads based on age, day and time, device, gender, and location. Starting with Bing Ads API version 11 you must use *Criterion* objects instead of *Target* objects. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the technical guides [Show Ads to Your Target Audience](../concepts/guides/show-ads-to-your-target-audience.md) and [Upgrade Targets to Criterions](../concepts/guides/upgrade-targets-to-criterions.md).
 
 The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 

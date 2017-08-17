@@ -12,7 +12,7 @@ caps.latest.revision: 3
 # Version 11 API Reference
 For [!INCLUDE[brand](../../concepts/includes/brand.md)] version 11 reference content, see the following sections.
 
-[!INCLUDE[v10_sunset](../../concepts/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
 
 ## Bing Ads API Version 11 Services
 

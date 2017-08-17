@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ad Extensions in Java
 The following example shows how to add extensions to an account’s ad extension library, get extensions from the library, associate the extensions with a campaign, get the extensions that are associated with a campaign, and determine why an extension failed editorial review.
 
-[!INCLUDE[java_header](../../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -803,4 +803,4 @@ public class AdExtensions extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  

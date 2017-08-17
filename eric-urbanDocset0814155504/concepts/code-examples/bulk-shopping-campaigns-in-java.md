@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Shopping Campaigns in Java
-The following example shows how to apply product conditions for Bing Shopping Campaigns using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
+The following example shows how to apply product conditions for Bing Shopping Campaigns using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
 
-[!INCLUDE[java_header](../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -955,5 +955,5 @@ public class BulkShoppingCampaigns extends BulkExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  
 

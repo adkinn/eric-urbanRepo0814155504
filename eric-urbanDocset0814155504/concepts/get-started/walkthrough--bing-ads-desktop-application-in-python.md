@@ -19,7 +19,7 @@ This tutorial describes how to get started running a [!INCLUDE[brand](../../conc
 By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your [!INCLUDE[brand](../../concepts/includes/brand.md)] account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
 
 ## <a name="requirements"></a>Prerequisites
-To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md) for an overview of the Python SDK.
+To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md) for an overview of the Python SDK.
 
 You will need to install either Python 2.7 or 3.4 in your development environment.
 
@@ -49,7 +49,7 @@ We'll create a virtual environment for local development. In your project right-
 
 -   Make sure the option to **Download and install packages** is checked.
 
-![pythonsdk_PTVS_AddVirtualEnv](../../concepts/media/pythonsdk_ptvs_addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
+![pythonsdk_PTVS_AddVirtualEnv](../../concepts/get-started/media/pythonsdk_ptvs_addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
 
 > [!NOTE]
 > For more information about Python virtual environments, see [PEP 405 - Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/).
@@ -473,5 +473,5 @@ authorization_data.authentication.token_refreshed_callback=save_refresh_token
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  
 

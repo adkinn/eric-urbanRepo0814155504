@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in PHP
 This example shows how to associate targets with a campaign and ad group using the following Campaign Management service operations.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -951,4 +951,4 @@ function OutputTarget($target)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  

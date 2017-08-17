@@ -40,7 +40,7 @@ To create a [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaign
 After you complete these steps, you can follow the steps to [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping_campaignservice).
 
 ## <a name="bingshopping_bulkservice"></a>Create a Bing Shopping Campaign with the Bulk Service
-The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/bulk-download-and-upload.md).
+The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md).
 
 These are the [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] entities that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx).
 
@@ -50,7 +50,7 @@ These are the [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] entiti
 -   [Ad Group Product Partition](https://msdn.microsoft.com/library/cc540184.aspx)
 -   [Product Ad](https://msdn.microsoft.com/library/dn764755.aspx)
 
-For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns using the Bulk service, see [C&#35;](../../concepts/bulk-shopping-campaigns-in-csharp.md) | [Java](../../concepts/bulk-shopping-campaigns-in-java.md) | [Python](../../concepts/bulk-shopping-campaigns-in-python.md).
+For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns using the Bulk service, see [C&#35;](../../concepts/code-examples/bulk-shopping-campaigns-in-csharp.md) | [Java](../../concepts/code-examples/bulk-shopping-campaigns-in-java.md) | [Python](../../concepts/code-examples/bulk-shopping-campaigns-in-python.md).
 
 To create a [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaign, follow these steps.
 
@@ -123,7 +123,7 @@ After you complete these steps, the delivery engine can begin serving product ad
 These are the [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bb671719.aspx). You can create, read, update, and delete these entities.
 
 > [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../../concepts/handling-service-errors-and-exceptions.md#partialsuccess).
+> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../../concepts/guides/handling-service-errors-and-exceptions.md#partialsuccess).
 
 |Entities|Service Operations|
 |------------|----------------------|
@@ -133,7 +133,7 @@ These are the [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] entiti
 |[ProductAd](https://msdn.microsoft.com/library/jj738612.aspx)|[AddAds](https://msdn.microsoft.com/library/dn277506.aspx)<br /><br />[GetAdsByAdGroupId](https://msdn.microsoft.com/library/dn277534.aspx)<br /><br />[DeleteAds](https://msdn.microsoft.com/library/dn236310.aspx)<br /><br />[GetAdsByEditorialStatus](https://msdn.microsoft.com/library/dn277538.aspx)<br /><br />[GetAdsByIds](https://msdn.microsoft.com/library/dn236296.aspx)<br /><br />[UpdateAds](https://msdn.microsoft.com/library/dn277531.aspx)|
 |[BiddableAdGroupCriterion](https://msdn.microsoft.com/library/jj689538.aspx)<br /><br />**Note:** Currently the only supported [BiddableAdGroupCriterion](https://msdn.microsoft.com/library/jj689538.aspx) is used for a [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaign [ProductPartition](https://msdn.microsoft.com/library/dn913123.aspx). You cannot update or delete a product partition, so [ApplyProductPartitionActions](https://msdn.microsoft.com/library/dn913134.aspx) is used for all write operations. [AddAdGroupCriterions](https://msdn.microsoft.com/library/dn277499.aspx), [DeleteAdGroupCriterions](https://msdn.microsoft.com/library/dn236302.aspx), and [UpdateAdGroupCriterions](https://msdn.microsoft.com/library/dn277527.aspx) operations are not supported for managing [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns.|[ApplyProductPartitionActions](https://msdn.microsoft.com/library/dn913134.aspx)<br /><br />[GetAdGroupCriterionsByIds](https://msdn.microsoft.com/library/dn277520.aspx)
 
-For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns using the Campaign Management service, see [C&#35;](../../concepts/shopping-campaigns-in-csharp.md) | [Java](../../concepts/shopping-campaigns-in-java.md) | [PHP](../../concepts/shopping-campaigns-in-php.md) | [Python](../../concepts/shopping-campaigns-in-python.md).
+For code examples that show how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns using the Campaign Management service, see [C&#35;](../../concepts/code-examples/shopping-campaigns-in-csharp.md) | [Java](../../concepts/code-examples/shopping-campaigns-in-java.md) | [PHP](../../concepts/code-examples/shopping-campaigns-in-php.md) | [Python](../../concepts/code-examples/shopping-campaigns-in-python.md).
 
 To create a [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaign, follow these steps.
 
@@ -241,7 +241,7 @@ If you request a report using account level scope, then the performance reports 
     </Campaigns>
 </Scope>
 ```
-For more information about using the [Reporting Service](https://msdn.microsoft.com/library/bb671732.aspx), see [Reports](../../concepts/reports.md) and [Request and Download a Report](../../concepts/request-and-download-a-report.md).
+For more information about using the [Reporting Service](https://msdn.microsoft.com/library/bb671732.aspx), see [Reports](../../concepts/guides/reports.md) and [Request and Download a Report](../../concepts/guides/request-and-download-a-report.md).
 
 When you download entities with the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx), if the [DataScope](https://msdn.microsoft.com/library/dn249976.aspx) element of the download request includes *EntityPerformanceData*, the download file will also include performance statistics for most of the record types listed in [Create a Bing Shopping Campaign with the Bulk Service](#bingshopping_bulkservice). The tree root [Ad Group Product Partition](https://msdn.microsoft.com/library/cc540184.aspx) record contains performance statistics for the entire tree, the [Ad Group Product Partition](https://msdn.microsoft.com/library/cc540184.aspx) record corresponding to each subdivision contains the performance statistics of all leaf nodes under it, and the [Ad Group Product Partition](https://msdn.microsoft.com/library/cc540184.aspx) record corresponding to each unit contains performance statistics only for that specific node.
 

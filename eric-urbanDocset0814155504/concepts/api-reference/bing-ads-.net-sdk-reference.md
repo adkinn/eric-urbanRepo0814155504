@@ -13,16 +13,16 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads .NET SDK Reference
-Reference documentation for the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md) is available in the sections below.
+Reference documentation for the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md) is available in the sections below.
 
 ## In This Section
 
 |Title|Description|
 |---------|---------------|
-|[Microsoft.BingAds Namespaces](https://msdn.microsoft.com/library/mt757010.aspx)|The *Microsoft.BingAds* namespaces contain classes corresponding to all [Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md).|
+|[Microsoft.BingAds Namespaces](https://msdn.microsoft.com/library/mt757010.aspx)|The *Microsoft.BingAds* namespaces contain classes corresponding to all [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md).|
 
 ## See Also
-[Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md)  
-[Bing Ads Web Service Addresses](../../concepts/bing-ads-web-service-addresses.md)  
-[Common Market Values](../../concepts/common-market-values.md)  
+[Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md)  
+[Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
+[Common Market Values](../../concepts/api-reference/common-market-values.md)  
 

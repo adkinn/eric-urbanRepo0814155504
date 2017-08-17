@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in Java
 This example shows how to associate negative keywords and negative keyword lists.
 
-[!INCLUDE[java_header](../../concepts/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -595,4 +595,4 @@ public class NegativeKeywords extends ExampleBase {
 ```
 
 ## See Also
-[Getting Started Using Java with Bing Ads Services](../../concepts/getting-started-using-java-with-bing-ads-services.md)  
+[Getting Started Using Java with Bing Ads Services](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  

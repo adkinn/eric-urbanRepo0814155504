@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in Python
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[python_header](../../concepts/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
 
 ```python
 import datetime
@@ -218,4 +218,4 @@ if __name__ == '__main__':
 ```
 
 ## See Also
-[Getting Started Using Python with Bing Ads Services](../../concepts/getting-started-using-python-with-bing-ads-services.md)  
+[Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md)  

@@ -15,7 +15,7 @@ manager: "ehansen"
 # Report Requests in PHP
 The following example shows how to request and retrieve a keyword performance report using the following Reporting service operations.
 
-[!INCLUDE[php_header](../../concepts/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
 
 ```php
 <?php
@@ -585,4 +585,4 @@ function GetAudiencePerformanceReportRequest($accountId)
 ```
 
 ## See Also
-[Getting Started Using PHP with Bing Ads Services](../../concepts/getting-started-using-php-with-bing-ads-services.md)  
+[Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  
