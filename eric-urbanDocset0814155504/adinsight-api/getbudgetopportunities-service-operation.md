@@ -1,5 +1,5 @@
 ---
-title: "GetBudgetOpportunities Service Operation"
+title: "GetBudgetOpportunities"
 ms.custom: ""
 ms.date: "06/07/2017"
 ms.reviewer: ""
