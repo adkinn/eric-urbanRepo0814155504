@@ -1,0 +1,162 @@
+---
+title: "Campaign Negative Keyword"
+ms.custom: ""
+ms.date: "07/25/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: 975adb43-4963-43e1-ab7b-509014a1e254
+caps.latest.revision: 7
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
+---
+# Campaign Negative Keyword
+Defines a negative keyword assigned to a campaign that can be uploaded and downloaded in a bulk file.
+
+In the bulk schema each of the negative keywords associated with a campaign are represented individually by their own row. For example if a campaign has two negative keywords, they are represented by two *Campaign Negative Keyword* records in the bulk file with *Status* set to Active.
+
+> [!NOTE]
+> The *Campaign Negative Keyword* can be added and deleted, but cannot be updated.
+
+## <a name="entitydata"></a>Attribute Fields in the Bulk File
+For an *Campaign Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](../bulk-api/bulk-file-schema.md). 
+
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Keyword](#keyword)
+- [Match Type](#matchtype)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+
+You can download all fields of the *Campaign Negative Keyword* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignNegativeKeywords* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+
+The following Bulk CSV example would add a new campaign negative keyword given a valid campaign ID (*Parent Id*). 
+
+```csv
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
+Format Version,,,,,,,,,,5
+Campaign Negative Keyword,Active,,-112,,,ClientIdGoesHere,,shoes,Exact,
+```
+
+If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignNegativeKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
+
+```csharp
+var uploadEntities = new List<BulkEntity>();
+
+// Map properties in the Bulk file to the BulkCampaignNegativeKeyword
+var bulkCampaignNegativeKeyword = new BulkCampaignNegativeKeyword
+{
+    // 'Parent Id' column header in the Bulk file
+    CampaignId = campaignIdKey,
+    // 'Campaign' column header in the Bulk file
+    CampaignName = null,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
+
+    // Map properties in the Bulk file to the 
+    // NegativeKeyword object of the Campaign Management service.
+    NegativeKeyword = new NegativeKeyword
+    {
+        // 'Id' column header in the Bulk file
+        Id = null,
+        // 'Match Type' column header in the Bulk file
+        MatchType = MatchType.Exact,
+        // 'Text' column header in the Bulk file
+        Text = "shoes"
+    },
+                
+    // 'Status' column header in the Bulk file
+    Status = Status.Active
+};
+
+uploadEntities.Add(bulkCampaignNegativeKeyword);
+
+var entityUploadParameters = new EntityUploadParameters
+{
+    Entities = uploadEntities,
+    ResponseMode = ResponseMode.ErrorsAndResults,
+    ResultFileDirectory = FileDirectory,
+    ResultFileName = DownloadFileName,
+    OverwriteResultFile = true,
+};
+
+var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+```
+
+### <a name="campaign"></a>Campaign
+The name of the campaign that contains the negative keyword.
+
+**Add:** Read-only and Required  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
+**Delete:** Read-only and Required  
+
+> [!NOTE]
+> For add and delete, you must specify either the *Parent Id* or *Campaign* field.
+
+### <a name="clientid"></a>Client Id
+[!INCLUDE[bulkcolumn_clientid](../bulk-api/includes/bulkcolumn-clientid.md)]
+
+**Add:** Optional  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
+**Delete:** Read-only  
+
+### <a name="id"></a>Id
+The system generated identifier of the negative keyword.
+
+**Add:** Read-only  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
+**Delete:** Read-only and Required  
+
+### <a name="keyword"></a>Keyword
+The negative keyword text. 
+
+The text can contain a maximum of 100 characters.
+
+**Add:** Required  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
+**Delete:** Read-only
+
+### <a name="matchtype"></a>Match Type
+The type of match to compare the negative keyword and the user's search term.
+
+The supported match type values for a negative keyword are *Phrase* and *Exact*.
+
+**Add:** Required  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
+**Delete:** Read-only
+
+### <a name="modifiedtime"></a>Modified Time
+[!INCLUDE[bulkcolumn_modifiedtime](../bulk-api/includes/bulkcolumn-modifiedtime.md)]
+
+**Add:** Read-only  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
+**Delete:** Read-only  
+
+### <a name="parentid"></a>Parent Id
+The system generated identifier of the campaign that contains the negative keyword.
+
+This bulk field maps to the *Id* field of the [Campaign](../bulk-api/campaign.md) record.
+
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new negative keywords to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
+**Delete:** Read-only  
+
+> [!NOTE]
+> For add and delete, you must specify either the *Parent Id* or *Campaign* field.
+
+### <a name="status"></a>Status
+Represents the association status between the campaign and the negative keyword.
+
+If the negative keyword is associated with the campaign, this  field's value is *Active*.
+
+Possible values are *Active* or *Deleted*. 
+
+**Add:** Optional. The default value is *Active*.  
+**Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative keyword, you must upload the *Status*, *Id*, and *Parent Id*. To delete all negative keywords for the campaign, you only need to upload the *Status* and *Parent Id* in a single record. Then optionally you can add new negative keyword records to replace the deleted set.
+
