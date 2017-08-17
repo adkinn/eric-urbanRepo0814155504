@@ -1,4 +1,0 @@
-This example has been developed and run within the environment described in [Getting Started Using Java with Bing Ads Services](../../docset-overview/getting-started-using-java-with-bing-ads-services.md). To get started developing Bing Ads applications with Java, [install the SDK](../../docset-overview/getting-started-using-java-with-bing-ads-services.md#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20Java.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20Java.md) application.
-
-> [!NOTE]
-> This example depends on additional classes such as *ExampleBase.java* that you can download from [GitHub](http://go.microsoft.com/fwlink/?LinkId=525443).
