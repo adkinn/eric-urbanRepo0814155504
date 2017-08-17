@@ -1,0 +1,2 @@
+If the service operation fails, it throws a [FaultException](http://go.microsoft.com/fwlink/?LinkID=108940), which contains one or more of the Bing Ads API error data objects. For information about the fault detail objects, see [Ad Insight Error Data Objects](../../Ad Insight Version 11/ad-insight-error-data-objects.md) and [Handling Service Errors and Exceptions](http://go.microsoft.com/fwlink/?LinkId=691024).
+
