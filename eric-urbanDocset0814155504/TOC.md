@@ -1,7 +1,1 @@
-# [concepts](concepts\TOC.md)
-# [get-started](concepts\get-started\TOC.md)
-# [code-examples](concepts\code-examples\TOC.md)
-# [guides](concepts\guides\TOC.md)
-# [csharp-examples](concepts\code-examples\csharp-examples\TOC.md)
-# [java-examples](concepts\code-examples\java-examples\TOC.md)
-# [api-reference](concepts\api-reference\TOC.md)
+# [Bing Ads API Overview](Bing Ads API Overview\TOC.md)
