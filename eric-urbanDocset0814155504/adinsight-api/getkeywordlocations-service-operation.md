@@ -1,5 +1,5 @@
 ---
-title: "GetKeywordLocations Service Operation"
+title: "GetKeywordLocations"
 ms.custom: ""
 ms.date: "06/07/2017"
 ms.reviewer: ""
