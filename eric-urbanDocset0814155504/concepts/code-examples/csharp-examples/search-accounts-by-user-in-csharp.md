@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in C# #
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

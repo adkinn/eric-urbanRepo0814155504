@@ -15,7 +15,7 @@ manager: "ehansen"
 # Report Requests in C# #
 The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

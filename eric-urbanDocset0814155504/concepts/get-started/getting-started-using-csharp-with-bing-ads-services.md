@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using C# with Bing Ads Services
-To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application. You can also browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application. You can also browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -58,7 +58,7 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 2.  Within the console command line, type Install-Package Microsoft.BingAds.SDK.
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application.
+Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
 You must initialize a new instance of *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../../concepts/includes/brand.md)] uses to authorize a user. The *ServiceClient&lt;TService&gt;*, *BulkServiceManager* and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
@@ -525,7 +525,7 @@ ReportingOperationInProgressException     |Microsoft.BingAds.V11.Reporting      
      
 Some exceptions are only returned when using *BulkServiceManager* (using Microsoft.BingAds.Bulk or Microsoft.BingAds.V11.Bulk) or ReportingServiceManager (using Microsoft.BingAds.V11.Reporting). The *BulkServiceManager* will automatically retry upload, download, and polling operations up to the maximum timeout duration that you specified. You can set the maximum retry timeout duration for the *BulkServiceManager* by passing a *CancellationToken* to the *UploadEntitiesAsync*, *DownloadEntitiesAsync*, *UploadFileAsync*, *DownloadFileAsync*, or *TrackAsync* operations, as shown in the [Background Completion](#backgroundcompletion), [Submit and Download](#submitdownload), and [Download Results](#downloadresults) examples in the sections above. If no timeout is specified, the *BulkServiceManager* will continue to retry until the server returns a timeout or internal error. Likewise, the *ReportingServiceManager* will automatically retry download and polling operations up to the maximum timeout duration that you specify. You can set the maximum retry timeout duration for the *ReportingServiceManager* by passing a *CancellationToken* to the *DownloadFileAsync* or *TrackAsync* operations, as shown in the [Background Completion](#reportingbackgroundcompletion), [Submit and Download](#reportingsubmitdownload), and [Download Results](#reportingdownloadresults) examples in the sections above. If no timeout is specified, the *ReportingServiceManager* will continue to retry until the server returns a timeout or internal error. 
 
-For code examples showing how to handle Bing Ads API service and Bing Ads .NET SDK exceptions, see [C# Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md). 
+For code examples showing how to handle Bing Ads API service and Bing Ads .NET SDK exceptions, see [C# Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md). 
 
 ## <a name="sandbox"></a>Configuring Sandbox
 Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* ([Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) application) or *App.config* ([Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application) file.
@@ -547,6 +547,6 @@ ReportingServiceManager ReportingService = new ReportingServiceManager(authoriza
 ## See Also
 [Sandbox](../../concepts/sandbox.md)  
 [Bing Ads .NET SDK Reference](../../concepts/bing-ads-net-sdk-reference.md)  
-[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md)  
+[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md)  
 [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

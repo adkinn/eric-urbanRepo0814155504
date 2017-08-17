@@ -284,6 +284,6 @@ If you are using Microsoft Azure to deploy your web application, the following a
 
 ## See Also
 [Sandbox](../../concepts/sandbox.md)  
-[Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md)  
+[Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md)  
 [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

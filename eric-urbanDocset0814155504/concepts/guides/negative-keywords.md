@@ -27,7 +27,7 @@ You can [assign negative keywords](#assignednegativekeywords) to an individual c
 
 For negative keyword limits per entity, please see [Negative Keywords](../../concepts/entity-hierarchy-and-limits.md#negativekeywords).
 
-For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [C&#35;](../../concepts/code-examples/csharp-examples/negative-keywords-in-csharp.md) | [Java](../../concepts/code-examples/java-examples/negative-keywords-in-java.md) | [PHP](../../concepts/code-examples/negative-keywords-in-php.md) | [Python](../../concepts/code-examples/negative-keywords-in-python.md).
+For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [C&#35;](../../concepts/code-examples/negative-keywords-in-csharp.md) | [Java](../../concepts/code-examples/negative-keywords-in-java.md) | [PHP](../../concepts/code-examples/negative-keywords-in-php.md) | [Python](../../concepts/code-examples/negative-keywords-in-python.md).
 
 ## <a name="assignednegativekeywords"></a>Assigned Negative Keywords
 You may choose to assign a set of negative keywords to an individual campaign or ad group. An assigned set of negative keywords cannot be shared with other campaigns or ad groups. You can manage an assigned set of negative keywords with the [AddNegativeKeywordsToEntities](https://msdn.microsoft.com/en-us/library/dn743724.aspx), [DeleteNegativeKeywordsFromEntities](https://msdn.microsoft.com/en-us/library/dn743725.aspx), and [GetNegativeKeywordsByEntityIds](https://msdn.microsoft.com/en-us/library/dn743730.aspx) operations.

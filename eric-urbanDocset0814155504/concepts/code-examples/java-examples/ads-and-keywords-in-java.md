@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ads and Keywords in Java
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

@@ -39,7 +39,7 @@ For details about managing your targets, see the following sections.
 
 -   [Bid Adjustments](#bidadjust)
 
-For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../../concepts/code-examples/csharp-examples/targets-in-csharp.md) | [Java](../../concepts/code-examples/java-examples/targets-in-java.md) | [PHP](../../concepts/code-examples/targets-in-php.md) | [Python](../../concepts/code-examples/targets-in-python.md).
+For code examples that show how to associate targets with a campaign and ad group using the Campaign Management service, see [C&#35;](../../concepts/code-examples/targets-in-csharp.md) | [Java](../../concepts/code-examples/targets-in-java.md) | [PHP](../../concepts/code-examples/targets-in-php.md) | [Python](../../concepts/code-examples/targets-in-python.md).
 
 ## <a name="targettypes"></a>Target Types
 The sub targets in the following sections are available within the [Target](http://msdn.microsoft.com/library/800bab2c-7d1d-4f05-9ec2-e1f799667a88) object.

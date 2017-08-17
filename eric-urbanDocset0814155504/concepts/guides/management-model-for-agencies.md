@@ -62,7 +62,7 @@ If the unlink process fails, possibly due to a billing transition error, the cli
 
 *Figure: Unlink Status Flow*
 
-For code examples that show how to add and update a client link invitation, see [ C&#35;](../../concepts/code-examples/csharp-examples/link-to-client-accounts-in-csharp.md) | [Java](../../concepts/code-examples/java-examples/link-to-client-accounts-in-java.md) | [PHP](../../concepts/code-examples/link-to-client-accounts-in-php.md) | [Python](../../concepts/code-examples/link-to-client-accounts-in-python.md).
+For code examples that show how to add and update a client link invitation, see [ C&#35;](../../concepts/code-examples/link-to-client-accounts-in-csharp.md) | [Java](../../concepts/code-examples/link-to-client-accounts-in-java.md) | [PHP](../../concepts/code-examples/link-to-client-accounts-in-php.md) | [Python](../../concepts/code-examples/link-to-client-accounts-in-python.md).
 
 ## Credentials and Account Access
 The following are the header elements and the corresponding identifiers that an agency would use.

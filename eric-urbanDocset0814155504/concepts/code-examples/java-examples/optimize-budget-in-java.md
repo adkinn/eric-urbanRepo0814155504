@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in Java
 This example shows how to get the budget opportunities for the specified account.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

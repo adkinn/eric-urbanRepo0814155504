@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bulk Shopping Campaigns in C# #
 The following example shows how to apply product conditions for Bing Shopping Campaigns using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

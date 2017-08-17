@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in C# #
 This example shows how to associate negative keywords and negative keyword lists with a campaign.
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

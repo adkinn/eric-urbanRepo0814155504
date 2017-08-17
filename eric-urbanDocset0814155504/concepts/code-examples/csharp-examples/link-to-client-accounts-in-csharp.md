@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in C# #
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

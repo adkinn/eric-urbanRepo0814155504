@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bulk Ads and Keywords in C# #
 The following example shows how to add ads and keywords to a new ad group using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

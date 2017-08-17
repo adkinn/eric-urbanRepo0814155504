@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in C# #
 This example shows how to migrate from targets to criterions.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

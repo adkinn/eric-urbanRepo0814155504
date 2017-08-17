@@ -15,7 +15,7 @@ manager: "ehansen"
 # Shopping Campaigns in Java
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand-bsc.md)] campaigns..
 
-[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

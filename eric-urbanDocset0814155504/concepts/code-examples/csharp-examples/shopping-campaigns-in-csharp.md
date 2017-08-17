@@ -16,7 +16,7 @@ manager: "ehansen"
 This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand-bsc.md)] campaigns.
 
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 // This source is subject to the Microsoft Public License.

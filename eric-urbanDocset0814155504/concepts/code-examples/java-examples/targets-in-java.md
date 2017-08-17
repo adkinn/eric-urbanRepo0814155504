@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in Java
 This example shows how to associate targets with a campaign and ad group.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v10;

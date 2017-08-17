@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in Java
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[java_header](../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

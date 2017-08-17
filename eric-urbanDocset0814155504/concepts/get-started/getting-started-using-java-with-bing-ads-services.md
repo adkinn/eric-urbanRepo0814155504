@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using Java with Bing Ads Services
-To get started developing Bing Ads applications with Java, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md) or [Desktop](../../concepts/get-started/walkthrough-bing-ads-desktop-application-in-java.md) application. You can also browse the [Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads Java SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with Java, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md) or [Desktop](../../concepts/get-started/walkthrough-bing-ads-desktop-application-in-java.md) application. You can also browse the [Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads Java SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -33,7 +33,7 @@ To authenticate with a [Microsoft Account](https://account.microsoft.com/account
 
 You must install a Java Runtime Environment (JRE), version 1.6 or later.
 
-The [Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md) are developed and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
+The [Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md) are developed and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/).
 
 For [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md) in a web application, you will need to deploy to a server with a publicly available redirection URL. For more information, see [Deploying a Web Application](../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md#deploy).
 
@@ -58,7 +58,7 @@ When you create a Maven project and include the *microsoft.bingads* Maven artifa
 > Version 10.4.12 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads Java SDK installed, you can either browse the [Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329040) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525443)) or follow one of the application walkthroughs for a [Web](../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md) or [Desktop](../../concepts/get-started/walkthrough-bing-ads-desktop-application-in-java.md) application.
+Once you have the Bing Ads Java SDK installed, you can either browse the [Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329040) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525443)) or follow one of the application walkthroughs for a [Web](../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md) or [Desktop](../../concepts/get-started/walkthrough-bing-ads-desktop-application-in-java.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
 You must initialize a new instance of *ServiceClient* or *BulkServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../../concepts/includes/brand.md)] uses to authorize a user. The *ServiceClient*, *BulkServiceManager*, and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
@@ -526,7 +526,7 @@ ReportingOperationInProgressException     |com.microsoft.bingads.V11.reporting  
      
 Some exceptions are only returned when using *BulkServiceManager* (using com.microsoft.bingads.bulk or com.microsoft.bingads.V11.bulk) or ReportingServiceManager (using com.microsoft.bingads.V11.reporting). The *BulkServiceManager* will automatically retry upload, download, and polling operations up to the maximum timeout duration that you specified. You can set the maximum retry timeout duration for the *BulkServiceManager* when calling the *uploadFileAsync*, *downloadFileAsync*, or *trackAsync* operations, as shown in the [Background Completion](#backgroundcompletion), [Submit and Download](#submitdownload), and [Download Results](#downloadresults) examples in the sections above. If no timeout is specified, the *BulkServiceManager* will continue to retry until the server returns a timeout or internal error. Likewise, the *ReportingServiceManager* will automatically retry download and polling operations up to the maximum timeout duration that you specify. You can set the maximum retry timeout duration for the *ReportingServiceManager* when calling the *uploadEntitiesAsync*, *downloadEntitiesAsync*, *uploadFileAsync*, *downloadFileAsync* or *trackAsync* operations, as shown in the [Background Completion](#reportingbackgroundcompletion), [Submit and Download](#reportingsubmitdownload), and [Download Results](#reportingdownloadresults) examples in the sections above. If no timeout is specified, the *ReportingServiceManager* will continue to retry until the server returns a timeout or internal error.  
 
-For code examples showing how to handle Bing Ads API service and Bing Ads Java SDK exceptions, see [Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md). 
+For code examples showing how to handle Bing Ads API service and Bing Ads Java SDK exceptions, see [Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md). 
 
 ## <a name="sandbox"></a>Configuring Sandbox
 To use the [Sandbox](../../concepts/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
@@ -564,6 +564,6 @@ authorizationData.setAuthentication(passwordAuthentication);
 ## See Also
 [Sandbox](../../concepts/sandbox.md)  
 [Javadocs](http://BingAds.github.io/BingAds-Java-SDK/)  
-[Java Examples for Bing Ads](../../concepts/code-examples/java-examples/java-examples-for-bing-ads.md)  
+[Java Examples for Bing Ads](../../concepts/code-examples/java-examples-for-bing-ads.md)  
 [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

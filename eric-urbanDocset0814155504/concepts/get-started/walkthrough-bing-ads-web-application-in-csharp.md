@@ -416,6 +416,6 @@ To use sandbox, follow these additional steps.
 ## See Also
 [Sandbox](../../concepts/sandbox.md)  
 [Bing Ads .NET SDK Reference](../../concepts/bing-ads-net-sdk-reference.md)  
-[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md)  
+[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md)  
 [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

@@ -17,8 +17,8 @@ Get started developing Bing Ads applications in any programming language which s
 
 ## In This Section
 
--   [C&#35; Examples for Bing Ads](../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md)  
--   [Java Examples for Bing Ads](../concepts/code-examples/java-examples/java-examples-for-bing-ads.md)  
+-   [C&#35; Examples for Bing Ads](../concepts/code-examples/csharp-examples-for-bing-ads.md)  
+-   [Java Examples for Bing Ads](../concepts/code-examples/java-examples-for-bing-ads.md)  
 -   [PHP Examples for Bing Ads](../concepts/code-examples/php-examples-for-bing-ads.md)  
 -   [Python Examples for Bing Ads](../concepts/code-examples/python-examples-for-bing-ads.md)
 

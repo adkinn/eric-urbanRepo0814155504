@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in Java
 This example shows how to associate negative keywords and negative keyword lists.
 
-[!INCLUDE[java_header](../../concepts/code-examples/java-examples/includes/java-header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

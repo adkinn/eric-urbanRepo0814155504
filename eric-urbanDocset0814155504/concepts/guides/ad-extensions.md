@@ -158,12 +158,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
 -   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../../concepts/code-examples/csharp-examples/bulk-ad-extensions-in-csharp.md)| [Java](../../concepts/code-examples/java-examples/bulk-ad-extensions-in-java.md) | [Python](../../concepts/code-examples/bulk-ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../../concepts/code-examples/bulk-ad-extensions-in-csharp.md)| [Java](../../concepts/code-examples/bulk-ad-extensions-in-java.md) | [Python](../../concepts/code-examples/bulk-ad-extensions-in-python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../../concepts/code-examples/csharp-examples/ad-extensions-in-csharp.md) | [Java](../../concepts/code-examples/java-examples/ad-extensions-in-java.md) | [PHP](../../concepts/code-examples/ad-extensions-in-php.md) | [Python](../../concepts/code-examples/ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../../concepts/code-examples/ad-extensions-in-csharp.md) | [Java](../../concepts/code-examples/ad-extensions-in-java.md) | [PHP](../../concepts/code-examples/ad-extensions-in-php.md) | [Python](../../concepts/code-examples/ad-extensions-in-python.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.

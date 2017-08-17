@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ads and Keywords in C# #
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;

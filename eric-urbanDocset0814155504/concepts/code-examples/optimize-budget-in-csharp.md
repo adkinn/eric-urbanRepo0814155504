@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in C# #
 This example shows how to get the budget opportunities for each campaign in the current authenticated account.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp-header.md)]
 
 ```csharp
 using System;
