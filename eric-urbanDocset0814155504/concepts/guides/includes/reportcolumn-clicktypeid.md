@@ -1,1 +1,0 @@
-The click type ID.
