@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Web Service Addresses
-Use the following web service addresses to access the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web service operations.
+Use the following web service addresses to access the [!INCLUDE[brand](../../concepts/includes/brand.md)] web service operations.
 
 ## <a name="version10"></a>Version 11
 
@@ -27,7 +27,7 @@ Use the following web service addresses to access the [!INCLUDE[brand](../../con
 |Reporting|**Production:** [https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)<br /><br />**Sandbox:** [https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)|
 
 ## <a name="version10"></a>Version 10
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/includes/v10-sunset.md)]
 
 |Web Service Name|Service Endpoints|
 |--------------------|---------------------|
@@ -36,7 +36,7 @@ Use the following web service addresses to access the [!INCLUDE[brand](../../con
 |Campaign Management|**Production:** [https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc)<br /><br />**Sandbox:** [https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc](https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc)|
 
 ## <a name="version9"></a>Version 9
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/includes/v10-sunset.md)]
 
 |Web Service Name|Service Endpoints|
 |--------------------|---------------------|

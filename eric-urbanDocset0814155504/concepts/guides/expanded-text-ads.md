@@ -31,7 +31,7 @@ You can include *ExpandedText* as an [AdType](https://msdn.microsoft.com/library
 Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad. For example, you can use a countdown to draw attention to a sale that is ending or to promote an upcoming event.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot-comingsoon.md)]
 
 Let's say you're going to have a big online sale for 3 days from February 14 through 16 (ending at midnight as soon as February 17th begins). With the countdown syntax, you could set the ad's Title Part 2 like this: "Sale ends in {=countdown("2018/02/17 00:00:00","en-us",3)}!". Here's when your ad would run and examples of how it would look:
 

@@ -13,38 +13,38 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Authentication with OAuth
-[!INCLUDE[brand](../../concepts/guides/includes/brand.md)] implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) protocol to enable authentication of Microsoft Accounts that are linked to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. You should authenticate for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] production services with a Microsoft Account, instead of providing the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../../concepts/sandbox.md).
+[!INCLUDE[brand](../../concepts/includes/brand.md)] implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) protocol to enable authentication of Microsoft Accounts that are linked to [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. You should authenticate for [!INCLUDE[brand](../../concepts/includes/brand.md)] production services with a Microsoft Account, instead of providing the [!INCLUDE[brand](../../concepts/includes/brand.md)] username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../../concepts/sandbox.md).
 
 > [!NOTE]
-> New customers are required to sign up for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] credentials may continue to specify the *UserName* and *Password* header elements. In future versions of the API, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] will transition exclusively to Microsoft Account authentication.
+> New customers are required to sign up for [!INCLUDE[brand](../../concepts/includes/brand.md)] with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy [!INCLUDE[brand](../../concepts/includes/brand.md)] credentials may continue to specify the *UserName* and *Password* header elements. In future versions of the API, [!INCLUDE[brand](../../concepts/includes/brand.md)] will transition exclusively to Microsoft Account authentication.
 > 
-> The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md).
+> The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md).
 
-A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including [!INCLUDE[brand](../../concepts/guides/includes/brand.md)]. Advertisers may associate a Microsoft Account with a [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../../concepts/guides/customer-accounts.md#managingusers) to manage an existing [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. Advertisers must use their Microsoft Account to grant your application access to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including [!INCLUDE[brand](../../concepts/includes/brand.md)]. Advertisers may associate a Microsoft Account with a [!INCLUDE[brand](../../concepts/includes/brand.md)] account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../../concepts/guides/customer-accounts.md#managingusers) to manage an existing [!INCLUDE[brand](../../concepts/includes/brand.md)] account. Advertisers must use their Microsoft Account to grant your application access to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!NOTE]
-> To take advantage of advanced security, users should turn on [two-step verification](http://windows.microsoft.com/en-us/windows/two-step-verification-faq?woldogcb=0) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts.
+> To take advantage of advanced security, users should turn on [two-step verification](http://windows.microsoft.com/en-us/windows/two-step-verification-faq?woldogcb=0) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
 
-At a high level you should complete the following steps to authenticate a Microsoft Account with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] using OAuth.
+At a high level you should complete the following steps to authenticate a Microsoft Account with [!INCLUDE[brand](../../concepts/includes/brand.md)] using OAuth.
 
 1.  [Registering Your Application](#registerapplication) your application.
 
-2.  Request user consent for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
+2.  Request user consent for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
 
     > [!NOTE]
     > Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
 
-3.  Complete either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode) to obtain an access token that can be used to authenticate with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services.
+3.  Complete either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode) to obtain an access token that can be used to authenticate with [!INCLUDE[brand](../../concepts/includes/brand.md)] services.
 
-4.  For each API call to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)], use the returned access token as the *AuthenticationToken* element within the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] service [Service Request Header](#serviceheaders). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
+4.  For each API call to [!INCLUDE[brand](../../concepts/includes/brand.md)], use the returned access token as the *AuthenticationToken* element within the [!INCLUDE[brand](../../concepts/includes/brand.md)] service [Service Request Header](#serviceheaders). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
 
 ## <a name="registerapplication"></a>Registering Your Application
-Before you can manage authentication for users of your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] application, you must register your application and get the corresponding client ID and client secret.
+Before you can manage authentication for users of your [!INCLUDE[brand](../../concepts/includes/brand.md)] application, you must register your application and get the corresponding client ID and client secret.
 
 1.  Go to [https://apps.dev.microsoft.com/](https://apps.dev.microsoft.com/), and login with your Microsoft Account credentials when prompted.
 
     > [!NOTE]
-    > You may use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] user credentials is optional for managing your application.
+    > You may use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your [!INCLUDE[brand](../../concepts/includes/brand.md)] user credentials is optional for managing your application.
 
 2.  Under **Converged applications**, click **Add an app**.
 
@@ -69,7 +69,7 @@ Before you can manage authentication for users of your [!INCLUDE[brand](../../co
 6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
-Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)]. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
+Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with [!INCLUDE[brand](../../concepts/includes/brand.md)]. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
 For details about how to get access and refresh tokens using the Bing Ads SDKs, see Using OAuth in [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#oauth) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#oauth) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#oauth).
 
@@ -91,14 +91,14 @@ For one time or short term authentication, you should follow the implicit grant 
     >
     > It is recommended that you specify a non guessable *state* request parameter to help prevent cross site request forgery (CSRF). Be sure to verify that the authorization server returns the same value before proceeding to use any values from the response. 
 
-2.  The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts.
+2.  The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
 
-3.  The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts: *https://login.live.com/oauth20_desktop.srf?vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere*.
+3.  The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts: *https://login.live.com/oauth20_desktop.srf?vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere*.
 
     > [!NOTE]
-    > If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf?vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    > If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf?vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
-4.  Use the returned access token as the *AuthenticationToken* element within [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] service [Service Request Header](#serviceheaders).
+4.  Use the returned access token as the *AuthenticationToken* element within [!INCLUDE[brand](../../concepts/includes/brand.md)] service [Service Request Header](#serviceheaders).
 
 ### <a name="authorizationcode"></a>Authorization Code Grant Flow
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.1).
@@ -115,14 +115,14 @@ For repeat or long term authentication, you should follow the authorization code
     >
     > It is recommended that you specify a non guessable *state* request parameter to help prevent cross site request forgery (CSRF). Be sure to verify that the authorization server returns the same value before proceeding to use any values from the response. 
 
-2.  The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts.
+2.  The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
 
-3.  The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts: *https://login.live.com/oauth20_desktop.srf?code=CODE&state=ClientStateGoesHere*.
+3.  The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. For example the callback URI includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts: *https://login.live.com/oauth20_desktop.srf?code=CODE&state=ClientStateGoesHere*.
 
     > [!NOTE]
-    > If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    > If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     > 
-    > If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    > If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 4.  Use the authorization code to request the access token and refresh token. The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the code parameter to the value of the authorization code retrieved in the previous step, and the grant type set to *authorization_code*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Registering Your Application](#registerapplication). The following shows an example POST request for a desktop app. 
 
@@ -140,7 +140,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
-    -   Use the returned access token as the *AuthenticationToken* element within [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] service [Service Request Header](#serviceheaders).
+    -   Use the returned access token as the *AuthenticationToken* element within [!INCLUDE[brand](../../concepts/includes/brand.md)] service [Service Request Header](#serviceheaders).
 
     -   The value of *expires_in* represents the maximum time in seconds, until the access token will expire. Before the access token expires, you should request a new access token as discussed in the next step.
 

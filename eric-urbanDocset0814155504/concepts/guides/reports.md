@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Reports
-The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
+The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
 
 ## Reporting Service Overview
 When submitting a report request, you choose the [Report Attributes and Performance Statistics](../../concepts/guides/report-attributes-and-performance-statistics.md) to determine the contents of the report. For example, you may want to include impressions, clicks, and click-through rate. The report uses the column names as the column headers. The report includes the columns in the same order that you include them in the *Columns* element of the report request. For information about how columns affect data output, see [Columns that Group the Data](#columnsdata) below. For information about restrictions on column combinations in the same report request, see [Column Restrictions](#columnrestrictions) below.
@@ -107,7 +107,7 @@ The *TimePeriod* attribute is required for most reports, so you should also cons
 For reports that include impression share performance statistics columns you cannot include constrained attributes in the same report request. If you include any of the impression share performance statistics columns, then you must exclude all of the below attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
 
 > [!IMPORTANT]
-> In the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application, users are not allowed to select the restricted column combinations. Using the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API the report submission will not fail, for example if you include BidMatchType and ImpressionLostToBidPercent; however, the fields returned in the downloaded report will be 0 (zero) in place of any meaningful data.
+> In the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application, users are not allowed to select the restricted column combinations. Using the [!INCLUDE[brand](../../concepts/includes/brand.md)] API the report submission will not fail, for example if you include BidMatchType and ImpressionLostToBidPercent; however, the fields returned in the downloaded report will be 0 (zero) in place of any meaningful data.
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-accountperformancereportrequest.aspx) and [AdGroupPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adgroupperformancereportrequest.aspx).
 

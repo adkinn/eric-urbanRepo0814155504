@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Web Application in Java
-The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443).
+The example web application sends authentication requests to the Microsoft account and [!INCLUDE[brand](../../concepts/includes/brand.md)] services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#requirements). You can create the example step by step as described below, or start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.

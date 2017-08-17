@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Campaigns
-The [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).
+The [!INCLUDE[brand](../../concepts/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).
 
 |Topic|Description|
 |---------|---------------|

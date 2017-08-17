@@ -13,10 +13,10 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Desktop Application in Python
-This tutorial describes how to get started running a [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console.
+This tutorial describes how to get started running a [!INCLUDE[brand](../../concepts/includes/brand.md)] desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console.
 
 ## Desktop Console Application Goal
-By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
+By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your [!INCLUDE[brand](../../concepts/includes/brand.md)] account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
 
 ## <a name="requirements"></a>Prerequisites
 To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Getting Started Using Python with Bing Ads Services](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md) for an overview of the Python SDK.
@@ -25,9 +25,9 @@ You will need to install either Python 2.7 or 3.4 in your development environmen
 
 You will need the [Bing Ads Python SDK](https://github.com/BingAds/BingAds-Python-SDK), and this tutorial will walk you through the installation.
 
-You will need at least one user with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] credentials including either a Microsoft account (recommended) or the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] legacy *UserName* and *Password* set, and a developer token. For more information see [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md).
+You will need at least one user with [!INCLUDE[brand](../../concepts/includes/brand.md)] credentials including either a Microsoft account (recommended) or the [!INCLUDE[brand](../../concepts/includes/brand.md)] legacy *UserName* and *Password* set, and a developer token. For more information see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md).
 
-To use the OAuth 2.0 features of this web application, you will need to register an application at the [Microsoft account Developer Center](https://account.live.com/developers/applications). The Microsoft account user who registers your application is not required to have [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] access. Please consider the following during app registration:
+To use the OAuth 2.0 features of this web application, you will need to register an application at the [Microsoft account Developer Center](https://account.live.com/developers/applications). The Microsoft account user who registers your application is not required to have [!INCLUDE[brand](../../concepts/includes/brand.md)] access. Please consider the following during app registration:
 
 -   Since this is a desktop console application, choose **Yes** when asked if you are registering a mobile or desktop client app.
 

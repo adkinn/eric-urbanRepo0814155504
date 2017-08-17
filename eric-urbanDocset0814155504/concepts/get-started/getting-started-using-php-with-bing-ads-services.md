@@ -31,9 +31,9 @@ To get started developing Bing Ads applications with PHP, [install the SDK](#ins
 -   [Upgrade from Deprecated Examples](#upgrade)  
 
 ## <a name="requirements"></a>Setting Up the Development Environment
-You need user credentials with access to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md) and [Sandbox](../../concepts/sandbox.md).
+You need user credentials with access to [!INCLUDE[brand](../../concepts/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md) and [Sandbox](../../concepts/sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../../concepts/guides/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. You also must [register](../../concepts/guides/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../../concepts/guides/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../../concepts/includes/brand.md)] account. You also must [register](../../concepts/guides/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
 
 The examples provided at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/) and the examples within [PHP Examples for Bing Ads](../../concepts/code-examples/php-examples-for-bing-ads.md) have been developed and run in a similar environment as described below. Your custom configuration may vary.
 
@@ -65,7 +65,7 @@ You can install the Bing Ads PHP SDK using the [Composer](https://getcomposer.or
 Once you have the Bing Ads PHP SDK installed you can either browse the [PHP Examples for Bing Ads](../../concepts/code-examples/php-examples-for-bing-ads.md), download the examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/), or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20PHP.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20PHP.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
-You must initialize a new instance of [ServiceClient](#serviceclient) with *AuthorizationData*. The *AuthorizationData* class contains properties that [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] uses to authorize a user. 
+You must initialize a new instance of [ServiceClient](#serviceclient) with *AuthorizationData*. The *AuthorizationData* class contains properties that [!INCLUDE[brand](../../concepts/includes/brand.md)] uses to authorize a user. 
 
 The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
@@ -114,11 +114,11 @@ To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *A
     header('Location: '. $_SESSION['AuthorizationData']->Authentication->GetAuthorizationEndpoint());
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3.  Use the authorization code to request the access token and refresh token. Pass the full callback Url to the *RequestOAuthTokensByResponseUri* method of your *OAuthWebAuthCodeGrant* instance. This method uses the authorization code fragment to request the access token and refresh token.
 
@@ -141,7 +141,7 @@ To use OAuth with the Bing Ads PHP SDK, the *Authentication* property of your *A
     }
     ```
     
-    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. To call [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services, you should initialize the ServiceClient with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. To call [!INCLUDE[brand](../../concepts/includes/brand.md)] services, you should initialize the ServiceClient with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorizationdata) and [Using ServiceClient](#serviceclient).
 

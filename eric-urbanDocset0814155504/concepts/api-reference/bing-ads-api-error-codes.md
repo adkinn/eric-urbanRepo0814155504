@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bing Ads API Error Codes
 The fault detail object that a service operation returns contains a code that identifies the error.
 
-This section identifies error codes that the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web services can return and groups them by service where applicable.
+This section identifies error codes that the [!INCLUDE[brand](../../concepts/includes/brand.md)] web services can return and groups them by service where applicable.
 
 |Title|Description|
 |---------|---------------|

@@ -12,7 +12,7 @@ caps.latest.revision: 59
 # Migrating to Bing Ads API Version 11
 All Bing Ads API SOAP web services will be available with Version 11.   
 
-[!INCLUDE[v10_sunset](../concepts/api-reference/includes/v10-sunset.md)]
+[!INCLUDE[v10_sunset](../concepts/includes/v10-sunset.md)]
 
 The sections below describe changes from version 10 to version 11 of the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference(v=msads.110).aspx), [Bulk](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference(v=msads.110).aspx), and [Campaign Management](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference(v=msads.110).aspx) services, and changes from version 9 to version 11 of the [Customer Billing](https://msdn.microsoft.com/library/bing-ads-customer-billing-api-service-reference(v=msads.110).aspx), [Customer Management](https://msdn.microsoft.com/library/bing-ads-customer-management-api-service-reference(v=msads.110).aspx), and [Reporting](https://msdn.microsoft.com/library/bing-ads-reporting-service-reference(v=msads.110).aspx) services.
 
@@ -60,7 +60,7 @@ The *DownloadEntities* request element replaces the *Entities* request element f
 
 #### <a name="bulk_formatversion5"></a>Format Version 5.0
 
-Support for Bulk file format version 4.0 is removed. [!INCLUDE[brand](../concepts/guides/includes/brand.md)] API Version 11 only supports format version 5.0. When calling the [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids(v=msads.110).aspx) and [DownloadCampaignsByCampaignIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbycampaignids(v=msads.110).aspx) operations you must specify *5.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 5.0 in the *Name* field of the [Format Version](https://msdn.microsoft.com/library/bing-ads-bulk-format-version-record(v=msads.110).aspx) record. Changes to records between format version 4.0 and 5.0 are described in more detail in the following sections.
+Support for Bulk file format version 4.0 is removed. [!INCLUDE[brand](../concepts/includes/brand.md)] API Version 11 only supports format version 5.0. When calling the [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids(v=msads.110).aspx) and [DownloadCampaignsByCampaignIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbycampaignids(v=msads.110).aspx) operations you must specify *5.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 5.0 in the *Name* field of the [Format Version](https://msdn.microsoft.com/library/bing-ads-bulk-format-version-record(v=msads.110).aspx) record. Changes to records between format version 4.0 and 5.0 are described in more detail in the following sections.
 
 #### <a name="bulk_targetcriterions"></a>Upgrade from Targets to Criterions
 Instead of using targets to show your ads based on age, day and time, device, gender, and location, starting with Bing Ads API version 11 you must use criterions. Partial update of target criterions is supported in Bing Ads API version 11. The following changes are required to upgrade from targets to criterions. For more details please see the [Upgrade Targets to Criterions](../concepts/guides/upgrade-targets-to-criterions.md) guide.

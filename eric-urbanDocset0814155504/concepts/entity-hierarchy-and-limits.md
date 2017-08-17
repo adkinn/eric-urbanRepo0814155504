@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Entity Hierarchy and Limits
-The following figure shows the high level [!INCLUDE[brand](../concepts/guides/includes/brand.md)] entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage [!INCLUDE[brand](../concepts/guides/includes/brand.md)] entities, see [Bing Ads API Overview](../concepts/bing-ads-api-overview.md).
+The following figure shows the high level [!INCLUDE[brand](../concepts/includes/brand.md)] entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage [!INCLUDE[brand](../concepts/includes/brand.md)] entities, see [Bing Ads API Overview](../concepts/bing-ads-api-overview.md).
 
 ![Entity Hierarchy](../concepts/media/entity-hierarchy.png)  
 
@@ -146,7 +146,7 @@ The following table defines limits for review ad extension properties.
 You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink-ad-extension-record.aspx) or [Sitelink2 Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink2-ad-extension-record.aspx)) or Campaign Management service ([SiteLink2AdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelinksadextension.aspx) or [SiteLinksAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelink2adextension.aspx)).
 
 > [!NOTE]
-> [!INCLUDE[sitelinks_migration_eta](../concepts/guides/includes/sitelinks-migration-eta.md)]
+> [!INCLUDE[sitelinks_migration_eta](../concepts/includes/sitelinks-migration-eta.md)]
 
 The following table defines limits for sitelink ad extension properties.
 
@@ -190,7 +190,7 @@ Each ad group can contain between one and 100 ads combined, whether the type of 
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot-comingsoon.md)]
 
 You can manage dynamic search ads using the Bulk service ([App Install Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-app-install-ad-record.aspx)) or Campaign Management service ([AppInstallAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-appinstallad.aspx)).
 
@@ -205,7 +205,7 @@ The following table defines limits for app install ad properties.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot-comingsoon.md)]
 
 You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-dynamic-search-ad-record.aspx)) or Campaign Management service ([DynamicSearchAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-dynamicsearchad.aspx)).
 
@@ -397,5 +397,5 @@ The maximum number of radius criterions that you can specify per campaign or ad 
 
 ## See Also
 [Bing Ads API Overview](../concepts/bing-ads-api-overview.md)  
-[Bing Ads API Reference](../concepts/api-reference/bing-ads-api-reference.md)  
+[Bing Ads API Reference](../concepts/bing-ads-api-reference.md)  
 

@@ -13,11 +13,11 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Common Market Values
-The topics below contain lists of currency, language, time zone, and location strings that can be used for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services. You should refer to the corresponding documentation for usage with service operations and data objects.
+The topics below contain lists of currency, language, time zone, and location strings that can be used for [!INCLUDE[brand](../../concepts/includes/brand.md)] services. You should refer to the corresponding documentation for usage with service operations and data objects.
 
 |Topic|Description|
 |---------|---------------|
 |[Ad Languages](../../concepts/api-reference/ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
-|[Currencies](../../concepts/api-reference/currencies.md)|Contains a list of available currencies for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] advertising accounts.|
+|[Currencies](../../concepts/api-reference/currencies.md)|Contains a list of available currencies for [!INCLUDE[brand](../../concepts/includes/brand.md)] advertising accounts.|
 |[Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area, and city codes.|
 |[Time Zones](../../concepts/api-reference/time-zones.md)|Lists the possible time zone values.|

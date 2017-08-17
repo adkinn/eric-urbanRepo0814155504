@@ -61,7 +61,7 @@ Typically indicates usage of an incorrect username, password, or developer token
 Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example, calling *SubmitGenerateReport* where the specified user does not have permissions to the specified account identifier.
 
 ### HTTP 500
-All [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
+All [!INCLUDE[brand](../../concepts/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
 
 ```
 HTTP/1.1 500 Internal Server Error
@@ -180,7 +180,7 @@ use SOAP::Lite ( +trace => all, maptype => {} );
 ```
 
 ## <a name="engagesupport"></a>Engaging Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
+To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../../concepts/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
 
 To resolve the issue efficiently, please provide support with the following information up front.
 
@@ -189,7 +189,7 @@ To resolve the issue efficiently, please provide support with the following info
     > [!NOTE]
     > If you are managing user authentication with OAuth, and escalating an issue related to error code *105* or *106*, please also include the user identifier corresponding to the Microsoft Account.
     > 
-    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
+    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
 
 -   **Issue or Error**: Include all elements of the SOAP response, and please also note the date and time when the error occurred.
 
@@ -200,7 +200,7 @@ To resolve the issue efficiently, please provide support with the following info
 -   **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
 
 ## <a name="wcf"></a>WCF Exceptions using C#
-Generic SOAP faults that are not specific to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
+Generic SOAP faults that are not specific to [!INCLUDE[brand](../../concepts/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
 
 For information about exceptions that you should expect from WCF, see [Expected Exceptions](http://go.microsoft.com/fwlink/?LinkID=219973).
 

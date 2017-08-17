@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in Java
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/guides/includes/brand-bsc.md)] campaigns..
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand-bsc.md)] campaigns..
 
 [!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 

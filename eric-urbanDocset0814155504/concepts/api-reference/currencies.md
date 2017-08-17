@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Currencies
-The following currency values are supported for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] advertising accounts.
+The following currency values are supported for [!INCLUDE[brand](../../concepts/includes/brand.md)] advertising accounts.
 
 * [Bid and Budget Currencies](#bidandbudget)
 * [Conversion Goal Revenue Currencies](#conversiongoalrevenue)

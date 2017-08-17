@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in Python
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/guides/includes/brand-bsc.md)] using the following Campaign Management service operations.
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand-bsc.md)] using the following Campaign Management service operations.
 
 [!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 

@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Geographical Locations in C# #
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
+ that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.

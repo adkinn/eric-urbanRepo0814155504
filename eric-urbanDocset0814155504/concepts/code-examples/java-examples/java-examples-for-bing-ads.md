@@ -13,11 +13,11 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Java Examples for Bing Ads
-The Java code examples for [!INCLUDE[brand](../../../concepts/guides/includes/brand.md)] are developed and run within the environment described in [Getting Started Using Java with Bing Ads Services](../../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md). Your custom configuration may vary.
+The Java code examples for [!INCLUDE[brand](../../../concepts/includes/brand.md)] are developed and run within the environment described in [Getting Started Using Java with Bing Ads Services](../../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md). Your custom configuration may vary.
 
 To get started developing Bing Ads applications with Java, [Installing the SDK](../../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525443) or follow one of the application walkthroughs for a [Web](../../../concepts/get-started/walkthrough-bing-ads-web-application-in-java.md) or [Desktop](../../../concepts/get-started/walkthrough-bing-ads-desktop-application-in-java.md) application.
 
 ## See Also
 [Getting Started Using Java with Bing Ads Services](../../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md)  
-[Bing Ads Technical Guides](../../../concepts/guides/bing-ads-technical-guides.md)  
+[Bing Ads Technical Guides](../../../concepts/bing-ads-technical-guides.md)  
 

@@ -24,11 +24,11 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |5|Policy Violation: Your ad or website contains content that is not allowed on Bing Ads.|
 |7|Phone number formatting issue.|
 |9|Policy Violation: Bing Ads requires advertisers who promote financial products and services to ensure they comply with all applicable local laws and regulatory requirements.|
-|10|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of gambling services to specific countries and regions.|
-|14|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
-|16|Editorial Guidelines: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow excessive capitalization in ad copy.|
-|17|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] prohibits the infringement of trademarks and other intellectual property.|
-|18|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising that facilitates or promotes hate speech.|
+|10|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of gambling services to specific countries and regions.|
+|14|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
+|16|Editorial Guidelines: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow excessive capitalization in ad copy.|
+|17|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] prohibits the infringement of trademarks and other intellectual property.|
+|18|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising that facilitates or promotes hate speech.|
 |19|Editorial Guidelines: Bing Ads does not allow the use of repeated punctuation or symbols.|
 |20|Policy Violation: Bing Ads restricts the promotion and sale of alcoholic beverages.|
 |22|Policy Violation: Bing Ads does not allow weapons whose primary use is violence.|
@@ -99,15 +99,15 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |96|Mutuelle compliance.|
 |97|Our Editorial Team is reviewing this content. The process might take up to two days.|
 |100|Deferred for detailed review.|
-|105|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|106|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow the promotion or sale of tobacco products.|
-|107|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow ads that promote firearms or weapons whose primary use is violence.|
+|105|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|106|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow the promotion or sale of tobacco products.|
+|107|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow ads that promote firearms or weapons whose primary use is violence.|
 |108|Policy Violation: Advertising for the online sale of beer, wine, or spirits must comply with all standard industry and regulatory requirements.|
-|109|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
-|110|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising that facilitates the distribution of illegal substances or substances whose primary purpose is mind alteration.|
-|117|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow pop-ups or pop-unders when users enter or leave your landing page.|
+|109|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
+|110|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising that facilitates the distribution of illegal substances or substances whose primary purpose is mind alteration.|
+|117|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow pop-ups or pop-unders when users enter or leave your landing page.|
 |119|Policy Violation: If you collect personal data, you must provide a prominent link to your privacy policy on your landing page.|
-|121|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow sites with functionality that limits the user's ability to navigate content within the site, or operate in a non-standard or unpredictable manner.|
+|121|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow sites with functionality that limits the user's ability to navigate content within the site, or operate in a non-standard or unpredictable manner.|
 |124|Multiple issues.|
 |125|Quality Guidelines: Your website contains content that is not in line with our Editorial policy.|
 |126|Our Editorial Team is reviewing this content. The process might take up to two days.|
@@ -124,32 +124,32 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |137|Alcohol content.|
 |138|Alcohol content.|
 |139|Drug content.|
-|140|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising that facilitates the distribution of illegal substances or substances whose primary purpose is mind alteration.|
-|141|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|142|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|143|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|144|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|145|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
-|146|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|140|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising that facilitates the distribution of illegal substances or substances whose primary purpose is mind alteration.|
+|141|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|142|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|143|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|144|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|145|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
+|146|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] restricts the promotion of online or offline gambling in some markets.|
 |147|Editorial violation.|
 |148|Policy Violation: Your ad or website may contain images or logos that infringe copyright laws.|
-|149|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
-|150|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
+|149|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
+|150|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] requires advertisers who promote prescription drugs to maintain certification for each market where they advertise. For example, advertising prescription drugs to customers in the United States requires accreditation by the National Association Boards of Pharmacy (NABP) Verified Internet Pharmacy Practice Sites (VIPPS) program or Vet-VIPPS program.|
 |151|Policy Violation: All political advertising must comply with all national, state, and local election laws and not exploit political agendas for commercial gain.|
 |152|Policy Violation: If you collect personal data, you must provide a prominent link to your privacy policy on your website.|
 |153|Policy Violation: If you collect personal data, you must provide a prominent link to your privacy policy on your website.|
 |154|Policy Violation: If you collect personal data, you must provide a prominent link to your privacy policy on your website.|
-|156|Policy Violation: Your website is exhibiting animation that is disallowed on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
-|157|Policy Violation: Your website is exhibiting audio that is disallowed on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
-|158|Policy Violation: Your website is exhibiting behavior that is disallowed on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
-|159|Policy Violation: Your website is lacking functionality that is required on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
+|156|Policy Violation: Your website is exhibiting animation that is disallowed on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
+|157|Policy Violation: Your website is exhibiting audio that is disallowed on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
+|158|Policy Violation: Your website is exhibiting behavior that is disallowed on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
+|159|Policy Violation: Your website is lacking functionality that is required on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
 |160|Policy Violation: Your website is exhibiting behavior that is disallowed on Bing Ads.|
-|161|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising that installs, copies, or downloads programs without the search user's express prior consent.|
-|162|Policy Violation: Your website is exhibiting behavior that is disallowed on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
-|163|Policy Violation: Your website is exhibiting a video that is disallowed on [!INCLUDE[brand](../../concepts/guides/includes/brand.md)].|
-|164|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising for cigarettes, cigars, smokeless tobacco, and other tobacco products.|
-|165|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising for cigarettes, cigars, smokeless tobacco, and other tobacco products.|
-|166|Policy Violation: [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] does not allow advertising that promotes firearms or weapons whose primary use is violence.|
+|161|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising that installs, copies, or downloads programs without the search user's express prior consent.|
+|162|Policy Violation: Your website is exhibiting behavior that is disallowed on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
+|163|Policy Violation: Your website is exhibiting a video that is disallowed on [!INCLUDE[brand](../../concepts/includes/brand.md)].|
+|164|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising for cigarettes, cigars, smokeless tobacco, and other tobacco products.|
+|165|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising for cigarettes, cigars, smokeless tobacco, and other tobacco products.|
+|166|Policy Violation: [!INCLUDE[brand](../../concepts/includes/brand.md)] does not allow advertising that promotes firearms or weapons whose primary use is violence.|
 |168|Our Editorial Team is reviewing this content. The process might take up to two days.|
 |169|Our Editorial Team is reviewing this content. The process might take up to two days.|
 |171|Our Editorial Team is reviewing this content. The process might take up to two days.|

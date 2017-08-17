@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Show Ads to Your Target Audience
-Getting your ad in front of the right people; that's what targeting is all about. With targeting, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
+Getting your ad in front of the right people; that's what targeting is all about. With targeting, [!INCLUDE[brand](../../concepts/includes/brand.md)] can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
 Targets are stored in a library that can be accessed by any campaign or ad group across all accounts within a customer. You may associate the target with one or more ad groups or campaigns. An ad group or campaign can be associated with only one target. For more information, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).
 
@@ -83,7 +83,7 @@ When you target by location, you can choose to show ads to potential customers i
 Use the [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) object to define a list of one or more locations to target your ads. The [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) object includes elements that can contain one or more of the following granular target bids.
 
 > [!NOTE]
-> Although location targeting is most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] also lets you target locations you specifically want to exclude from seeing your ads. To exclude a target set the `IsExcluded` element to true within any of the following target bids except `RadiusTargetBid`. The default value for `IsExcluded` is False.
+> Although location targeting is most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/includes/brand.md)] also lets you target locations you specifically want to exclude from seeing your ads. To exclude a target set the `IsExcluded` element to true within any of the following target bids except `RadiusTargetBid`. The default value for `IsExcluded` is False.
 
 -   [CityTargetBid](http://msdn.microsoft.com/library/5ddec602-5502-4ccb-ac73-2f3a78068b52)
 
@@ -112,7 +112,7 @@ Set `IntentOption` to `PeopleSearchingForOrViewingPages` if you want to show ads
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0-500).
 
 ## <a name="defaulttargets"></a>Default Target Settings
-For campaigns and ad groups created using the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API, there is no associated target defined by default. For example if you call [GetTargetsByCampaignIds](http://msdn.microsoft.com/library/379faa2e-6f20-4674-9fc2-466b4b3d6ac5), the response would include a nil target as follows.
+For campaigns and ad groups created using the [!INCLUDE[brand](../../concepts/includes/brand.md)] API, there is no associated target defined by default. For example if you call [GetTargetsByCampaignIds](http://msdn.microsoft.com/library/379faa2e-6f20-4674-9fc2-466b4b3d6ac5), the response would include a nil target as follows.
 
 ```xml
 \<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -121,7 +121,7 @@ For campaigns and ad groups created using the [!INCLUDE[brand](../../concepts/gu
 ```
 This is the effective equivalent of targeting all ages, days, genders, hours, and locations worldwide.
 
-As a best practice you should consider at minimum adding a location target corresponding to the customer market country. For example, by default in the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application, **All locations worldwide** is not the default setting. If your [Customer](http://msdn.microsoft.com/library/a4c8e03e-e494-4fb7-9dbb-3bea2f095249) market country is set to  US, then by default when creating a new campaign in the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application your campaign will target the United States within **Selected cities, metro areas, states/provinces, and countries/regions**. When getting targets the service will return the corresponding [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) as follows.
+As a best practice you should consider at minimum adding a location target corresponding to the customer market country. For example, by default in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application, **All locations worldwide** is not the default setting. If your [Customer](http://msdn.microsoft.com/library/a4c8e03e-e494-4fb7-9dbb-3bea2f095249) market country is set to  US, then by default when creating a new campaign in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application your campaign will target the United States within **Selected cities, metro areas, states/provinces, and countries/regions**. When getting targets the service will return the corresponding [LocationTarget](http://msdn.microsoft.com/library/4349d964-0553-4d68-a53e-5011ff51a8f9) as follows.
 
 ```xml
 \<Targets xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -250,9 +250,9 @@ If you had set `TargetAllDays=true` and `TargetAllHours=true` in version 9, then
 > Once you or another application set the version 10 DayTime target, then the version 9 Day and Hour targets will be nil when retrieved. Any subsequent Day and Hour target updates via the version 9 [UpdateTargetsInLibrary](http://msdn.microsoft.com/library/52b6e364-48ff-4c42-a308-f311b6093dcf) operation will be accepted and overwrite a previously specified DayTime target.
 
 > [!NOTE]
-> If your ad group uses either the version 9 `DayTarget` or version 9 `HourTarget` (not both types), and then you set a version 10 [DayTimeTarget](http://msdn.microsoft.com/library/661202b8-9a21-487e-b344-080a6693cbcd) for the campaign, the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] system adds the missing `DayTarget` or `HourTarget` to the ad group.
+> If your ad group uses either the version 9 `DayTarget` or version 9 `HourTarget` (not both types), and then you set a version 10 [DayTimeTarget](http://msdn.microsoft.com/library/661202b8-9a21-487e-b344-080a6693cbcd) for the campaign, the [!INCLUDE[brand](../../concepts/includes/brand.md)] system adds the missing `DayTarget` or `HourTarget` to the ad group.
 > 
-> Remember that when a target type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example if you had a campaign hour target from 11am - 3pm and an ad group day target on Monday, the effective ad group delivery time is Monday, 11am - 3pm. If you then changed the campaign target to a day and time range from 1pm - 1:15pm on Tuesday, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] helps preserve your original effective delivery range of Monday, 11am - 3pm by adding an hour target of 11am - 3pm to the ad group target.
+> Remember that when a target type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example if you had a campaign hour target from 11am - 3pm and an ad group day target on Monday, the effective ad group delivery time is Monday, 11am - 3pm. If you then changed the campaign target to a day and time range from 1pm - 1:15pm on Tuesday, [!INCLUDE[brand](../../concepts/includes/brand.md)] helps preserve your original effective delivery range of Monday, 11am - 3pm by adding an hour target of 11am - 3pm to the ad group target.
 
 ## See Also
 [Campaign Management Service Reference](http://msdn.microsoft.com/library/5f50ed8a-6bca-4d30-8340-7290bc074f0e)

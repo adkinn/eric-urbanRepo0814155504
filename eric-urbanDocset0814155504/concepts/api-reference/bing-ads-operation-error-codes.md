@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Operation Error Codes
-[!INCLUDE[brand](../../concepts/guides/includes/brand.md)] service operations may return error codes depending on the context. The list provided below includes error codes across all [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services. For information about error codes per service operation, see the reference page for each operation.
+[!INCLUDE[brand](../../concepts/includes/brand.md)] service operations may return error codes depending on the context. The list provided below includes error codes across all [!INCLUDE[brand](../../concepts/includes/brand.md)] services. For information about error codes per service operation, see the reference page for each operation.
 
 For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](../../concepts/guides/handling-service-errors-and-exceptions.md).
 
@@ -36,7 +36,7 @@ Some symbolic error codes begin with the strings *BulkService* or *CampaignServi
 InternalError
 
 **Description**
-An unidentified error has occurred. You may obtain additional information about this error by contacting [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] Support.
+An unidentified error has occurred. You may obtain additional information about this error by contacting [!INCLUDE[brand](../../concepts/includes/brand.md)] Support.
 
 ***
 
@@ -80,7 +80,7 @@ The specified user is not authorized to use the API.
 UserCompromised
 
 **Description**
-We have detected suspicious activity on your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. We think someone may have logged into your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account without your permission. Please create a new password to secure your account.
+We have detected suspicious activity on your [!INCLUDE[brand](../../concepts/includes/brand.md)] account. We think someone may have logged into your [!INCLUDE[brand](../../concepts/includes/brand.md)] account without your permission. Please create a new password to secure your account.
 
 ***
 
@@ -6997,7 +6997,7 @@ The product condition collection contains too many conditions.
 CampaignServiceProductAdExtensionInvalidStoreId
 
 **Description**
-The [!INCLUDE[storebrand](../../concepts/guides/includes/storebrand.md)] store identifier is invalid.
+The [!INCLUDE[storebrand](../../concepts/includes/storebrand.md)] store identifier is invalid.
 
 ***
 

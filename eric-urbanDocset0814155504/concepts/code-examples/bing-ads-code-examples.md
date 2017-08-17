@@ -24,6 +24,6 @@ Get started developing Bing Ads applications in any programming language which s
 
 ## Related Sections
 
--   [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md)  
+-   [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md)  
 -   [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
--   [Bing Ads API Reference](../../concepts/api-reference/bing-ads-api-reference.md)  
+-   [Bing Ads API Reference](../../concepts/bing-ads-api-reference.md)  

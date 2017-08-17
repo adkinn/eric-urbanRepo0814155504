@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Upgrade from Multiple Sitelinks to One Sitelink Per Extension
 > [!IMPORTANT]
-> [!INCLUDE[sitelinks_migration_eta](../../concepts/guides/includes/sitelinks-migration-eta.md)]
+> [!INCLUDE[sitelinks_migration_eta](../../concepts/includes/sitelinks-migration-eta.md)]
 
 Use this guide to prepare for migration from multiple sitelinks to one sitelink per ad extension. The sections below describe what you can expect before, during, and after migration.
 

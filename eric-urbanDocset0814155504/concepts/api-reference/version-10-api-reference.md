@@ -13,10 +13,10 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Version 10 API Reference
-For [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] version 10 reference content, see the following sections.
+For [!INCLUDE[brand](../../concepts/includes/brand.md)] version 10 reference content, see the following sections.
 
 ## Bing Ads API Version 10 Services
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/includes/v10-sunset.md)]
 
 |Topic|Description|
 |---------|---------------|

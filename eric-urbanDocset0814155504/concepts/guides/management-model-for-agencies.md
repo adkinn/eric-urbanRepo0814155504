@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Management Model for Agencies
-An agency builds a [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] application for their company to manage the campaigns of their advertising clients. Agencies may manage some or all aspects of an advertiser account. When sending the invitation to manage a client account, the agency may specify whether the client or agency is responsible for billing. For more information about becoming an agency, see [Getting started as an agency with Bing Ads](http://help.bingads.microsoft.com/#apex/3/en/52083/3) or the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
+An agency builds a [!INCLUDE[brand](../../concepts/includes/brand.md)] application for their company to manage the campaigns of their advertising clients. Agencies may manage some or all aspects of an advertiser account. When sending the invitation to manage a client account, the agency may specify whether the client or agency is responsible for billing. For more information about becoming an agency, see [Getting started as an agency with Bing Ads](http://help.bingads.microsoft.com/#apex/3/en/52083/3) or the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
 
 > [!NOTE]
 > The client account must be set up for post-pay billing. Prepaid accounts are not supported for management by agencies.
@@ -40,7 +40,7 @@ To update a client link, the *TimeStamp* element is required for validation, so 
 The client may only use the *UpdateClientLinks* operation to update the status as LinkAccepted or LinkDeclined.
 
 > [!NOTE]
-> The client may accept or decline through an application built on the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API, or through the **Accounts &amp; Billing** tab in the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application. In either case the client credentials must be used to accept or decline. For more information, see [Accept an agency request](http://advertise.bingads.microsoft.com/help-topic/how-to/moonshot_proc_acceptagencyinvitation.htm/accept-an-agency-request).
+> The client may accept or decline through an application built on the [!INCLUDE[brand](../../concepts/includes/brand.md)] API, or through the **Accounts &amp; Billing** tab in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application. In either case the client credentials must be used to accept or decline. For more information, see [Accept an agency request](http://advertise.bingads.microsoft.com/help-topic/how-to/moonshot_proc_acceptagencyinvitation.htm/accept-an-agency-request).
 
 If the client sets the status to LinkDeclined, the client link lifecycle ends. You may not update a declined client link, and you must send a new invitation to manage the client account. If the client sets the status to LinkAccepted, the status transitions to LinkInProgress. If the link process succeeds, the service updates the client link status to Active.
 
@@ -78,9 +78,9 @@ The following are the header elements and the corresponding identifiers that an 
 |DeveloperToken|The agency’s token.<br /><br />**Note:** It is recommended for an agency to use the multi-user developer token to authenticate with any agency user. An agency needs only one such token. It is not necessary to request a single-user token for each user. For more information about token types, see [Account Permissions and the Developer Token](../../concepts/guides/customer-accounts.md#accountpermissions).|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID. |
 |CustomerAccountId|A managed customer's account ID.|
-For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md).
+For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md).
 
 ## See Also
 [Customer Accounts](../../concepts/guides/customer-accounts.md)  
-[Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md)  
 

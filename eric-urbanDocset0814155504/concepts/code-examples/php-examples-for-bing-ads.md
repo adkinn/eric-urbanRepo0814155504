@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # PHP Examples for Bing Ads
-The PHP code examples for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] are developed and run within the environment described in [Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md). Your custom configuration may vary.
+The PHP code examples for [!INCLUDE[brand](../../concepts/includes/brand.md)] are developed and run within the environment described in [Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md). Your custom configuration may vary.
 
 To get started developing Bing Ads applications with PHP, you can download PHP examples with Bing Ads class files at [Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329042).
 
@@ -22,5 +22,5 @@ To get started developing Bing Ads applications with PHP, you can download PHP e
 
 ## See Also
 [Getting Started Using PHP with Bing Ads Services](../../concepts/get-started/getting-started-using-php-with-bing-ads-services.md)  
-[Bing Ads Technical Guides](../../concepts/guides/bing-ads-technical-guides.md)  
+[Bing Ads Technical Guides](../../concepts/bing-ads-technical-guides.md)  
 

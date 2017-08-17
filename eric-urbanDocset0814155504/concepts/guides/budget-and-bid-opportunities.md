@@ -20,7 +20,7 @@ The [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-
 -   Get the estimated position where ads may appear given the specified bid.  
 -   Get suggested relevant keywords from the content of a web page or from other keywords.  
 -   Get the locations and demographics (age and gender) of the users who have searched for specified keywords.  
--   Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application.  
+-   Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application.  
 
 You can get most of this information broken out by device type.
 
