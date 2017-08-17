@@ -20,15 +20,15 @@ Suggestions are customized for the language you select.
 ## Syntax
 
 ```xml
-\<xs:complexType name="LanguageCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="LanguageCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

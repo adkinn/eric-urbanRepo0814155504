@@ -42,27 +42,27 @@ The *SuggestKeywordsForUrlRequest* object defines the elements of the request’
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">SuggestKeywordsForUrl</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <SuggestKeywordsForUrlRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Url i:nil="false"></Url>
-      \<Language i:nil="false"></Language>
-      \<MaxKeywords i:nil="false"></MaxKeywords>
-      \<MinConfidenceScore i:nil="false"></MinConfidenceScore>
-      \<ExcludeBrand i:nil="false"></ExcludeBrand>
+      <Url i:nil="false"></Url>
+      <Language i:nil="false"></Language>
+      <MaxKeywords i:nil="false"></MaxKeywords>
+      <MinConfidenceScore i:nil="false"></MinConfidenceScore>
+      <ExcludeBrand i:nil="false"></ExcludeBrand>
     </SuggestKeywordsForUrlRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>SuggestKeywordsForUrlResponse Message
@@ -79,21 +79,21 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords xmlns:e39="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e39:KeywordAndConfidence>
-          \<e39:SuggestedKeyword p5:nil="false">\</e39:SuggestedKeyword>
-          \<e39:ConfidenceScore>\</e39:ConfidenceScore>
-        \</e39:KeywordAndConfidence>
+      <Keywords xmlns:e39="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e39:KeywordAndConfidence>
+          <e39:SuggestedKeyword p5:nil="false"></e39:SuggestedKeyword>
+          <e39:ConfidenceScore></e39:ConfidenceScore>
+        </e39:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

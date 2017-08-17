@@ -18,22 +18,22 @@ Defines an object that contains the marketplace impact statistics of including b
 ## Syntax
 
 ```xml
-\<xs:complexType name="BroadMatchKeywordOpportunity">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:KeywordOpportunity">
-      \<xs:sequence>
-        \<xs:element type="xs:double" name="AverageCPC" minOccurs="0"/>
-        \<xs:element type="xs:double" name="AverageCTR" minOccurs="0"/>
-        \<xs:element type="xs:double" name="ClickShare" minOccurs="0"/>
-        \<xs:element type="xs:double" name="ImpressionShare" minOccurs="0"/>
-        \<xs:element type="xs:double" name="ReferenceKeywordBid" minOccurs="0"/>
-        \<xs:element type="xs:long" name="ReferenceKeywordId" minOccurs="0"/>
-        \<xs:element type="xs:int" name="ReferenceKeywordMatchType" minOccurs="0"/>
-        \<xs:element type="tns:ArrayOfBroadMatchSearchQueryKPI" name="SearchQueryKPIs" minOccurs="0" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="BroadMatchKeywordOpportunity">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:KeywordOpportunity">
+      <xs:sequence>
+        <xs:element type="xs:double" name="AverageCPC" minOccurs="0"/>
+        <xs:element type="xs:double" name="AverageCTR" minOccurs="0"/>
+        <xs:element type="xs:double" name="ClickShare" minOccurs="0"/>
+        <xs:element type="xs:double" name="ImpressionShare" minOccurs="0"/>
+        <xs:element type="xs:double" name="ReferenceKeywordBid" minOccurs="0"/>
+        <xs:element type="xs:long" name="ReferenceKeywordId" minOccurs="0"/>
+        <xs:element type="xs:int" name="ReferenceKeywordMatchType" minOccurs="0"/>
+        <xs:element type="tns:ArrayOfBroadMatchSearchQueryKPI" name="SearchQueryKPIs" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

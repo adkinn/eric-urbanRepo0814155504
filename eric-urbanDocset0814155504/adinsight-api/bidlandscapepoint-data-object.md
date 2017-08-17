@@ -21,17 +21,17 @@ Defines an object that contains estimates of clicks, cost, and impressions  give
 ## Syntax
 
 ```xml
-\<xs:complexType name="BidLandscapePoint">
-  \<xs:sequence>
-    \<xs:element type="xs:double" name="Bid" minOccurs="0"/>
-    \<xs:element type="xs:double" name="Clicks" nillable="true" minOccurs="0"/>
-    \<xs:element type="xs:long" name="Impressions" minOccurs="0"/>
-    \<xs:element type="xs:long" name="TopImpressions" nillable="true" minOccurs="0"/>
-    \<xs:element type="tns:Currency" name="Currency" minOccurs="0"/>
-    \<xs:element type="xs:double" name="Cost"  nillable="true" minOccurs="0"/>
-    \<xs:element type="xs:double" name="MarginalCPC"  nillable="true" minOccurs="0"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BidLandscapePoint">
+  <xs:sequence>
+    <xs:element type="xs:double" name="Bid" minOccurs="0"/>
+    <xs:element type="xs:double" name="Clicks" nillable="true" minOccurs="0"/>
+    <xs:element type="xs:long" name="Impressions" minOccurs="0"/>
+    <xs:element type="xs:long" name="TopImpressions" nillable="true" minOccurs="0"/>
+    <xs:element type="tns:Currency" name="Currency" minOccurs="0"/>
+    <xs:element type="xs:double" name="Cost"  nillable="true" minOccurs="0"/>
+    <xs:element type="xs:double" name="MarginalCPC"  nillable="true" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,15 +18,15 @@ Defines the possible keyword match type values.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="MatchType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Exact" />
-    \<xs:enumeration value="Phrase" />
-    \<xs:enumeration value="Broad" />
-    \<xs:enumeration value="Content" />
-    \<xs:enumeration value="Aggregate" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="MatchType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Exact" />
+    <xs:enumeration value="Phrase" />
+    <xs:enumeration value="Broad" />
+    <xs:enumeration value="Content" />
+    <xs:enumeration value="Aggregate" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

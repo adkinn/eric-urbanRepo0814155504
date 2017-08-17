@@ -34,9 +34,9 @@ Do not try to instantiate a [SearchParameter](../adinsight-api/searchparameter-d
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchParameter">
-  \<xs:sequence/>
-\</xs:complexType>
+<xs:complexType name="SearchParameter">
+  <xs:sequence/>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,19 +18,19 @@ Defines an object that contains a suggested keyword with historical statistics, 
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordIdea">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
-    \<xs:element minOccurs="0" name="AdGroupName" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="AdImpressionShare" type="xs:double"/>
-    \<xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Competition" type="q3:CompetitionLevel"/>
-    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string"/>
-    \<xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q4:ArrayOflong"/>
-    \<xs:element minOccurs="0" name="Relevance" type="xs:double"/>
-    \<xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Source" type="q5:SourceType"/>
-    \<xs:element minOccurs="0" name="SuggestedBid" type="xs:double"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordIdea">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
+    <xs:element minOccurs="0" name="AdGroupName" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="AdImpressionShare" type="xs:double"/>
+    <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Competition" type="q3:CompetitionLevel"/>
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string"/>
+    <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q4:ArrayOflong"/>
+    <xs:element minOccurs="0" name="Relevance" type="xs:double"/>
+    <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Source" type="q5:SourceType"/>
+    <xs:element minOccurs="0" name="SuggestedBid" type="xs:double"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

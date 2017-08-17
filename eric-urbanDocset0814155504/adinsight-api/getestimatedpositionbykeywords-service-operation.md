@@ -48,36 +48,36 @@ The *GetEstimatedPositionByKeywordsRequest* object defines the elements of the r
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetEstimatedPositionByKeywords</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetEstimatedPositionByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
       <MaxBid></MaxBid>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </PublisherCountries>
-      \<Currency i:nil="false"></Currency>
-      \<MatchTypes i:nil="false">
+      <Currency i:nil="false"></Currency>
+      <MatchTypes i:nil="false">
         <MatchType></MatchType>
       </MatchTypes>
-      \<CampaignId i:nil="false"></CampaignId>
-      \<AdGroupId i:nil="false"></AdGroupId>
+      <CampaignId i:nil="false"></CampaignId>
+      <AdGroupId i:nil="false"></AdGroupId>
     </GetEstimatedPositionByKeywordsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetEstimatedPositionByKeywordsResponse Message
@@ -94,35 +94,35 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordEstimatedPositions xmlns:e14="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e14:KeywordEstimatedPosition>
-          \<e14:Keyword p5:nil="false">\</e14:Keyword>
-          \<e14:EstimatedPositions p5:nil="false">
-            \<e14:EstimatedPositionAndTraffic>
-              \<e14:MatchType>\</e14:MatchType>
-              \<e14:MinClicksPerWeek>\</e14:MinClicksPerWeek>
-              \<e14:MaxClicksPerWeek>\</e14:MaxClicksPerWeek>
-              \<e14:AverageCPC>\</e14:AverageCPC>
-              \<e14:MinImpressionsPerWeek>\</e14:MinImpressionsPerWeek>
-              \<e14:MaxImpressionsPerWeek>\</e14:MaxImpressionsPerWeek>
-              \<e14:CTR>\</e14:CTR>
-              \<e14:MinTotalCostPerWeek>\</e14:MinTotalCostPerWeek>
-              \<e14:MaxTotalCostPerWeek>\</e14:MaxTotalCostPerWeek>
-              \<e14:Currency>\</e14:Currency>
-              \<e14:EstimatedAdPosition>\</e14:EstimatedAdPosition>
-            \</e14:EstimatedPositionAndTraffic>
-          \</e14:EstimatedPositions>
-        \</e14:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e14="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e14:KeywordEstimatedPosition>
+          <e14:Keyword p5:nil="false"></e14:Keyword>
+          <e14:EstimatedPositions p5:nil="false">
+            <e14:EstimatedPositionAndTraffic>
+              <e14:MatchType></e14:MatchType>
+              <e14:MinClicksPerWeek></e14:MinClicksPerWeek>
+              <e14:MaxClicksPerWeek></e14:MaxClicksPerWeek>
+              <e14:AverageCPC></e14:AverageCPC>
+              <e14:MinImpressionsPerWeek></e14:MinImpressionsPerWeek>
+              <e14:MaxImpressionsPerWeek></e14:MaxImpressionsPerWeek>
+              <e14:CTR></e14:CTR>
+              <e14:MinTotalCostPerWeek></e14:MinTotalCostPerWeek>
+              <e14:MaxTotalCostPerWeek></e14:MaxTotalCostPerWeek>
+              <e14:Currency></e14:Currency>
+              <e14:EstimatedAdPosition></e14:EstimatedAdPosition>
+            </e14:EstimatedPositionAndTraffic>
+          </e14:EstimatedPositions>
+        </e14:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

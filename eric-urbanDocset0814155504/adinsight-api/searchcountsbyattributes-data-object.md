@@ -18,12 +18,12 @@ Defines an object that contains a list of keyword historical search counts for t
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchCountsByAttributes">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="HistoricalSearchCounts" nillable="true" type="tns:ArrayOfHistoricalSearchCountPeriodic"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="SearchCountsByAttributes">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="HistoricalSearchCounts" nillable="true" type="tns:ArrayOfHistoricalSearchCountPeriodic"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -48,39 +48,39 @@ The *GetEstimatedBidByKeywordsRequest* object defines the elements of the reques
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetEstimatedBidByKeywords</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetEstimatedBidByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords xmlns:e10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
-        \<e10:KeywordAndMatchType>
-          \<e10:KeywordText i:nil="false">\</e10:KeywordText>
-          \<e10:MatchTypes i:nil="false">
+      <Keywords xmlns:e10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
+        <e10:KeywordAndMatchType>
+          <e10:KeywordText i:nil="false"></e10:KeywordText>
+          <e10:MatchTypes i:nil="false">
             <MatchType></MatchType>
-          \</e10:MatchTypes>
-        \</e10:KeywordAndMatchType>
+          </e10:MatchTypes>
+        </e10:KeywordAndMatchType>
       </Keywords>
       <TargetPositionForAds></TargetPositionForAds>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </PublisherCountries>
-      \<Currency i:nil="false"></Currency>
-      \<CampaignId i:nil="false"></CampaignId>
-      \<AdGroupId i:nil="false"></AdGroupId>
-      \<EntityLevelBid i:nil="false"></EntityLevelBid>
+      <Currency i:nil="false"></Currency>
+      <CampaignId i:nil="false"></CampaignId>
+      <AdGroupId i:nil="false"></AdGroupId>
+      <EntityLevelBid i:nil="false"></EntityLevelBid>
     </GetEstimatedBidByKeywordsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetEstimatedBidByKeywordsResponse Message
@@ -98,48 +98,48 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetEstimatedBidByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordEstimatedBids xmlns:e11="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e11:KeywordEstimatedBid>
-          \<e11:Keyword p5:nil="false">\</e11:Keyword>
-          \<e11:EstimatedBids p5:nil="false">
-            \<e11:EstimatedBidAndTraffic>
-              \<e11:MinClicksPerWeek p5:nil="false">\</e11:MinClicksPerWeek>
-              \<e11:MaxClicksPerWeek p5:nil="false">\</e11:MaxClicksPerWeek>
-              \<e11:AverageCPC p5:nil="false">\</e11:AverageCPC>
-              \<e11:MinImpressionsPerWeek p5:nil="false">\</e11:MinImpressionsPerWeek>
-              \<e11:MaxImpressionsPerWeek p5:nil="false">\</e11:MaxImpressionsPerWeek>
-              \<e11:CTR p5:nil="false">\</e11:CTR>
-              \<e11:MinTotalCostPerWeek p5:nil="false">\</e11:MinTotalCostPerWeek>
-              \<e11:MaxTotalCostPerWeek p5:nil="false">\</e11:MaxTotalCostPerWeek>
-              \<e11:Currency>\</e11:Currency>
-              \<e11:MatchType>\</e11:MatchType>
-              \<e11:EstimatedMinBid>\</e11:EstimatedMinBid>
-            \</e11:EstimatedBidAndTraffic>
-          \</e11:EstimatedBids>
-        \</e11:KeywordEstimatedBid>
+      <KeywordEstimatedBids xmlns:e11="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e11:KeywordEstimatedBid>
+          <e11:Keyword p5:nil="false"></e11:Keyword>
+          <e11:EstimatedBids p5:nil="false">
+            <e11:EstimatedBidAndTraffic>
+              <e11:MinClicksPerWeek p5:nil="false"></e11:MinClicksPerWeek>
+              <e11:MaxClicksPerWeek p5:nil="false"></e11:MaxClicksPerWeek>
+              <e11:AverageCPC p5:nil="false"></e11:AverageCPC>
+              <e11:MinImpressionsPerWeek p5:nil="false"></e11:MinImpressionsPerWeek>
+              <e11:MaxImpressionsPerWeek p5:nil="false"></e11:MaxImpressionsPerWeek>
+              <e11:CTR p5:nil="false"></e11:CTR>
+              <e11:MinTotalCostPerWeek p5:nil="false"></e11:MinTotalCostPerWeek>
+              <e11:MaxTotalCostPerWeek p5:nil="false"></e11:MaxTotalCostPerWeek>
+              <e11:Currency></e11:Currency>
+              <e11:MatchType></e11:MatchType>
+              <e11:EstimatedMinBid></e11:EstimatedMinBid>
+            </e11:EstimatedBidAndTraffic>
+          </e11:EstimatedBids>
+        </e11:KeywordEstimatedBid>
       </KeywordEstimatedBids>
-      \<AdGroupEstimatedBid xmlns:e12="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e12:MinClicksPerWeek p5:nil="false">\</e12:MinClicksPerWeek>
-        \<e12:MaxClicksPerWeek p5:nil="false">\</e12:MaxClicksPerWeek>
-        \<e12:AverageCPC p5:nil="false">\</e12:AverageCPC>
-        \<e12:MinImpressionsPerWeek p5:nil="false">\</e12:MinImpressionsPerWeek>
-        \<e12:MaxImpressionsPerWeek p5:nil="false">\</e12:MaxImpressionsPerWeek>
-        \<e12:CTR p5:nil="false">\</e12:CTR>
-        \<e12:MinTotalCostPerWeek p5:nil="false">\</e12:MinTotalCostPerWeek>
-        \<e12:MaxTotalCostPerWeek p5:nil="false">\</e12:MaxTotalCostPerWeek>
-        \<e12:Currency>\</e12:Currency>
-        \<e12:MatchType>\</e12:MatchType>
-        \<e12:EstimatedMinBid>\</e12:EstimatedMinBid>
+      <AdGroupEstimatedBid xmlns:e12="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e12:MinClicksPerWeek p5:nil="false"></e12:MinClicksPerWeek>
+        <e12:MaxClicksPerWeek p5:nil="false"></e12:MaxClicksPerWeek>
+        <e12:AverageCPC p5:nil="false"></e12:AverageCPC>
+        <e12:MinImpressionsPerWeek p5:nil="false"></e12:MinImpressionsPerWeek>
+        <e12:MaxImpressionsPerWeek p5:nil="false"></e12:MaxImpressionsPerWeek>
+        <e12:CTR p5:nil="false"></e12:CTR>
+        <e12:MinTotalCostPerWeek p5:nil="false"></e12:MinTotalCostPerWeek>
+        <e12:MaxTotalCostPerWeek p5:nil="false"></e12:MaxTotalCostPerWeek>
+        <e12:Currency></e12:Currency>
+        <e12:MatchType></e12:MatchType>
+        <e12:EstimatedMinBid></e12:EstimatedMinBid>
       </AdGroupEstimatedBid>
     </GetEstimatedBidByKeywordsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -21,23 +21,23 @@ Defines an object that contains the suggested bid with estimated clicks and impr
 ## Syntax
 
 ```xml
-\<xs:complexType name="BidOpportunity">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Opportunity">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
-        \<xs:element minOccurs="0" name="CampaignId" type="xs:long" />
-        \<xs:element minOccurs="0" name="CurrentBid" type="xs:double" />
-        \<xs:element minOccurs="0" name="EstimatedIncreaseInClicks" type="xs:double" />
-        \<xs:element minOccurs="0" name="EstimatedIncreaseInCost" type="xs:double" />
-        \<xs:element minOccurs="0" name="EstimatedIncreaseInImpressions" type="xs:long" />
-        \<xs:element minOccurs="0" name="KeywordId" type="xs:long" />
-        \<xs:element minOccurs="0" name="MatchType" type="xs:string" />
-        \<xs:element minOccurs="0" name="SuggestedBid" type="xs:double" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="BidOpportunity">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Opportunity">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
+        <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
+        <xs:element minOccurs="0" name="CurrentBid" type="xs:double" />
+        <xs:element minOccurs="0" name="EstimatedIncreaseInClicks" type="xs:double" />
+        <xs:element minOccurs="0" name="EstimatedIncreaseInCost" type="xs:double" />
+        <xs:element minOccurs="0" name="EstimatedIncreaseInImpressions" type="xs:long" />
+        <xs:element minOccurs="0" name="KeywordId" type="xs:long" />
+        <xs:element minOccurs="0" name="MatchType" type="xs:string" />
+        <xs:element minOccurs="0" name="SuggestedBid" type="xs:double" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

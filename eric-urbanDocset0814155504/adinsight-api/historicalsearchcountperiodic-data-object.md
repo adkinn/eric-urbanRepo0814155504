@@ -18,12 +18,12 @@ Defines an object that contains the number of times that the keyword was used in
 ## Syntax
 
 ```xml
-\<xs:complexType name="HistoricalSearchCountPeriodic">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="SearchCount" type="xs:long" />
-    \<xs:element minOccurs="0" name="DayMonthAndYear" nillable="true" type="tns:DayMonthAndYear" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="HistoricalSearchCountPeriodic">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="SearchCount" type="xs:long" />
+    <xs:element minOccurs="0" name="DayMonthAndYear" nillable="true" type="tns:DayMonthAndYear" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

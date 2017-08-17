@@ -44,37 +44,37 @@ The *GetHistoricalKeywordPerformanceRequest* object defines the elements of the 
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetHistoricalKeywordPerformance</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetHistoricalKeywordPerformanceRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
-      \<TimeInterval i:nil="false"></TimeInterval>
-      \<TargetAdPosition i:nil="false"></TargetAdPosition>
-      \<MatchTypes i:nil="false">
+      <TimeInterval i:nil="false"></TimeInterval>
+      <TargetAdPosition i:nil="false"></TargetAdPosition>
+      <MatchTypes i:nil="false">
         <MatchType></MatchType>
       </MatchTypes>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </PublisherCountries>
-      \<Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Devices>
     </GetHistoricalKeywordPerformanceRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetHistoricalKeywordPerformanceResponse Message
@@ -91,33 +91,33 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordHistoricalPerformances xmlns:e15="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e15:KeywordHistoricalPerformance>
-          \<e15:Keyword p5:nil="false">\</e15:Keyword>
-          \<e15:KeywordKPIs p5:nil="false">
-            \<e15:KeywordKPI>
-              \<e15:Device p5:nil="false">\</e15:Device>
-              \<e15:MatchType>\</e15:MatchType>
-              \<e15:AdPosition>\</e15:AdPosition>
-              \<e15:Clicks>\</e15:Clicks>
-              \<e15:Impressions>\</e15:Impressions>
-              \<e15:AverageCPC>\</e15:AverageCPC>
-              \<e15:CTR>\</e15:CTR>
-              \<e15:TotalCost>\</e15:TotalCost>
-              \<e15:AverageBid>\</e15:AverageBid>
-            \</e15:KeywordKPI>
-          \</e15:KeywordKPIs>
-        \</e15:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e15="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e15:KeywordHistoricalPerformance>
+          <e15:Keyword p5:nil="false"></e15:Keyword>
+          <e15:KeywordKPIs p5:nil="false">
+            <e15:KeywordKPI>
+              <e15:Device p5:nil="false"></e15:Device>
+              <e15:MatchType></e15:MatchType>
+              <e15:AdPosition></e15:AdPosition>
+              <e15:Clicks></e15:Clicks>
+              <e15:Impressions></e15:Impressions>
+              <e15:AverageCPC></e15:AverageCPC>
+              <e15:CTR></e15:CTR>
+              <e15:TotalCost></e15:TotalCost>
+              <e15:AverageBid></e15:AverageBid>
+            </e15:KeywordKPI>
+          </e15:KeywordKPIs>
+        </e15:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

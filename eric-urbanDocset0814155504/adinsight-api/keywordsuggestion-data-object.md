@@ -18,12 +18,12 @@ Defines an object that contains a list of suggested keywords that may perform be
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordSuggestion">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="SuggestionsAndConfidence" nillable="true" type="tns:ArrayOfKeywordAndConfidence" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordSuggestion">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="SuggestionsAndConfidence" nillable="true" type="tns:ArrayOfKeywordAndConfidence" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

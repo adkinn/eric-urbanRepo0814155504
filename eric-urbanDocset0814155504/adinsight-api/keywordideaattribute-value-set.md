@@ -18,19 +18,19 @@ Determines which properties of the [KeywordIdea](../adinsight-api/keywordidea-da
 ## Syntax
 
 ```xml
-\<xs:simpleType name="KeywordIdeaAttribute">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AdGroupId">
-    \<xs:enumeration value="AdGroupName">
-    \<xs:enumeration value="Keyword">
-    \<xs:enumeration value="Source">
-    \<xs:enumeration value="MonthlySearchCounts">
-    \<xs:enumeration value="SuggestedBid">
-    \<xs:enumeration value="Competition">
-    \<xs:enumeration value="Relevance">
-    \<xs:enumeration value="AdImpressionShare">
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="KeywordIdeaAttribute">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AdGroupId">
+    <xs:enumeration value="AdGroupName">
+    <xs:enumeration value="Keyword">
+    <xs:enumeration value="Source">
+    <xs:enumeration value="MonthlySearchCounts">
+    <xs:enumeration value="SuggestedBid">
+    <xs:enumeration value="Competition">
+    <xs:enumeration value="Relevance">
+    <xs:enumeration value="AdImpressionShare">
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

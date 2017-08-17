@@ -41,30 +41,30 @@ The *GetKeywordDemographicsRequest* object defines the elements of the requestâ€
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetKeywordDemographics</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetKeywordDemographicsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountry i:nil="false"></PublisherCountry>
-      \<Device i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountry i:nil="false"></PublisherCountry>
+      <Device i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Device>
     </GetKeywordDemographicsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetKeywordDemographicsResponse Message
@@ -81,34 +81,34 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetKeywordDemographicsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordDemographicResult xmlns:e20="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e20:KeywordDemographicResult>
-          \<e20:Keyword p5:nil="false">\</e20:Keyword>
-          \<e20:KeywordDemographics p5:nil="false">
-            \<e20:KeywordDemographic>
-              \<e20:Device p5:nil="false">\</e20:Device>
-              \<e20:Age18_24>\</e20:Age18_24>
-              \<e20:Age25_34>\</e20:Age25_34>
-              \<e20:Age35_49>\</e20:Age35_49>
-              \<e20:Age50_64>\</e20:Age50_64>
-              \<e20:Age65Plus>\</e20:Age65Plus>
-              \<e20:AgeUnknown>\</e20:AgeUnknown>
-              \<e20:Female>\</e20:Female>
-              \<e20:Male>\</e20:Male>
-              \<e20:GenderUnknown>\</e20:GenderUnknown>
-            \</e20:KeywordDemographic>
-          \</e20:KeywordDemographics>
-        \</e20:KeywordDemographicResult>
+      <KeywordDemographicResult xmlns:e20="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e20:KeywordDemographicResult>
+          <e20:Keyword p5:nil="false"></e20:Keyword>
+          <e20:KeywordDemographics p5:nil="false">
+            <e20:KeywordDemographic>
+              <e20:Device p5:nil="false"></e20:Device>
+              <e20:Age18_24></e20:Age18_24>
+              <e20:Age25_34></e20:Age25_34>
+              <e20:Age35_49></e20:Age35_49>
+              <e20:Age50_64></e20:Age50_64>
+              <e20:Age65Plus></e20:Age65Plus>
+              <e20:AgeUnknown></e20:AgeUnknown>
+              <e20:Female></e20:Female>
+              <e20:Male></e20:Male>
+              <e20:GenderUnknown></e20:GenderUnknown>
+            </e20:KeywordDemographic>
+          </e20:KeywordDemographics>
+        </e20:KeywordDemographicResult>
       </KeywordDemographicResult>
     </GetKeywordDemographicsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -20,15 +20,15 @@ If you do not include the device search parameter when calling [GetKeywordIdeas]
 ## Syntax
 
 ```xml
-\<xs:complexType name="DeviceSearchParameter">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:SearchParameter">
-      \<xs:sequence>
-        \<xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Device" nillable="true" type="q6:DeviceCriterion"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="DeviceSearchParameter">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:SearchParameter">
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Device" nillable="true" type="q6:DeviceCriterion"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

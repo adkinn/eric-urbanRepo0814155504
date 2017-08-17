@@ -18,15 +18,15 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
 ## Syntax
 
 ```xml
-\<xs:complexType name="CampaignEstimator">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdGroupEstimators" nillable="true" type="tns:ArrayOfAdGroupEstimator"/>
-    \<xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long"/>
-    \<xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Criteria" nillable="true" type="q5:ArrayOfCriterion"/>
-    \<xs:element minOccurs="0" name="DailyBudget" type="xs:double"/>
-    \<xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="NegativeKeywords" nillable="true" type="q6:ArrayOfNegativeKeyword"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CampaignEstimator">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdGroupEstimators" nillable="true" type="tns:ArrayOfAdGroupEstimator"/>
+    <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long"/>
+    <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Criteria" nillable="true" type="q5:ArrayOfCriterion"/>
+    <xs:element minOccurs="0" name="DailyBudget" type="xs:double"/>
+    <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="NegativeKeywords" nillable="true" type="q6:ArrayOfNegativeKeyword"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,15 +18,15 @@ The URL search parameter that you can use as a seed for new keyword ideas.
 ## Syntax
 
 ```xml
-\<xs:complexType name="UrlSearchParameter">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:SearchParameter">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Url" nillable="true" type="xs:string"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="UrlSearchParameter">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:SearchParameter">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,15 +18,15 @@ Defines an error object that identifies the item within the batch of items in th
 ## Syntax
 
 ```xml
-\<xs:complexType name="BatchError">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Code" type="xs:int" />
-    \<xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="Index" type="xs:int" />
-    \<xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BatchError">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Code" type="xs:int" />
+    <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Index" type="xs:int" />
+    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

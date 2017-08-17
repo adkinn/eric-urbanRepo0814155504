@@ -18,12 +18,12 @@ Contains a keyword estimators with your keyword level filter criteria for traffi
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordEstimator">
-  \<xs:sequence>
-    \<xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Keyword" nillable="true" type="q7:Keyword"/>
-    \<xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:double"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordEstimator">
+  <xs:sequence>
+    <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Keyword" nillable="true" type="q7:Keyword"/>
+    <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:double"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

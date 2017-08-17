@@ -21,13 +21,13 @@ A suggested keyword with minimum and maximum traffic estimates. Traffic estimate
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordEstimate">
-  \<xs:sequence>
-    \<xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Keyword" nillable="true" type="q8:Keyword"/>
-    \<xs:element minOccurs="0" name="Maximum" nillable="true" type="tns:TrafficEstimate"/>
-    \<xs:element minOccurs="0" name="Minimum" nillable="true" type="tns:TrafficEstimate"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordEstimate">
+  <xs:sequence>
+    <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" minOccurs="0" name="Keyword" nillable="true" type="q8:Keyword"/>
+    <xs:element minOccurs="0" name="Maximum" nillable="true" type="tns:TrafficEstimate"/>
+    <xs:element minOccurs="0" name="Minimum" nillable="true" type="tns:TrafficEstimate"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

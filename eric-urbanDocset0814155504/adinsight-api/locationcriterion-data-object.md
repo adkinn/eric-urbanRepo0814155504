@@ -18,15 +18,15 @@ The location criterion that you can include when requesting keyword ideas or tra
 ## Syntax
 
 ```xml
-\<xs:complexType name="LocationCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="LocationId" type="xs:long"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="LocationCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LocationId" type="xs:long"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

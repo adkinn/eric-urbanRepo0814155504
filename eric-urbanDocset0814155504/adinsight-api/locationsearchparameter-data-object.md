@@ -20,15 +20,15 @@ If you do not include the location search parameter when calling [GetKeywordIdea
 ## Syntax
 
 ```xml
-\<xs:complexType name="LocationSearchParameter">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:SearchParameter">
-      \<xs:sequence>
-        \<xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Locations" nillable="true" type="q4:ArrayOfLocationCriterion"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="LocationSearchParameter">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:SearchParameter">
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" minOccurs="0" name="Locations" nillable="true" type="q4:ArrayOfLocationCriterion"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

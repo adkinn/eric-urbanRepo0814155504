@@ -46,35 +46,35 @@ The *SuggestKeywordsFromExistingKeywordsRequest* object defines the elements of 
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">SuggestKeywordsFromExistingKeywords</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <SuggestKeywordsFromExistingKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </PublisherCountries>
-      \<MaxSuggestionsPerKeyword i:nil="false"></MaxSuggestionsPerKeyword>
-      \<SuggestionType i:nil="false"></SuggestionType>
-      \<RemoveDuplicates i:nil="false"></RemoveDuplicates>
-      \<ExcludeBrand i:nil="false"></ExcludeBrand>
-      \<AdGroupId i:nil="false"></AdGroupId>
-      \<CampaignId i:nil="false"></CampaignId>
+      <MaxSuggestionsPerKeyword i:nil="false"></MaxSuggestionsPerKeyword>
+      <SuggestionType i:nil="false"></SuggestionType>
+      <RemoveDuplicates i:nil="false"></RemoveDuplicates>
+      <ExcludeBrand i:nil="false"></ExcludeBrand>
+      <AdGroupId i:nil="false"></AdGroupId>
+      <CampaignId i:nil="false"></CampaignId>
     </SuggestKeywordsFromExistingKeywordsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>SuggestKeywordsFromExistingKeywordsResponse Message
@@ -91,26 +91,26 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordSuggestions xmlns:e40="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e40:KeywordSuggestion>
-          \<e40:Keyword p5:nil="false">\</e40:Keyword>
-          \<e40:SuggestionsAndConfidence p5:nil="false">
-            \<e40:KeywordAndConfidence>
-              \<e40:SuggestedKeyword p5:nil="false">\</e40:SuggestedKeyword>
-              \<e40:ConfidenceScore>\</e40:ConfidenceScore>
-            \</e40:KeywordAndConfidence>
-          \</e40:SuggestionsAndConfidence>
-        \</e40:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e40="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e40:KeywordSuggestion>
+          <e40:Keyword p5:nil="false"></e40:Keyword>
+          <e40:SuggestionsAndConfidence p5:nil="false">
+            <e40:KeywordAndConfidence>
+              <e40:SuggestedKeyword p5:nil="false"></e40:SuggestedKeyword>
+              <e40:ConfidenceScore></e40:ConfidenceScore>
+            </e40:KeywordAndConfidence>
+          </e40:SuggestionsAndConfidence>
+        </e40:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

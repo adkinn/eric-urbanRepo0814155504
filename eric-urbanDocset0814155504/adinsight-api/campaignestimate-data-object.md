@@ -21,12 +21,12 @@ Contains a nested list of suggested keywords for the campaign's ad groups with m
 ## Syntax
 
 ```xml
-\<xs:complexType name="CampaignEstimate">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdGroupEstimates" nillable="true" type="tns:ArrayOfAdGroupEstimate"/>
-    \<xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CampaignEstimate">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdGroupEstimates" nillable="true" type="tns:ArrayOfAdGroupEstimate"/>
+    <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
