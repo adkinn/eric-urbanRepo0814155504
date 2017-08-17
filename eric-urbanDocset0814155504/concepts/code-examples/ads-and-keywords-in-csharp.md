@@ -1,10 +1,10 @@
 ---
 title: "Ads and Keywords in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e8c98e1-c957-4a43-b3ac-c5aa37827a6a
 caps.latest.revision: 5
@@ -12,12 +12,12 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Ads and Keywords in C#
+# Ads and Keywords in C# #
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,7 +45,7 @@ namespace BingAdsExamplesLibrary.V11
             {
                 CampaignService = new ServiceClient<ICampaignManagementService>(authorizationData);
                                 
-                var budgetIds = new List<long?>();
+                var budgetIds = new List\<long?>();
                 var budgets = new List<Budget>();
                 budgets.Add(new Budget
                 {
@@ -436,7 +436,7 @@ namespace BingAdsExamplesLibrary.V11
 
                     OutputStatusMessage("List of campaigns that share each budget:\n");
                     var getCampaignIdCollection = (await GetCampaignIdsByBudgetIdsAsync(getBudgetIds)).CampaignIdCollection;
-                    for(int index = 0; index < getCampaignIdCollection.Count; index++)
+                    for(int index = 0; index \< getCampaignIdCollection.Count; index++)
                     {
                         OutputStatusMessage(string.Format("BudgetId: {0}", getBudgetIds[index]));
                         OutputStatusMessage("Campaign Ids:");
@@ -581,16 +581,16 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Campaign Management service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));

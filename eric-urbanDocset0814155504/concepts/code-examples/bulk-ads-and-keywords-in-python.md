@@ -1,10 +1,10 @@
 ---
 title: "Bulk Ads and Keywords in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: be5f7028-3520-4f48-a864-2f8bc97b8fad
 caps.latest.revision: 5
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Ads and Keywords in Python
-The following example shows how to add ads and keywords to a new ad group using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+The following example shows how to add ads and keywords to a new ad group using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *
@@ -315,7 +315,7 @@ def main(authorization_data):
                 upload_entities.append(entity)
         
         for entity in get_campaign_results:
-            if entity.campaign.BudgetId == None or entity.campaign.BudgetId <= 0:
+            if entity.campaign.BudgetId == None or entity.campaign.BudgetId \<= 0:
                 # Increase budget by 20 %
                 entity.campaign.DailyBudget *= 1.2
                 upload_entities.append(entity)

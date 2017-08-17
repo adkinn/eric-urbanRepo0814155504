@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Technical Guides"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ab5df778-9ac5-438d-8bc2-83f6af993629
 caps.latest.revision: 7
@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Technical Guides
-The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../concepts/includes/brand.md)] services.
+The technical guides below describe core advertising scenarios using [!INCLUDE[brand](../concepts/guides/includes/brand.md)] services.
 
 ## Guides
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](../concepts/guides/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../concepts/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
-|[Bing Ads Services Protocol](../concepts/guides/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../concepts/includes/brand.md)] services efficiently.|
+|[Authentication with OAuth](../concepts/guides/authentication-with-oauth.md)|Manage [!INCLUDE[brand](../concepts/guides/includes/brand.md)] accounts linked to a Microsoft Account using OAuth access tokens.|
+|[Bing Ads Services Protocol](../concepts/guides/bing-ads-services-protocol.md)|Review requirements and best practices for using [!INCLUDE[brand](../concepts/guides/includes/brand.md)] services efficiently.|
 |[Handling Service Errors and Exceptions](../concepts/guides/handling-service-errors-and-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
 |[Customer Accounts](../concepts/guides/customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|
 |[Campaigns](../concepts/guides/campaigns.md)|Set your campaign budget and bid strategy.|
@@ -28,7 +28,7 @@ The technical guides below describe core advertising scenarios using [!INCLUDE[b
 |[Reports](../concepts/guides/reports.md)|Get detailed reports about accounts, campaigns, and ad groups. The information can help you track finances, measure performance, and adjust settings to optimize your budget or campaign.|
 
 ## See Also
-[Getting Started With the Bing Ads API](../concepts/getting-started-with-the-bing-ads-api.md)  
+[Getting Started With the Bing Ads API](../concepts/get-started/getting-started-with-the-bing-ads-api.md)  
 [Bing Ads API Overview](../concepts/bing-ads-api-overview.md)  
-[Bing Ads API Reference](../concepts/bing-ads-api-reference.md)  
+[Bing Ads API Reference](../concepts/api-reference/bing-ads-api-reference.md)  
 

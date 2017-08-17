@@ -1,10 +1,10 @@
 ---
 title: "Report Requests in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ec648c81-aef0-4447-bb23-1b91841cc4eb
 caps.latest.revision: 4
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Report Requests in Python
-The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

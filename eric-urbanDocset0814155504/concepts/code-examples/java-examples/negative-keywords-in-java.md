@@ -1,10 +1,10 @@
 ---
 title: "Negative Keywords in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0a5ac6dc-71b7-4175-b1e6-ee8891fd9074
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in Java
 This example shows how to associate negative keywords and negative keyword lists.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

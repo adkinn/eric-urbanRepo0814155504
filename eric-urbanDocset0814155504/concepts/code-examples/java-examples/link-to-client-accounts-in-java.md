@@ -1,10 +1,10 @@
 ---
 title: "Link to Client Accounts in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 08154864-25f8-450a-b0a2-365ab8543bb9
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in Java
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

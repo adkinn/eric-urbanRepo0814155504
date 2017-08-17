@@ -1,10 +1,10 @@
 ---
 title: "Report Requests in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1fd4ed6-5488-450e-9321-899d797a8bb1
 caps.latest.revision: 4
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Report Requests in Java
-The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

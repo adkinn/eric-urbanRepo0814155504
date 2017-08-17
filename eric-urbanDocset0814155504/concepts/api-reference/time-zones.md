@@ -1,10 +1,10 @@
 ---
 title: "Time Zones"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/22/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5ca32c3e-5289-46d0-8d3e-47c74a892ac9
 caps.latest.revision: 5

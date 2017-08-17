@@ -1,10 +1,10 @@
 ---
 title: "Geographical Locations in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f9e03a17-45b7-4f0f-a034-ef250564e122
 caps.latest.revision: 6
@@ -12,14 +12,14 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Geographical Locations in C#
+# Geographical Locations in C# #
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
+ that can be used with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
 
-```c#
+```csharp
 // This source is subject to the Microsoft Public License.
 // See http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
 // All other rights reserved.
@@ -99,16 +99,16 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Campaign Management service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));

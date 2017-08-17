@@ -1,10 +1,10 @@
 ---
 title: "Ad Extensions in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 354ab854-a080-4c81-b3df-076dee91dcc3
 caps.latest.revision: 7
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Ad Extensions in PHP
 The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -237,7 +237,7 @@ try
     // in the account's time zone.
     $callScheduling = new Schedule(); 
     $callDayTimeRanges = array();
-    for($index = 0; $index < 5; $index++)
+    for($index = 0; $index \< 5; $index++)
     {
         $dayTime = new DayTime();
         $dayTime->StartHour = 9;
@@ -363,7 +363,7 @@ try
     
     $associations = array();
     
-    for ($index = 0; $index < count($adExtensionIdentities->AdExtensionIdentity); $index++)
+    for ($index = 0; $index \< count($adExtensionIdentities->AdExtensionIdentity); $index++)
     {
     	$adExtensionIdToEntityIdAssociations[$index] = new AdExtensionIdToEntityIdAssociation();
     	$adExtensionIdToEntityIdAssociations[$index]->AdExtensionId = $adExtensionIdentities->AdExtensionIdentity[$index]->Id;;
@@ -669,7 +669,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index < count($campaigns); $index++ )
+    for ($index = 0; $index \< count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -949,7 +949,7 @@ function GetSampleSiteLinksAdExtensions()
     $extension = new SiteLinksAdExtension();
     $extension->SiteLinks = array();
     
-    for ($index = 0; $index < 2; $index++)
+    for ($index = 0; $index \< 2; $index++)
     {
         $extension->SiteLinks[$index] = new SiteLink();
         $extension->SiteLinks[$index]->Description1 = "Simple & Transparent.";
@@ -1008,7 +1008,7 @@ function GetSampleSitelink2AdExtensions()
 {
     $adExtensions = array();
     
-    for ($index = 0; $index < 2; $index++)
+    for ($index = 0; $index \< 2; $index++)
     {
         $extension = new Sitelink2AdExtension();
         $extension->Description1 = "Simple & Transparent.";

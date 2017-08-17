@@ -1,10 +1,10 @@
 ---
 title: "Labels"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/09/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ad40088c-deb4-41bc-a4b2-3ce0172b4a61
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ ms.author: "eur"
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > Reporting for labels is not yet available via Bing Ads API. You can use Reporting in the Bing Ads web applicationn. 
 

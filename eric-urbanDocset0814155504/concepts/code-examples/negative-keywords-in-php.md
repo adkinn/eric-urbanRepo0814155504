@@ -1,10 +1,10 @@
 ---
 title: "Negative Keywords in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b638f12f-c9cf-4fe0-a14e-fc9e788ca587
 caps.latest.revision: 8
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Negative Keywords in PHP
 This example shows how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -803,7 +803,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index < count($campaigns); $index++ )
+    for ($index = 0; $index \< count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -856,7 +856,7 @@ function OutputNegativeKeywordIds($idCollections)
         return;
     }
 
-    for ($index = 0; $index < count($idCollections); $index++)
+    for ($index = 0; $index \< count($idCollections); $index++)
     {
         printf("NegativeKeyword Ids at entity index %d:\n\n", $index);
         foreach ($idCollections[$index]->Ids->long as $id)
@@ -913,7 +913,7 @@ function GetAndOutputSharedEntityIdentifiers($sharedEntityType)
 
     if((count((array)$sharedEntities) != 0) && is_array($sharedEntities->SharedEntity))
     {
-        for ($index = 0; $index < count($sharedEntities->SharedEntity); $index++)
+        for ($index = 0; $index \< count($sharedEntities->SharedEntity); $index++)
         {
             $sharedEntity = $sharedEntities->SharedEntity[$index];
             if(!is_null($sharedEntity->Id))
@@ -970,7 +970,7 @@ function OutputNegativeKeywordResults(
         return;
     }
 
-    for ($index = 0; $index < count($sharedListItemIds); $index++)
+    for ($index = 0; $index \< count($sharedListItemIds); $index++)
     {
         // Determine if the SharedListItem is a NegativeKeyword. 
         if($sharedListItems[$index]->enc_stype === "NegativeKeyword")

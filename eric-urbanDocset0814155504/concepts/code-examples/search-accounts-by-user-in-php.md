@@ -1,10 +1,10 @@
 ---
 title: "Search Accounts by User in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7fe47b3c-730b-4958-83af-fc2e7a1c2e82
 caps.latest.revision: 8
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Search Accounts by User in PHP
 The following example shows how to search for customers that can be managed by the current authenticated user.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 

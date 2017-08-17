@@ -1,10 +1,10 @@
 ---
 title: "Report Requests in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 75903e1b-bc9c-4d26-a2b9-ab045e6f4983
 caps.latest.revision: 7
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Report Requests in PHP
 The following example shows how to request and retrieve a keyword performance report using the following Reporting service operations.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -148,7 +148,7 @@ try
     // If the call succeeds, stop polling. If the call or 
     // download fails, the call throws a fault.
     
-    for ($i = 0; $i < 10; $i++)
+    for ($i = 0; $i \< 10; $i++)
     {
     	sleep($waitTime);
     

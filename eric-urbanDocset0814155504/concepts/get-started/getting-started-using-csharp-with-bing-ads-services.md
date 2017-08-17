@@ -1,10 +1,10 @@
 ---
 title: "Getting Started Using C# with Bing Ads Services"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2c64b3f2-5b05-458c-a876-e51d013f4435
 caps.latest.revision: 27
@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Getting Started Using C# with Bing Ads Services
-To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application. You can also browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
+To get started developing Bing Ads applications with a .NET language, [install the SDK](#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=525447) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application. You can also browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md) on MSDN. The examples have been developed with the Bing Ads .NET SDK in the environment described below. Your custom configuration may vary.
 
 -   [Setting Up the Development Environment](#requirements)  
 -   [Installing the SDK](#installation)  
@@ -27,9 +27,9 @@ To get started developing Bing Ads applications with a .NET language, [install t
 -   [Configuring Sandbox](#sandbox)
 
 ## <a name="requirements"></a>Setting Up the Development Environment
-You need user credentials with access to [!INCLUDE[brand](../../concepts/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../../concepts/getting-started-with-the-bing-ads-api.md) and [Sandbox](../../concepts/sandbox.md).
+You need user credentials with access to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] either in production or sandbox. You also need a developer token. For more information, please see [Getting Started With the Bing Ads API](../../concepts/get-started/getting-started-with-the-bing-ads-api.md) and [Sandbox](../../concepts/sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../../concepts/guides/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../../concepts/includes/brand.md)] account. You also must [register](../../concepts/guides/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) in production, the Microsoft account user must [sign up](https://secure.azure.bingads.microsoft.com/Auth) or [manage](../../concepts/guides/customer-accounts.md#managingusers) an existing [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. You also must [register](../../concepts/guides/authentication-with-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Using OAuth](#oauth) below.
 
 The examples are developed and run with [Visual Studio Community](https://www.visualstudio.com/vs/community/). To use the Bing Ads .NET SDK, you must install and use .NET Framework 4.5 or later. In Visual Studio go to the project **Properties** -&gt; **Application** -&gt; **Target framework** and make sure that **.NET Framework 4.5** is selected.
 
@@ -39,7 +39,7 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 > [!NOTE]
 > The NuGet installation includes the following required libraries.
 > 
-> -   *Microsoft.BingAds.dll* - The Bing Ads .NET SDK. For more information, see [Bing Ads .NET SDK Reference](../../concepts/bing-ads-.net-sdk-reference.md).
+> -   *Microsoft.BingAds.dll* - The Bing Ads .NET SDK. For more information, see [Bing Ads .NET SDK Reference](../../concepts/api-reference/bing-ads-net-sdk-reference.md).
 > -   *System.Runtime.Serialization.dll*
 > -   *System.ServiceModel.dll*
 
@@ -58,14 +58,14 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 2.  Within the console command line, type Install-Package Microsoft.BingAds.SDK.
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application.
+Once you have the Bing Ads .NET SDK installed, you can either browse the [C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md), download the examples ([Code Gallery](http://go.microsoft.com/fwlink/?LinkId=329041) | [GitHub](http://go.microsoft.com/fwlink/?LinkId=525447)) or follow one of the application walkthroughs for a [Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) or [Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application.
 
 ## <a name="authorizationdata"></a>Using AuthorizationData
-You must initialize a new instance of *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../../concepts/includes/brand.md)] uses to authorize a user. The *ServiceClient&lt;TService&gt;*, *BulkServiceManager* and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+You must initialize a new instance of *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* with *AuthorizationData*. The class contains properties that [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] uses to authorize a user. The *ServiceClient&lt;TService&gt;*, *BulkServiceManager* and *ReportingServiceManager* classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
 The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
-```c#
+```csharp
 var authorizationData = new AuthorizationData
 {
     Authentication = <AuthenticationGoesHere>, 
@@ -76,7 +76,7 @@ var authorizationData = new AuthorizationData
 ```
 The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*.
 
-When *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* call [!INCLUDE[brand](../../concepts/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../../concepts/guides/authentication-with-oauth.md#serviceheaders), [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+When *ServiceClient&lt;TService&gt;*, *BulkServiceManager* or *ReportingServiceManager* call [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services, they set the *AuthenticationToken* header element for each service request message to the value of the *AccessToken* property of your Authentication-derived instance. For more information, see [Service Request Header](../../concepts/guides/authentication-with-oauth.md#serviceheaders), [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the *AuthorizationData* object.
 
@@ -87,7 +87,7 @@ To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your *
 
 1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace *ClientId*, *ClientSecret*, and *RedirectionUri* with the values configured in [Registering Your Application](../../concepts/guides/authentication-with-oauth.md#registerapplication).
 
-    ```c#
+    ```csharp
     var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri));
     
     // It is recommended that you specify a non guessable 'state' request parameter to help prevent
@@ -97,19 +97,19 @@ To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your *
 
 2.  Request user consent by connecting to the Microsoft Account authorization endpoint through a web browser control. Call the *GetAuthorizationEndpoint* method of the *OAuthWebAuthCodeGrant* instance that you created in the earlier step.
 
-    ```c#
+    ```csharp
     return Redirect(oAuthWebAuthCodeGrant.GetAuthorizationEndpoint().ToString());
     ```
     
-    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts.
+    The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
     
-    If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+    If the user denied your application permissions to manage their [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
 3.  Use the authorization code to request the access token and refresh token. Pass the full callback Url to the *RequestAccessAndRefreshTokensAsync* method of your *OAuthWebAuthCodeGrant* instance. This method uses the authorization code fragment to request the access token and refresh token.
 
-    ```c#
+    ```csharp
     if (Request["code"] != null)
     {
         // If you set the client state in step #1 above, verify that the authorization
@@ -121,20 +121,20 @@ To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your *
     }
     ```
     
-    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../../concepts/includes/brand.md)] accounts. To call [!INCLUDE[brand](../../concepts/includes/brand.md)] services, you should initialize either *ServiceClient&lt;TService&gt;*, *BulkServiceManager*, or *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] accounts. To call [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services, you should initialize either *ServiceClient&lt;TService&gt;*, *BulkServiceManager*, or *ReportingServiceManager* with *AuthorizationData* that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorizationdata), [Using ServiceClient&lt;TService&gt;](#serviceclient), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
 
-4.  When calling [!INCLUDE[brand](../../concepts/includes/brand.md)] services with *ServiceClient&lt;TService&gt;*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to subscribe to the *NewOAuthTokensReceived* event handler. 
+4.  When calling [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services with *ServiceClient&lt;TService&gt;*, *BulkServiceManager*, or *ReportingServiceManager*, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to subscribe to the *NewOAuthTokensReceived* event handler. 
 
-    ```c#
+    ```csharp
     oAuthWebAuthCodeGrant.NewOAuthTokensReceived += 
         (sender, args) => SaveRefreshToken(args.NewRefreshToken);
     ```
     
     You can also get the *AccessToken*, *RefreshToken*, and *ExpiresIn* values from the *OAuthTokens* property of your *OAuthWebAuthCodeGrant* instance by calling *RequestAccessAndRefreshTokensAsync*.
     
-    ```c#
+    ```csharp
     if (GetRefreshToken(out refreshToken))
     {
         oAuthWebAuthCodeGrant.RequestAccessAndRefreshTokensAsync(refreshToken);
@@ -160,9 +160,9 @@ The *ServiceClient&lt;TService&gt;* class handles common request header fields f
 
 The primary method of the *ServiceClient&lt;TService&gt;* class is *CallAsync*. The *method* parameter is the delegate for the service operation that you want to call. The *request* parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.
 
-```c#
-public TResponse CallAsync<TRequest, TResponse>(
-    Func<TService, TRequest, TResponse> method,
+```csharp
+public TResponse CallAsync\<TRequest, TResponse>(
+    Func\<TService, TRequest, TResponse> method,
     TRequest request
 )
 ```
@@ -170,7 +170,7 @@ The header elements that the *CallAsync* method sets will differ depending on th
 
 In the following sample, the method delegate is *(s, r) => s.GetUserAsync(r)* which takes a *GetUserRequest* message as the request parameter (*TRequest*) and returns a *GetUserResponse* message (*TResponse*).
 
-```c#
+```csharp
 private async Task<User> GetUserAsync(long? userId)
 {
     var request = new GetUserRequest
@@ -209,7 +209,7 @@ The *BulkServiceManager* supports the following workflows.
 ### <a name="backgroundcompletion"></a>Background Completion with BulkServiceManager
 You can submit a download or upload request and the *BulkServiceManager* will automatically return results. The *BulkServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     BulkService = new BulkServiceManager(authorizationData);
@@ -246,7 +246,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 ### <a name="submitdownload"></a>Submit and Download with BulkServiceManager
 Submit the download request and then use the BulkDownloadOperation result to track status yourself using GetStatusAsync.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     var BulkService = new BulkServiceManager(authorizationData);
@@ -300,7 +300,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 ### <a name="downloadresults"></a>Download Results with BulkServiceManager
 If for any reason you have to resume from a previous application state, you can use an existing download or upload request identifier and use it to download the result file. Use TrackAsync to indicate that the application should wait to ensure that the download status is completed.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     BulkService = new BulkServiceManager(authorizationData);
@@ -336,7 +336,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 ### <a name="workingdirectory"></a>Working Directory and BulkServiceManager
 When using the *UploadEntitiesAsync* and *DownloadEntitiesAsync* SDK operations, you can work with the result entities in memory i.e. without reading from a result file. That said, the *BulkServiceManager* downloads the result file by default to the system temp directory. If you are using a hosted service such as Microsoft Azure you'll want to ensure you do not exceed the temp directory limits. There may be other reasons to use a custom working directory. You can specify a different working directory for each *BulkServiceManager* instance by setting the *WorkingDirectory* property and then calling the *CleanupTempFiles* operation after enumerating over the resulting entities in memory. You are also responsible for creating and removing any directories. 
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     BulkService = new BulkServiceManager(authorizationData);
@@ -396,7 +396,7 @@ The *ReportingServiceManager* supports the following workflows.
 ### <a name="reportingbackgroundcompletion"></a>Background Completion with ReportingServiceManager
 You can submit a download request and the *ReportingServiceManager* will automatically return results. The *ReportingServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     ReportingService = new ReportingServiceManager(authorizationData);
@@ -424,7 +424,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 ### <a name="reportingsubmitdownload"></a>Submit and Download with ReportingServiceManager
 Submit the download request and then use the ReportingDownloadOperation result to track status yourself using GetStatusAsync.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     ReportingService = new ReportingServiceManager(authorizationData);
@@ -472,7 +472,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 ### <a name="reportingdownloadresults"></a>Download Results with ReportingServiceManager
 If for any reason you have to resume from a previous application state, you can use an existing download request identifier and use it to download the result file. Use TrackAsync to indicate that the application should wait to ensure that the download status is completed.
 
-```c#
+```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
 {
     ReportingService = new ReportingServiceManager(authorizationData);
@@ -525,18 +525,18 @@ ReportingOperationInProgressException     |Microsoft.BingAds.V11.Reporting      
      
 Some exceptions are only returned when using *BulkServiceManager* (using Microsoft.BingAds.Bulk or Microsoft.BingAds.V11.Bulk) or ReportingServiceManager (using Microsoft.BingAds.V11.Reporting). The *BulkServiceManager* will automatically retry upload, download, and polling operations up to the maximum timeout duration that you specified. You can set the maximum retry timeout duration for the *BulkServiceManager* by passing a *CancellationToken* to the *UploadEntitiesAsync*, *DownloadEntitiesAsync*, *UploadFileAsync*, *DownloadFileAsync*, or *TrackAsync* operations, as shown in the [Background Completion](#backgroundcompletion), [Submit and Download](#submitdownload), and [Download Results](#downloadresults) examples in the sections above. If no timeout is specified, the *BulkServiceManager* will continue to retry until the server returns a timeout or internal error. Likewise, the *ReportingServiceManager* will automatically retry download and polling operations up to the maximum timeout duration that you specify. You can set the maximum retry timeout duration for the *ReportingServiceManager* by passing a *CancellationToken* to the *DownloadFileAsync* or *TrackAsync* operations, as shown in the [Background Completion](#reportingbackgroundcompletion), [Submit and Download](#reportingsubmitdownload), and [Download Results](#reportingdownloadresults) examples in the sections above. If no timeout is specified, the *ReportingServiceManager* will continue to retry until the server returns a timeout or internal error. 
 
-For code examples showing how to handle Bing Ads API service and Bing Ads .NET SDK exceptions, see [C# Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md). 
+For code examples showing how to handle Bing Ads API service and Bing Ads .NET SDK exceptions, see [C# Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md). 
 
 ## <a name="sandbox"></a>Configuring Sandbox
 Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* ([Web](Walkthrough:%20Bing%20Ads%20Web%20Application%20in%20C%23.md) application) or *App.config* ([Desktop](Walkthrough:%20Bing%20Ads%20Desktop%20Application%20in%20C%23.md) application) file.
 
-```c#
+```csharp
 <add key="BingAdsEnvironment" value ="Sandbox"/>
 ```
 
 You can also set the *apiEnvironment* parameter of individual *BulkServiceManager*, *ServiceClient*, and *ReportingServiceManager* instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
 
-```c#
+```csharp
 BulkServiceManager BulkService = new BulkServiceManager(authorizationData, ApiEnvironment.Sandbox);
 
 ServiceClient<ICustomerManagementService> Service = new ServiceClient<ICustomerManagementService>(authorizationData, ApiEnvironment.Sandbox);
@@ -546,7 +546,7 @@ ReportingServiceManager ReportingService = new ReportingServiceManager(authoriza
 
 ## See Also
 [Sandbox](../../concepts/sandbox.md)  
-[Bing Ads .NET SDK Reference](../../concepts/bing-ads-.net-sdk-reference.md)  
-[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples-for-bing-ads.md)  
+[Bing Ads .NET SDK Reference](../../concepts/api-reference/bing-ads-net-sdk-reference.md)  
+[C&#35; Examples for Bing Ads](../../concepts/code-examples/csharp-examples/csharp-examples-for-bing-ads.md)  
 [Bing Ads Web Service Addresses](../../concepts/api-reference/bing-ads-web-service-addresses.md)  
 

@@ -1,10 +1,10 @@
 ---
 title: "Optimize Budget in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 83263084-8183-4e23-a090-657a1e7572e5
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in Java
 This example shows how to get the budget opportunities for the specified account.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

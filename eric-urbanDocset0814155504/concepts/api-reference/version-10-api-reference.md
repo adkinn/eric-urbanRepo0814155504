@@ -1,10 +1,10 @@
 ---
 title: "Version 10 API Reference"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/31/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ede32d50-ec02-4188-94f3-211409174464
 caps.latest.revision: 4
@@ -13,10 +13,10 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Version 10 API Reference
-For [!INCLUDE[brand](../../concepts/includes/brand.md)] version 10 reference content, see the following sections.
+For [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] version 10 reference content, see the following sections.
 
 ## Bing Ads API Version 10 Services
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
 
 |Topic|Description|
 |---------|---------------|

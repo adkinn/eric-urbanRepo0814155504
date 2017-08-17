@@ -1,10 +1,10 @@
 ---
 title: "Geographical Location Codes"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6403f8c8-7332-4219-ade0-c7a7dcd02cee
 caps.latest.revision: 10
@@ -28,14 +28,14 @@ The comma separated value (CSV) file contains data organized in the following no
 
 |Column Name|Description|
 |---------------|---------------|
-|ID|The unique [!INCLUDE[brand](../../concepts/includes/brand.md)] system identifier for the location.|
+|ID|The unique [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] system identifier for the location.|
 |Code|This value can be used to set the location target.<br /><br />**Note:** If this field itself contains commas the enclosed data will be surrounded by quotes, but you should not use the quotes when setting a location target bid. For example *Seattle, Seattle-Tacoma, WA WA US* is a valid city code.|
 |Display Name|The optional name that you can use to display the locations data, for example to users of your application. Vertical bars are used to separate the location components from most to least specific. For example given Seattle&#124;Washington&#124;United States the most specific component is the city of Seattle within the state of Washington of the United States.<br/><br/>**Note**: Multiple location codes can have the same display name. You must not use the display name for anything other than presentation, for example do not assume any hierarchy or take any dependencies on the display name.|
 |Descriptor|The optional friendly name corresponding to the Target Type column. There is not necessarily a one to one relationship between this value and the Target Type column. You should not assume any hierarchy or take any dependencies on the descriptor.|
 |Target Type|Determines the type of location target can accept the value in the Code column.|
 |Replaces|Reserved for future use to indicate which location or locations are replaced by the location in this row.|
 |Status|Reserved for future use to indicate whether the location in this row is active or deprecated. Currently there are no deprecated locations provided in the CSV file.|
-|AdWords Location ID|The *Google AdWords*Location Criterion Id corresponding to the [!INCLUDE[brand](../../concepts/includes/brand.md)] geographical location code. You can use this for mapping [!INCLUDE[brand](../../concepts/includes/brand.md)] locations to the estimated AdWords locations.<br /><br />**Note:** This value is a heuristic estimate that can be used for mapping AdWords and [!INCLUDE[brand](../../concepts/includes/brand.md)] geographical locations.|
+|AdWords Location ID|The *Google AdWords*Location Criterion Id corresponding to the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] geographical location code. You can use this for mapping [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] locations to the estimated AdWords locations.<br /><br />**Note:** This value is a heuristic estimate that can be used for mapping AdWords and [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] geographical locations.|
 
 ## <a name="codeformat"></a>Code Format
 If you are constructing the codes for location targeting without using the [Location Codes File](#fileformat), please note that the value of each code is constructed using the country code as the base sub code. More specific target locations contain the sub code of its parent geographic location. You do not need to build each code using this format, and it is not recommended, since all codes are available in the [Location Codes File](#fileformat). 

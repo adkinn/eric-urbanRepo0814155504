@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Web Service Addresses"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/31/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5b59ada3-fd43-4ff2-8527-c2348c7b3bb0
 caps.latest.revision: 10
@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bing Ads Web Service Addresses
-Use the following web service addresses to access the [!INCLUDE[brand](../../concepts/includes/brand.md)] web service operations.
+Use the following web service addresses to access the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web service operations.
 
 ## <a name="version10"></a>Version 11
 
@@ -27,7 +27,7 @@ Use the following web service addresses to access the [!INCLUDE[brand](../../con
 |Reporting|**Production:** [https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)<br /><br />**Sandbox:** [https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)|
 
 ## <a name="version10"></a>Version 10
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
 
 |Web Service Name|Service Endpoints|
 |--------------------|---------------------|
@@ -36,7 +36,7 @@ Use the following web service addresses to access the [!INCLUDE[brand](../../con
 |Campaign Management|**Production:** [https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc)<br /><br />**Sandbox:** [https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc](https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v10/CampaignManagementService.svc)|
 
 ## <a name="version9"></a>Version 9
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
 
 |Web Service Name|Service Endpoints|
 |--------------------|---------------------|

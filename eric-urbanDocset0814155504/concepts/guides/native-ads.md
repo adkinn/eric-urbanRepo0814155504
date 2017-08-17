@@ -1,10 +1,10 @@
 ---
 title: "Native Ads"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/28/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 66ebd619-255d-464d-a4d8-c319d4e1864c
 caps.latest.revision: 9
@@ -13,10 +13,10 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Native Ads
-Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by [!INCLUDE[brand](../../concepts/includes/brand.md)] leveraging all of your [!INCLUDE[brand](../../concepts/includes/brand.md)] creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard [!INCLUDE[brand](../../concepts/includes/brand.md)] campaigns on the search network and support all of the targeting available from [!INCLUDE[brand](../../concepts/includes/brand.md)]. Native ads have CPC pricing. Native ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.
+Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] leveraging all of your [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] campaigns on the search network and support all of the targeting available from [!INCLUDE[brand](../../concepts/guides/includes/brand.md)]. Native ads have CPC pricing. Native ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 
 You can set a bid adjustment for each campaign and ad group. The bid adjustment is the percent amount by which to adjust your bid for native ads above or below the base ad group or keyword bid. Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent native ads from showing for the campaign or ad group. If you do not set a bid adjustment for your ad groups they will inherit from the campaign bid adjustment setting by default.
 
@@ -29,7 +29,7 @@ You can manage native ads settings with either the [Bulk Service](https://msdn.m
 ## <a name="bulkservice"></a>Managing Native Ads Settings with the Bulk Service
 The [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md).
 
-These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with properties for managing Native ads that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). Use the *Bid Adjustment* column of the following records to get and set the Native ads bid adjustment.
+These are the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] entities with properties for managing Native ads that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/jj134984.aspx). Use the *Bid Adjustment* column of the following records to get and set the Native ads bid adjustment.
 
 -   [Campaign](https://msdn.microsoft.com/library/dn764752.aspx)  
 -   [Ad Group](https://msdn.microsoft.com/library/dn764731.aspx)  

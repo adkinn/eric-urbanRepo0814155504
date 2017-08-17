@@ -1,10 +1,10 @@
 ---
 title: "Upgrade from Multiple Sitelinks to One Sitelink Per Extension"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/12/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: af48f101-f2d9-44a5-892a-378d1bd593f0
 caps.latest.revision: 10
@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Upgrade from Multiple Sitelinks to One Sitelink Per Extension
 > [!IMPORTANT]
-> [!INCLUDE[sitelinks_migration_eta](../../concepts/includes/sitelinks_migration_eta.md)]
+> [!INCLUDE[sitelinks_migration_eta](../../concepts/guides/includes/sitelinks-migration-eta.md)]
 
 Use this guide to prepare for migration from multiple sitelinks to one sitelink per ad extension. The sections below describe what you can expect before, during, and after migration.
 

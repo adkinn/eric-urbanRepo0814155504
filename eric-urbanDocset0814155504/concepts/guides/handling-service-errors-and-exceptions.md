@@ -1,10 +1,10 @@
 ---
 title: "Handling Service Errors and Exceptions"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ebbc0ff4-6696-427a-831a-89ba1156f7ea
 caps.latest.revision: 14
@@ -61,7 +61,7 @@ Typically indicates usage of an incorrect username, password, or developer token
 Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example, calling *SubmitGenerateReport* where the specified user does not have permissions to the specified account identifier.
 
 ### HTTP 500
-All [!INCLUDE[brand](../../concepts/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
+All [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
 
 ```
 HTTP/1.1 500 Internal Server Error
@@ -109,7 +109,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
-    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    \<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
       <modelVersion>4.0.0</modelVersion>
       <groupId>com.microsoft.bingads.examples</groupId>
       <artifactId>BingAdsDesktopApp</artifactId>
@@ -133,17 +133,17 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
    
 2.  Add cxf.xml to your project, and add the following xml.
     ```xml
-    <beans xmlns="http://www.springframework.org/schema/beans"
+    \<beans xmlns="http://www.springframework.org/schema/beans"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:cxf="http://cxf.apache.org/core"
         xsi:schemaLocation="
         http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-      <cxf:bus>
-        <cxf:features>
-          <cxf:logging/>
-        </cxf:features>
-      </cxf:bus> 
+      \<cxf:bus>
+        \<cxf:features>
+          \<cxf:logging/>
+        \</cxf:features>
+      \</cxf:bus> 
     </beans>
     ```
     
@@ -180,7 +180,7 @@ use SOAP::Lite ( +trace => all, maptype => {} );
 ```
 
 ## <a name="engagesupport"></a>Engaging Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../../concepts/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
+To get help with issues that you cannot resolve, consider posting in the [API Developer](http://go.microsoft.com/fwlink/?LinkId=269629) forum where an active [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).
 
 To resolve the issue efficiently, please provide support with the following information up front.
 
@@ -189,7 +189,7 @@ To resolve the issue efficiently, please provide support with the following info
     > [!NOTE]
     > If you are managing user authentication with OAuth, and escalating an issue related to error code *105* or *106*, please also include the user identifier corresponding to the Microsoft Account.
     > 
-    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
+    > To get the user identifier for the current user, call the [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) service operation and leave the *UserId* element null. If [GetUser](https://msdn.microsoft.com/library/dn451280.aspx) returns error code *1001*, then the Microsoft Account is not linked to any [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] account. For more information about linking a Microsoft Account, see [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md).
 
 -   **Issue or Error**: Include all elements of the SOAP response, and please also note the date and time when the error occurred.
 
@@ -200,7 +200,7 @@ To resolve the issue efficiently, please provide support with the following info
 -   **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
 
 ## <a name="wcf"></a>WCF Exceptions using C#
-Generic SOAP faults that are not specific to [!INCLUDE[brand](../../concepts/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
+Generic SOAP faults that are not specific to [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API may also be thrown, and should be caught by your application. For example, C# applications may throw Windows Communication Foundation (WCF) exceptions such as Exception, TimeoutException, and CommunicationException.
 
 For information about exceptions that you should expect from WCF, see [Expected Exceptions](http://go.microsoft.com/fwlink/?LinkID=219973).
 

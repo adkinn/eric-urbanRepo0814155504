@@ -1,10 +1,10 @@
 ---
 title: "Optimize Budget in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 345f11f6-218a-4001-85ac-7a99045f4a74
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Optimize Budget in Python
 This example shows how to get the budget opportunities for the specified account using the following Ad Insight service operations.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

@@ -1,10 +1,10 @@
 ---
 title: "Currencies"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e76eac5e-0146-4757-b520-13e712ed9ec0
 caps.latest.revision: 6
@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Currencies
-The following currency values are supported for [!INCLUDE[brand](../../concepts/includes/brand.md)] advertising accounts.
+The following currency values are supported for [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] advertising accounts.
 
 * [Bid and Budget Currencies](#bidandbudget)
 * [Conversion Goal Revenue Currencies](#conversiongoalrevenue)

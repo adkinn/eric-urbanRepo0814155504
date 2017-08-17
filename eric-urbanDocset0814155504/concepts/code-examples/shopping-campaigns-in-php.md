@@ -1,10 +1,10 @@
 ---
 title: "Shopping Campaigns in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c5943328-9a87-4b35-ade1-2ae7cf1b57f1
 caps.latest.revision: 8
@@ -13,12 +13,12 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in PHP
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] campaigns.
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/guides/includes/brand-bsc.md)] campaigns.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -1061,7 +1061,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index < count($campaigns); $index++ )
+    for ($index = 0; $index \< count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -1115,7 +1115,7 @@ function OutputAdGroupsWithPartialErrors($adGroups, $adGroupIds, $partialErrors)
 
     // Output the identifier of each successfully added ad group.
 
-    for ($index = 0; $index < count($adGroups); $index++ )
+    for ($index = 0; $index \< count($adGroups); $index++ )
     {
         // The array of ad group identifiers equals the size of the attempted ad group. If the element 
         // is not empty, the ad group at that index was added successfully and has an ad group identifer. 
@@ -1168,7 +1168,7 @@ function OutputAdIdentifiers($adIds, $partialErrors)
 
 	$count = count($adIds);
 
-	for ($i = 0; $i < $count; $i++)
+	for ($i = 0; $i \< $count; $i++)
 	{
 		if (!empty($adIds[$i]))
 		{
@@ -1211,7 +1211,7 @@ function OutputCriterionIds($criterionIds, $partialErrors)
 
 	$count = count($criterionIds);
 
-	for ($i = 0; $i < $count; $i++)
+	for ($i = 0; $i \< $count; $i++)
 	{
 		if (!empty($criterionIds[$i]))
 		{
@@ -1244,7 +1244,7 @@ function OutputCampaignCriterionIdentifiers($criterionIds, $partialErrors)
 
 	$count = count($criterionIds);
 
-	for ($i = 0; $i < $count; $i++)
+	for ($i = 0; $i \< $count; $i++)
 	{
 		if (!empty($criterionIds[$i]))
 		{

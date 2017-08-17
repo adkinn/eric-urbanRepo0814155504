@@ -1,10 +1,10 @@
 ---
 title: "Request and Download a Report"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ad21c178-5427-4ba0-ae63-9f2ff80dd82d
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-submitgeneratereport.aspx#request) and [PollGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-pollgeneratereport.aspx#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#reportingservicemanager) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#reportingservicemanager) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#reportingservicemanager).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-submitgeneratereport.aspx#request) and [PollGenerateReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-pollgeneratereport.aspx#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#reportingservicemanager) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#reportingservicemanager) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#reportingservicemanager).
 
 For a code example that shows how to download a report using the Reporting service with the workflow described below, see [Report Requests in PHP](../../concepts/code-examples/report-requests-in-php.md).
 
@@ -56,7 +56,7 @@ The following procedure shows how to specify a custom date range for a report re
 
 The following code snippet shows how to initialize a report request object to request a custom date range.
 
-```c#
+```csharp
 // Create an instance of the ReportTime class to hold the report date 
 // information.
 request.Time = new ReportTime();

@@ -1,10 +1,10 @@
 ---
 title: "Keyword Ideas and Traffic Estimates"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/09/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 91a9b52f-33ad-4ad6-b1bb-b6f61d156838
 caps.latest.revision: 5
@@ -14,7 +14,7 @@ ms.author: "eur"
 # Keyword Ideas and Traffic Estimates
 Choosing keywords is one of the most important aspects of creating and maintaining a successful advertising campaign. But where to start? How do you identify the many possible keywords that describe your business? How much should you bid on those keywords to be competitive with other advertisers?
 
-This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx) service. The results are similar to using the Keyword Planner tool in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](../../concepts/guides/budget-and-bid-opportunities.md). 
+This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx) service. The results are similar to using the Keyword Planner tool in the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](../../concepts/guides/budget-and-bid-opportunities.md). 
 
 > [!NOTE]
 > Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.

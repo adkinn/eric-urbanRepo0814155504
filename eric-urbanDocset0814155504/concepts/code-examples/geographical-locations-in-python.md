@@ -1,10 +1,10 @@
 ---
 title: "Geographical Locations in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d1a1133c-2fa5-4d07-83eb-a09c93143de8
 caps.latest.revision: 5
@@ -14,7 +14,7 @@ manager: "ehansen"
 ---
 # Geographical Locations in Python
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
+ that can be used with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.

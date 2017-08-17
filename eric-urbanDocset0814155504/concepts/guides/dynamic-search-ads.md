@@ -1,10 +1,10 @@
 ---
 title: "Dynamic Search Ads"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cd594210-6e76-409b-b5db-ebd2979a9374
 caps.latest.revision: 2
@@ -13,7 +13,7 @@ caps.latest.revision: 2
 Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. 
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > Before you can use dynamic search ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
 

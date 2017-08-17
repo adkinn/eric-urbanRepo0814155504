@@ -1,10 +1,10 @@
 ---
 title: "Link to Client Accounts in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a10f0e3f-f542-4a51-a639-6515765c0dd9
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in Python
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 import datetime

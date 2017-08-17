@@ -1,10 +1,10 @@
 ---
 title: "Editorial Review and Appeals"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 431d287f-2c42-45e4-b62a-d338d54a22b2
 caps.latest.revision: 4
@@ -36,7 +36,7 @@ If the failure is appealable, call the [AppealEditorialRejections](http://msdn.m
 You cannot call `AppealEditorialRejections` to appeal ad extensions that failed editorial review.
 
 ## <a name="entitydeliverystatus"></a>Entities and Delivery Status
-The respective [KeywordEditorialStatus](http://msdn.microsoft.com/library/f1b1c9e5-3989-4207-bf56-0f5fd7e17068) and [AdEditorialStatus](http://msdn.microsoft.com/library/e79f0dfa-2c74-4219-86a8-c2e1a1b810a0) values for keywords and ads may differ from the corresponding delivery status shown in the [!INCLUDE[brand](../../concepts/includes/brand.md)] web application.
+The respective [KeywordEditorialStatus](http://msdn.microsoft.com/library/f1b1c9e5-3989-4207-bf56-0f5fd7e17068) and [AdEditorialStatus](http://msdn.microsoft.com/library/e79f0dfa-2c74-4219-86a8-c2e1a1b810a0) values for keywords and ads may differ from the corresponding delivery status shown in the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web application.
 
 For example after adding a new keyword or ad which must go through the offline review process, read operations such as `GetKeywordsByIds` or `GetAdsByIds` will return `Disapproved`, and the delivery status in the web application will indicate that the entity is pending editorial review. The delivery status in the web application will indicate that the entity is disapproved if and when all elements of the keyword or ad are rejected.
 

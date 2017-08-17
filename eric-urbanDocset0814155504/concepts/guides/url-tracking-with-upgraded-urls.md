@@ -1,10 +1,10 @@
 ---
 title: "URL Tracking with Upgraded URLs"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/12/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e3f823be-4cc2-457b-a8b8-a7fdc3d4b798
 caps.latest.revision: 13
@@ -23,7 +23,7 @@ If you have set up [tracking in Bing Ads](https://help.bingads.microsoft.com/#ap
 By separating the tracking template details from the final URLs you can take advantage of the following benefits:
 -   You can define tracking templates for one or more account, campaign, ad group, keyword, ad, or Sitelink Extension. If you use a common tracking template for all ads in your campaign for example, you can update it once at the campaign level instead of making changes to all of your ads. Tracking templates and custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).  
 -   When you update your tracking template information, the URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. Editorial review is only required when you change your actual ads, keywords or extensions.  
--   Doing so helps [!INCLUDE[brand](../../concepts/includes/brand.md)] understand what information is URL versus tracking template information, and reduces crawling on your website.  
+-   Doing so helps [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] understand what information is URL versus tracking template information, and reduces crawling on your website.  
 
 For an overview of Final URLs and tracking templates, see the following Bing Ads help articles.
 -   [How do I create an account tracking template?](http://help.bingads.microsoft.com/#apex/3/en/56772/-1)  
@@ -45,18 +45,18 @@ Tracking templates can be used in tandem with final URLs to assemble the landing
 
 **Tracking template:** *{lpurl}?ref=bing&keyword={Keyword}&cmpid={CampaignID}&agid={AdGroupID}&adid={AdID}*. The *{lpurl}* tag references the Landing Page URL. Bing will replace this with your Final URL when your ad is served.
 
-[!INCLUDE[validationrules_trackingurltemplate](../../concepts/guides/includes/validationrules_trackingurltemplate.md)]
+[!INCLUDE[validationrules_trackingurltemplate](../../concepts/guides/includes/validationrules-trackingurltemplate.md)]
 
 For an account, campaign, or ad group level tracking template, please note the following:
 
--   [!INCLUDE[validationrules_trackingurltemplate_account_through_adgroup](../../concepts/guides/includes/validationrules_trackingurltemplate_account_through_adgroup.md)]
+-   [!INCLUDE[validationrules_trackingurltemplate_account_through_adgroup](../../concepts/guides/includes/validationrules-trackingurltemplate-account-through-adgroup.md)]
 
 We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](https://msdn.microsoft.com/library/bb671588.aspx).
 
 **Important:** Only super admin and standard users can update an account.
 
 ## <a name="finalurlvalidation"></a>Final URLs
-[!INCLUDE[validationrules_finalurls](../../concepts/guides/includes/validationrules_finalurls.md)]
+[!INCLUDE[validationrules_finalurls](../../concepts/guides/includes/validationrules-finalurls.md)]
 
 Also note the following validation rules for ad and site link final URLs.
 
@@ -72,12 +72,12 @@ Custom parameters work exactly the same as URL parameters with respect to dynami
 
 Custom parameters are helpful with sharing dynamic information across multiple URLs in a meaningful way for you to report on. Similarly how dynamic texts are provided by Bing Ads to give you more campaign insights on your performance. Custom parameters are advertiser created. 
 
-[!INCLUDE[validationrules_customparameters](../../concepts/guides/includes/validationrules_customparameters.md)]
+[!INCLUDE[validationrules_customparameters](../../concepts/guides/includes/validationrules-customparameters.md)]
 
 ## <a name="bulkservice"></a>URL Tracking with the Bulk Service
 The [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../../concepts/guides/bulk-download-and-upload.md).
 
-These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx).
+These are the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx).
 
 -   [Campaign](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-record.aspx)
 -   [Ad Group](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx)
@@ -91,7 +91,7 @@ These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with 
 -   [Sitelink2 Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink2-ad-extension-record.aspx)
 
 ## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
-These are the [!INCLUDE[brand](../../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
+These are the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
 -  [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx)  
 -  [AppInstallAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-appinstallad.aspx)  
 -  [BiddableAdGroupCriterion](https://msdn.microsoft.com/library/bing-ads-campaign-management-biddableadgroupcriterion.aspx)  

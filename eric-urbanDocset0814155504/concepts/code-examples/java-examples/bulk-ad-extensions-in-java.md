@@ -1,10 +1,10 @@
 ---
 title: "Bulk Ad Extensions in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3e95635d-c069-41bd-bc73-defc705923a7
 caps.latest.revision: 5
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Bulk Ad Extensions in Java
-The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+The following example shows how to add and update ad extensions using the *BulkServiceManager* class provided with the [Bing Ads Client Libraries](../../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

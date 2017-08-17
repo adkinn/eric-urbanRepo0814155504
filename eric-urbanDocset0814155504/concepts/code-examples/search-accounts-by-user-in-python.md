@@ -1,10 +1,10 @@
 ---
 title: "Search Accounts by User in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5a8c4d5c-195e-47d6-9ddd-9ac75fcf33a9
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Search Accounts by User in Python
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

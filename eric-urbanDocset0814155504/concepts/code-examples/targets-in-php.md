@@ -1,10 +1,10 @@
 ---
 title: "Targets in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2eedf157-39a4-4772-9cbe-6be711d019ee
 caps.latest.revision: 6
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Targets in PHP
 This example shows how to associate targets with a campaign and ad group using the following Campaign Management service operations.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\V10;
 
@@ -712,7 +712,7 @@ function OutputCampaignsWithPartialErrors($campaigns, $campaignIds, $partialErro
 
     // Output the identifier of each successfully added campaign.
 
-    for ($index = 0; $index < count($campaigns); $index++ )
+    for ($index = 0; $index \< count($campaigns); $index++ )
     {
         // The array of campaign identifiers equals the size of the attempted campaign. If the element 
         // is not empty, the campaign at that index was added successfully and has a campaign identifer. 
@@ -766,7 +766,7 @@ function OutputAdGroupsWithPartialErrors($adGroups, $adGroupIds, $partialErrors)
 
     // Output the identifier of each successfully added ad group.
 
-    for ($index = 0; $index < count($adGroups); $index++ )
+    for ($index = 0; $index \< count($adGroups); $index++ )
     {
         // The array of ad group identifiers equals the size of the attempted ad group. If the element 
         // is not empty, the ad group at that index was added successfully and has an ad group identifer. 

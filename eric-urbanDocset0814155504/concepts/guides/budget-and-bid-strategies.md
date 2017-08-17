@@ -1,10 +1,10 @@
 ---
 title: "Budget and Bid Strategies"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/09/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c603e8e9-8be4-4c08-8948-d8ee1a82e9b0
 caps.latest.revision: 12
@@ -93,7 +93,7 @@ With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group
 With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many clicks as possible with your provided budget.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > The *MaxClicks* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States.
 
@@ -101,7 +101,7 @@ With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with th
 With the *MaxConversions* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many conversions as possible with your provided budget. 
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > The *MaxConversions* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
@@ -116,12 +116,12 @@ The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note t
 With the *TargetCpa* bid strategy, Bing Ads automatically sets your bids such that the target average CPA (cost per acquisition) is attained. 
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
-Match type bids help [!INCLUDE[brand](../../concepts/includes/brand.md)] determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user’s search term in the order of *Exact*, *Phrase*, and then *Broad*.
+Match type bids help [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user’s search term in the order of *Exact*, *Phrase*, and then *Broad*.
 
 ### <a name="exactmatchtype"></a>Exact
 An exact match results when all of the words in the keyword exactly match the user's search term.

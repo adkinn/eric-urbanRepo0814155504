@@ -1,10 +1,10 @@
 ---
 title: "Negative Keywords in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f6130c28-34a9-44df-a5a6-6f019e9afb8b
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Negative Keywords in Python
 This example shows how to associate negative keywords and negative keyword lists with a campaign using the following Campaign Management service operations.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

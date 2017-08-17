@@ -1,10 +1,10 @@
 ---
 title: "Upgrade Targets to Criterions"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/09/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2b1a4a8d-47bc-4b38-a694-4cdc0d04f7ab
 caps.latest.revision: 27
@@ -53,7 +53,7 @@ Ad Group DeviceOS Target,Active,20,AdGroupIdHere,,Campaign One,,41:35.7,Tablets,
 Ad Group Negative Location Target,Active,20,AdGroupIdHere,Postal Code,Campaign One,,41:35.7,"91708, CA US",,,,,,,,,,,,
 ```
 
-Now let's download the target criterions using Bing Ads API version 11, Bulk file format 5.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. You will notice a few more differences between Bulk file format 4.0 targets and Bulk file format 5.0 criterions. For example instead of sharing the *Physical Intent* field across location and radius records, Bulk file format 5.0 introduces the [Campaign Location Intent Criterion](Campaign%20Location%20Intent%20Criterion.md) and [Ad Group Location Intent Criterion](Ad%20Group%20Location%20Intent%20Criterion.md) records. For more information, see [Migrating to Bing Ads API Version 11 - Bulk - Target Criterions](Migrating%20to%20Bing%20Ads%20API%20Version%2011.md#bulk_targetcriterions).
+Now let's download the target criterions using Bing Ads API version 11, Bulk file format 5.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. You will notice a few more differences between Bulk file format 4.0 targets and Bulk file format 5.0 criterions. For example instead of sharing the *Physical Intent* field across location and radius records, Bulk file format 5.0 introduces the [Campaign Location Intent Criterion](Campaign%20Location%20Intent%20Criterion.md) and [Ad Group Location Intent Criterion](Ad%20Group%20Location%20Intent%20Criterion.md) records. For more information, see [Migrating to Bing Ads API Version 11 - Bulk - Target Criterions](../../concepts/migrating-to-bing-ads-api-version-11.md#bulk_targetcriterions).
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
@@ -320,7 +320,7 @@ Each age criterion defines an age range for the accompanying criterion bid adjus
 
 The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
-**Note:** In Bulk file format version 4.0, the supported age ranges were *EighteenToTwentyFive*, *TwentyFiveToThirtyFive*, *ThirtyFiveToFifty*, *FiftyToSixtyFive*, and *SixtyFiveAndAbove*. For more information, see [Migrating to Bing Ads API Version 11 - Bulk - Target Criterions](Migrating%20to%20Bing%20Ads%20API%20Version%2011.md#bulk_targetcriterions).
+**Note:** In Bulk file format version 4.0, the supported age ranges were *EighteenToTwentyFive*, *TwentyFiveToThirtyFive*, *ThirtyFiveToFifty*, *FiftyToSixtyFive*, and *SixtyFiveAndAbove*. For more information, see [Migrating to Bing Ads API Version 11 - Bulk - Target Criterions](../../concepts/migrating-to-bing-ads-api-version-11.md#bulk_targetcriterions).
 
 ### <a name="daytimecriterion"></a>DayTime Criterion
 As your campaign progresses, you may find that your click-through rate and conversion rate are highest during certain times, for example, weeknights. This might be a perfect opportunity to use bid adjustments to improve your chances of displaying your ad Monday through Friday from 6:00 P.M. to 11:00 P.M.. When targeting by time, you are targeting the searcher's local time zone. For example, if you increase your bid by 10% for 6:00 P.M. to 11:00 P.M., that bid adjustment will be effective from 6:00 P.M. to 11:00 P.M. Eastern Time for searchers in New York, then be effective 6:00 P.M. to 11:00 P.M. Pacific Time for searchers in Seattle. Now you are showing your ads when your potential customers are online!
@@ -353,7 +353,7 @@ Each location criterion defines a location code for the accompanying criterion b
 The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000.  
 
 > [!NOTE]
-> Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads. To exclude a location, see [Negative Location Criterion](#negativelocationcriterion).
+> Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads. To exclude a location, see [Negative Location Criterion](#negativelocationcriterion).
 
 ### <a name="locationintentcriterion"></a>Location Intent Criterion
 Set the location intent criterion to *PeopleInOrSearchingForOrViewingPages* if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [Location Criterion](#locationcriterion) includes London and the location intent criterion is *PeopleInOrSearchingForOrViewingPages*, then someone physically located in Florida searching for London hotels will see the ad.
@@ -369,7 +369,7 @@ The maximum number of location intent criterions that you can specify per campai
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
 
 ### <a name="negativelocationcriterion"></a>Negative Location Criterion
-Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads.
+Although location criterions are most often used to designate the specific locations where you want to show your ads, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] also lets you specify locations you want to exclude from seeing your ads.
 
 Each negative location criterion defines a location code where you do not want your ads to show. If you are using the Campaign Management service, add the *LocationCriterion* to either the *NegativeCampaignCriterion* or *NegativeAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Negative Location Criterion](Campaign%20Negative%20Location%20Criterion.md) or [Ad Group Negative Location Criterion](Ad%20Group%20Negative%20Location%20Criterion.md) records. 
 

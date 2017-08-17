@@ -1,10 +1,10 @@
 ---
 title: "Download and Upload Campaigns in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c8799d62-3c45-43be-bf66-55bee25fa82f
 caps.latest.revision: 7
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Download and Upload Campaigns in PHP
 The following example shows how to download and upload the entities of one or more campaigns in the background.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -195,7 +195,7 @@ try
     	// If the call succeeds, stop polling. If the call or 
     	// download fails, the call throws a fault.
     
-    	for ($i = 0; $i < 10; $i++)
+    	for ($i = 0; $i \< 10; $i++)
     	{
     		sleep($waitTime);
     
@@ -268,7 +268,7 @@ try
     // If the call succeeds, stop polling. If the call or
     // download fails, the call throws a fault.
     
-    for ($i = 0; $i < 10; $i++)
+    for ($i = 0; $i \< 10; $i++)
     {
     	sleep($waitTime);
         
@@ -579,7 +579,7 @@ function UploadFile($uploadUrl, $filePath)
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
 
-    // PHP < 5.5
+    // PHP \< 5.5
     //curl_setopt($ch, CURLOPT_POSTFIELDS, array("file" => "@$filePath"));
 
     // PHP 5.5+
@@ -717,7 +717,7 @@ function GetLastSyncTime($path)
             	do
                 {
                     $syncTimeColumn = ($fields[$column] == "Sync Time") ? $column : $syncTimeColumn;
-                } while($syncTimeColumn == 0 && (++$column < count($fields)));
+                } while($syncTimeColumn == 0 && (++$column \< count($fields)));
             }
             
             // Look for the Account record after any other metadata.

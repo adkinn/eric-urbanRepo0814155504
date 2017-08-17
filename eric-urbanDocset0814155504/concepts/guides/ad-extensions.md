@@ -1,10 +1,10 @@
 ---
 title: "Ad Extensions"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ca01453b-7e0c-4d2d-afea-378501023cd6
 caps.latest.revision: 15
@@ -50,14 +50,14 @@ You can manage ad extensions with either the [Bulk Service](https://msdn.microso
 ### <a name="appextensions"></a>App Extensions
 You can associate app ad extensions with your campaigns and ad groups, and your ads will include a link to install an application.
 
-![overview_appadextension](../../concepts/guides/media/overview_appadextension.png "overview_appadextension")
+![overview_appadextension](../../concepts/guides/media/overview-appadextension.png "overview_appadextension")
 
 ### <a name="callextensions"></a>Call Extensions
 With Call Extensions, you can provide a phone number that is not associated with a particular location, but is appropriate for all locations where your ads display. In comparison, you typically use Location Extensions to provide an address and local phone number associated with a local location.
 
 If the campaign is also associated with a [Location Extensions](#locationextensions), the call extension phone number will override the location extension phone number.
 
-![overview_calladextension](../../concepts/guides/media/overview_calladextension.png "overview_calladextension")
+![overview_calladextension](../../concepts/guides/media/overview-calladextension.png "overview_calladextension")
 
 ### <a name="calloutextensions"></a>Callout Extensions
 With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad’s description. Providing additional details about your store can make your ad more relevant to potential customers.
@@ -76,7 +76,7 @@ When you enable Location Extensions, you can choose to show the address of your 
 
 If the campaign is also associated with a [Call Extensions](#callextensions), the phone number in the call extension will override the location extension phone number.
 
-![overview_locationadextension](../../concepts/guides/media/overview_locationadextension.png "overview_locationadextension")
+![overview_locationadextension](../../concepts/guides/media/overview-locationadextension.png "overview_locationadextension")
 
 ### <a name="priceextensions"></a>Price Extensions
 You can use Price Extensions to display your products or services with their corresponding prices to potential customers on mobile devices. Price Extensions only show on ads listed at the top of the results page, helping to increase your clicks. Keep in mind that though Price Extensions are free to add to your ad, they may not always show for every query.
@@ -91,9 +91,9 @@ Potential customers like to know about other customers’ experiences when searc
 ### <a name="sitelinkextensions"></a>Sitelink Extensions
 Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
-You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../../concepts/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
+You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
 
-![overview_sitelinkadextension](../../concepts/guides/media/overview_sitelinkadextension.png "overview_sitelinkadextension")
+![overview_sitelinkadextension](../../concepts/guides/media/overview-sitelinkadextension.png "overview_sitelinkadextension")
 
 ### <a name="structuredsnippetextensions"></a>Structured Snippet Extensions
 Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header “Brands:” and the values “Windows, Xbox, Skype” to let customers know about what brands are available at your store.
@@ -158,12 +158,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
 -   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../../concepts/code-examples/bulk-ad-extensions-in-csharp.md)| [Java](../../concepts/code-examples/bulk-ad-extensions-in-java.md) | [Python](../../concepts/code-examples/bulk-ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../../concepts/code-examples/csharp-examples/bulk-ad-extensions-in-csharp.md)| [Java](../../concepts/code-examples/java-examples/bulk-ad-extensions-in-java.md) | [Python](../../concepts/code-examples/bulk-ad-extensions-in-python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../../concepts/code-examples/ad-extensions-in-csharp.md) | [Java](../../concepts/code-examples/ad-extensions-in-java.md) | [PHP](../../concepts/code-examples/ad-extensions-in-php.md) | [Python](../../concepts/code-examples/ad-extensions-in-python.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../../concepts/code-examples/csharp-examples/ad-extensions-in-csharp.md) | [Java](../../concepts/code-examples/java-examples/ad-extensions-in-java.md) | [PHP](../../concepts/code-examples/ad-extensions-in-php.md) | [Python](../../concepts/code-examples/ad-extensions-in-python.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.

@@ -1,18 +1,18 @@
 ---
 title: "Version 11 API Reference"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/31/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d3f5d0a4-b6de-4e81-bcf0-7d2c7d2e33bd
 caps.latest.revision: 3
 ---
 # Version 11 API Reference
-For [!INCLUDE[brand](../../concepts/includes/brand.md)] version 11 reference content, see the following sections.
+For [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] version 11 reference content, see the following sections.
 
-[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../../concepts/api-reference/includes/v10-sunset.md)]
 
 ## Bing Ads API Version 11 Services
 

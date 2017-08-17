@@ -1,10 +1,10 @@
 ---
 title: "Link to Client Accounts in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8f0062a6-b7fd-4283-be2b-0190e846daaf
 caps.latest.revision: 5
@@ -12,12 +12,12 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Link to Client Accounts in C#
+# Link to Client Accounts in C# #
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -206,11 +206,11 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Customer Management service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.ApiFault> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CustomerManagement.ApiFault> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }

@@ -1,10 +1,10 @@
 ---
 title: "Targets in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 855d655d-48b1-41f6-a688-819a047e2652
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in Java
 This example shows how to associate targets with a campaign and ad group.
 
-[!INCLUDE[java_header](../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v10;

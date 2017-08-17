@@ -1,10 +1,10 @@
 ---
 title: "Targets in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 07a44d20-de02-44b0-ab4f-3fd978f7d88c
 caps.latest.revision: 5
@@ -12,12 +12,12 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Targets in C#
+# Targets in C# #
 This example shows how to migrate from targets to criterions.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,7 +86,7 @@ namespace BingAdsExamplesLibrary.V11
                     // devices, genders, and locations. As a best practice you should consider at minimum 
                     // adding a campaign location criterion corresponding to the customer market country.
 
-                    if (campaignCriterions == null || campaignCriterions.Count <= 0)
+                    if (campaignCriterions == null || campaignCriterions.Count \<= 0)
                     {
                         campaignCriterions.Add(new BiddableCampaignCriterion
                         {

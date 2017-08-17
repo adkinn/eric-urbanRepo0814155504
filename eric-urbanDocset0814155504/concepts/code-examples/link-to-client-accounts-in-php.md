@@ -1,10 +1,10 @@
 ---
 title: "Link to Client Accounts in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bb5bd6ed-c525-4f39-a94b-30dc94d8022e
 caps.latest.revision: 6
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Link to Client Accounts in PHP
 The following example shows how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times to update and observe the status change, for example from LinkPending to LinkAccepted to Active.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
 <?php

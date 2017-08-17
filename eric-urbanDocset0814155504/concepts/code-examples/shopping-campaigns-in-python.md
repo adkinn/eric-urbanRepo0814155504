@@ -1,10 +1,10 @@
 ---
 title: "Shopping Campaigns in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 22050e51-1622-4451-88dd-26de328807b0
 caps.latest.revision: 5
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in Python
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/includes/brand_bsc.md)] using the following Campaign Management service operations.
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../concepts/guides/includes/brand-bsc.md)] using the following Campaign Management service operations.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

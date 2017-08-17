@@ -1,10 +1,10 @@
 ---
 title: "Universal Event Tracking"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/09/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a5d2e32d-d4d0-4755-a973-90ee52e72c10
 caps.latest.revision: 11
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Universal Event Tracking
 UET is a powerful Bing Ads tool. You just need to create one single UET tag and then add it to your website once. This tag records what customers do on your website then Bing Ads starts collecting that data allowing you to track conversions (like purchases or leads) or target audiences using remarketing lists. UET is a prerequisite for conversion tracking and remarketing in paid search.
 
-![Universal Event Tracking](../../concepts/guides/universal-event-tracking.md)
+![Universal Event Tracking](../../concepts/guides/media/universal-event-tracking.png)
 
 There are a few steps to get this set up. You will need to:
 * Create a [UET tag](#uet) once in Bing Ads

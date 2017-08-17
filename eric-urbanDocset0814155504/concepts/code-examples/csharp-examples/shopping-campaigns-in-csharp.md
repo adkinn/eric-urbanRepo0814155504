@@ -1,10 +1,10 @@
 ---
 title: "Shopping Campaigns in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 80dde801-011f-49f3-9021-10e25e6ed013
 caps.latest.revision: 5
@@ -12,13 +12,13 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Shopping Campaigns in C#
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand_bsc.md)] campaigns.
+# Shopping Campaigns in C# #
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/guides/includes/brand-bsc.md)] campaigns.
 
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 // This source is subject to the Microsoft Public License.
 // See http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
 // All other rights reserved.
@@ -506,16 +506,16 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Campaign Management service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.ApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CampaignManagement.EditorialApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(string.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));

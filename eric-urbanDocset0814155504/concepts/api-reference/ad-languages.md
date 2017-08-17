@@ -1,10 +1,10 @@
 ---
 title: "Ad Languages"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/15/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ac68ee2d-1cbc-4ea7-b648-68c21f8ffa3a
 caps.latest.revision: 13

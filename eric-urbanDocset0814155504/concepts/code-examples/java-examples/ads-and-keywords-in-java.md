@@ -1,10 +1,10 @@
 ---
 title: "Ads and Keywords in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a91432c2-9450-40bf-b165-fe1514b59c1a
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ads and Keywords in Java
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;
@@ -290,7 +290,7 @@ public class KeywordsAds extends ExampleBase {
             // Update shared budgets in Budget objects.
             if (getBudgetIds.getLongs() != null && getBudgetIds.getLongs().size() > 0)
             {
-                ArrayList<java.lang.Long> distinctBudgetIds = new ArrayList<java.lang.Long>(new HashSet<Long>(getBudgetIds.getLongs()));
+                ArrayList\<java.lang.Long> distinctBudgetIds = new ArrayList\<java.lang.Long>(new HashSet<Long>(getBudgetIds.getLongs()));
                 com.microsoft.bingads.v11.campaignmanagement.ArrayOflong getDistinctBudgetIds = new com.microsoft.bingads.v11.campaignmanagement.ArrayOflong();
                 for(java.lang.Long id : distinctBudgetIds){
                     getDistinctBudgetIds.getLongs().add(id);
@@ -306,7 +306,7 @@ public class KeywordsAds extends ExampleBase {
 
                 outputStatusMessage("List of campaigns that share each budget:\n");
                 ArrayOfIdCollection getCampaignIdCollection = getCampaignIdsByBudgetIds(getDistinctBudgetIds).getCampaignIdCollection();
-                for(int index = 0; index < getCampaignIdCollection.getIdCollections().size(); index++)
+                for(int index = 0; index \< getCampaignIdCollection.getIdCollections().size(); index++)
                 {
                     outputStatusMessage(String.format("BudgetId: %s", getDistinctBudgetIds.getLongs().get(index)));
                     outputStatusMessage("Campaign Ids:");

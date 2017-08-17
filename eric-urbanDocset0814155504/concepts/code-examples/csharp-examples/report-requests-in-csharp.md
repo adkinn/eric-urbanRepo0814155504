@@ -1,10 +1,10 @@
 ---
 title: "Report Requests in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4f65d58e-299a-4f67-b449-ed37fcd5206e
 caps.latest.revision: 4
@@ -12,12 +12,12 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Report Requests in C#
-The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md).
+# Report Requests in C# #
+The following code example shows how to request and retrieve a keyword performance report using the *ReportingServiceManager* class provided with the [Bing Ads Client Libraries](../../../concepts/bing-ads-client-libraries.md).
 
-[!INCLUDE[csharp_header](../../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 using System;
 using System.IO;
 using System.Linq;
@@ -130,11 +130,11 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Reporting service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.Reporting.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.Reporting.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(String.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.Reporting.ApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.Reporting.ApiFaultDetail> ex)
             {
                 OutputStatusMessage(String.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
                 OutputStatusMessage(String.Join("; ", ex.Detail.BatchErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));

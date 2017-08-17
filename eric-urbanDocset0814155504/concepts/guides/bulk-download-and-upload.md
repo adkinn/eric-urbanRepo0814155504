@@ -1,10 +1,10 @@
 ---
 title: "Bulk Download and Upload"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 37e84914-b0a0-4e53-907f-100faf9f4a1c
 caps.latest.revision: 13
@@ -18,7 +18,7 @@ With the [bulk service](https://msdn.microsoft.com/library/bing-ads-bulk-service
 > [!IMPORTANT]
     > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../Topic/Bing%20Ads%20Client%20Libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids.aspx) and [GetBulkDownloadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkdownloadstatus.aspx) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#bulkservicemanager) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#bulkservicemanager) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#bulkservicemanager).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../../concepts/bing-ads-client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](https://msdn.microsoft.com/library/bing-ads-bulk-downloadcampaignsbyaccountids.aspx) and [GetBulkDownloadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkdownloadstatus.aspx) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [C#](../../concepts/get-started/getting-started-using-csharp-with-bing-ads-services.md#bulkservicemanager) | [Java](../../concepts/get-started/getting-started-using-java-with-bing-ads-services.md#bulkservicemanager) | [Python](../../concepts/get-started/getting-started-using-python-with-bing-ads-services.md#bulkservicemanager).
 
 For a code example that shows how to download and upload campaigns using the Bulk service with the workflow described below, see [Download and Upload Campaigns in PHP](../../concepts/code-examples/download-and-upload-campaigns-in-php.md).
 
@@ -90,7 +90,7 @@ The following is an overview of the request settings and upload workflow.
 3.  Use the *UploadUrl* returned with the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx) response to submit your bulk upload file with HTTP POST. The content type must be *multipart/form-data*. UTF-8 files must include the byte order mark (BOM). The ZIP-compressed upload should contain one file formatted as either **Csv** or **Tsv**. The ZIP file must be properly structured, including an end of central directory record.
 
     > [!NOTE]
-    > The HTTP standard Authorization header is not used. To authenticate you must add and set the [!INCLUDE[brand](../../concepts/includes/brand.md)] custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](../../concepts/getting-started-with-the-bing-ads-api.md#where_to_use).
+    > The HTTP standard Authorization header is not used. To authenticate you must add and set the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](../../concepts/guides/authentication-with-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](../../concepts/get-started/getting-started-with-the-bing-ads-api.md#where_to_use).
     >
     > You must use the same user credentials throughout the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx), HTTP POST, and [GetBulkUploadStatus](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadstatus.aspx) workflow.  
 

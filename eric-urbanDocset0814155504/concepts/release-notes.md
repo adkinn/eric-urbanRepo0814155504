@@ -1,10 +1,10 @@
 ---
 title: "Release Notes"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/15/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 92fa50dd-e2a6-490d-aaa1-2e02bf108b63
 caps.latest.revision: 77
@@ -80,13 +80,13 @@ Once you have already settled on an initial set of keywords, the [GetKeywordTraf
 
 The result is a [KeywordEstimate](https://msdn.microsoft.com/library/bing-ads-ad-insight-keywordestimate.aspx) list for each [AdGroupEstimate](https://msdn.microsoft.com/library/bing-ads-ad-insight-adgroupestimate.aspx), which are all nested within one [CampaignEstimate](https://msdn.microsoft.com/library/bing-ads-ad-insight-campaignestimate.aspx). Each keyword estimate includes a minimum and maximum [TrafficEstimate](https://msdn.microsoft.com/library/bing-ads-ad-insight-trafficestimate.aspx). As previously mentioned, the traffic estimates for keywords include average CPC, average position, clicks, CTR, impressions, and total cost.
 
-For more details see the [Keyword Ideas and Traffic Estimates](../concepts/keyword-ideas-and-traffic-estimates.md) technical guide.
+For more details see the [Keyword Ideas and Traffic Estimates](../concepts/guides/keyword-ideas-and-traffic-estimates.md) technical guide.
 
 ### <a name="labels_july2017"></a>Labels
 Support for labels is added. Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 
 #### <a name="bulk_v11_labels_july2017"></a>Bulk API Version 11 for Labels  
 You can use the following Bulk record types to manage labels with the Bulk API.
@@ -117,7 +117,7 @@ You can set, get, and delete label associations ([LabelAssociation](https://msdn
 Support for Offline Conversion Import is added. Use offline conversions to track the full impact and benefit of your search ads. It allows you to import offline conversions derived from a search click back into Bing Ads. 
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 
 To set up offine conversion tracking, create an offline conversion goal with the [Campaign Management](#campaign_v11_offline_conversions_july2017) service or via the Bing Ads web application, wait two hours, and then send Bing Ads the offline conversion data with either the [Campaign Management](#campaign_v11_offline_conversions_july2017) service or [Bulk](#bulk_v11_offline_conversions_july2017) service.
 
@@ -149,7 +149,7 @@ The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been
 You can get the bid strategy type that is inherited from each ad group or keyword's parent campaign or ad group. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 
 #### <a name="bulk_v11_inheritedbidstrategytype_july2017"></a>Bulk API Version 11 for Inherited Bid Strategy Type  
 The *Inherited Bid Strategy Type* field is added to the [Ad Group](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx) and [Keyword](https://msdn.microsoft.com/library/bing-ads-bulk-keyword-record.aspx) records. 
@@ -189,12 +189,12 @@ For information about the changes to the Bing Ads services included in this rele
 -   [Dynamic Search Ads Reports](#reporting_v11_dsa_may2017)  
 
 ### <a name="v11_ga_may2017"></a>Bing Ads API Version 11 General Availability
-Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](../concepts/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../concepts/version-11-api-reference.md).
+Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](../concepts/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../concepts/api-reference/version-11-api-reference.md).
 
-[!INCLUDE[v10_sunset](../concepts/includes/v10_sunset.md)]
+[!INCLUDE[v10_sunset](../concepts/api-reference/includes/v10-sunset.md)]
 
 ### <a name="sdk_may2017"></a>Bing Ads PHP Software Development Kit (SDK)
-The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](../concepts/bing-ads-web-service-addresses.md). This release enables you to [upgrade](../concepts/migrating-to-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
+The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](../concepts/api-reference/bing-ads-web-service-addresses.md). This release enables you to [upgrade](../concepts/migrating-to-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
 
 Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will be added to the .NET, Java, and Python SDKs in a future release.
 
@@ -216,12 +216,12 @@ For information about the changes to the Bing Ads services included in this rele
 -   [Bing Shopping Product Search Query Performance Report](#productsearchqueryperformancereport_april2017)  
 
 ### <a name="v11_preview_april2017"></a>Bing Ads API Version 11 Preview
-A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](../concepts/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../concepts/version-11-api-reference.md).
+A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](../concepts/migrating-to-bing-ads-api-version-11.md) and [Version 11 API Reference](../concepts/api-reference/version-11-api-reference.md).
 
 ### <a name="php_sdk_april2017"></a>Bing Ads PHP Software Development Kit (SDK)
 The Bing Ads PHP SDK is now available. 
 
-For details please see the [blog post](https://blogs.msdn.microsoft.com/bing_ads_api/2017/04/05/announcing-bing-ads-php-sdk/) and [Getting Started Using PHP with Bing Ads Services](../concepts/getting-started-using-php-with-bing-ads-services.md).
+For details please see the [blog post](https://blogs.msdn.microsoft.com/bing_ads_api/2017/04/05/announcing-bing-ads-php-sdk/) and [Getting Started Using PHP with Bing Ads Services](../concepts/get-started/getting-started-using-php-with-bing-ads-services.md).
 
 ### <a name="productsearchqueryperformancereport_april2017"></a>Bing Shopping Product Search Query Performance Report
 The Product Search Query performance report is now available for Bing Shopping Campaigns. Submit the [ProductPartitionPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-productpartitionperformancereportrequest.aspx) to see what your audience is searching for when your product ads are shown.
@@ -236,7 +236,7 @@ For information about the changes to the Bing Ads services included in this rele
 ### <a name="campaign_languages_february2017"></a>Campaign and Ad Group Languages
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 
 Starting in late Q1 or early Q2 calendar year 2017, Bing Ads will begin piloting a new feature to support multiple languages at the campaign level. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](https://msdn.microsoft.com/library/bing-ads-customer-management-getcustomerpilotfeatures.aspx) response includes pilot number *310*. 
 
@@ -264,7 +264,7 @@ For information about the changes to the Bing Ads services included in this rele
 Remarketing in Paid Search lets you improve your return on investment by optimizing your campaigns for specific audiences, which are the people who have visited your website before. In a previous release we only supported ad group remarketing list associations. Support is now added to the Campaign Management API for ad group remarketing list exclusions. For example you might want to include all users who visited a page within the last 60 days but not those who visited last week. For more information about Remarketing APIs, see the [UET and Remarketing Guide](https://msdn.microsoft.com/library/bing-ads-universal-event-tracking-guide.aspx#remarketing). 
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 
 > [!NOTE]
 > Remarketing list exclusions are not supported with the Bulk API. You can use the Campaign Management API to set exclusions.
@@ -303,7 +303,7 @@ The *Rule* element is added to the [RemarketingList](https://msdn.microsoft.com/
 Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. A preview of the Bulk APIs are now available as described in the next section. A preview of the Campaign Management APIs for DSA was released in [September](#dsa_september2016).
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > Before you can use dynamic search ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
 
@@ -396,7 +396,7 @@ For information about the changes to the Bing Ads services included in this rele
 Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. A preview of the Campaign Management APIs are now available.
 
 > [!NOTE]
-> [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot_comingsoon.md)]
+> [!INCLUDE[pilot_comingsoon](../concepts/guides/includes/pilot-comingsoon.md)]
 > 
 > Before you can use dynamic search ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
 

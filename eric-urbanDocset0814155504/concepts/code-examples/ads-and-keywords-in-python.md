@@ -1,10 +1,10 @@
 ---
 title: "Ads and Keywords in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a27b8070-fb82-4591-b86f-8b01e98b1fb0
 caps.latest.revision: 5
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Ads and Keywords in Python
 The following example shows how to add ads and keywords to a new ad group, and handle partial errors when some ads or keywords are not successfully created.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from auth_helper import *

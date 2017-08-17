@@ -1,10 +1,10 @@
 ---
 title: "Campaigns"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/12/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4821ba80-4e1f-45a7-8958-86a862334d0e
 caps.latest.revision: 13
@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Campaigns
-The [!INCLUDE[brand](../../concepts/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).
+The [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../../concepts/entity-hierarchy-and-limits.md).
 
 |Topic|Description|
 |---------|---------------|

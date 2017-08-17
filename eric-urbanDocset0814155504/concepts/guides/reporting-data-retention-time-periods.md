@@ -1,10 +1,10 @@
 ---
 title: "Reporting Data Retention Time Periods"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 468936d5-f707-468c-80ca-f728bd67a0b3
 caps.latest.revision: 9

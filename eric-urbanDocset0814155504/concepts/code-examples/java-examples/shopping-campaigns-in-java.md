@@ -1,10 +1,10 @@
 ---
 title: "Shopping Campaigns in Java"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e9cf2538-043a-46c0-b2f1-c8779f505655
 caps.latest.revision: 5
@@ -13,9 +13,9 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Shopping Campaigns in Java
-This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/includes/brand_bsc.md)] campaigns..
+This example shows how to apply product conditions for [!INCLUDE[brand_bsc](../../../concepts/guides/includes/brand-bsc.md)] campaigns..
 
-[!INCLUDE[java_header](../../../concepts/code-examples/includes/java_header.md)]
+[!INCLUDE[java_header](../../../concepts/code-examples/java-examples/includes/java-header.md)]
 
 ```java
 package com.microsoft.bingads.examples.v11;

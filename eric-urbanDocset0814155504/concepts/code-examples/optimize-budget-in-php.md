@@ -1,10 +1,10 @@
 ---
 title: "Optimize Budget in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d0e04f8e-616c-4525-8179-ae48f18c66af
 caps.latest.revision: 6
@@ -15,10 +15,10 @@ manager: "ehansen"
 # Optimize Budget in PHP
 This example shows how to get the budget opportunities which have not expired for the specified account.
 
-[!INCLUDE[php_header](../../concepts/code-examples/includes/php_header.md)]
+[!INCLUDE[php_header](../../concepts/code-examples/includes/php-header.md)]
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 

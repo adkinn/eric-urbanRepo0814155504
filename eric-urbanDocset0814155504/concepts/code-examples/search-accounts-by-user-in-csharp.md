@@ -1,10 +1,10 @@
 ---
 title: "Search Accounts by User in C#"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5dd72538-eff3-40ea-b729-7aaf42c7f46e
 caps.latest.revision: 5
@@ -12,12 +12,12 @@ author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
 ---
-# Search Accounts by User in C#
+# Search Accounts by User in C# #
 The following example shows how to search for accounts that can be managed by the current authenticated user.
 
-[!INCLUDE[csharp_header](../../concepts/code-examples/includes/csharp_header.md)]
+[!INCLUDE[csharp_header](../../concepts/code-examples/csharp-examples/includes/csharp-header.md)]
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,8 +65,8 @@ namespace BingAdsExamplesLibrary.V11
 
                     // Optionally you can update each account with a tracking template.
 
-                    var accountFCM = new List<KeyValuePair<string, string>>();
-                    accountFCM.Add(new KeyValuePair<string, string>(
+                    var accountFCM = new List<KeyValuePair\<string, string>>();
+                    accountFCM.Add(new KeyValuePair\<string, string>(
                         "TrackingUrlTemplate",
                         "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"));
 
@@ -83,11 +83,11 @@ namespace BingAdsExamplesLibrary.V11
                 OutputStatusMessage(string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description));
             }
             // Catch Customer Management service exceptions
-            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
-            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.ApiFault> ex)
+            catch (FaultException\<Microsoft.BingAds.V11.CustomerManagement.ApiFault> ex)
             {
                 OutputStatusMessage(string.Join("; ", ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
             }
@@ -97,7 +97,7 @@ namespace BingAdsExamplesLibrary.V11
             }
         }
 
-        private async Task<Account[]> SearchAccountsByUserIdAsync(long? userId)
+        private async Task\<Account[]> SearchAccountsByUserIdAsync(long? userId)
         {
             var predicate = new Predicate
             {

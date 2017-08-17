@@ -1,10 +1,10 @@
 ---
 title: "Geographical Locations in PHP"
-ms.custom: na
+ms.custom: ""
 ms.date: "07/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0a81cbb5-e241-4802-950a-2fe8a58a63a0
 caps.latest.revision: 6
@@ -14,13 +14,13 @@ manager: "ehansen"
 ---
 # Geographical Locations in PHP
 The following example shows how to download the comma separated value (CSV) file that contains geographical location information 
- that can be used with [!INCLUDE[brand](../../concepts/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
+ that can be used with [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] location targeting. For more information, see [Geographical Location Codes](../../concepts/api-reference/geographical-location-codes.md).
 
 > [!NOTE]
 > The example assumes that you have access to the "c:\geolocations" directory. You should modify the source as needed, or create the "c:\geolocations" directory.
 
 ```php
-<?php
+\<?php
 
 namespace Microsoft\BingAds\Samples\v11;
 
@@ -129,7 +129,7 @@ try
     printf("LastModifiedTimeUtc: %s\n", $lastModifiedTimeUtc);
     
     // Download the file if it was modified since the previous download.
-    if($previousSyncTimeUtc < $lastModifiedTimeUtc)
+    if($previousSyncTimeUtc \< $lastModifiedTimeUtc)
     {
         printf("Downloading the file locally: %s\n", $GLOBALS['LocalFile']);
         DownloadFile($fileUrl);

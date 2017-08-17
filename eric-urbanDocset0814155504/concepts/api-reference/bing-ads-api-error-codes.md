@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads API Error Codes"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/12/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0ba4ba7a-c354-41d7-8616-ffd5a57cd455
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bing Ads API Error Codes
 The fault detail object that a service operation returns contains a code that identifies the error.
 
-This section identifies error codes that the [!INCLUDE[brand](../../concepts/includes/brand.md)] web services can return and groups them by service where applicable.
+This section identifies error codes that the [!INCLUDE[brand](../../concepts/guides/includes/brand.md)] web services can return and groups them by service where applicable.
 
 |Title|Description|
 |---------|---------------|

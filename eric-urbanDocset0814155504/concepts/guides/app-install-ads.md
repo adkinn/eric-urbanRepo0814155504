@@ -1,10 +1,10 @@
 ---
 title: "App Install Ads"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/10/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 59f2c8b2-c90d-4311-9f18-f375e00ff057
 caps.latest.revision: 2

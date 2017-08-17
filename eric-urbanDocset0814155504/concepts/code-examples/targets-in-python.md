@@ -1,10 +1,10 @@
 ---
 title: "Targets in Python"
-ms.custom: na
+ms.custom: ""
 ms.date: "08/16/2017"
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 596c32a8-d730-41ee-b58c-5b2982d3a8c9
 caps.latest.revision: 4
@@ -15,7 +15,7 @@ manager: "ehansen"
 # Targets in Python
 This example shows how to associate targets with a campaign and ad group using the following Campaign Management service operations.
 
-[!INCLUDE[python_header](../../concepts/code-examples/includes/python_header.md)]
+[!INCLUDE[python_header](../../concepts/code-examples/includes/python-header.md)]
 
 ```python
 from bingads.service_client import ServiceClient
