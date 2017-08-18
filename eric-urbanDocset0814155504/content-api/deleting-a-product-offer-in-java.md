@@ -67,7 +67,7 @@ class ProductsEx {
 	public static void main(String[] args) {
 
 		try {
-			Map\<String, String> headers = getCredentialHeaders();
+			Map<String, String> headers = getCredentialHeaders();
 
             String url = String.format(DeleteUri + queryString, merchantId, productId);
 
@@ -97,11 +97,11 @@ class ProductsEx {
 
 	// Get tokens for the authentication headers.
 
-    private static Map\<String, String> getCredentialHeaders()
+    private static Map<String, String> getCredentialHeaders()
     {
         // TODO: Add logic to get the user's OAuth token. 
 
-        Map\<String, String> headers = new HashMap\<String, String>();
+        Map<String, String> headers = new HashMap<String, String>();
         headers.put("AuthenticationToken", accessToken);
         headers.put("DeveloperToken", devToken);
 
@@ -110,7 +110,7 @@ class ProductsEx {
 
   // Deletes the specified product offer.
   
-    private static void deleteResource(String uri, Map\<String, String> headers) throws IOException, CapiException 
+    private static void deleteResource(String uri, Map<String, String> headers) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -125,7 +125,7 @@ class ProductsEx {
     		connection.setRequestMethod("DELETE");
     		connection.setRequestProperty("Accept", "application/json");
 
-    		for (Entry\<String, String> header : headers.entrySet())
+    		for (Entry<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}

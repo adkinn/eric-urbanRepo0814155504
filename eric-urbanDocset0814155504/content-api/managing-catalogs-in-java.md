@@ -68,7 +68,7 @@ class Catalogs {
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 
 		try {
-			Map\<String, String> headers = getCredentialHeaders();
+			Map<String, String> headers = getCredentialHeaders();
 
             String url = String.format(CatalogsUri, merchantId);
 
@@ -132,11 +132,11 @@ class Catalogs {
 
 	// Get tokens for the authentication headers.
 
-    private static Map\<String, String> getCredentialHeaders()
+    private static Map<String, String> getCredentialHeaders()
     {
         // TODO: Add logic to get the user's OAuth token. 
 
-        Map\<String, String> headers = new HashMap\<String, String>();
+        Map<String, String> headers = new HashMap<String, String>();
         headers.put("AuthenticationToken", accessToken);
         headers.put("DeveloperToken", devToken);
 
@@ -146,7 +146,7 @@ class Catalogs {
 
     // Generic method to get a resource from the specified URL.
     
-    private static Object getResource(String uri, Map\<String, String> headers, Class\<?> type) throws IOException, CapiException 
+    private static Object getResource(String uri, Map<String, String> headers, Class<?> type) throws IOException, CapiException 
     {
     	Object resource = null;
     	HttpURLConnection connection = null;
@@ -162,7 +162,7 @@ class Catalogs {
     		connection.setRequestMethod("GET");
     		connection.setRequestProperty("Accept", "application/json");
 
-    		for (Entry\<String, String> header : headers.entrySet())
+    		for (Entry<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}
@@ -222,7 +222,7 @@ class Catalogs {
 
     // Adds a Catalog to the store.
     
-    private static Catalog addResource(String uri, Map\<String, String> headers, Catalog catalog) throws IOException, CapiException 
+    private static Catalog addResource(String uri, Map<String, String> headers, Catalog catalog) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -241,7 +241,7 @@ class Catalogs {
     		connection.setRequestProperty("Content-Type", "application/json");
     		connection.setRequestProperty("Content-Length", String.valueOf(json.length()));
 
-    		for (Entry\<String, String> header : headers.entrySet())
+    		for (Entry<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}
@@ -309,7 +309,7 @@ class Catalogs {
 
     // Updates a Catalog in the store.
     
-    private static Catalog updateResource(String uri, Map\<String, String> headers, Catalog catalog) throws IOException, CapiException 
+    private static Catalog updateResource(String uri, Map<String, String> headers, Catalog catalog) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -328,7 +328,7 @@ class Catalogs {
     		connection.setRequestProperty("Content-Type", "application/json");
     		connection.setRequestProperty("Content-Length", String.valueOf(json.length()));
 
-    		for (Entry\<String, String> header : headers.entrySet())
+    		for (Entry<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}
@@ -396,7 +396,7 @@ class Catalogs {
 
     // Deletes a Catalog from the store.
     
-    private static void deleteResource(String uri, Map\<String, String> headers) throws IOException, CapiException 
+    private static void deleteResource(String uri, Map<String, String> headers) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -411,7 +411,7 @@ class Catalogs {
     		connection.setRequestMethod("DELETE");
     		connection.setRequestProperty("Accept", "application/json");
 
-    		for (Entry\<String, String> header : headers.entrySet())
+    		for (Entry<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}
@@ -461,7 +461,7 @@ class Catalogs {
     // Creates a couple of catalogs and adds them 
     // to the store.
     
-    private static List<Catalog> addCatalogs(String url, Map\<String, String> headers) throws IOException, CapiException
+    private static List<Catalog> addCatalogs(String url, Map<String, String> headers) throws IOException, CapiException
     {
     	List<Catalog> catalogs = new ArrayList<Catalog>();
 
@@ -490,7 +490,7 @@ class Catalogs {
 
     // Deletes the specified catalogs from the store.
     
-    private static void deleteCatalogs(String uri, Map\<String, String> headers, long merchantId, List<Catalog> catalogs) throws Exception
+    private static void deleteCatalogs(String uri, Map<String, String> headers, long merchantId, List<Catalog> catalogs) throws Exception
     {
         System.out.println("*** Deleting Catalogs ***\n");
 
