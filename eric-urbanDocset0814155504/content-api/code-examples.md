@@ -24,9 +24,9 @@ This section provides code examples that show how to use the resources available
 #### <a name="list"></a>
 *  Getting a List of Product Offers: [C#](../content-api/getting-a-list-of-product-offers-in-csharp.md) [Java](../content-api/getting-a-list-of-product-offers-in-java.md)  
 #### <a name="get"></a>
-*  Getting a Product Offer: [C#](../content-api/getting-a-product-offer-in-csharp.md) [Java](../content-api/getting-a-product-offer-in-java.md)  
+Getting a Product Offer: [C#](../content-api/getting-a-product-offer-in-csharp.md) [Java](../content-api/getting-a-product-offer-in-java.md)  
 #### <a name="insert"></a>
-*  Inserting a Product Offer: [C#](../content-api/inserting-a-product-offer-in-csharp.md) [Java](../content-api/inserting-a-product-offer-in-java.md)  
+Inserting a Product Offer: [C#](../content-api/inserting-a-product-offer-in-csharp.md) [Java](../content-api/inserting-a-product-offer-in-java.md)  
 ### Catalog status resource code examples
 
 #### <a name="status"></a>
