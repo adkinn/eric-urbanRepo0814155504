@@ -1,3 +1,4 @@
+# [Bing Ads Content API](bing-ads-content-api.md)
 # [Release Notes](release-notes.md)
 # [Getting Started](getting-started.md)
 # [Testing your Code in Sandbox](testing-your-code-in-sandbox.md)
