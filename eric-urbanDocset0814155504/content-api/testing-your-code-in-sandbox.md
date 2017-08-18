@@ -21,7 +21,9 @@ However, you can use the following options to test your application in productio
 
 To test your code in  production without modifying your live feed and impacting served ads, include the [dry-run](../content-api/products-resource.md#dryrun) query parameter in the endpoint URL as shown below. 
 
-```https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products/{itemUniqueId}?dry-run``` 
+```
+https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products/{itemUniqueId}?dry-run
+``` 
 
 Using `dry-run` will not change your live feed, but it will return validation errors.
 
