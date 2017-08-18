@@ -18,26 +18,21 @@ This section provides code examples that show how to use the resources available
 ### Products resource code examples
 
 #### <a name="batch"></a>
-Creating a Batch Request: [C#](../content-api/creating-a-batch-request-in-csharp.md) [Java](../content-api/creating-a-batch-request-in-java.md)
-
+*  Creating a Batch Request: [C#](../content-api/creating-a-batch-request-in-csharp.md) [Java](../content-api/creating-a-batch-request-in-java.md)  
 #### <a name="delete"></a>
-Deleting a Product Offer: [C#](../content-api/deleting-a-product-offer-in-csharp.md) [Java](../content-api/deleting-a-product-offer-in-java.md)
-
-#### <a name="list"></a>C
-Getting a List of Product Offers: [C#](../content-api/getting-a-list-of-product-offers-in-csharp.md) [Java](../content-api/getting-a-list-of-product-offers-in-java.md)
-
+*  Deleting a Product Offer: [C#](../content-api/deleting-a-product-offer-in-csharp.md) [Java](../content-api/deleting-a-product-offer-in-java.md)  
+#### <a name="list"></a>
+*  Getting a List of Product Offers: [C#](../content-api/getting-a-list-of-product-offers-in-csharp.md) [Java](../content-api/getting-a-list-of-product-offers-in-java.md)  
 #### <a name="get"></a>
-Getting a Product Offer: [C#](../content-api/getting-a-product-offer-in-csharp.md) [Java](../content-api/getting-a-product-offer-in-java.md)
-
+*  Getting a Product Offer: [C#](../content-api/getting-a-product-offer-in-csharp.md) [Java](../content-api/getting-a-product-offer-in-java.md)  
 #### <a name="insert"></a>
-Inserting a Product Offer: [C#](../content-api/inserting-a-product-offer-in-csharp.md) [Java](../content-api/inserting-a-product-offer-in-java.md)
-
+*  Inserting a Product Offer: [C#](../content-api/inserting-a-product-offer-in-csharp.md) [Java](../content-api/inserting-a-product-offer-in-java.md)  
 ### Catalog status resource code examples
 
 #### <a name="status"></a>
-Downloading the Catalog Status Report: [C#](../content-api/downloading-a-catalog-status-report-in-csharp.md) [Java](../content-api/downloading-a-catalog-status-report-in-java.md)  
+*  Downloading the Catalog Status Report: [C#](../content-api/downloading-a-catalog-status-report-in-csharp.md) [Java](../content-api/downloading-a-catalog-status-report-in-java.md)  
 
 ### Catalogs resource code examples
 
 #### <a name="catalog"></a>
-Managing Catalogs: [C#](../content-api/managing-catalogs-in-csharp.md) [Java](../content-api/managing-catalogs-in-java.md)
+*  Managing Catalogs: [C#](../content-api/managing-catalogs-in-csharp.md) [Java](../content-api/managing-catalogs-in-java.md)  
