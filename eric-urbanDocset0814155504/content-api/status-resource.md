@@ -51,7 +51,7 @@ The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|Accept|Request header.<p>Include this header when you download the report. You must set this header to `application/x-zip-compressed`. 
+|Accept|Request header.\<p>Include this header when you download the report. You must set this header to `application/x-zip-compressed`. 
 |<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../content-api/getting-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header; it doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
@@ -78,14 +78,14 @@ Each object defines the JSON key name and XML element name that you use dependin
 ### <a name="status"/>Status
 
 Defines the status of the product offerings that were uploaded to the catalog.
-XML object name: <catalogStatus\>
+XML object name: \<catalogStatus\>
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|catalogId|The ID of the catalog being reported.|ulong|<catalog_id\> 
-|publishedCount|The number of offerings that passed validation and editorial review.|ulong|<published_count\> 
-|rejectedCount|The number of offerings that failed validation and editorial review. This count indicates the number of rows in the body of the report (see [Report Format](#reportformat)).|ulong|<rejected_count\> 
-|<a name="rejectionreporturl"/>rejectionReportUrl|The URL that you use to download the report. The object includes this field only when `rejectedCount` is greater than zero.<br/><br/>The report is compressed and must be unzipped before you can read it.|string|<catalog_id\> 
+|catalogId|The ID of the catalog being reported.|ulong|\<catalog_id\> 
+|publishedCount|The number of offerings that passed validation and editorial review.|ulong|\<published_count\> 
+|rejectedCount|The number of offerings that failed validation and editorial review. This count indicates the number of rows in the body of the report (see [Report Format](#reportformat)).|ulong|\<rejected_count\> 
+|<a name="rejectionreporturl"/>rejectionReportUrl|The URL that you use to download the report. The object includes this field only when `rejectedCount` is greater than zero.<br/><br/>The report is compressed and must be unzipped before you can read it.|string|\<catalog_id\> 
 
 
 ## HTTP status codes

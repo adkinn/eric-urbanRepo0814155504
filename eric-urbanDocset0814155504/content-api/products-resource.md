@@ -100,7 +100,7 @@ Defines the list of items to process in a batch request.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|entries|An array of items to process in a batch request.<br/><br/>The maximum number of items that you can specify is 12,000. However, the maximum request size is 4 MB, so the actual number of items depends upon the number of product attributes (for example, size, color, pattern) that you include and whether you compress the data. For example, if you compress the data you may be able to specify 12,000 items, but if you don't, you may be able to specify only 2,000 items.|[Item](#item)[]|<batch\>
+|entries|An array of items to process in a batch request.<br/><br/>The maximum number of items that you can specify is 12,000. However, the maximum request size is 4 MB, so the actual number of items depends upon the number of product attributes (for example, size, color, pattern) that you include and whether you compress the data. For example, if you compress the data you may be able to specify 12,000 items, but if you don't, you may be able to specify only 2,000 items.|[Item](#item)[]|\<batch\>
 
 ### <a name="batchitemerror"/>BatchItemError
 
@@ -108,7 +108,7 @@ Defines errors that occurred for an item during batch processing.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|errors|A list of errors that occurred while processing the item.|[Error](#error)[]|<errors\> 
+|errors|A list of errors that occurred while processing the item.|[Error](#error)[]|\<errors\> 
 |code|The HTTP status code or the error.|String
 |message|A message associated with the error.|String
  
@@ -119,11 +119,11 @@ Defines an error.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|domain|For internal use only.|String|<domain\>
-|location|Not used.|String|<location type="string"\> 
-|locationType|Not used.|String|See the **type** attribute of the <location\> element  
-|message|A description of the error.|String|<internalReason\> 
-|reason|The reason why the request failed. For example, the product failed validation.|String|<reason\> 
+|domain|For internal use only.|String|\<domain\>
+|location|Not used.|String|\<location type="string"\> 
+|locationType|Not used.|String|See the **type** attribute of the \<location\> element  
+|message|A description of the error.|String|\<internalReason\> 
+|reason|The reason why the request failed. For example, the product failed validation.|String|\<reason\> 
 
 
 ### <a name="errorresponse"/>ErrorResponse
@@ -132,7 +132,7 @@ Defines the top-level error object for a single product insert.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|error|A list of errors that occurred while processing the item.|[Errors](#errors)[]|<error\> 
+|error|A list of errors that occurred while processing the item.|[Errors](#errors)[]|\<error\> 
 
 ### <a name="errors"/>Errors
 
@@ -140,8 +140,8 @@ Defines the list of errors and warnings for an offer.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|errors|A list of errors that occurred while processing the item.|[Error](#error)[]|<errors\> 
-|warnings|A list of warnings that occurred while processing the item. The offer was accepted but you should address the issues at your earliest convenience. For example,  BMC returns warnings if you do not specify the [gtin](#gtin), [mpn](#mpn), and [brand](#brand) identifiers if they should be known.|[Warning](#warning)[]|<warnings\> 
+|errors|A list of errors that occurred while processing the item.|[Error](#error)[]|\<errors\> 
+|warnings|A list of warnings that occurred while processing the item. The offer was accepted but you should address the issues at your earliest convenience. For example,  BMC returns warnings if you do not specify the [gtin](#gtin), [mpn](#mpn), and [brand](#brand) identifiers if they should be known.|[Warning](#warning)[]|\<warnings\> 
 |code|The HTTP status code or the error.|String
 |message|A message associated with the error.|String
 
@@ -153,12 +153,12 @@ Defines an item in a batch request.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|batchId|A user-defined ID that identifies this item in the batch request. For example, if the batch contains 10 items, you can assign them IDs 1 through 10.|Unsigned Integer|<entry batch_id="unsigned integer" method="string"\>
-|errors|An error object that contains a list of validation errors that occurred. The response includes this field only when an error occurs.|[BatchItemError](#batchitemerror)|<errors\>
-|merchantId|The Merchant Center store ID.|Unsigned Long|<merchant_id\>
-|method|The action to apply to the item. The possible values are `insert`, `get`, and `delete`. If the item is adding or updating a product offering, set **method** to `insert`; if the item is deleting a product, set **method** to `delete`; and if the item is getting a product, set **method** to ```get```. The strings are case insensitive.|String|See the `method` attribute of the <entry\> element
-|product|The product offering. Specify this field in a request only if inserting (updating) a product. The response will include this field for gets and inserts (updates) only.|[Product](#product)|<product\>
-|productId|The fully qualified product ID (for example, Online:en:US:Sku123). Include this field only when getting or deleting a product offering.<br/><br/>Do not include multiple items with the same product ID in a batch request.|String|<product_id\>
+|batchId|A user-defined ID that identifies this item in the batch request. For example, if the batch contains 10 items, you can assign them IDs 1 through 10.|Unsigned Integer|\<entry batch_id="unsigned integer" method="string"\>
+|errors|An error object that contains a list of validation errors that occurred. The response includes this field only when an error occurs.|[BatchItemError](#batchitemerror)|\<errors\>
+|merchantId|The Merchant Center store ID.|Unsigned Long|\<merchant_id\>
+|method|The action to apply to the item. The possible values are `insert`, `get`, and `delete`. If the item is adding or updating a product offering, set **method** to `insert`; if the item is deleting a product, set **method** to `delete`; and if the item is getting a product, set **method** to ```get```. The strings are case insensitive.|String|See the `method` attribute of the \<entry\> element
+|product|The product offering. Specify this field in a request only if inserting (updating) a product. The response will include this field for gets and inserts (updates) only.|[Product](#product)|\<product\>
+|productId|The fully qualified product ID (for example, Online:en:US:Sku123). Include this field only when getting or deleting a product offering.<br/><br/>Do not include multiple items with the same product ID in a batch request.|String|\<product_id\>
 
 ### <a name="product"/>Product
 
@@ -167,65 +167,65 @@ For more information about the fields in this object, see [How is the feed file 
 
 |JSON and XML Name|Value|Type|Required for insert
 |----|-----|----|-------------------
-|additionalImageLinks<br/><br/><additional_image_link\>|The URLs of additional images of the product that can be used in the product ad. To specify multiple images,<br/><br/>Bing does not use the additional images; this field is included for Google compatibility.|String[]|No
-|adult<br/><br/><adult\>|A Boolean value that determines whether the item is an adult  product. Set to **true** if the item's target market is adults. The default is **false**.<br/><br/>Note that Bing Ads does not support adult products and any adult product will be rejected.|Boolean|No
-|adwordsGrouping<br/><br/><adwords_grouping\>|An AdWords grouping, which groups items for Cost-per-acquisition (CPA) bidding.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String|No
-|adwordsLabels<br/><br/><adwords_label\>|The labels for Adwords grouping. Applies to Cost-per-click (CPC) only.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String[]|No
-|<a name="adwordsredirect" />adwordsRedirect<br/><br/><adwords_redirect\>|The URL to use in the product ad. If specified, this URL must redirect to the URL specified in [link](#link).|String|No
-|ageGroup<br/><br/><age_group\>|The target age group of the item. The following are the possible values.<br/><br/><ul><li>adult</li><li>kids</li><li>toddler</li><li>infant</li><li>newborn</li></ul>|String|No
-|<a name="availability" />availability<br/><br/><availability\>|The availability status of the product. The following are the possible values.<br/><br/><ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>The default is *in stock*.<!--<br/><br/>If you specify preorder, and know the date that the product will be available for shipping, you should also set the `availabilityDate` field.--><br/><br/>**NOTE:** The *out of stock* and *preorder* options are being piloted (if interested, see your account manager). Only users in the pilot program may specify *out of stock* and *preorder*. If you specify these options and you are not in the pilot program, Bing Ads will reject the product.|String|Yes
-|availabilityDate<br/><br/><availability_date\>|The UTC date that a pre-order product will be available for shipping (see the `availability` field). This field is optional but if you know the date that the pre-ordered product will be available for shipping, you should set this field. Specify the date in ISO 8601 format.<br/><br/>**NOTE:** Bing Ads currently ignores the contents of this field.|String|No
-|<a name="brand" />brand<br/><br/><brand\>|The item's brand, manufacturer, or publisher. The brand is limited to 1,000 characters (but should be kept to no more than 70 characters).|String|Yes
-|<a name="channel" />channel<br/><br/><channel\>|The sales channel for the product. The following are the possible case-insensitive values.<br/><br/><ul><li>Local</li><li>Online</li></ul>Because channel is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
-|color<br/><br/><color\>|The product's dominant color. If the color is a blend of colors, you may specify a slash-delimited list of up to 3 colors (for example, red/green/blue).<br/><br/>If a dress is available in multiple colors, you would create a product for each color and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>The field is limited to 100 characters.<br/><br/>Recommended for apparel items.|String|No
-|<a name="condition" />condition<br/><br/><condition\>|The condition of the product. The following are the possible values.<br/><br/><ul><li>new</li><li>refurbished</li><li>used</li></ul>The default is *new*.|String|Yes
-|<a name="contentlanguage" />contentLanguage<br/><br/><content_language\>|The two-letter [ISO 639-1](http://loc.gov/standards/iso639-2/php/code_list.php) language code for the product. The following are the possible case-insensitive values.<br/><br/><ul><li>de (German)</li><li>en (English)</li><li>fr (French)</li></ul>Because the language is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
-|customAttributes<br/><br/><custom_attribute\>|A list of custom attributes used by the merchant.|[ProductCustomAttribute](#productcustomattribute)[]|No
-|customGroups<custom_group\>|A list of custom groups used by the merchant.|[ProductCustomGroup](#productcustomgroup)[]|No
-|customLabel0<br/><br/><custom_label_0\>|Custom label 0, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
-|customLabel1<br/><br/><custom_label_1\>|Custom label 1, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
-|customLabel2<br/><br/><custom_label_2\>|Custom label 2, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
-|customLabel3<br/><br/><custom_label_3\>|Custom label 3, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
-|customLabel4<br/><br/><custom_label_4\>|Custom label 4, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
-|description<br/><br/><description\>|A description of the product. The description may not include promotional text. The description is limited to a maximum of 10,000 characters, and may include any Unicode characters.<br/><br/>The description will undergo editorial review.|String|No
-|destinations<br/><br/><destination\>|The intended destinations of the product.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductDestination](#productdestination)[]|No
-|energyEfficiencyClass<br/><br/><energy_efficiency_class\>|The energy efficiency class as defined in [EU directive 2010/30/EU](http://www.eea.europa.eu/policy-documents/directive-2010-30-eu). The following are the possible values.<br/><br/><ul><li>A</li><li>A+</li><li>A++</li><li>A+++</li><li>B</li><li>C</li><li>D</li><li>E</li><li>F</li><li>G</li></ul>Bing does not use this field; it's included for Google compatibility.|String|No
-|<a name="expirationdate" />expirationDate<br/><br/><expiration_date\>|The UTC date and time that specifies when the product will expire.<br/><br/>If you do not specify an expiration date, the product will expire 30 days from the date and time that you add the product (the date and time are based on the Bing Ads server's timezone).<br/><br/>Your expiration date should always include the time component and specify the timezone or offset information. If it doesn't, the API will try to determine the timezone by using [targetCountry](#targetcountry). For countries with multiple timezones, the API determines the timezone to use. For example, if the country is US, the API will use pacific standard time (PST).<br/><br/>You should track products that are nearing expiration and before they expire either update their expiration date or simply update the product (you do not have to update any of the product's fields) which will automatically extend the expiration date another 30 days. If you explicitly set the expiration date, you must set a new expiration date yourself; updating the product will not automatically extend the expiration date another 30 days in this case.|String|No
-|gender<br/><br/><gender\>|The gender that the product targets. The following are the possible values.<br/><br/><ul><li>female</li><li>male</li><li>unisex</li></ul>|String|No
-|<a name="productcategory" />googleProductCategory<br/><br/><google_product_category\>|The product category that the product is found in. You may specify either a category string (for example, Animals & Pet Supplies > Pet supplies > Bird Supplies) or a category ID (for example, 3). For a category string, the list of subcategories is delimited by the greater than symbol ('>'). The field is limited to 255 characters.<br/><br/>For a list of category strings and IDs, see [Categories](http://go.microsoft.com/fwlink?LinkId=620784).|String|No
-|<a name="gtin" />gtin<br/><br/><gtin\>|The Global Trade Item Number (GTIN) assigned by the manufacturer. If the manufacturer assigns a GTIN, you must specify it. The following are types of GTINs.<br /><br /><ul><li>EAN (European Article Number)</li><li>ISBN (International Standard Book Number)</li><li>JAN (Japanese Article Number)</li><li>UPC (Universal Product Code)</li></ul>|String|Yes
-|<a name="productid" />id<br/><br/><id\>|The fully qualified product id. The ID is a composite of [channel](#channel), [contentLanguage](#contentlanguage), [targetCountry](#targetcountry), and [offerId](#offerid). The ID is case sensitive.<br/><br/>Use this ID to get or delete a product.|String|No
-|<a name="identifierexists" />identifierExists<br/><br/><identifier_exists\>|A Boolean value that determines whether the product offer specifies the [gtin](#gtin), [mpn](#mpn), or [brand](#brand) identifiers. The default is **true**. Set to **false** if you do not specify all three of the identifiers. <br /><br />Unique product identifiers define a product in a global marketplace. Tagging your products with unique identifiers makes it easier for customers to find your products. You should specify all three identifiers, if known. |Boolean|No
-|<a name="imagelink" />imageLink<br/><br/><image_link\>|The URL to an image of the product that can be used in the product ad. The URL is limited to 1,000 characters and may use the HTTP or HTTPS protocol. The allowed image types are bmp, gif, exif, jpg, png, and tiff. The recommended image size is 200x200 pixels. The image may not exceed 3.9 MB.<br/><br/>The image will undergo editorial review.|String|Yes
-|isBundle<br/><br/><is_bundle\>|A Boolean value that determines whether the product is a merchant-defined bundle. The value is **true** if the product is a bundle.|Boolean|No
-|<a name="itemgroupid" />itemGroupId<br/><br/><item_group_id\>|An ID that can be used to group all variants of the same product. For example, if the dress is available in 3 colors, you could create a product for each color and use this ID to group them. Typically, you group items that vary by color, material, pattern or size.<br/><br/>The ID must be unique within a catalog, and is limited to 50 characters.|String|No
-|kind<br/><br/><kind\>|The object's type. This field is set to `content#product`.|String|No
-|<a name="link" />link<br/><br/><link\>|The URL to the product's page on your website. The URL is limited to 2,000 characters and may use the HTTP or HTTPS protocol. The domain must match the store's domain.<br/><br/>The link is used in the product ad. The URL may not be redirected. To use another URL in the product ad that may be redirected to this URL, see [adwordsRedirect](#adwordsredirect).<br/><br/>The webpage that this link points to will undergo editorial review.|String|Yes
-|material<br/><br/><material\>|The product's dominant material. If the material is a blend of materials, you may specify a slash-delimited list of up to 3 materials (for example, leather/suede/silk).<br/><br/>If a dress is available in multiple materials, you would create a product for each material and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>The field is limited to 200 characters.<br/><br/>Recommended for apparel items.|String|No
-|mobileLink<br/><br/><mobile_link\>|A URL to a mobile-optimized version of the webpage that contains information about the product (see [link](#link)).|String|No
-|multipack<br/><br/><multipack\>|The number of identical products being sold as a single unit (for example, 4 flashlights). When setting the price, it must be the **total** price of the multipack.|Integer|No
-|<a name="mpn" />mpn<br/><br/><mpn\>|The manufacturer part number (MPN) of the product. If the manufacturer assigns an MPN, you must specify it. The MPN is limited to 70 characters.|String|Yes
-|<a name="offerid" />offerId<br/><br/><offer_id\>|The user-defined ID of the product being offered. The offer ID is case insensitive and must be unique within a catalog, and is limited to a maximum of 50 characters.<br/><br/>Because the offer ID is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
-|onlineOnly<br/><br/><online_only\>|A Boolean value that determines whether the product is only available for purchase online. The value is **true** if the product is available only online. The default is **false**.|Boolean|No
-|pattern<br/><br/><pattern\>|The pattern or graphic print of the product (for example, plaid). The pattern is limited to 100 characters.<br/><br/>If a dress is available in multiple patterns, you would create a product for each pattern and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>Recommended for apparel items.|String|No
-|<a name="price" />price<br/><br/><price\>|The product's price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Bing Merchant Center catalog tax policy](http://help.bingads.microsoft.com/#apex/3/en/56731/1). The price must match the price shown on the product's webpage (see [link](#link)), and must be in the range 0.01 (1 cent) through 10000000.00 (10 million).<br/><br/>However, if the following conditions are met, you may set the price to 0.0 (zero).<br/><br/>1. The [googleProductCategory](#productcategory) field is set to one of the following categories:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Communications > Telephony > Mobile Phones<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Computers > Tablet Computers<br/>2. The [title](#title) field contains one of the following keywords:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- contract<br/>&nbsp;&nbsp;&nbsp;&nbsp;- installment<br/>&nbsp;&nbsp;&nbsp;&nbsp;- lease<br/>&nbsp;&nbsp;&nbsp;&nbsp;- payment<br/><br/>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.|[ProductPrice](#productprice)|Yes
-|<a name="producttype" />productType<br/><br/><product_type\>|The advertiser-defined product category, which may be different from `googleProductCategory`. For example, Animals & Pet Supplies > Pet supplies > Bird Supplies > Veterinary. The list of subcategories is delimited by the greater than symbol ('>'). The field is limited to 750 characters.<br/><br/>You may specify multiple category strings that are comma delimited. For example, Costumes & Accessories > Wig Accessories > Wig Caps, Costumes & Accessories > Wig Accessories > Wig Glue.|String|No
-|<a name="promotionid" />promotionId<br/><br/><promotion_id\>|A comma-delimited list of IDs that identify promotions in your Promotions feed. You may specify a maximum of 10 promotion IDs.<br/><br/>The ID must contain a minimum of 1 character and a maximum of 60 characters. The allowed characters are any alphanumeric characters, a dash (-), and an underscore (_).<br/><br/>All IDs for a market (see [contentLanguage](#contentlanguage) and [targetCountry](#targetcountry)) must be unique. For example, within a market, you may not use *PROMO1* and *promo1*, but you could use *PROMO1* in the en-US market and *promo1* in the en-GB market. You may specify the same unique promotion ID on one or more products.<br/><br/>Bing will promote the product if the ID that you specify matches a promotion ID in your Promotions feed (for the same target country). The IDs match only if the casing is the same. For example, the IDs match if the product's ID is *PROMO1* and the feed's ID is *PROMO1*, but they do not match if the feed's ID is *Promo1*. <br/><br/>To ensure that the product is not accidentally promoted in the future, you should remove the IDs of promotions that have ended. Although the ID cannot be used again in a Promotions feed for 6 months after the promotion ends, if the ID is reused in another promotion after that, the product will be promoted.|String|No	
-|<a name="saleprice" />salePrice<br/><br/><sale_price\>|The item's sale price. The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million).<br/><br/>For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>If the following conditions are met, you may set the sale price to 0.0 (zero).<br/><br/>1. The [googleProductCategory](#productcategory) field is set to one of the following categories:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Communications > Telephony > Mobile Phones<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Computers > Tablet Computers<br/>2. The [title](#title) field contains one of the following keywords:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- contract<br/>&nbsp;&nbsp;&nbsp;&nbsp;- installment<br/>&nbsp;&nbsp;&nbsp;&nbsp;- lease<br/>&nbsp;&nbsp;&nbsp;&nbsp;- payment<br/><br/>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.|[ProductPrice](#productprice)|No
-|<a name="salepricedate" />salePriceEffectiveDate<br/><br/><sale_price_effective_date\>|The sale's UTC start and end date. Specify the dates in [ISO 8601](http://www.iso.org/iso/iso8601) format. For example, 2016-04-05T08:00-08:00/2016-04-10T19:30-08:00 (use a slash ('/') to separate the start and end dates). For more information, see `salePrice`.|String|No
-|sellerName<br/><br/><seller_name\>|The name of the merchant that's selling the product. Used only by aggregators to identify the merchant. Aggregators are third party sites that behave on behalf of individual merchants. The products that an aggregator submits on behalf of the merchant must comply with Bing Ads policies and [Terms of Service](http://help.bingads.microsoft.com/#apex/3/en/52023/1).<br/><br/>Aggregators must set this field to the sellers name. If the caller is not an aggregator and this field is not set, it will default to the store name.<br/><br/>The name is limited to 255 characters.|String|No
-|shipping<br/><br/><shipping\>|The shipping prices of the product based on location.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductShipping](#productshipping)[]|No
-|shippingLabel<br/><br/><shipping_label\>|The shipping label.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String|No
-|shippingWeight<br/><br/><shipping_weight\>|The weight of the product. The weight is used for shipping purposes.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductShippingWeight](#productshippingweight)|No
-|sizes<br/><br/><size\>|The available size of the product. The size value is user-defined but should be based on your target country.|String[]|No
-|sizeSystem<br/><br/><size_system\>|The measurement system used to size the product. For example, shoes may be sized using the US system or the UK system.<br/><br/>The following are the possible values.<br/><br/><ul><li>AT</li><li>BR</li><li>CN</li><li>DE</li><li>EU</li><li>FR</li><li>IT</li><li>JP</li><li>MEX</li><li>UK</li><li>US</li></ul>Recommended for apparel items. |String|No
-|sizeType<br/><br/><size_type\>|The cut of the product. The following are the possible values.<br/><br/><ul><li>regular</li><li>maternity</li><li>petite</li><li>oversize</li></ul>Recommended for apparel items.|String|No
-|<a name="targetcountry" />targetCountry<br/><br/><target_country\>|The two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code of the target country (the country where you want to advertise the product). The country must match the market specified by the catalog.<br/><br/>The following are the possible case-insensitive values.<br/><br/><ul><li>AU (Australia)</li><li>DE (Germany)</li><li>FR (France)</li><li>GB (Great Britain)</li><li>US (United States)</li></ul>Because the country is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
-|taxes<br/><br/><tax\>|The tax information of the product.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductTax](#ProductTax)[]|No
-|<a name="title" />title<br/><br/><title\>|The product's title (for example, Women's Shoes). The title may not include promotional text. The title is limited to a maximum of 150 characters, and may include any Unicode character.<br/><br/>The title will undergo editorial review.|String|Yes
-|unitPricingBaseMeasure<br/><br/><unit_pricing_base_measure\>|The denominator of the unit price.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[UnitPricingBaseMeasure](#unitpricing)|No
-|unitPricingMeasure<br/><br/><unit_pricing_measure\>|The type of measure used to determine the product's unit price. For example, price per ounce.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[UnitPricingMeasure](#unitpricing)|No
-|validatedDestinations<br/><br/><validated_destination\>|The read-only list of intended destinations that have passed validation.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String[]|No
+|additionalImageLinks<br/><br/>\<additional_image_link\>|The URLs of additional images of the product that can be used in the product ad. To specify multiple images,<br/><br/>Bing does not use the additional images; this field is included for Google compatibility.|String[]|No
+|adult<br/><br/>\<adult\>|A Boolean value that determines whether the item is an adult  product. Set to **true** if the item's target market is adults. The default is **false**.<br/><br/>Note that Bing Ads does not support adult products and any adult product will be rejected.|Boolean|No
+|adwordsGrouping<br/><br/>\<adwords_grouping\>|An AdWords grouping, which groups items for Cost-per-acquisition (CPA) bidding.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String|No
+|adwordsLabels<br/><br/>\<adwords_label\>|The labels for Adwords grouping. Applies to Cost-per-click (CPC) only.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String[]|No
+|<a name="adwordsredirect" />adwordsRedirect<br/><br/>\<adwords_redirect\>|The URL to use in the product ad. If specified, this URL must redirect to the URL specified in [link](#link).|String|No
+|ageGroup<br/><br/>\<age_group\>|The target age group of the item. The following are the possible values.<br/><br/><ul><li>adult</li><li>kids</li><li>toddler</li><li>infant</li><li>newborn</li></ul>|String|No
+|<a name="availability" />availability<br/><br/>\<availability\>|The availability status of the product. The following are the possible values.<br/><br/><ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>The default is *in stock*.<!--<br/><br/>If you specify preorder, and know the date that the product will be available for shipping, you should also set the `availabilityDate` field.--><br/><br/>**NOTE:** The *out of stock* and *preorder* options are being piloted (if interested, see your account manager). Only users in the pilot program may specify *out of stock* and *preorder*. If you specify these options and you are not in the pilot program, Bing Ads will reject the product.|String|Yes
+|availabilityDate<br/><br/>\<availability_date\>|The UTC date that a pre-order product will be available for shipping (see the `availability` field). This field is optional but if you know the date that the pre-ordered product will be available for shipping, you should set this field. Specify the date in ISO 8601 format.<br/><br/>**NOTE:** Bing Ads currently ignores the contents of this field.|String|No
+|<a name="brand" />brand<br/><br/>\<brand\>|The item's brand, manufacturer, or publisher. The brand is limited to 1,000 characters (but should be kept to no more than 70 characters).|String|Yes
+|<a name="channel" />channel<br/><br/>\<channel\>|The sales channel for the product. The following are the possible case-insensitive values.<br/><br/><ul><li>Local</li><li>Online</li></ul>Because channel is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
+|color<br/><br/>\<color\>|The product's dominant color. If the color is a blend of colors, you may specify a slash-delimited list of up to 3 colors (for example, red/green/blue).<br/><br/>If a dress is available in multiple colors, you would create a product for each color and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>The field is limited to 100 characters.<br/><br/>Recommended for apparel items.|String|No
+|<a name="condition" />condition<br/><br/>\<condition\>|The condition of the product. The following are the possible values.<br/><br/><ul><li>new</li><li>refurbished</li><li>used</li></ul>The default is *new*.|String|Yes
+|<a name="contentlanguage" />contentLanguage<br/><br/>\<content_language\>|The two-letter [ISO 639-1](http://loc.gov/standards/iso639-2/php/code_list.php) language code for the product. The following are the possible case-insensitive values.<br/><br/><ul><li>de (German)</li><li>en (English)</li><li>fr (French)</li></ul>Because the language is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
+|customAttributes<br/><br/>\<custom_attribute\>|A list of custom attributes used by the merchant.|[ProductCustomAttribute](#productcustomattribute)[]|No
+|customGroups\<custom_group\>|A list of custom groups used by the merchant.|[ProductCustomGroup](#productcustomgroup)[]|No
+|customLabel0<br/><br/>\<custom_label_0\>|Custom label 0, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
+|customLabel1<br/><br/>\<custom_label_1\>|Custom label 1, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
+|customLabel2<br/><br/>\<custom_label_2\>|Custom label 2, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
+|customLabel3<br/><br/>\<custom_label_3\>|Custom label 3, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
+|customLabel4<br/><br/>\<custom_label_4\>|Custom label 4, which is used to filter products for Bing Ads campaigns. The label is limited to 100 characters.|String|No
+|description<br/><br/>\<description\>|A description of the product. The description may not include promotional text. The description is limited to a maximum of 10,000 characters, and may include any Unicode characters.<br/><br/>The description will undergo editorial review.|String|No
+|destinations<br/><br/>\<destination\>|The intended destinations of the product.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductDestination](#productdestination)[]|No
+|energyEfficiencyClass<br/><br/>\<energy_efficiency_class\>|The energy efficiency class as defined in [EU directive 2010/30/EU](http://www.eea.europa.eu/policy-documents/directive-2010-30-eu). The following are the possible values.<br/><br/><ul><li>A</li><li>A+</li><li>A++</li><li>A+++</li><li>B</li><li>C</li><li>D</li><li>E</li><li>F</li><li>G</li></ul>Bing does not use this field; it's included for Google compatibility.|String|No
+|<a name="expirationdate" />expirationDate<br/><br/>\<expiration_date\>|The UTC date and time that specifies when the product will expire.<br/><br/>If you do not specify an expiration date, the product will expire 30 days from the date and time that you add the product (the date and time are based on the Bing Ads server's timezone).<br/><br/>Your expiration date should always include the time component and specify the timezone or offset information. If it doesn't, the API will try to determine the timezone by using [targetCountry](#targetcountry). For countries with multiple timezones, the API determines the timezone to use. For example, if the country is US, the API will use pacific standard time (PST).<br/><br/>You should track products that are nearing expiration and before they expire either update their expiration date or simply update the product (you do not have to update any of the product's fields) which will automatically extend the expiration date another 30 days. If you explicitly set the expiration date, you must set a new expiration date yourself; updating the product will not automatically extend the expiration date another 30 days in this case.|String|No
+|gender<br/><br/>\<gender\>|The gender that the product targets. The following are the possible values.<br/><br/><ul><li>female</li><li>male</li><li>unisex</li></ul>|String|No
+|<a name="productcategory" />googleProductCategory<br/><br/>\<google_product_category\>|The product category that the product is found in. You may specify either a category string (for example, Animals & Pet Supplies > Pet supplies > Bird Supplies) or a category ID (for example, 3). For a category string, the list of subcategories is delimited by the greater than symbol ('>'). The field is limited to 255 characters.<br/><br/>For a list of category strings and IDs, see [Categories](http://go.microsoft.com/fwlink?LinkId=620784).|String|No
+|<a name="gtin" />gtin<br/><br/>\<gtin\>|The Global Trade Item Number (GTIN) assigned by the manufacturer. If the manufacturer assigns a GTIN, you must specify it. The following are types of GTINs.<br /><br /><ul><li>EAN (European Article Number)</li><li>ISBN (International Standard Book Number)</li><li>JAN (Japanese Article Number)</li><li>UPC (Universal Product Code)</li></ul>|String|Yes
+|<a name="productid" />id<br/><br/>\<id\>|The fully qualified product id. The ID is a composite of [channel](#channel), [contentLanguage](#contentlanguage), [targetCountry](#targetcountry), and [offerId](#offerid). The ID is case sensitive.<br/><br/>Use this ID to get or delete a product.|String|No
+|<a name="identifierexists" />identifierExists<br/><br/>\<identifier_exists\>|A Boolean value that determines whether the product offer specifies the [gtin](#gtin), [mpn](#mpn), or [brand](#brand) identifiers. The default is **true**. Set to **false** if you do not specify all three of the identifiers. <br /><br />Unique product identifiers define a product in a global marketplace. Tagging your products with unique identifiers makes it easier for customers to find your products. You should specify all three identifiers, if known. |Boolean|No
+|<a name="imagelink" />imageLink<br/><br/>\<image_link\>|The URL to an image of the product that can be used in the product ad. The URL is limited to 1,000 characters and may use the HTTP or HTTPS protocol. The allowed image types are bmp, gif, exif, jpg, png, and tiff. The recommended image size is 200x200 pixels. The image may not exceed 3.9 MB.<br/><br/>The image will undergo editorial review.|String|Yes
+|isBundle<br/><br/>\<is_bundle\>|A Boolean value that determines whether the product is a merchant-defined bundle. The value is **true** if the product is a bundle.|Boolean|No
+|<a name="itemgroupid" />itemGroupId<br/><br/>\<item_group_id\>|An ID that can be used to group all variants of the same product. For example, if the dress is available in 3 colors, you could create a product for each color and use this ID to group them. Typically, you group items that vary by color, material, pattern or size.<br/><br/>The ID must be unique within a catalog, and is limited to 50 characters.|String|No
+|kind<br/><br/>\<kind\>|The object's type. This field is set to `content#product`.|String|No
+|<a name="link" />link<br/><br/>\<link\>|The URL to the product's page on your website. The URL is limited to 2,000 characters and may use the HTTP or HTTPS protocol. The domain must match the store's domain.<br/><br/>The link is used in the product ad. The URL may not be redirected. To use another URL in the product ad that may be redirected to this URL, see [adwordsRedirect](#adwordsredirect).<br/><br/>The webpage that this link points to will undergo editorial review.|String|Yes
+|material<br/><br/>\<material\>|The product's dominant material. If the material is a blend of materials, you may specify a slash-delimited list of up to 3 materials (for example, leather/suede/silk).<br/><br/>If a dress is available in multiple materials, you would create a product for each material and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>The field is limited to 200 characters.<br/><br/>Recommended for apparel items.|String|No
+|mobileLink<br/><br/>\<mobile_link\>|A URL to a mobile-optimized version of the webpage that contains information about the product (see [link](#link)).|String|No
+|multipack<br/><br/>\<multipack\>|The number of identical products being sold as a single unit (for example, 4 flashlights). When setting the price, it must be the **total** price of the multipack.|Integer|No
+|<a name="mpn" />mpn<br/><br/>\<mpn\>|The manufacturer part number (MPN) of the product. If the manufacturer assigns an MPN, you must specify it. The MPN is limited to 70 characters.|String|Yes
+|<a name="offerid" />offerId<br/><br/>\<offer_id\>|The user-defined ID of the product being offered. The offer ID is case insensitive and must be unique within a catalog, and is limited to a maximum of 50 characters.<br/><br/>Because the offer ID is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
+|onlineOnly<br/><br/>\<online_only\>|A Boolean value that determines whether the product is only available for purchase online. The value is **true** if the product is available only online. The default is **false**.|Boolean|No
+|pattern<br/><br/>\<pattern\>|The pattern or graphic print of the product (for example, plaid). The pattern is limited to 100 characters.<br/><br/>If a dress is available in multiple patterns, you would create a product for each pattern and use [itemGroupId](#itemgroupid) to group the product's variants.<br/><br/>Recommended for apparel items.|String|No
+|<a name="price" />price<br/><br/>\<price\>|The product's price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Bing Merchant Center catalog tax policy](http://help.bingads.microsoft.com/#apex/3/en/56731/1). The price must match the price shown on the product's webpage (see [link](#link)), and must be in the range 0.01 (1 cent) through 10000000.00 (10 million).<br/><br/>However, if the following conditions are met, you may set the price to 0.0 (zero).<br/><br/>1. The [googleProductCategory](#productcategory) field is set to one of the following categories:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Communications > Telephony > Mobile Phones<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Computers > Tablet Computers<br/>2. The [title](#title) field contains one of the following keywords:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- contract<br/>&nbsp;&nbsp;&nbsp;&nbsp;- installment<br/>&nbsp;&nbsp;&nbsp;&nbsp;- lease<br/>&nbsp;&nbsp;&nbsp;&nbsp;- payment<br/><br/>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.|[ProductPrice](#productprice)|Yes
+|<a name="producttype" />productType<br/><br/>\<product_type\>|The advertiser-defined product category, which may be different from `googleProductCategory`. For example, Animals & Pet Supplies > Pet supplies > Bird Supplies > Veterinary. The list of subcategories is delimited by the greater than symbol ('>'). The field is limited to 750 characters.<br/><br/>You may specify multiple category strings that are comma delimited. For example, Costumes & Accessories > Wig Accessories > Wig Caps, Costumes & Accessories > Wig Accessories > Wig Glue.|String|No
+|<a name="promotionid" />promotionId<br/><br/>\<promotion_id\>|A comma-delimited list of IDs that identify promotions in your Promotions feed. You may specify a maximum of 10 promotion IDs.<br/><br/>The ID must contain a minimum of 1 character and a maximum of 60 characters. The allowed characters are any alphanumeric characters, a dash (-), and an underscore (_).<br/><br/>All IDs for a market (see [contentLanguage](#contentlanguage) and [targetCountry](#targetcountry)) must be unique. For example, within a market, you may not use *PROMO1* and *promo1*, but you could use *PROMO1* in the en-US market and *promo1* in the en-GB market. You may specify the same unique promotion ID on one or more products.<br/><br/>Bing will promote the product if the ID that you specify matches a promotion ID in your Promotions feed (for the same target country). The IDs match only if the casing is the same. For example, the IDs match if the product's ID is *PROMO1* and the feed's ID is *PROMO1*, but they do not match if the feed's ID is *Promo1*. <br/><br/>To ensure that the product is not accidentally promoted in the future, you should remove the IDs of promotions that have ended. Although the ID cannot be used again in a Promotions feed for 6 months after the promotion ends, if the ID is reused in another promotion after that, the product will be promoted.|String|No	
+|<a name="saleprice" />salePrice<br/><br/>\<sale_price\>|The item's sale price. The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million).<br/><br/>For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>If the following conditions are met, you may set the sale price to 0.0 (zero).<br/><br/>1. The [googleProductCategory](#productcategory) field is set to one of the following categories:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Communications > Telephony > Mobile Phones<br/>&nbsp;&nbsp;&nbsp;&nbsp;- Electronics > Computers > Tablet Computers<br/>2. The [title](#title) field contains one of the following keywords:<br/>&nbsp;&nbsp;&nbsp;&nbsp;- contract<br/>&nbsp;&nbsp;&nbsp;&nbsp;- installment<br/>&nbsp;&nbsp;&nbsp;&nbsp;- lease<br/>&nbsp;&nbsp;&nbsp;&nbsp;- payment<br/><br/>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.|[ProductPrice](#productprice)|No
+|<a name="salepricedate" />salePriceEffectiveDate<br/><br/>\<sale_price_effective_date\>|The sale's UTC start and end date. Specify the dates in [ISO 8601](http://www.iso.org/iso/iso8601) format. For example, 2016-04-05T08:00-08:00/2016-04-10T19:30-08:00 (use a slash ('/') to separate the start and end dates). For more information, see `salePrice`.|String|No
+|sellerName<br/><br/>\<seller_name\>|The name of the merchant that's selling the product. Used only by aggregators to identify the merchant. Aggregators are third party sites that behave on behalf of individual merchants. The products that an aggregator submits on behalf of the merchant must comply with Bing Ads policies and [Terms of Service](http://help.bingads.microsoft.com/#apex/3/en/52023/1).<br/><br/>Aggregators must set this field to the sellers name. If the caller is not an aggregator and this field is not set, it will default to the store name.<br/><br/>The name is limited to 255 characters.|String|No
+|shipping<br/><br/>\<shipping\>|The shipping prices of the product based on location.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductShipping](#productshipping)[]|No
+|shippingLabel<br/><br/>\<shipping_label\>|The shipping label.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String|No
+|shippingWeight<br/><br/>\<shipping_weight\>|The weight of the product. The weight is used for shipping purposes.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductShippingWeight](#productshippingweight)|No
+|sizes<br/><br/>\<size\>|The available size of the product. The size value is user-defined but should be based on your target country.|String[]|No
+|sizeSystem<br/><br/>\<size_system\>|The measurement system used to size the product. For example, shoes may be sized using the US system or the UK system.<br/><br/>The following are the possible values.<br/><br/><ul><li>AT</li><li>BR</li><li>CN</li><li>DE</li><li>EU</li><li>FR</li><li>IT</li><li>JP</li><li>MEX</li><li>UK</li><li>US</li></ul>Recommended for apparel items. |String|No
+|sizeType<br/><br/>\<size_type\>|The cut of the product. The following are the possible values.<br/><br/><ul><li>regular</li><li>maternity</li><li>petite</li><li>oversize</li></ul>Recommended for apparel items.|String|No
+|<a name="targetcountry" />targetCountry<br/><br/>\<target_country\>|The two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code of the target country (the country where you want to advertise the product). The country must match the market specified by the catalog.<br/><br/>The following are the possible case-insensitive values.<br/><br/><ul><li>AU (Australia)</li><li>DE (Germany)</li><li>FR (France)</li><li>GB (Great Britain)</li><li>US (United States)</li></ul>Because the country is used to create the product [ID](#productid), you may not change this field after adding the product to the store.|String|Yes
+|taxes<br/><br/>\<tax\>|The tax information of the product.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[ProductTax](#ProductTax)[]|No
+|<a name="title" />title<br/><br/>\<title\>|The product's title (for example, Women's Shoes). The title may not include promotional text. The title is limited to a maximum of 150 characters, and may include any Unicode character.<br/><br/>The title will undergo editorial review.|String|Yes
+|unitPricingBaseMeasure<br/><br/>\<unit_pricing_base_measure\>|The denominator of the unit price.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[UnitPricingBaseMeasure](#unitpricing)|No
+|unitPricingMeasure<br/><br/>\<unit_pricing_measure\>|The type of measure used to determine the product's unit price. For example, price per ounce.<br/><br/>Bing does not use this field; it's included for Google compatibility.|[UnitPricingMeasure](#unitpricing)|No
+|validatedDestinations<br/><br/>\<validated_destination\>|The read-only list of intended destinations that have passed validation.<br/><br/>Bing does not use this field; it's included for Google compatibility.|String[]|No
 |<a name="warnings" />warnings|A list of warnings about issues with the product offer. The offer was accepted but you should address the issues at your earliest convenience. For example,  BMC returns warnings if you do not specify the [gtin](#gtin), [mpn](#mpn), and [brand](#brand) identifiers if they should be known.<br /><br />The offer includes this field only in the response of an insert/update.|[Warning](#warning)[]|No
 
 ### <a name="productcustomattribute"></a>ProductCustomAttribute
@@ -234,10 +234,10 @@ Defines a custom attribute.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|name|Gets or sets the attribute's name.|String|<name\>
-|type|Gets or sets the attribute's type. The following are the possible values.<br/><br/><ul><li>boolean</li><li>datetimerange</li><li>float</li><li>group</li><li>int</li><li>price</li><li>text</li><li>time</li><li>url</li></ul>|String|<type\>
-|unit|Gets or sets the attribute's unit of measure. Used for values of type INT and FLOAT only.|String|<unit\>
-|value|Gets or sets the attribute's value.|String|<value\>
+|name|Gets or sets the attribute's name.|String|\<name\>
+|type|Gets or sets the attribute's type. The following are the possible values.<br/><br/><ul><li>boolean</li><li>datetimerange</li><li>float</li><li>group</li><li>int</li><li>price</li><li>text</li><li>time</li><li>url</li></ul>|String|\<type\>
+|unit|Gets or sets the attribute's unit of measure. Used for values of type INT and FLOAT only.|String|\<unit\>
+|value|Gets or sets the attribute's value.|String|\<value\>
 
 ### <a name="productcustomgroup"></a>ProductCustomGroup
 
@@ -245,8 +245,8 @@ Defines a group of customer attributes.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|attributes|Gets or sets the attributes for the group.|[ProductCustomAttribute](#productcustomattribute)|<attributes\>
-|name|Gets or sets the name of the group.|String|<name\>
+|attributes|Gets or sets the attributes for the group.|[ProductCustomAttribute](#productcustomattribute)|\<attributes\>
+|name|Gets or sets the name of the group.|String|\<name\>
 
 ### <a name="productdestination"></a>ProductDestination
 
@@ -254,8 +254,8 @@ Defines a destination.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|intention|The following are the possible values.<br/><br/><ul><li>default</li><li>excluded</li><li>optional</li><li>required</li></ul>|String|<intention\>
-|destinationName|Gets or sets the name of the destination.|String|<destination_name\>
+|intention|The following are the possible values.<br/><br/><ul><li>default</li><li>excluded</li><li>optional</li><li>required</li></ul>|String|\<intention\>
+|destinationName|Gets or sets the name of the destination.|String|\<destination_name\>
 
 	
 ### <a name="productprice"></a>ProductPrice
@@ -264,8 +264,8 @@ Defines a product's price or sale price.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|currency|Gets or sets the currency that the price is stated in. Specify the currency using ISO 4217 currency codes. The following are the possible values.<br/><br/><ul><li>AUD (Australian dollar</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>USD (United States dollar)</li></ul>|String|`currency` attribute.<br/><br/>For example, <price currency="USD"\>.
-|value|Gets or sets the price of the item. Do not include currency symbols such as '$'.|Double|Text value.<br/><br/>For example, <price currency="USD"\>38.0<\\price\>.
+|currency|Gets or sets the currency that the price is stated in. Specify the currency using ISO 4217 currency codes. The following are the possible values.<br/><br/><ul><li>AUD (Australian dollar</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>USD (United States dollar)</li></ul>|String|`currency` attribute.<br/><br/>For example, \<price currency="USD"\>.
+|value|Gets or sets the price of the item. Do not include currency symbols such as '$'.|Double|Text value.<br/><br/>For example, \<price currency="USD"\>38.0\<\\price\>.
 
 ### <a name="products"/>Products
 
@@ -274,9 +274,9 @@ Defines a list of products.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|kind|Gets the object's type. This field is set to content#productsListResponse.|String|<kind\>
-|nextPageToken|Gets the token used to get the next page of results. If the object does not include this field, there are no more pages to get. See [start-token](#starttoken). |String|<next_page_token\>
-|resources|Gets the list of products. If the catalog does not contain any offers, the array is empty.|[Product](#product)[]|<products\>  
+|kind|Gets the object's type. This field is set to content#productsListResponse.|String|\<kind\>
+|nextPageToken|Gets the token used to get the next page of results. If the object does not include this field, there are no more pages to get. See [start-token](#starttoken). |String|\<next_page_token\>
+|resources|Gets the list of products. If the catalog does not contain any offers, the array is empty.|[Product](#product)[]|\<products\>  
 
 ### <a name="productshipping"></a>ProductShipping
 
@@ -284,13 +284,13 @@ Defines the shipping cost.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|country|Gets or sets the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code of the country where the item is being shipped to.|String|<country\>
-|locationGroupName|Gets or sets the location group name.|String|<location_group_name\>
-|locationId|Gets or sets the ID of the geographic location where the item is being shipped to. For a list of IDs, see [Bing Ads Geographical Location Codes](http://msdn.microsoft.com/library/6403f8c8-7332-4219-ade0-c7a7dcd02cee).|String|<location_id\>
-|postalCode|Gets or sets the postal code or postal code range of the location where the item is being shipped to. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|<postal_code\>
-|price|Gets or sets the fixed price to ship the item to the specified location.|[ProductPrice](#productprice)|<price\>
-|region|Gets or sets geographical region where the item is being shipped to (for example, zip code).|String|<region\>
-|service|Gets or sets a text description that describes the service class or delivery speed.|String|<service\>
+|country|Gets or sets the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code of the country where the item is being shipped to.|String|\<country\>
+|locationGroupName|Gets or sets the location group name.|String|\<location_group_name\>
+|locationId|Gets or sets the ID of the geographic location where the item is being shipped to. For a list of IDs, see [Bing Ads Geographical Location Codes](http://msdn.microsoft.com/library/6403f8c8-7332-4219-ade0-c7a7dcd02cee).|String|\<location_id\>
+|postalCode|Gets or sets the postal code or postal code range of the location where the item is being shipped to. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|\<postal_code\>
+|price|Gets or sets the fixed price to ship the item to the specified location.|[ProductPrice](#productprice)|\<price\>
+|region|Gets or sets geographical region where the item is being shipped to (for example, zip code).|String|\<region\>
+|service|Gets or sets a text description that describes the service class or delivery speed.|String|\<service\>
 
 ### <a name="productshippingweight"></a>ProductShippingWeight
 
@@ -298,8 +298,8 @@ Defines the item's shipping weight.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|unit|Gets or sets the unit of measure.|String|`unit` attribute.<br/><br/>For example, <shipping_weight unit="oz"\>.
-|value|Gets or sets the item's weight, which is used to calculate the item's shipping cost.|String|Text value.<br/><br/>For example, <shipping_weight unit="oz"\>20.3<\\shipping_weight\>.
+|unit|Gets or sets the unit of measure.|String|`unit` attribute.<br/><br/>For example, \<shipping_weight unit="oz"\>.
+|value|Gets or sets the item's weight, which is used to calculate the item's shipping cost.|String|Text value.<br/><br/>For example, \<shipping_weight unit="oz"\>20.3\<\\shipping_weight\>.
 
 ### <a name="producttax"></a>ProductTax
 
@@ -307,12 +307,12 @@ Defines the geographical location that determines the applicable taxes.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|country|Gets or sets the country whose tax rate applies. Uses the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code.|String|<country\>
-|locationId|Gets or sets the ID of the geographic location whose tax rate applies. For a list of IDs, see [Bing Ads Geographical Location Codes](http://msdn.microsoft.com/library/6403f8c8-7332-4219-ade0-c7a7dcd02cee).|Long|<location_id\>
-|postalCode|Gets or sets the postal code or range of postal codes whose tax rate applies. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|<postal_code\>|
-|rate|Gets or sets the percentage tax rate to apply to the price of the item. To specify a 5% rate, set this field to 5. To specify a 9.8% rate, set this field to 9.8.|Double|<rate\>
-|region|Gets or sets a geographical region whose tax rate applies.|String|<region\>
-|taxShip|Gets or sets a Boolean value that determines whether to apply the tax to the cost of shipping. Set to *true* if tax is charged on shipping.|Boolean|<ship\>
+|country|Gets or sets the country whose tax rate applies. Uses the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code.|String|\<country\>
+|locationId|Gets or sets the ID of the geographic location whose tax rate applies. For a list of IDs, see [Bing Ads Geographical Location Codes](http://msdn.microsoft.com/library/6403f8c8-7332-4219-ade0-c7a7dcd02cee).|Long|\<location_id\>
+|postalCode|Gets or sets the postal code or range of postal codes whose tax rate applies. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|\<postal_code\>|
+|rate|Gets or sets the percentage tax rate to apply to the price of the item. To specify a 5% rate, set this field to 5. To specify a 9.8% rate, set this field to 9.8.|Double|\<rate\>
+|region|Gets or sets a geographical region whose tax rate applies.|String|\<region\>
+|taxShip|Gets or sets a Boolean value that determines whether to apply the tax to the cost of shipping. Set to *true* if tax is charged on shipping.|Boolean|\<ship\>
 
 ### <a name="unitpricing"></a>UnitPricing
 
@@ -320,8 +320,8 @@ Defines the item's per unit price.
 
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
-|unit|Gets or sets the unit of measure. For example, *oz* if the price is per ounce.|String|`unit` attribute.<br/><br/>For example, <unit_pricing_measure unit="oz"\>
-|value|Gets or sets the price per unit.|Double|Text value.<br/><br/>For example, <unit_pricing_measure unit="oz"\>34.5<\\unit_pricing_measure\>
+|unit|Gets or sets the unit of measure. For example, *oz* if the price is per ounce.|String|`unit` attribute.<br/><br/>For example, \<unit_pricing_measure unit="oz"\>
+|value|Gets or sets the price per unit.|Double|Text value.<br/><br/>For example, \<unit_pricing_measure unit="oz"\>34.5\<\\unit_pricing_measure\>
 
 
 ### <a name="warning"/>Warning
@@ -330,9 +330,9 @@ Defines a warning message.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
-|domain|For internal use only.|String|<domain\>
-|message|A description of the warning.|String|<internalReason\> 
-|reason|The reason why the offer generated a warning. For example, you did not provide an identifier ([gtin](#gtin), [mpn](#mpn), or [brand](#brand)) when the manufacturer is known to have assigned them.|String|<reason\> 
+|domain|For internal use only.|String|\<domain\>
+|message|A description of the warning.|String|\<internalReason\> 
+|reason|The reason why the offer generated a warning. For example, you did not provide an identifier ([gtin](#gtin), [mpn](#mpn), or [brand](#brand)) when the manufacturer is known to have assigned them.|String|\<reason\> 
 
 
 ## HTTP status codes

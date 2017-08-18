@@ -50,7 +50,7 @@ class ProductsEx {
 
     // Maps the product's availability strings to enum values.
     
-	public static Map<ProductAvailability, String> Availability = new HashMap<ProductAvailability, String>();
+	public static Map\<ProductAvailability, String> Availability = new HashMap\<ProductAvailability, String>();
 	static {
 		Availability.put(ProductAvailability.InStock, "in stock");
 		Availability.put(ProductAvailability.OutOfStock, "out of stock");
@@ -85,7 +85,7 @@ class ProductsEx {
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 
 		try {
-			Map<String, String> headers = getCredentialHeaders();
+			Map\<String, String> headers = getCredentialHeaders();
 
             String url = String.format(InsertUri + queryString, merchantId);
 
@@ -143,11 +143,11 @@ class ProductsEx {
 
 	// Get tokens for the authentication headers.
 
-    private static Map<String, String> getCredentialHeaders()
+    private static Map\<String, String> getCredentialHeaders()
     {
         // TODO: Add logic to get the user's OAuth token. 
 
-        Map<String, String> headers = new HashMap<String, String>();
+        Map\<String, String> headers = new HashMap\<String, String>();
         headers.put("AuthenticationToken", accessToken);
         headers.put("DeveloperToken", devToken);
 
@@ -156,7 +156,7 @@ class ProductsEx {
 
     // Adds a Product to the store.
     
-    private static String addResource(String uri, Map<String, String> headers, Product product) throws IOException, CapiException 
+    private static String addResource(String uri, Map\<String, String> headers, Product product) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -175,7 +175,7 @@ class ProductsEx {
     		connection.setRequestProperty("Content-Type", "application/json");
     		connection.setRequestProperty("Content-Length", String.valueOf(json.length()));
 
-    		for (Entry<String, String> header : headers.entrySet())
+    		for (Entry\<String, String> header : headers.entrySet())
     		{
     			connection.setRequestProperty(header.getKey(), header.getValue());
     		}
