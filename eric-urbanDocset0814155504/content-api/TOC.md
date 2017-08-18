@@ -21,7 +21,6 @@
 ### [Getting a List of Product Offers in Java](getting-a-list-of-product-offers-in-java.md)
 ### [Getting a Product Offer in Java](getting-a-product-offer-in-java.md)
 ### [Deleting a Product Offer in Java](deleting-a-product-offer-in-java.md)
-### [Bing Ads Content API](bing-ads-content-api.md)
 ### [Creating a Batch Request in Java](creating-a-batch-request-in-java.md)
 ### [Inserting a Product Offer in Java](inserting-a-product-offer-in-java.md)
 ### [Managing Catalogs in Java](managing-catalogs-in-java.md)
