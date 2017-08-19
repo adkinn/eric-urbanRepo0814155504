@@ -15,7 +15,7 @@ manager: "ehansen"
 # GetKeywordCategories Service Operation
 Gets the keyword categories to which the specified keywords belong.
 
-[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
+[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordCategoriesRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetBulkUploadStatus Service Operation
 Gets the status and completion progress of a bulk upload request.
 
-||
-|-|
-|[!INCLUDE[bulk_navigation_noremarks](../bulk-api/includes/bulk-navigation-noremarks.md)]|
+[!INCLUDE[bulk-service-namespace](../bulk-api/includes/bulk-service-namespace.md)]
 
 ## <a name="request"></a>GetBulkUploadStatusRequest Message
 The *GetBulkUploadStatusRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).

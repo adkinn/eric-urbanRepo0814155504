@@ -17,7 +17,7 @@ Gets the list of keyword ideas.
 
 Suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](../adinsight-api/getkeywordtrafficestimates-service-operation.md) operation.
 
-[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
+[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordIdeasRequest Message
 

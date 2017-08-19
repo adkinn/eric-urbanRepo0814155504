@@ -15,7 +15,7 @@ manager: "ehansen"
 # GetBudgetOpportunities Service Operation
 Gets the campaign budget opportunities of the specified campaign.
 
-[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
+[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetBudgetOpportunitiesRequest Message
 

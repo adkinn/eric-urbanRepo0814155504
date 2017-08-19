@@ -15,7 +15,7 @@ manager: "ehansen"
 # SuggestKeywordsFromExistingKeywords Service Operation
 Suggests keywords that could perform better than the specified keywords.
 
-[!INCLUDE[adint_navigation](../adinsight-api/includes/adint-navigation.md)]
+[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>SuggestKeywordsFromExistingKeywordsRequest Message
 

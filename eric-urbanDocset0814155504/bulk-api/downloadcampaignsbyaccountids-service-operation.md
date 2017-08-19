@@ -18,9 +18,7 @@ Downloads settings and performance data for all of the account's campaigns. You 
 > [!NOTE]
 > You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md)) and  the [GetBulkDownloadStatus](../bulk-api/getbulkdownloadstatus-service-operation.md) polling operation.
 
-||
-|-|
-|[!INCLUDE[bulk_navigation_noremarks](../bulk-api/includes/bulk-navigation-noremarks.md)]|
+[!INCLUDE[bulk-service-namespace](../bulk-api/includes/bulk-service-namespace.md)]
 
 ## <a name="request"></a>DownloadCampaignsByAccountIdsRequest Message
 

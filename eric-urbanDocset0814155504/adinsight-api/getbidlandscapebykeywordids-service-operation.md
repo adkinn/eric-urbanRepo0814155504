@@ -18,7 +18,7 @@ Given a list of existing keywords, this operation returns for each a list of sug
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
+[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetBidLandscapeByKeywordIdsRequest Message
 

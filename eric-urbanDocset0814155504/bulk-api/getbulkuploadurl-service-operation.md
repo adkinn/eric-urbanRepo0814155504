@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetBulkUploadUrl Service Operation
 Submits a request for a URL where a bulk upload file may be posted.
 
-||
-|-|
-|[!INCLUDE[bulk_navigation_noremarks](../bulk-api/includes/bulk-navigation-noremarks.md)]|
+[!INCLUDE[bulk-service-namespace](../bulk-api/includes/bulk-service-namespace.md)]
 
 ## <a name="request"></a>GetBulkUploadUrlRequest Message
 The *GetBulkUploadUrlRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
