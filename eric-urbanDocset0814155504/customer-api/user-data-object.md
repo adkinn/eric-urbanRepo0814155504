@@ -48,7 +48,7 @@ Defines a user.
 |*CustomerAppScope*|Confirms that the customer to whom this user belongs is an advertiser.<br/><br/>**Update:** Read-only|[ApplicationType](../customer-api/applicationtype-value-set.md)|
 |*CustomerId*|The identifier of the customer to whom this user belongs.<br/><br/>**Update:** Read-only|*long*|
 |*Id*|The system generated identifier of the user.<br/><br/>**Update:** Required|*long*|
-|*IsMigratedToMicrosoftAccount*|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).<br/><br/>**Update:** Read-only|*boolean*|
+|*IsMigratedToMicrosoftAccount*|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](~/concepts/authentication-with-oauth.md).<br/><br/>**Update:** Read-only|*boolean*|
 |*JobTitle*|The user's job title. The title can contain a maximum of 50 characters.<br/><br/>**Update:** [!INCLUDE[update_optional_setting_unchanged](../customer-api/includes/update-optional-setting-unchanged.md)]|*string*|
 |*LastModifiedByUserId*|The identifier of the last user to update the user’s information.<br/><br/>**Update:** Read-only|*long*|
 |*LastModifiedTime*|The date and time that that the user information was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](http://msdn.microsoft.com/library/ms256220.aspx).<br/><br/>**Update:** Read-only|*dateTime*|
