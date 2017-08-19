@@ -128,27 +128,3 @@ The following is an overview of the request settings and upload workflow.
 
     > [!NOTE]
     > The format of the upload result file will be either **Csv** or **Tsv**, and will match the format of the file that you submitted for upload.
-
-### <a name="uploadbestpractices"></a>Upload Best Practices
-Please consider these tips to maximize Bulk upload performance.
-
--   Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as performance data will be ignored.
-
--   Upload one entity type e.g. Keyword per file. You can upload more than one entity per file; however this is a recommended best practice to maximize performance. 
-
--   Consider whether you need to request errors and results (*ResponseMode = ErrorsAndResults*) in the upload results file, or whether errors only (*ResponseMode = ErrorsOnly*) will suffice. Consider whether or not you should synchronize the results with your local data. For example if you are updating entities you might only need to know whether any errors occurred, and in that case you can specify *ResponseMode = ErrorsOnly* in the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx) request. If you are adding new entities then you can specify *ResponseMode = ErrorsAndResults* in the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx) request to receive the resulting entity identifiers.
-
--   For partial retry attempts, do not upload the entire file if only a subset of the records resulted in errors. Only upload the records that you want to retry. 
-
--   Do not retry until the upload status is either *Completed*, *CompletedwithErrors*, or *Failed*. If by chance performance does not meet expectations, please wait for the result anyways. 
-
--   Poll for upload results at reasonable intervals. Initially you should wait one minute for every 10K rows uploaded. After the initial wait time, consider polling in one minute intervals.
-
--   It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension.
-
--   Consider using up to 5 or 6 threads to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedwithErrors*, or *Failed* that thread can upload another file. 
-
-## See Also
-[Bulk Service Reference](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx)  
-[Bing Ads Web Service Addresses](../concepts/bing-ads-web-service-addresses.md)
-
