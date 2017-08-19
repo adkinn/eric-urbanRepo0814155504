@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetSharedEntityAssociationsByEntityIds Service Operation
 Gets negative keyword list associations for the specified campaigns.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetSharedEntityAssociationsByEntityIdsRequest Message
 

@@ -17,9 +17,7 @@ Updates the specified ads within an ad group.
 
 [!INCLUDE[deprecate_sta](../campaign-api/includes/deprecate-sta.md)]
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateAdsRequest Message
 

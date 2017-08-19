@@ -18,9 +18,7 @@ Deletes negative keywords from the specified campaign or ad group.
 > [!NOTE]
 > The operation does not modify shared negative keyword lists.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteNegativeKeywordsFromEntitiesRequest Message
 

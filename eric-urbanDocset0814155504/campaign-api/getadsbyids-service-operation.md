@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAdsByIds Service Operation
 Retrieves the specified ads from the specified ad group.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdsByIdsRequest Message
 

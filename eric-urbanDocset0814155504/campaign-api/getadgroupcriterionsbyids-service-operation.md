@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAdGroupCriterionsByIds Service Operation
 Gets ad group criterions by identifiers and types.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdGroupCriterionsByIdsRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateAdGroupCriterions Service Operation
 Updates one or more ad group criterions.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateAdGroupCriterionsRequest Message
 

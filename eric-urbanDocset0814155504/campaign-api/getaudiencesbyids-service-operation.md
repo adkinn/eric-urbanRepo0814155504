@@ -14,9 +14,7 @@ ms.author: "eur"
 # GetAudiencesByIds Service Operation
 Retrieves the specified audiences from the specified account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAudiencesByIdsRequest Message
 

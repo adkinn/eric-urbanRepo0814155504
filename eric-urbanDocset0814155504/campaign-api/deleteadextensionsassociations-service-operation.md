@@ -15,9 +15,7 @@ manager: "ehansen"
 # DeleteAdExtensionsAssociations Service Operation
 Removes the specified association from the respective campaigns or ad groups.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteAdExtensionsAssociationsRequest Message
 

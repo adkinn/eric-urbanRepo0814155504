@@ -14,9 +14,7 @@ ms.author: "eur"
 # AddLabels Service Operation
 Adds one or more labels to an account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddLabelsRequest Message
 

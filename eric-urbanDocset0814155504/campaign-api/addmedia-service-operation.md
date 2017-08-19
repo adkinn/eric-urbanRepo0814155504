@@ -15,9 +15,7 @@ manager: "ehansen"
 # AddMedia Service Operation
 Adds the specified media to an account’s media library. Depending on the type of [Media](../campaign-api/media-data-object.md), you can then add the media to one or more [ImageAdExtension](../campaign-api/imageadextension-data-object.md) or [LocationAdExtension](../campaign-api/locationadextension-data-object.md) objects.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddMediaRequest Message
 

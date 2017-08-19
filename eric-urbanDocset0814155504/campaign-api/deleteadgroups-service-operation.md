@@ -15,9 +15,7 @@ manager: "ehansen"
 # DeleteAdGroups Service Operation
 Deletes one or more ad groups from the specified campaign.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteAdGroupsRequest Message
 

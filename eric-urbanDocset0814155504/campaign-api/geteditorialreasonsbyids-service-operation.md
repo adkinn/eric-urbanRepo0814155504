@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetEditorialReasonsByIds Service Operation
 Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetEditorialReasonsByIdsRequest Message
 

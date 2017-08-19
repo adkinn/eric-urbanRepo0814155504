@@ -15,9 +15,7 @@ manager: "ehansen"
 # SetNegativeSitesToAdGroups Service Operation
 Sets the negative site URLs of the specified ad groups.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>SetNegativeSitesToAdGroupsRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateCampaigns Service Operation
 Updates specified campaigns in a specified account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateCampaignsRequest Message
 

@@ -14,9 +14,7 @@ ms.author: "eur"
 # GetLabelAssociationsByLabelIds Service Operation
 Gets label associations by label identifiers.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetLabelAssociationsByLabelIdsRequest Message
 

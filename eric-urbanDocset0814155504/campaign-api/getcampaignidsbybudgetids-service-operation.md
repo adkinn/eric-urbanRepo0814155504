@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetCampaignIdsByBudgetIds Service Operation
 Gets the campaign identifiers that share each specified budget.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetCampaignIdsByBudgetIdsRequest Message
 

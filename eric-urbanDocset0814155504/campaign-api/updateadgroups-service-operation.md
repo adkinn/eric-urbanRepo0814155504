@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateAdGroups Service Operation
 Updates the specified ad groups in a campaign.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateAdGroupsRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAdExtensionsAssociations Service Operation
 Gets the respective ad extension associations by the specified campaign and ad group identifiers.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdExtensionsAssociationsRequest Message
 

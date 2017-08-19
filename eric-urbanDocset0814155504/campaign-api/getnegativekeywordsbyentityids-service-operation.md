@@ -18,9 +18,7 @@ Gets the negative keywords that are only associated with the specified campaigns
 > [!NOTE]
 > The operation does not return negative keywords of a shared list.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetNegativeKeywordsByEntityIdsRequest Message
 

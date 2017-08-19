@@ -18,9 +18,7 @@ Gets a temporary URL that you can use to download a file that contains the suppo
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetGeoLocationsFileUrlRequest Message
 

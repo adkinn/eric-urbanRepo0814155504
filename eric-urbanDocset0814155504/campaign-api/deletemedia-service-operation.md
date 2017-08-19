@@ -18,9 +18,7 @@ Deletes the specified media from an account’s media library.
 > [!NOTE]
 > This service operation is not yet supported.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteMediaRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # AppealEditorialRejections Service Operation
 Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AppealEditorialRejectionsRequest Message
 

@@ -18,9 +18,7 @@ Gets the media associations of the specified entity type from an account’s med
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetMediaAssociationsRequest Message
 

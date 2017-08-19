@@ -18,9 +18,7 @@ Gets the media meta data of the specified entity type from an account’s media 
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-api/getmediabyids-service-operation.md).
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetMediaMetaDataByAccountIdRequest Message
 

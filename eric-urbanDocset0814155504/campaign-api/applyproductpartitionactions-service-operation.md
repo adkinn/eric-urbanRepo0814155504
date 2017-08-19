@@ -15,9 +15,7 @@ manager: "ehansen"
 # ApplyProductPartitionActions Service Operation
 Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-api/biddableadgroupcriterion-data-object.md) or [NegativeAdGroupCriterion](../campaign-api/negativeadgroupcriterion-data-object.md), which each contain a [ProductPartition](../campaign-api/productpartition-data-object.md).
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>ApplyProductPartitionActionsRequest Message
 

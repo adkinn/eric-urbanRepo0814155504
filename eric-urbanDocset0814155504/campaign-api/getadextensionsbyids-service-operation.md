@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAdExtensionsByIds Service Operation
 Gets the specified ad extensions from the account’s ad extension library.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdExtensionsByIdsRequest Message
 

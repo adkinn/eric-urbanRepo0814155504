@@ -15,9 +15,7 @@ manager: "ehansen"
 # AddSharedEntity Service Operation
 Adds a negative keyword list to the account's library. Items in the account's library can be associated with any campaign within the account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddSharedEntityRequest Message
 

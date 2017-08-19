@@ -18,9 +18,7 @@ Associates the specified ad extensions with the respective campaigns or ad group
 > [!NOTE]
 > Call and Location ad extensions cannot be associated with an ad group. Call ad extensions cannot be associated with an account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>SetAdExtensionsAssociationsRequest Message
 

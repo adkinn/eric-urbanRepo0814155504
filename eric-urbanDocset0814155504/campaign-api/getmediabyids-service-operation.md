@@ -18,9 +18,7 @@ Gets the specified media from an account’s media library.
 > [!NOTE]
 > This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](../campaign-api/getmediametadatabyids-service-operation.md).
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetMediaByIdsRequest Message
 

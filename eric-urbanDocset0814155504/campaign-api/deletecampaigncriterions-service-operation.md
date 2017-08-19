@@ -15,9 +15,7 @@ manager: "ehansen"
 # DeleteCampaignCriterions Service Operation
 Deletes one or more campaign criterions.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteCampaignCriterionsRequest Message
 

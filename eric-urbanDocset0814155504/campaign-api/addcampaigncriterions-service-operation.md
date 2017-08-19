@@ -15,9 +15,7 @@ manager: "ehansen"
 # AddCampaignCriterions Service Operation
 Adds one or more campaign criterions that help determine whether ads in each campaign get served.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddCampaignCriterionsRequest Message
 

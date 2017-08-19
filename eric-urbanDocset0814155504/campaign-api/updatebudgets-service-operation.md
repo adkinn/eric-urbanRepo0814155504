@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateBudgets Service Operation
 Updates the specified budgets in the account's shared budget library.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateBudgetsRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # DeleteBudgets Service Operation
 Deletes budgets from the account's shared budget library.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>DeleteBudgetsRequest Message
 

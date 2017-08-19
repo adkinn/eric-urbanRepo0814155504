@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordsByEditorialStatus Service Operation
 Retrieves the keywords with the specified editorial review status.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordsByEditorialStatusRequest Message
 

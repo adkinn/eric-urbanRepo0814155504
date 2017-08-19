@@ -17,9 +17,7 @@ Gets the conversion goals that use the specified UET tags.
 
 [!INCLUDE[guide_uet](../campaign-api/includes/guide-uet.md)]
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetConversionGoalsByTagIdsRequest Message
 

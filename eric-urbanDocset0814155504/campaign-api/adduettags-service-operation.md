@@ -21,9 +21,7 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 
 [!INCLUDE[guide_uet](../campaign-api/includes/guide-uet.md)]
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddUetTagsRequest Message
 
