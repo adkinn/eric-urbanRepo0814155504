@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAccountMonthlySpend Service Operation
 Gets the amount spent by the account in the specified month.
 
-||
-|-|
-|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
+[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
 
 ## <a name="request"></a>GetAccountMonthlySpendRequest Message
 

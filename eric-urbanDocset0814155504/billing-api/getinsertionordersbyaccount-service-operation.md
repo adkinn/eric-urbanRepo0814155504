@@ -18,9 +18,7 @@ Gets a list of insertion orders for the specified account.
 > [!NOTE]
 > This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](../billing-api/searchinsertionorders-service-operation.md) operation.
 
-||
-|-|
-|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
+[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
 
 ## <a name="request"></a>GetInsertionOrdersByAccountRequest Message
 

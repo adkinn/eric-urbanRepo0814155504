@@ -15,9 +15,7 @@ manager: "ehansen"
 # AddInsertionOrder Service Operation
 Adds an insertion order to the specified account.
 
-||
-|-|
-|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
+[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
 
 ## <a name="request"></a>AddInsertionOrderRequest Message
 
