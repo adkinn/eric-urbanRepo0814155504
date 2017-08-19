@@ -15,9 +15,7 @@ manager: "ehansen"
 # SignupCustomer Service Operation
 Signs up a customer with [!INCLUDE[brand](../customer-api/includes/brand.md)].
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>SignupCustomerRequest Message
 

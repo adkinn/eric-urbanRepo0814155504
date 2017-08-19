@@ -23,9 +23,7 @@ After the invitation has been accepted, you can call [GetUsersInfo](../customer-
 
 For more information about user authentication, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>SendUserInvitationRequest Message
 The *SendUserInvitationRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).

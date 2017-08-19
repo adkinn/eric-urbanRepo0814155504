@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateUserRoles Service Operation
 Updates the roles of the specified user.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation](../customer-api/includes/cusman-navigation.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>UpdateUserRolesRequest Message
 

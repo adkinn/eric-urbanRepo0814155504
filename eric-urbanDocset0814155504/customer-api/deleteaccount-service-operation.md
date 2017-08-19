@@ -18,9 +18,7 @@ Deletes an account.
 > [!NOTE]
 > After deleting the account it will be searchable and show as inactive in the [!INCLUDE[brand](../customer-api/includes/brand.md)] web application. You may or may not choose to surface inactive accounts in your application.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>DeleteAccountRequest Message
 

@@ -19,9 +19,7 @@ If your user is within a client customer that has one or more accounts managed b
 
 The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](http://go.microsoft.com/fwlink/?LinkId=691022).
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>SearchClientLinksRequest Message
 

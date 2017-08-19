@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateAccount Service Operation
 Updates the details of the specified account.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>UpdateAccountRequest Message
 

@@ -27,9 +27,7 @@ There is no set limit to the amount of client accounts that can be linked to an 
 > [!NOTE]
 >[!INCLUDE[sandbox_clientlink](../customer-api/includes/sandbox-clientlink.md)]
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>UpdateClientLinksRequest Message
 

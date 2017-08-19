@@ -15,9 +15,7 @@ manager: "ehansen"
 # DeleteUser Service Operation
 Deletes a user.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>DeleteUserRequest Message
 

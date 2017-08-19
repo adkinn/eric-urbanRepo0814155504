@@ -15,9 +15,7 @@ manager: "ehansen"
 # FindAccountsOrCustomersInfo Service Operation
 Gets a list of the accounts and customers that match the specified filter criteria.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>FindAccountsOrCustomersInfoRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAccountsInfo Service Operation
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>GetAccountsInfoRequest Message
 
