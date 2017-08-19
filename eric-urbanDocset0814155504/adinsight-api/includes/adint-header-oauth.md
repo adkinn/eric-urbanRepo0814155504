@@ -1,4 +1,4 @@
-These request headers are required for [Authentication with OAuth](http://go.microsoft.com/fwlink/?LinkId=511607).
+These request headers are required for [Authentication with OAuth](~/concepts/authentication-with-oauth.md).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
