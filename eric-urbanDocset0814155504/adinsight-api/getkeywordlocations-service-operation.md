@@ -15,7 +15,7 @@ manager: "ehansen"
 # GetKeywordLocations Service Operation
 Gets the geographical locations of users who have searched for the specified keywords.
 
-[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordLocationsRequest Message
 

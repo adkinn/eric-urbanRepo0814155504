@@ -15,7 +15,7 @@ manager: "ehansen"
 # SuggestKeywordsForUrl Service Operation
 Suggests the possible keywords for the content located at the specified URL.
 
-[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>SuggestKeywordsForUrlRequest Message
 

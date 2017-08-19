@@ -18,7 +18,7 @@ Gets the estimated bid value of one or more keywords - specified by keyword iden
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-[!INCLUDE[adint-service-namespace](../adinsight-api/includes/adint-service-namespace.md)]
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetEstimatedBidByKeywordIdsRequest Message
 
