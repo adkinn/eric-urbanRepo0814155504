@@ -18,9 +18,7 @@ Submits a report request.
 > [!NOTE]
 > You must use the same user credentials for the [SubmitGenerateReport](../reporting-api/submitgeneratereport-service-operation.md) and [PollGenerateReport](../reporting-api/pollgeneratereport-service-operation.md).
 
-||
-|-|
-|[!INCLUDE[rep_navigation_noremarks](../reporting-api/includes/rep-navigation-noremarks.md)]|
+[!INCLUDE[reporting_service_namespace](../reporting-api/includes/reporting-service-namespace.md)]
 
 ## <a name="request"></a>SubmitGenerateReportRequest Message
 

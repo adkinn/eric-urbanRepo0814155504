@@ -18,9 +18,7 @@ Gets the status of a report request.
 > [!NOTE]
 > You must use the same user credentials for the [SubmitGenerateReport](../reporting-api/submitgeneratereport-service-operation.md) and [PollGenerateReport](../reporting-api/pollgeneratereport-service-operation.md). For more information, see [Request and Download a Report](http://go.microsoft.com/fwlink/?LinkId=691110).
 
-||
-|-|
-|[!INCLUDE[rep_navigation](../reporting-api/includes/rep-navigation.md)]|
+[!INCLUDE[reporting_service_namespace](../reporting-api/includes/reporting-service-namespace.md)]
 
 ## <a name="request"></a>PollGenerateReportRequest Message
 
