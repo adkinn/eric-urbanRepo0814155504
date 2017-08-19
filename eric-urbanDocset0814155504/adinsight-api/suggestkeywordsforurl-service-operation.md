@@ -15,9 +15,7 @@ manager: "ehansen"
 # SuggestKeywordsForUrl Service Operation
 Suggests the possible keywords for the content located at the specified URL.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>SuggestKeywordsForUrlRequest Message
 

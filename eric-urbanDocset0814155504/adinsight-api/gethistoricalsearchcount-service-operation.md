@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetHistoricalSearchCount Service Operation
 Gets the number of times the normalized term was used in a search during the specified time period. The results are aggregated by device type.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetHistoricalSearchCountRequest Message
 

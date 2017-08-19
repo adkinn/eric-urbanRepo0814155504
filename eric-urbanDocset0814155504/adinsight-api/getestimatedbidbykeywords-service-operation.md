@@ -18,9 +18,7 @@ Gets the estimated bid value of one or more keywords that could result in an ad 
 > [!NOTE]
 > The estimates are not a prediction or guarantee of future performance.
 
-||
-|-|
-|[!INCLUDE[adint_navigation](../adinsight-api/includes/adint-navigation.md)]|
+[!INCLUDE[adint_navigation](../adinsight-api/includes/adint-navigation.md)]
 
 ## <a name="request"></a>GetEstimatedBidByKeywordsRequest Message
 

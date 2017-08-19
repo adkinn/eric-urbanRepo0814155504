@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordOpportunities Service Operation
 Gets a list of keyword suggestions that are relevant to the specified ad group. The keyword suggestion also includes a suggested bid value.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetKeywordOpportunitiesRequest Message
 

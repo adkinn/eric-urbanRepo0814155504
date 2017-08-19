@@ -18,9 +18,7 @@ Gets the estimated position in the search results if the specified bid value had
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetEstimatedPositionByKeywordIdsRequest Message
 

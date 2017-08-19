@@ -18,9 +18,7 @@ Gets the estimated position in the search results if the specified bid value wou
 > [!NOTE]
 > The estimates are not a prediction or guarantee of future performance.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetEstimatedPositionByKeywordsRequest Message
 

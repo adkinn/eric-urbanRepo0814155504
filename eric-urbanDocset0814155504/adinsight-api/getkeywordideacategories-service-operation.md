@@ -17,9 +17,7 @@ Gets the list of keyword idea categories.
 
 You can use the *CategoryId* element of a [KeywordCategory](../adinsight-api/keywordcategory-data-object.md) as a part of the [CategorySearchParameter](../adinsight-api/categorysearchparameter-data-object.md) when calling the [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) operation.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetKeywordIdeaCategoriesRequest Message
 

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetDomainCategories Service Operation
 Gets the list of categories available for the website domain and language.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetDomainCategoriesRequest Message
 

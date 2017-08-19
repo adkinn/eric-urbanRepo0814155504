@@ -18,9 +18,7 @@ Gets the keyword bid opportunities of the specified ad group.
 > [!NOTE]
 > Currently bid opportunities are only available in the United States. It is not recommended to use this service operation for accounts in other markets.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetBidOpportunitiesRequest Message
 

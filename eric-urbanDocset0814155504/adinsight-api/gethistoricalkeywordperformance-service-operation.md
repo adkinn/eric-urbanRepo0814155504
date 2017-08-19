@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetHistoricalKeywordPerformance Service Operation
 Gets the historical performance of the normalized search term. The results are aggregated by device type.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetHistoricalKeywordPerformanceRequest Message
 

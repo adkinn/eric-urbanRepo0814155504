@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordDemographics Service Operation
 Gets the age and gender of users who have searched for the specified keywords.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]
 
 ## <a name="request"></a>GetKeywordDemographicsRequest Message
 
