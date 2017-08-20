@@ -19,16 +19,16 @@ For more information about the significance of the date range search parameter, 
 ## Syntax
 
 ```xml
-<xs:complexType name="DateRangeSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="EndDate" nillable="true" type="q9:DayMonthAndYear"/>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="StartDate" nillable="true" type="q10:DayMonthAndYear"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="DateRangeSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="EndDate" nillable="true" type="q9:DayMonthAndYear"/>
+        \<xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="StartDate" nillable="true" type="q10:DayMonthAndYear"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

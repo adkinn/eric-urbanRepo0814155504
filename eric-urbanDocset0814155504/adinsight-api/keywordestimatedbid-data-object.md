@@ -21,12 +21,12 @@ Defines an object that contains the keyword and the estimated bid value for each
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordEstimatedBid">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="EstimatedBids" nillable="true" type="tns:ArrayOfEstimatedBidAndTraffic" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordEstimatedBid">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="EstimatedBids" nillable="true" type="tns:ArrayOfEstimatedBidAndTraffic" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

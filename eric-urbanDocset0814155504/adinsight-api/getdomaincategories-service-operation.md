@@ -15,7 +15,9 @@ manager: "ehansen"
 # GetDomainCategories Service Operation
 Gets the list of categories available for the website domain and language.
 
-[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetDomainCategoriesRequest Message
 
@@ -38,25 +40,25 @@ The *GetDomainCategoriesRequest* object defines the elements of the request’s 
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetDomainCategories</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetDomainCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <CategoryName i:nil="false"></CategoryName>
-      <DomainName i:nil="false"></DomainName>
-      <Language i:nil="false"></Language>
+      \<CategoryName i:nil="false"></CategoryName>
+      \<DomainName i:nil="false"></DomainName>
+      \<Language i:nil="false"></Language>
     </GetDomainCategoriesRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetDomainCategoriesResponse Message
@@ -73,22 +75,22 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Categories xmlns:e8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e8:DomainCategory>
-          <e8:Bid></e8:Bid>
-          <e8:CategoryName p5:nil="false"></e8:CategoryName>
-          <e8:Coverage></e8:Coverage>
-        </e8:DomainCategory>
+      \<Categories xmlns:e8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e8:DomainCategory>
+          \<e8:Bid>\</e8:Bid>
+          \<e8:CategoryName p5:nil="false">\</e8:CategoryName>
+          \<e8:Coverage>\</e8:Coverage>
+        \</e8:DomainCategory>
       </Categories>
     </GetDomainCategoriesResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -20,15 +20,15 @@ If you do not include the exclude account keywords search parameter when calling
 ## Syntax
 
 ```xml
-<xs:complexType name="ExcludeAccountKeywordsSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="ExcludeAccountKeywords" type="xs:boolean"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ExcludeAccountKeywordsSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="ExcludeAccountKeywords" type="xs:boolean"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

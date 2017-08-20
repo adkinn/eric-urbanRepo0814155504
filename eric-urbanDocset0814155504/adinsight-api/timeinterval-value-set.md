@@ -18,13 +18,13 @@ Defines the possible time periods that determine the pool of data that the servi
 ## Syntax
 
 ```xml
-<xs:simpleType name="TimeInterval">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="LastMonth" />
-    <xs:enumeration value="LastWeek" />
-    <xs:enumeration value="LastDay" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="TimeInterval">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="LastMonth" />
+    \<xs:enumeration value="LastWeek" />
+    \<xs:enumeration value="LastDay" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -18,17 +18,17 @@ Defines the possible bid opportunity types you can request when calling [GetBidO
 ## Syntax
 
 ```xml
-<xs:simpleType name="BidOpportunityType">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="FirstPage">
-        <xs:enumeration value="MainLine">
-        <xs:enumeration value="MainLine1">
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="BidOpportunityType">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="FirstPage">
+        \<xs:enumeration value="MainLine">
+        \<xs:enumeration value="MainLine1">
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

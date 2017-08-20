@@ -21,12 +21,12 @@ Defines an object that contains the identifier of the keyword and the suggested 
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordIdEstimatedBid">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="KeywordId" type="xs:long" />
-    <xs:element minOccurs="0" name="KeywordEstimatedBid" nillable="true" type="tns:KeywordEstimatedBid" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordIdEstimatedBid">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="KeywordId" type="xs:long" />
+    \<xs:element minOccurs="0" name="KeywordEstimatedBid" nillable="true" type="tns:KeywordEstimatedBid" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

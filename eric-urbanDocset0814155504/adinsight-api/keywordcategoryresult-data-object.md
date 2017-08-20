@@ -18,12 +18,12 @@ Defines an object that contains the keyword and a list of keyword categories tha
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordCategoryResult">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="KeywordCategories" nillable="true" type="tns:ArrayOfKeywordCategory" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordCategoryResult">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="KeywordCategories" nillable="true" type="tns:ArrayOfKeywordCategory" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

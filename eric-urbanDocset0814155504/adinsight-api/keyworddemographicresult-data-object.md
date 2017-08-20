@@ -18,12 +18,12 @@ Defines an object that contains the keyword and percentage of users by age and g
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordDemographicResult">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="KeywordDemographics" nillable="true" type="tns:KeywordDemographic" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordDemographicResult">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="KeywordDemographics" nillable="true" type="tns:KeywordDemographic" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,15 +18,15 @@ Defines an object that contains search query statistics of including broad match
 ## Syntax
 
 ```xml
-<xs:complexType name="BroadMatchSearchQueryKPI">
-  <xs:sequence>
-    <xs:element name="AverageCTR" type="xs:double" minOccurs="0"/>
-    <xs:element name="Clicks" type="xs:double" minOccurs="0"/>
-    <xs:element name="Impressions" type="xs:long" minOccurs="0"/>
-    <xs:element name="SRPV" type="xs:long" minOccurs="0"/>
-    <xs:element name="SearchQuery" type="xs:string" minOccurs="0" nillable="true"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="BroadMatchSearchQueryKPI">
+  \<xs:sequence>
+    \<xs:element name="AverageCTR" type="xs:double" minOccurs="0"/>
+    \<xs:element name="Clicks" type="xs:double" minOccurs="0"/>
+    \<xs:element name="Impressions" type="xs:long" minOccurs="0"/>
+    \<xs:element name="SRPV" type="xs:long" minOccurs="0"/>
+    \<xs:element name="SearchQuery" type="xs:string" minOccurs="0" nillable="true"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

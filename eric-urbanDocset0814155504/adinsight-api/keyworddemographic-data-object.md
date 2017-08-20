@@ -18,20 +18,20 @@ Defines an object that contains the device, age and gender of the user who enter
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordDemographic">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
-    <xs:element minOccurs="0" name="Age18_24" type="xs:double" />
-    <xs:element minOccurs="0" name="Age25_34" type="xs:double" />
-    <xs:element minOccurs="0" name="Age35_49" type="xs:double" />
-    <xs:element minOccurs="0" name="Age50_64" type="xs:double" />
-    <xs:element minOccurs="0" name="Age65Plus" type="xs:double" />
-    <xs:element minOccurs="0" name="AgeUnknown" type="xs:double" />
-    <xs:element minOccurs="0" name="Female" type="xs:double" />
-    <xs:element minOccurs="0" name="Male" type="xs:double" />
-    <xs:element minOccurs="0" name="GenderUnknown" type="xs:double" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordDemographic">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
+    \<xs:element minOccurs="0" name="Age18_24" type="xs:double" />
+    \<xs:element minOccurs="0" name="Age25_34" type="xs:double" />
+    \<xs:element minOccurs="0" name="Age35_49" type="xs:double" />
+    \<xs:element minOccurs="0" name="Age50_64" type="xs:double" />
+    \<xs:element minOccurs="0" name="Age65Plus" type="xs:double" />
+    \<xs:element minOccurs="0" name="AgeUnknown" type="xs:double" />
+    \<xs:element minOccurs="0" name="Female" type="xs:double" />
+    \<xs:element minOccurs="0" name="Male" type="xs:double" />
+    \<xs:element minOccurs="0" name="GenderUnknown" type="xs:double" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

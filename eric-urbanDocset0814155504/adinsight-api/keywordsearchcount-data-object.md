@@ -18,12 +18,12 @@ Defines an object that contains a list of search counts for each device and netw
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordSearchCount">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="SearchCountsByAttributes" nillable="true" type="tns:ArrayOfSearchCountsByAttributes"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordSearchCount">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="SearchCountsByAttributes" nillable="true" type="tns:ArrayOfSearchCountsByAttributes"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

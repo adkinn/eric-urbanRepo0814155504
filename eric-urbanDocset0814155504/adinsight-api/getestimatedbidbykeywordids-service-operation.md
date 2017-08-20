@@ -18,7 +18,9 @@ Gets the estimated bid value of one or more keywords - specified by keyword iden
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetEstimatedBidByKeywordIdsRequest Message
 
@@ -40,26 +42,26 @@ The *GetEstimatedBidByKeywordIdsRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetEstimatedBidByKeywordIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetEstimatedBidByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long></a1:long>
+      \<KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        \<a1:long>\</a1:long>
       </KeywordIds>
       <TargetPositionForAds></TargetPositionForAds>
     </GetEstimatedBidByKeywordIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetEstimatedBidByKeywordIdsResponse Message
@@ -76,38 +78,38 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e9:KeywordIdEstimatedBid>
-          <e9:KeywordId></e9:KeywordId>
-          <e9:KeywordEstimatedBid p5:nil="false">
-            <e9:Keyword p5:nil="false"></e9:Keyword>
-            <e9:EstimatedBids p5:nil="false">
-              <e9:EstimatedBidAndTraffic>
-                <e9:MinClicksPerWeek p5:nil="false"></e9:MinClicksPerWeek>
-                <e9:MaxClicksPerWeek p5:nil="false"></e9:MaxClicksPerWeek>
-                <e9:AverageCPC p5:nil="false"></e9:AverageCPC>
-                <e9:MinImpressionsPerWeek p5:nil="false"></e9:MinImpressionsPerWeek>
-                <e9:MaxImpressionsPerWeek p5:nil="false"></e9:MaxImpressionsPerWeek>
-                <e9:CTR p5:nil="false"></e9:CTR>
-                <e9:MinTotalCostPerWeek p5:nil="false"></e9:MinTotalCostPerWeek>
-                <e9:MaxTotalCostPerWeek p5:nil="false"></e9:MaxTotalCostPerWeek>
-                <e9:Currency></e9:Currency>
-                <e9:MatchType></e9:MatchType>
-                <e9:EstimatedMinBid></e9:EstimatedMinBid>
-              </e9:EstimatedBidAndTraffic>
-            </e9:EstimatedBids>
-          </e9:KeywordEstimatedBid>
-        </e9:KeywordIdEstimatedBid>
+      \<KeywordEstimatedBids xmlns:e9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e9:KeywordIdEstimatedBid>
+          \<e9:KeywordId>\</e9:KeywordId>
+          \<e9:KeywordEstimatedBid p5:nil="false">
+            \<e9:Keyword p5:nil="false">\</e9:Keyword>
+            \<e9:EstimatedBids p5:nil="false">
+              \<e9:EstimatedBidAndTraffic>
+                \<e9:MinClicksPerWeek p5:nil="false">\</e9:MinClicksPerWeek>
+                \<e9:MaxClicksPerWeek p5:nil="false">\</e9:MaxClicksPerWeek>
+                \<e9:AverageCPC p5:nil="false">\</e9:AverageCPC>
+                \<e9:MinImpressionsPerWeek p5:nil="false">\</e9:MinImpressionsPerWeek>
+                \<e9:MaxImpressionsPerWeek p5:nil="false">\</e9:MaxImpressionsPerWeek>
+                \<e9:CTR p5:nil="false">\</e9:CTR>
+                \<e9:MinTotalCostPerWeek p5:nil="false">\</e9:MinTotalCostPerWeek>
+                \<e9:MaxTotalCostPerWeek p5:nil="false">\</e9:MaxTotalCostPerWeek>
+                \<e9:Currency>\</e9:Currency>
+                \<e9:MatchType>\</e9:MatchType>
+                \<e9:EstimatedMinBid>\</e9:EstimatedMinBid>
+              \</e9:EstimatedBidAndTraffic>
+            \</e9:EstimatedBids>
+          \</e9:KeywordEstimatedBid>
+        \</e9:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

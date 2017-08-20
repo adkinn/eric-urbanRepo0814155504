@@ -20,13 +20,13 @@ You can specify competition levels when calling the [GetKeywordIdeas](../adinsig
 ## Syntax
 
 ```xml
-<xs:simpleType name="CompetitionLevel">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Low">
-    <xs:enumeration value="Medium">
-    <xs:enumeration value="High">
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CompetitionLevel">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Low">
+    \<xs:enumeration value="Medium">
+    \<xs:enumeration value="High">
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -20,16 +20,16 @@ If you do not include the search volume search parameter when calling [GetKeywor
 ## Syntax
 
 ```xml
-<xs:complexType name="SearchVolumeSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:long"/>
-        <xs:element minOccurs="0" name="Minimum" nillable="true" type="xs:long"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="SearchVolumeSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:long"/>
+        \<xs:element minOccurs="0" name="Minimum" nillable="true" type="xs:long"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

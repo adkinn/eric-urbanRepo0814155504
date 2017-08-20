@@ -18,13 +18,13 @@ Defines an object that contains a domain category with website coverage.
 ## Syntax
 
 ```xml
-<xs:complexType name="DomainCategory">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Bid" type="xs:double"/>
-    <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string"/>
-    <xs:element minOccurs="0" name="Coverage" type="xs:double"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="DomainCategory">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Bid" type="xs:double"/>
+    \<xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string"/>
+    \<xs:element minOccurs="0" name="Coverage" type="xs:double"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,26 +18,26 @@ Defines an object that contains a suggested keyword and bid value.
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordOpportunity">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Opportunity">
-      <xs:sequence>
-        <xs:element type="xs:long" name="AdGroupId" minOccurs="0"/>
-        <xs:element type="xs:string" name="AdGroupName" minOccurs="0"/>
-        <xs:element type="xs:long" name="CampaignId" minOccurs="0"/>
-        <xs:element type="xs:string" name="CampaignName" minOccurs="0"/>
-        <xs:element type="xs:double" name="Competition" minOccurs="0"/>
-        <xs:element type="xs:double" name="EstimatedIncreaseInClicks" minOccurs="0"/>
-        <xs:element type="xs:double" name="EstimatedIncreaseInCost" minOccurs="0"/>
-        <xs:element type="xs:long" name="EstimatedIncreaseInImpressions" minOccurs="0"/>
-        <xs:element type="xs:int" name="MatchType" minOccurs="0"/>
-        <xs:element type="xs:long" name="MonthlySearches" minOccurs="0"/>
-        <xs:element type="xs:double" name="SuggestedBid" minOccurs="0"/>
-        <xs:element type="xs:string" name="SuggestedKeyword" minOccurs="0" nillable="true"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="KeywordOpportunity">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Opportunity">
+      \<xs:sequence>
+        \<xs:element type="xs:long" name="AdGroupId" minOccurs="0"/>
+        \<xs:element type="xs:string" name="AdGroupName" minOccurs="0"/>
+        \<xs:element type="xs:long" name="CampaignId" minOccurs="0"/>
+        \<xs:element type="xs:string" name="CampaignName" minOccurs="0"/>
+        \<xs:element type="xs:double" name="Competition" minOccurs="0"/>
+        \<xs:element type="xs:double" name="EstimatedIncreaseInClicks" minOccurs="0"/>
+        \<xs:element type="xs:double" name="EstimatedIncreaseInCost" minOccurs="0"/>
+        \<xs:element type="xs:long" name="EstimatedIncreaseInImpressions" minOccurs="0"/>
+        \<xs:element type="xs:int" name="MatchType" minOccurs="0"/>
+        \<xs:element type="xs:long" name="MonthlySearches" minOccurs="0"/>
+        \<xs:element type="xs:double" name="SuggestedBid" minOccurs="0"/>
+        \<xs:element type="xs:string" name="SuggestedKeyword" minOccurs="0" nillable="true"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

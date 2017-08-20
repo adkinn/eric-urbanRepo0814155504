@@ -1,5 +1,5 @@
 ---
-title: "GetBudgetOpportunities"
+title: "GetBudgetOpportunities Service Operation"
 ms.custom: ""
 ms.date: "06/07/2017"
 ms.reviewer: ""
@@ -15,7 +15,9 @@ manager: "ehansen"
 # GetBudgetOpportunities Service Operation
 Gets the campaign budget opportunities of the specified campaign.
 
-[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetBudgetOpportunitiesRequest Message
 
@@ -36,23 +38,23 @@ The *GetBudgetOpportunitiesRequest* object defines the elements of the requestâ€
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetBudgetOpportunities</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetBudgetOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <CampaignId i:nil="false"></CampaignId>
+      \<CampaignId i:nil="false"></CampaignId>
     </GetBudgetOpportunitiesRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBudgetOpportunitiesResponse Message
@@ -69,36 +71,36 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e7:BudgetOpportunity>
-          <e7:BudgetPoints p5:nil="false">
-            <e7:BudgetPoint>
-              <e7:BudgetAmount></e7:BudgetAmount>
-              <e7:BudgetPointType></e7:BudgetPointType>
-              <e7:EstimatedWeeklyClicks></e7:EstimatedWeeklyClicks>
-              <e7:EstimatedWeeklyCost></e7:EstimatedWeeklyCost>
-              <e7:EstimatedWeeklyImpressions></e7:EstimatedWeeklyImpressions>
-            </e7:BudgetPoint>
-          </e7:BudgetPoints>
-          <e7:BudgetType></e7:BudgetType>
-          <e7:CampaignId></e7:CampaignId>
-          <e7:CurrentBudget></e7:CurrentBudget>
-          <e7:IncreaseInClicks></e7:IncreaseInClicks>
-          <e7:IncreaseInImpressions></e7:IncreaseInImpressions>
-          <e7:PercentageIncreaseInClicks></e7:PercentageIncreaseInClicks>
-          <e7:PercentageIncreaseInImpressions></e7:PercentageIncreaseInImpressions>
-          <e7:RecommendedBudget></e7:RecommendedBudget>
-        </e7:BudgetOpportunity>
+      \<Opportunities xmlns:e7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e7:BudgetOpportunity>
+          \<e7:BudgetPoints p5:nil="false">
+            \<e7:BudgetPoint>
+              \<e7:BudgetAmount>\</e7:BudgetAmount>
+              \<e7:BudgetPointType>\</e7:BudgetPointType>
+              \<e7:EstimatedWeeklyClicks>\</e7:EstimatedWeeklyClicks>
+              \<e7:EstimatedWeeklyCost>\</e7:EstimatedWeeklyCost>
+              \<e7:EstimatedWeeklyImpressions>\</e7:EstimatedWeeklyImpressions>
+            \</e7:BudgetPoint>
+          \</e7:BudgetPoints>
+          \<e7:BudgetType>\</e7:BudgetType>
+          \<e7:CampaignId>\</e7:CampaignId>
+          \<e7:CurrentBudget>\</e7:CurrentBudget>
+          \<e7:IncreaseInClicks>\</e7:IncreaseInClicks>
+          \<e7:IncreaseInImpressions>\</e7:IncreaseInImpressions>
+          \<e7:PercentageIncreaseInClicks>\</e7:PercentageIncreaseInClicks>
+          \<e7:PercentageIncreaseInImpressions>\</e7:PercentageIncreaseInImpressions>
+          \<e7:RecommendedBudget>\</e7:RecommendedBudget>
+        \</e7:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

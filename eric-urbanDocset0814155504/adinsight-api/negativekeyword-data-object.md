@@ -18,13 +18,13 @@ Defines a negative keyword with match type.
 ## Syntax
 
 ```xml
-<xs:complexType name="NegativeKeyword">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
-    <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="MatchType" type="q2:MatchType"/>
-    <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="NegativeKeyword">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
+    \<xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" minOccurs="0" name="MatchType" type="q2:MatchType"/>
+    \<xs:element minOccurs="0" name="Text" nillable="true" type="xs:string"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

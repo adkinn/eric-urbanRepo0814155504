@@ -18,7 +18,9 @@ Given a list of existing ad groups, this operation returns for each a list of su
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetBidLandscapeByAdGroupIdsRequest Message
 
@@ -39,28 +41,28 @@ The *GetBidLandscapeByAdGroupIdsRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetBidLandscapeByAdGroupIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetBidLandscapeByAdGroupIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <AdGroupBidLandscapeInputs xmlns:e3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e3:AdGroupBidLandscapeInput>
-          <e3:AdGroupBidLandscapeType></e3:AdGroupBidLandscapeType>
-          <e3:AdGroupId></e3:AdGroupId>
-        </e3:AdGroupBidLandscapeInput>
+      \<AdGroupBidLandscapeInputs xmlns:e3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        \<e3:AdGroupBidLandscapeInput>
+          \<e3:AdGroupBidLandscapeType>\</e3:AdGroupBidLandscapeType>
+          \<e3:AdGroupId>\</e3:AdGroupId>
+        \</e3:AdGroupBidLandscapeInput>
       </AdGroupBidLandscapeInputs>
     </GetBidLandscapeByAdGroupIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBidLandscapeByAdGroupIdsResponse Message
@@ -77,42 +79,42 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetBidLandscapeByAdGroupIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e4:AdGroupBidLandscape>
-          <e4:AdGroupId></e4:AdGroupId>
-          <e4:AdGroupBidLandscapeType></e4:AdGroupBidLandscapeType>
-          <e4:StartDate p5:nil="false">
-            <e4:Day></e4:Day>
-            <e4:Month></e4:Month>
-            <e4:Year></e4:Year>
-          </e4:StartDate>
-          <e4:EndDate p5:nil="false">
-            <e4:Day></e4:Day>
-            <e4:Month></e4:Month>
-            <e4:Year></e4:Year>
-          </e4:EndDate>
-          <e4:BidLandscapePoints p5:nil="false">
-            <e4:BidLandscapePoint>
-              <e4:Bid></e4:Bid>
-              <e4:Clicks p5:nil="false"></e4:Clicks>
-              <e4:Impressions></e4:Impressions>
-              <e4:TopImpressions p5:nil="false"></e4:TopImpressions>
-              <e4:Currency></e4:Currency>
-              <e4:Cost p5:nil="false"></e4:Cost>
-              <e4:MarginalCPC p5:nil="false"></e4:MarginalCPC>
-            </e4:BidLandscapePoint>
-          </e4:BidLandscapePoints>
-        </e4:AdGroupBidLandscape>
+      \<BidLandscape xmlns:e4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e4:AdGroupBidLandscape>
+          \<e4:AdGroupId>\</e4:AdGroupId>
+          \<e4:AdGroupBidLandscapeType>\</e4:AdGroupBidLandscapeType>
+          \<e4:StartDate p5:nil="false">
+            \<e4:Day>\</e4:Day>
+            \<e4:Month>\</e4:Month>
+            \<e4:Year>\</e4:Year>
+          \</e4:StartDate>
+          \<e4:EndDate p5:nil="false">
+            \<e4:Day>\</e4:Day>
+            \<e4:Month>\</e4:Month>
+            \<e4:Year>\</e4:Year>
+          \</e4:EndDate>
+          \<e4:BidLandscapePoints p5:nil="false">
+            \<e4:BidLandscapePoint>
+              \<e4:Bid>\</e4:Bid>
+              \<e4:Clicks p5:nil="false">\</e4:Clicks>
+              \<e4:Impressions>\</e4:Impressions>
+              \<e4:TopImpressions p5:nil="false">\</e4:TopImpressions>
+              \<e4:Currency>\</e4:Currency>
+              \<e4:Cost p5:nil="false">\</e4:Cost>
+              \<e4:MarginalCPC p5:nil="false">\</e4:MarginalCPC>
+            \</e4:BidLandscapePoint>
+          \</e4:BidLandscapePoints>
+        \</e4:AdGroupBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByAdGroupIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

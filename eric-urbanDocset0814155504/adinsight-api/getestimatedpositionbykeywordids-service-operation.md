@@ -18,7 +18,9 @@ Gets the estimated position in the search results if the specified bid value had
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetEstimatedPositionByKeywordIdsRequest Message
 
@@ -40,26 +42,26 @@ The *GetEstimatedPositionByKeywordIdsRequest* object defines the elements of the
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetEstimatedPositionByKeywordIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetEstimatedPositionByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long></a1:long>
+      \<KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        \<a1:long>\</a1:long>
       </KeywordIds>
       <MaxBid></MaxBid>
     </GetEstimatedPositionByKeywordIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetEstimatedPositionByKeywordIdsResponse Message
@@ -76,38 +78,38 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetEstimatedPositionByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e13="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e13:KeywordIdEstimatedPosition>
-          <e13:KeywordId></e13:KeywordId>
-          <e13:KeywordEstimatedPosition p5:nil="false">
-            <e13:Keyword p5:nil="false"></e13:Keyword>
-            <e13:EstimatedPositions p5:nil="false">
-              <e13:EstimatedPositionAndTraffic>
-                <e13:MatchType></e13:MatchType>
-                <e13:MinClicksPerWeek></e13:MinClicksPerWeek>
-                <e13:MaxClicksPerWeek></e13:MaxClicksPerWeek>
-                <e13:AverageCPC></e13:AverageCPC>
-                <e13:MinImpressionsPerWeek></e13:MinImpressionsPerWeek>
-                <e13:MaxImpressionsPerWeek></e13:MaxImpressionsPerWeek>
-                <e13:CTR></e13:CTR>
-                <e13:MinTotalCostPerWeek></e13:MinTotalCostPerWeek>
-                <e13:MaxTotalCostPerWeek></e13:MaxTotalCostPerWeek>
-                <e13:Currency></e13:Currency>
-                <e13:EstimatedAdPosition></e13:EstimatedAdPosition>
-              </e13:EstimatedPositionAndTraffic>
-            </e13:EstimatedPositions>
-          </e13:KeywordEstimatedPosition>
-        </e13:KeywordIdEstimatedPosition>
+      \<KeywordEstimatedPositions xmlns:e13="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e13:KeywordIdEstimatedPosition>
+          \<e13:KeywordId>\</e13:KeywordId>
+          \<e13:KeywordEstimatedPosition p5:nil="false">
+            \<e13:Keyword p5:nil="false">\</e13:Keyword>
+            \<e13:EstimatedPositions p5:nil="false">
+              \<e13:EstimatedPositionAndTraffic>
+                \<e13:MatchType>\</e13:MatchType>
+                \<e13:MinClicksPerWeek>\</e13:MinClicksPerWeek>
+                \<e13:MaxClicksPerWeek>\</e13:MaxClicksPerWeek>
+                \<e13:AverageCPC>\</e13:AverageCPC>
+                \<e13:MinImpressionsPerWeek>\</e13:MinImpressionsPerWeek>
+                \<e13:MaxImpressionsPerWeek>\</e13:MaxImpressionsPerWeek>
+                \<e13:CTR>\</e13:CTR>
+                \<e13:MinTotalCostPerWeek>\</e13:MinTotalCostPerWeek>
+                \<e13:MaxTotalCostPerWeek>\</e13:MaxTotalCostPerWeek>
+                \<e13:Currency>\</e13:Currency>
+                \<e13:EstimatedAdPosition>\</e13:EstimatedAdPosition>
+              \</e13:EstimatedPositionAndTraffic>
+            \</e13:EstimatedPositions>
+          \</e13:KeywordEstimatedPosition>
+        \</e13:KeywordIdEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

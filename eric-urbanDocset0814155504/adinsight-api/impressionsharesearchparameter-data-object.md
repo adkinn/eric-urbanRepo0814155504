@@ -20,16 +20,16 @@ If you do not include the impression share search parameter when calling [GetKey
 ## Syntax
 
 ```xml
-<xs:complexType name="ImpressionShareSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
-        <xs:element minOccurs="0" name="Minimum" nillable="true" type="xs:double"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ImpressionShareSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
+        \<xs:element minOccurs="0" name="Minimum" nillable="true" type="xs:double"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

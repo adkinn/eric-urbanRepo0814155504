@@ -24,11 +24,11 @@ Do not try to instantiate an *Opportunity*. You can create one or more following
 ## Syntax
 
 ```xml
-<xs:complexType name="Opportunity">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="OpportunityKey" nillable="true" type="xs:string" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Opportunity">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="OpportunityKey" nillable="true" type="xs:string" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

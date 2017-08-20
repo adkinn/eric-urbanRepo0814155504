@@ -21,15 +21,15 @@ Defines an object that contains a budget amount and an estimate of weekly impres
 ## Syntax
 
 ```xml
-<xs:complexType name="BudgetPoint">
-  <xs:sequence>
-    <xs:element name="BudgetAmount" type="xs:double" minOccurs="0"/>
-    <xs:element name="BudgetPointType" type="tns:BudgetPointType" minOccurs="0"/>
-    <xs:element name="EstimatedWeeklyClicks" type="xs:double" minOccurs="0"/>
-    <xs:element name="EstimatedWeeklyCost" type="xs:double" minOccurs="0"/>
-    <xs:element name="EstimatedWeeklyImpressions" type="xs:double" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="BudgetPoint">
+  \<xs:sequence>
+    \<xs:element name="BudgetAmount" type="xs:double" minOccurs="0"/>
+    \<xs:element name="BudgetPointType" type="tns:BudgetPointType" minOccurs="0"/>
+    \<xs:element name="EstimatedWeeklyClicks" type="xs:double" minOccurs="0"/>
+    \<xs:element name="EstimatedWeeklyCost" type="xs:double" minOccurs="0"/>
+    \<xs:element name="EstimatedWeeklyImpressions" type="xs:double" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

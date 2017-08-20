@@ -18,26 +18,26 @@ Defines the possible positions of an ad in the search results or on a content-ba
 ## Syntax
 
 ```xml
-<xs:simpleType name="AdPosition">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="All" />
-    <xs:enumeration value="MainLine1" />
-    <xs:enumeration value="MainLine2" />
-    <xs:enumeration value="MainLine3" />
-    <xs:enumeration value="MainLine4" />
-    <xs:enumeration value="SideBar1" />
-    <xs:enumeration value="SideBar2" />
-    <xs:enumeration value="SideBar3" />
-    <xs:enumeration value="SideBar4" />
-    <xs:enumeration value="SideBar5" />
-    <xs:enumeration value="SideBar6" />
-    <xs:enumeration value="SideBar7" />
-    <xs:enumeration value="SideBar8" />
-    <xs:enumeration value="SideBar9" />
-    <xs:enumeration value="SideBar10" />
-    <xs:enumeration value="Aggregate" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AdPosition">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="All" />
+    \<xs:enumeration value="MainLine1" />
+    \<xs:enumeration value="MainLine2" />
+    \<xs:enumeration value="MainLine3" />
+    \<xs:enumeration value="MainLine4" />
+    \<xs:enumeration value="SideBar1" />
+    \<xs:enumeration value="SideBar2" />
+    \<xs:enumeration value="SideBar3" />
+    \<xs:enumeration value="SideBar4" />
+    \<xs:enumeration value="SideBar5" />
+    \<xs:enumeration value="SideBar6" />
+    \<xs:enumeration value="SideBar7" />
+    \<xs:enumeration value="SideBar8" />
+    \<xs:enumeration value="SideBar9" />
+    \<xs:enumeration value="SideBar10" />
+    \<xs:enumeration value="Aggregate" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

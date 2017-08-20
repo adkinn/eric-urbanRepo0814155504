@@ -24,9 +24,9 @@ Do not try to instantiate a [Criterion](../adinsight-api/criterion-data-object.m
 ## Syntax
 
 ```xml
-<xs:complexType name="Criterion">
-  <xs:sequence/>
-</xs:complexType>
+\<xs:complexType name="Criterion">
+  \<xs:sequence/>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

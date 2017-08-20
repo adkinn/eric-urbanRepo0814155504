@@ -20,16 +20,16 @@ Use these options to refine what keywords are returned when calling [GetKeywordI
 ## Syntax
 
 ```xml
-<xs:complexType name="IdeaTextSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element name="Excluded" type="q2:ArrayOfKeyword" nillable="true" minOccurs="0" xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common"/>
-        <xs:element name="Included" type="q3:ArrayOfKeyword" nillable="true" minOccurs="0" xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="IdeaTextSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element name="Excluded" type="q2:ArrayOfKeyword" nillable="true" minOccurs="0" xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common"/>
+        \<xs:element name="Included" type="q3:ArrayOfKeyword" nillable="true" minOccurs="0" xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

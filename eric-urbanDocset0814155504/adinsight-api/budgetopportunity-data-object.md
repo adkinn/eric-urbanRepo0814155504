@@ -21,23 +21,23 @@ Defines an object that contains the suggested budget with estimated clicks and i
 ## Syntax
 
 ```xml
-<xs:complexType name="BudgetOpportunity">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Opportunity">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="BudgetPoints" nillable="true" type="tns:ArrayOfBudgetPoint"/>
-        <xs:element minOccurs="0" name="BudgetType" type="tns:BudgetLimitType"/>
-        <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
-        <xs:element minOccurs="0" name="CurrentBudget" type="xs:double" />
-        <xs:element minOccurs="0" name="IncreaseInClicks" type="xs:double" />
-        <xs:element minOccurs="0" name="IncreaseInImpressions" type="xs:long" />
-        <xs:element minOccurs="0" name="PercentageIncreaseInClicks" type="xs:int" />
-        <xs:element minOccurs="0" name="PercentageIncreaseInImpressions" type="xs:int" />
-        <xs:element minOccurs="0" name="RecommendedBudget" type="xs:double" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="BudgetOpportunity">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Opportunity">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="BudgetPoints" nillable="true" type="tns:ArrayOfBudgetPoint"/>
+        \<xs:element minOccurs="0" name="BudgetType" type="tns:BudgetLimitType"/>
+        \<xs:element minOccurs="0" name="CampaignId" type="xs:long" />
+        \<xs:element minOccurs="0" name="CurrentBudget" type="xs:double" />
+        \<xs:element minOccurs="0" name="IncreaseInClicks" type="xs:double" />
+        \<xs:element minOccurs="0" name="IncreaseInImpressions" type="xs:long" />
+        \<xs:element minOccurs="0" name="PercentageIncreaseInClicks" type="xs:int" />
+        \<xs:element minOccurs="0" name="PercentageIncreaseInImpressions" type="xs:int" />
+        \<xs:element minOccurs="0" name="RecommendedBudget" type="xs:double" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

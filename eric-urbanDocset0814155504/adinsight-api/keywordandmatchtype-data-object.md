@@ -18,12 +18,12 @@ Defines an object that contains a keyword and corresponding match types.
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordAndMatchType">
-  <xs:sequence>
-    <xs:element type="xs:string" name="KeywordText" nillable="true" minOccurs="0"/>
-    <xs:element type="tns:ArrayOfMatchType" name="MatchTypes" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordAndMatchType">
+  \<xs:sequence>
+    \<xs:element type="xs:string" name="KeywordText" nillable="true" minOccurs="0"/>
+    \<xs:element type="tns:ArrayOfMatchType" name="MatchTypes" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

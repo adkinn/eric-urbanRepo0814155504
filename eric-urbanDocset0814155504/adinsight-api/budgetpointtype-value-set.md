@@ -18,14 +18,14 @@ Defines the possible values of a campaign budget point.
 ## Syntax
 
 ```xml
-<xs:simpleType name="BudgetPointType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Current">
-    <xs:enumeration value="Suggested">
-    <xs:enumeration value="Maximum">
-    <xs:enumeration value="Other">
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="BudgetPointType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Current">
+    \<xs:enumeration value="Suggested">
+    \<xs:enumeration value="Maximum">
+    \<xs:enumeration value="Other">
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

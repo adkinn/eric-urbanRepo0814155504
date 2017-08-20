@@ -18,12 +18,12 @@ Defines the possible types of campaign budgets.
 ## Syntax
 
 ```xml
-<xs:simpleType name="BudgetLimitType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="DailyBudgetStandard"/>
-    <xs:enumeration value="DailyBudgetAccelerated"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="BudgetLimitType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="DailyBudgetStandard"/>
+    \<xs:enumeration value="DailyBudgetAccelerated"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

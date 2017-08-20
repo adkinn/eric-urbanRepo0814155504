@@ -21,12 +21,12 @@ Contains a list of suggested keywords for the ad group with minimum and maximum 
 ## Syntax
 
 ```xml
-<xs:complexType name="AdGroupEstimate">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
-    <xs:element minOccurs="0" name="KeywordEstimates" nillable="true" type="tns:ArrayOfKeywordEstimate"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdGroupEstimate">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
+    \<xs:element minOccurs="0" name="KeywordEstimates" nillable="true" type="tns:ArrayOfKeywordEstimate"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

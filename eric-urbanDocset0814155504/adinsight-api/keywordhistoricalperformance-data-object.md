@@ -18,12 +18,12 @@ Defines an object that contains the key performance index data for the specified
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordHistoricalPerformance">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="KeywordKPIs" nillable="true" type="tns:ArrayOfKeywordKPI" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordHistoricalPerformance">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="KeywordKPIs" nillable="true" type="tns:ArrayOfKeywordKPI" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

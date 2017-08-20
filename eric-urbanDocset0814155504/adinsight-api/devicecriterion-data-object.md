@@ -18,15 +18,15 @@ The device criterion that you can include when requesting keyword ideas or traff
 ## Syntax
 
 ```xml
-<xs:complexType name="DeviceCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Criterion">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="DeviceCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Criterion">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

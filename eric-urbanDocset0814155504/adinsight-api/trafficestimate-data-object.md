@@ -18,16 +18,16 @@ Defines an object that contains traffic estimates based on the campaign, ad grou
 ## Syntax
 
 ```xml
-<xs:complexType name="TrafficEstimate">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AverageCpc" type="xs:double"/>
-    <xs:element minOccurs="0" name="AveragePosition" type="xs:double"/>
-    <xs:element minOccurs="0" name="Clicks" type="xs:double"/>
-    <xs:element minOccurs="0" name="Ctr" type="xs:double"/>
-    <xs:element minOccurs="0" name="Impressions" type="xs:double"/>
-    <xs:element minOccurs="0" name="TotalCost" type="xs:double"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="TrafficEstimate">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AverageCpc" type="xs:double"/>
+    \<xs:element minOccurs="0" name="AveragePosition" type="xs:double"/>
+    \<xs:element minOccurs="0" name="Clicks" type="xs:double"/>
+    \<xs:element minOccurs="0" name="Ctr" type="xs:double"/>
+    \<xs:element minOccurs="0" name="Impressions" type="xs:double"/>
+    \<xs:element minOccurs="0" name="TotalCost" type="xs:double"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

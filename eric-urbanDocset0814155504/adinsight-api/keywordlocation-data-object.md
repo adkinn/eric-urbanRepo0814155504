@@ -18,13 +18,13 @@ Defines an object that contains the location, network, device, and the percentag
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordLocation">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
-    <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Percentage" type="xs:double" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordLocation">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
+    \<xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Percentage" type="xs:double" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

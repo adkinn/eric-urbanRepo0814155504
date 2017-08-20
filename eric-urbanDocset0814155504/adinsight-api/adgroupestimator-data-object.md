@@ -18,13 +18,13 @@ Contains a list of keyword estimators with your keyword level filter criteria fo
 ## Syntax
 
 ```xml
-<xs:complexType name="AdGroupEstimator">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
-    <xs:element minOccurs="0" name="KeywordEstimators" nillable="true" type="tns:ArrayOfKeywordEstimator"/>
-    <xs:element minOccurs="0" name="MaxCpc" type="xs:double"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdGroupEstimator">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
+    \<xs:element minOccurs="0" name="KeywordEstimators" nillable="true" type="tns:ArrayOfKeywordEstimator"/>
+    \<xs:element minOccurs="0" name="MaxCpc" type="xs:double"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

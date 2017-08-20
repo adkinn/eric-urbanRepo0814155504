@@ -18,13 +18,13 @@ Defines an object that you use to specify the start and end dates of a date rang
 ## Syntax
 
 ```xml
-<xs:complexType name="DayMonthAndYear">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Day" type="xs:int" />
-    <xs:element minOccurs="0" name="Month" type="xs:int" />
-    <xs:element minOccurs="0" name="Year" type="xs:int" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="DayMonthAndYear">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Day" type="xs:int" />
+    \<xs:element minOccurs="0" name="Month" type="xs:int" />
+    \<xs:element minOccurs="0" name="Year" type="xs:int" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

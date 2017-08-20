@@ -20,16 +20,16 @@ If you do not include the suggested bid search parameter when calling [GetKeywor
 ## Syntax
 
 ```xml
-<xs:complexType name="SuggestedBidSearchParameter">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SearchParameter">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
-        <xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="SuggestedBidSearchParameter">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SearchParameter">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
+        \<xs:element minOccurs="0" name="Maximum" nillable="true" type="xs:double"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
