@@ -92,7 +92,7 @@ var bulkExpandedTextAd = new BulkExpandedTextAd
         ForwardCompatibilityMap = new []
         {
             // 'Ad Format Preference' column header in the Bulk file
-            new KeyValuePair<string,string>("NativePreference", "False")
+            new KeyValuePair\<string,string>("NativePreference", "False")
         },
         // 'Id' column header in the Bulk file
         Id = null,

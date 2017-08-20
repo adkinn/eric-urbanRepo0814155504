@@ -18,12 +18,12 @@ Defines elements to specify whether the bulk service should return upload errors
 ## Syntax
 
 ```xml
-<xs:simpleType name="ResponseMode">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="ErrorsOnly" />
-    <xs:enumeration value="ErrorsAndResults" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ResponseMode">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="ErrorsOnly" />
+    \<xs:enumeration value="ErrorsAndResults" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

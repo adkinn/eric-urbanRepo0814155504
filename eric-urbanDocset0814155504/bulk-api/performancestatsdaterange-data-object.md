@@ -18,13 +18,13 @@ Defines the date range values for the requested performance data in a bulk downl
 ## Syntax
 
 ```xml
-<xs:complexType name="PerformanceStatsDateRange">
-  <xs:sequence>
-    <xs:element type="tns:Date" name="CustomDateRangeEnd" nillable="true" minOccurs="0"/>
-    <xs:element type="tns:Date" name="CustomDateRangeStart" nillable="true" minOccurs="0"/>
-    <xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="PerformanceStatsDateRange">
+  \<xs:sequence>
+    \<xs:element type="tns:Date" name="CustomDateRangeEnd" nillable="true" minOccurs="0"/>
+    \<xs:element type="tns:Date" name="CustomDateRangeStart" nillable="true" minOccurs="0"/>
+    \<xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

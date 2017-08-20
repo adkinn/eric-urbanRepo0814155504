@@ -21,12 +21,12 @@ Defines the file formats for a download request.
 ## Syntax
 
 ```xml
-<xs:simpleType name="DownloadFileType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Csv" />
-    <xs:enumeration value="Tsv" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="DownloadFileType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Csv" />
+    \<xs:enumeration value="Tsv" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

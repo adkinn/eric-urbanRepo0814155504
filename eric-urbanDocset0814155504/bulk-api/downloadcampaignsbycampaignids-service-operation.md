@@ -18,7 +18,9 @@ Downloads settings and performance data for the specified campaigns. You can req
 > [!NOTE]
 > You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md)) and  the [GetBulkDownloadStatus](../bulk-api/getbulkdownloadstatus-service-operation.md) polling operation.
 
-[!INCLUDE[bulk_service_namespace](../bulk-api/includes/bulk-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[bulk_navigation_noremarks](../bulk-api/includes/bulk-navigation-noremarks.md)]|
 
 ## <a name="request"></a>DownloadCampaignsByCampaignIdsRequest Message
 
@@ -46,49 +48,49 @@ The *DownloadCampaignsByCampaignIdsRequest* object defines the elements of the r
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">DownloadCampaignsByCampaignIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <DownloadCampaignsByCampaignIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Campaigns i:nil="false">
+      \<Campaigns i:nil="false">
         <CampaignScope>
           <CampaignId></CampaignId>
           <ParentAccountId></ParentAccountId>
         </CampaignScope>
       </Campaigns>
-      <CompressionType i:nil="false"></CompressionType>
+      \<CompressionType i:nil="false"></CompressionType>
       <DataScope></DataScope>
-      <DownloadEntities i:nil="false">
+      \<DownloadEntities i:nil="false">
         <DownloadEntity></DownloadEntity>
       </DownloadEntities>
-      <DownloadFileType i:nil="false"></DownloadFileType>
-      <FormatVersion i:nil="false"></FormatVersion>
-      <LastSyncTimeInUTC i:nil="false"></LastSyncTimeInUTC>
-      <PerformanceStatsDateRange i:nil="false">
-        <CustomDateRangeEnd i:nil="false">
+      \<DownloadFileType i:nil="false"></DownloadFileType>
+      \<FormatVersion i:nil="false"></FormatVersion>
+      \<LastSyncTimeInUTC i:nil="false"></LastSyncTimeInUTC>
+      \<PerformanceStatsDateRange i:nil="false">
+        \<CustomDateRangeEnd i:nil="false">
           <Day></Day>
           <Month></Month>
           <Year></Year>
         </CustomDateRangeEnd>
-        <CustomDateRangeStart i:nil="false">
+        \<CustomDateRangeStart i:nil="false">
           <Day></Day>
           <Month></Month>
           <Year></Year>
         </CustomDateRangeStart>
-        <PredefinedTime i:nil="false"></PredefinedTime>
+        \<PredefinedTime i:nil="false"></PredefinedTime>
       </PerformanceStatsDateRange>
     </DownloadCampaignsByCampaignIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>DownloadCampaignsByCampaignIdsResponse Message
@@ -105,16 +107,16 @@ The following example shows the complete request envelope.
 The following example shows the complete SOAP response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <DownloadCampaignsByCampaignIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <DownloadRequestId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></DownloadRequestId>
+      \<DownloadRequestId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></DownloadRequestId>
     </DownloadCampaignsByCampaignIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

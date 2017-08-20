@@ -18,16 +18,16 @@ Defines a fault object that operations return when web service-specific errors o
 ## Syntax
 
 ```xml
-<xs:complexType name="ApiFaultDetail">
-  <xs:complexContent mixed="false">
-    <xs:extension xmlns:q2="https://adapi.microsoft.com" base="q2:ApplicationFault">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
-        <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ApiFaultDetail">
+  \<xs:complexContent mixed="false">
+    \<xs:extension xmlns:q2="https://adapi.microsoft.com" base="q2:ApplicationFault">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
+        \<xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

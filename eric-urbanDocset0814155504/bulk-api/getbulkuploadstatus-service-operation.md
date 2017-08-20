@@ -15,7 +15,9 @@ manager: "ehansen"
 # GetBulkUploadStatus Service Operation
 Gets the status and completion progress of a bulk upload request.
 
-[!INCLUDE[bulk_service_namespace](../bulk-api/includes/bulk-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[bulk_navigation_noremarks](../bulk-api/includes/bulk-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetBulkUploadStatusRequest Message
 The *GetBulkUploadStatusRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
@@ -36,23 +38,23 @@ The *GetBulkUploadStatusRequest* object defines the elements of the request’s 
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetBulkUploadStatus</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetBulkUploadStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <RequestId i:nil="false"></RequestId>
+      \<RequestId i:nil="false"></RequestId>
     </GetBulkUploadStatusRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBulkUploadStatusResponse Message
@@ -73,32 +75,32 @@ The following example shows the complete request envelope.
 The following example shows the complete SOAP response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetBulkUploadStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Errors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<Errors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <OperationError>
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <Message p4:nil="false"></Message>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<Message p4:nil="false"></Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e2:KeyValuePairOfstringstring>
-          <e2:key p5:nil="false"></e2:key>
-          <e2:value p5:nil="false"></e2:value>
-        </e2:KeyValuePairOfstringstring>
+      \<ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e2:KeyValuePairOfstringstring>
+          \<e2:key p5:nil="false">\</e2:key>
+          \<e2:value p5:nil="false">\</e2:value>
+        \</e2:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete></PercentComplete>
-      <RequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestStatus>
-      <ResultFileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></ResultFileUrl>
+      \<RequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></RequestStatus>
+      \<ResultFileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></ResultFileUrl>
     </GetBulkUploadStatusResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

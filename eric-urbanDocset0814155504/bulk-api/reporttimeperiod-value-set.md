@@ -18,22 +18,22 @@ Defines the date range values for the requested performance data in a bulk downl
 ## Syntax
 
 ```xml
-<xs:simpleType name="ReportTimePeriod">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Today"/>
-    <xs:enumeration value="Yesterday"/>
-    <xs:enumeration value="LastSevenDays"/>
-    <xs:enumeration value="ThisWeek"/>
-    <xs:enumeration value="LastWeek"/>
-    <xs:enumeration value="LastFourWeeks"/>
-    <xs:enumeration value="ThisMonth"/>
-    <xs:enumeration value="LastMonth"/>
-    <xs:enumeration value="LastThreeMonths"/>
-    <xs:enumeration value="LastSixMonths"/>
-    <xs:enumeration value="ThisYear"/>
-    <xs:enumeration value="LastYear"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ReportTimePeriod">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Today"/>
+    \<xs:enumeration value="Yesterday"/>
+    \<xs:enumeration value="LastSevenDays"/>
+    \<xs:enumeration value="ThisWeek"/>
+    \<xs:enumeration value="LastWeek"/>
+    \<xs:enumeration value="LastFourWeeks"/>
+    \<xs:enumeration value="ThisMonth"/>
+    \<xs:enumeration value="LastMonth"/>
+    \<xs:enumeration value="LastThreeMonths"/>
+    \<xs:enumeration value="LastSixMonths"/>
+    \<xs:enumeration value="ThisYear"/>
+    \<xs:enumeration value="LastYear"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values
