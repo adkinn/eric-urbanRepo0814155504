@@ -18,20 +18,20 @@ Defines the criteria to use to filter the search query performance report data.
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchQueryPerformanceReportFilter">
-  \<xs:sequence>
-    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="DeliveredMatchType" type="tns:DeliveredMatchTypeReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="ExcludeZeroClicks" type="xs:boolean" minOccurs="0"/>
-    \<xs:element name="KeywordStatus" type="tns:KeywordStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    \<xs:element name="SearchQueries" type="q21:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="SearchQueryPerformanceReportFilter">
+  <xs:sequence>
+    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="DeliveredMatchType" type="tns:DeliveredMatchTypeReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="ExcludeZeroClicks" type="xs:boolean" minOccurs="0"/>
+    <xs:element name="KeywordStatus" type="tns:KeywordStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    <xs:element name="SearchQueries" type="q21:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

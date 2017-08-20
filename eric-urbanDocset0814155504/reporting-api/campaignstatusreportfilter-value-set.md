@@ -18,20 +18,20 @@ Defines the campaign status values that you can use to filter the report data. T
 ## Syntax
 
 ```xml
-\<xs:simpleType name="CampaignStatusReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Cancelled"/>
-        \<xs:enumeration value="Deleted"/>
-        \<xs:enumeration value="Paused"/>
-        \<xs:enumeration value="BudgetPaused"/>
-        \<xs:enumeration value="Active"/>
-        \<xs:enumeration value="Suspended"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="CampaignStatusReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Cancelled"/>
+        <xs:enumeration value="Deleted"/>
+        <xs:enumeration value="Paused"/>
+        <xs:enumeration value="BudgetPaused"/>
+        <xs:enumeration value="Active"/>
+        <xs:enumeration value="Suspended"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

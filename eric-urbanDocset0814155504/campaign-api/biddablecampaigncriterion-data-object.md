@@ -17,15 +17,15 @@ Defines a biddable criterion that you want applied to the specified campaign.
 ## Syntax
 
 ```xml
-\<xs:complexType name="BiddableCampaignCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:CampaignCriterion">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="BiddableCampaignCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:CampaignCriterion">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

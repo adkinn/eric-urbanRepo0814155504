@@ -18,13 +18,13 @@ Defines the criteria to use to filter the campaign change history report data.
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchCampaignChangeHistoryReportFilter">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdDistribution" nillable="true" type="tns:AdDistributionReportFilter" />
-    \<xs:element minOccurs="0" name="HowChanged" nillable="true" type="tns:ChangeTypeReportFilter" />
-    \<xs:element minOccurs="0" name="ItemChanged" nillable="true" type="tns:ChangeEntityReportFilter" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="SearchCampaignChangeHistoryReportFilter">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdDistribution" nillable="true" type="tns:AdDistributionReportFilter" />
+    <xs:element minOccurs="0" name="HowChanged" nillable="true" type="tns:ChangeTypeReportFilter" />
+    <xs:element minOccurs="0" name="ItemChanged" nillable="true" type="tns:ChangeEntityReportFilter" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

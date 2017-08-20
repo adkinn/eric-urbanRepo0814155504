@@ -18,13 +18,13 @@ Defines the file formats that you can use for a report.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ReportFormat">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Csv"/>
-    \<xs:enumeration value="Tsv"/>
-    \<xs:enumeration value="Xml"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ReportFormat">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Csv"/>
+    <xs:enumeration value="Tsv"/>
+    <xs:enumeration value="Xml"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

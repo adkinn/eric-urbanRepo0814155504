@@ -18,19 +18,19 @@ Defines the operands that can be applied to arguments of a webpage condition or 
 ## Syntax
 
 ```xml
-\<xs:simpleType name="WebpageConditionOperand">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Unknown"/>
-        \<xs:enumeration value="Url" />
-        \<xs:enumeration value="Category" />
-        \<xs:enumeration value="PageTitle" />
-        \<xs:enumeration value="PageContent" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="WebpageConditionOperand">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown"/>
+        <xs:enumeration value="Url" />
+        <xs:enumeration value="Category" />
+        <xs:enumeration value="PageTitle" />
+        <xs:enumeration value="PageContent" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

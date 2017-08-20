@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateCampaigns Service Operation
 Updates specified campaigns in a specified account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateCampaignsRequest Message
 
@@ -39,88 +37,88 @@ The *UpdateCampaignsRequest* object defines the elements of the request’s body
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">UpdateCampaigns</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <UpdateCampaignsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId></AccountId>
-      \<Campaigns i:nil="false">
+      <Campaigns i:nil="false">
         <Campaign>
-          \<BiddingScheme i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-            \<Type i:nil="false"></Type>
-            \<!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
-            \<MaxCpc i:nil="false">
-              \<Amount i:nil="false"></Amount>
+          <BiddingScheme i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+            <Type i:nil="false"></Type>
+            <!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
+            <MaxCpc i:nil="false">
+              <Amount i:nil="false"></Amount>
             </MaxCpc>
-            \<!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
-            \<MaxCpc i:nil="false">
-              \<Amount i:nil="false"></Amount>
+            <!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
+            <MaxCpc i:nil="false">
+              <Amount i:nil="false"></Amount>
             </MaxCpc>
-            \<!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
-            \<MaxCpc i:nil="false">
-              \<Amount i:nil="false"></Amount>
+            <!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
+            <MaxCpc i:nil="false">
+              <Amount i:nil="false"></Amount>
             </MaxCpc>
-            \<TargetCpa i:nil="false"></TargetCpa>
-            \<!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
-            \<!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
-            \<!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
-            \<InheritedBidStrategyType i:nil="false"></InheritedBidStrategyType>
+            <TargetCpa i:nil="false"></TargetCpa>
+            <!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
+            <!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
+            <!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
+            <InheritedBidStrategyType i:nil="false"></InheritedBidStrategyType>
           </BiddingScheme>
-          \<BudgetType i:nil="false"></BudgetType>
-          \<DailyBudget i:nil="false"></DailyBudget>
-          \<DaylightSaving i:nil="false"></DaylightSaving>
-          \<Description i:nil="false"></Description>
-          \<ForwardCompatibilityMap xmlns:e180="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            \<e180:KeyValuePairOfstringstring>
-              \<e180:key i:nil="false">\</e180:key>
-              \<e180:value i:nil="false">\</e180:value>
-            \</e180:KeyValuePairOfstringstring>
+          <BudgetType i:nil="false"></BudgetType>
+          <DailyBudget i:nil="false"></DailyBudget>
+          <DaylightSaving i:nil="false"></DaylightSaving>
+          <Description i:nil="false"></Description>
+          <ForwardCompatibilityMap xmlns:e180="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e180:KeyValuePairOfstringstring>
+              <e180:key i:nil="false"></e180:key>
+              <e180:value i:nil="false"></e180:value>
+            </e180:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          \<Id i:nil="false"></Id>
-          \<Name i:nil="false"></Name>
-          \<NativeBidAdjustment i:nil="false"></NativeBidAdjustment>
-          \<Status i:nil="false"></Status>
-          \<TimeZone i:nil="false"></TimeZone>
-          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          \<UrlCustomParameters xmlns:e181="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            \<e181:Parameters i:nil="false">
-              \<e181:CustomParameter>
-                \<e181:Key i:nil="false">\</e181:Key>
-                \<e181:Value i:nil="false">\</e181:Value>
-              \</e181:CustomParameter>
-            \</e181:Parameters>
+          <Id i:nil="false"></Id>
+          <Name i:nil="false"></Name>
+          <NativeBidAdjustment i:nil="false"></NativeBidAdjustment>
+          <Status i:nil="false"></Status>
+          <TimeZone i:nil="false"></TimeZone>
+          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          <UrlCustomParameters xmlns:e181="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e181:Parameters i:nil="false">
+              <e181:CustomParameter>
+                <e181:Key i:nil="false"></e181:Key>
+                <e181:Value i:nil="false"></e181:Value>
+              </e181:CustomParameter>
+            </e181:Parameters>
           </UrlCustomParameters>
-          \<CampaignType i:nil="false"></CampaignType>
-          \<Settings i:nil="false">
-            \<Setting i:type="-- specify derived type here with the appropriate prefix --">
-              \<Type i:nil="false"></Type>
-              \<!--Keep these fields if you set the i:type attribute to ShoppingSetting-->
-              \<Priority i:nil="false"></Priority>
-              \<SalesCountryCode i:nil="false"></SalesCountryCode>
-              \<StoreId i:nil="false"></StoreId>
-              \<!--Keep these fields if you set the i:type attribute to DynamicSearchAdsSetting-->
-              \<DomainName i:nil="false"></DomainName>
-              \<Language i:nil="false"></Language>
+          <CampaignType i:nil="false"></CampaignType>
+          <Settings i:nil="false">
+            <Setting i:type="-- specify derived type here with the appropriate prefix --">
+              <Type i:nil="false"></Type>
+              <!--Keep these fields if you set the i:type attribute to ShoppingSetting-->
+              <Priority i:nil="false"></Priority>
+              <SalesCountryCode i:nil="false"></SalesCountryCode>
+              <StoreId i:nil="false"></StoreId>
+              <!--Keep these fields if you set the i:type attribute to DynamicSearchAdsSetting-->
+              <DomainName i:nil="false"></DomainName>
+              <Language i:nil="false"></Language>
             </Setting>
           </Settings>
-          \<BudgetId i:nil="false"></BudgetId>
-          \<Languages i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            \<a1:string>\</a1:string>
+          <BudgetId i:nil="false"></BudgetId>
+          <Languages i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <a1:string></a1:string>
           </Languages>
         </Campaign>
       </Campaigns>
     </UpdateCampaignsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateCampaignsResponse Message
@@ -137,38 +135,38 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <UpdateCampaignsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e182="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e182:KeyValuePairOfstringstring>
-              \<e182:key p4:nil="false">\</e182:key>
-              \<e182:value p4:nil="false">\</e182:value>
-            \</e182:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e182="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e182:KeyValuePairOfstringstring>
+              <e182:key p4:nil="false"></e182:key>
+              <e182:value p4:nil="false"></e182:value>
+            </e182:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </UpdateCampaignsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

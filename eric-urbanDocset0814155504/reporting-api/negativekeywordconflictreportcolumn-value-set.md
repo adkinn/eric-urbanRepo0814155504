@@ -19,26 +19,26 @@ Defines the attributes columns that you can include in the [NegativeKeywordConfl
 ## Syntax
 
 ```xml
-\<xs:simpleType name="NegativeKeywordConflictReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName" />
-    \<xs:enumeration value="AccountNumber" />
-    \<xs:enumeration value="AccountId" />
-    \<xs:enumeration value="CampaignName" />
-    \<xs:enumeration value="CampaignId" />
-    \<xs:enumeration value="AdGroupName" />
-    \<xs:enumeration value="AdGroupId" />
-    \<xs:enumeration value="Keyword" />
-    \<xs:enumeration value="KeywordId" />
-    \<xs:enumeration value="NegativeKeyword" />
-    \<xs:enumeration value="ConflictLevel" />
-    \<xs:enumeration value="BidMatchType"/>
-    \<xs:enumeration value="NegativeKeywordListId"/>
-    \<xs:enumeration value="NegativeKeywordList"/>
-    \<xs:enumeration value="NegativeKeywordId"/>
-    \<xs:enumeration value="NegativeKeywordMatchType"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="NegativeKeywordConflictReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="AccountNumber" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="Keyword" />
+    <xs:enumeration value="KeywordId" />
+    <xs:enumeration value="NegativeKeyword" />
+    <xs:enumeration value="ConflictLevel" />
+    <xs:enumeration value="BidMatchType"/>
+    <xs:enumeration value="NegativeKeywordListId"/>
+    <xs:enumeration value="NegativeKeywordList"/>
+    <xs:enumeration value="NegativeKeywordId"/>
+    <xs:enumeration value="NegativeKeywordMatchType"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

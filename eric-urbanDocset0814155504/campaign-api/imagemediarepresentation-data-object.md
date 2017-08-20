@@ -18,16 +18,16 @@ Defines an image media representation with height and width.
 ## Syntax
 
 ```xml
-\<xs:complexType name="ImageMediaRepresentation">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:MediaRepresentation">
-      \<xs:sequence>
-        \<xs:element type="xs:int" name="Height" minOccurs="0"/>
-        \<xs:element type="xs:int" name="Width" minOccurs="0"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ImageMediaRepresentation">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:MediaRepresentation">
+      <xs:sequence>
+        <xs:element type="xs:int" name="Height" minOccurs="0"/>
+        <xs:element type="xs:int" name="Width" minOccurs="0"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

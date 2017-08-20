@@ -18,17 +18,17 @@ Defines the ad distribution medium values that you can use to filter the report 
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdDistributionReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Search"/>
-        \<xs:enumeration value="Content"/>
-        \<xs:enumeration value="Native"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AdDistributionReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Search"/>
+        <xs:enumeration value="Content"/>
+        <xs:enumeration value="Native"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

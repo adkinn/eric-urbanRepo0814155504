@@ -18,12 +18,12 @@ Defines the conditions or criteria that determine whether you want to show dynam
 ## Syntax
 
 ```xml
-\<xs:complexType name="WebpageParameter">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Conditions" nillable="true" type="tns:ArrayOfWebpageCondition"/>
-    \<xs:element minOccurs="0" name="CriterionName" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="WebpageParameter">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Conditions" nillable="true" type="tns:ArrayOfWebpageCondition"/>
+    <xs:element minOccurs="0" name="CriterionName" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

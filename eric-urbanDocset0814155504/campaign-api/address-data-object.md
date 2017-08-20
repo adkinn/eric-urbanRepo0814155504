@@ -18,17 +18,17 @@ Defines a postal address.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Address">
-  \<xs:sequence>
-    \<xs:element name="CityName" nillable="true" type="xs:string" />
-    \<xs:element name="CountryCode" nillable="true" type="xs:string" />
-    \<xs:element name="PostalCode" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ProvinceCode" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ProvinceName" nillable="true" type="xs:string" />
-    \<xs:element name="StreetAddress" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="StreetAddress2" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Address">
+  <xs:sequence>
+    <xs:element name="CityName" nillable="true" type="xs:string" />
+    <xs:element name="CountryCode" nillable="true" type="xs:string" />
+    <xs:element name="PostalCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ProvinceCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ProvinceName" nillable="true" type="xs:string" />
+    <xs:element name="StreetAddress" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="StreetAddress2" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

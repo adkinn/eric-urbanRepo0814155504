@@ -18,13 +18,13 @@ Defines the name of a user.
 ## Syntax
 
 ```xml
-\<xs:complexType name="PersonName">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="FirstName" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="LastName" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="MiddleInitial" nillable="true" type="xsd:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="PersonName">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="FirstName" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="LastName" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="MiddleInitial" nillable="true" type="xsd:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

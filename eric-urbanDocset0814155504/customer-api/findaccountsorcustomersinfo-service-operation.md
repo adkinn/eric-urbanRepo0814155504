@@ -15,9 +15,7 @@ manager: "ehansen"
 # FindAccountsOrCustomersInfo Service Operation
 Gets a list of the accounts and customers that match the specified filter criteria.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>FindAccountsOrCustomersInfoRequest Message
 
@@ -40,23 +38,23 @@ The *FindAccountsOrCustomersInfoRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">FindAccountsOrCustomersInfo</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <FindAccountsOrCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<Filter i:nil="false"></Filter>
+      <Filter i:nil="false"></Filter>
       <TopN></TopN>
-      \<ApplicationScope i:nil="false"></ApplicationScope>
+      <ApplicationScope i:nil="false"></ApplicationScope>
     </FindAccountsOrCustomersInfoRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>FindAccountsOrCustomersInfoResponse Message
@@ -73,26 +71,26 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<AccountInfoWithCustomerData xmlns:e6="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e6:AccountInfoWithCustomerData>
-          \<e6:CustomerId p5:nil="false">\</e6:CustomerId>
-          \<e6:CustomerName p5:nil="false">\</e6:CustomerName>
-          \<e6:AccountId>\</e6:AccountId>
-          \<e6:AccountName p5:nil="false">\</e6:AccountName>
-          \<e6:AccountNumber p5:nil="false">\</e6:AccountNumber>
-          \<e6:AccountLifeCycleStatus>\</e6:AccountLifeCycleStatus>
-          \<e6:PauseReason p5:nil="false">\</e6:PauseReason>
-        \</e6:AccountInfoWithCustomerData>
+      <AccountInfoWithCustomerData xmlns:e6="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e6:AccountInfoWithCustomerData>
+          <e6:CustomerId p5:nil="false"></e6:CustomerId>
+          <e6:CustomerName p5:nil="false"></e6:CustomerName>
+          <e6:AccountId></e6:AccountId>
+          <e6:AccountName p5:nil="false"></e6:AccountName>
+          <e6:AccountNumber p5:nil="false"></e6:AccountNumber>
+          <e6:AccountLifeCycleStatus></e6:AccountLifeCycleStatus>
+          <e6:PauseReason p5:nil="false"></e6:PauseReason>
+        </e6:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

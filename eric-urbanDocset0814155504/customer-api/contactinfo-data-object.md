@@ -18,21 +18,21 @@ Defines the contact information for a user.
 ## Syntax
 
 ```xml
-\<xs:complexType name="ContactInfo">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Address" nillable="true" type="tns:string" />
-    \<xs:element minOccurs="0" name="ContactByPhone" nillable="true" type="xsd:boolean" />
-    \<xs:element minOccurs="0" name="ContactByPostalMail" nillable="true" type=" xsd:boolean " />
-    \<xs:element minOccurs="0" name="Email" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="EmailFormat" nillable="true" type="tns:EmailFormat" />
-    \<xs:element minOccurs="0" name="Fax" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="HomePhone" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="Mobile" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Phone1" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Phone2" nillable="true" type="xsd:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="ContactInfo">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Address" nillable="true" type="tns:string" />
+    <xs:element minOccurs="0" name="ContactByPhone" nillable="true" type="xsd:boolean" />
+    <xs:element minOccurs="0" name="ContactByPostalMail" nillable="true" type=" xsd:boolean " />
+    <xs:element minOccurs="0" name="Email" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="EmailFormat" nillable="true" type="tns:EmailFormat" />
+    <xs:element minOccurs="0" name="Fax" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="HomePhone" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="Mobile" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Phone1" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Phone2" nillable="true" type="xsd:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

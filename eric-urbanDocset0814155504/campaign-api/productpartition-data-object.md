@@ -22,17 +22,17 @@ The *ProductPartition* criterion can be included within [BiddableAdGroupCriterio
 ## Syntax
 
 ```xml
-\<xs:complexType name="ProductPartition">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element name="Condition" nillable="true" type="tns:ProductCondition"/>
-        \<xs:element name="ParentCriterionId" nillable="true" type="xs:long"/>
-        \<xs:element name="PartitionType" type="tns:ProductPartitionType"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ProductPartition">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element name="Condition" nillable="true" type="tns:ProductCondition"/>
+        <xs:element name="ParentCriterionId" nillable="true" type="xs:long"/>
+        <xs:element name="PartitionType" type="tns:ProductPartitionType"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

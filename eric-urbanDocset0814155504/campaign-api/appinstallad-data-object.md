@@ -23,18 +23,18 @@ Defines an app install ad. Create an app install ad if your intention is to driv
 ## Syntax
 
 ```xml
-\<xs:complexType name="AppInstallAd">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Ad">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="AppPlatform" nillable="true" type="xs:string"/>
-        \<xs:element minOccurs="0" name="AppStoreId" nillable="true" type="xs:string"/>
-        \<xs:element name="Text" nillable="true" type="xs:string"/>
-        \<xs:element name="Title" nillable="true" type="xs:string"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="AppInstallAd">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Ad">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AppPlatform" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="AppStoreId" nillable="true" type="xs:string"/>
+        <xs:element name="Text" nillable="true" type="xs:string"/>
+        <xs:element name="Title" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

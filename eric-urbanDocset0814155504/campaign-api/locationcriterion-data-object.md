@@ -34,18 +34,18 @@ Also note that you must consider the location, negative location, and radius cri
 ## Syntax
 
 ```xml
-\<xs:complexType name="LocationCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element name="DisplayName" type="xs:string"  minOccurs="0" nillable="true"/>
-        \<xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q74:ArrayOflong"/>
-        \<xs:element name="LocationId" type="xs:long"  minOccurs="0" nillable="true"/>
-        \<xs:element name="LocationType" type="xs:string"  minOccurs="0" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="LocationCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element name="DisplayName" type="xs:string"  minOccurs="0" nillable="true"/>
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q74:ArrayOflong"/>
+        <xs:element name="LocationId" type="xs:long"  minOccurs="0" nillable="true"/>
+        <xs:element name="LocationType" type="xs:string"  minOccurs="0" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

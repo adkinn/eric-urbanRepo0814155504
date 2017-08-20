@@ -25,19 +25,19 @@ You can request conversions, assists, revenue, and revenue per conversion for yo
 ## Syntax
 
 ```xml
-\<xs:complexType name="ConversionPerformanceReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
-        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfConversionPerformanceReportColumn" />
-        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ConversionPerformanceReportFilter" />
-        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ConversionPerformanceReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfConversionPerformanceReportColumn" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ConversionPerformanceReportFilter" />
+        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -17,18 +17,18 @@ Defines price units for price ad extensions.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="PriceUnit">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Unknown"/>
-    \<xs:enumeration value="PerDay"/>
-    \<xs:enumeration value="PerHour"/>
-    \<xs:enumeration value="PerMonth"/>
-    \<xs:enumeration value="PerWeek"/>
-    \<xs:enumeration value="PerYear"/>
-    \<xs:enumeration value="PerNight"/>
-    \<xs:enumeration value="None"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="PriceUnit">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unknown"/>
+    <xs:enumeration value="PerDay"/>
+    <xs:enumeration value="PerHour"/>
+    <xs:enumeration value="PerMonth"/>
+    <xs:enumeration value="PerWeek"/>
+    <xs:enumeration value="PerYear"/>
+    <xs:enumeration value="PerNight"/>
+    <xs:enumeration value="None"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

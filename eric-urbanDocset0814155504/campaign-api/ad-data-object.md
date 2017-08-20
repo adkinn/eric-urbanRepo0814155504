@@ -25,22 +25,22 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 ## Syntax
 
 ```xml
-\<xs:complexType name="Ad">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdFormatPreference" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdEditorialStatus" />
-    \<xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="FinalAppUrls" nillable="true" type="q1:ArrayOfAppUrl"/>
-    \<xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q2:ArrayOfstring"/>
-    \<xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q3:ArrayOfstring"/>
-    \<xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q4:ArrayOfKeyValuePairOfstringstring"/>
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdStatus" />
-    \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="tns:AdType" />
-    \<xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q5:CustomParameters"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Ad">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdFormatPreference" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdEditorialStatus" />
+    <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="FinalAppUrls" nillable="true" type="q1:ArrayOfAppUrl"/>
+    <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q2:ArrayOfstring"/>
+    <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q3:ArrayOfstring"/>
+    <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q4:ArrayOfKeyValuePairOfstringstring"/>
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdStatus" />
+    <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="Type" nillable="true" type="tns:AdType" />
+    <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q5:CustomParameters"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -66,15 +66,15 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the *Ad* node as shown in the following example, to specify whether the ad is an expanded text ad or another type of ad.
 
 ```xml
-\<Ads xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  \<Ad i:type="ExpandedTextAd">
-    \<DevicePreference i:nil="true" />
-    \<EditorialStatus i:nil="true" />
-    \<ForwardCompatibilityMap i:nil="true" />
-    \<Id i:nil="true" />
-    \<Status i:nil="true" />
-    \<FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      \<a:string>http://www.contoso.com/womenshoesale\</a:string>
+<Ads xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Ad i:type="ExpandedTextAd">
+    <DevicePreference i:nil="true" />
+    <EditorialStatus i:nil="true" />
+    <ForwardCompatibilityMap i:nil="true" />
+    <Id i:nil="true" />
+    <Status i:nil="true" />
+    <FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <a:string>http://www.contoso.com/womenshoesale</a:string>
     </FinalUrls>
     <Path1>seattle</Path1>
     <Path2>shoe sale</Path2>

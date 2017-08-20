@@ -24,15 +24,15 @@ After the [OfflineConversionGoal](../campaign-api/offlineconversiongoal-data-obj
 ## Syntax
 
 ```xml
-\<xs:complexType name="OfflineConversion">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="ConversionCurrencyCode" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="ConversionName" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="ConversionTime" nillable="true" type="xs:dateTime"/>
-    \<xs:element minOccurs="0" name="ConversionValue" nillable="true" type="xs:double"/>
-    \<xs:element minOccurs="0" name="MicrosoftClickId" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="OfflineConversion">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="ConversionCurrencyCode" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="ConversionName" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="ConversionTime" nillable="true" type="xs:dateTime"/>
+    <xs:element minOccurs="0" name="ConversionValue" nillable="true" type="xs:double"/>
+    <xs:element minOccurs="0" name="MicrosoftClickId" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

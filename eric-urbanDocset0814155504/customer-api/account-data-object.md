@@ -20,31 +20,31 @@ Do not try to instantiate an *Account*. You can create the [AdvertiserAccount](.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Account">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AccountType" type="tns:AccountType" />
-    \<xs:element minOccurs="0" name="BillToCustomerId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="CountryCode" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="CurrencyType" nillable="true" type="tns:CurrencyType" />
-    \<xs:element minOccurs="0" name="AccountFinancialStatus" nillable="true" type="tns:AccountFinancialStatus" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="Language" nillable="true" type="tns:LanguageType" />
-    \<xs:element minOccurs="0" name="ForwardCompatibilityMap" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
-    \<xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Number" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="ParentCustomerId" type="xsd:long" />
-    \<xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
-    \<xs:element minOccurs="0" name="PaymentMethodId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="PaymentMethodType" nillable="true" type="tns:PaymentMethodType" />
-    \<xs:element minOccurs="0" name="PrimaryUserId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="AccountLifeCycleStatus" nillable="true" type="tns:AccountLifeCycleStatus" />
-    \<xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
-    \<xs:element minOccurs="0" name="TimeZone" nillable="true" type="tns:TimeZoneType" />
-    \<xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Account">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AccountType" type="tns:AccountType" />
+    <xs:element minOccurs="0" name="BillToCustomerId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="CurrencyType" nillable="true" type="tns:CurrencyType" />
+    <xs:element minOccurs="0" name="AccountFinancialStatus" nillable="true" type="tns:AccountFinancialStatus" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="Language" nillable="true" type="tns:LanguageType" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
+    <xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
+    <xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Number" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="ParentCustomerId" type="xsd:long" />
+    <xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
+    <xs:element minOccurs="0" name="PaymentMethodId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="PaymentMethodType" nillable="true" type="tns:PaymentMethodType" />
+    <xs:element minOccurs="0" name="PrimaryUserId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="AccountLifeCycleStatus" nillable="true" type="tns:AccountLifeCycleStatus" />
+    <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
+    <xs:element minOccurs="0" name="TimeZone" nillable="true" type="tns:TimeZoneType" />
+    <xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

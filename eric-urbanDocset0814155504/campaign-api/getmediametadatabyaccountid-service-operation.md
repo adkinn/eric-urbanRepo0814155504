@@ -18,9 +18,7 @@ Gets the media meta data of the specified entity type from an account’s media 
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-api/getmediabyids-service-operation.md).
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetMediaMetaDataByAccountIdRequest Message
 
@@ -44,23 +42,23 @@ The *GetMediaMetaDataByAccountIdRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetMediaMetaDataByAccountId</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetMediaMetaDataByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <MediaEnabledEntities></MediaEnabledEntities>
     </GetMediaMetaDataByAccountIdRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetMediaMetaDataByAccountIdResponse Message
@@ -77,32 +75,32 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetMediaMetaDataByAccountIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<MediaMetaData p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      <MediaMetaData p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <MediaMetaData>
           <Id></Id>
-          \<MediaType p4:nil="false"></MediaType>
-          \<Representations p4:nil="false">
-            \<MediaRepresentation p4:type="-- specify derived type here with the appropriate prefix --">
-              \<Name p4:nil="false"></Name>
-              \<Type p4:nil="false"></Type>
-              \<Url p4:nil="false"></Url>
-              \<!--Keep these fields if you set the i:type attribute to ImageMediaRepresentation-->
+          <MediaType p4:nil="false"></MediaType>
+          <Representations p4:nil="false">
+            <MediaRepresentation p4:type="-- specify derived type here with the appropriate prefix --">
+              <Name p4:nil="false"></Name>
+              <Type p4:nil="false"></Type>
+              <Url p4:nil="false"></Url>
+              <!--Keep these fields if you set the i:type attribute to ImageMediaRepresentation-->
               <Height></Height>
               <Width></Width>
             </MediaRepresentation>
           </Representations>
-          \<Type p4:nil="false"></Type>
+          <Type p4:nil="false"></Type>
         </MediaMetaData>
       </MediaMetaData>
     </GetMediaMetaDataByAccountIdResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

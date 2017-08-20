@@ -18,12 +18,12 @@ Defines an object that associates an ad extension to a supported entity, for exa
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdExtensionIdToEntityIdAssociation">
-  \<xs:sequence>
-    \<xs:element name="AdExtensionId" type="xs:long" />
-    \<xs:element name="EntityId" type="xs:long" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdExtensionIdToEntityIdAssociation">
+  <xs:sequence>
+    <xs:element name="AdExtensionId" type="xs:long" />
+    <xs:element name="EntityId" type="xs:long" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -20,14 +20,14 @@ Labels let you organize campaigns, ad groups, ads, and keywords into groups base
 ## Syntax
 
 ```xml
-\<xs:complexType name="Label">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="ColorCode" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="Description" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Label">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="ColorCode" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
+    <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

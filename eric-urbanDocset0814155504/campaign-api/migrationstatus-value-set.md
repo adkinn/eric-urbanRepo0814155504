@@ -18,14 +18,14 @@ Defines the possible migration status values.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="MigrationStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="NotInPilot" />
-    \<xs:enumeration value="NotStarted" />
-    \<xs:enumeration value="InProgress" />
-    \<xs:enumeration value="Completed" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="MigrationStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="NotInPilot" />
+    <xs:enumeration value="NotStarted" />
+    <xs:enumeration value="InProgress" />
+    <xs:enumeration value="Completed" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

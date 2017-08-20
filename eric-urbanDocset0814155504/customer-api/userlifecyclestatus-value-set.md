@@ -18,14 +18,14 @@ Defines the possible status values of a user.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="UserStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Pending" />
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Inactive" />
-    \<xs:enumeration value="Deleted" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="UserStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Pending" />
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Inactive" />
+    <xs:enumeration value="Deleted" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

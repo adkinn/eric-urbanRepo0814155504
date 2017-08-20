@@ -26,11 +26,11 @@ For a list of criterion bids that you can use with [BiddableAdGroupCriterion](..
 ## Syntax
 
 ```xml
-\<xs:complexType name="CriterionBid">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CriterionBid">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -45,7 +45,7 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<CriterionBid>` node (as shown in the following example) to specify the type of criterion.
 
 ```
-\<CriterionBid i:type="BidMultiplier" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<CriterionBid i:type="BidMultiplier" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
      . . .
 </CriterionBid>
 ```

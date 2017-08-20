@@ -18,13 +18,13 @@ Defines an object that contains a set of negative keywords that are only associa
 ## Syntax
 
 ```xml
-\<xs:complexType name="EntityNegativeKeyword">
-  \<xs:sequence>
-    \<xs:element name="EntityId" type="xs:long" />
-    \<xs:element name="EntityType" nillable="true" type="xs:string" />
-    \<xs:element name="NegativeKeywords" nillable="true" type="tns:ArrayOfNegativeKeyword" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="EntityNegativeKeyword">
+  <xs:sequence>
+    <xs:element name="EntityId" type="xs:long" />
+    <xs:element name="EntityType" nillable="true" type="xs:string" />
+    <xs:element name="NegativeKeywords" nillable="true" type="tns:ArrayOfNegativeKeyword" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

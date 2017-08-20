@@ -18,14 +18,14 @@ Defines the possible status values of an account's tax identifier.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="TaxIdStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Valid" />
-    \<xs:enumeration value="Invalid" />
-    \<xs:enumeration value="Pending" />
-    \<xs:enumeration value="Inactive" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="TaxIdStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Valid" />
+    <xs:enumeration value="Invalid" />
+    <xs:enumeration value="Pending" />
+    <xs:enumeration value="Inactive" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

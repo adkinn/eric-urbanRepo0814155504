@@ -18,28 +18,28 @@ Defines the possible types of ad group criterions.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdGroupCriterionType">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Age" />
-        \<xs:enumeration value="DayTime" />
-        \<xs:enumeration value="Device" />
-        \<xs:enumeration value="Gender" />
-        \<xs:enumeration value="Location" />
-        \<xs:enumeration value="LocationIntent" />
-        \<xs:enumeration value="Radius" />
-        \<xs:enumeration value="Targets" />
-        \<xs:enumeration value="ProductPartition" />
-        \<xs:enumeration value="Webpage" />
-        \<xs:enumeration value="Audience" />
-        \<xs:enumeration value="CustomAudience" />
-        \<xs:enumeration value="InMarketAudience" />
-        \<xs:enumeration value="RemarketingList" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AdGroupCriterionType">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Age" />
+        <xs:enumeration value="DayTime" />
+        <xs:enumeration value="Device" />
+        <xs:enumeration value="Gender" />
+        <xs:enumeration value="Location" />
+        <xs:enumeration value="LocationIntent" />
+        <xs:enumeration value="Radius" />
+        <xs:enumeration value="Targets" />
+        <xs:enumeration value="ProductPartition" />
+        <xs:enumeration value="Webpage" />
+        <xs:enumeration value="Audience" />
+        <xs:enumeration value="CustomAudience" />
+        <xs:enumeration value="InMarketAudience" />
+        <xs:enumeration value="RemarketingList" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

@@ -18,15 +18,15 @@ Defines a list of optional [AdGroup](../campaign-api/adgroup-data-object.md) pro
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdGroupAdditionalField">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="InheritedBidStrategyType" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AdGroupAdditionalField">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="InheritedBidStrategyType" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

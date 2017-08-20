@@ -21,21 +21,21 @@ Defines an object that contains estimates of clicks, average cost per click (CPC
 ## Syntax
 
 ```xml
-\<xs:complexType name="EstimatedBidAndTraffic">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="MatchType" type="tns:MatchType" />
-    \<xs:element minOccurs="0" name="MinClicksPerWeek" type="xs:double" />
-    \<xs:element minOccurs="0" name="MaxClicksPerWeek" type="xs:double" />
-    \<xs:element minOccurs="0" name="AverageCPC" type="xs:double" />
-    \<xs:element minOccurs="0" name="MinImpressionsPerWeek" type="xs:long" />
-    \<xs:element minOccurs="0" name="MaxImpressionsPerWeek" type="xs:long" />
-    \<xs:element minOccurs="0" name="CTR" type="xs:double" />
-    \<xs:element minOccurs="0" name="MinTotalCostPerWeek" type="xs:double" />
-    \<xs:element minOccurs="0" name="MaxTotalCostPerWeek" type="xs:double" />
-    \<xs:element minOccurs="0" name="Currency" type="tns:Currency" />
-    \<xs:element minOccurs="0" name="EstimatedMinBid" type="xs:double" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="EstimatedBidAndTraffic">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="MatchType" type="tns:MatchType" />
+    <xs:element minOccurs="0" name="MinClicksPerWeek" type="xs:double" />
+    <xs:element minOccurs="0" name="MaxClicksPerWeek" type="xs:double" />
+    <xs:element minOccurs="0" name="AverageCPC" type="xs:double" />
+    <xs:element minOccurs="0" name="MinImpressionsPerWeek" type="xs:long" />
+    <xs:element minOccurs="0" name="MaxImpressionsPerWeek" type="xs:long" />
+    <xs:element minOccurs="0" name="CTR" type="xs:double" />
+    <xs:element minOccurs="0" name="MinTotalCostPerWeek" type="xs:double" />
+    <xs:element minOccurs="0" name="MaxTotalCostPerWeek" type="xs:double" />
+    <xs:element minOccurs="0" name="Currency" type="tns:Currency" />
+    <xs:element minOccurs="0" name="EstimatedMinBid" type="xs:double" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

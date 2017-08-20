@@ -18,14 +18,14 @@ Defines an object that you can use to determine the component of an ad or keywor
 ## Syntax
 
 ```xml
-\<xs:complexType name="EditorialReason">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Location" type="q10:AdComponent" xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts" />
-    \<xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q39:ArrayOfstring" xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    \<xs:element minOccurs="0" name="ReasonCode" type="xs:int" />
-    \<xs:element minOccurs="0" name="Term" nillable="true type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="EditorialReason">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Location" type="q10:AdComponent" xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts" />
+    <xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q39:ArrayOfstring" xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="ReasonCode" type="xs:int" />
+    <xs:element minOccurs="0" name="Term" nillable="true type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,19 +18,19 @@ Defines an error object that identifies the entity with the batch of entities th
 ## Syntax
 
 ```xml
-\<xs:complexType name="EditorialError">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:BatchError">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Appealable" nillable="true" type="xs:boolean" />
-        \<xs:element minOccurs="0" name="DisapprovedText" nillable="true" type="xs:string" />
-        \<xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
-        \<xs:element minOccurs="0" name="PublisherCountry" nillable="true" type="xs:string" />
-        \<xs:element minOccurs="0" name="ReasonCode" nillable="true" type="xs:int" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="EditorialError">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:BatchError">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Appealable" nillable="true" type="xs:boolean" />
+        <xs:element minOccurs="0" name="DisapprovedText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PublisherCountry" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReasonCode" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

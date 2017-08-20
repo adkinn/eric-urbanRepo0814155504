@@ -17,15 +17,15 @@ Defines price qualifiers for price ad extensions.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="PriceQualifier">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Unknown" />
-    \<xs:enumeration value="From" />
-    \<xs:enumeration value="UpTo" />
-    \<xs:enumeration value="None" />
-    \<xs:enumeration value="Average" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="PriceQualifier">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unknown" />
+    <xs:enumeration value="From" />
+    <xs:enumeration value="UpTo" />
+    <xs:enumeration value="None" />
+    <xs:enumeration value="Average" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

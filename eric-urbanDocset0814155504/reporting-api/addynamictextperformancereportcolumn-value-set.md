@@ -19,49 +19,49 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdDynamicTextPerformanceReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName"/>
-    \<xs:enumeration value="AccountId"/>
-    \<xs:enumeration value="AccountNumber"/>
-    \<xs:enumeration value="TimePeriod"/>
-    \<xs:enumeration value="AdGroupName"/>
-    \<xs:enumeration value="AdGroupId"/>
-    \<xs:enumeration value="Keyword"/>
-    \<xs:enumeration value="AdId"/>
-    \<xs:enumeration value="AdTitle"/>
-    \<xs:enumeration value="AdType"/>
-    \<xs:enumeration value="DestinationUrl"/>
-    \<xs:enumeration value="Param1"/>
-    \<xs:enumeration value="Param2"/>
-    \<xs:enumeration value="Param3"/>
-    \<xs:enumeration value="CurrencyCode"/>
-    \<xs:enumeration value="AdDistribution"/>
-    \<xs:enumeration value="Impressions"/>
-    \<xs:enumeration value="Clicks"/>
-    \<xs:enumeration value="Ctr"/>
-    \<xs:enumeration value="AverageCpc"/>
-    \<xs:enumeration value="Spend"/>
-    \<xs:enumeration value="AveragePosition"/>
-    \<xs:enumeration value="Conversions"/>
-    \<xs:enumeration value="ConversionRate"/>
-    \<xs:enumeration value="CostPerConversion"/>
-    \<xs:enumeration value="DeviceType"/>
-    \<xs:enumeration value="Language"/>
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="AdGroupStatus"/>
-    \<xs:enumeration value="AdStatus"/>
-    \<xs:enumeration value="KeywordStatus"/>
-    \<xs:enumeration value="TitlePart1"/>
-    \<xs:enumeration value="TitlePart2"/>
-    \<xs:enumeration value="Path1"/>
-    \<xs:enumeration value="Path2"/>
-    \<xs:enumeration value="FinalURL"/>
-    \<xs:enumeration value="FinalMobileURL"/>
-    \<xs:enumeration value="FinalAppURL"/>
-    \<xs:enumeration value="AdDescription"/>   
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdDynamicTextPerformanceReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName"/>
+    <xs:enumeration value="AccountId"/>
+    <xs:enumeration value="AccountNumber"/>
+    <xs:enumeration value="TimePeriod"/>
+    <xs:enumeration value="AdGroupName"/>
+    <xs:enumeration value="AdGroupId"/>
+    <xs:enumeration value="Keyword"/>
+    <xs:enumeration value="AdId"/>
+    <xs:enumeration value="AdTitle"/>
+    <xs:enumeration value="AdType"/>
+    <xs:enumeration value="DestinationUrl"/>
+    <xs:enumeration value="Param1"/>
+    <xs:enumeration value="Param2"/>
+    <xs:enumeration value="Param3"/>
+    <xs:enumeration value="CurrencyCode"/>
+    <xs:enumeration value="AdDistribution"/>
+    <xs:enumeration value="Impressions"/>
+    <xs:enumeration value="Clicks"/>
+    <xs:enumeration value="Ctr"/>
+    <xs:enumeration value="AverageCpc"/>
+    <xs:enumeration value="Spend"/>
+    <xs:enumeration value="AveragePosition"/>
+    <xs:enumeration value="Conversions"/>
+    <xs:enumeration value="ConversionRate"/>
+    <xs:enumeration value="CostPerConversion"/>
+    <xs:enumeration value="DeviceType"/>
+    <xs:enumeration value="Language"/>
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="AdGroupStatus"/>
+    <xs:enumeration value="AdStatus"/>
+    <xs:enumeration value="KeywordStatus"/>
+    <xs:enumeration value="TitlePart1"/>
+    <xs:enumeration value="TitlePart2"/>
+    <xs:enumeration value="Path1"/>
+    <xs:enumeration value="Path2"/>
+    <xs:enumeration value="FinalURL"/>
+    <xs:enumeration value="FinalMobileURL"/>
+    <xs:enumeration value="FinalAppURL"/>
+    <xs:enumeration value="AdDescription"/>   
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

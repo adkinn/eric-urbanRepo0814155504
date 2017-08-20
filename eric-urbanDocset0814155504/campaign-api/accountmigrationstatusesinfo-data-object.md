@@ -18,12 +18,12 @@ Defines an object that contains migration status for an account.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AccountMigrationStatusesInfo">
-  \<xs:sequence>
-    \<xs:element name="AccountId" type="xs:long"/>
-    \<xs:element minOccurs="0" name="MigrationStatusInfo" nillable="true" type="tns:ArrayOfMigrationStatusInfo"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AccountMigrationStatusesInfo">
+  <xs:sequence>
+    <xs:element name="AccountId" type="xs:long"/>
+    <xs:element minOccurs="0" name="MigrationStatusInfo" nillable="true" type="tns:ArrayOfMigrationStatusInfo"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

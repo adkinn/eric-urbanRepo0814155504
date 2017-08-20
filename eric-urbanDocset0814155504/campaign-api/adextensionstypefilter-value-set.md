@@ -18,23 +18,23 @@ Defines the possible ad extension types.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdExtensionsTypeFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="SiteLinksAdExtension" />
-        \<xs:enumeration value="LocationAdExtension" />
-        \<xs:enumeration value="CallAdExtension" />
-        \<xs:enumeration value="ImageAdExtension" />
-        \<xs:enumeration value="AppAdExtension" />
-        \<xs:enumeration value="ReviewAdExtension" />
-        \<xs:enumeration value="CalloutAdExtension" />
-        \<xs:enumeration value="Sitelink2AdExtension" />
-        \<xs:enumeration value="StructuredSnippetAdExtension" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AdExtensionsTypeFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="SiteLinksAdExtension" />
+        <xs:enumeration value="LocationAdExtension" />
+        <xs:enumeration value="CallAdExtension" />
+        <xs:enumeration value="ImageAdExtension" />
+        <xs:enumeration value="AppAdExtension" />
+        <xs:enumeration value="ReviewAdExtension" />
+        <xs:enumeration value="CalloutAdExtension" />
+        <xs:enumeration value="Sitelink2AdExtension" />
+        <xs:enumeration value="StructuredSnippetAdExtension" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

@@ -18,14 +18,14 @@ Defines the editorial review status values of an ad.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdEditorialStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Disapproved" />
-    \<xs:enumeration value="Inactive" />
-    \<xs:enumeration value="ActiveLimited" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdEditorialStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Disapproved" />
+    <xs:enumeration value="Inactive" />
+    <xs:enumeration value="ActiveLimited" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

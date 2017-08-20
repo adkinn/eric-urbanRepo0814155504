@@ -18,17 +18,17 @@ Defines the possible campaign types.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="CampaignType">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="SearchAndContent" />
-        \<xs:enumeration value="Shopping" />
-        \<xs:enumeration value="DynamicSearchAds" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="CampaignType">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="SearchAndContent" />
+        <xs:enumeration value="Shopping" />
+        <xs:enumeration value="DynamicSearchAds" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

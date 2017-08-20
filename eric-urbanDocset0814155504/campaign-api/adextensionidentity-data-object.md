@@ -18,12 +18,12 @@ Defines an object that identifies an ad extension revision.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdExtensionIdentity">
-  \<xs:sequence>
-    \<xs:element name="Id" type="xs:long" />
-    \<xs:element name="Version" type="xs:int" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdExtensionIdentity">
+  <xs:sequence>
+    <xs:element name="Id" type="xs:long" />
+    <xs:element name="Version" type="xs:int" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

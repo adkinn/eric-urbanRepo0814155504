@@ -18,15 +18,15 @@ Defines a fault object that operations return when web service-specific errors o
 ## Syntax
 
 ```xml
-\<xs:complexType name="ApiFault">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="q1:ApplicationFault" xmlns:q1="https://adapi.microsoft.com">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ApiFault">
+  <xs:complexContent mixed="false">
+    <xs:extension base="q1:ApplicationFault" xmlns:q1="https://adapi.microsoft.com">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

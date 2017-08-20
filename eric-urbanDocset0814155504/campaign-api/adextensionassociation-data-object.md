@@ -18,14 +18,14 @@ Defines the relationship and editorial status of an ad extension with an account
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdExtensionAssociation">
-  \<xs:sequence>
-    \<xs:element name="AdExtension" nillable="true" type="tns:AdExtension" />
-    \<xs:element name="AssociationType" nillable="true" type="tns:AssociationType" />
-    \<xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdExtensionEditorialStatus" />
-    \<xs:element name="EntityId" type="xs:long" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdExtensionAssociation">
+  <xs:sequence>
+    <xs:element name="AdExtension" nillable="true" type="tns:AdExtension" />
+    <xs:element name="AssociationType" nillable="true" type="tns:AssociationType" />
+    <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdExtensionEditorialStatus" />
+    <xs:element name="EntityId" type="xs:long" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

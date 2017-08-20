@@ -18,23 +18,23 @@ Defines the operators that can be applied to remarketing list rule item string v
 ## Syntax
 
 ```xml
-\<xs:simpleType name="StringOperator">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="None"/>
-        \<xs:enumeration value="Equals"/>
-        \<xs:enumeration value="Contains"/>
-        \<xs:enumeration value="BeginsWith"/>
-        \<xs:enumeration value="EndsWith"/>
-        \<xs:enumeration value="NotEquals"/>
-        \<xs:enumeration value="DoesNotContain"/>
-        \<xs:enumeration value="DoesNotBeginWith"/>
-        \<xs:enumeration value="DoesNotEndWith"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="StringOperator">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None"/>
+        <xs:enumeration value="Equals"/>
+        <xs:enumeration value="Contains"/>
+        <xs:enumeration value="BeginsWith"/>
+        <xs:enumeration value="EndsWith"/>
+        <xs:enumeration value="NotEquals"/>
+        <xs:enumeration value="DoesNotContain"/>
+        <xs:enumeration value="DoesNotBeginWith"/>
+        <xs:enumeration value="DoesNotEndWith"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

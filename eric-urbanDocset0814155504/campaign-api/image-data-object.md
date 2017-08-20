@@ -20,15 +20,15 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
 ## Syntax
 
 ```xml
-\<xs:complexType name="Image">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Media">
-      \<xs:sequence>
-        \<xs:element name="Data" nillable="true" type="xs:string" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="Image">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Media">
+      <xs:sequence>
+        <xs:element name="Data" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

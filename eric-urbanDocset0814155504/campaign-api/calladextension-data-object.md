@@ -20,19 +20,19 @@ You can associate a call ad extension with one or more campaigns; however, a cam
 ## Syntax
 
 ```xml
-\<xs:complexType name="CallAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element name="CountryCode" nillable="true" type="xs:string" />
-        \<xs:element name="IsCallOnly" type="xs:boolean" />
-        \<xs:element minOccurs="0" name="IsCallTrackingEnabled" nillable="true" type="xs:boolean" />
-        \<xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
-        \<xs:element minOccurs="0" name="RequireTollFreeTrackingNumber" nillable="true" type="xs:boolean" /> 
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="CallAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element name="IsCallOnly" type="xs:boolean" />
+        <xs:element minOccurs="0" name="IsCallTrackingEnabled" nillable="true" type="xs:boolean" />
+        <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequireTollFreeTrackingNumber" nillable="true" type="xs:boolean" /> 
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

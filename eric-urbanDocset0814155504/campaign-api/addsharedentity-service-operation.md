@@ -15,9 +15,7 @@ manager: "ehansen"
 # AddSharedEntity Service Operation
 Adds a negative keyword list to the account's library. Items in the account's library can be associated with any campaign within the account.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddSharedEntityRequest Message
 
@@ -39,51 +37,51 @@ The *AddSharedEntityRequest* object defines the elements of the request’s body
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddSharedEntity</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<SharedEntity i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-        \<AssociationCount i:nil="false"></AssociationCount>
-        \<ForwardCompatibilityMap xmlns:e42="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          \<e42:KeyValuePairOfstringstring>
-            \<e42:key i:nil="false">\</e42:key>
-            \<e42:value i:nil="false">\</e42:value>
-          \</e42:KeyValuePairOfstringstring>
+      <SharedEntity i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+        <AssociationCount i:nil="false"></AssociationCount>
+        <ForwardCompatibilityMap xmlns:e42="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e42:KeyValuePairOfstringstring>
+            <e42:key i:nil="false"></e42:key>
+            <e42:value i:nil="false"></e42:value>
+          </e42:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        \<Id i:nil="false"></Id>
-        \<Name i:nil="false"></Name>
-        \<Type i:nil="false"></Type>
-        \<!--Keep these fields if you set the i:type attribute to SharedList-->
-        \<ItemCount i:nil="false"></ItemCount>
+        <Id i:nil="false"></Id>
+        <Name i:nil="false"></Name>
+        <Type i:nil="false"></Type>
+        <!--Keep these fields if you set the i:type attribute to SharedList-->
+        <ItemCount i:nil="false"></ItemCount>
       </SharedEntity>
-      \<ListItems i:nil="false">
-        \<SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
-          \<ForwardCompatibilityMap xmlns:e43="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            \<e43:KeyValuePairOfstringstring>
-              \<e43:key i:nil="false">\</e43:key>
-              \<e43:value i:nil="false">\</e43:value>
-            \</e43:KeyValuePairOfstringstring>
+      <ListItems i:nil="false">
+        <SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
+          <ForwardCompatibilityMap xmlns:e43="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e43:KeyValuePairOfstringstring>
+              <e43:key i:nil="false"></e43:key>
+              <e43:value i:nil="false"></e43:value>
+            </e43:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          \<Type i:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
-          \<Id i:nil="false"></Id>
+          <Type i:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
+          <Id i:nil="false"></Id>
           <MatchType></MatchType>
-          \<Text i:nil="false"></Text>
+          <Text i:nil="false"></Text>
         </SharedListItem>
       </ListItems>
     </AddSharedEntityRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>AddSharedEntityResponse Message
@@ -102,42 +100,42 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <AddSharedEntityResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<ListItemIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<a1:long>\</a1:long>
+      <ListItemIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:long></a1:long>
       </ListItemIds>
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e44="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e44:KeyValuePairOfstringstring>
-              \<e44:key p4:nil="false">\</e44:key>
-              \<e44:value p4:nil="false">\</e44:value>
-            \</e44:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e44="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e44:KeyValuePairOfstringstring>
+              <e44:key p4:nil="false"></e44:key>
+              <e44:value p4:nil="false"></e44:value>
+            </e44:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
       <SharedEntityId></SharedEntityId>
     </AddSharedEntityResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

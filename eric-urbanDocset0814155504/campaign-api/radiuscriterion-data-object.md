@@ -32,19 +32,19 @@ Also note that you must consider the location, negative location, and radius cri
 ## Syntax
 
 ```xml
-\<xs:complexType name="RadiusCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element name="LatitudeDegrees" type="xs:double" minOccurs="0" nillable="true"/>
-        \<xs:element name="LongitudeDegrees" type="xs:double" minOccurs="0" nillable="true"/>
-        \<xs:element name="Name" nillable="true" type="xs:string" minOccurs="0" nillable="true"/>
-        \<xs:element name="Radius" type="xs:double" minOccurs="0" nillable="true"/>
-        \<xs:element name="RadiusUnit" type="tns:DistanceUnit" minOccurs="0" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="RadiusCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element name="LatitudeDegrees" type="xs:double" minOccurs="0" nillable="true"/>
+        <xs:element name="LongitudeDegrees" type="xs:double" minOccurs="0" nillable="true"/>
+        <xs:element name="Name" nillable="true" type="xs:string" minOccurs="0" nillable="true"/>
+        <xs:element name="Radius" type="xs:double" minOccurs="0" nillable="true"/>
+        <xs:element name="RadiusUnit" type="tns:DistanceUnit" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

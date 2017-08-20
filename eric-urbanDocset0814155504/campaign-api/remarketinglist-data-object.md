@@ -20,16 +20,16 @@ Defines a remarketing list.
 ## Syntax
 
 ```xml
-\<xs:complexType name="RemarketingList">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Audience">
-      \<xs:sequence>
-        \<xs:element name="Rule" type="tns:RemarketingRule" minOccurs="0"/>
-        \<xs:element name="TagId" type="xs:long" minOccurs="0"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="RemarketingList">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Audience">
+      <xs:sequence>
+        <xs:element name="Rule" type="tns:RemarketingRule" minOccurs="0"/>
+        <xs:element name="TagId" type="xs:long" minOccurs="0"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

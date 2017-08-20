@@ -20,13 +20,13 @@ Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMedi
 ## Syntax
 
 ```xml
-\<xs:complexType name="MediaRepresentation">
-  \<xs:sequence>
-    \<xs:element type="xs:string" name="Name" minOccurs="0" nillable="true"/>
-    \<xs:element type="xs:string" name="Type" minOccurs="0" nillable="true"/>
-    \<xs:element type="xs:string" name="Url" minOccurs="0" nillable="true"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="MediaRepresentation">
+  <xs:sequence>
+    <xs:element type="xs:string" name="Name" minOccurs="0" nillable="true"/>
+    <xs:element type="xs:string" name="Type" minOccurs="0" nillable="true"/>
+    <xs:element type="xs:string" name="Url" minOccurs="0" nillable="true"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -17,20 +17,20 @@ Defines pricing information by currency and unit that you can use with price ad 
 ## Syntax
 
 ```xml
-\<xs:complexType name="PriceTableRow">
-  \<xs:sequence>
-    \<xs:element name="CurrencyCode" type="xs:string" minOccurs="0" nillable="true" />
-    \<xs:element name="Description" type="xs:string" minOccurs="0" nillable="true" />
-    \<xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q60:ArrayOfstring"/>
-    \<xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="FinalUrls" nillable="true" type="q61:ArrayOfstring"/>
-    \<xs:element name="Header" type="xs:string" minOccurs="0" nillable="true" />
-    \<xs:element name="Price" type="xs:double" minOccurs="0" nillable="true" />
-    \<xs:element name="PriceQualifier" type="tns:PriceQualifier" minOccurs="0" nillable="true" />
-    \<xs:element name="PriceUnit" type="tns:PriceUnit" minOccurs="0" nillable="true" />
-    \<xs:element minOccurs="0" name="TermsAndConditions" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="TermsAndConditionsUrl" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="PriceTableRow">
+  <xs:sequence>
+    <xs:element name="CurrencyCode" type="xs:string" minOccurs="0" nillable="true" />
+    <xs:element name="Description" type="xs:string" minOccurs="0" nillable="true" />
+    <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q60:ArrayOfstring"/>
+    <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="FinalUrls" nillable="true" type="q61:ArrayOfstring"/>
+    <xs:element name="Header" type="xs:string" minOccurs="0" nillable="true" />
+    <xs:element name="Price" type="xs:double" minOccurs="0" nillable="true" />
+    <xs:element name="PriceQualifier" type="tns:PriceQualifier" minOccurs="0" nillable="true" />
+    <xs:element name="PriceUnit" type="tns:PriceUnit" minOccurs="0" nillable="true" />
+    <xs:element minOccurs="0" name="TermsAndConditions" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="TermsAndConditionsUrl" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateInsertionOrder Service Operation
 Updates an insertion order within the specified account.
 
-||
-|-|
-|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
+[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
 
 ## <a name="request"></a>UpdateInsertionOrderRequest Message
 
@@ -38,38 +36,38 @@ The *UpdateInsertionOrderRequest* object defines the elements of the request’s
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">UpdateInsertionOrder</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <UpdateInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      \<InsertionOrder xmlns:e11="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        \<e11:AccountId>\</e11:AccountId>
-        \<e11:BalanceAmount i:nil="false">\</e11:BalanceAmount>
-        \<e11:BookingCountryCode i:nil="false">\</e11:BookingCountryCode>
-        \<e11:Comment i:nil="false">\</e11:Comment>
-        \<e11:EndDate>\</e11:EndDate>
-        \<e11:InsertionOrderId i:nil="false">\</e11:InsertionOrderId>
-        \<e11:LastModifiedByUserId i:nil="false">\</e11:LastModifiedByUserId>
-        \<e11:LastModifiedTime i:nil="false">\</e11:LastModifiedTime>
-        \<e11:NotificationThreshold i:nil="false">\</e11:NotificationThreshold>
-        \<e11:ReferenceId i:nil="false">\</e11:ReferenceId>
-        \<e11:SpendCapAmount>\</e11:SpendCapAmount>
-        \<e11:StartDate>\</e11:StartDate>
-        \<e11:Name i:nil="false">\</e11:Name>
-        \<e11:Status i:nil="false">\</e11:Status>
-        \<e11:PurchaseOrder i:nil="false">\</e11:PurchaseOrder>
-        \<e11:ChangePendingReview i:nil="false">\</e11:ChangePendingReview>
+      <InsertionOrder xmlns:e11="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e11:AccountId></e11:AccountId>
+        <e11:BalanceAmount i:nil="false"></e11:BalanceAmount>
+        <e11:BookingCountryCode i:nil="false"></e11:BookingCountryCode>
+        <e11:Comment i:nil="false"></e11:Comment>
+        <e11:EndDate></e11:EndDate>
+        <e11:InsertionOrderId i:nil="false"></e11:InsertionOrderId>
+        <e11:LastModifiedByUserId i:nil="false"></e11:LastModifiedByUserId>
+        <e11:LastModifiedTime i:nil="false"></e11:LastModifiedTime>
+        <e11:NotificationThreshold i:nil="false"></e11:NotificationThreshold>
+        <e11:ReferenceId i:nil="false"></e11:ReferenceId>
+        <e11:SpendCapAmount></e11:SpendCapAmount>
+        <e11:StartDate></e11:StartDate>
+        <e11:Name i:nil="false"></e11:Name>
+        <e11:Status i:nil="false"></e11:Status>
+        <e11:PurchaseOrder i:nil="false"></e11:PurchaseOrder>
+        <e11:ChangePendingReview i:nil="false"></e11:ChangePendingReview>
       </InsertionOrder>
     </UpdateInsertionOrderRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateInsertionOrderResponse Message
@@ -86,16 +84,16 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <UpdateInsertionOrderResponse xmlns="https://bingads.microsoft.com/Billing/v11">
       <LastModifiedTime></LastModifiedTime>
     </UpdateInsertionOrderResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

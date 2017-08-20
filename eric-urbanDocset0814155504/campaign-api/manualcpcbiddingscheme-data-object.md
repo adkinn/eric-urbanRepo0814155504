@@ -23,13 +23,13 @@ This is the default bid strategy type for your campaigns. Use the manual CPC bid
 ## Syntax
 
 ```xml
-\<xs:complexType name="ManualCpcBiddingScheme">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:BiddingScheme">
-      \<xs:sequence/>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ManualCpcBiddingScheme">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:BiddingScheme">
+      <xs:sequence/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

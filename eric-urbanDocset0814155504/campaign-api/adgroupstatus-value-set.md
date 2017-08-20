@@ -18,14 +18,14 @@ Defines the possible status values of an ad group.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdGroupStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Paused" />
-    \<xs:enumeration value="Expired" />
-    \<xs:enumeration value="Deleted" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdGroupStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Paused" />
+    <xs:enumeration value="Expired" />
+    <xs:enumeration value="Deleted" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

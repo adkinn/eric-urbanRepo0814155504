@@ -18,17 +18,17 @@ Defines the keyword status values that you can use to filter the report data. Th
 ## Syntax
 
 ```xml
-\<xs:simpleType name="KeywordStatusReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Active"/>
-        \<xs:enumeration value="Paused"/>
-        \<xs:enumeration value="Deleted"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="KeywordStatusReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Active"/>
+        <xs:enumeration value="Paused"/>
+        <xs:enumeration value="Deleted"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

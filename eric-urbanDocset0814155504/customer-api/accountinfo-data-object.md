@@ -18,15 +18,15 @@ Defines an account identification object that contains information that identifi
 ## Syntax
 
 ```xml
-\<xs:complexType name="AccountInfo">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Id" type="xs:long" />
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Number" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="AccountLifeCycleStatus" type="tns:AccountLifeCycleStatus" />
-    \<xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AccountInfo">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Id" type="xs:long" />
+    <xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Number" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="AccountLifeCycleStatus" type="tns:AccountLifeCycleStatus" />
+    <xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

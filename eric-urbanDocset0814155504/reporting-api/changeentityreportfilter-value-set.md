@@ -18,19 +18,19 @@ Defines the types of entities by which you can filter the report data.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ChangeEntityReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Account" />
-        \<xs:enumeration value="Campaign" />
-        \<xs:enumeration value="AdGroup">
-        \<xs:enumeration value="Ad">
-        \<xs:enumeration value="Keyword">
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="ChangeEntityReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Account" />
+        <xs:enumeration value="Campaign" />
+        <xs:enumeration value="AdGroup">
+        <xs:enumeration value="Ad">
+        <xs:enumeration value="Keyword">
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

@@ -15,9 +15,7 @@ manager: "ehansen"
 # SignupCustomer Service Operation
 Signs up a customer with [!INCLUDE[brand](../customer-api/includes/brand.md)].
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>SignupCustomerRequest Message
 
@@ -41,109 +39,109 @@ The *SignupCustomerRequest* object defines the elements of the request’s body.
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SignupCustomer</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <SignupCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<Customer xmlns:e46="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        \<e46:CustomerAddress i:nil="false">
-          \<e46:City i:nil="false">\</e46:City>
-          \<e46:CountryCode i:nil="false">\</e46:CountryCode>
-          \<e46:Id i:nil="false">\</e46:Id>
-          \<e46:Line1 i:nil="false">\</e46:Line1>
-          \<e46:Line2 i:nil="false">\</e46:Line2>
-          \<e46:Line3 i:nil="false">\</e46:Line3>
-          \<e46:Line4 i:nil="false">\</e46:Line4>
-          \<e46:PostalCode i:nil="false">\</e46:PostalCode>
-          \<e46:StateOrProvince i:nil="false">\</e46:StateOrProvince>
-          \<e46:TimeStamp i:nil="false">\</e46:TimeStamp>
-        \</e46:CustomerAddress>
-        \<e46:CustomerFinancialStatus i:nil="false">\</e46:CustomerFinancialStatus>
-        \<e46:Id i:nil="false">\</e46:Id>
-        \<e46:Industry i:nil="false">\</e46:Industry>
-        \<e46:LastModifiedByUserId i:nil="false">\</e46:LastModifiedByUserId>
-        \<e46:LastModifiedTime i:nil="false">\</e46:LastModifiedTime>
-        \<e46:MarketCountry i:nil="false">\</e46:MarketCountry>
-        \<ForwardCompatibilityMap xmlns:e47="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          \<e47:KeyValuePairOfstringstring>
-            \<e47:key i:nil="false">\</e47:key>
-            \<e47:value i:nil="false">\</e47:value>
-          \</e47:KeyValuePairOfstringstring>
+      <Customer xmlns:e46="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e46:CustomerAddress i:nil="false">
+          <e46:City i:nil="false"></e46:City>
+          <e46:CountryCode i:nil="false"></e46:CountryCode>
+          <e46:Id i:nil="false"></e46:Id>
+          <e46:Line1 i:nil="false"></e46:Line1>
+          <e46:Line2 i:nil="false"></e46:Line2>
+          <e46:Line3 i:nil="false"></e46:Line3>
+          <e46:Line4 i:nil="false"></e46:Line4>
+          <e46:PostalCode i:nil="false"></e46:PostalCode>
+          <e46:StateOrProvince i:nil="false"></e46:StateOrProvince>
+          <e46:TimeStamp i:nil="false"></e46:TimeStamp>
+        </e46:CustomerAddress>
+        <e46:CustomerFinancialStatus i:nil="false"></e46:CustomerFinancialStatus>
+        <e46:Id i:nil="false"></e46:Id>
+        <e46:Industry i:nil="false"></e46:Industry>
+        <e46:LastModifiedByUserId i:nil="false"></e46:LastModifiedByUserId>
+        <e46:LastModifiedTime i:nil="false"></e46:LastModifiedTime>
+        <e46:MarketCountry i:nil="false"></e46:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e47="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e47:KeyValuePairOfstringstring>
+            <e47:key i:nil="false"></e47:key>
+            <e47:value i:nil="false"></e47:value>
+          </e47:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        \<e46:MarketLanguage i:nil="false">\</e46:MarketLanguage>
-        \<e46:Name i:nil="false">\</e46:Name>
-        \<e46:ServiceLevel i:nil="false">\</e46:ServiceLevel>
-        \<e46:CustomerLifeCycleStatus i:nil="false">\</e46:CustomerLifeCycleStatus>
-        \<e46:TimeStamp i:nil="false">\</e46:TimeStamp>
-        \<e46:Number i:nil="false">\</e46:Number>
+        <e46:MarketLanguage i:nil="false"></e46:MarketLanguage>
+        <e46:Name i:nil="false"></e46:Name>
+        <e46:ServiceLevel i:nil="false"></e46:ServiceLevel>
+        <e46:CustomerLifeCycleStatus i:nil="false"></e46:CustomerLifeCycleStatus>
+        <e46:TimeStamp i:nil="false"></e46:TimeStamp>
+        <e46:Number i:nil="false"></e46:Number>
       </Customer>
-      \<Account xmlns:e48="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-        \<e48:AccountType>\</e48:AccountType>
-        \<e48:BillToCustomerId i:nil="false">\</e48:BillToCustomerId>
-        \<e48:CountryCode i:nil="false">\</e48:CountryCode>
-        \<e48:CurrencyType i:nil="false">\</e48:CurrencyType>
-        \<e48:AccountFinancialStatus i:nil="false">\</e48:AccountFinancialStatus>
-        \<e48:Id i:nil="false">\</e48:Id>
-        \<e48:Language i:nil="false">\</e48:Language>
-        \<ForwardCompatibilityMap xmlns:e49="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          \<e49:KeyValuePairOfstringstring>
-            \<e49:key i:nil="false">\</e49:key>
-            \<e49:value i:nil="false">\</e49:value>
-          \</e49:KeyValuePairOfstringstring>
+      <Account xmlns:e48="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+        <e48:AccountType></e48:AccountType>
+        <e48:BillToCustomerId i:nil="false"></e48:BillToCustomerId>
+        <e48:CountryCode i:nil="false"></e48:CountryCode>
+        <e48:CurrencyType i:nil="false"></e48:CurrencyType>
+        <e48:AccountFinancialStatus i:nil="false"></e48:AccountFinancialStatus>
+        <e48:Id i:nil="false"></e48:Id>
+        <e48:Language i:nil="false"></e48:Language>
+        <ForwardCompatibilityMap xmlns:e49="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e49:KeyValuePairOfstringstring>
+            <e49:key i:nil="false"></e49:key>
+            <e49:value i:nil="false"></e49:value>
+          </e49:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        \<e48:LastModifiedByUserId i:nil="false">\</e48:LastModifiedByUserId>
-        \<e48:LastModifiedTime i:nil="false">\</e48:LastModifiedTime>
-        \<e48:Name i:nil="false">\</e48:Name>
-        \<e48:Number i:nil="false">\</e48:Number>
-        \<e48:ParentCustomerId>\</e48:ParentCustomerId>
-        \<e48:PaymentMethodId i:nil="false">\</e48:PaymentMethodId>
-        \<e48:PaymentMethodType i:nil="false">\</e48:PaymentMethodType>
-        \<e48:PrimaryUserId i:nil="false">\</e48:PrimaryUserId>
-        \<e48:AccountLifeCycleStatus i:nil="false">\</e48:AccountLifeCycleStatus>
-        \<e48:TimeStamp i:nil="false">\</e48:TimeStamp>
-        \<e48:TimeZone i:nil="false">\</e48:TimeZone>
-        \<e48:PauseReason i:nil="false">\</e48:PauseReason>
-        \<!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
-        \<e48:LinkedAgencies i:nil="false">
-          \<e48:CustomerInfo>
-            \<e48:Id i:nil="false">\</e48:Id>
-            \<e48:Name i:nil="false">\</e48:Name>
-          \</e48:CustomerInfo>
-        \</e48:LinkedAgencies>
-        \<e48:SalesHouseCustomerId i:nil="false">\</e48:SalesHouseCustomerId>
-        \<TaxInformation xmlns:e50="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          \<e50:KeyValuePairOfstringstring>
-            \<e50:key i:nil="false">\</e50:key>
-            \<e50:value i:nil="false">\</e50:value>
-          \</e50:KeyValuePairOfstringstring>
+        <e48:LastModifiedByUserId i:nil="false"></e48:LastModifiedByUserId>
+        <e48:LastModifiedTime i:nil="false"></e48:LastModifiedTime>
+        <e48:Name i:nil="false"></e48:Name>
+        <e48:Number i:nil="false"></e48:Number>
+        <e48:ParentCustomerId></e48:ParentCustomerId>
+        <e48:PaymentMethodId i:nil="false"></e48:PaymentMethodId>
+        <e48:PaymentMethodType i:nil="false"></e48:PaymentMethodType>
+        <e48:PrimaryUserId i:nil="false"></e48:PrimaryUserId>
+        <e48:AccountLifeCycleStatus i:nil="false"></e48:AccountLifeCycleStatus>
+        <e48:TimeStamp i:nil="false"></e48:TimeStamp>
+        <e48:TimeZone i:nil="false"></e48:TimeZone>
+        <e48:PauseReason i:nil="false"></e48:PauseReason>
+        <!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
+        <e48:LinkedAgencies i:nil="false">
+          <e48:CustomerInfo>
+            <e48:Id i:nil="false"></e48:Id>
+            <e48:Name i:nil="false"></e48:Name>
+          </e48:CustomerInfo>
+        </e48:LinkedAgencies>
+        <e48:SalesHouseCustomerId i:nil="false"></e48:SalesHouseCustomerId>
+        <TaxInformation xmlns:e50="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e50:KeyValuePairOfstringstring>
+            <e50:key i:nil="false"></e50:key>
+            <e50:value i:nil="false"></e50:value>
+          </e50:KeyValuePairOfstringstring>
         </TaxInformation>
-        \<e48:BackUpPaymentInstrumentId i:nil="false">\</e48:BackUpPaymentInstrumentId>
-        \<e48:BillingThresholdAmount i:nil="false">\</e48:BillingThresholdAmount>
-        \<e48:BusinessAddress i:nil="false">
-          \<e48:City i:nil="false">\</e48:City>
-          \<e48:CountryCode i:nil="false">\</e48:CountryCode>
-          \<e48:Id i:nil="false">\</e48:Id>
-          \<e48:Line1 i:nil="false">\</e48:Line1>
-          \<e48:Line2 i:nil="false">\</e48:Line2>
-          \<e48:Line3 i:nil="false">\</e48:Line3>
-          \<e48:Line4 i:nil="false">\</e48:Line4>
-          \<e48:PostalCode i:nil="false">\</e48:PostalCode>
-          \<e48:StateOrProvince i:nil="false">\</e48:StateOrProvince>
-          \<e48:TimeStamp i:nil="false">\</e48:TimeStamp>
-        \</e48:BusinessAddress>
+        <e48:BackUpPaymentInstrumentId i:nil="false"></e48:BackUpPaymentInstrumentId>
+        <e48:BillingThresholdAmount i:nil="false"></e48:BillingThresholdAmount>
+        <e48:BusinessAddress i:nil="false">
+          <e48:City i:nil="false"></e48:City>
+          <e48:CountryCode i:nil="false"></e48:CountryCode>
+          <e48:Id i:nil="false"></e48:Id>
+          <e48:Line1 i:nil="false"></e48:Line1>
+          <e48:Line2 i:nil="false"></e48:Line2>
+          <e48:Line3 i:nil="false"></e48:Line3>
+          <e48:Line4 i:nil="false"></e48:Line4>
+          <e48:PostalCode i:nil="false"></e48:PostalCode>
+          <e48:StateOrProvince i:nil="false"></e48:StateOrProvince>
+          <e48:TimeStamp i:nil="false"></e48:TimeStamp>
+        </e48:BusinessAddress>
       </Account>
-      \<ParentCustomerId i:nil="false"></ParentCustomerId>
+      <ParentCustomerId i:nil="false"></ParentCustomerId>
       <ApplicationScope></ApplicationScope>
     </SignupCustomerRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>SignupCustomerResponse Message
@@ -166,20 +164,20 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <SignupCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <CustomerId></CustomerId>
-      \<CustomerNumber p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></CustomerNumber>
-      \<AccountId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></AccountId>
-      \<AccountNumber p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></AccountNumber>
+      <CustomerNumber p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></CustomerNumber>
+      <AccountId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></AccountId>
+      <AccountNumber p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></AccountNumber>
       <CreateTime></CreateTime>
     </SignupCustomerResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

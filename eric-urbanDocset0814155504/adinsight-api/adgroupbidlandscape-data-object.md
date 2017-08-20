@@ -21,15 +21,15 @@ Defines an object that contains a list of estimated clicks, cost, and impression
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdGroupBidLandscape">
-  \<xs:sequence>
-    \<xs:element name="AdGroupId" type="xs:long" minOccurs="0"/>
-    \<xs:element name="AdGroupBidLandscapeType" type="tns:AdGroupBidLandscapeType" minOccurs="0"/>
-    \<xs:element name="StartDate" type="tns:DayMonthAndYear" nillable="true" minOccurs="0"/>
-    \<xs:element name="EndDate" type="tns:DayMonthAndYear" nillable="true" minOccurs="0"/>
-    \<xs:element name="BidLandscapePoints" type="tns:ArrayOfBidLandscapePoint" nillable="true" minOccurs="0"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdGroupBidLandscape">
+  <xs:sequence>
+    <xs:element name="AdGroupId" type="xs:long" minOccurs="0"/>
+    <xs:element name="AdGroupBidLandscapeType" type="tns:AdGroupBidLandscapeType" minOccurs="0"/>
+    <xs:element name="StartDate" type="tns:DayMonthAndYear" nillable="true" minOccurs="0"/>
+    <xs:element name="EndDate" type="tns:DayMonthAndYear" nillable="true" minOccurs="0"/>
+    <xs:element name="BidLandscapePoints" type="tns:ArrayOfBidLandscapePoint" nillable="true" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

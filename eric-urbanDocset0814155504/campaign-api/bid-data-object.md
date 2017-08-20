@@ -18,11 +18,11 @@ Defines a bid.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Bid">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Amount" nillable="true" type="xs:double" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Bid">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:double" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

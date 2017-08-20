@@ -22,13 +22,13 @@ Use the enhanced CPC bid strategy type to set your ad group and keyword bids, an
 ## Syntax
 
 ```xml
-\<xs:complexType name="EnhancedCpcBiddingScheme">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:BiddingScheme">
-      \<xs:sequence/>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="EnhancedCpcBiddingScheme">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:BiddingScheme">
+      <xs:sequence/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

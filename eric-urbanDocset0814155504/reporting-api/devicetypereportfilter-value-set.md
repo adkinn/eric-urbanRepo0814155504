@@ -18,18 +18,18 @@ Defines the device type values that you can use to filter the report data. These
 ## Syntax
 
 ```xml
-\<xs:simpleType name="DeviceTypeReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Computer" />
-        \<xs:enumeration value="SmartPhone" />
-        \<xs:enumeration value="NonSmartPhone">
-        \<xs:enumeration value="Tablet">
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="DeviceTypeReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Computer" />
+        <xs:enumeration value="SmartPhone" />
+        <xs:enumeration value="NonSmartPhone">
+        <xs:enumeration value="Tablet">
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

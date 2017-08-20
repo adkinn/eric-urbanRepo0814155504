@@ -18,12 +18,12 @@ Defines an object that contains a suggested keyword and a confidence score. The 
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordAndConfidence">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="SuggestedKeyword" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ConfidenceScore" type="xs:double" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordAndConfidence">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="SuggestedKeyword" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ConfidenceScore" type="xs:double" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -20,18 +20,18 @@ You can associate a review ad extension with one or more campaigns and ad groups
 ## Syntax
 
 ```xml
-\<xs:complexType name="ReviewAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element name="IsExact" type="xs:boolean" minOccurs="0"/>
-        \<xs:element name="Source" type="xs:string" nillable="true" minOccurs="0"/> 
-        \<xs:element name="Text" type="xs:string" nillable="true" minOccurs="0"/> 
-        \<xs:element name="Url" type="xs:string" nillable="true" minOccurs="0"/>  
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ReviewAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element name="IsExact" type="xs:boolean" minOccurs="0"/>
+        <xs:element name="Source" type="xs:string" nillable="true" minOccurs="0"/> 
+        <xs:element name="Text" type="xs:string" nillable="true" minOccurs="0"/> 
+        <xs:element name="Url" type="xs:string" nillable="true" minOccurs="0"/>  
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

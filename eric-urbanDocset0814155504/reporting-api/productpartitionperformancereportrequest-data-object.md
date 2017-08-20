@@ -23,19 +23,19 @@ Defines a product partition performance report request that aggregates the perfo
 ## Syntax
 
 ```xml
-\<xs:complexType name="ProductPartitionPerformanceReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Aggregation" type="tns:ReportAggregation" />
-        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfProductPartitionPerformanceReportColumn" />
-        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ProductPartitionPerformanceReportFilter" />
-        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ProductPartitionPerformanceReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Aggregation" type="tns:ReportAggregation" />
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfProductPartitionPerformanceReportColumn" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ProductPartitionPerformanceReportFilter" />
+        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

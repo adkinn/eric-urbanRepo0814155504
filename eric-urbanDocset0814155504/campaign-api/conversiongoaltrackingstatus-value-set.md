@@ -23,18 +23,18 @@ For status values that a user can decide to set, for example setting the status 
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ConversionGoalTrackingStatus">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="TagUnverified" />
-        \<xs:enumeration value="NoRecentConversions" />
-        \<xs:enumeration value="RecordingConversions" />
-        \<xs:enumeration value="TagInactive" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="ConversionGoalTrackingStatus">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="TagUnverified" />
+        <xs:enumeration value="NoRecentConversions" />
+        <xs:enumeration value="RecordingConversions" />
+        <xs:enumeration value="TagInactive" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

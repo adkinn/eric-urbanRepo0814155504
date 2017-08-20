@@ -18,16 +18,16 @@ Defines the possible keyword opportunity types you can request when calling [Get
 ## Syntax
 
 ```xml
-\<xs:simpleType name="KeywordOpportunityType">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="BroadMatch">
-        \<xs:enumeration value="CampaignContext">
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="KeywordOpportunityType">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="BroadMatch">
+        <xs:enumeration value="CampaignContext">
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

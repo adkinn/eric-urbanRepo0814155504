@@ -18,12 +18,12 @@ Defines a campaign to include in the report.
 ## Syntax
 
 ```xml
-\<xs:complexType name="CampaignReportScope">
-  \<xs:sequence>
-    \<xs:element name="AccountId" type="xs:long" />
-    \<xs:element name="CampaignId" type="xs:long" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CampaignReportScope">
+  <xs:sequence>
+    <xs:element name="AccountId" type="xs:long" />
+    <xs:element name="CampaignId" type="xs:long" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="elements"></a>Elements

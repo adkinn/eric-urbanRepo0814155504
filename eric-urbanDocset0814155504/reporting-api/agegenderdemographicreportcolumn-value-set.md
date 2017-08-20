@@ -19,32 +19,32 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AgeGenderDemographicReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName"/>
-    \<xs:enumeration value="AccountNumber"/>
-    \<xs:enumeration value="AccountId"/>
-    \<xs:enumeration value="TimePeriod"/>
-    \<xs:enumeration value="CampaignName"/>
-    \<xs:enumeration value="CampaignId"/>
-    \<xs:enumeration value="AdGroupName"/>
-    \<xs:enumeration value="AdGroupId"/>
-    \<xs:enumeration value="AdDistribution"/>
-    \<xs:enumeration value="AgeGroup"/>
-    \<xs:enumeration value="Gender"/>
-    \<xs:enumeration value="EstimatedImpressionPercent"/>
-    \<xs:enumeration value="EstimatedClickPercent"/>
-    \<xs:enumeration value="EstimatedCtr"/>
-    \<xs:enumeration value="Language"/>
-    \<xs:enumeration value="EstimatedImpressions"/>
-    \<xs:enumeration value="EstimatedClicks"/>
-    \<xs:enumeration value="EstimatedConversions"/>
-    \<xs:enumeration value="EstimatedConversionRate"/>
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="CampaignStatus"/>
-    \<xs:enumeration value="AdGroupStatus"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AgeGenderDemographicReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName"/>
+    <xs:enumeration value="AccountNumber"/>
+    <xs:enumeration value="AccountId"/>
+    <xs:enumeration value="TimePeriod"/>
+    <xs:enumeration value="CampaignName"/>
+    <xs:enumeration value="CampaignId"/>
+    <xs:enumeration value="AdGroupName"/>
+    <xs:enumeration value="AdGroupId"/>
+    <xs:enumeration value="AdDistribution"/>
+    <xs:enumeration value="AgeGroup"/>
+    <xs:enumeration value="Gender"/>
+    <xs:enumeration value="EstimatedImpressionPercent"/>
+    <xs:enumeration value="EstimatedClickPercent"/>
+    <xs:enumeration value="EstimatedCtr"/>
+    <xs:enumeration value="Language"/>
+    <xs:enumeration value="EstimatedImpressions"/>
+    <xs:enumeration value="EstimatedClicks"/>
+    <xs:enumeration value="EstimatedConversions"/>
+    <xs:enumeration value="EstimatedConversionRate"/>
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="CampaignStatus"/>
+    <xs:enumeration value="AdGroupStatus"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

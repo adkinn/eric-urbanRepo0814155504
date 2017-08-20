@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordOpportunities Service Operation
 Gets a list of keyword suggestions that are relevant to the specified ad group. The keyword suggestion also includes a suggested bid value.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordOpportunitiesRequest Message
 
@@ -40,25 +38,25 @@ The *GetKeywordOpportunitiesRequest* object defines the elements of the requestâ
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetKeywordOpportunities</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetKeywordOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<AdGroupId i:nil="false"></AdGroupId>
-      \<CampaignId i:nil="false"></CampaignId>
+      <AdGroupId i:nil="false"></AdGroupId>
+      <CampaignId i:nil="false"></CampaignId>
       <OpportunityType></OpportunityType>
     </GetKeywordOpportunitiesRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetKeywordOpportunitiesResponse Message
@@ -75,48 +73,48 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetKeywordOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Opportunities xmlns:e31="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e31:KeywordOpportunity p5:type="-- specify derived type here with the appropriate prefix --">
-          \<e31:AdGroupId>\</e31:AdGroupId>
-          \<e31:AdGroupName p5:nil="false">\</e31:AdGroupName>
-          \<e31:CampaignId>\</e31:CampaignId>
-          \<e31:CampaignName p5:nil="false">\</e31:CampaignName>
-          \<e31:Competition>\</e31:Competition>
-          \<e31:EstimatedIncreaseInClicks>\</e31:EstimatedIncreaseInClicks>
-          \<e31:EstimatedIncreaseInCost>\</e31:EstimatedIncreaseInCost>
-          \<e31:EstimatedIncreaseInImpressions>\</e31:EstimatedIncreaseInImpressions>
-          \<e31:MatchType>\</e31:MatchType>
-          \<e31:MonthlySearches>\</e31:MonthlySearches>
-          \<e31:SuggestedBid>\</e31:SuggestedBid>
-          \<e31:SuggestedKeyword p5:nil="false">\</e31:SuggestedKeyword>
-          \<!--Keep these fields if you set the i:type attribute to BroadMatchKeywordOpportunity-->
-          \<e31:AverageCPC>\</e31:AverageCPC>
-          \<e31:AverageCTR>\</e31:AverageCTR>
-          \<e31:ClickShare>\</e31:ClickShare>
-          \<e31:ImpressionShare>\</e31:ImpressionShare>
-          \<e31:ReferenceKeywordBid>\</e31:ReferenceKeywordBid>
-          \<e31:ReferenceKeywordId>\</e31:ReferenceKeywordId>
-          \<e31:ReferenceKeywordMatchType>\</e31:ReferenceKeywordMatchType>
-          \<e31:SearchQueryKPIs p5:nil="false">
-            \<e31:BroadMatchSearchQueryKPI>
-              \<e31:AverageCTR>\</e31:AverageCTR>
-              \<e31:Clicks>\</e31:Clicks>
-              \<e31:Impressions>\</e31:Impressions>
-              \<e31:SRPV>\</e31:SRPV>
-              \<e31:SearchQuery p5:nil="false">\</e31:SearchQuery>
-            \</e31:BroadMatchSearchQueryKPI>
-          \</e31:SearchQueryKPIs>
-        \</e31:KeywordOpportunity>
+      <Opportunities xmlns:e31="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e31:KeywordOpportunity p5:type="-- specify derived type here with the appropriate prefix --">
+          <e31:AdGroupId></e31:AdGroupId>
+          <e31:AdGroupName p5:nil="false"></e31:AdGroupName>
+          <e31:CampaignId></e31:CampaignId>
+          <e31:CampaignName p5:nil="false"></e31:CampaignName>
+          <e31:Competition></e31:Competition>
+          <e31:EstimatedIncreaseInClicks></e31:EstimatedIncreaseInClicks>
+          <e31:EstimatedIncreaseInCost></e31:EstimatedIncreaseInCost>
+          <e31:EstimatedIncreaseInImpressions></e31:EstimatedIncreaseInImpressions>
+          <e31:MatchType></e31:MatchType>
+          <e31:MonthlySearches></e31:MonthlySearches>
+          <e31:SuggestedBid></e31:SuggestedBid>
+          <e31:SuggestedKeyword p5:nil="false"></e31:SuggestedKeyword>
+          <!--Keep these fields if you set the i:type attribute to BroadMatchKeywordOpportunity-->
+          <e31:AverageCPC></e31:AverageCPC>
+          <e31:AverageCTR></e31:AverageCTR>
+          <e31:ClickShare></e31:ClickShare>
+          <e31:ImpressionShare></e31:ImpressionShare>
+          <e31:ReferenceKeywordBid></e31:ReferenceKeywordBid>
+          <e31:ReferenceKeywordId></e31:ReferenceKeywordId>
+          <e31:ReferenceKeywordMatchType></e31:ReferenceKeywordMatchType>
+          <e31:SearchQueryKPIs p5:nil="false">
+            <e31:BroadMatchSearchQueryKPI>
+              <e31:AverageCTR></e31:AverageCTR>
+              <e31:Clicks></e31:Clicks>
+              <e31:Impressions></e31:Impressions>
+              <e31:SRPV></e31:SRPV>
+              <e31:SearchQuery p5:nil="false"></e31:SearchQuery>
+            </e31:BroadMatchSearchQueryKPI>
+          </e31:SearchQueryKPIs>
+        </e31:KeywordOpportunity>
       </Opportunities>
     </GetKeywordOpportunitiesResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

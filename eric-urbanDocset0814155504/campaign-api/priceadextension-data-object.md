@@ -20,19 +20,19 @@ Defines an ad extension that includes between 3 and 8 price table rows.
 ## Syntax
 
 ```xml
-\<xs:complexType name="PriceAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element name="Language" type="xs:string" minOccurs="0"/>
-        \<xs:element name="PriceAdExtensionType" type="tns:PriceAdExtensionType" nillable="true" minOccurs="0"/> 
-        \<xs:element name="TableRows" type="tns:PriceTableRow" nillable="true" minOccurs="0"/> 
-        \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-        \<xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q5:CustomParameters"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="PriceAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element name="Language" type="xs:string" minOccurs="0"/>
+        <xs:element name="PriceAdExtensionType" type="tns:PriceAdExtensionType" nillable="true" minOccurs="0"/> 
+        <xs:element name="TableRows" type="tns:PriceTableRow" nillable="true" minOccurs="0"/> 
+        <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q5:CustomParameters"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

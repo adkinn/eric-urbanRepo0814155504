@@ -18,15 +18,15 @@ The keyword category search parameter that you can use as a seed for new keyword
 ## Syntax
 
 ```xml
-\<xs:complexType name="CategorySearchParameter">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:SearchParameter">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="CategoryId" type="xs:long"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="CategorySearchParameter">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:SearchParameter">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CategoryId" type="xs:long"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,11 +18,11 @@ Defines an object that contains a list of remarketing list rule items that apply
 ## Syntax
 
 ```xml
-\<xs:complexType name="RuleItemGroup">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfRuleItem"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="RuleItemGroup">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfRuleItem"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

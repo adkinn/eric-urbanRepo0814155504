@@ -25,19 +25,19 @@ Since this data might change over time, please use the [KeywordPerformanceReport
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchQueryPerformanceReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Aggregation" type="tns:SearchQueryReportAggregation" />
-        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfSearchQueryPerformanceReportColumn" />
-        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:SearchQueryPerformanceReportFilter" />
-        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="SearchQueryPerformanceReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Aggregation" type="tns:SearchQueryReportAggregation" />
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfSearchQueryPerformanceReportColumn" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:SearchQueryPerformanceReportFilter" />
+        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

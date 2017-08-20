@@ -20,15 +20,15 @@ You can request that the source be returned in the [KeywordIdea](../adinsight-ap
 ## Syntax
 
 ```xml
-\<xs:simpleType name="SourceType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Unknown">
-    \<xs:enumeration value="Seed">
-    \<xs:enumeration value="SuggestionFromKeyword">
-    \<xs:enumeration value="SuggestionFromUrl">
-    \<xs:enumeration value="SuggestionFromCategory">
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="SourceType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unknown">
+    <xs:enumeration value="Seed">
+    <xs:enumeration value="SuggestionFromKeyword">
+    <xs:enumeration value="SuggestionFromUrl">
+    <xs:enumeration value="SuggestionFromCategory">
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

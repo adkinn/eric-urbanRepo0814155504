@@ -27,19 +27,19 @@ For more information about user authentication, see [Authentication with OAuth](
 ## Syntax
 
 ```xml
-\<xs:complexType name="UserInvitation">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Id" type="xs:long" />
-    \<xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    \<xs:element minOccurs="0" name="Role" nillable="true" type="tns:UserRole" />
-    \<xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    \<xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
-    \<xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="UserInvitation">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Id" type="xs:long" />
+    <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
+    <xs:element minOccurs="0" name="Role" nillable="true" type="tns:UserRole" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+    <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

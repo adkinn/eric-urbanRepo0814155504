@@ -18,25 +18,25 @@ Defines the possible types of campaign criterions.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="CampaignCriterionType">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Age" />
-        \<xs:enumeration value="Audience" />
-        \<xs:enumeration value="DayTime" />
-        \<xs:enumeration value="Device" />
-        \<xs:enumeration value="Gender" />
-        \<xs:enumeration value="Location" />
-        \<xs:enumeration value="LocationIntent" />
-        \<xs:enumeration value="ProductScope" />
-        \<xs:enumeration value="Radius" />
-        \<xs:enumeration value="Targets" />
-        \<xs:enumeration value="Webpage" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="CampaignCriterionType">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Age" />
+        <xs:enumeration value="Audience" />
+        <xs:enumeration value="DayTime" />
+        <xs:enumeration value="Device" />
+        <xs:enumeration value="Gender" />
+        <xs:enumeration value="Location" />
+        <xs:enumeration value="LocationIntent" />
+        <xs:enumeration value="ProductScope" />
+        <xs:enumeration value="Radius" />
+        <xs:enumeration value="Targets" />
+        <xs:enumeration value="Webpage" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

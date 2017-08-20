@@ -19,38 +19,38 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ConversionPerformanceReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName" />
-    \<xs:enumeration value="AccountNumber" />
-    \<xs:enumeration value="AccountId" />
-    \<xs:enumeration value="TimePeriod" />
-    \<xs:enumeration value="CampaignName" />
-    \<xs:enumeration value="CampaignId" />
-    \<xs:enumeration value="AdGroupName" />
-    \<xs:enumeration value="AdGroupId" />
-    \<xs:enumeration value="Keyword" />
-    \<xs:enumeration value="KeywordId" />
-    \<xs:enumeration value="Impressions" />
-    \<xs:enumeration value="Clicks" />
-    \<xs:enumeration value="Ctr" />
-    \<xs:enumeration value="Assists" />
-    \<xs:enumeration value="Conversions" />
-    \<xs:enumeration value="ConversionRate" />
-    \<xs:enumeration value="Spend" />
-    \<xs:enumeration value="Revenue" />
-    \<xs:enumeration value="ReturnOnAdSpend" />
-    \<xs:enumeration value="CostPerConversion" />
-    \<xs:enumeration value="CostPerAssist" />
-    \<xs:enumeration value="RevenuePerConversion" />
-    \<xs:enumeration value="RevenuePerAssist" />
-    \<xs:enumeration value="DeviceType" />
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="CampaignStatus"/>
-    \<xs:enumeration value="AdGroupStatus"/>
-    \<xs:enumeration value="KeywordStatus"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ConversionPerformanceReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="AccountNumber" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="TimePeriod" />
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="Keyword" />
+    <xs:enumeration value="KeywordId" />
+    <xs:enumeration value="Impressions" />
+    <xs:enumeration value="Clicks" />
+    <xs:enumeration value="Ctr" />
+    <xs:enumeration value="Assists" />
+    <xs:enumeration value="Conversions" />
+    <xs:enumeration value="ConversionRate" />
+    <xs:enumeration value="Spend" />
+    <xs:enumeration value="Revenue" />
+    <xs:enumeration value="ReturnOnAdSpend" />
+    <xs:enumeration value="CostPerConversion" />
+    <xs:enumeration value="CostPerAssist" />
+    <xs:enumeration value="RevenuePerConversion" />
+    <xs:enumeration value="RevenuePerAssist" />
+    <xs:enumeration value="DeviceType" />
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="CampaignStatus"/>
+    <xs:enumeration value="AdGroupStatus"/>
+    <xs:enumeration value="KeywordStatus"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

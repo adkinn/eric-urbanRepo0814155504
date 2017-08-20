@@ -18,29 +18,29 @@ Defines an ad group.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdGroup">
-  \<xs:sequence>
-    \<xs:element name="AdDistribution" type="tns:AdDistribution" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdRotation" type="tns:AdRotation" nillable="true" minOccurs="0"/>
-    \<xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="BiddingScheme" nillable="true" type="q16:BiddingScheme"/>
-    \<xs:element name="ContentMatchBid" type="tns:Bid" nillable="true" minOccurs="0"/>
-    \<xs:element name="EndDate" type="tns:Date" nillable="true" minOccurs="0"/>
-    \<xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q17:ArrayOfKeyValuePairOfstringstring"/>
-    \<xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
-    \<xs:element name="Language" type="xs:string" nillable="true" minOccurs="0"/>
-    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-    \<xs:element name="NativeBidAdjustment" type="xs:int" nillable="true" minOccurs="0"/>
-    \<xs:element name="Network" type="tns:Network" nillable="true" minOccurs="0"/>
-    \<xs:element name="PricingModel" type="tns:PricingModel" nillable="true" minOccurs="0"/>
-    \<xs:element name="RemarketingTargetingSetting" type="tns:RemarketingTargetingSetting" nillable="true" minOccurs="0"/>
-    \<xs:element name="SearchBid" type="tns:Bid" nillable="true" minOccurs="0"/>
-    \<xs:element name="Settings" type="tns:ArrayOfSetting" nillable="true" minOccurs="0"/>
-    \<xs:element name="StartDate" type="tns:Date" nillable="true" minOccurs="0"/>
-    \<xs:element name="Status" type="tns:AdGroupStatus" nillable="true" minOccurs="0"/>
-    \<xs:element name="TrackingUrlTemplate" type="xs:string" nillable="true" minOccurs="0"/>
-    \<xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q18:CustomParameters"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdGroup">
+  <xs:sequence>
+    <xs:element name="AdDistribution" type="tns:AdDistribution" nillable="true" minOccurs="0"/>
+    <xs:element name="AdRotation" type="tns:AdRotation" nillable="true" minOccurs="0"/>
+    <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="BiddingScheme" nillable="true" type="q16:BiddingScheme"/>
+    <xs:element name="ContentMatchBid" type="tns:Bid" nillable="true" minOccurs="0"/>
+    <xs:element name="EndDate" type="tns:Date" nillable="true" minOccurs="0"/>
+    <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q17:ArrayOfKeyValuePairOfstringstring"/>
+    <xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
+    <xs:element name="Language" type="xs:string" nillable="true" minOccurs="0"/>
+    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+    <xs:element name="NativeBidAdjustment" type="xs:int" nillable="true" minOccurs="0"/>
+    <xs:element name="Network" type="tns:Network" nillable="true" minOccurs="0"/>
+    <xs:element name="PricingModel" type="tns:PricingModel" nillable="true" minOccurs="0"/>
+    <xs:element name="RemarketingTargetingSetting" type="tns:RemarketingTargetingSetting" nillable="true" minOccurs="0"/>
+    <xs:element name="SearchBid" type="tns:Bid" nillable="true" minOccurs="0"/>
+    <xs:element name="Settings" type="tns:ArrayOfSetting" nillable="true" minOccurs="0"/>
+    <xs:element name="StartDate" type="tns:Date" nillable="true" minOccurs="0"/>
+    <xs:element name="Status" type="tns:AdGroupStatus" nillable="true" minOccurs="0"/>
+    <xs:element name="TrackingUrlTemplate" type="xs:string" nillable="true" minOccurs="0"/>
+    <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q18:CustomParameters"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,16 +18,16 @@ Defines the possible types of entities.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="EntityType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Campaign" />
-    \<xs:enumeration value="AdGroup" />
-    \<xs:enumeration value="Target" />
-    \<xs:enumeration value="Ad" />
-    \<xs:enumeration value="Keyword" />
-    \<xs:enumeration value="AdExtension" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="EntityType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Campaign" />
+    <xs:enumeration value="AdGroup" />
+    <xs:enumeration value="Target" />
+    <xs:enumeration value="Ad" />
+    <xs:enumeration value="Keyword" />
+    <xs:enumeration value="AdExtension" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

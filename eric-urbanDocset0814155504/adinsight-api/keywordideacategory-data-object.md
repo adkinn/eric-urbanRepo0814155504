@@ -20,12 +20,12 @@ You can use the category identifier in the [CategorySearchParameter](../adinsigh
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordIdeaCategory">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="CategoryId" type="xs:long"/>
-    \<xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordIdeaCategory">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="CategoryId" type="xs:long"/>
+    <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

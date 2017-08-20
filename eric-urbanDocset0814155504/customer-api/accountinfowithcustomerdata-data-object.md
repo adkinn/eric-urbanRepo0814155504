@@ -18,17 +18,17 @@ Defines an object that contains information that identifies an account and the c
 ## Syntax
 
 ```xml
-\<xs:complexType name="AccountInfoWithCustomerData">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="AccountId" type="xs:long" />
-    \<xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="AccountLifeCycleStatus" type="tns:AccountLifeCycleStatus" />
-    \<xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AccountInfoWithCustomerData">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="AccountId" type="xs:long" />
+    <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="AccountLifeCycleStatus" type="tns:AccountLifeCycleStatus" />
+    <xs:element minOccurs="0" name="PauseReason" nillable="true" type="xs:unsignedByte" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

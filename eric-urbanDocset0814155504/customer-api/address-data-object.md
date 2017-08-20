@@ -18,20 +18,20 @@ Defines a postal address.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Address">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="City" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="CountryCode" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="Line1" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Line2" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Line3" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="Line4" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="PostalCode" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="StateOrProvince" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Address">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="City" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="Line1" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Line2" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Line3" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="Line4" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="StateOrProvince" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

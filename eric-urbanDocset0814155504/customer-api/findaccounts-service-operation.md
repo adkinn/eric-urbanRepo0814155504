@@ -15,9 +15,7 @@ manager: "ehansen"
 # FindAccounts Service Operation
 Gets a list of accounts owned by the specified customer that match the specified filter criteria.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>FindAccountsRequest Message
 
@@ -41,24 +39,24 @@ The *FindAccountsRequest* object defines the elements of the request’s body. T
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">FindAccounts</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <FindAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<CustomerId i:nil="false"></CustomerId>
-      \<AccountFilter i:nil="false"></AccountFilter>
+      <CustomerId i:nil="false"></CustomerId>
+      <AccountFilter i:nil="false"></AccountFilter>
       <TopN></TopN>
-      \<ApplicationScope i:nil="false"></ApplicationScope>
+      <ApplicationScope i:nil="false"></ApplicationScope>
     </FindAccountsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>FindAccountsResponse Message
@@ -75,24 +73,24 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <FindAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<AccountsInfo xmlns:e5="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e5:AccountInfo>
-          \<e5:Id>\</e5:Id>
-          \<e5:Name p5:nil="false">\</e5:Name>
-          \<e5:Number p5:nil="false">\</e5:Number>
-          \<e5:AccountLifeCycleStatus>\</e5:AccountLifeCycleStatus>
-          \<e5:PauseReason p5:nil="false">\</e5:PauseReason>
-        \</e5:AccountInfo>
+      <AccountsInfo xmlns:e5="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e5:AccountInfo>
+          <e5:Id></e5:Id>
+          <e5:Name p5:nil="false"></e5:Name>
+          <e5:Number p5:nil="false"></e5:Number>
+          <e5:AccountLifeCycleStatus></e5:AccountLifeCycleStatus>
+          <e5:PauseReason p5:nil="false"></e5:PauseReason>
+        </e5:AccountInfo>
       </AccountsInfo>
     </FindAccountsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

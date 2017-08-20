@@ -20,15 +20,15 @@ Defines a pages viewed per visit conversion goal. Use this type of goal to count
 ## Syntax
 
 ```xml
-\<xs:complexType name="PagesViewedPerVisitGoal">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ConversionGoal">
-      \<xs:sequence>
-        \<xs:element name="MinimumPagesViewed" type="xs:int" nillable="true" minOccurs="0"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="PagesViewedPerVisitGoal">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ConversionGoal">
+      <xs:sequence>
+        <xs:element name="MinimumPagesViewed" type="xs:int" nillable="true" minOccurs="0"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

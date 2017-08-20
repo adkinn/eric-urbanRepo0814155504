@@ -18,12 +18,12 @@ Defines an object that contains the locations where users were located when they
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordLocationResult">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="KeywordLocations" nillable="true" type="tns:ArrayOfKeywordLocation" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordLocationResult">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="KeywordLocations" nillable="true" type="tns:ArrayOfKeywordLocation" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

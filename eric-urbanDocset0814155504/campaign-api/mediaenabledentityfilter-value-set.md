@@ -18,15 +18,15 @@ Defines the possible values representing entities that are enabled for media suc
 ## Syntax
 
 ```xml
-\<xs:simpleType name="MediaEnabledEntityFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="ImageAdExtension" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="MediaEnabledEntityFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="ImageAdExtension" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

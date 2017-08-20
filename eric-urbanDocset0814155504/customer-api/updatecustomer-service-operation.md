@@ -15,9 +15,7 @@ manager: "ehansen"
 # UpdateCustomer Service Operation
 Updates the details of the specified customer.
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>UpdateCustomerRequest Message
 
@@ -38,52 +36,52 @@ The *UpdateCustomerRequest* object defines the elements of the request’s body.
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">UpdateCustomer</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<Customer xmlns:e31="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        \<e31:CustomerAddress i:nil="false">
-          \<e31:City i:nil="false">\</e31:City>
-          \<e31:CountryCode i:nil="false">\</e31:CountryCode>
-          \<e31:Id i:nil="false">\</e31:Id>
-          \<e31:Line1 i:nil="false">\</e31:Line1>
-          \<e31:Line2 i:nil="false">\</e31:Line2>
-          \<e31:Line3 i:nil="false">\</e31:Line3>
-          \<e31:Line4 i:nil="false">\</e31:Line4>
-          \<e31:PostalCode i:nil="false">\</e31:PostalCode>
-          \<e31:StateOrProvince i:nil="false">\</e31:StateOrProvince>
-          \<e31:TimeStamp i:nil="false">\</e31:TimeStamp>
-        \</e31:CustomerAddress>
-        \<e31:CustomerFinancialStatus i:nil="false">\</e31:CustomerFinancialStatus>
-        \<e31:Id i:nil="false">\</e31:Id>
-        \<e31:Industry i:nil="false">\</e31:Industry>
-        \<e31:LastModifiedByUserId i:nil="false">\</e31:LastModifiedByUserId>
-        \<e31:LastModifiedTime i:nil="false">\</e31:LastModifiedTime>
-        \<e31:MarketCountry i:nil="false">\</e31:MarketCountry>
-        \<ForwardCompatibilityMap xmlns:e32="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          \<e32:KeyValuePairOfstringstring>
-            \<e32:key i:nil="false">\</e32:key>
-            \<e32:value i:nil="false">\</e32:value>
-          \</e32:KeyValuePairOfstringstring>
+      <Customer xmlns:e31="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e31:CustomerAddress i:nil="false">
+          <e31:City i:nil="false"></e31:City>
+          <e31:CountryCode i:nil="false"></e31:CountryCode>
+          <e31:Id i:nil="false"></e31:Id>
+          <e31:Line1 i:nil="false"></e31:Line1>
+          <e31:Line2 i:nil="false"></e31:Line2>
+          <e31:Line3 i:nil="false"></e31:Line3>
+          <e31:Line4 i:nil="false"></e31:Line4>
+          <e31:PostalCode i:nil="false"></e31:PostalCode>
+          <e31:StateOrProvince i:nil="false"></e31:StateOrProvince>
+          <e31:TimeStamp i:nil="false"></e31:TimeStamp>
+        </e31:CustomerAddress>
+        <e31:CustomerFinancialStatus i:nil="false"></e31:CustomerFinancialStatus>
+        <e31:Id i:nil="false"></e31:Id>
+        <e31:Industry i:nil="false"></e31:Industry>
+        <e31:LastModifiedByUserId i:nil="false"></e31:LastModifiedByUserId>
+        <e31:LastModifiedTime i:nil="false"></e31:LastModifiedTime>
+        <e31:MarketCountry i:nil="false"></e31:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e32="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e32:KeyValuePairOfstringstring>
+            <e32:key i:nil="false"></e32:key>
+            <e32:value i:nil="false"></e32:value>
+          </e32:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        \<e31:MarketLanguage i:nil="false">\</e31:MarketLanguage>
-        \<e31:Name i:nil="false">\</e31:Name>
-        \<e31:ServiceLevel i:nil="false">\</e31:ServiceLevel>
-        \<e31:CustomerLifeCycleStatus i:nil="false">\</e31:CustomerLifeCycleStatus>
-        \<e31:TimeStamp i:nil="false">\</e31:TimeStamp>
-        \<e31:Number i:nil="false">\</e31:Number>
+        <e31:MarketLanguage i:nil="false"></e31:MarketLanguage>
+        <e31:Name i:nil="false"></e31:Name>
+        <e31:ServiceLevel i:nil="false"></e31:ServiceLevel>
+        <e31:CustomerLifeCycleStatus i:nil="false"></e31:CustomerLifeCycleStatus>
+        <e31:TimeStamp i:nil="false"></e31:TimeStamp>
+        <e31:Number i:nil="false"></e31:Number>
       </Customer>
     </UpdateCustomerRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateCustomerResponse Message
@@ -97,16 +95,16 @@ The response does not contain additional body elements.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <UpdateCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <LastModifiedTime></LastModifiedTime>
     </UpdateCustomerResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

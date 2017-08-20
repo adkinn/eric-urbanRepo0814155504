@@ -15,9 +15,7 @@ manager: "ehansen"
 # ApplyProductPartitionActions Service Operation
 Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-api/biddableadgroupcriterion-data-object.md) or [NegativeAdGroupCriterion](../campaign-api/negativeadgroupcriterion-data-object.md), which each contain a [ProductPartition](../campaign-api/productpartition-data-object.md).
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>ApplyProductPartitionActionsRequest Message
 
@@ -38,73 +36,73 @@ The *ApplyProductPartitionActionsRequest* object defines the elements of the req
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">ApplyProductPartitionActions</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <ApplyProductPartitionActionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<CriterionActions i:nil="false">
+      <CriterionActions i:nil="false">
         <AdGroupCriterionAction>
           <Action></Action>
-          \<AdGroupCriterion i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+          <AdGroupCriterion i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
             <AdGroupId></AdGroupId>
-            \<Criterion i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-              \<Type i:nil="false"></Type>
-              \<!--Keep these fields if you set the i:type attribute to ProductPartition-->
-              \<Condition i:nil="false">
-                \<Attribute i:nil="false"></Attribute>
-                \<Operand i:nil="false"></Operand>
+            <Criterion i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+              <Type i:nil="false"></Type>
+              <!--Keep these fields if you set the i:type attribute to ProductPartition-->
+              <Condition i:nil="false">
+                <Attribute i:nil="false"></Attribute>
+                <Operand i:nil="false"></Operand>
               </Condition>
-              \<ParentCriterionId i:nil="false"></ParentCriterionId>
+              <ParentCriterionId i:nil="false"></ParentCriterionId>
               <PartitionType></PartitionType>
             </Criterion>
-            \<Id i:nil="false"></Id>
-            \<Status i:nil="false"></Status>
-            \<Type i:nil="false"></Type>
-            \<!--Keep these fields if you set the i:type attribute to BiddableAdGroupCriterion-->
-            \<CriterionBid i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-              \<Type i:nil="false"></Type>
-              \<!--Keep these fields if you set the i:type attribute to FixedBid-->
+            <Id i:nil="false"></Id>
+            <Status i:nil="false"></Status>
+            <Type i:nil="false"></Type>
+            <!--Keep these fields if you set the i:type attribute to BiddableAdGroupCriterion-->
+            <CriterionBid i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+              <Type i:nil="false"></Type>
+              <!--Keep these fields if you set the i:type attribute to FixedBid-->
               <Amount></Amount>
             </CriterionBid>
-            \<DestinationUrl i:nil="false"></DestinationUrl>
-            \<EditorialStatus i:nil="false"></EditorialStatus>
-            \<FinalAppUrls xmlns:e50="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              \<e50:AppUrl>
-                \<e50:OsType i:nil="false">\</e50:OsType>
-                \<e50:Url i:nil="false">\</e50:Url>
-              \</e50:AppUrl>
+            <DestinationUrl i:nil="false"></DestinationUrl>
+            <EditorialStatus i:nil="false"></EditorialStatus>
+            <FinalAppUrls xmlns:e50="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e50:AppUrl>
+                <e50:OsType i:nil="false"></e50:OsType>
+                <e50:Url i:nil="false"></e50:Url>
+              </e50:AppUrl>
             </FinalAppUrls>
-            \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-              \<a1:string>\</a1:string>
+            <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <a1:string></a1:string>
             </FinalMobileUrls>
-            \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-              \<a1:string>\</a1:string>
+            <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <a1:string></a1:string>
             </FinalUrls>
-            \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-            \<UrlCustomParameters xmlns:e51="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              \<e51:Parameters i:nil="false">
-                \<e51:CustomParameter>
-                  \<e51:Key i:nil="false">\</e51:Key>
-                  \<e51:Value i:nil="false">\</e51:Value>
-                \</e51:CustomParameter>
-              \</e51:Parameters>
+            <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+            <UrlCustomParameters xmlns:e51="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e51:Parameters i:nil="false">
+                <e51:CustomParameter>
+                  <e51:Key i:nil="false"></e51:Key>
+                  <e51:Value i:nil="false"></e51:Value>
+                </e51:CustomParameter>
+              </e51:Parameters>
             </UrlCustomParameters>
-            \<!--Keep these fields if you set the i:type attribute to NegativeAdGroupCriterion-->
+            <!--Keep these fields if you set the i:type attribute to NegativeAdGroupCriterion-->
           </AdGroupCriterion>
         </AdGroupCriterionAction>
       </CriterionActions>
     </ApplyProductPartitionActionsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>ApplyProductPartitionActionsResponse Message
@@ -122,41 +120,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <ApplyProductPartitionActionsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<AdGroupCriterionIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<a1:long>\</a1:long>
+      <AdGroupCriterionIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:long></a1:long>
       </AdGroupCriterionIds>
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e52:KeyValuePairOfstringstring>
-              \<e52:key p4:nil="false">\</e52:key>
-              \<e52:value p4:nil="false">\</e52:value>
-            \</e52:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e52:KeyValuePairOfstringstring>
+              <e52:key p4:nil="false"></e52:key>
+              <e52:value p4:nil="false"></e52:value>
+            </e52:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </ApplyProductPartitionActionsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

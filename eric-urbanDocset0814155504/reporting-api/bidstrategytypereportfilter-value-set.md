@@ -18,12 +18,12 @@ Defines the possible values that you can use to use to filter the report data by
 ## Syntax
 
 ```xml
-\<xs:complexType name="BidStrategyTypeReportFilter">
-  \<xs:sequence>
-    \<xs:enumeration value="ManualCpc"/>
-    \<xs:enumeration value="EnhancedCpc"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BidStrategyTypeReportFilter">
+  <xs:sequence>
+    <xs:enumeration value="ManualCpc"/>
+    <xs:enumeration value="EnhancedCpc"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 |Value|Description|

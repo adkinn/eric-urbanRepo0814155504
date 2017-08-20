@@ -18,17 +18,17 @@ Defines the possible user-determined status values of a conversion goal. These a
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ConversionGoalStatus">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Active" />
-        \<xs:enumeration value="Paused" />
-        \<xs:enumeration value="Deleted" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="ConversionGoalStatus">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Active" />
+        <xs:enumeration value="Paused" />
+        <xs:enumeration value="Deleted" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

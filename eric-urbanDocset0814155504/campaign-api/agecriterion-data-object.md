@@ -21,15 +21,15 @@ The *AgeCriterion* criterion can be included within [AdGroupCriterion](../campai
 ## Syntax
 
 ```xml
-\<xs:complexType name="AgeCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element name="AgeRange" type="tns:AgeRange"  minOccurs="0" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="AgeCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element name="AgeRange" type="tns:AgeRange"  minOccurs="0" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

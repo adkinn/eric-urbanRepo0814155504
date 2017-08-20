@@ -17,13 +17,13 @@ Defines the name of account level properties.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AccountPropertyName">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="None" />
-    \<xs:enumeration value="TrackingUrlTemplate" />
-    \<xs:enumeration value="MSCLKIDAutoTaggingEnabled" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AccountPropertyName">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="None" />
+    <xs:enumeration value="TrackingUrlTemplate" />
+    <xs:enumeration value="MSCLKIDAutoTaggingEnabled" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

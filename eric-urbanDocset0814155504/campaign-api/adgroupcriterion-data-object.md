@@ -22,15 +22,15 @@ Do not try to instantiate an *AdGroupCriterion*. You can create one or more foll
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdGroupCriterion">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
-    \<xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="Status" type="tns:AdGroupCriterionStatus" />
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdGroupCriterion">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
+    <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="Status" type="tns:AdGroupCriterionStatus" />
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -49,9 +49,9 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<AdGroupCriterion>` node as shown in the following example, to specify the type of criterion.
 
 ```xml
-\<AdGroupCriterion i:type="BiddableAdGroupCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    \<Id i:nil="true" />
-    \<Status i:nil=”true” />
+<AdGroupCriterion i:type="BiddableAdGroupCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <Id i:nil="true" />
+    <Status i:nil=”true” />
      . . .
 </AdGroupCriterion>
 ```

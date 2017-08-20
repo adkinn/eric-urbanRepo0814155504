@@ -19,48 +19,48 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdExtensionDetailReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName" />
-    \<xs:enumeration value="AccountId" />
-    \<xs:enumeration value="TimePeriod" />
-    \<xs:enumeration value="CampaignName" />
-    \<xs:enumeration value="CampaignId" />
-    \<xs:enumeration value="AdGroupName" />
-    \<xs:enumeration value="AdGroupId" />
-    \<xs:enumeration value="AdTitle" />
-    \<xs:enumeration value="AdId" />
-    \<xs:enumeration value="AdExtensionType" />
-    \<xs:enumeration value="AdExtensionTypeId" />
-    \<xs:enumeration value="AdExtensionId" />
-    \<xs:enumeration value="AdExtensionVersion" />
-    \<xs:enumeration value="AdExtensionPropertyValue" />
-    \<xs:enumeration value="Impressions" />
-    \<xs:enumeration value="DeviceType" />
-    \<xs:enumeration value="DeviceOS" />
-    \<xs:enumeration value="Clicks" />
-    \<xs:enumeration value="Ctr" />
-    \<xs:enumeration value="Conversions" />
-    \<xs:enumeration value="CostPerConversion" />
-    \<xs:enumeration value="ConversionRate" />
-    \<xs:enumeration value="Spend" />
-    \<xs:enumeration value="AverageCpc" />
-    \<xs:enumeration value="BidMatchType" />
-    \<xs:enumeration value="DeliveredMatchType" />
-    \<xs:enumeration value="Network" />
-    \<xs:enumeration value="TopVsOther" />
-    \<xs:enumeration value="Assists" />
-    \<xs:enumeration value="Revenue" />
-    \<xs:enumeration value="ReturnOnAdSpend" />
-    \<xs:enumeration value="CostPerAssist" />
-    \<xs:enumeration value="RevenuePerConversion" />
-    \<xs:enumeration value="RevenuePerAssist" />
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="CampaignStatus"/> 
-    \<xs:enumeration value="AdGroupStatus"/>
-    \<xs:enumeration value="AdStatus"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdExtensionDetailReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="TimePeriod" />
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="AdTitle" />
+    <xs:enumeration value="AdId" />
+    <xs:enumeration value="AdExtensionType" />
+    <xs:enumeration value="AdExtensionTypeId" />
+    <xs:enumeration value="AdExtensionId" />
+    <xs:enumeration value="AdExtensionVersion" />
+    <xs:enumeration value="AdExtensionPropertyValue" />
+    <xs:enumeration value="Impressions" />
+    <xs:enumeration value="DeviceType" />
+    <xs:enumeration value="DeviceOS" />
+    <xs:enumeration value="Clicks" />
+    <xs:enumeration value="Ctr" />
+    <xs:enumeration value="Conversions" />
+    <xs:enumeration value="CostPerConversion" />
+    <xs:enumeration value="ConversionRate" />
+    <xs:enumeration value="Spend" />
+    <xs:enumeration value="AverageCpc" />
+    <xs:enumeration value="BidMatchType" />
+    <xs:enumeration value="DeliveredMatchType" />
+    <xs:enumeration value="Network" />
+    <xs:enumeration value="TopVsOther" />
+    <xs:enumeration value="Assists" />
+    <xs:enumeration value="Revenue" />
+    <xs:enumeration value="ReturnOnAdSpend" />
+    <xs:enumeration value="CostPerAssist" />
+    <xs:enumeration value="RevenuePerConversion" />
+    <xs:enumeration value="RevenuePerAssist" />
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="CampaignStatus"/> 
+    <xs:enumeration value="AdGroupStatus"/>
+    <xs:enumeration value="AdStatus"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

@@ -18,18 +18,18 @@ Defines the bid match type values that you can use to filter the report data. Th
 ## Syntax
 
 ```xml
-\<xs:simpleType name="BidMatchTypeReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Exact"/>
-        \<xs:enumeration value="Phrase"/>
-        \<xs:enumeration value="Broad"/>
-        \<xs:enumeration value="Content"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="BidMatchTypeReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Exact"/>
+        <xs:enumeration value="Phrase"/>
+        <xs:enumeration value="Broad"/>
+        <xs:enumeration value="Content"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

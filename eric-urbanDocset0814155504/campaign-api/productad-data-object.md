@@ -18,15 +18,15 @@ Defines a product ad. A product ad is not used directly for delivered ad copy.  
 ## Syntax
 
 ```xml
-\<xs:complexType name="ProductAd">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Ad">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="PromotionalText" nillable="true" type="xs:string" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ProductAd">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Ad">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PromotionalText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

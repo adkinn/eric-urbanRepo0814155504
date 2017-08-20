@@ -18,13 +18,13 @@ Defines the possible positions where you can target an ad to appear in the searc
 ## Syntax
 
 ```xml
-\<xs:simpleType name="TargetAdPosition">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="MainLine1" />
-    \<xs:enumeration value="MainLine" />
-    \<xs:enumeration value="SideBar" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="TargetAdPosition">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="MainLine1" />
+    <xs:enumeration value="MainLine" />
+    <xs:enumeration value="SideBar" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

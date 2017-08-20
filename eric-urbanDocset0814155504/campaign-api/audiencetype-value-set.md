@@ -17,17 +17,17 @@ Defines the possible audience types.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AudienceType">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="RemarketingList" />
-        \<xs:enumeration value="Custom" />
-        \<xs:enumeration value="InMarket" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AudienceType">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="RemarketingList" />
+        <xs:enumeration value="Custom" />
+        <xs:enumeration value="InMarket" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

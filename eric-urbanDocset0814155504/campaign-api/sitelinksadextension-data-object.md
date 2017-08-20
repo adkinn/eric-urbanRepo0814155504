@@ -21,15 +21,15 @@ Defines an object with *multiple* sitelinks per ad extension. You can use the si
 ## Syntax
 
 ```xml
-\<xs:complexType name="SiteLinksAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element name="SiteLinks" nillable="true" type="tns:ArrayOfSiteLink" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="SiteLinksAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element name="SiteLinks" nillable="true" type="tns:ArrayOfSiteLink" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

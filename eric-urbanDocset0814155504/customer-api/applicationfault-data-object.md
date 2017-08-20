@@ -18,11 +18,11 @@ Defines the base object from which all fault detail objects derive.
 ## Syntax
 
 ```xml
-\<xs:complexType name="ApplicationFault">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="ApplicationFault">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

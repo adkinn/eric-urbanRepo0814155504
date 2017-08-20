@@ -18,12 +18,12 @@ Defines the genders that are available for gender criterion.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="GenderType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Male" />
-    \<xs:enumeration value="Female" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="GenderType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Male" />
+    <xs:enumeration value="Female" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

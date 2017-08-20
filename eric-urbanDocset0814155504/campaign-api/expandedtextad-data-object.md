@@ -23,20 +23,20 @@ This ad format works seamlessly on mobile, tablet and desktop devices so you can
 ## Syntax
 
 ```xml
-\<xs:complexType name="ExpandedTextAd">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Ad">
-      \<xs:sequence>
-        \<xs:element name="DisplayUrl" type="xs:string" nillable="true" minOccurs="0"/>
-        \<xs:element name="Path1" nillable="true" type="xs:string" />
-        \<xs:element name="Path2" nillable="true" type="xs:string" />
-        \<xs:element name="Text" nillable="true" type="xs:string" />
-        \<xs:element name="TitlePart1" nillable="true" type="xs:string" />
-        \<xs:element name="TitlePart2" nillable="true" type="xs:string" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ExpandedTextAd">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Ad">
+      <xs:sequence>
+        <xs:element name="DisplayUrl" type="xs:string" nillable="true" minOccurs="0"/>
+        <xs:element name="Path1" nillable="true" type="xs:string" />
+        <xs:element name="Path2" nillable="true" type="xs:string" />
+        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element name="TitlePart1" nillable="true" type="xs:string" />
+        <xs:element name="TitlePart2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

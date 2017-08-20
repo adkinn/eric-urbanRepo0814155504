@@ -20,15 +20,15 @@ This is the default bid strategy type for your ad groups and keywords. Use this 
 ## Syntax
 
 ```xml
-\<xs:complexType name="InheritFromParentBiddingScheme">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:BiddingScheme">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="InheritedBidStrategyType" nillable="true" type="xs:string"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="InheritFromParentBiddingScheme">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:BiddingScheme">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InheritedBidStrategyType" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

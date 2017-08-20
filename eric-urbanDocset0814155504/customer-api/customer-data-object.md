@@ -18,24 +18,24 @@ Defines a customer.
 ## Syntax
 
 ```xml
-\<xs:complexType name="Customer">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address" />
-    \<xs:element minOccurs="0" name="CustomerFinancialStatus" nillable="true" type="tns:CustomerFinancialStatus" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="Industry" nillable="true" type="tns:Industry" />
-    \<xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
-    \<xs:element minOccurs="0" name="MarketCountry" nillable="true" type="tns:String" />
-    \<xs:element minOccurs="0" name="ForwardCompatibilityMap" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
-    \<xs:element minOccurs="0" name="MarketLanguage" nillable="true" type="tns:LanguageType" />
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="ServiceLevel" nillable="true" type="tns:ServiceLevel" />
-    \<xs:element minOccurs="0" name="CustomerLifeCycleStatus" nillable="true" type="tns:CustomerLifeCycleStatus" />
-    \<xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
-    \<xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Customer">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address" />
+    <xs:element minOccurs="0" name="CustomerFinancialStatus" nillable="true" type="tns:CustomerFinancialStatus" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="Industry" nillable="true" type="tns:Industry" />
+    <xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
+    <xs:element minOccurs="0" name="MarketCountry" nillable="true" type="tns:String" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
+    <xs:element minOccurs="0" name="MarketLanguage" nillable="true" type="tns:LanguageType" />
+    <xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="ServiceLevel" nillable="true" type="tns:ServiceLevel" />
+    <xs:element minOccurs="0" name="CustomerLifeCycleStatus" nillable="true" type="tns:CustomerLifeCycleStatus" />
+    <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

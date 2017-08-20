@@ -18,15 +18,15 @@ Defines a day of the week and time range for ad extension scheduling.
 ## Syntax
 
 ```xml
-\<xs:complexType name="DayTime">
-  \<xs:sequence>
-    \<xs:element name="Day" type="tns:Day"/>
-    \<xs:element name="EndHour" type="xs:int"/>
-    \<xs:element name="EndMinute" type="tns:Minute"/>
-    \<xs:element name="StartHour" type="xs:int"/>
-    \<xs:element name="StartMinute" type="tns:Minute"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="DayTime">
+  <xs:sequence>
+    <xs:element name="Day" type="tns:Day"/>
+    <xs:element name="EndHour" type="xs:int"/>
+    <xs:element name="EndMinute" type="tns:Minute"/>
+    <xs:element name="StartHour" type="xs:int"/>
+    <xs:element name="StartMinute" type="tns:Minute"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

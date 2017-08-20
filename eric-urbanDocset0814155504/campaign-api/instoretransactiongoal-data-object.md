@@ -22,13 +22,13 @@ In-store transactions empower retail advertisers with a holistic view of return 
 ## Syntax
 
 ```xml
-\<xs:complexType name="InStoreTransactionGoal">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ConversionGoal">
-      \<xs:sequence/>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="InStoreTransactionGoal">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ConversionGoal">
+      <xs:sequence/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

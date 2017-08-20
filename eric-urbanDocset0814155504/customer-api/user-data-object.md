@@ -18,26 +18,26 @@ Defines a user.
 ## Syntax
 
 ```xml
-\<xs:complexType name="User">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="ContactInfo" nillable="true" type="tns:ContactInfo" />
-    \<xs:element minOccurs="0" name="CustomerAppScope" nillable="true" type="tns:ApplicationType" />
-    \<xs:element minOccurs="0" name="CustomerId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xss:long" />
-    \<xs:element minOccurs="0" name="JobTitle" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
-    \<xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
-    \<xs:element minOccurs="0" name="Lcid" nillable="true" type="tns:LCID" />
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="tns:PersonName" />
-    \<xs:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="SecretAnswer" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="SecretQuestion" type="tns:SecretQuestion" />
-    \<xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
-    \<xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
-    \<xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
-    \<xs:element minOccurs="0" name="IsMigratedToMicrosoftAccount" nillable="true" type="xsd:boolean" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="User">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="tns:ContactInfo" />
+    <xs:element minOccurs="0" name="CustomerAppScope" nillable="true" type="tns:ApplicationType" />
+    <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xss:long" />
+    <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
+    <xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
+    <xs:element minOccurs="0" name="Lcid" nillable="true" type="tns:LCID" />
+    <xs:element minOccurs="0" name="Name" nillable="true" type="tns:PersonName" />
+    <xs:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="SecretAnswer" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="SecretQuestion" type="tns:SecretQuestion" />
+    <xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
+    <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
+    <xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+    <xs:element minOccurs="0" name="IsMigratedToMicrosoftAccount" nillable="true" type="xsd:boolean" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,15 +18,15 @@ Defines the predefined time and date range values for a budget summary report re
 ## Syntax
 
 ```xml
-\<xs:simpleType name="BudgetSummaryReportTimePeriod">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Today"/>
-    \<xs:enumeration value="Yesterday"/>
-    \<xs:enumeration value="LastSevenDays"/>
-    \<xs:enumeration value="ThisMonth"/>
-    \<xs:enumeration value="LastMonth"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="BudgetSummaryReportTimePeriod">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Today"/>
+    <xs:enumeration value="Yesterday"/>
+    <xs:enumeration value="LastSevenDays"/>
+    <xs:enumeration value="ThisMonth"/>
+    <xs:enumeration value="LastMonth"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

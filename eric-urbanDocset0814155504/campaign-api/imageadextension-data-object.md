@@ -18,23 +18,23 @@ Defines an ad extension that specifies an image with alternative text to include
 ## Syntax
 
 ```xml
-\<xs:complexType name="ImageAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element type="xs:string" name="AlternativeText" nillable="true"/>
-        \<xs:element type="xs:string" name="Description" nillable="true" minOccurs="0"/>
-        \<xs:element type="xs:string" name="DestinationUrl" nillable="true" minOccurs="0"/>
-        \<xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q57:ArrayOfAppUrl"/>
-        \<xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q58:ArrayOfstring"/>
-        \<xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q59:ArrayOfstring"/>
-        \<xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ImageMediaIds" nillable="true" type="q60:ArrayOflong"/>
-        \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-        \<xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q61:CustomParameters"/> 
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ImageAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element type="xs:string" name="AlternativeText" nillable="true"/>
+        <xs:element type="xs:string" name="Description" nillable="true" minOccurs="0"/>
+        <xs:element type="xs:string" name="DestinationUrl" nillable="true" minOccurs="0"/>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q57:ArrayOfAppUrl"/>
+        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q58:ArrayOfstring"/>
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q59:ArrayOfstring"/>
+        <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ImageMediaIds" nillable="true" type="q60:ArrayOflong"/>
+        <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q61:CustomParameters"/> 
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

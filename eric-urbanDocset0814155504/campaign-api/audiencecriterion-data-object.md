@@ -19,16 +19,16 @@ The *AudienceCriterion* criterion can be included within [AdGroupCriterion](../c
 ## Syntax
 
 ```xml
-\<xs:complexType name="AudienceCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="AudienceId" nillable="true" type="xs:long"/>
-        \<xs:element minOccurs="0" name="AudienceType" nillable="true" type="tns:AudienceType"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="AudienceCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AudienceId" nillable="true" type="xs:long"/>
+        <xs:element minOccurs="0" name="AudienceType" nillable="true" type="tns:AudienceType"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

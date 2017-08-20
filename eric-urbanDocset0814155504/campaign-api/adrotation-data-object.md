@@ -18,13 +18,13 @@ Defines an object that specifies the type of ad rotation to apply to the ad grou
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdRotation">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
-    \<xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="tns:AdRotationType" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdRotation">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+    <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+    <xs:element minOccurs="0" name="Type" nillable="true" type="tns:AdRotationType" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

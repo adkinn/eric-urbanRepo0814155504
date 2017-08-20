@@ -18,17 +18,17 @@ Defines the dynamic ad target status values that you can use to filter the repor
 ## Syntax
 
 ```xml
-\<xs:simpleType name="DynamicAdTargetStatusReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Active"/>
-        \<xs:enumeration value="Paused"/>
-        \<xs:enumeration value="Deleted"/>
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="DynamicAdTargetStatusReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Active"/>
+        <xs:enumeration value="Paused"/>
+        <xs:enumeration value="Deleted"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

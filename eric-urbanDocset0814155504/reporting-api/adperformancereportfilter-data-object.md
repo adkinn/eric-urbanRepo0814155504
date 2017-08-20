@@ -18,18 +18,18 @@ Defines the criteria to use to filter the ad performance report request data.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdPerformanceReportFilter">
-  \<xs:sequence>
-    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="LanguageCode" type="q6:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdPerformanceReportFilter">
+  <xs:sequence>
+    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="LanguageCode" type="q6:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,14 +18,14 @@ Defines the possible status values of a keyword.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="KeywordStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Paused" />
-    \<xs:enumeration value="Deleted" />
-    \<xs:enumeration value="Inactive" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="KeywordStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Paused" />
+    <xs:enumeration value="Deleted" />
+    <xs:enumeration value="Inactive" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

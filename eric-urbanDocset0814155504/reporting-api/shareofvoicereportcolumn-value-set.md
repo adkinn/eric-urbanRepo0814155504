@@ -19,53 +19,53 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ShareOfVoiceReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AccountName" />
-    \<xs:enumeration value="TimePeriod" />
-    \<xs:enumeration value="CampaignName" />
-    \<xs:enumeration value="AdGroupName" />
-    \<xs:enumeration value="Keyword" />
-    \<xs:enumeration value="DeliveredMatchType" />
-    \<xs:enumeration value="BidMatchType" />
-    \<xs:enumeration value="Language" />
-    \<xs:enumeration value="AccountNumber" />
-    \<xs:enumeration value="AccountId" />
-    \<xs:enumeration value="KeywordId" />
-    \<xs:enumeration value="AdGroupId" />
-    \<xs:enumeration value="CampaignId" />
-    \<xs:enumeration value="Impressions" />
-    \<xs:enumeration value="Clicks" />
-    \<xs:enumeration value="Ctr" />
-    \<xs:enumeration value="AverageCpc" />
-    \<xs:enumeration value="Spend" />
-    \<xs:enumeration value="AveragePosition" />
-    \<xs:enumeration value="ImpressionSharePercent" />
-    \<xs:enumeration value="ImpressionLostToBudgetPercent" />
-    \<xs:enumeration value="ImpressionLostToRankPercent" />
-    \<xs:enumeration value="ImpressionLostToAdRelevancePercent" />
-    \<xs:enumeration value="ImpressionLostToExpectedCtrPercent" />
-    \<xs:enumeration value="ImpressionLostToRelevancePercent" />
-    \<xs:enumeration value="ImpressionLostToBidPercent" />
-    \<xs:enumeration value="CurrentMaxCpc" />
-    \<xs:enumeration value="QualityScore" />
-    \<xs:enumeration value="ExpectedCtr" />
-    \<xs:enumeration value="AdRelevance" />
-    \<xs:enumeration value="LandingPageExperience" />
-    \<xs:enumeration value="Conversions" />
-    \<xs:enumeration value="ConversionRate" />
-    \<xs:enumeration value="CostPerConversion" />
-    \<xs:enumeration value="AdDistribution" />
-    \<xs:enumeration value="ClickSharePercent" />
-    \<xs:enumeration value="DeviceType" />
-    \<xs:enumeration value="Network"/>
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="CampaignStatus"/>
-    \<xs:enumeration value="AdGroupStatus"/>
-    \<xs:enumeration value="KeywordStatus"/>
-    \<xs:enumeration value="BidStrategyType"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ShareOfVoiceReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="TimePeriod" />
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="Keyword" />
+    <xs:enumeration value="DeliveredMatchType" />
+    <xs:enumeration value="BidMatchType" />
+    <xs:enumeration value="Language" />
+    <xs:enumeration value="AccountNumber" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="KeywordId" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="Impressions" />
+    <xs:enumeration value="Clicks" />
+    <xs:enumeration value="Ctr" />
+    <xs:enumeration value="AverageCpc" />
+    <xs:enumeration value="Spend" />
+    <xs:enumeration value="AveragePosition" />
+    <xs:enumeration value="ImpressionSharePercent" />
+    <xs:enumeration value="ImpressionLostToBudgetPercent" />
+    <xs:enumeration value="ImpressionLostToRankPercent" />
+    <xs:enumeration value="ImpressionLostToAdRelevancePercent" />
+    <xs:enumeration value="ImpressionLostToExpectedCtrPercent" />
+    <xs:enumeration value="ImpressionLostToRelevancePercent" />
+    <xs:enumeration value="ImpressionLostToBidPercent" />
+    <xs:enumeration value="CurrentMaxCpc" />
+    <xs:enumeration value="QualityScore" />
+    <xs:enumeration value="ExpectedCtr" />
+    <xs:enumeration value="AdRelevance" />
+    <xs:enumeration value="LandingPageExperience" />
+    <xs:enumeration value="Conversions" />
+    <xs:enumeration value="ConversionRate" />
+    <xs:enumeration value="CostPerConversion" />
+    <xs:enumeration value="AdDistribution" />
+    <xs:enumeration value="ClickSharePercent" />
+    <xs:enumeration value="DeviceType" />
+    <xs:enumeration value="Network"/>
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="CampaignStatus"/>
+    <xs:enumeration value="AdGroupStatus"/>
+    <xs:enumeration value="KeywordStatus"/>
+    <xs:enumeration value="BidStrategyType"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

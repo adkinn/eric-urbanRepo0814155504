@@ -21,12 +21,12 @@ Defines an object that contains the keyword and the estimated position in the se
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordEstimatedPosition">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="EstimatedPositions" nillable="true" type="tns:ArrayOfEstimatedPositionAndTraffic" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordEstimatedPosition">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="EstimatedPositions" nillable="true" type="tns:ArrayOfEstimatedPositionAndTraffic" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

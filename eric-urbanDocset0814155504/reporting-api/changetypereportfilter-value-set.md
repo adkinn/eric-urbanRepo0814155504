@@ -18,17 +18,17 @@ Defines the types of changes to entities by which you can filter the report data
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ChangeTypeReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Added" />
-        \<xs:enumeration value="Deleted" />
-        \<xs:enumeration value="Changed">
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="ChangeTypeReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Added" />
+        <xs:enumeration value="Deleted" />
+        <xs:enumeration value="Changed">
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

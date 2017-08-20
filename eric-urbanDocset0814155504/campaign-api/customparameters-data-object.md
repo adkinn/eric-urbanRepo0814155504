@@ -18,11 +18,11 @@ Defines a collection of key and value custom parameters for URL tracking. Used f
 ## Syntax
 
 ```xml
-\<xs:complexType name="CustomParameters">
-  \<xs:sequence>
-    \<xs:element name="Parameters" nillable="true" type="tns:ArrayOfCustomParameter"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CustomParameters">
+  <xs:sequence>
+    <xs:element name="Parameters" nillable="true" type="tns:ArrayOfCustomParameter"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

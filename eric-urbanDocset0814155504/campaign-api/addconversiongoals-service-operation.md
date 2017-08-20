@@ -17,9 +17,7 @@ Adds new conversion goals to the account's shared conversion goal library.
 
 [!INCLUDE[guide_uet](../campaign-api/includes/guide-uet.md)]
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddConversionGoalsRequest Message
 
@@ -43,61 +41,61 @@ The *AddConversionGoalsRequest* object defines the elements of the request’s b
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddConversionGoals</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <AddConversionGoalsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<ConversionGoals i:nil="false">
-        \<ConversionGoal i:type="-- specify derived type here with the appropriate prefix --">
-          \<ConversionWindowInMinutes i:nil="false"></ConversionWindowInMinutes>
-          \<CountType i:nil="false"></CountType>
-          \<Id i:nil="false"></Id>
-          \<Name i:nil="false"></Name>
-          \<Revenue i:nil="false">
-            \<CurrencyCode i:nil="false"></CurrencyCode>
-            \<Type i:nil="false"></Type>
-            \<Value i:nil="false"></Value>
+      <ConversionGoals i:nil="false">
+        <ConversionGoal i:type="-- specify derived type here with the appropriate prefix --">
+          <ConversionWindowInMinutes i:nil="false"></ConversionWindowInMinutes>
+          <CountType i:nil="false"></CountType>
+          <Id i:nil="false"></Id>
+          <Name i:nil="false"></Name>
+          <Revenue i:nil="false">
+            <CurrencyCode i:nil="false"></CurrencyCode>
+            <Type i:nil="false"></Type>
+            <Value i:nil="false"></Value>
           </Revenue>
-          \<Scope i:nil="false"></Scope>
-          \<Status i:nil="false"></Status>
-          \<TagId i:nil="false"></TagId>
-          \<TrackingStatus i:nil="false"></TrackingStatus>
-          \<Type i:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to UrlGoal-->
-          \<UrlExpression i:nil="false"></UrlExpression>
-          \<UrlOperator i:nil="false"></UrlOperator>
-          \<!--Keep these fields if you set the i:type attribute to DurationGoal-->
-          \<MinimumDurationInSeconds i:nil="false"></MinimumDurationInSeconds>
-          \<!--Keep these fields if you set the i:type attribute to PagesViewedPerVisitGoal-->
-          \<MinimumPagesViewed i:nil="false"></MinimumPagesViewed>
-          \<!--Keep these fields if you set the i:type attribute to EventGoal-->
-          \<ActionExpression i:nil="false"></ActionExpression>
-          \<ActionOperator i:nil="false"></ActionOperator>
-          \<CategoryExpression i:nil="false"></CategoryExpression>
-          \<CategoryOperator i:nil="false"></CategoryOperator>
-          \<LabelExpression i:nil="false"></LabelExpression>
-          \<LabelOperator i:nil="false"></LabelOperator>
-          \<Value i:nil="false"></Value>
-          \<ValueOperator i:nil="false"></ValueOperator>
-          \<!--Keep these fields if you set the i:type attribute to AppInstallGoal-->
-          \<AppPlatform i:nil="false"></AppPlatform>
-          \<AppStoreId i:nil="false"></AppStoreId>
-          \<!--Keep these fields if you set the i:type attribute to OfflineConversionGoal-->
-          \<!--Keep these fields if you set the i:type attribute to InStoreTransactionGoal-->
+          <Scope i:nil="false"></Scope>
+          <Status i:nil="false"></Status>
+          <TagId i:nil="false"></TagId>
+          <TrackingStatus i:nil="false"></TrackingStatus>
+          <Type i:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to UrlGoal-->
+          <UrlExpression i:nil="false"></UrlExpression>
+          <UrlOperator i:nil="false"></UrlOperator>
+          <!--Keep these fields if you set the i:type attribute to DurationGoal-->
+          <MinimumDurationInSeconds i:nil="false"></MinimumDurationInSeconds>
+          <!--Keep these fields if you set the i:type attribute to PagesViewedPerVisitGoal-->
+          <MinimumPagesViewed i:nil="false"></MinimumPagesViewed>
+          <!--Keep these fields if you set the i:type attribute to EventGoal-->
+          <ActionExpression i:nil="false"></ActionExpression>
+          <ActionOperator i:nil="false"></ActionOperator>
+          <CategoryExpression i:nil="false"></CategoryExpression>
+          <CategoryOperator i:nil="false"></CategoryOperator>
+          <LabelExpression i:nil="false"></LabelExpression>
+          <LabelOperator i:nil="false"></LabelOperator>
+          <Value i:nil="false"></Value>
+          <ValueOperator i:nil="false"></ValueOperator>
+          <!--Keep these fields if you set the i:type attribute to AppInstallGoal-->
+          <AppPlatform i:nil="false"></AppPlatform>
+          <AppStoreId i:nil="false"></AppStoreId>
+          <!--Keep these fields if you set the i:type attribute to OfflineConversionGoal-->
+          <!--Keep these fields if you set the i:type attribute to InStoreTransactionGoal-->
         </ConversionGoal>
       </ConversionGoals>
     </AddConversionGoalsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>AddConversionGoalsResponse Message
@@ -116,41 +114,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <AddConversionGoalsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<ConversionGoalIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<a1:long>\</a1:long>
+      <ConversionGoalIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:long></a1:long>
       </ConversionGoalIds>
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e36="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e36:KeyValuePairOfstringstring>
-              \<e36:key p4:nil="false">\</e36:key>
-              \<e36:value p4:nil="false">\</e36:value>
-            \</e36:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e36="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e36:KeyValuePairOfstringstring>
+              <e36:key p4:nil="false"></e36:key>
+              <e36:value p4:nil="false"></e36:value>
+            </e36:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </AddConversionGoalsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

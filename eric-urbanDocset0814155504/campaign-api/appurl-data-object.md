@@ -21,12 +21,12 @@ Defines the operating system platform and URL of the app store download webpage.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AppUrl">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="OsType" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="Url" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AppUrl">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="OsType" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

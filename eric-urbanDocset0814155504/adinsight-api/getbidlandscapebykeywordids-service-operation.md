@@ -18,9 +18,7 @@ Given a list of existing keywords, this operation returns for each a list of sug
 > [!NOTE]
 > The estimates are based on the last 7 days of performance data, and not a prediction or guarantee of future performance.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetBidLandscapeByKeywordIdsRequest Message
 
@@ -42,26 +40,26 @@ The *GetBidLandscapeByKeywordIdsRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetBidLandscapeByKeywordIds</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetBidLandscapeByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:long>\</a1:long>
+      <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long></a1:long>
       </KeywordIds>
-      \<IncludeCurrentBid i:nil="false"></IncludeCurrentBid>
+      <IncludeCurrentBid i:nil="false"></IncludeCurrentBid>
     </GetBidLandscapeByKeywordIdsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBidLandscapeByKeywordIdsResponse Message
@@ -78,41 +76,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<BidLandscape xmlns:e5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e5:KeywordBidLandscape>
-          \<e5:KeywordId>\</e5:KeywordId>
-          \<e5:StartDate p5:nil="false">
-            \<e5:Day>\</e5:Day>
-            \<e5:Month>\</e5:Month>
-            \<e5:Year>\</e5:Year>
-          \</e5:StartDate>
-          \<e5:EndDate p5:nil="false">
-            \<e5:Day>\</e5:Day>
-            \<e5:Month>\</e5:Month>
-            \<e5:Year>\</e5:Year>
-          \</e5:EndDate>
-          \<e5:BidLandscapePoints p5:nil="false">
-            \<e5:BidLandscapePoint>
-              \<e5:Bid>\</e5:Bid>
-              \<e5:Clicks p5:nil="false">\</e5:Clicks>
-              \<e5:Impressions>\</e5:Impressions>
-              \<e5:TopImpressions p5:nil="false">\</e5:TopImpressions>
-              \<e5:Currency>\</e5:Currency>
-              \<e5:Cost p5:nil="false">\</e5:Cost>
-              \<e5:MarginalCPC p5:nil="false">\</e5:MarginalCPC>
-            \</e5:BidLandscapePoint>
-          \</e5:BidLandscapePoints>
-        \</e5:KeywordBidLandscape>
+      <BidLandscape xmlns:e5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e5:KeywordBidLandscape>
+          <e5:KeywordId></e5:KeywordId>
+          <e5:StartDate p5:nil="false">
+            <e5:Day></e5:Day>
+            <e5:Month></e5:Month>
+            <e5:Year></e5:Year>
+          </e5:StartDate>
+          <e5:EndDate p5:nil="false">
+            <e5:Day></e5:Day>
+            <e5:Month></e5:Month>
+            <e5:Year></e5:Year>
+          </e5:EndDate>
+          <e5:BidLandscapePoints p5:nil="false">
+            <e5:BidLandscapePoint>
+              <e5:Bid></e5:Bid>
+              <e5:Clicks p5:nil="false"></e5:Clicks>
+              <e5:Impressions></e5:Impressions>
+              <e5:TopImpressions p5:nil="false"></e5:TopImpressions>
+              <e5:Currency></e5:Currency>
+              <e5:Cost p5:nil="false"></e5:Cost>
+              <e5:MarginalCPC p5:nil="false"></e5:MarginalCPC>
+            </e5:BidLandscapePoint>
+          </e5:BidLandscapePoints>
+        </e5:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

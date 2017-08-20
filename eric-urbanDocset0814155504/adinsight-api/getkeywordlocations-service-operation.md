@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordLocations Service Operation
 Gets the geographical locations of users who have searched for the specified keywords.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordLocationsRequest Message
 
@@ -44,33 +42,33 @@ The *GetKeywordLocationsRequest* object defines the elements of the request’s 
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetKeywordLocations</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetKeywordLocationsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountry i:nil="false"></PublisherCountry>
-      \<Device i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountry i:nil="false"></PublisherCountry>
+      <Device i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Device>
-      \<Level i:nil="false"></Level>
-      \<ParentCountry i:nil="false"></ParentCountry>
-      \<MaxLocations i:nil="false"></MaxLocations>
+      <Level i:nil="false"></Level>
+      <ParentCountry i:nil="false"></ParentCountry>
+      <MaxLocations i:nil="false"></MaxLocations>
     </GetKeywordLocationsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetKeywordLocationsResponse Message
@@ -87,27 +85,27 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordLocationResult xmlns:e30="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e30:KeywordLocationResult>
-          \<e30:Keyword p5:nil="false">\</e30:Keyword>
-          \<e30:KeywordLocations p5:nil="false">
-            \<e30:KeywordLocation>
-              \<e30:Device p5:nil="false">\</e30:Device>
-              \<e30:Location p5:nil="false">\</e30:Location>
-              \<e30:Percentage>\</e30:Percentage>
-            \</e30:KeywordLocation>
-          \</e30:KeywordLocations>
-        \</e30:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e30="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e30:KeywordLocationResult>
+          <e30:Keyword p5:nil="false"></e30:Keyword>
+          <e30:KeywordLocations p5:nil="false">
+            <e30:KeywordLocation>
+              <e30:Device p5:nil="false"></e30:Device>
+              <e30:Location p5:nil="false"></e30:Location>
+              <e30:Percentage></e30:Percentage>
+            </e30:KeywordLocation>
+          </e30:KeywordLocations>
+        </e30:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -18,9 +18,7 @@ Gets a list of insertion orders for the specified account.
 > [!NOTE]
 > This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](../billing-api/searchinsertionorders-service-operation.md) operation.
 
-||
-|-|
-|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
+[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
 
 ## <a name="request"></a>GetInsertionOrdersByAccountRequest Message
 
@@ -42,24 +40,24 @@ The *GetInsertionOrdersByAccountRequest* object defines the elements of the requ
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">GetInsertionOrdersByAccount</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetInsertionOrdersByAccountRequest xmlns="https://bingads.microsoft.com/Billing/v11">
       <AccountId></AccountId>
-      \<InsertionOrderIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:long>\</a1:long>
+      <InsertionOrderIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long></a1:long>
       </InsertionOrderIds>
     </GetInsertionOrdersByAccountRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetInsertionOrdersByAccountResponse Message
@@ -76,35 +74,35 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      \<InsertionOrders xmlns:e5="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e5:InsertionOrder>
-          \<e5:AccountId>\</e5:AccountId>
-          \<e5:BalanceAmount p5:nil="false">\</e5:BalanceAmount>
-          \<e5:BookingCountryCode p5:nil="false">\</e5:BookingCountryCode>
-          \<e5:Comment p5:nil="false">\</e5:Comment>
-          \<e5:EndDate>\</e5:EndDate>
-          \<e5:InsertionOrderId p5:nil="false">\</e5:InsertionOrderId>
-          \<e5:LastModifiedByUserId p5:nil="false">\</e5:LastModifiedByUserId>
-          \<e5:LastModifiedTime p5:nil="false">\</e5:LastModifiedTime>
-          \<e5:NotificationThreshold p5:nil="false">\</e5:NotificationThreshold>
-          \<e5:ReferenceId p5:nil="false">\</e5:ReferenceId>
-          \<e5:SpendCapAmount>\</e5:SpendCapAmount>
-          \<e5:StartDate>\</e5:StartDate>
-          \<e5:Name p5:nil="false">\</e5:Name>
-          \<e5:Status p5:nil="false">\</e5:Status>
-          \<e5:PurchaseOrder p5:nil="false">\</e5:PurchaseOrder>
-          \<e5:ChangePendingReview p5:nil="false">\</e5:ChangePendingReview>
-        \</e5:InsertionOrder>
+      <InsertionOrders xmlns:e5="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e5:InsertionOrder>
+          <e5:AccountId></e5:AccountId>
+          <e5:BalanceAmount p5:nil="false"></e5:BalanceAmount>
+          <e5:BookingCountryCode p5:nil="false"></e5:BookingCountryCode>
+          <e5:Comment p5:nil="false"></e5:Comment>
+          <e5:EndDate></e5:EndDate>
+          <e5:InsertionOrderId p5:nil="false"></e5:InsertionOrderId>
+          <e5:LastModifiedByUserId p5:nil="false"></e5:LastModifiedByUserId>
+          <e5:LastModifiedTime p5:nil="false"></e5:LastModifiedTime>
+          <e5:NotificationThreshold p5:nil="false"></e5:NotificationThreshold>
+          <e5:ReferenceId p5:nil="false"></e5:ReferenceId>
+          <e5:SpendCapAmount></e5:SpendCapAmount>
+          <e5:StartDate></e5:StartDate>
+          <e5:Name p5:nil="false"></e5:Name>
+          <e5:Status p5:nil="false"></e5:Status>
+          <e5:PurchaseOrder p5:nil="false"></e5:PurchaseOrder>
+          <e5:ChangePendingReview p5:nil="false"></e5:ChangePendingReview>
+        </e5:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

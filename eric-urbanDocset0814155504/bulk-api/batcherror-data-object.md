@@ -18,18 +18,18 @@ Defines an error object that identifies the item within the batch of items in th
 ## Syntax
 
 ```xml
-\<xs:complexType name="BatchError">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Code" type="xs:int" />
-    \<xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string"/>
-    \<xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring"/>
-    \<xs:element minOccurs="0" name="Index" type="xs:int" />
-    \<xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BatchError">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Code" type="xs:int" />
+    <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string"/>
+    <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring"/>
+    <xs:element minOccurs="0" name="Index" type="xs:int" />
+    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

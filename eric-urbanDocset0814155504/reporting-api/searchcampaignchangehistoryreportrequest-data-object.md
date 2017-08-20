@@ -24,18 +24,18 @@ You can request a record of changes made by user and date. For example, you can 
 ## Syntax
 
 ```xml
-\<xs:complexType name="SearchCampaignChangeHistoryReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfSearchCampaignChangeHistoryReportColumn" />
-        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:SearchCampaignChangeHistoryReportFilter" />
-        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="SearchCampaignChangeHistoryReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfSearchCampaignChangeHistoryReportColumn" />
+        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:SearchCampaignChangeHistoryReportFilter" />
+        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

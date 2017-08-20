@@ -18,13 +18,13 @@ Defines properties for revenue that can be tracked by a conversion goal.
 ## Syntax
 
 ```xml
-\<xs:complexType name="ConversionGoalRevenue">
-  \<xs:sequence>
-    \<xs:element name="CurrencyCode" type="xs:string" nillable="true" minOccurs="0"/>
-    \<xs:element name="Type" type="tns:ConversionGoalRevenueType" nillable="true" minOccurs="0"/>
-    \<xs:element name="Value" type="xs:decimal" nillable="true" minOccurs="0"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="ConversionGoalRevenue">
+  <xs:sequence>
+    <xs:element name="CurrencyCode" type="xs:string" nillable="true" minOccurs="0"/>
+    <xs:element name="Type" type="tns:ConversionGoalRevenueType" nillable="true" minOccurs="0"/>
+    <xs:element name="Value" type="xs:decimal" nillable="true" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

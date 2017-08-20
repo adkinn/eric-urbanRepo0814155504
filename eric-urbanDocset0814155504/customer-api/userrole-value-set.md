@@ -18,21 +18,21 @@ Defines the possible roles of a user.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="UserRole">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="AdvertiserCampaignManager" />
-    \<xs:enumeration value="SuperAdmin" />
-    \<xs:enumeration value="ClientViewer" />
-    \<xs:enumeration value="ClientManager" />
-    \<xs:enumeration value="PublisherAdmin" />
-    \<xs:enumeration value="PublisherAccountManager" />
-    \<xs:enumeration value="PublisherReportUser" />
-    \<xs:enumeration value="PublisherListManager" />
-    \<xs:enumeration value="PublisherAdViewer" />
-    \<xs:enumeration value="ClientAdmin" />
-    \<xs:enumeration value="Standard" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="UserRole">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AdvertiserCampaignManager" />
+    <xs:enumeration value="SuperAdmin" />
+    <xs:enumeration value="ClientViewer" />
+    <xs:enumeration value="ClientManager" />
+    <xs:enumeration value="PublisherAdmin" />
+    <xs:enumeration value="PublisherAccountManager" />
+    <xs:enumeration value="PublisherReportUser" />
+    <xs:enumeration value="PublisherListManager" />
+    <xs:enumeration value="PublisherAdViewer" />
+    <xs:enumeration value="ClientAdmin" />
+    <xs:enumeration value="Standard" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

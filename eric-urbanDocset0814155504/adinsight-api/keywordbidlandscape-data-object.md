@@ -21,14 +21,14 @@ Defines an object that contains a list of estimated clicks, cost, and impression
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordBidLandscape">
-  \<xs:sequence>
-    \<xs:element type="xs:long" name="KeywordId" minOccurs="0"/>
-    \<xs:element type="tns:DayMonthAndYear" name="StartDate" nillable="true" minOccurs="0"/>
-    \<xs:element type="tns:DayMonthAndYear" name="EndDate" nillable="true" minOccurs="0"/>
-    \<xs:element type="tns:ArrayOfBidLandscapePoint" name="BidLandscapePoints"  nillable="true" minOccurs="0"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordBidLandscape">
+  <xs:sequence>
+    <xs:element type="xs:long" name="KeywordId" minOccurs="0"/>
+    <xs:element type="tns:DayMonthAndYear" name="StartDate" nillable="true" minOccurs="0"/>
+    <xs:element type="tns:DayMonthAndYear" name="EndDate" nillable="true" minOccurs="0"/>
+    <xs:element type="tns:ArrayOfBidLandscapePoint" name="BidLandscapePoints"  nillable="true" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

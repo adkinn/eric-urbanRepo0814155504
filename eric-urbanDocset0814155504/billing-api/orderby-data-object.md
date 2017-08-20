@@ -18,12 +18,12 @@ Defines an order for the list of insertion orders returned using the [SearchInse
 ## Syntax
 
 ```xml
-\<xs:complexType name="OrderBy">
-  \<xs:sequence>
-    \<xs:element name="Field" type="tns:OrderByField" minOccurs="0"	 />
-    \<xs:element name="Order" type="tns:SortOrder" minOccurs="0" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="OrderBy">
+  <xs:sequence>
+    <xs:element name="Field" type="tns:OrderByField" minOccurs="0"	 />
+    <xs:element name="Order" type="tns:SortOrder" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

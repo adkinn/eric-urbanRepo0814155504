@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetCampaignCriterionsByIds Service Operation
 Gets the specified campaign criterions.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetCampaignCriterionsByIdsRequest Message
 
@@ -43,27 +41,27 @@ The *GetCampaignCriterionsByIdsRequest* object defines the elements of the reque
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetCampaignCriterionsByIds</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetCampaignCriterionsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<CampaignCriterionIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:long>\</a1:long>
+      <CampaignCriterionIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long></a1:long>
       </CampaignCriterionIds>
       <CampaignId></CampaignId>
       <CriterionType></CriterionType>
     </GetCampaignCriterionsByIdsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetCampaignCriterionsByIdsResponse Message
@@ -81,112 +79,112 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetCampaignCriterionsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<CampaignCriterions p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<CampaignCriterion p4:type="-- specify derived type here with the appropriate prefix --">
+      <CampaignCriterions p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <CampaignCriterion p4:type="-- specify derived type here with the appropriate prefix --">
           <CampaignId></CampaignId>
-          \<Criterion p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
-            \<Type p4:nil="false"></Type>
-            \<!--Keep these fields if you set the i:type attribute to ProductScope-->
-            \<Conditions p4:nil="false">
+          <Criterion p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
+            <Type p4:nil="false"></Type>
+            <!--Keep these fields if you set the i:type attribute to ProductScope-->
+            <Conditions p4:nil="false">
               <ProductCondition>
-                \<Attribute p4:nil="false"></Attribute>
-                \<Operand p4:nil="false"></Operand>
+                <Attribute p4:nil="false"></Attribute>
+                <Operand p4:nil="false"></Operand>
               </ProductCondition>
             </Conditions>
-            \<!--Keep these fields if you set the i:type attribute to AgeCriterion-->
-            \<AgeRange p4:nil="false"></AgeRange>
-            \<!--Keep these fields if you set the i:type attribute to DeviceCriterion-->
-            \<DeviceName p4:nil="false"></DeviceName>
-            \<OSName p4:nil="false"></OSName>
-            \<!--Keep these fields if you set the i:type attribute to DayTimeCriterion-->
-            \<Day p4:nil="false"></Day>
-            \<FromHour p4:nil="false"></FromHour>
-            \<FromMinute p4:nil="false"></FromMinute>
-            \<ToHour p4:nil="false"></ToHour>
-            \<ToMinute p4:nil="false"></ToMinute>
-            \<!--Keep these fields if you set the i:type attribute to GenderCriterion-->
-            \<GenderType p4:nil="false"></GenderType>
-            \<!--Keep these fields if you set the i:type attribute to RadiusCriterion-->
-            \<LatitudeDegrees p4:nil="false"></LatitudeDegrees>
-            \<LongitudeDegrees p4:nil="false"></LongitudeDegrees>
-            \<Name p4:nil="false"></Name>
-            \<Radius p4:nil="false"></Radius>
-            \<RadiusUnit p4:nil="false"></RadiusUnit>
-            \<!--Keep these fields if you set the i:type attribute to LocationCriterion-->
-            \<DisplayName p4:nil="false"></DisplayName>
-            \<EnclosedLocationIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-              \<a1:long>\</a1:long>
+            <!--Keep these fields if you set the i:type attribute to AgeCriterion-->
+            <AgeRange p4:nil="false"></AgeRange>
+            <!--Keep these fields if you set the i:type attribute to DeviceCriterion-->
+            <DeviceName p4:nil="false"></DeviceName>
+            <OSName p4:nil="false"></OSName>
+            <!--Keep these fields if you set the i:type attribute to DayTimeCriterion-->
+            <Day p4:nil="false"></Day>
+            <FromHour p4:nil="false"></FromHour>
+            <FromMinute p4:nil="false"></FromMinute>
+            <ToHour p4:nil="false"></ToHour>
+            <ToMinute p4:nil="false"></ToMinute>
+            <!--Keep these fields if you set the i:type attribute to GenderCriterion-->
+            <GenderType p4:nil="false"></GenderType>
+            <!--Keep these fields if you set the i:type attribute to RadiusCriterion-->
+            <LatitudeDegrees p4:nil="false"></LatitudeDegrees>
+            <LongitudeDegrees p4:nil="false"></LongitudeDegrees>
+            <Name p4:nil="false"></Name>
+            <Radius p4:nil="false"></Radius>
+            <RadiusUnit p4:nil="false"></RadiusUnit>
+            <!--Keep these fields if you set the i:type attribute to LocationCriterion-->
+            <DisplayName p4:nil="false"></DisplayName>
+            <EnclosedLocationIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <a1:long></a1:long>
             </EnclosedLocationIds>
-            \<LocationId p4:nil="false"></LocationId>
-            \<LocationType p4:nil="false"></LocationType>
-            \<!--Keep these fields if you set the i:type attribute to LocationIntentCriterion-->
-            \<IntentOption p4:nil="false"></IntentOption>
-            \<!--Keep these fields if you set the i:type attribute to AudienceCriterion-->
-            \<AudienceId p4:nil="false"></AudienceId>
-            \<AudienceType p4:nil="false"></AudienceType>
-            \<!--Keep these fields if you set the i:type attribute to Webpage-->
-            \<Parameter xmlns:e109="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false">
-              \<e109:Conditions p4:nil="false">
-                \<e109:WebpageCondition>
-                  \<e109:Argument p4:nil="false">\</e109:Argument>
-                  \<e109:Operand>\</e109:Operand>
-                \</e109:WebpageCondition>
-              \</e109:Conditions>
-              \<e109:CriterionName p4:nil="false">\</e109:CriterionName>
+            <LocationId p4:nil="false"></LocationId>
+            <LocationType p4:nil="false"></LocationType>
+            <!--Keep these fields if you set the i:type attribute to LocationIntentCriterion-->
+            <IntentOption p4:nil="false"></IntentOption>
+            <!--Keep these fields if you set the i:type attribute to AudienceCriterion-->
+            <AudienceId p4:nil="false"></AudienceId>
+            <AudienceType p4:nil="false"></AudienceType>
+            <!--Keep these fields if you set the i:type attribute to Webpage-->
+            <Parameter xmlns:e109="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false">
+              <e109:Conditions p4:nil="false">
+                <e109:WebpageCondition>
+                  <e109:Argument p4:nil="false"></e109:Argument>
+                  <e109:Operand></e109:Operand>
+                </e109:WebpageCondition>
+              </e109:Conditions>
+              <e109:CriterionName p4:nil="false"></e109:CriterionName>
             </Parameter>
           </Criterion>
-          \<ForwardCompatibilityMap xmlns:e110="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e110:KeyValuePairOfstringstring>
-              \<e110:key p4:nil="false">\</e110:key>
-              \<e110:value p4:nil="false">\</e110:value>
-            \</e110:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e110="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e110:KeyValuePairOfstringstring>
+              <e110:key p4:nil="false"></e110:key>
+              <e110:value p4:nil="false"></e110:value>
+            </e110:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          \<Id p4:nil="false"></Id>
-          \<Status p4:nil="false"></Status>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to NegativeCampaignCriterion-->
-          \<!--Keep these fields if you set the i:type attribute to BiddableCampaignCriterion-->
-          \<CriterionBid p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
-            \<Type p4:nil="false"></Type>
-            \<!--Keep these fields if you set the i:type attribute to FixedBid-->
+          <Id p4:nil="false"></Id>
+          <Status p4:nil="false"></Status>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to NegativeCampaignCriterion-->
+          <!--Keep these fields if you set the i:type attribute to BiddableCampaignCriterion-->
+          <CriterionBid p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
+            <Type p4:nil="false"></Type>
+            <!--Keep these fields if you set the i:type attribute to FixedBid-->
             <Amount></Amount>
-            \<!--Keep these fields if you set the i:type attribute to BidMultiplier-->
+            <!--Keep these fields if you set the i:type attribute to BidMultiplier-->
             <Multiplier></Multiplier>
           </CriterionBid>
         </CampaignCriterion>
       </CampaignCriterions>
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e111="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e111:KeyValuePairOfstringstring>
-              \<e111:key p4:nil="false">\</e111:key>
-              \<e111:value p4:nil="false">\</e111:value>
-            \</e111:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e111="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e111:KeyValuePairOfstringstring>
+              <e111:key p4:nil="false"></e111:key>
+              <e111:value p4:nil="false"></e111:value>
+            </e111:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </GetCampaignCriterionsByIdsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

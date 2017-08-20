@@ -18,12 +18,12 @@ Defines the possible status values of an ad extension.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdExtensionStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Deleted" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdExtensionStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Deleted" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

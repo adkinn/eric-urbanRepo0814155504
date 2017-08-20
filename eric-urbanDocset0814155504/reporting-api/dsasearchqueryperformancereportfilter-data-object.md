@@ -18,17 +18,17 @@ Defines the criteria to use to filter the DSA search query performance report da
 ## Syntax
 
 ```xml
-\<xs:complexType name="DSASearchQueryPerformanceReportFilter">
-  \<xs:sequence>
-    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    \<xs:element name="ExcludeZeroClicks" type="xs:boolean" minOccurs="0"/>
-    \<xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    \<xs:element name="SearchQueries" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="DSASearchQueryPerformanceReportFilter">
+  <xs:sequence>
+    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="AdStatus" type="tns:AdStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    <xs:element name="ExcludeZeroClicks" type="xs:boolean" minOccurs="0"/>
+    <xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    <xs:element name="SearchQueries" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

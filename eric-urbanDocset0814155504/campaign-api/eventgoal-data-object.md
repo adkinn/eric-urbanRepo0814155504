@@ -22,22 +22,22 @@ By default, the UET tag logs user visits to pages on your website that allows Bi
 ## Syntax
 
 ```xml
-\<xs:complexType name="EventGoal">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ConversionGoal">
-      \<xs:sequence>
-        \<xs:element name="ActionExpression" type="xs:string" nillable="true" minOccurs="0"/>
-        \<xs:element name="ActionOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
-        \<xs:element name="CategoryExpression" type="xs:string" nillable="true" minOccurs="0"/>
-        \<xs:element name="CategoryOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
-        \<xs:element name="LabelExpression" type="xs:string" nillable="true" minOccurs="0"/>
-        \<xs:element name="LabelOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
-        \<xs:element name="Value" type="xs:decimal" nillable="true" minOccurs="0"/>
-        \<xs:element name="ValueOperator" type="tns:ValueOperator" nillable="true" minOccurs="0"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="EventGoal">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ConversionGoal">
+      <xs:sequence>
+        <xs:element name="ActionExpression" type="xs:string" nillable="true" minOccurs="0"/>
+        <xs:element name="ActionOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
+        <xs:element name="CategoryExpression" type="xs:string" nillable="true" minOccurs="0"/>
+        <xs:element name="CategoryOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
+        <xs:element name="LabelExpression" type="xs:string" nillable="true" minOccurs="0"/>
+        <xs:element name="LabelOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
+        <xs:element name="Value" type="xs:decimal" nillable="true" minOccurs="0"/>
+        <xs:element name="ValueOperator" type="tns:ValueOperator" nillable="true" minOccurs="0"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

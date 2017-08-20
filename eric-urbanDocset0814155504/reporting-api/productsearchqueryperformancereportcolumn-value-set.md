@@ -20,51 +20,51 @@ The report will include data only for search terms that resulted in a significan
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ProductSearchQueryPerformanceReportColumn">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="TimePeriod" />
-    \<xs:enumeration value="AccountName" />
-    \<xs:enumeration value="AccountNumber" />
-    \<xs:enumeration value="AccountId" />
-    \<xs:enumeration value="AccountStatus"/>
-    \<xs:enumeration value="CampaignName" />
-    \<xs:enumeration value="CampaignId" />
-    \<xs:enumeration value="CampaignStatus" />
-    \<xs:enumeration value="AdGroupName" />
-    \<xs:enumeration value="AdGroupId" />
-    \<xs:enumeration value="AdGroupStatus"/>
-    \<xs:enumeration value="AdId" />
-    \<xs:enumeration value="Language"/>
-    \<xs:enumeration value="Network"/>
-    \<xs:enumeration value="DeviceType" />
-    \<xs:enumeration value="DeviceOS"/>
-    \<xs:enumeration value="SearchQuery" />
-    \<xs:enumeration value="MerchantProductId"/>
-    \<xs:enumeration value="AdGroupCriterionId"/>
-    \<xs:enumeration value="Title"/>
-    \<xs:enumeration value="DestinationUrl" />
-    \<xs:enumeration value="PartitionType"/>
-    \<xs:enumeration value="ProductGroup"/>
-    \<xs:enumeration value="ClickTypeId" />
-    \<xs:enumeration value="ClickType" />
-    \<xs:enumeration value="Impressions" />
-    \<xs:enumeration value="Clicks" />
-    \<xs:enumeration value="Ctr" />
-    \<xs:enumeration value="AverageCpc" />
-    \<xs:enumeration value="Spend" />
-    \<xs:enumeration value="AveragePosition" />
-    \<xs:enumeration value="Conversions" />
-    \<xs:enumeration value="ConversionRate" />
-    \<xs:enumeration value="CostPerConversion" />
-    \<xs:enumeration value="Assists" />
-    \<xs:enumeration value="Revenue" />
-    \<xs:enumeration value="ReturnOnAdSpend" />
-    \<xs:enumeration value="CostPerAssist"/>
-    \<xs:enumeration value="RevenuePerConversion" />
-    \<xs:enumeration value="RevenuePerAssist" />
-    \<xs:enumeration value="TotalClicksOnAdElements" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ProductSearchQueryPerformanceReportColumn">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="TimePeriod" />
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="AccountNumber" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="AccountStatus"/>
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="CampaignStatus" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="AdGroupStatus"/>
+    <xs:enumeration value="AdId" />
+    <xs:enumeration value="Language"/>
+    <xs:enumeration value="Network"/>
+    <xs:enumeration value="DeviceType" />
+    <xs:enumeration value="DeviceOS"/>
+    <xs:enumeration value="SearchQuery" />
+    <xs:enumeration value="MerchantProductId"/>
+    <xs:enumeration value="AdGroupCriterionId"/>
+    <xs:enumeration value="Title"/>
+    <xs:enumeration value="DestinationUrl" />
+    <xs:enumeration value="PartitionType"/>
+    <xs:enumeration value="ProductGroup"/>
+    <xs:enumeration value="ClickTypeId" />
+    <xs:enumeration value="ClickType" />
+    <xs:enumeration value="Impressions" />
+    <xs:enumeration value="Clicks" />
+    <xs:enumeration value="Ctr" />
+    <xs:enumeration value="AverageCpc" />
+    <xs:enumeration value="Spend" />
+    <xs:enumeration value="AveragePosition" />
+    <xs:enumeration value="Conversions" />
+    <xs:enumeration value="ConversionRate" />
+    <xs:enumeration value="CostPerConversion" />
+    <xs:enumeration value="Assists" />
+    <xs:enumeration value="Revenue" />
+    <xs:enumeration value="ReturnOnAdSpend" />
+    <xs:enumeration value="CostPerAssist"/>
+    <xs:enumeration value="RevenuePerConversion" />
+    <xs:enumeration value="RevenuePerAssist" />
+    <xs:enumeration value="TotalClicksOnAdElements" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

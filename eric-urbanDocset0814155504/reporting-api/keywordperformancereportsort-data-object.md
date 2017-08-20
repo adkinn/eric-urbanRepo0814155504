@@ -18,12 +18,12 @@ Defines a keyword performance report column and corresponding sort order.
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordPerformanceReportSort">
-  \<xs:sequence>
-    \<xs:element name="SortColumn" type="tns:KeywordPerformanceReportColumn"/>
-    \<xs:element name="SortOrder" type="tns:SortOrder"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordPerformanceReportSort">
+  <xs:sequence>
+    <xs:element name="SortColumn" type="tns:KeywordPerformanceReportColumn"/>
+    <xs:element name="SortOrder" type="tns:SortOrder"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

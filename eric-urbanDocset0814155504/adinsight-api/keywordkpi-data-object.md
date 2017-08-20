@@ -18,19 +18,19 @@ Defines a key performance index object for a keyword. The object contains the hi
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordKPI">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="MatchType" type="tns:MatchType" />
-    \<xs:element minOccurs="0" name="AdPosition" type="tns:AdPosition" />
-    \<xs:element minOccurs="0" name="Clicks" type="xs:int" />
-    \<xs:element minOccurs="0" name="Impressions" type="xs:long" />
-    \<xs:element minOccurs="0" name="AverageCPC" type="xs:double" />
-    \<xs:element minOccurs="0" name="CTR" type="xs:double" />
-    \<xs:element minOccurs="0" name="TotalCost" type="xs:double" />
-    \<xs:element minOccurs="0" name="AverageBid" type="xs:double" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordKPI">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Device" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="MatchType" type="tns:MatchType" />
+    <xs:element minOccurs="0" name="AdPosition" type="tns:AdPosition" />
+    <xs:element minOccurs="0" name="Clicks" type="xs:int" />
+    <xs:element minOccurs="0" name="Impressions" type="xs:long" />
+    <xs:element minOccurs="0" name="AverageCPC" type="xs:double" />
+    <xs:element minOccurs="0" name="CTR" type="xs:double" />
+    <xs:element minOccurs="0" name="TotalCost" type="xs:double" />
+    <xs:element minOccurs="0" name="AverageBid" type="xs:double" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

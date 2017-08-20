@@ -17,15 +17,15 @@ Defines the multiplier by which to adjust your base bid for the corresponding cr
 ## Syntax
 
 ```xml
-\<xs:complexType name="BidMultiplier">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:CriterionBid">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Multiplier" nillable="true" type="xs:double" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="BidMultiplier">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:CriterionBid">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Multiplier" nillable="true" type="xs:double" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

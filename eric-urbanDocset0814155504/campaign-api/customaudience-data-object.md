@@ -24,13 +24,13 @@ Defines a custom audience.
 ## Syntax
 
 ```xml
-\<xs:complexType name="CustomAudience">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Audience">
-      \<xs:sequence />
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="CustomAudience">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Audience">
+      <xs:sequence />
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

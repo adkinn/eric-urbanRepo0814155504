@@ -18,12 +18,12 @@ Defines the possible distance units of a geographical location.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="DistanceUnit">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Kilometers" />
-    \<xs:enumeration value="Miles" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="DistanceUnit">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Kilometers" />
+    <xs:enumeration value="Miles" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

@@ -21,21 +21,21 @@ Defines a site link to include in an ad. The link should take the user to conten
 ## Syntax
 
 ```xml
-\<xs:complexType name="SiteLink">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Description1" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="Description2" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string"/>
-    \<xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long"/>
-    \<xs:element name="DisplayText" nillable="true" type="xs:string"/>
-    \<xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q49:ArrayOfAppUrl"/>
-    \<xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q50:ArrayOfstring"/>
-    \<xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q51:ArrayOfstring"/>
-    \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-    \<xs:element name="Scheduling" type="tns:Schedule" nillable="true" minOccurs="0"/>
-    \<xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q52:CustomParameters"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="SiteLink">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Description1" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="Description2" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string"/>
+    <xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long"/>
+    <xs:element name="DisplayText" nillable="true" type="xs:string"/>
+    <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q49:ArrayOfAppUrl"/>
+    <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q50:ArrayOfstring"/>
+    <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q51:ArrayOfstring"/>
+    <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+    <xs:element name="Scheduling" type="tns:Schedule" nillable="true" minOccurs="0"/>
+    <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q52:CustomParameters"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

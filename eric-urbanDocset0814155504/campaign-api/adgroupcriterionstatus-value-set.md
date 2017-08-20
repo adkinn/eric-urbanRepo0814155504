@@ -18,13 +18,13 @@ Defines the possible ad group criterion status values.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdGroupCriterionStatus">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Active" />
-    \<xs:enumeration value="Paused" />
-    \<xs:enumeration value="Deleted" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdGroupCriterionStatus">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Active" />
+    <xs:enumeration value="Paused" />
+    <xs:enumeration value="Deleted" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

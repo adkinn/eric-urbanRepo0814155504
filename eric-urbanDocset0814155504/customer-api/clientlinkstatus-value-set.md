@@ -20,24 +20,24 @@ For more information about the client link lifecycle, see [Link to Client Accoun
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ClientLinkStatus">
-      \<xs:restriction base="xs:string">
-      \<xs:enumeration value="LinkPending" />
-      \<xs:enumeration value="LinkCanceled" />
-      \<xs:enumeration value="LinkExpired" />
-      \<xs:enumeration value="LinkAccepted" />
-      \<xs:enumeration value="LinkDeclined" />
-      \<xs:enumeration value="LinkInProgress" />
-      \<xs:enumeration value="Active" />
-      \<xs:enumeration value="LinkFailed" />
-      \<xs:enumeration value="UnlinkRequested" />
-      \<xs:enumeration value="UnlinkPending" />
-      \<xs:enumeration value="UnlinkCanceled" />
-      \<xs:enumeration value="UnlinkInProgress" />
-      \<xs:enumeration value="Inactive" />
-      \<xs:enumeration value="UnlinkFailed" />
-      \</xs:restriction>
-      \</xs:simpleType>
+<xs:simpleType name="ClientLinkStatus">
+      <xs:restriction base="xs:string">
+      <xs:enumeration value="LinkPending" />
+      <xs:enumeration value="LinkCanceled" />
+      <xs:enumeration value="LinkExpired" />
+      <xs:enumeration value="LinkAccepted" />
+      <xs:enumeration value="LinkDeclined" />
+      <xs:enumeration value="LinkInProgress" />
+      <xs:enumeration value="Active" />
+      <xs:enumeration value="LinkFailed" />
+      <xs:enumeration value="UnlinkRequested" />
+      <xs:enumeration value="UnlinkPending" />
+      <xs:enumeration value="UnlinkCanceled" />
+      <xs:enumeration value="UnlinkInProgress" />
+      <xs:enumeration value="Inactive" />
+      <xs:enumeration value="UnlinkFailed" />
+      </xs:restriction>
+      </xs:simpleType>
 ```
 
 ## Values

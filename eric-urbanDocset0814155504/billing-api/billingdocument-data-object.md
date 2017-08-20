@@ -18,13 +18,13 @@ Defines a billing document.
 ## Syntax
 
 ```xml
-\<xs:complexType name="BillingDocument">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Data" nillable="true" type="xsd:base64Binary" />
-    \<xs:element minOccurs="0" name="Id" type="xsd:long" />
-    \<xs:element minOccurs="0" name="Type" type="tns:DataType" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BillingDocument">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Data" nillable="true" type="xsd:base64Binary" />
+    <xs:element minOccurs="0" name="Id" type="xsd:long" />
+    <xs:element minOccurs="0" name="Type" type="tns:DataType" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

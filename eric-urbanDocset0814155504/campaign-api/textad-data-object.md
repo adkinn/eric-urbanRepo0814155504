@@ -20,18 +20,18 @@ Defines a text ad.
 ## Syntax
 
 ```xml
-\<xs:complexType name="TextAd">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Ad">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
-        \<xs:element name="DisplayUrl" nillable="true" type="xs:string" />
-        \<xs:element name="Text" nillable="true" type="xs:string" />
-        \<xs:element name="Title" nillable="true" type="xs:string" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="TextAd">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Ad">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+        <xs:element name="DisplayUrl" nillable="true" type="xs:string" />
+        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element name="Title" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

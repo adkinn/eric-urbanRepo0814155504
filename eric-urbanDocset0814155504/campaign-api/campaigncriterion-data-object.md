@@ -23,16 +23,16 @@ Do not try to instantiate a *CampaignCriterion*. You can create one or more foll
 ## Syntax
 
 ```xml
-\<xs:complexType name="CampaignCriterion">
-  \<xs:sequence>
-    \<xs:element name="CampaignId" type="xs:long"/>
-    \<xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion"/>
-    \<xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q76:ArrayOfKeyValuePairOfstringstring"/>
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
-    \<xs:element minOccurs="0" name="Status" nillable="true" type="tns:CampaignCriterionStatus"/>
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CampaignCriterion">
+  <xs:sequence>
+    <xs:element name="CampaignId" type="xs:long"/>
+    <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion"/>
+    <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q76:ArrayOfKeyValuePairOfstringstring"/>
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long"/>
+    <xs:element minOccurs="0" name="Status" nillable="true" type="tns:CampaignCriterionStatus"/>
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -52,9 +52,9 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<CampaignCriterion>` node as shown in the following example, to specify the type of criterion.
 
 ```xml
-\<CampaignCriterion i:type="BiddableCampaignCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    \<Id i:nil="true" />
-    \<Status i:nil=”true” />
+<CampaignCriterion i:type="BiddableCampaignCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <Id i:nil="true" />
+    <Status i:nil=”true” />
      . . .
 </CampaignCriterion>
 ```

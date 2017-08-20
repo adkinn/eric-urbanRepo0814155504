@@ -17,12 +17,12 @@ Defines a paging object that you can use to request labels and label association
 ## Syntax
 
 ```xml
-\<xs:complexType name="Paging">
-  \<xs:sequence>
-    \<xs:element name="Index" type="xs:int" minOccurs="0"/>
-    \<xs:element name="Size" type="xs:int" minOccurs="0"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Paging">
+  <xs:sequence>
+    <xs:element name="Index" type="xs:int" minOccurs="0"/>
+    <xs:element name="Size" type="xs:int" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

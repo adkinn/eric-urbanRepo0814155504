@@ -18,15 +18,15 @@ Defines the fixed bid to use in the auction.
 ## Syntax
 
 ```xml
-\<xs:complexType name="FixedBid">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:CriterionBid">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Amount" nillable="true" type="xs:double" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="FixedBid">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:CriterionBid">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:double" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetAccountMigrationStatuses Service Operation
 Gets the migration status info for the specified accounts.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAccountMigrationStatusesRequest Message
 
@@ -40,26 +38,26 @@ The *GetAccountMigrationStatusesRequest* object defines the elements of the requ
 The response does not contain additional body elements.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetAccountMigrationStatuses</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetAccountMigrationStatusesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:long>\</a1:long>
+      <AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long></a1:long>
       </AccountIds>
-      \<MigrationType i:nil="false"></MigrationType>
+      <MigrationType i:nil="false"></MigrationType>
     </GetAccountMigrationStatusesRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetAccountMigrationStatusesResponse Message
@@ -77,27 +75,27 @@ The response does not contain additional body elements.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetAccountMigrationStatusesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<MigrationStatuses p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      <MigrationStatuses p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <AccountMigrationStatusesInfo>
           <AccountId></AccountId>
-          \<MigrationStatusInfo p4:nil="false">
+          <MigrationStatusInfo p4:nil="false">
             <MigrationStatusInfo>
-              \<MigrationType p4:nil="false"></MigrationType>
-              \<StartTimeInUtc p4:nil="false"></StartTimeInUtc>
+              <MigrationType p4:nil="false"></MigrationType>
+              <StartTimeInUtc p4:nil="false"></StartTimeInUtc>
               <Status></Status>
             </MigrationStatusInfo>
           </MigrationStatusInfo>
         </AccountMigrationStatusesInfo>
       </MigrationStatuses>
     </GetAccountMigrationStatusesResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

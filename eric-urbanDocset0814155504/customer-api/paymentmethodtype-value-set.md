@@ -21,19 +21,19 @@ Defines possible payment methods for a [!INCLUDE[brand](../customer-api/includes
 ## Syntax
 
 ```xml
-\<xs:simpleType name="PaymentMethodType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="CreditCard" />
-    \<xs:enumeration value="Invoice" />
-    \<xs:enumeration value="Check" />
-    \<xs:enumeration value="ElectronicFundsTransfer" />
-    \<xs:enumeration value="PayPal" />
-    \<xs:enumeration value="ELV" />
-    \<xs:enumeration value="OfflinePaymentMethod" />
-    \<xs:enumeration value="VBA" />
-    \<xs:enumeration value="Boleto" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="PaymentMethodType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="CreditCard" />
+    <xs:enumeration value="Invoice" />
+    <xs:enumeration value="Check" />
+    <xs:enumeration value="ElectronicFundsTransfer" />
+    <xs:enumeration value="PayPal" />
+    <xs:enumeration value="ELV" />
+    <xs:enumeration value="OfflinePaymentMethod" />
+    <xs:enumeration value="VBA" />
+    <xs:enumeration value="Boleto" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

@@ -18,12 +18,12 @@ Defines a key and value custom parameter for URL tracking. Used for campaign, ad
 ## Syntax
 
 ```xml
-\<xs:complexType name="CustomParameter">
-  \<xs:sequence>
-    \<xs:element name="Key" nillable="true" type="xs:string"/>
-    \<xs:element name="Value" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="CustomParameter">
+  <xs:sequence>
+    <xs:element name="Key" nillable="true" type="xs:string"/>
+    <xs:element name="Value" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

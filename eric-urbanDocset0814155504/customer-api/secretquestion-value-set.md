@@ -18,20 +18,20 @@ Defines the possible secret questions that users can choose from to help them re
 ## Syntax
 
 ```xml
-\<xs:simpleType name="SecretQuestion">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="None" />
-    \<xs:enumeration value="FavoritePetsName" />
-    \<xs:enumeration value="FavoriteMovie" />
-    \<xs:enumeration value="Anniversary" />
-    \<xs:enumeration value="FatherMiddleName" />
-    \<xs:enumeration value="SpouseMiddleName" />
-    \<xs:enumeration value="FirstChildMiddleName" />
-    \<xs:enumeration value="HighSchoolName" />
-    \<xs:enumeration value="FavoriteTeacherName" />
-    \<xs:enumeration value="FavoriteSportsTeam" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="SecretQuestion">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="None" />
+    <xs:enumeration value="FavoritePetsName" />
+    <xs:enumeration value="FavoriteMovie" />
+    <xs:enumeration value="Anniversary" />
+    <xs:enumeration value="FatherMiddleName" />
+    <xs:enumeration value="SpouseMiddleName" />
+    <xs:enumeration value="FirstChildMiddleName" />
+    <xs:enumeration value="HighSchoolName" />
+    <xs:enumeration value="FavoriteTeacherName" />
+    <xs:enumeration value="FavoriteSportsTeam" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

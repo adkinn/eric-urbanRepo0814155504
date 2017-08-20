@@ -20,16 +20,16 @@ Defines a URL conversion goal. Use this type of goal to count every time someone
 ## Syntax
 
 ```xml
-\<xs:complexType name="UrlGoal">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ConversionGoal">
-      \<xs:sequence>
-        \<xs:element name="UrlExpression" type="xs:string" nillable="true" minOccurs="0"/>
-        \<xs:element name="UrlOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="UrlGoal">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ConversionGoal">
+      <xs:sequence>
+        <xs:element name="UrlExpression" type="xs:string" nillable="true" minOccurs="0"/>
+        <xs:element name="UrlOperator" type="tns:ExpressionOperator" nillable="true" minOccurs="0"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

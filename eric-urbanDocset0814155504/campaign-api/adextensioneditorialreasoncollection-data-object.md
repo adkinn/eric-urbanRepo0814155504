@@ -18,12 +18,12 @@ Defines a collection of ad extensions that failed editorial review.
 ## Syntax
 
 ```xml
-\<xs:complexType name="AdExtensionEditorialReasonCollection">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="AdExtensionId" type="xs:long" />
-    \<xs:element minOccurs="0" name="Reasons" nillable="true" type="tns:ArrayOfAdExtensionEditorialReason" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="AdExtensionEditorialReasonCollection">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="AdExtensionId" type="xs:long" />
+    <xs:element minOccurs="0" name="Reasons" nillable="true" type="tns:ArrayOfAdExtensionEditorialReason" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

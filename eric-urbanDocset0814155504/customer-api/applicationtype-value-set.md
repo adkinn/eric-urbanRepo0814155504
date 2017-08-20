@@ -18,11 +18,11 @@ Defines the possible application types.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ApplicationType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Advertiser" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ApplicationType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Advertiser" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

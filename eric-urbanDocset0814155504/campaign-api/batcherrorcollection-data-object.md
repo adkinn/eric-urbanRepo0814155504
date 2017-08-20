@@ -18,19 +18,19 @@ Defines an error object that contains batch error details for the top level list
 ## Syntax
 
 ```xml
-\<xs:complexType name="BatchErrorCollection">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError"/>
-    \<xs:element minOccurs="0" name="Code" nillable="true" type="xs:int" />
-    \<xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string"/>
-    \<xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring"/>
-    \<xs:element minOccurs="0" name="Index" type="xs:int" />
-    \<xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BatchErrorCollection">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError"/>
+    <xs:element minOccurs="0" name="Code" nillable="true" type="xs:int" />
+    <xs:element minOccurs="0" name="Details" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="FieldPath" nillable="true" type="xs:string"/>
+    <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q9:ArrayOfKeyValuePairOfstringstring"/>
+    <xs:element minOccurs="0" name="Index" type="xs:int" />
+    <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

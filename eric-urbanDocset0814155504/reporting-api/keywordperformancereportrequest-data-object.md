@@ -25,21 +25,21 @@ You can request impressions, clicks, spend, and average cost per click for your 
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordPerformanceReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Aggregation" type="tns:ReportAggregation" />
-        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfKeywordPerformanceReportColumn" />
-        \<xs:element name="Filter" type="tns:KeywordPerformanceReportFilter" nillable="true" minOccurs="0"/>
-        \<xs:element name="MaxRows" type="xs:int" minOccurs="0"/>
-        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        \<xs:element name="Sort" type="tns:ArrayOfKeywordPerformanceReportSort" nillable="true" minOccurs="0"/>
-        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="KeywordPerformanceReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Aggregation" type="tns:ReportAggregation" />
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfKeywordPerformanceReportColumn" />
+        <xs:element name="Filter" type="tns:KeywordPerformanceReportFilter" nillable="true" minOccurs="0"/>
+        <xs:element name="MaxRows" type="xs:int" minOccurs="0"/>
+        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        <xs:element name="Sort" type="tns:ArrayOfKeywordPerformanceReportSort" nillable="true" minOccurs="0"/>
+        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

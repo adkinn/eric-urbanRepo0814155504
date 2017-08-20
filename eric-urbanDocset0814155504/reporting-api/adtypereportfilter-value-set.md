@@ -18,20 +18,20 @@ Defines the ad type values that you can use to filter the report data. These val
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdTypeReportFilter">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Text" />
-        \<xs:enumeration value="Local" /> 
-        \<xs:enumeration value="Product" /> 
-        \<xs:enumeration value="AppInstall" /> 
-        \<xs:enumeration value="DynamicSearchAd" /> 
-        \<xs:enumeration value="ExpandedText" /> 
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="AdTypeReportFilter">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Text" />
+        <xs:enumeration value="Local" /> 
+        <xs:enumeration value="Product" /> 
+        <xs:enumeration value="AppInstall" /> 
+        <xs:enumeration value="DynamicSearchAd" /> 
+        <xs:enumeration value="ExpandedText" /> 
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

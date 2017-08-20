@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetHistoricalSearchCount Service Operation
 Gets the number of times the normalized term was used in a search during the specified time period. The results are aggregated by device type.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetHistoricalSearchCountRequest Message
 
@@ -53,43 +51,43 @@ The following case-sensitive values may be specified, and data will be returned 
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetHistoricalSearchCount</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetHistoricalSearchCountRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Keywords>
-      \<Language i:nil="false"></Language>
-      \<PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <Language i:nil="false"></Language>
+      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </PublisherCountries>
-      \<StartDate xmlns:e16="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        \<e16:Day>\</e16:Day>
-        \<e16:Month>\</e16:Month>
-        \<e16:Year>\</e16:Year>
+      <StartDate xmlns:e16="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e16:Day></e16:Day>
+        <e16:Month></e16:Month>
+        <e16:Year></e16:Year>
       </StartDate>
-      \<EndDate xmlns:e17="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        \<e17:Day>\</e17:Day>
-        \<e17:Month>\</e17:Month>
-        \<e17:Year>\</e17:Year>
+      <EndDate xmlns:e17="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e17:Day></e17:Day>
+        <e17:Month></e17:Month>
+        <e17:Year></e17:Year>
       </EndDate>
-      \<TimePeriodRollup i:nil="false"></TimePeriodRollup>
-      \<Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        \<a1:string>\</a1:string>
+      <TimePeriodRollup i:nil="false"></TimePeriodRollup>
+      <Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:string></a1:string>
       </Devices>
     </GetHistoricalSearchCountRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetHistoricalSearchCountResponse Message
@@ -106,35 +104,35 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetHistoricalSearchCountResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<KeywordSearchCounts xmlns:e18="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e18:KeywordSearchCount>
-          \<e18:Keyword p5:nil="false">\</e18:Keyword>
-          \<e18:SearchCountsByAttributes p5:nil="false">
-            \<e18:SearchCountsByAttributes>
-              \<e18:Device p5:nil="false">\</e18:Device>
-              \<e18:HistoricalSearchCounts p5:nil="false">
-                \<e18:HistoricalSearchCountPeriodic>
-                  \<e18:SearchCount>\</e18:SearchCount>
-                  \<e18:DayMonthAndYear p5:nil="false">
-                    \<e18:Day>\</e18:Day>
-                    \<e18:Month>\</e18:Month>
-                    \<e18:Year>\</e18:Year>
-                  \</e18:DayMonthAndYear>
-                \</e18:HistoricalSearchCountPeriodic>
-              \</e18:HistoricalSearchCounts>
-            \</e18:SearchCountsByAttributes>
-          \</e18:SearchCountsByAttributes>
-        \</e18:KeywordSearchCount>
+      <KeywordSearchCounts xmlns:e18="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e18:KeywordSearchCount>
+          <e18:Keyword p5:nil="false"></e18:Keyword>
+          <e18:SearchCountsByAttributes p5:nil="false">
+            <e18:SearchCountsByAttributes>
+              <e18:Device p5:nil="false"></e18:Device>
+              <e18:HistoricalSearchCounts p5:nil="false">
+                <e18:HistoricalSearchCountPeriodic>
+                  <e18:SearchCount></e18:SearchCount>
+                  <e18:DayMonthAndYear p5:nil="false">
+                    <e18:Day></e18:Day>
+                    <e18:Month></e18:Month>
+                    <e18:Year></e18:Year>
+                  </e18:DayMonthAndYear>
+                </e18:HistoricalSearchCountPeriodic>
+              </e18:HistoricalSearchCounts>
+            </e18:SearchCountsByAttributes>
+          </e18:SearchCountsByAttributes>
+        </e18:KeywordSearchCount>
       </KeywordSearchCounts>
     </GetHistoricalSearchCountResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

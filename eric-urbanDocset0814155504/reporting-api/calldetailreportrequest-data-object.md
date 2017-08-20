@@ -27,19 +27,19 @@ There is one row or record in the report for each call made to the tracked numbe
 ## Syntax
 
 ```xml
-\<xs:complexType name="CallDetailReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Aggregation" type="tns:ReportAggregation" />
-        \<xs:element name="Columns" type="tns:ArrayOfCallDetailReportColumn" nillable="true"/>
-        \<xs:element name="Filter" type="tns:CallDetailReportFilter" nillable="true" minOccurs="0"/>
-        \<xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
-        \<xs:element name="Time" type="tns:ReportTime" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="CallDetailReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Aggregation" type="tns:ReportAggregation" />
+        <xs:element name="Columns" type="tns:ArrayOfCallDetailReportColumn" nillable="true"/>
+        <xs:element name="Filter" type="tns:CallDetailReportFilter" nillable="true" minOccurs="0"/>
+        <xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
+        <xs:element name="Time" type="tns:ReportTime" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

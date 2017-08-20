@@ -18,12 +18,12 @@ Defines the possible formats of the body of an email message.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="EmailFormat">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Html" />
-    \<xs:enumeration value="Text" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="EmailFormat">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Html" />
+    <xs:enumeration value="Text" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Members

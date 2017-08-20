@@ -18,12 +18,12 @@ Defines the possible types of product partitions.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ProductPartitionType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Subdivision" />
-    \<xs:enumeration value="Unit" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ProductPartitionType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Subdivision" />
+    <xs:enumeration value="Unit" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

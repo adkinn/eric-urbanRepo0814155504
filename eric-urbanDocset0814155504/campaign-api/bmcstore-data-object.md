@@ -20,15 +20,15 @@ Elements of this object are defined in the [!INCLUDE[storebrand](../campaign-api
 ## Syntax
 
 ```xml
-\<xs:complexType name="BMCStore">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="HasCatalog" type="xs:boolean" />
-    \<xs:element minOccurs="0" name="Id" type="xs:long" />
-    \<xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
-    \<xs:element minOccurs="0" name="IsProductAdsEnabled" type="xs:boolean" />
-    \<xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="BMCStore">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="HasCatalog" type="xs:boolean" />
+    <xs:element minOccurs="0" name="Id" type="xs:long" />
+    <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+    <xs:element minOccurs="0" name="IsProductAdsEnabled" type="xs:boolean" />
+    <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

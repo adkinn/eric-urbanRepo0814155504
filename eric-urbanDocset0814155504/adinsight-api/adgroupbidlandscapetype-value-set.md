@@ -18,12 +18,12 @@ Defines the possible values that indicate whether all or a subset of an ad group
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdGroupBidLandscapeType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Uniform" />
-    \<xs:enumeration value="DefaultBidOnly" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdGroupBidLandscapeType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Uniform" />
+    <xs:enumeration value="DefaultBidOnly" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

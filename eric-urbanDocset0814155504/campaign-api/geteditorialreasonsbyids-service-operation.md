@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetEditorialReasonsByIds Service Operation
 Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
 
-||
-|-|
-|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
+[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetEditorialReasonsByIdsRequest Message
 
@@ -40,30 +38,30 @@ The *GetEditorialReasonsByIdsRequest* object defines the elements of the request
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetEditorialReasonsByIds</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetEditorialReasonsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId></AccountId>
-      \<EntityIdToParentIdAssociations xmlns:e120="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-        \<e120:EntityIdToParentIdAssociation>
-          \<e120:EntityId>\</e120:EntityId>
-          \<e120:ParentId>\</e120:ParentId>
-        \</e120:EntityIdToParentIdAssociation>
+      <EntityIdToParentIdAssociations xmlns:e120="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+        <e120:EntityIdToParentIdAssociation>
+          <e120:EntityId></e120:EntityId>
+          <e120:ParentId></e120:ParentId>
+        </e120:EntityIdToParentIdAssociation>
       </EntityIdToParentIdAssociations>
       <EntityType></EntityType>
     </GetEditorialReasonsByIdsRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetEditorialReasonsByIdsResponse Message
@@ -81,55 +79,55 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetEditorialReasonsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      \<EditorialReasons p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      <EditorialReasons p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <EditorialReasonCollection>
           <AdGroupId></AdGroupId>
           <AdOrKeywordId></AdOrKeywordId>
           <AppealStatus></AppealStatus>
-          \<Reasons p4:nil="false">
+          <Reasons p4:nil="false">
             <EditorialReason>
-              \<Location p4:nil="false"></Location>
-              \<PublisherCountries p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                \<a1:string>\</a1:string>
+              <Location p4:nil="false"></Location>
+              <PublisherCountries p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <a1:string></a1:string>
               </PublisherCountries>
               <ReasonCode></ReasonCode>
-              \<Term p4:nil="false"></Term>
+              <Term p4:nil="false"></Term>
             </EditorialReason>
           </Reasons>
         </EditorialReasonCollection>
       </EditorialReasons>
-      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          \<Details p4:nil="false"></Details>
-          \<ErrorCode p4:nil="false"></ErrorCode>
-          \<FieldPath p4:nil="false"></FieldPath>
-          \<ForwardCompatibilityMap xmlns:e121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            \<e121:KeyValuePairOfstringstring>
-              \<e121:key p4:nil="false">\</e121:key>
-              \<e121:value p4:nil="false">\</e121:value>
-            \</e121:KeyValuePairOfstringstring>
+          <Details p4:nil="false"></Details>
+          <ErrorCode p4:nil="false"></ErrorCode>
+          <FieldPath p4:nil="false"></FieldPath>
+          <ForwardCompatibilityMap xmlns:e121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            <e121:KeyValuePairOfstringstring>
+              <e121:key p4:nil="false"></e121:key>
+              <e121:value p4:nil="false"></e121:value>
+            </e121:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          \<Message p4:nil="false"></Message>
-          \<Type p4:nil="false"></Type>
-          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
-          \<Appealable p4:nil="false"></Appealable>
-          \<DisapprovedText p4:nil="false"></DisapprovedText>
-          \<Location p4:nil="false"></Location>
-          \<PublisherCountry p4:nil="false"></PublisherCountry>
+          <Message p4:nil="false"></Message>
+          <Type p4:nil="false"></Type>
+          <!--Keep these fields if you set the i:type attribute to EditorialError-->
+          <Appealable p4:nil="false"></Appealable>
+          <DisapprovedText p4:nil="false"></DisapprovedText>
+          <Location p4:nil="false"></Location>
+          <PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </GetEditorialReasonsByIdsResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

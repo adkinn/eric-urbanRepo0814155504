@@ -21,13 +21,13 @@ Do not try to instantiate a *Media*. You can create the following object that de
 ## Syntax
 
 ```xml
-\<xs:complexType name="Media">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    \<xs:element minOccurs="0" name="MediaType" nillable="true" type="xs:string" />
-    \<xs:element name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Media">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="MediaType" nillable="true" type="xs:string" />
+    <xs:element name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -47,15 +47,15 @@ If you generate the SOAP manually, use the *type* attribute of the `<Media>` nod
 > Images and icons are both created as [Image](../campaign-api/image-data-object.md) objects. 
 
 ```xml
-\<Media xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  \<Media i:type="Image">
-    \<Id i:nil="true" />
+<Media xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Media i:type="Image">
+    <Id i:nil="true" />
     <MediaType>Image</MediaType>
     <Type>Icon</Type>
     <Data>IconDataGoesHere</Data>
   </Media>
-  \<Media i:type="Image">
-    \<Id i:nil="true" />
+  <Media i:type="Image">
+    <Id i:nil="true" />
     <MediaType>Image</MediaType>
     <Type>Image15x10</Type>
     <Data>ImageDataGoesHere</Data>

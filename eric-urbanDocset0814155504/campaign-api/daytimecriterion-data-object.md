@@ -21,19 +21,19 @@ The *DayTimeCriterion* criterion can be included within [AdGroupCriterion](../ca
 ## Syntax
 
 ```xml
-\<xs:complexType name="DayTimeCriterion">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element name="Day" type="tns:Day" minOccurs="0" nillable="true"/>
-        \<xs:element name="FromHour" type="xs:int" minOccurs="0" nillable="true"/>
-        \<xs:element name="FromMinute" type="tns:Minute" minOccurs="0" nillable="true"/>
-        \<xs:element name="ToHour" type="xs:int" minOccurs="0" nillable="true"/>
-        \<xs:element name="ToMinute" type="tns:Minute" minOccurs="0" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="DayTimeCriterion">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element name="Day" type="tns:Day" minOccurs="0" nillable="true"/>
+        <xs:element name="FromHour" type="xs:int" minOccurs="0" nillable="true"/>
+        <xs:element name="FromMinute" type="tns:Minute" minOccurs="0" nillable="true"/>
+        <xs:element name="ToHour" type="xs:int" minOccurs="0" nillable="true"/>
+        <xs:element name="ToMinute" type="tns:Minute" minOccurs="0" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,16 +18,16 @@ Defines the type of ad.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AdType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Text" />
-    \<xs:enumeration value="Image" />
-    \<xs:enumeration value="Product" />
-    \<xs:enumeration value="AppInstall" />
-    \<xs:enumeration value="ExpandedText" />
-    \<xs:enumeration value="DynamicSearch" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AdType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Text" />
+    <xs:enumeration value="Image" />
+    <xs:enumeration value="Product" />
+    <xs:enumeration value="AppInstall" />
+    <xs:enumeration value="ExpandedText" />
+    <xs:enumeration value="DynamicSearch" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

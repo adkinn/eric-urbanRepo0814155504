@@ -22,15 +22,15 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 ## Syntax
 
 ```xml
-\<xs:complexType name="ProductScope">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Criterion">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Conditions" nillable="true" type="tns:ArrayOfProductCondition"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="ProductScope">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Criterion">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Conditions" nillable="true" type="tns:ArrayOfProductCondition"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

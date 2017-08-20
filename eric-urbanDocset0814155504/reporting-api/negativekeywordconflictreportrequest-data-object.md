@@ -21,17 +21,17 @@ You can request negative keywords that conflict with some of your keywords, and 
 ## Syntax
 
 ```xml
-\<xs:complexType name="NegativeKeywordConflictReportRequest">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:ReportRequest">
-      \<xs:sequence>
-        \<xs:element name="Columns" type="tns:ArrayOfNegativeKeywordConflictReportColumn" nillable="true"/>
-        \<xs:element name="Filter" type="tns:NegativeKeywordConflictReportFilter" nillable="true" minOccurs="0"/>
-        \<xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="NegativeKeywordConflictReportRequest">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:ReportRequest">
+      <xs:sequence>
+        <xs:element name="Columns" type="tns:ArrayOfNegativeKeywordConflictReportColumn" nillable="true"/>
+        <xs:element name="Filter" type="tns:NegativeKeywordConflictReportFilter" nillable="true" minOccurs="0"/>
+        <xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

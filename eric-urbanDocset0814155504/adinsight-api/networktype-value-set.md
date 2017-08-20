@@ -20,13 +20,13 @@ You can specify a network type when calling the [GetKeywordIdeas](../adinsight-a
 ## Syntax
 
 ```xml
-\<xs:simpleType name="NetworkType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="OwnedAndOperatedAndSyndicatedSearch" />
-    \<xs:enumeration value="OwnedAndOperatedOnly" />
-    \<xs:enumeration value="SyndicatedSearchOnly" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="NetworkType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="OwnedAndOperatedAndSyndicatedSearch" />
+    <xs:enumeration value="OwnedAndOperatedOnly" />
+    <xs:enumeration value="SyndicatedSearchOnly" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

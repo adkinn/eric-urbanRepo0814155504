@@ -23,15 +23,15 @@ A [NegativeKeywordList](../campaign-api/negativekeywordlist-data-object.md) is d
 ## Syntax
 
 ```xml
-\<xs:complexType name="SharedEntity">
-  \<xs:sequence>
-    \<xs:element name="AssociationCount" nillable="true" type="xs:int" />
-    \<xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q55:ArrayOfKeyValuePairOfstringstring" xmlns:q55="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
-    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    \<xs:element name="Name" nillable="true" type="xs:string" />
-    \<xs:element name="Type" nillable="true" type="xs:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="SharedEntity">
+  <xs:sequence>
+    <xs:element name="AssociationCount" nillable="true" type="xs:int" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q55:ArrayOfKeyValuePairOfstringstring" xmlns:q55="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    <xs:element name="Name" nillable="true" type="xs:string" />
+    <xs:element name="Type" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -50,12 +50,12 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<SharedEntity>` node as shown in the following example, to specify whether the shared entity is a negative keyword list.
 
 ```xml
-\<SharedEntity i:type="NegativeKeywordList" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  \<AssociationCount i:nil="true" />
-  \<ForwardCompatibilityMap i:nil="true" xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
-  \<Id i:nil="true" />
+<SharedEntity i:type="NegativeKeywordList" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AssociationCount i:nil="true" />
+  <ForwardCompatibilityMap i:nil="true" xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <Id i:nil="true" />
   <Name>My Negative Keyword List</Name>
-  \<ItemCount i:nil="true" />
+  <ItemCount i:nil="true" />
 </SharedEntity>
 ```
 

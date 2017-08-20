@@ -18,18 +18,18 @@ Defines the operators that can be applied to expressions within a conversion goa
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ExpressionOperator">
-  \<xs:list>
-    \<xs:simpleType>
-      \<xs:restriction base="xs:string">
-        \<xs:enumeration value="Equals" />
-        \<xs:enumeration value="BeginsWith" />
-        \<xs:enumeration value="RegularExpression" />       
-        \<xs:enumeration value="Contains" />
-      \</xs:restriction>
-    \</xs:simpleType>
-  \</xs:list>
-\</xs:simpleType>
+<xs:simpleType name="ExpressionOperator">
+  <xs:list>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Equals" />
+        <xs:enumeration value="BeginsWith" />
+        <xs:enumeration value="RegularExpression" />       
+        <xs:enumeration value="Contains" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:list>
+</xs:simpleType>
 ```
 
 ## Values

@@ -31,17 +31,17 @@ Finally you can [add](../campaign-api/addads-service-operation.md) a [DynamicSea
 ## Syntax
 
 ```xml
-\<xs:complexType name="DynamicSearchAd">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:Ad">
-      \<xs:sequence>
-        \<xs:element minOccurs="0" name="Path1" nillable="true" type="xs:string"/>
-        \<xs:element minOccurs="0" name="Path2" nillable="true" type="xs:string"/>
-        \<xs:element name="Text" nillable="true" type="xs:string"/>
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="DynamicSearchAd">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:Ad">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Path1" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="Path2" nillable="true" type="xs:string"/>
+        <xs:element name="Text" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

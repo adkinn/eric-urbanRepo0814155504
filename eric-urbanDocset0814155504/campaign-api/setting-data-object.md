@@ -22,11 +22,11 @@ Do not try to instantiate a *Setting*. You can create one or more following obje
 ## Syntax
 
 ```xml
-\<xs:complexType name="Setting">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="Setting">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -41,7 +41,7 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<Setting>` node as shown in the following example, to specify that the setting is a shopping setting.
 
 ```xml
-\<Setting i:type="ShoppingSetting">
+<Setting i:type="ShoppingSetting">
 ```
 
 ## Requirements

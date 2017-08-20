@@ -22,15 +22,15 @@ Ad extensions that are associated at the ad group level will override ad extensi
 ## Syntax
 
 ```xml
-\<xs:complexType name="CalloutAdExtension">
-  \<xs:complexContent mixed="false">
-    \<xs:extension base="tns:AdExtension">
-      \<xs:sequence>
-        \<xs:element name="Text" type="xs:string" nillable="true"/> 
-      \</xs:sequence>
-    \</xs:extension>
-  \</xs:complexContent>
-\</xs:complexType>
+<xs:complexType name="CalloutAdExtension">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:AdExtension">
+      <xs:sequence>
+        <xs:element name="Text" type="xs:string" nillable="true"/> 
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -15,9 +15,7 @@ manager: "ehansen"
 # GetKeywordTrafficEstimates Service Operation
 Provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the bid, language, location, and network, with optional campaign budget and negative keyword filters.
 
-||
-|-|
-|[!INCLUDE[adint_navigation_noremarks](../adinsight-api/includes/adint-navigation-noremarks.md)]|
+[!INCLUDE[adint_service_namespace](../adinsight-api/includes/adint-service-namespace.md)]
 
 ## <a name="request"></a>GetKeywordTrafficEstimatesRequest Message
 
@@ -38,63 +36,63 @@ The *GetKeywordTrafficEstimatesRequest* object defines the elements of the reque
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
     <Action mustUnderstand="1">GetKeywordTrafficEstimates</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<CustomerAccountId i:nil="false"></CustomerAccountId>
-    \<CustomerId i:nil="false"></CustomerId>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <CustomerAccountId i:nil="false"></CustomerAccountId>
+    <CustomerId i:nil="false"></CustomerId>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <GetKeywordTrafficEstimatesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<CampaignEstimators xmlns:e32="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        \<e32:CampaignEstimator>
-          \<e32:AdGroupEstimators i:nil="false">
-            \<e32:AdGroupEstimator>
-              \<e32:AdGroupId i:nil="false">\</e32:AdGroupId>
-              \<e32:KeywordEstimators i:nil="false">
-                \<e32:KeywordEstimator>
-                  \<Keyword xmlns:e33="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
-                    \<e33:Id i:nil="false">\</e33:Id>
-                    \<e33:MatchType>\</e33:MatchType>
-                    \<e33:Text i:nil="false">\</e33:Text>
+      <CampaignEstimators xmlns:e32="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e32:CampaignEstimator>
+          <e32:AdGroupEstimators i:nil="false">
+            <e32:AdGroupEstimator>
+              <e32:AdGroupId i:nil="false"></e32:AdGroupId>
+              <e32:KeywordEstimators i:nil="false">
+                <e32:KeywordEstimator>
+                  <Keyword xmlns:e33="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
+                    <e33:Id i:nil="false"></e33:Id>
+                    <e33:MatchType></e33:MatchType>
+                    <e33:Text i:nil="false"></e33:Text>
                   </Keyword>
-                  \<e32:MaxCpc i:nil="false">\</e32:MaxCpc>
-                \</e32:KeywordEstimator>
-              \</e32:KeywordEstimators>
-              \<e32:MaxCpc>\</e32:MaxCpc>
-            \</e32:AdGroupEstimator>
-          \</e32:AdGroupEstimators>
-          \<e32:CampaignId i:nil="false">\</e32:CampaignId>
-          \<Criteria xmlns:e34="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" i:nil="false">
-            \<e34:Criterion i:type="-- specify derived type here with the appropriate prefix --">
-              \<!--Keep these fields if you set the i:type attribute to LocationCriterion-->
-              \<e34:LocationId>\</e34:LocationId>
-              \<!--Keep these fields if you set the i:type attribute to LanguageCriterion-->
-              \<e34:Language i:nil="false">\</e34:Language>
-              \<!--Keep these fields if you set the i:type attribute to NetworkCriterion-->
-              \<e34:Network>\</e34:Network>
-              \<!--Keep these fields if you set the i:type attribute to DeviceCriterion-->
-              \<e34:DeviceName i:nil="false">\</e34:DeviceName>
-            \</e34:Criterion>
+                  <e32:MaxCpc i:nil="false"></e32:MaxCpc>
+                </e32:KeywordEstimator>
+              </e32:KeywordEstimators>
+              <e32:MaxCpc></e32:MaxCpc>
+            </e32:AdGroupEstimator>
+          </e32:AdGroupEstimators>
+          <e32:CampaignId i:nil="false"></e32:CampaignId>
+          <Criteria xmlns:e34="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" i:nil="false">
+            <e34:Criterion i:type="-- specify derived type here with the appropriate prefix --">
+              <!--Keep these fields if you set the i:type attribute to LocationCriterion-->
+              <e34:LocationId></e34:LocationId>
+              <!--Keep these fields if you set the i:type attribute to LanguageCriterion-->
+              <e34:Language i:nil="false"></e34:Language>
+              <!--Keep these fields if you set the i:type attribute to NetworkCriterion-->
+              <e34:Network></e34:Network>
+              <!--Keep these fields if you set the i:type attribute to DeviceCriterion-->
+              <e34:DeviceName i:nil="false"></e34:DeviceName>
+            </e34:Criterion>
           </Criteria>
-          \<e32:DailyBudget i:nil="false">\</e32:DailyBudget>
-          \<NegativeKeywords xmlns:e35="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
-            \<e35:NegativeKeyword>
-              \<e35:Id i:nil="false">\</e35:Id>
-              \<e35:MatchType>\</e35:MatchType>
-              \<e35:Text i:nil="false">\</e35:Text>
-            \</e35:NegativeKeyword>
+          <e32:DailyBudget i:nil="false"></e32:DailyBudget>
+          <NegativeKeywords xmlns:e35="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
+            <e35:NegativeKeyword>
+              <e35:Id i:nil="false"></e35:Id>
+              <e35:MatchType></e35:MatchType>
+              <e35:Text i:nil="false"></e35:Text>
+            </e35:NegativeKeyword>
           </NegativeKeywords>
-        \</e32:CampaignEstimator>
+        </e32:CampaignEstimator>
       </CampaignEstimators>
     </GetKeywordTrafficEstimatesRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>GetKeywordTrafficEstimatesResponse Message
@@ -111,50 +109,50 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <GetKeywordTrafficEstimatesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      \<CampaignEstimates xmlns:e36="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        \<e36:CampaignEstimate>
-          \<e36:AdGroupEstimates p5:nil="false">
-            \<e36:AdGroupEstimate>
-              \<e36:AdGroupId p5:nil="false">\</e36:AdGroupId>
-              \<e36:KeywordEstimates p5:nil="false">
-                \<e36:KeywordEstimate>
-                  \<Keyword xmlns:e37="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" p5:nil="false">
-                    \<e37:Id p5:nil="false">\</e37:Id>
-                    \<e37:MatchType>\</e37:MatchType>
-                    \<e37:Text p5:nil="false">\</e37:Text>
+      <CampaignEstimates xmlns:e36="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        <e36:CampaignEstimate>
+          <e36:AdGroupEstimates p5:nil="false">
+            <e36:AdGroupEstimate>
+              <e36:AdGroupId p5:nil="false"></e36:AdGroupId>
+              <e36:KeywordEstimates p5:nil="false">
+                <e36:KeywordEstimate>
+                  <Keyword xmlns:e37="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" p5:nil="false">
+                    <e37:Id p5:nil="false"></e37:Id>
+                    <e37:MatchType></e37:MatchType>
+                    <e37:Text p5:nil="false"></e37:Text>
                   </Keyword>
-                  \<e36:Maximum p5:nil="false">
-                    \<e36:AverageCpc>\</e36:AverageCpc>
-                    \<e36:AveragePosition>\</e36:AveragePosition>
-                    \<e36:Clicks>\</e36:Clicks>
-                    \<e36:Ctr>\</e36:Ctr>
-                    \<e36:Impressions>\</e36:Impressions>
-                    \<e36:TotalCost>\</e36:TotalCost>
-                  \</e36:Maximum>
-                  \<e36:Minimum p5:nil="false">
-                    \<e36:AverageCpc>\</e36:AverageCpc>
-                    \<e36:AveragePosition>\</e36:AveragePosition>
-                    \<e36:Clicks>\</e36:Clicks>
-                    \<e36:Ctr>\</e36:Ctr>
-                    \<e36:Impressions>\</e36:Impressions>
-                    \<e36:TotalCost>\</e36:TotalCost>
-                  \</e36:Minimum>
-                \</e36:KeywordEstimate>
-              \</e36:KeywordEstimates>
-            \</e36:AdGroupEstimate>
-          \</e36:AdGroupEstimates>
-          \<e36:CampaignId p5:nil="false">\</e36:CampaignId>
-        \</e36:CampaignEstimate>
+                  <e36:Maximum p5:nil="false">
+                    <e36:AverageCpc></e36:AverageCpc>
+                    <e36:AveragePosition></e36:AveragePosition>
+                    <e36:Clicks></e36:Clicks>
+                    <e36:Ctr></e36:Ctr>
+                    <e36:Impressions></e36:Impressions>
+                    <e36:TotalCost></e36:TotalCost>
+                  </e36:Maximum>
+                  <e36:Minimum p5:nil="false">
+                    <e36:AverageCpc></e36:AverageCpc>
+                    <e36:AveragePosition></e36:AveragePosition>
+                    <e36:Clicks></e36:Clicks>
+                    <e36:Ctr></e36:Ctr>
+                    <e36:Impressions></e36:Impressions>
+                    <e36:TotalCost></e36:TotalCost>
+                  </e36:Minimum>
+                </e36:KeywordEstimate>
+              </e36:KeywordEstimates>
+            </e36:AdGroupEstimate>
+          </e36:AdGroupEstimates>
+          <e36:CampaignId p5:nil="false"></e36:CampaignId>
+        </e36:CampaignEstimate>
       </CampaignEstimates>
     </GetKeywordTrafficEstimatesResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

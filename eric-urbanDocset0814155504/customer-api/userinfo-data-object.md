@@ -18,12 +18,12 @@ Defines a user identification object that contains information that identifies a
 ## Syntax
 
 ```xml
-\<xs:complexType name="UserInfo">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="Id" type="xs:long" />
-    \<xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="UserInfo">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="Id" type="xs:long" />
+    <xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

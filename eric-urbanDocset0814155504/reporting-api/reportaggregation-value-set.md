@@ -18,18 +18,18 @@ Defines the aggregation values that you can use for a report.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="ReportAggregation">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Summary"/>
-    \<xs:enumeration value="Hourly"/>
-    \<xs:enumeration value="Daily"/>
-    \<xs:enumeration value="Weekly"/>
-    \<xs:enumeration value="Monthly"/>
-    \<xs:enumeration value="Yearly"/>
-    \<xs:enumeration value="HourOfDay"/>
-    \<xs:enumeration value="DayOfWeek"/>
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="ReportAggregation">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Summary"/>
+    <xs:enumeration value="Hourly"/>
+    <xs:enumeration value="Daily"/>
+    <xs:enumeration value="Weekly"/>
+    <xs:enumeration value="Monthly"/>
+    <xs:enumeration value="Yearly"/>
+    <xs:enumeration value="HourOfDay"/>
+    <xs:enumeration value="DayOfWeek"/>
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

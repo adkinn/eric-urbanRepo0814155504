@@ -23,9 +23,7 @@ After the invitation has been accepted, you can call [GetUsersInfo](../customer-
 
 For more information about user authentication, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).
 
-||
-|-|
-|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
+[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
 
 ## <a name="request"></a>SendUserInvitationRequest Message
 The *SendUserInvitationRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
@@ -46,33 +44,33 @@ The *SendUserInvitationRequest* object defines the elements of the request’s b
 The following example shows the complete request envelope.
 
 ```xml
-\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SendUserInvitation</Action>
-    \<ApplicationToken i:nil="false"></ApplicationToken>
-    \<AuthenticationToken i:nil="false"></AuthenticationToken>
-    \<DeveloperToken i:nil="false"></DeveloperToken>
-    \<Password i:nil="false"></Password>
-    \<UserName i:nil="false"></UserName>
-  \</s:Header>
-  \<s:Body>
+    <ApplicationToken i:nil="false"></ApplicationToken>
+    <AuthenticationToken i:nil="false"></AuthenticationToken>
+    <DeveloperToken i:nil="false"></DeveloperToken>
+    <Password i:nil="false"></Password>
+    <UserName i:nil="false"></UserName>
+  </s:Header>
+  <s:Body>
     <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      \<UserInvitation xmlns:e41="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        \<e41:Id>\</e41:Id>
-        \<e41:FirstName i:nil="false">\</e41:FirstName>
-        \<e41:LastName i:nil="false">\</e41:LastName>
-        \<e41:Email i:nil="false">\</e41:Email>
-        \<e41:CustomerId>\</e41:CustomerId>
-        \<e41:Role>\</e41:Role>
-        \<e41:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-          \<a1:long>\</a1:long>
-        \</e41:AccountIds>
-        \<e41:ExpirationDate>\</e41:ExpirationDate>
-        \<e41:Lcid>\</e41:Lcid>
+      <UserInvitation xmlns:e41="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e41:Id></e41:Id>
+        <e41:FirstName i:nil="false"></e41:FirstName>
+        <e41:LastName i:nil="false"></e41:LastName>
+        <e41:Email i:nil="false"></e41:Email>
+        <e41:CustomerId></e41:CustomerId>
+        <e41:Role></e41:Role>
+        <e41:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <a1:long></a1:long>
+        </e41:AccountIds>
+        <e41:ExpirationDate></e41:ExpirationDate>
+        <e41:Lcid></e41:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="response"></a>SendUserInvitationResponse Message
@@ -89,16 +87,16 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  \</s:Header>
-  \<s:Body>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  </s:Header>
+  <s:Body>
     <SendUserInvitationResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <UserInvitationId></UserInvitationId>
     </SendUserInvitationResponse>
-  \</s:Body>
-\</s:Envelope>
+  </s:Body>
+</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

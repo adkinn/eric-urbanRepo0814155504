@@ -18,11 +18,11 @@ Defines the possible account types.
 ## Syntax
 
 ```xml
-\<xs:simpleType name="AccountType">
-  \<xs:restriction base="xs:string">
-    \<xs:enumeration value="Advertiser" />
-  \</xs:restriction>
-\</xs:simpleType>
+<xs:simpleType name="AccountType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Advertiser" />
+  </xs:restriction>
+</xs:simpleType>
 ```
 
 ## Values

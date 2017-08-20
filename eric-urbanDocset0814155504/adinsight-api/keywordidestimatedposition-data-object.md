@@ -21,12 +21,12 @@ Defines an object that contains the identifier of a keyword and the estimated se
 ## Syntax
 
 ```xml
-\<xs:complexType name="KeywordIdEstimatedPosition">
-  \<xs:sequence>
-    \<xs:element minOccurs="0" name="KeywordId" type="xs:long" />
-    \<xs:element minOccurs="0" name="KeywordEstimatedPosition" nillable="true" type="tns:KeywordEstimatedPosition" />
-  \</xs:sequence>
-\</xs:complexType>
+<xs:complexType name="KeywordIdEstimatedPosition">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="KeywordId" type="xs:long" />
+    <xs:element minOccurs="0" name="KeywordEstimatedPosition" nillable="true" type="tns:KeywordEstimatedPosition" />
+  </xs:sequence>
+</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
