@@ -17,7 +17,9 @@ Searches for user invitations that match a specified criteria.
 
 This operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the response.  
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>SearchUserInvitationsRequest Message
 The *SearchUserInvitationsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
@@ -45,27 +47,27 @@ For this service operation, the following are supported *Field* element and *Ope
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SearchUserInvitations</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e39="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e39:Predicate>
-          <e39:Field i:nil="false"></e39:Field>
-          <e39:Operator></e39:Operator>
-          <e39:Value i:nil="false"></e39:Value>
-        </e39:Predicate>
+      \<Predicates xmlns:e39="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e39:Predicate>
+          \<e39:Field i:nil="false">\</e39:Field>
+          \<e39:Operator>\</e39:Operator>
+          \<e39:Value i:nil="false">\</e39:Value>
+        \</e39:Predicate>
       </Predicates>
     </SearchUserInvitationsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>SearchUserInvitationsResponse Message
@@ -82,30 +84,30 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitations xmlns:e40="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e40:UserInvitation>
-          <e40:Id></e40:Id>
-          <e40:FirstName p5:nil="false"></e40:FirstName>
-          <e40:LastName p5:nil="false"></e40:LastName>
-          <e40:Email p5:nil="false"></e40:Email>
-          <e40:CustomerId></e40:CustomerId>
-          <e40:Role></e40:Role>
-          <e40:AccountIds p5:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:long></a1:long>
-          </e40:AccountIds>
-          <e40:ExpirationDate></e40:ExpirationDate>
-          <e40:Lcid></e40:Lcid>
-        </e40:UserInvitation>
+      \<UserInvitations xmlns:e40="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e40:UserInvitation>
+          \<e40:Id>\</e40:Id>
+          \<e40:FirstName p5:nil="false">\</e40:FirstName>
+          \<e40:LastName p5:nil="false">\</e40:LastName>
+          \<e40:Email p5:nil="false">\</e40:Email>
+          \<e40:CustomerId>\</e40:CustomerId>
+          \<e40:Role>\</e40:Role>
+          \<e40:AccountIds p5:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:long>\</a1:long>
+          \</e40:AccountIds>
+          \<e40:ExpirationDate>\</e40:ExpirationDate>
+          \<e40:Lcid>\</e40:Lcid>
+        \</e40:UserInvitation>
       </UserInvitations>
     </SearchUserInvitationsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

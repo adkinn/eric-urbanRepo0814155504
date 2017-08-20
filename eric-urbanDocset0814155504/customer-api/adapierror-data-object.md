@@ -18,14 +18,14 @@ Defines an error object that contains the details that explain why the service o
 ## Syntax
 
 ```xml
-<xs:complexType name="AdApiError">
-      <xs:sequence>
-      <xs:element minOccurs="0" name="Code" type="xs:int" />
-      <xs:element minOccurs="0" name="Detail" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
-      </xs:sequence>
-      </xs:complexType>
+\<xs:complexType name="AdApiError">
+      \<xs:sequence>
+      \<xs:element minOccurs="0" name="Code" type="xs:int" />
+      \<xs:element minOccurs="0" name="Detail" nillable="true" type="xs:string" />
+      \<xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      \<xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      \</xs:sequence>
+      \</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

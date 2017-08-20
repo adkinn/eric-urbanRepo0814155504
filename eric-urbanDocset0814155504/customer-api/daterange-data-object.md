@@ -18,12 +18,12 @@ Defines a date range object.
 ## Syntax
 
 ```xml
-<xs:complexType name="DateRange">
-  <xs:sequence>
-    <xs:element name="MinDate" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="MaxDate" type="xs:string" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="DateRange">
+  \<xs:sequence>
+    \<xs:element name="MinDate" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="MaxDate" type="xs:string" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

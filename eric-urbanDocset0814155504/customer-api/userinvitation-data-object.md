@@ -21,25 +21,25 @@ Since a recipient can accept the invitation and sign into Bing Ads with a Micros
 
 After the invitation has been accepted, you can call [GetUsersInfo](../customer-api/getusersinfo-service-operation.md) and [GetUser](../customer-api/getuser-service-operation.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from *UserInvitation* to accepted [User](../customer-api/user-data-object.md). With the user ID returned by [GetUsersInfo](../customer-api/getusersinfo-service-operation.md) or [GetUser](../customer-api/getuser-service-operation.md), you can call [DeleteUser](../customer-api/deleteuser-service-operation.md) to remove the user.
 
-For more information about user authentication, see [Authentication with OAuth](~/concepts/authentication-with-oauth.md).
+For more information about user authentication, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).
 
 
 ## Syntax
 
 ```xml
-<xs:complexType name="UserInvitation">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Id" type="xs:long" />
-    <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    <xs:element minOccurs="0" name="Role" nillable="true" type="tns:UserRole" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
-    <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="UserInvitation">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Id" type="xs:long" />
+    \<xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="CustomerId" type="xs:long" />
+    \<xs:element minOccurs="0" name="Role" nillable="true" type="tns:UserRole" />
+    \<xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    \<xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+    \<xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

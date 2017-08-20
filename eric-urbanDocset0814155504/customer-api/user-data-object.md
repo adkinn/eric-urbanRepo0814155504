@@ -18,26 +18,26 @@ Defines a user.
 ## Syntax
 
 ```xml
-<xs:complexType name="User">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="tns:ContactInfo" />
-    <xs:element minOccurs="0" name="CustomerAppScope" nillable="true" type="tns:ApplicationType" />
-    <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xsd:long" />
-    <xs:element minOccurs="0" name="Id" nillable="true" type="xss:long" />
-    <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
-    <xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
-    <xs:element minOccurs="0" name="Lcid" nillable="true" type="tns:LCID" />
-    <xs:element minOccurs="0" name="Name" nillable="true" type="tns:PersonName" />
-    <xs:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="SecretAnswer" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="SecretQuestion" type="tns:SecretQuestion" />
-    <xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
-    <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
-    <xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="IsMigratedToMicrosoftAccount" nillable="true" type="xsd:boolean" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="User">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="ContactInfo" nillable="true" type="tns:ContactInfo" />
+    \<xs:element minOccurs="0" name="CustomerAppScope" nillable="true" type="tns:ApplicationType" />
+    \<xs:element minOccurs="0" name="CustomerId" nillable="true" type="xsd:long" />
+    \<xs:element minOccurs="0" name="Id" nillable="true" type="xss:long" />
+    \<xs:element minOccurs="0" name="JobTitle" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="LastModifiedByUserId" nillable="true" type="xsd:long" />
+    \<xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xsd:dateTime" />
+    \<xs:element minOccurs="0" name="Lcid" nillable="true" type="tns:LCID" />
+    \<xs:element minOccurs="0" name="Name" nillable="true" type="tns:PersonName" />
+    \<xs:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="SecretAnswer" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="SecretQuestion" type="tns:SecretQuestion" />
+    \<xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
+    \<xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xsd:base64Binary" />
+    \<xs:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="IsMigratedToMicrosoftAccount" nillable="true" type="xsd:boolean" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -48,7 +48,7 @@ Defines a user.
 |*CustomerAppScope*|Confirms that the customer to whom this user belongs is an advertiser.<br/><br/>**Update:** Read-only|[ApplicationType](../customer-api/applicationtype-value-set.md)|
 |*CustomerId*|The identifier of the customer to whom this user belongs.<br/><br/>**Update:** Read-only|*long*|
 |*Id*|The system generated identifier of the user.<br/><br/>**Update:** Required|*long*|
-|*IsMigratedToMicrosoftAccount*|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](~/concepts/authentication-with-oauth.md).<br/><br/>**Update:** Read-only|*boolean*|
+|*IsMigratedToMicrosoftAccount*|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).<br/><br/>**Update:** Read-only|*boolean*|
 |*JobTitle*|The user's job title. The title can contain a maximum of 50 characters.<br/><br/>**Update:** [!INCLUDE[update_optional_setting_unchanged](../customer-api/includes/update-optional-setting-unchanged.md)]|*string*|
 |*LastModifiedByUserId*|The identifier of the last user to update the user’s information.<br/><br/>**Update:** Read-only|*long*|
 |*LastModifiedTime*|The date and time that that the user information was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](http://msdn.microsoft.com/library/ms256220.aspx).<br/><br/>**Update:** Read-only|*dateTime*|

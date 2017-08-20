@@ -18,12 +18,12 @@ Defines a customer identification object that contains information that identifi
 ## Syntax
 
 ```xml
-<xs:complexType name="CustomerInfo">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Id" type="xs:long" />
-    <xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="CustomerInfo">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Id" type="xs:long" />
+    \<xs:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

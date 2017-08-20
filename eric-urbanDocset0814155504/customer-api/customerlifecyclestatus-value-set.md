@@ -18,12 +18,12 @@ Defines the possible status values of a customer.
 ## Syntax
 
 ```xml
-<xs:simpleType name="CustomerLifeCycleStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Active" />
-    <xs:enumeration value="Inactive" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CustomerLifeCycleStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Active" />
+    \<xs:enumeration value="Inactive" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

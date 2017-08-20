@@ -18,31 +18,31 @@ Defines the possible industry segments in which a customer operates.
 ## Syntax
 
 ```xml
-<xs:simpleType name="Industry">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="NA" />
-    <xs:enumeration value="AgencySalesHouse" />
-    <xs:enumeration value="Automotive" />
-    <xs:enumeration value="ConsumerPackagedGoods" />
-    <xs:enumeration value="Education" />
-    <xs:enumeration value="Entertainment" />
-    <xs:enumeration value="FinancialServices" />
-    <xs:enumeration value="FoodServices" />
-    <xs:enumeration value="Gaming" />
-    <xs:enumeration value="GovernmentNonprofitPolitical" />
-    <xs:enumeration value="Healthcare" />
-    <xs:enumeration value="Internal" />
-    <xs:enumeration value="PublishingAndWebMedia" />
-    <xs:enumeration value="RealEstate" />
-    <xs:enumeration value="Retail" />
-    <xs:enumeration value="Services" />
-    <xs:enumeration value="Technology" />
-    <xs:enumeration value="Telecommunications" />
-    <xs:enumeration value="TravelHospitality" />
-    <xs:enumeration value="Other" />
-    <xs:enumeration value="Pharmaceuticals" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="Industry">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="NA" />
+    \<xs:enumeration value="AgencySalesHouse" />
+    \<xs:enumeration value="Automotive" />
+    \<xs:enumeration value="ConsumerPackagedGoods" />
+    \<xs:enumeration value="Education" />
+    \<xs:enumeration value="Entertainment" />
+    \<xs:enumeration value="FinancialServices" />
+    \<xs:enumeration value="FoodServices" />
+    \<xs:enumeration value="Gaming" />
+    \<xs:enumeration value="GovernmentNonprofitPolitical" />
+    \<xs:enumeration value="Healthcare" />
+    \<xs:enumeration value="Internal" />
+    \<xs:enumeration value="PublishingAndWebMedia" />
+    \<xs:enumeration value="RealEstate" />
+    \<xs:enumeration value="Retail" />
+    \<xs:enumeration value="Services" />
+    \<xs:enumeration value="Technology" />
+    \<xs:enumeration value="Telecommunications" />
+    \<xs:enumeration value="TravelHospitality" />
+    \<xs:enumeration value="Other" />
+    \<xs:enumeration value="Pharmaceuticals" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

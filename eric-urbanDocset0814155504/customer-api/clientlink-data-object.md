@@ -21,27 +21,27 @@ Defines a client link object. Acceptance of a client link invitation enables an 
 ## Syntax
 
 ```xml
-<xs:complexType name="ClientLink">
-  <xs:sequence>
-    <xs:element name="ClientAccountId" type="xs:int" nillable="true" minOccurs="0"/>
-    <xs:element name="ClientAccountNumber" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="ManagingCustomerId" type="xs:int" nillable="true" minOccurs="0"/>
-    <xs:element name="ManagingCustomerNumber" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="Note" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="InviterEmail" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="InviterName" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="InviterPhone" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="IsBillToClient" type="xs:boolean" minOccurs="0"/>
-    <xs:element name="StartDate" type="xs:dateTime" nillable="true" minOccurs="0"/>
-    <xs:element name="Status" type="tns:ClientLinkStatus" nillable="true" minOccurs="0"/>
-    <xs:element name="SuppressNotification" type="xs:boolean" minOccurs="0"/>
-    <xs:element name="LastModifiedDateTime" type="xs:dateTime" minOccurs="0"/>
-    <xs:element name="LastModifiedByUserId" type="xs:int" minOccurs="0"/>
-    <xs:element name="Timestamp" type="xs:base64Binary" nillable="true" minOccurs="0"/>
-    <xs:element name="ForwardCompatibilityMap" type="q4:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ClientLink">
+  \<xs:sequence>
+    \<xs:element name="ClientAccountId" type="xs:int" nillable="true" minOccurs="0"/>
+    \<xs:element name="ClientAccountNumber" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="ManagingCustomerId" type="xs:int" nillable="true" minOccurs="0"/>
+    \<xs:element name="ManagingCustomerNumber" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="Note" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="InviterEmail" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="InviterName" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="InviterPhone" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="IsBillToClient" type="xs:boolean" minOccurs="0"/>
+    \<xs:element name="StartDate" type="xs:dateTime" nillable="true" minOccurs="0"/>
+    \<xs:element name="Status" type="tns:ClientLinkStatus" nillable="true" minOccurs="0"/>
+    \<xs:element name="SuppressNotification" type="xs:boolean" minOccurs="0"/>
+    \<xs:element name="LastModifiedDateTime" type="xs:dateTime" minOccurs="0"/>
+    \<xs:element name="LastModifiedByUserId" type="xs:int" minOccurs="0"/>
+    \<xs:element name="Timestamp" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+    \<xs:element name="ForwardCompatibilityMap" type="q4:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

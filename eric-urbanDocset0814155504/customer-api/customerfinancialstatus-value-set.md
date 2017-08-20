@@ -18,16 +18,16 @@ Defines the possible financial status values of a customer.
 ## Syntax
 
 ```xml
-<xs:simpleType name="CustomerFinancialStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="ProposalsOnly" />
-    <xs:enumeration value="PendingCreditCheck" />
-    <xs:enumeration value="ClearFinancialStatus" />
-    <xs:enumeration value="SoldToOnly" />
-    <xs:enumeration value="CreditHold" />
-    <xs:enumeration value="CreditWarning" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CustomerFinancialStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="ProposalsOnly" />
+    \<xs:enumeration value="PendingCreditCheck" />
+    \<xs:enumeration value="ClearFinancialStatus" />
+    \<xs:enumeration value="SoldToOnly" />
+    \<xs:enumeration value="CreditHold" />
+    \<xs:enumeration value="CreditWarning" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

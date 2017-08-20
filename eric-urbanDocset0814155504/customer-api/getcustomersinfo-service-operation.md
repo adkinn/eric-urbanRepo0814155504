@@ -17,7 +17,9 @@ Gets a list of objects that contain customer identification information, for exa
 
 The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller’s user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetCustomersInfoRequest Message
 
@@ -40,23 +42,23 @@ The *GetCustomersInfoRequest* object defines the elements of the request’s bod
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">GetCustomersInfo</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <CustomerNameFilter i:nil="false"></CustomerNameFilter>
+      \<CustomerNameFilter i:nil="false"></CustomerNameFilter>
       <TopN></TopN>
       <ApplicationScope></ApplicationScope>
     </GetCustomersInfoRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetCustomersInfoResponse Message
@@ -73,21 +75,21 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <CustomersInfo xmlns:e15="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e15:CustomerInfo>
-          <e15:Id p5:nil="false"></e15:Id>
-          <e15:Name p5:nil="false"></e15:Name>
-        </e15:CustomerInfo>
+      \<CustomersInfo xmlns:e15="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e15:CustomerInfo>
+          \<e15:Id p5:nil="false">\</e15:Id>
+          \<e15:Name p5:nil="false">\</e15:Name>
+        \</e15:CustomerInfo>
       </CustomersInfo>
     </GetCustomersInfoResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

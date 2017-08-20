@@ -18,20 +18,20 @@ Defines an advertiser account.
 ## Syntax
 
 ```xml
-<xs:complexType name="AdvertiserAccount">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Account">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="LinkedAgencies" nillable="true" type="tns:ArrayOfCustomerInfo" />
-        <xs:element minOccurs="0" name="SalesHouseCustomerId" nillable="true" type="xs:long" />
-        <xs:element minOccurs="0" name="BackUpPaymentInstrumentId" nillable="true" type="xs:long" />
-        <xs:element minOccurs="0" name="BillingThresholdAmount" nillable="true" type="xs:long" />
-        <xs:element minOccurs="0" name="BusinessAddress" nillable="true" type="tns:Address"/>
-        <xs:element minOccurs="0" name="TaxInformation" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="AdvertiserAccount">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Account">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="LinkedAgencies" nillable="true" type="tns:ArrayOfCustomerInfo" />
+        \<xs:element minOccurs="0" name="SalesHouseCustomerId" nillable="true" type="xs:long" />
+        \<xs:element minOccurs="0" name="BackUpPaymentInstrumentId" nillable="true" type="xs:long" />
+        \<xs:element minOccurs="0" name="BillingThresholdAmount" nillable="true" type="xs:long" />
+        \<xs:element minOccurs="0" name="BusinessAddress" nillable="true" type="tns:Address"/>
+        \<xs:element minOccurs="0" name="TaxInformation" xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" nillable="true" type="q2:ArrayOfKeyValuePairOfstringstring" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

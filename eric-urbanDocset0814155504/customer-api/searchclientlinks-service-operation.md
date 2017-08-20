@@ -19,7 +19,9 @@ If your user is within a client customer that has one or more accounts managed b
 
 The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](http://go.microsoft.com/fwlink/?LinkId=691022).
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>SearchClientLinksRequest Message
 
@@ -50,37 +52,37 @@ For this service operation, the following are supported *Field* element and *Ope
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SearchClientLinks</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <SearchClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e28="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e28:Predicate>
-          <e28:Field i:nil="false"></e28:Field>
-          <e28:Operator></e28:Operator>
-          <e28:Value i:nil="false"></e28:Value>
-        </e28:Predicate>
+      \<Predicates xmlns:e28="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e28:Predicate>
+          \<e28:Field i:nil="false">\</e28:Field>
+          \<e28:Operator>\</e28:Operator>
+          \<e28:Value i:nil="false">\</e28:Value>
+        \</e28:Predicate>
       </Predicates>
-      <Ordering xmlns:e29="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e29:OrderBy>
-          <e29:Field></e29:Field>
-          <e29:Order></e29:Order>
-        </e29:OrderBy>
+      \<Ordering xmlns:e29="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e29:OrderBy>
+          \<e29:Field>\</e29:Field>
+          \<e29:Order>\</e29:Order>
+        \</e29:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e30="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e30:Index></e30:Index>
-        <e30:Size></e30:Size>
+      \<PageInfo xmlns:e30="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e30:Index>\</e30:Index>
+        \<e30:Size>\</e30:Size>
       </PageInfo>
     </SearchClientLinksRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>SearchClientLinksResponse Message
@@ -97,41 +99,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <SearchClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e31="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e31:ClientLink>
-          <e31:ClientAccountId p5:nil="false"></e31:ClientAccountId>
-          <e31:ClientAccountNumber p5:nil="false"></e31:ClientAccountNumber>
-          <e31:ManagingCustomerId p5:nil="false"></e31:ManagingCustomerId>
-          <e31:ManagingCustomerNumber p5:nil="false"></e31:ManagingCustomerNumber>
-          <e31:Note p5:nil="false"></e31:Note>
-          <e31:Name p5:nil="false"></e31:Name>
-          <e31:InviterEmail p5:nil="false"></e31:InviterEmail>
-          <e31:InviterName p5:nil="false"></e31:InviterName>
-          <e31:InviterPhone p5:nil="false"></e31:InviterPhone>
-          <e31:IsBillToClient></e31:IsBillToClient>
-          <e31:StartDate p5:nil="false"></e31:StartDate>
-          <e31:Status p5:nil="false"></e31:Status>
-          <e31:SuppressNotification></e31:SuppressNotification>
-          <e31:LastModifiedDateTime></e31:LastModifiedDateTime>
-          <e31:LastModifiedByUserId></e31:LastModifiedByUserId>
-          <e31:Timestamp p5:nil="false"></e31:Timestamp>
-          <ForwardCompatibilityMap xmlns:e32="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
-            <e32:KeyValuePairOfstringstring>
-              <e32:key p5:nil="false"></e32:key>
-              <e32:value p5:nil="false"></e32:value>
-            </e32:KeyValuePairOfstringstring>
+      \<ClientLinks xmlns:e31="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e31:ClientLink>
+          \<e31:ClientAccountId p5:nil="false">\</e31:ClientAccountId>
+          \<e31:ClientAccountNumber p5:nil="false">\</e31:ClientAccountNumber>
+          \<e31:ManagingCustomerId p5:nil="false">\</e31:ManagingCustomerId>
+          \<e31:ManagingCustomerNumber p5:nil="false">\</e31:ManagingCustomerNumber>
+          \<e31:Note p5:nil="false">\</e31:Note>
+          \<e31:Name p5:nil="false">\</e31:Name>
+          \<e31:InviterEmail p5:nil="false">\</e31:InviterEmail>
+          \<e31:InviterName p5:nil="false">\</e31:InviterName>
+          \<e31:InviterPhone p5:nil="false">\</e31:InviterPhone>
+          \<e31:IsBillToClient>\</e31:IsBillToClient>
+          \<e31:StartDate p5:nil="false">\</e31:StartDate>
+          \<e31:Status p5:nil="false">\</e31:Status>
+          \<e31:SuppressNotification>\</e31:SuppressNotification>
+          \<e31:LastModifiedDateTime>\</e31:LastModifiedDateTime>
+          \<e31:LastModifiedByUserId>\</e31:LastModifiedByUserId>
+          \<e31:Timestamp p5:nil="false">\</e31:Timestamp>
+          \<ForwardCompatibilityMap xmlns:e32="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
+            \<e32:KeyValuePairOfstringstring>
+              \<e32:key p5:nil="false">\</e32:key>
+              \<e32:value p5:nil="false">\</e32:value>
+            \</e32:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e31:ClientLink>
+        \</e31:ClientLink>
       </ClientLinks>
     </SearchClientLinksResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

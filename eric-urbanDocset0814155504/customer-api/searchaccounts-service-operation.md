@@ -15,7 +15,9 @@ manager: "ehansen"
 # SearchAccounts Service Operation
 Searches for accounts that match a specified criteria.
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>SearchAccountsRequest Message
 The *SearchAccountsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
@@ -50,37 +52,37 @@ For this service operation, the following are supported *Field* element and *Ope
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SearchAccounts</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e23="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e23:Predicate>
-          <e23:Field i:nil="false"></e23:Field>
-          <e23:Operator></e23:Operator>
-          <e23:Value i:nil="false"></e23:Value>
-        </e23:Predicate>
+      \<Predicates xmlns:e23="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e23:Predicate>
+          \<e23:Field i:nil="false">\</e23:Field>
+          \<e23:Operator>\</e23:Operator>
+          \<e23:Value i:nil="false">\</e23:Value>
+        \</e23:Predicate>
       </Predicates>
-      <Ordering xmlns:e24="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e24:OrderBy>
-          <e24:Field></e24:Field>
-          <e24:Order></e24:Order>
-        </e24:OrderBy>
+      \<Ordering xmlns:e24="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e24:OrderBy>
+          \<e24:Field>\</e24:Field>
+          \<e24:Order>\</e24:Order>
+        \</e24:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e25="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e25:Index></e25:Index>
-        <e25:Size></e25:Size>
+      \<PageInfo xmlns:e25="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e25:Index>\</e25:Index>
+        \<e25:Size>\</e25:Size>
       </PageInfo>
     </SearchAccountsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>SearchAccountsResponse Message
@@ -97,72 +99,72 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <SearchAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Accounts xmlns:e29="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e29:Account p5:type="-- specify derived type here with the appropriate prefix --">
-          <e29:AccountType></e29:AccountType>
-          <e29:BillToCustomerId p5:nil="false"></e29:BillToCustomerId>
-          <e29:CountryCode p5:nil="false"></e29:CountryCode>
-          <e29:CurrencyType p5:nil="false"></e29:CurrencyType>
-          <e29:AccountFinancialStatus p5:nil="false"></e29:AccountFinancialStatus>
-          <e29:Id p5:nil="false"></e29:Id>
-          <e29:Language p5:nil="false"></e29:Language>
-          <ForwardCompatibilityMap xmlns:e30="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
-            <e30:KeyValuePairOfstringstring>
-              <e30:key p5:nil="false"></e30:key>
-              <e30:value p5:nil="false"></e30:value>
-            </e30:KeyValuePairOfstringstring>
+      \<Accounts xmlns:e29="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e29:Account p5:type="-- specify derived type here with the appropriate prefix --">
+          \<e29:AccountType>\</e29:AccountType>
+          \<e29:BillToCustomerId p5:nil="false">\</e29:BillToCustomerId>
+          \<e29:CountryCode p5:nil="false">\</e29:CountryCode>
+          \<e29:CurrencyType p5:nil="false">\</e29:CurrencyType>
+          \<e29:AccountFinancialStatus p5:nil="false">\</e29:AccountFinancialStatus>
+          \<e29:Id p5:nil="false">\</e29:Id>
+          \<e29:Language p5:nil="false">\</e29:Language>
+          \<ForwardCompatibilityMap xmlns:e30="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
+            \<e30:KeyValuePairOfstringstring>
+              \<e30:key p5:nil="false">\</e30:key>
+              \<e30:value p5:nil="false">\</e30:value>
+            \</e30:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e29:LastModifiedByUserId p5:nil="false"></e29:LastModifiedByUserId>
-          <e29:LastModifiedTime p5:nil="false"></e29:LastModifiedTime>
-          <e29:Name p5:nil="false"></e29:Name>
-          <e29:Number p5:nil="false"></e29:Number>
-          <e29:ParentCustomerId></e29:ParentCustomerId>
-          <e29:PaymentMethodId p5:nil="false"></e29:PaymentMethodId>
-          <e29:PaymentMethodType p5:nil="false"></e29:PaymentMethodType>
-          <e29:PrimaryUserId p5:nil="false"></e29:PrimaryUserId>
-          <e29:AccountLifeCycleStatus p5:nil="false"></e29:AccountLifeCycleStatus>
-          <e29:TimeStamp p5:nil="false"></e29:TimeStamp>
-          <e29:TimeZone p5:nil="false"></e29:TimeZone>
-          <e29:PauseReason p5:nil="false"></e29:PauseReason>
-          <!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
-          <e29:LinkedAgencies p5:nil="false">
-            <e29:CustomerInfo>
-              <e29:Id p5:nil="false"></e29:Id>
-              <e29:Name p5:nil="false"></e29:Name>
-            </e29:CustomerInfo>
-          </e29:LinkedAgencies>
-          <e29:SalesHouseCustomerId p5:nil="false"></e29:SalesHouseCustomerId>
-          <TaxInformation xmlns:e31="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
-            <e31:KeyValuePairOfstringstring>
-              <e31:key p5:nil="false"></e31:key>
-              <e31:value p5:nil="false"></e31:value>
-            </e31:KeyValuePairOfstringstring>
+          \<e29:LastModifiedByUserId p5:nil="false">\</e29:LastModifiedByUserId>
+          \<e29:LastModifiedTime p5:nil="false">\</e29:LastModifiedTime>
+          \<e29:Name p5:nil="false">\</e29:Name>
+          \<e29:Number p5:nil="false">\</e29:Number>
+          \<e29:ParentCustomerId>\</e29:ParentCustomerId>
+          \<e29:PaymentMethodId p5:nil="false">\</e29:PaymentMethodId>
+          \<e29:PaymentMethodType p5:nil="false">\</e29:PaymentMethodType>
+          \<e29:PrimaryUserId p5:nil="false">\</e29:PrimaryUserId>
+          \<e29:AccountLifeCycleStatus p5:nil="false">\</e29:AccountLifeCycleStatus>
+          \<e29:TimeStamp p5:nil="false">\</e29:TimeStamp>
+          \<e29:TimeZone p5:nil="false">\</e29:TimeZone>
+          \<e29:PauseReason p5:nil="false">\</e29:PauseReason>
+          \<!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
+          \<e29:LinkedAgencies p5:nil="false">
+            \<e29:CustomerInfo>
+              \<e29:Id p5:nil="false">\</e29:Id>
+              \<e29:Name p5:nil="false">\</e29:Name>
+            \</e29:CustomerInfo>
+          \</e29:LinkedAgencies>
+          \<e29:SalesHouseCustomerId p5:nil="false">\</e29:SalesHouseCustomerId>
+          \<TaxInformation xmlns:e31="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p5:nil="false">
+            \<e31:KeyValuePairOfstringstring>
+              \<e31:key p5:nil="false">\</e31:key>
+              \<e31:value p5:nil="false">\</e31:value>
+            \</e31:KeyValuePairOfstringstring>
           </TaxInformation>
-          <e29:BackUpPaymentInstrumentId p5:nil="false"></e29:BackUpPaymentInstrumentId>
-          <e29:BillingThresholdAmount p5:nil="false"></e29:BillingThresholdAmount>
-          <e29:BusinessAddress p5:nil="false">
-            <e29:City p5:nil="false"></e29:City>
-            <e29:CountryCode p5:nil="false"></e29:CountryCode>
-            <e29:Id p5:nil="false"></e29:Id>
-            <e29:Line1 p5:nil="false"></e29:Line1>
-            <e29:Line2 p5:nil="false"></e29:Line2>
-            <e29:Line3 p5:nil="false"></e29:Line3>
-            <e29:Line4 p5:nil="false"></e29:Line4>
-            <e29:PostalCode p5:nil="false"></e29:PostalCode>
-            <e29:StateOrProvince p5:nil="false"></e29:StateOrProvince>
-            <e29:TimeStamp p5:nil="false"></e29:TimeStamp>
-          </e29:BusinessAddress>
-        </e29:Account>
+          \<e29:BackUpPaymentInstrumentId p5:nil="false">\</e29:BackUpPaymentInstrumentId>
+          \<e29:BillingThresholdAmount p5:nil="false">\</e29:BillingThresholdAmount>
+          \<e29:BusinessAddress p5:nil="false">
+            \<e29:City p5:nil="false">\</e29:City>
+            \<e29:CountryCode p5:nil="false">\</e29:CountryCode>
+            \<e29:Id p5:nil="false">\</e29:Id>
+            \<e29:Line1 p5:nil="false">\</e29:Line1>
+            \<e29:Line2 p5:nil="false">\</e29:Line2>
+            \<e29:Line3 p5:nil="false">\</e29:Line3>
+            \<e29:Line4 p5:nil="false">\</e29:Line4>
+            \<e29:PostalCode p5:nil="false">\</e29:PostalCode>
+            \<e29:StateOrProvince p5:nil="false">\</e29:StateOrProvince>
+            \<e29:TimeStamp p5:nil="false">\</e29:TimeStamp>
+          \</e29:BusinessAddress>
+        \</e29:Account>
       </Accounts>
     </SearchAccountsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

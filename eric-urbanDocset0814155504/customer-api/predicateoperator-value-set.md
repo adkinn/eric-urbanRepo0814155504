@@ -18,18 +18,18 @@ Defines the condition of results for one of the search operations, for example [
 ## Syntax
 
 ```xml
-<xs:simpleType name="PredicateOperator">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Equals" />
-    <xs:enumeration value="NotEquals" />
-    <xs:enumeration value="Contains" />
-    <xs:enumeration value="In" />
-    <xs:enumeration value="GreaterThanEquals" />
-    <xs:enumeration value="LessThanEquals" />
-    <xs:enumeration value="NotContains" />
-    <xs:enumeration value="StartsWith" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="PredicateOperator">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Equals" />
+    \<xs:enumeration value="NotEquals" />
+    \<xs:enumeration value="Contains" />
+    \<xs:enumeration value="In" />
+    \<xs:enumeration value="GreaterThanEquals" />
+    \<xs:enumeration value="LessThanEquals" />
+    \<xs:enumeration value="NotContains" />
+    \<xs:enumeration value="StartsWith" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Members

@@ -18,15 +18,15 @@ Defines a fault object that operations return when generic errors occur, such as
 ## Syntax
 
 ```xml
-<xs:complexType name="AdApiFaultDetail">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ApplicationFault">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfAdApiError" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="AdApiFaultDetail">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ApplicationFault">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfAdApiError" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

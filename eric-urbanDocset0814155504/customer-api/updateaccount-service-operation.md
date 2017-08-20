@@ -15,7 +15,9 @@ manager: "ehansen"
 # UpdateAccount Service Operation
 Updates the details of the specified account.
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>UpdateAccountRequest Message
 
@@ -36,75 +38,75 @@ The *UpdateAccountRequest* object defines the elements of the request’s body. 
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">UpdateAccount</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <UpdateAccountRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Account xmlns:e51="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-        <e51:AccountType></e51:AccountType>
-        <e51:BillToCustomerId i:nil="false"></e51:BillToCustomerId>
-        <e51:CountryCode i:nil="false"></e51:CountryCode>
-        <e51:CurrencyType i:nil="false"></e51:CurrencyType>
-        <e51:AccountFinancialStatus i:nil="false"></e51:AccountFinancialStatus>
-        <e51:Id i:nil="false"></e51:Id>
-        <e51:Language i:nil="false"></e51:Language>
-        <ForwardCompatibilityMap xmlns:e52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e52:KeyValuePairOfstringstring>
-            <e52:key i:nil="false"></e52:key>
-            <e52:value i:nil="false"></e52:value>
-          </e52:KeyValuePairOfstringstring>
+      \<Account xmlns:e51="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+        \<e51:AccountType>\</e51:AccountType>
+        \<e51:BillToCustomerId i:nil="false">\</e51:BillToCustomerId>
+        \<e51:CountryCode i:nil="false">\</e51:CountryCode>
+        \<e51:CurrencyType i:nil="false">\</e51:CurrencyType>
+        \<e51:AccountFinancialStatus i:nil="false">\</e51:AccountFinancialStatus>
+        \<e51:Id i:nil="false">\</e51:Id>
+        \<e51:Language i:nil="false">\</e51:Language>
+        \<ForwardCompatibilityMap xmlns:e52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          \<e52:KeyValuePairOfstringstring>
+            \<e52:key i:nil="false">\</e52:key>
+            \<e52:value i:nil="false">\</e52:value>
+          \</e52:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e51:LastModifiedByUserId i:nil="false"></e51:LastModifiedByUserId>
-        <e51:LastModifiedTime i:nil="false"></e51:LastModifiedTime>
-        <e51:Name i:nil="false"></e51:Name>
-        <e51:Number i:nil="false"></e51:Number>
-        <e51:ParentCustomerId></e51:ParentCustomerId>
-        <e51:PaymentMethodId i:nil="false"></e51:PaymentMethodId>
-        <e51:PaymentMethodType i:nil="false"></e51:PaymentMethodType>
-        <e51:PrimaryUserId i:nil="false"></e51:PrimaryUserId>
-        <e51:AccountLifeCycleStatus i:nil="false"></e51:AccountLifeCycleStatus>
-        <e51:TimeStamp i:nil="false"></e51:TimeStamp>
-        <e51:TimeZone i:nil="false"></e51:TimeZone>
-        <e51:PauseReason i:nil="false"></e51:PauseReason>
-        <!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
-        <e51:LinkedAgencies i:nil="false">
-          <e51:CustomerInfo>
-            <e51:Id i:nil="false"></e51:Id>
-            <e51:Name i:nil="false"></e51:Name>
-          </e51:CustomerInfo>
-        </e51:LinkedAgencies>
-        <e51:SalesHouseCustomerId i:nil="false"></e51:SalesHouseCustomerId>
-        <TaxInformation xmlns:e53="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e53:KeyValuePairOfstringstring>
-            <e53:key i:nil="false"></e53:key>
-            <e53:value i:nil="false"></e53:value>
-          </e53:KeyValuePairOfstringstring>
+        \<e51:LastModifiedByUserId i:nil="false">\</e51:LastModifiedByUserId>
+        \<e51:LastModifiedTime i:nil="false">\</e51:LastModifiedTime>
+        \<e51:Name i:nil="false">\</e51:Name>
+        \<e51:Number i:nil="false">\</e51:Number>
+        \<e51:ParentCustomerId>\</e51:ParentCustomerId>
+        \<e51:PaymentMethodId i:nil="false">\</e51:PaymentMethodId>
+        \<e51:PaymentMethodType i:nil="false">\</e51:PaymentMethodType>
+        \<e51:PrimaryUserId i:nil="false">\</e51:PrimaryUserId>
+        \<e51:AccountLifeCycleStatus i:nil="false">\</e51:AccountLifeCycleStatus>
+        \<e51:TimeStamp i:nil="false">\</e51:TimeStamp>
+        \<e51:TimeZone i:nil="false">\</e51:TimeZone>
+        \<e51:PauseReason i:nil="false">\</e51:PauseReason>
+        \<!--Keep these fields if you set the i:type attribute to AdvertiserAccount-->
+        \<e51:LinkedAgencies i:nil="false">
+          \<e51:CustomerInfo>
+            \<e51:Id i:nil="false">\</e51:Id>
+            \<e51:Name i:nil="false">\</e51:Name>
+          \</e51:CustomerInfo>
+        \</e51:LinkedAgencies>
+        \<e51:SalesHouseCustomerId i:nil="false">\</e51:SalesHouseCustomerId>
+        \<TaxInformation xmlns:e53="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          \<e53:KeyValuePairOfstringstring>
+            \<e53:key i:nil="false">\</e53:key>
+            \<e53:value i:nil="false">\</e53:value>
+          \</e53:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e51:BackUpPaymentInstrumentId i:nil="false"></e51:BackUpPaymentInstrumentId>
-        <e51:BillingThresholdAmount i:nil="false"></e51:BillingThresholdAmount>
-        <e51:BusinessAddress i:nil="false">
-          <e51:City i:nil="false"></e51:City>
-          <e51:CountryCode i:nil="false"></e51:CountryCode>
-          <e51:Id i:nil="false"></e51:Id>
-          <e51:Line1 i:nil="false"></e51:Line1>
-          <e51:Line2 i:nil="false"></e51:Line2>
-          <e51:Line3 i:nil="false"></e51:Line3>
-          <e51:Line4 i:nil="false"></e51:Line4>
-          <e51:PostalCode i:nil="false"></e51:PostalCode>
-          <e51:StateOrProvince i:nil="false"></e51:StateOrProvince>
-          <e51:TimeStamp i:nil="false"></e51:TimeStamp>
-        </e51:BusinessAddress>
+        \<e51:BackUpPaymentInstrumentId i:nil="false">\</e51:BackUpPaymentInstrumentId>
+        \<e51:BillingThresholdAmount i:nil="false">\</e51:BillingThresholdAmount>
+        \<e51:BusinessAddress i:nil="false">
+          \<e51:City i:nil="false">\</e51:City>
+          \<e51:CountryCode i:nil="false">\</e51:CountryCode>
+          \<e51:Id i:nil="false">\</e51:Id>
+          \<e51:Line1 i:nil="false">\</e51:Line1>
+          \<e51:Line2 i:nil="false">\</e51:Line2>
+          \<e51:Line3 i:nil="false">\</e51:Line3>
+          \<e51:Line4 i:nil="false">\</e51:Line4>
+          \<e51:PostalCode i:nil="false">\</e51:PostalCode>
+          \<e51:StateOrProvince i:nil="false">\</e51:StateOrProvince>
+          \<e51:TimeStamp i:nil="false">\</e51:TimeStamp>
+        \</e51:BusinessAddress>
       </Account>
     </UpdateAccountRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateAccountResponse Message
@@ -118,16 +120,16 @@ The response does not contain additional body elements.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <UpdateAccountResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <LastModifiedTime></LastModifiedTime>
     </UpdateAccountResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -15,7 +15,9 @@ manager: "ehansen"
 # UpdateUser Service Operation
 Updates the details of the specified user.
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>UpdateUserRequest Message
 
@@ -36,65 +38,65 @@ The *UpdateUserRequest* object defines the elements of the request’s body. The
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">UpdateUser</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e35="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e35:ContactInfo i:nil="false">
-          <e35:Address i:nil="false">
-            <e35:City i:nil="false"></e35:City>
-            <e35:CountryCode i:nil="false"></e35:CountryCode>
-            <e35:Id i:nil="false"></e35:Id>
-            <e35:Line1 i:nil="false"></e35:Line1>
-            <e35:Line2 i:nil="false"></e35:Line2>
-            <e35:Line3 i:nil="false"></e35:Line3>
-            <e35:Line4 i:nil="false"></e35:Line4>
-            <e35:PostalCode i:nil="false"></e35:PostalCode>
-            <e35:StateOrProvince i:nil="false"></e35:StateOrProvince>
-            <e35:TimeStamp i:nil="false"></e35:TimeStamp>
-          </e35:Address>
-          <e35:ContactByPhone i:nil="false"></e35:ContactByPhone>
-          <e35:ContactByPostalMail i:nil="false"></e35:ContactByPostalMail>
-          <e35:Email i:nil="false"></e35:Email>
-          <e35:EmailFormat i:nil="false"></e35:EmailFormat>
-          <e35:Fax i:nil="false"></e35:Fax>
-          <e35:HomePhone i:nil="false"></e35:HomePhone>
-          <e35:Id i:nil="false"></e35:Id>
-          <e35:Mobile i:nil="false"></e35:Mobile>
-          <e35:Phone1 i:nil="false"></e35:Phone1>
-          <e35:Phone2 i:nil="false"></e35:Phone2>
-        </e35:ContactInfo>
-        <e35:CustomerAppScope i:nil="false"></e35:CustomerAppScope>
-        <e35:CustomerId i:nil="false"></e35:CustomerId>
-        <e35:Id i:nil="false"></e35:Id>
-        <e35:JobTitle i:nil="false"></e35:JobTitle>
-        <e35:LastModifiedByUserId i:nil="false"></e35:LastModifiedByUserId>
-        <e35:LastModifiedTime i:nil="false"></e35:LastModifiedTime>
-        <e35:Lcid i:nil="false"></e35:Lcid>
-        <e35:Name i:nil="false">
-          <e35:FirstName i:nil="false"></e35:FirstName>
-          <e35:LastName i:nil="false"></e35:LastName>
-          <e35:MiddleInitial i:nil="false"></e35:MiddleInitial>
-        </e35:Name>
-        <e35:Password i:nil="false"></e35:Password>
-        <e35:SecretAnswer i:nil="false"></e35:SecretAnswer>
-        <e35:SecretQuestion></e35:SecretQuestion>
-        <e35:UserLifeCycleStatus i:nil="false"></e35:UserLifeCycleStatus>
-        <e35:TimeStamp i:nil="false"></e35:TimeStamp>
-        <e35:UserName i:nil="false"></e35:UserName>
-        <e35:IsMigratedToMicrosoftAccount></e35:IsMigratedToMicrosoftAccount>
+      \<User xmlns:e35="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e35:ContactInfo i:nil="false">
+          \<e35:Address i:nil="false">
+            \<e35:City i:nil="false">\</e35:City>
+            \<e35:CountryCode i:nil="false">\</e35:CountryCode>
+            \<e35:Id i:nil="false">\</e35:Id>
+            \<e35:Line1 i:nil="false">\</e35:Line1>
+            \<e35:Line2 i:nil="false">\</e35:Line2>
+            \<e35:Line3 i:nil="false">\</e35:Line3>
+            \<e35:Line4 i:nil="false">\</e35:Line4>
+            \<e35:PostalCode i:nil="false">\</e35:PostalCode>
+            \<e35:StateOrProvince i:nil="false">\</e35:StateOrProvince>
+            \<e35:TimeStamp i:nil="false">\</e35:TimeStamp>
+          \</e35:Address>
+          \<e35:ContactByPhone i:nil="false">\</e35:ContactByPhone>
+          \<e35:ContactByPostalMail i:nil="false">\</e35:ContactByPostalMail>
+          \<e35:Email i:nil="false">\</e35:Email>
+          \<e35:EmailFormat i:nil="false">\</e35:EmailFormat>
+          \<e35:Fax i:nil="false">\</e35:Fax>
+          \<e35:HomePhone i:nil="false">\</e35:HomePhone>
+          \<e35:Id i:nil="false">\</e35:Id>
+          \<e35:Mobile i:nil="false">\</e35:Mobile>
+          \<e35:Phone1 i:nil="false">\</e35:Phone1>
+          \<e35:Phone2 i:nil="false">\</e35:Phone2>
+        \</e35:ContactInfo>
+        \<e35:CustomerAppScope i:nil="false">\</e35:CustomerAppScope>
+        \<e35:CustomerId i:nil="false">\</e35:CustomerId>
+        \<e35:Id i:nil="false">\</e35:Id>
+        \<e35:JobTitle i:nil="false">\</e35:JobTitle>
+        \<e35:LastModifiedByUserId i:nil="false">\</e35:LastModifiedByUserId>
+        \<e35:LastModifiedTime i:nil="false">\</e35:LastModifiedTime>
+        \<e35:Lcid i:nil="false">\</e35:Lcid>
+        \<e35:Name i:nil="false">
+          \<e35:FirstName i:nil="false">\</e35:FirstName>
+          \<e35:LastName i:nil="false">\</e35:LastName>
+          \<e35:MiddleInitial i:nil="false">\</e35:MiddleInitial>
+        \</e35:Name>
+        \<e35:Password i:nil="false">\</e35:Password>
+        \<e35:SecretAnswer i:nil="false">\</e35:SecretAnswer>
+        \<e35:SecretQuestion>\</e35:SecretQuestion>
+        \<e35:UserLifeCycleStatus i:nil="false">\</e35:UserLifeCycleStatus>
+        \<e35:TimeStamp i:nil="false">\</e35:TimeStamp>
+        \<e35:UserName i:nil="false">\</e35:UserName>
+        \<e35:IsMigratedToMicrosoftAccount>\</e35:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateUserResponse Message
@@ -108,16 +110,16 @@ The response does not contain additional body elements.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <UpdateUserResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <LastModifiedTime></LastModifiedTime>
     </UpdateUserResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

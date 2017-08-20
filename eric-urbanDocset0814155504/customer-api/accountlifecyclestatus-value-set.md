@@ -18,16 +18,16 @@ Defines the possible status values of an account.
 ## Syntax
 
 ```xml
-<xs:simpleType name="AccountLifeCycleStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Draft" />
-    <xs:enumeration value="Active" />
-    <xs:enumeration value="Inactive" />
-    <xs:enumeration value="Pause" />
-    <xs:enumeration value="Pending" />
-    <xs:enumeration value="Suspended" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AccountLifeCycleStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Draft" />
+    \<xs:enumeration value="Active" />
+    \<xs:enumeration value="Inactive" />
+    \<xs:enumeration value="Pause" />
+    \<xs:enumeration value="Pending" />
+    \<xs:enumeration value="Suspended" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

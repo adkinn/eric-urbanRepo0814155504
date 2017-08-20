@@ -27,7 +27,9 @@ There is no set limit to the amount of client accounts that can be linked to an 
 > [!NOTE]
 >[!INCLUDE[sandbox_clientlink](../customer-api/includes/sandbox-clientlink.md)]
 
-[!INCLUDE[customer_service_namespace](../customer-api/includes/customer-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[cusman_navigation_noremarks](../customer-api/includes/cusman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>AddClientLinksRequest Message
 
@@ -48,46 +50,46 @@ The *AddClientLinksRequest* object defines the elements of the request’s body.
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">AddClientLinks</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <AddClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e3="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e3:ClientLink>
-          <e3:ClientAccountId i:nil="false"></e3:ClientAccountId>
-          <e3:ClientAccountNumber i:nil="false"></e3:ClientAccountNumber>
-          <e3:ManagingCustomerId i:nil="false"></e3:ManagingCustomerId>
-          <e3:ManagingCustomerNumber i:nil="false"></e3:ManagingCustomerNumber>
-          <e3:Note i:nil="false"></e3:Note>
-          <e3:Name i:nil="false"></e3:Name>
-          <e3:InviterEmail i:nil="false"></e3:InviterEmail>
-          <e3:InviterName i:nil="false"></e3:InviterName>
-          <e3:InviterPhone i:nil="false"></e3:InviterPhone>
-          <e3:IsBillToClient></e3:IsBillToClient>
-          <e3:StartDate i:nil="false"></e3:StartDate>
-          <e3:Status i:nil="false"></e3:Status>
-          <e3:SuppressNotification></e3:SuppressNotification>
-          <e3:LastModifiedDateTime></e3:LastModifiedDateTime>
-          <e3:LastModifiedByUserId></e3:LastModifiedByUserId>
-          <e3:Timestamp i:nil="false"></e3:Timestamp>
-          <ForwardCompatibilityMap xmlns:e4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e4:KeyValuePairOfstringstring>
-              <e4:key i:nil="false"></e4:key>
-              <e4:value i:nil="false"></e4:value>
-            </e4:KeyValuePairOfstringstring>
+      \<ClientLinks xmlns:e3="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e3:ClientLink>
+          \<e3:ClientAccountId i:nil="false">\</e3:ClientAccountId>
+          \<e3:ClientAccountNumber i:nil="false">\</e3:ClientAccountNumber>
+          \<e3:ManagingCustomerId i:nil="false">\</e3:ManagingCustomerId>
+          \<e3:ManagingCustomerNumber i:nil="false">\</e3:ManagingCustomerNumber>
+          \<e3:Note i:nil="false">\</e3:Note>
+          \<e3:Name i:nil="false">\</e3:Name>
+          \<e3:InviterEmail i:nil="false">\</e3:InviterEmail>
+          \<e3:InviterName i:nil="false">\</e3:InviterName>
+          \<e3:InviterPhone i:nil="false">\</e3:InviterPhone>
+          \<e3:IsBillToClient>\</e3:IsBillToClient>
+          \<e3:StartDate i:nil="false">\</e3:StartDate>
+          \<e3:Status i:nil="false">\</e3:Status>
+          \<e3:SuppressNotification>\</e3:SuppressNotification>
+          \<e3:LastModifiedDateTime>\</e3:LastModifiedDateTime>
+          \<e3:LastModifiedByUserId>\</e3:LastModifiedByUserId>
+          \<e3:Timestamp i:nil="false">\</e3:Timestamp>
+          \<ForwardCompatibilityMap xmlns:e4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e4:KeyValuePairOfstringstring>
+              \<e4:key i:nil="false">\</e4:key>
+              \<e4:value i:nil="false">\</e4:value>
+            \</e4:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e3:ClientLink>
+        \</e3:ClientLink>
       </ClientLinks>
     </AddClientLinksRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>AddClientLinksResponse Message
@@ -105,31 +107,31 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <AddClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <OperationErrors xmlns:e5="https://bingads.microsoft.com/Customer/v11/Exception" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e5:OperationError>
-          <e5:Code></e5:Code>
-          <e5:Details p5:nil="false"></e5:Details>
-          <e5:Message p5:nil="false"></e5:Message>
-        </e5:OperationError>
+      \<OperationErrors xmlns:e5="https://bingads.microsoft.com/Customer/v11/Exception" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e5:OperationError>
+          \<e5:Code>\</e5:Code>
+          \<e5:Details p5:nil="false">\</e5:Details>
+          \<e5:Message p5:nil="false">\</e5:Message>
+        \</e5:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e6="https://bingads.microsoft.com/Customer/v11/Exception" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e6:ArrayOfOperationError>
-          <e6:OperationError>
-            <e6:Code></e6:Code>
-            <e6:Details p5:nil="false"></e6:Details>
-            <e6:Message p5:nil="false"></e6:Message>
-          </e6:OperationError>
-        </e6:ArrayOfOperationError>
+      \<PartialErrors xmlns:e6="https://bingads.microsoft.com/Customer/v11/Exception" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e6:ArrayOfOperationError>
+          \<e6:OperationError>
+            \<e6:Code>\</e6:Code>
+            \<e6:Details p5:nil="false">\</e6:Details>
+            \<e6:Message p5:nil="false">\</e6:Message>
+          \</e6:OperationError>
+        \</e6:ArrayOfOperationError>
       </PartialErrors>
     </AddClientLinksResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

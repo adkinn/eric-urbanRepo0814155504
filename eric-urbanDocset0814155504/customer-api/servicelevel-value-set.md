@@ -18,15 +18,15 @@ For internal use only.
 ## Syntax
 
 ```xml
-<xs:simpleType name="ServiceLevel">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="SelfServe" />
-    <xs:enumeration value="SelfServeTrusted" />
-    <xs:enumeration value="Premium" />
-    <xs:enumeration value="Internal" />
-    <xs:enumeration value="Select" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ServiceLevel">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="SelfServe" />
+    \<xs:enumeration value="SelfServeTrusted" />
+    \<xs:enumeration value="Premium" />
+    \<xs:enumeration value="Internal" />
+    \<xs:enumeration value="Select" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

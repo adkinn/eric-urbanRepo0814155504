@@ -18,12 +18,12 @@ Defines a paging object for the list of entities returned using one of the searc
 ## Syntax
 
 ```xml
-<xs:complexType name="Paging">
-  <xs:sequence>
-    <xs:element name="Index" type="xs:int" minOccurs="0"/>
-    <xs:element name="Size" type="xs:int" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Paging">
+  \<xs:sequence>
+    \<xs:element name="Index" type="xs:int" minOccurs="0"/>
+    \<xs:element name="Size" type="xs:int" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

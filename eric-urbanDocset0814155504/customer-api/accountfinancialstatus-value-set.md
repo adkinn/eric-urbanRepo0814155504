@@ -18,19 +18,19 @@ Defines the possible financial status values of an account.
 ## Syntax
 
 ```xml
-<xs:simpleType name="AccountFinancialStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Proposed" />
-    <xs:enumeration value="PendingCreditCheck" />
-    <xs:enumeration value="ClearFinancialStatus" />
-    <xs:enumeration value="SoldToOnly" />
-    <xs:enumeration value="CreditWarning" />
-    <xs:enumeration value="Hold" />
-    <xs:enumeration value="WriteOff" />
-    <xs:enumeration value="TaxOnHold" />
-    <xs:enumeration value="UserHold" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AccountFinancialStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Proposed" />
+    \<xs:enumeration value="PendingCreditCheck" />
+    \<xs:enumeration value="ClearFinancialStatus" />
+    \<xs:enumeration value="SoldToOnly" />
+    \<xs:enumeration value="CreditWarning" />
+    \<xs:enumeration value="Hold" />
+    \<xs:enumeration value="WriteOff" />
+    \<xs:enumeration value="TaxOnHold" />
+    \<xs:enumeration value="UserHold" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values
