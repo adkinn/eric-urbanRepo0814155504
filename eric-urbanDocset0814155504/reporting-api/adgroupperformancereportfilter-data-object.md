@@ -18,17 +18,17 @@ Defines the criteria to use to filter the ad group performance report data.
 ## Syntax
 
 ```xml
-<xs:complexType name="AdGroupPerformanceReportFilter">
-  <xs:sequence>
-    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="DeviceOS" type="tns:DeviceOSReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="LanguageCode" type="q5:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="Status" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdGroupPerformanceReportFilter">
+  \<xs:sequence>
+    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="DeviceOS" type="tns:DeviceOSReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="LanguageCode" type="q5:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="Status" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

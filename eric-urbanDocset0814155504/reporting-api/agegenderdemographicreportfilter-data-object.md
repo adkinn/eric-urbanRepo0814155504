@@ -18,15 +18,15 @@ Defines the criteria to use to filter the age and gender demographic report data
 ## Syntax
 
 ```xml
-<xs:complexType name="AgeGenderDemographicReportFilter">
-  <xs:sequence>
-    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="LanguageCode" type="q14:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AgeGenderDemographicReportFilter">
+  \<xs:sequence>
+    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="LanguageCode" type="q14:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

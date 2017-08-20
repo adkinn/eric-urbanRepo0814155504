@@ -19,27 +19,27 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-<xs:simpleType name="CallDetailReportColumn">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="AccountName"/>
-    <xs:enumeration value="CampaignName"/>
-    <xs:enumeration value="AdGroupName"/>
-    <xs:enumeration value="StartTime"/>
-    <xs:enumeration value="EndTime"/>
-    <xs:enumeration value="Duration"/>
-    <xs:enumeration value="CallStatus"/>
-    <xs:enumeration value="CallTypeName"/>
-    <xs:enumeration value="AreaCode"/>
-    <xs:enumeration value="City "/>
-    <xs:enumeration value="State"/>
-    <xs:enumeration value="AccountId"/>
-    <xs:enumeration value="CampaignId"/>
-    <xs:enumeration value="AdGroupId"/>
-    <xs:enumeration value="AccountStatus"/>
-    <xs:enumeration value="CampaignStatus"/>
-    <xs:enumeration value="AdGroupStatus"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CallDetailReportColumn">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="AccountName"/>
+    \<xs:enumeration value="CampaignName"/>
+    \<xs:enumeration value="AdGroupName"/>
+    \<xs:enumeration value="StartTime"/>
+    \<xs:enumeration value="EndTime"/>
+    \<xs:enumeration value="Duration"/>
+    \<xs:enumeration value="CallStatus"/>
+    \<xs:enumeration value="CallTypeName"/>
+    \<xs:enumeration value="AreaCode"/>
+    \<xs:enumeration value="City "/>
+    \<xs:enumeration value="State"/>
+    \<xs:enumeration value="AccountId"/>
+    \<xs:enumeration value="CampaignId"/>
+    \<xs:enumeration value="AdGroupId"/>
+    \<xs:enumeration value="AccountStatus"/>
+    \<xs:enumeration value="CampaignStatus"/>
+    \<xs:enumeration value="AdGroupStatus"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

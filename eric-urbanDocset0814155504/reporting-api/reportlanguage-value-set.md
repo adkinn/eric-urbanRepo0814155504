@@ -18,12 +18,12 @@ Defines the language values that you may specify for columns of a downloaded rep
 ## Syntax
 
 ```xml
-<xs:simpleType name="ReportLanguage">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="English"/>
-    <xs:enumeration value="French"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ReportLanguage">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="English"/>
+    \<xs:enumeration value="French"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

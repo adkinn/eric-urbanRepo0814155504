@@ -19,28 +19,28 @@ Defines the attribute columns that you can include in the [SearchCampaignChangeH
 ## Syntax
 
 ```xml
-<xs:simpleType name="SearchCampaignChangeHistoryReportColumn">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="DateTime" />
-    <xs:enumeration value="AccountId" />
-    <xs:enumeration value="AccountName" />
-    <xs:enumeration value="AccountNumber" />
-    <xs:enumeration value="ChangedBy" />
-    <xs:enumeration value="CampaignName" />
-    <xs:enumeration value="CampaignId" />
-    <xs:enumeration value="AdGroupName" />
-    <xs:enumeration value="AdGroupId" />
-    <xs:enumeration value="AdTitle" />
-    <xs:enumeration value="AdDescription" />
-    <xs:enumeration value="DisplayUrl" />
-    <xs:enumeration value="Keyword" />
-    <xs:enumeration value="ItemChanged" />
-    <xs:enumeration value="AttributeChanged" />
-    <xs:enumeration value="HowChanged" />
-    <xs:enumeration value="OldValue" />
-    <xs:enumeration value="NewValue" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="SearchCampaignChangeHistoryReportColumn">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="DateTime" />
+    \<xs:enumeration value="AccountId" />
+    \<xs:enumeration value="AccountName" />
+    \<xs:enumeration value="AccountNumber" />
+    \<xs:enumeration value="ChangedBy" />
+    \<xs:enumeration value="CampaignName" />
+    \<xs:enumeration value="CampaignId" />
+    \<xs:enumeration value="AdGroupName" />
+    \<xs:enumeration value="AdGroupId" />
+    \<xs:enumeration value="AdTitle" />
+    \<xs:enumeration value="AdDescription" />
+    \<xs:enumeration value="DisplayUrl" />
+    \<xs:enumeration value="Keyword" />
+    \<xs:enumeration value="ItemChanged" />
+    \<xs:enumeration value="AttributeChanged" />
+    \<xs:enumeration value="HowChanged" />
+    \<xs:enumeration value="OldValue" />
+    \<xs:enumeration value="NewValue" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

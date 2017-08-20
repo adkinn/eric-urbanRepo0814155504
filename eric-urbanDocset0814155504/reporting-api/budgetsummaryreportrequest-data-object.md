@@ -21,17 +21,17 @@ You can request your monthly budget, how much you have spent to date, and whethe
 ## Syntax
 
 ```xml
-<xs:complexType name="BudgetSummaryReportRequest">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ReportRequest">
-      <xs:sequence>
-        <xs:element name="Columns" nillable="true" type="tns:ArrayOfBudgetSummaryReportColumn" />
-        <xs:element name="Scope" nillable="true" type="tns:AccountThroughCampaignReportScope" />
-        <xs:element name="Time" nillable="true" type="tns:BudgetSummaryReportTime" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="BudgetSummaryReportRequest">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ReportRequest">
+      \<xs:sequence>
+        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfBudgetSummaryReportColumn" />
+        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughCampaignReportScope" />
+        \<xs:element name="Time" nillable="true" type="tns:BudgetSummaryReportTime" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

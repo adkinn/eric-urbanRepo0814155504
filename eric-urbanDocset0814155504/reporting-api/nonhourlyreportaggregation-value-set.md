@@ -18,15 +18,15 @@ Defines the aggregation values for reports that cannot specify hourly aggregatio
 ## Syntax
 
 ```xml
-<xs:simpleType name="NonHourlyReportAggregation">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Summary"/>
-    <xs:enumeration value="Daily"/>
-    <xs:enumeration value="Weekly"/>
-    <xs:enumeration value="Monthly"/>
-    <xs:enumeration value="Yearly"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="NonHourlyReportAggregation">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Summary"/>
+    \<xs:enumeration value="Daily"/>
+    \<xs:enumeration value="Weekly"/>
+    \<xs:enumeration value="Monthly"/>
+    \<xs:enumeration value="Yearly"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

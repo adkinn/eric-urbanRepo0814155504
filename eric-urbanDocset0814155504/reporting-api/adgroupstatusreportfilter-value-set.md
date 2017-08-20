@@ -18,19 +18,19 @@ Defines the ad group status values that you can use to filter the report data. T
 ## Syntax
 
 ```xml
-<xs:simpleType name="AdGroupStatusReportFilter">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Active"/>
-        <xs:enumeration value="Deleted"/>
-        <xs:enumeration value="Expired"/>
-        <xs:enumeration value="Paused"/>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
-<xs:element name="AdGroupStatusReportFilter" nillable="true" type="tns:AdGroupStatusReportFilter"/>
+\<xs:simpleType name="AdGroupStatusReportFilter">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Active"/>
+        \<xs:enumeration value="Deleted"/>
+        \<xs:enumeration value="Expired"/>
+        \<xs:enumeration value="Paused"/>
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
+\<xs:element name="AdGroupStatusReportFilter" nillable="true" type="tns:AdGroupStatusReportFilter"/>
 ```
 
 ## Values

@@ -18,19 +18,19 @@ Defines the device operating system values that you can use to filter the report
 ## Syntax
 
 ```xml
-<xs:simpleType name="DeviceOSReportFilter">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Other" />
-        <xs:enumeration value="Windows" />
-        <xs:enumeration value="iOS">
-        <xs:enumeration value="Android">
-        <xs:enumeration value="BlackBerry">
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="DeviceOSReportFilter">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Other" />
+        \<xs:enumeration value="Windows" />
+        \<xs:enumeration value="iOS">
+        \<xs:enumeration value="Android">
+        \<xs:enumeration value="BlackBerry">
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

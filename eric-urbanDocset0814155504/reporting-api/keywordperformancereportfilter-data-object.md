@@ -18,26 +18,26 @@ Defines the criteria to use to filter the keyword performance report data.
 ## Syntax
 
 ```xml
-<xs:complexType name="KeywordPerformanceReportFilter">
-  <xs:sequence>
-    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="BidMatchType" type="tns:BidMatchTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="BidStrategyType" type="tns:BidStrategyTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="DeliveredMatchType" type="tns:DeliveredMatchTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="KeywordRelevance" type="q7:ArrayOfint" nillable="true" minOccurs="0" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="KeywordStatus" type="tns:KeywordStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="Keywords" type="q8:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="LandingPageRelevance" type="q9:ArrayOfint" nillable="true" minOccurs="0" xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="LandingPageUserExperience" type="q10:ArrayOfint" nillable="true" minOccurs="0" xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="LanguageCode" type="q11:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-    <xs:element name="QualityScore" type="q12:ArrayOfint" nillable="true" minOccurs="0" xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="KeywordPerformanceReportFilter">
+  \<xs:sequence>
+    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdDistribution" type="tns:AdDistributionReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdType" type="tns:AdTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="BidMatchType" type="tns:BidMatchTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="BidStrategyType" type="tns:BidStrategyTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="DeliveredMatchType" type="tns:DeliveredMatchTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="DeviceType" type="tns:DeviceTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="KeywordRelevance" type="q7:ArrayOfint" nillable="true" minOccurs="0" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="KeywordStatus" type="tns:KeywordStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="Keywords" type="q8:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="LandingPageRelevance" type="q9:ArrayOfint" nillable="true" minOccurs="0" xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="LandingPageUserExperience" type="q10:ArrayOfint" nillable="true" minOccurs="0" xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="LanguageCode" type="q11:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    \<xs:element name="QualityScore" type="q12:ArrayOfint" nillable="true" minOccurs="0" xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

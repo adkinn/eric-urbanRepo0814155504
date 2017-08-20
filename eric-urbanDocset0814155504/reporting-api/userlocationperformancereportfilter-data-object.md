@@ -18,13 +18,13 @@ Defines the criteria to use to filter the user location performance report data.
 ## Syntax
 
 ```xml
-<xs:complexType name="UserLocationPerformanceReportFilter">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AdDistribution" nillable="true" type="tns:AdDistributionReportFilter" />
-    <xs:element minOccurs="0" name="CountryCode" nillable="true" type="q27:ArrayOfstring" xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q28:ArrayOfstring" xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="UserLocationPerformanceReportFilter">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AdDistribution" nillable="true" type="tns:AdDistributionReportFilter" />
+    \<xs:element minOccurs="0" name="CountryCode" nillable="true" type="q27:ArrayOfstring" xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    \<xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q28:ArrayOfstring" xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

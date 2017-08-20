@@ -18,7 +18,9 @@ Gets the status of a report request.
 > [!NOTE]
 > You must use the same user credentials for the [SubmitGenerateReport](../reporting-api/submitgeneratereport-service-operation.md) and [PollGenerateReport](../reporting-api/pollgeneratereport-service-operation.md). For more information, see [Request and Download a Report](http://go.microsoft.com/fwlink/?LinkId=691110).
 
-[!INCLUDE[reporting_service_namespace](../reporting-api/includes/reporting-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[rep_navigation](../reporting-api/includes/rep-navigation.md)]|
 
 ## <a name="request"></a>PollGenerateReportRequest Message
 
@@ -39,23 +41,23 @@ The *PollGenerateReportRequest* object defines the elements of the request’s b
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
     <Action mustUnderstand="1">PollGenerateReport</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <PollGenerateReportRequest xmlns="https://bingads.microsoft.com/Reporting/v11">
-      <ReportRequestId i:nil="false"></ReportRequestId>
+      \<ReportRequestId i:nil="false"></ReportRequestId>
     </PollGenerateReportRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>PollGenerateReportResponse Message
@@ -72,19 +74,19 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <PollGenerateReportResponse xmlns="https://bingads.microsoft.com/Reporting/v11">
-      <ReportRequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <ReportDownloadUrl p4:nil="false"></ReportDownloadUrl>
+      \<ReportRequestStatus p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<ReportDownloadUrl p4:nil="false"></ReportDownloadUrl>
         <Status></Status>
       </ReportRequestStatus>
     </PollGenerateReportResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

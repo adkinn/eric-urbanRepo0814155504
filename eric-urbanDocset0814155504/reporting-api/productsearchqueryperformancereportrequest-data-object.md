@@ -22,19 +22,19 @@ The report will include only search terms that resulted in a significant number 
 ## Syntax
 
 ```xml
-<xs:complexType name="ProductSearchQueryPerformanceReportRequest">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ReportRequest">
-      <xs:sequence>
-        <xs:element name="Aggregation" type="tns:ReportAggregation" />
-        <xs:element name="Columns" nillable="true" type="tns:ArrayOfProductSearchQueryPerformanceReportColumn" />
-        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ProductSearchQueryPerformanceReportFilter" />
-        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ProductSearchQueryPerformanceReportRequest">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ReportRequest">
+      \<xs:sequence>
+        \<xs:element name="Aggregation" type="tns:ReportAggregation" />
+        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfProductSearchQueryPerformanceReportColumn" />
+        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:ProductSearchQueryPerformanceReportFilter" />
+        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

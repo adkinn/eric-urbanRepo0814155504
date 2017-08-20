@@ -18,16 +18,16 @@ Defines the criteria to use to filter the DSA auto target performance report dat
 ## Syntax
 
 ```xml
-<xs:complexType name="DSAAutoTargetPerformanceReportFilter">
-  <xs:sequence>
-    <xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="DynamicAdTargetStatus" type="tns:DynamicAdTargetStatusReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="BidStrategyTypes" type="tns:BidStrategyTypeReportFilter" nillable="true" minOccurs="0"/>
-    <xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="DSAAutoTargetPerformanceReportFilter">
+  \<xs:sequence>
+    \<xs:element name="AccountStatus" type="tns:AccountStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="AdGroupStatus" type="tns:AdGroupStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="CampaignStatus" type="tns:CampaignStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="DynamicAdTargetStatus" type="tns:DynamicAdTargetStatusReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="BidStrategyTypes" type="tns:BidStrategyTypeReportFilter" nillable="true" minOccurs="0"/>
+    \<xs:element name="LanguageCode" type="q20:ArrayOfstring" nillable="true" minOccurs="0" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

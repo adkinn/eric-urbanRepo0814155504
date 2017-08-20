@@ -18,12 +18,12 @@ Defines the status of a report request.
 ## Syntax
 
 ```xml
-<xs:complexType name="ReportRequestStatus">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="ReportDownloadUrl" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Status" type="tns:ReportRequestStatusType" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ReportRequestStatus">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="ReportDownloadUrl" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Status" type="tns:ReportRequestStatusType" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="elements"></a>Elements

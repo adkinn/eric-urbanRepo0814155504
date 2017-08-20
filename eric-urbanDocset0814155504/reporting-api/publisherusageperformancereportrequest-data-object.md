@@ -21,19 +21,19 @@ You can request impressions, clicks, spend, and conversions for websites includi
 ## Syntax
 
 ```xml
-<xs:complexType name="PublisherUsagePerformanceReportRequest">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ReportRequest">
-      <xs:sequence>
-        <xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
-        <xs:element name="Columns" nillable="true" type="tns:ArrayOfPublisherUsagePerformanceReportColumn" />
-        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:PublisherUsagePerformanceReportFilter" />
-        <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
-        <xs:element name="Time" nillable="true" type="tns:ReportTime" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="PublisherUsagePerformanceReportRequest">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ReportRequest">
+      \<xs:sequence>
+        \<xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
+        \<xs:element name="Columns" nillable="true" type="tns:ArrayOfPublisherUsagePerformanceReportColumn" />
+        \<xs:element minOccurs="0" name="Filter" nillable="true" type="tns:PublisherUsagePerformanceReportFilter" />
+        \<xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
+        \<xs:element name="Time" nillable="true" type="tns:ReportTime" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

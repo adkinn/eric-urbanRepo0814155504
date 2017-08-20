@@ -19,20 +19,20 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-<xs:simpleType name="BudgetSummaryReportColumn">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="AccountName"/>
-    <xs:enumeration value="AccountNumber"/>
-    <xs:enumeration value="AccountId"/>
-    <xs:enumeration value="CampaignName"/>
-    <xs:enumeration value="CampaignId"/>
-    <xs:enumeration value="Date"/>
-    <xs:enumeration value="CurrencyCode"/>
-    <xs:enumeration value="MonthlyBudget"/>
-    <xs:enumeration value="DailySpend"/>
-    <xs:enumeration value="MonthToDateSpend"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="BudgetSummaryReportColumn">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="AccountName"/>
+    \<xs:enumeration value="AccountNumber"/>
+    \<xs:enumeration value="AccountId"/>
+    \<xs:enumeration value="CampaignName"/>
+    \<xs:enumeration value="CampaignId"/>
+    \<xs:enumeration value="Date"/>
+    \<xs:enumeration value="CurrencyCode"/>
+    \<xs:enumeration value="MonthlyBudget"/>
+    \<xs:enumeration value="DailySpend"/>
+    \<xs:enumeration value="MonthToDateSpend"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

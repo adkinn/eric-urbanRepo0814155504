@@ -18,11 +18,11 @@ Defines the set of accounts to include in the report.
 ## Syntax
 
 ```xml
-<xs:complexType name="AccountReportScope">
-  <xs:sequence>
-    <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AccountIds" nillable="true" type="q1:ArrayOflong" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AccountReportScope">
+  \<xs:sequence>
+    \<xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AccountIds" nillable="true" type="q1:ArrayOflong" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

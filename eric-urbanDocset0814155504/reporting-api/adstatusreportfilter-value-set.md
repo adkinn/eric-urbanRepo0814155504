@@ -18,19 +18,19 @@ Defines the ad status values that you can use to filter the report data. These v
 ## Syntax
 
 ```xml
-<xs:simpleType name="AdStatusReportFilter">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Rejected"/>
-        <xs:enumeration value="Deleted"/>
-        <xs:enumeration value="Pending"/>
-        <xs:enumeration value="Active"/>
-        <xs:enumeration value="Paused"/>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="AdStatusReportFilter">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Rejected"/>
+        \<xs:enumeration value="Deleted"/>
+        \<xs:enumeration value="Pending"/>
+        \<xs:enumeration value="Active"/>
+        \<xs:enumeration value="Paused"/>
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

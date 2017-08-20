@@ -21,19 +21,19 @@ You can request impressions, clicks, spend, and average cost per click. Once dow
 ## Syntax
 
 ```xml
-<xs:complexType name="AudiencePerformanceReportRequest">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ReportRequest">
-      <xs:sequence>
-        <xs:element name="Aggregation" type="tns:ReportAggregation"/>
-        <xs:element name="Columns" type="tns:ArrayOfAudiencePerformanceReportColumn" nillable="true"/>
-        <xs:element name="Filter" type="tns:AudiencePerformanceReportFilter" nillable="true" minOccurs="0"/>
-        <xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
-        <xs:element name="Time" type="tns:ReportTime" nillable="true"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="AudiencePerformanceReportRequest">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ReportRequest">
+      \<xs:sequence>
+        \<xs:element name="Aggregation" type="tns:ReportAggregation"/>
+        \<xs:element name="Columns" type="tns:ArrayOfAudiencePerformanceReportColumn" nillable="true"/>
+        \<xs:element name="Filter" type="tns:AudiencePerformanceReportFilter" nillable="true" minOccurs="0"/>
+        \<xs:element name="Scope" type="tns:AccountThroughAdGroupReportScope" nillable="true"/>
+        \<xs:element name="Time" type="tns:ReportTime" nillable="true"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -18,12 +18,12 @@ Defines the set of accounts and campaigns to include in the report.
 ## Syntax
 
 ```xml
-<xs:complexType name="AccountThroughCampaignReportScope">
-  <xs:sequence>
-    <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AccountIds" nillable="true" type="q4:ArrayOflong" />
-    <xs:element minOccurs="0" name="Campaigns" nillable="true" type="tns:ArrayOfCampaignReportScope" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AccountThroughCampaignReportScope">
+  \<xs:sequence>
+    \<xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AccountIds" nillable="true" type="q4:ArrayOflong" />
+    \<xs:element minOccurs="0" name="Campaigns" nillable="true" type="tns:ArrayOfCampaignReportScope" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

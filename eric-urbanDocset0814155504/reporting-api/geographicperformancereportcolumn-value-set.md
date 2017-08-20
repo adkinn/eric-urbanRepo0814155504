@@ -19,56 +19,56 @@ Defines the attributes and performance statistics columns that you can include i
 ## Syntax
 
 ```xml
-<xs:simpleType name="GeographicPerformanceReportColumn">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="AccountName"/>
-    <xs:enumeration value="AccountNumber"/>
-    <xs:enumeration value="AccountId"/>
-    <xs:enumeration value="TimePeriod"/>
-    <xs:enumeration value="CampaignName"/>
-    <xs:enumeration value="CampaignId"/>
-    <xs:enumeration value="AdGroupName"/>
-    <xs:enumeration value="AdGroupId"/>
-    <xs:enumeration value="Country"/>
-    <xs:enumeration value="State"/>
-    <xs:enumeration value="MetroArea"/>
-    <xs:enumeration value="City"/>
-    <xs:enumeration value="CurrencyCode"/>
-    <xs:enumeration value="AdDistribution"/>
-    <xs:enumeration value="Impressions"/>
-    <xs:enumeration value="Clicks"/>
-    <xs:enumeration value="Ctr"/>
-    <xs:enumeration value="AverageCpc"/>
-    <xs:enumeration value="Spend"/>
-    <xs:enumeration value="AveragePosition"/>
-    <xs:enumeration value="ProximityTargetLocation" />
-    <xs:enumeration value="Radius" />
-    <xs:enumeration value="Language"/>
-    <xs:enumeration value="BidMatchType"/>
-    <xs:enumeration value="DeliveredMatchType"/>
-    <xs:enumeration value="Network"/>
-    <xs:enumeration value="TopVsOther"/>
-    <xs:enumeration value="DeviceType"/>
-    <xs:enumeration value="DeviceOS"/>
-    <xs:enumeration value="Assists"/>
-    <xs:enumeration value="Conversions"/>
-    <xs:enumeration value="ConversionRate" />
-    <xs:enumeration value="Revenue"/>
-    <xs:enumeration value="ReturnOnAdSpend"/>
-    <xs:enumeration value="CostPerConversion"/>
-    <xs:enumeration value="CostPerAssist"/>
-    <xs:enumeration value="RevenuePerConversion"/>
-    <xs:enumeration value="RevenuePerAssist"/>
-    <xs:enumeration value="LocationType"/>
-    <xs:enumeration value="MostSpecificLocation"/>
-    <xs:enumeration value="AccountStatus"/>
-    <xs:enumeration value="CampaignStatus"/>
-    <xs:enumeration value="AdGroupStatus"/>
-    <xs:enumeration value="County"/>
-    <xs:enumeration value="PostalCode"/>
-    <xs:enumeration value="LocationId"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="GeographicPerformanceReportColumn">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="AccountName"/>
+    \<xs:enumeration value="AccountNumber"/>
+    \<xs:enumeration value="AccountId"/>
+    \<xs:enumeration value="TimePeriod"/>
+    \<xs:enumeration value="CampaignName"/>
+    \<xs:enumeration value="CampaignId"/>
+    \<xs:enumeration value="AdGroupName"/>
+    \<xs:enumeration value="AdGroupId"/>
+    \<xs:enumeration value="Country"/>
+    \<xs:enumeration value="State"/>
+    \<xs:enumeration value="MetroArea"/>
+    \<xs:enumeration value="City"/>
+    \<xs:enumeration value="CurrencyCode"/>
+    \<xs:enumeration value="AdDistribution"/>
+    \<xs:enumeration value="Impressions"/>
+    \<xs:enumeration value="Clicks"/>
+    \<xs:enumeration value="Ctr"/>
+    \<xs:enumeration value="AverageCpc"/>
+    \<xs:enumeration value="Spend"/>
+    \<xs:enumeration value="AveragePosition"/>
+    \<xs:enumeration value="ProximityTargetLocation" />
+    \<xs:enumeration value="Radius" />
+    \<xs:enumeration value="Language"/>
+    \<xs:enumeration value="BidMatchType"/>
+    \<xs:enumeration value="DeliveredMatchType"/>
+    \<xs:enumeration value="Network"/>
+    \<xs:enumeration value="TopVsOther"/>
+    \<xs:enumeration value="DeviceType"/>
+    \<xs:enumeration value="DeviceOS"/>
+    \<xs:enumeration value="Assists"/>
+    \<xs:enumeration value="Conversions"/>
+    \<xs:enumeration value="ConversionRate" />
+    \<xs:enumeration value="Revenue"/>
+    \<xs:enumeration value="ReturnOnAdSpend"/>
+    \<xs:enumeration value="CostPerConversion"/>
+    \<xs:enumeration value="CostPerAssist"/>
+    \<xs:enumeration value="RevenuePerConversion"/>
+    \<xs:enumeration value="RevenuePerAssist"/>
+    \<xs:enumeration value="LocationType"/>
+    \<xs:enumeration value="MostSpecificLocation"/>
+    \<xs:enumeration value="AccountStatus"/>
+    \<xs:enumeration value="CampaignStatus"/>
+    \<xs:enumeration value="AdGroupStatus"/>
+    \<xs:enumeration value="County"/>
+    \<xs:enumeration value="PostalCode"/>
+    \<xs:enumeration value="LocationId"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

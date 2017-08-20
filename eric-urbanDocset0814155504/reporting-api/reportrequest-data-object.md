@@ -20,17 +20,17 @@ Do not instantiate this object. Instead, you may instantiate one of the report r
 ## Syntax
 
 ```xml
-<xs:complexType name="ReportRequest">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="ExcludeColumnHeaders" nillable="true" type="xs:boolean" />
-    <xs:element minOccurs="0" name="ExcludeReportFooter" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ExcludeReportHeader" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Format" nillable="true" type="tns:ReportFormat" />
-    <xs:element minOccurs="0" name="Language" nillable="true" type="tns:ReportLanguage" />
-    <xs:element minOccurs="0" name="ReportName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ReturnOnlyCompleteData" nillable="true" type="xs:boolean" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ReportRequest">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="ExcludeColumnHeaders" nillable="true" type="xs:boolean" />
+    \<xs:element minOccurs="0" name="ExcludeReportFooter" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="ExcludeReportHeader" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Format" nillable="true" type="tns:ReportFormat" />
+    \<xs:element minOccurs="0" name="Language" nillable="true" type="tns:ReportLanguage" />
+    \<xs:element minOccurs="0" name="ReportName" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="ReturnOnlyCompleteData" nillable="true" type="xs:boolean" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

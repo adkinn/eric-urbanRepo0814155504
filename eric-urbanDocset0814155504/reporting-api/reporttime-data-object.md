@@ -18,13 +18,13 @@ Defines the date range values of a report request.
 ## Syntax
 
 ```xml
-<xs:complexType name="ReportTime">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="CustomDateRangeEnd" nillable="true" type="tns:Date" />
-    <xs:element minOccurs="0" name="CustomDateRangeStart" nillable="true" type="tns:Date" />
-    <xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ReportTime">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="CustomDateRangeEnd" nillable="true" type="tns:Date" />
+    \<xs:element minOccurs="0" name="CustomDateRangeStart" nillable="true" type="tns:Date" />
+    \<xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

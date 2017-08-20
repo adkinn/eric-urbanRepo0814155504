@@ -18,13 +18,13 @@ Defines the status of a report.
 ## Syntax
 
 ```xml
-<xs:simpleType name="ReportRequestStatusType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Error"/>
-    <xs:enumeration value="Success"/>
-    <xs:enumeration value="Pending"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ReportRequestStatusType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Error"/>
+    \<xs:enumeration value="Success"/>
+    \<xs:enumeration value="Pending"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values
