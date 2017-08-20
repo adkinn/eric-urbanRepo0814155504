@@ -18,17 +18,17 @@ Defines the day values that you can specify for day and time criterion.
 ## Syntax
 
 ```xml
-<xs:simpleType name="Day">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Sunday" />
-    <xs:enumeration value="Monday" />
-    <xs:enumeration value="Tuesday" />
-    <xs:enumeration value="Wednesday" />
-    <xs:enumeration value="Thursday" />
-    <xs:enumeration value="Friday" />
-    <xs:enumeration value="Saturday" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="Day">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Sunday" />
+    \<xs:enumeration value="Monday" />
+    \<xs:enumeration value="Tuesday" />
+    \<xs:enumeration value="Wednesday" />
+    \<xs:enumeration value="Thursday" />
+    \<xs:enumeration value="Friday" />
+    \<xs:enumeration value="Saturday" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

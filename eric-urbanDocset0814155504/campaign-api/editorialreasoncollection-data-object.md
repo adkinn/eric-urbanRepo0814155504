@@ -18,14 +18,14 @@ Defines a collection of ads or keywords that failed editorial review, and the re
 ## Syntax
 
 ```xml
-<xs:complexType name="EditorialReasonCollection">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AdGroupId" type="xs:long"/>
-    <xs:element minOccurs="0" name="AdOrKeywordId" type="xs:long" />
-    <xs:element minOccurs="0" name="AppealStatus" type="tns:AppealStatus" />
-    <xs:element minOccurs="0" name="Reasons" nillable="true type="tns:ArrayOfEditorialReason" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="EditorialReasonCollection">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AdGroupId" type="xs:long"/>
+    \<xs:element minOccurs="0" name="AdOrKeywordId" type="xs:long" />
+    \<xs:element minOccurs="0" name="AppealStatus" type="tns:AppealStatus" />
+    \<xs:element minOccurs="0" name="Reasons" nillable="true type="tns:ArrayOfEditorialReason" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

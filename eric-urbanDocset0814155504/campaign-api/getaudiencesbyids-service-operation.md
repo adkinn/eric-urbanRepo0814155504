@@ -14,7 +14,9 @@ ms.author: "eur"
 # GetAudiencesByIds Service Operation
 Retrieves the specified audiences from the specified account.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetAudiencesByIdsRequest Message
 
@@ -39,26 +41,26 @@ The *GetAudiencesByIdsRequest* object defines the elements of the request’s bo
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetAudiencesByIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetAudiencesByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long></a1:long>
+      \<AudienceIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        \<a1:long>\</a1:long>
       </AudienceIds>
       <Type></Type>
     </GetAudiencesByIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetAudiencesByIdsResponse Message
@@ -76,139 +78,139 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetAudiencesByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Audiences p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <Audience p4:type="-- specify derived type here with the appropriate prefix --">
-          <Description p4:nil="false"></Description>
-          <ForwardCompatibilityMap xmlns:e113="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e113:KeyValuePairOfstringstring>
-              <e113:key p4:nil="false"></e113:key>
-              <e113:value p4:nil="false"></e113:value>
-            </e113:KeyValuePairOfstringstring>
+      \<Audiences p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<Audience p4:type="-- specify derived type here with the appropriate prefix --">
+          \<Description p4:nil="false"></Description>
+          \<ForwardCompatibilityMap xmlns:e113="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e113:KeyValuePairOfstringstring>
+              \<e113:key p4:nil="false">\</e113:key>
+              \<e113:value p4:nil="false">\</e113:value>
+            \</e113:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id p4:nil="false"></Id>
-          <MembershipDuration p4:nil="false"></MembershipDuration>
-          <Name p4:nil="false"></Name>
-          <ParentId p4:nil="false"></ParentId>
-          <Scope p4:nil="false"></Scope>
+          \<Id p4:nil="false"></Id>
+          \<MembershipDuration p4:nil="false"></MembershipDuration>
+          \<Name p4:nil="false"></Name>
+          \<ParentId p4:nil="false"></ParentId>
+          \<Scope p4:nil="false"></Scope>
           <Type></Type>
-          <!--Keep these fields if you set the i:type attribute to RemarketingList-->
-          <Rule xmlns:e114="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
-            <e114:Type p4:nil="false"></e114:Type>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsRule-->
-            <e114:RuleItemGroups p4:nil="false">
-              <e114:RuleItemGroup>
-                <e114:Items p4:nil="false">
-                  <e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
-                    <e114:Type p4:nil="false"></e114:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e114:Operand p4:nil="false"></e114:Operand>
-                    <e114:Operator></e114:Operator>
-                    <e114:Value p4:nil="false"></e114:Value>
-                  </e114:RuleItem>
-                </e114:Items>
-              </e114:RuleItemGroup>
-            </e114:RuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsWhoVisitedAnotherPageRule-->
-            <e114:AnotherRuleItemGroups p4:nil="false">
-              <e114:RuleItemGroup>
-                <e114:Items p4:nil="false">
-                  <e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
-                    <e114:Type p4:nil="false"></e114:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e114:Operand p4:nil="false"></e114:Operand>
-                    <e114:Operator></e114:Operator>
-                    <e114:Value p4:nil="false"></e114:Value>
-                  </e114:RuleItem>
-                </e114:Items>
-              </e114:RuleItemGroup>
-            </e114:AnotherRuleItemGroups>
-            <e114:RuleItemGroups p4:nil="false">
-              <e114:RuleItemGroup>
-                <e114:Items p4:nil="false">
-                  <e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
-                    <e114:Type p4:nil="false"></e114:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e114:Operand p4:nil="false"></e114:Operand>
-                    <e114:Operator></e114:Operator>
-                    <e114:Value p4:nil="false"></e114:Value>
-                  </e114:RuleItem>
-                </e114:Items>
-              </e114:RuleItemGroup>
-            </e114:RuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsWhoDidNotVisitAnotherPageRule-->
-            <e114:ExcludeRuleItemGroups p4:nil="false">
-              <e114:RuleItemGroup>
-                <e114:Items p4:nil="false">
-                  <e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
-                    <e114:Type p4:nil="false"></e114:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e114:Operand p4:nil="false"></e114:Operand>
-                    <e114:Operator></e114:Operator>
-                    <e114:Value p4:nil="false"></e114:Value>
-                  </e114:RuleItem>
-                </e114:Items>
-              </e114:RuleItemGroup>
-            </e114:ExcludeRuleItemGroups>
-            <e114:IncludeRuleItemGroups p4:nil="false">
-              <e114:RuleItemGroup>
-                <e114:Items p4:nil="false">
-                  <e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
-                    <e114:Type p4:nil="false"></e114:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e114:Operand p4:nil="false"></e114:Operand>
-                    <e114:Operator></e114:Operator>
-                    <e114:Value p4:nil="false"></e114:Value>
-                  </e114:RuleItem>
-                </e114:Items>
-              </e114:RuleItemGroup>
-            </e114:IncludeRuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to CustomEventsRule-->
-            <e114:Action p4:nil="false"></e114:Action>
-            <e114:ActionOperator></e114:ActionOperator>
-            <e114:Category p4:nil="false"></e114:Category>
-            <e114:CategoryOperator></e114:CategoryOperator>
-            <e114:Label p4:nil="false"></e114:Label>
-            <e114:LabelOperator></e114:LabelOperator>
-            <e114:Value p4:nil="false"></e114:Value>
-            <e114:ValueOperator></e114:ValueOperator>
+          \<!--Keep these fields if you set the i:type attribute to RemarketingList-->
+          \<Rule xmlns:e114="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
+            \<e114:Type p4:nil="false">\</e114:Type>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsRule-->
+            \<e114:RuleItemGroups p4:nil="false">
+              \<e114:RuleItemGroup>
+                \<e114:Items p4:nil="false">
+                  \<e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
+                    \<e114:Type p4:nil="false">\</e114:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e114:Operand p4:nil="false">\</e114:Operand>
+                    \<e114:Operator>\</e114:Operator>
+                    \<e114:Value p4:nil="false">\</e114:Value>
+                  \</e114:RuleItem>
+                \</e114:Items>
+              \</e114:RuleItemGroup>
+            \</e114:RuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsWhoVisitedAnotherPageRule-->
+            \<e114:AnotherRuleItemGroups p4:nil="false">
+              \<e114:RuleItemGroup>
+                \<e114:Items p4:nil="false">
+                  \<e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
+                    \<e114:Type p4:nil="false">\</e114:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e114:Operand p4:nil="false">\</e114:Operand>
+                    \<e114:Operator>\</e114:Operator>
+                    \<e114:Value p4:nil="false">\</e114:Value>
+                  \</e114:RuleItem>
+                \</e114:Items>
+              \</e114:RuleItemGroup>
+            \</e114:AnotherRuleItemGroups>
+            \<e114:RuleItemGroups p4:nil="false">
+              \<e114:RuleItemGroup>
+                \<e114:Items p4:nil="false">
+                  \<e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
+                    \<e114:Type p4:nil="false">\</e114:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e114:Operand p4:nil="false">\</e114:Operand>
+                    \<e114:Operator>\</e114:Operator>
+                    \<e114:Value p4:nil="false">\</e114:Value>
+                  \</e114:RuleItem>
+                \</e114:Items>
+              \</e114:RuleItemGroup>
+            \</e114:RuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsWhoDidNotVisitAnotherPageRule-->
+            \<e114:ExcludeRuleItemGroups p4:nil="false">
+              \<e114:RuleItemGroup>
+                \<e114:Items p4:nil="false">
+                  \<e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
+                    \<e114:Type p4:nil="false">\</e114:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e114:Operand p4:nil="false">\</e114:Operand>
+                    \<e114:Operator>\</e114:Operator>
+                    \<e114:Value p4:nil="false">\</e114:Value>
+                  \</e114:RuleItem>
+                \</e114:Items>
+              \</e114:RuleItemGroup>
+            \</e114:ExcludeRuleItemGroups>
+            \<e114:IncludeRuleItemGroups p4:nil="false">
+              \<e114:RuleItemGroup>
+                \<e114:Items p4:nil="false">
+                  \<e114:RuleItem p4:type="-- specify derived type here with the appropriate prefix --">
+                    \<e114:Type p4:nil="false">\</e114:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e114:Operand p4:nil="false">\</e114:Operand>
+                    \<e114:Operator>\</e114:Operator>
+                    \<e114:Value p4:nil="false">\</e114:Value>
+                  \</e114:RuleItem>
+                \</e114:Items>
+              \</e114:RuleItemGroup>
+            \</e114:IncludeRuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to CustomEventsRule-->
+            \<e114:Action p4:nil="false">\</e114:Action>
+            \<e114:ActionOperator>\</e114:ActionOperator>
+            \<e114:Category p4:nil="false">\</e114:Category>
+            \<e114:CategoryOperator>\</e114:CategoryOperator>
+            \<e114:Label p4:nil="false">\</e114:Label>
+            \<e114:LabelOperator>\</e114:LabelOperator>
+            \<e114:Value p4:nil="false">\</e114:Value>
+            \<e114:ValueOperator>\</e114:ValueOperator>
           </Rule>
-          <TagId p4:nil="false"></TagId>
-          <!--Keep these fields if you set the i:type attribute to CustomAudience-->
-          <!--Keep these fields if you set the i:type attribute to InMarketAudience-->
+          \<TagId p4:nil="false"></TagId>
+          \<!--Keep these fields if you set the i:type attribute to CustomAudience-->
+          \<!--Keep these fields if you set the i:type attribute to InMarketAudience-->
         </Audience>
       </Audiences>
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e115="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e115:KeyValuePairOfstringstring>
-              <e115:key p4:nil="false"></e115:key>
-              <e115:value p4:nil="false"></e115:value>
-            </e115:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e115="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e115:KeyValuePairOfstringstring>
+              \<e115:key p4:nil="false">\</e115:key>
+              \<e115:value p4:nil="false">\</e115:value>
+            \</e115:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </GetAudiencesByIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

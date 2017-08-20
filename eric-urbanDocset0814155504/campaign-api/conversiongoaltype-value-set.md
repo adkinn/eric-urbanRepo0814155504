@@ -18,21 +18,21 @@ Defines the current possible types of conversion goals.
 ## Syntax
 
 ```xml
-<xs:simpleType name="ConversionGoalType">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Url" />
-        <xs:enumeration value="Duration" />
-        <xs:enumeration value="Event" />       
-        <xs:enumeration value="AppInstall" />
-        <xs:enumeration value="PagesViewedPerVisit" />
-        <xs:enumeration value="OfflineConversion" />
-        <xs:enumeration value="InStoreTransaction" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="ConversionGoalType">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Url" />
+        \<xs:enumeration value="Duration" />
+        \<xs:enumeration value="Event" />       
+        \<xs:enumeration value="AppInstall" />
+        \<xs:enumeration value="PagesViewedPerVisit" />
+        \<xs:enumeration value="OfflineConversion" />
+        \<xs:enumeration value="InStoreTransaction" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

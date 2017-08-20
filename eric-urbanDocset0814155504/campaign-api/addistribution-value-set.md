@@ -18,16 +18,16 @@ Defines the ad distribution for the ad group.
 ## Syntax
 
 ```xml
-<xs:simpleType name="AdDistribution">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Search" />
-        <xs:enumeration value="Content" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="AdDistribution">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Search" />
+        \<xs:enumeration value="Content" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

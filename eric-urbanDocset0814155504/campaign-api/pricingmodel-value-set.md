@@ -18,12 +18,12 @@ Defines the pricing model for an ad group.
 ## Syntax
 
 ```xml
-<xs:simpleType name="PricingModel">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Cpc" />
-    <xs:enumeration value="Cpm" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="PricingModel">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Cpc" />
+    \<xs:enumeration value="Cpm" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

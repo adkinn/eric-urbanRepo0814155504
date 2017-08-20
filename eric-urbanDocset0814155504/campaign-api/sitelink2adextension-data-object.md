@@ -21,23 +21,23 @@ Defines an object with *one* sitelink per ad extension. You can use the sitelink
 ## Syntax
 
 ```xml
-<xs:complexType name="Sitelink2AdExtension">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:AdExtension">
-      <xs:sequence>
-        <xs:element name="Description1" nillable="true" type="xs:string"/>
-        <xs:element name="Description2" nillable="true" type="xs:string"/>
-        <xs:element name="DestinationUrl" nillable="true" type="xs:string"/>
-        <xs:element name="DisplayText" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q67:ArrayOfAppUrl"/>
-        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q68:ArrayOfstring"/>
-        <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q69:ArrayOfstring"/>
-        <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q70:CustomParameters"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="Sitelink2AdExtension">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:AdExtension">
+      \<xs:sequence>
+        \<xs:element name="Description1" nillable="true" type="xs:string"/>
+        \<xs:element name="Description2" nillable="true" type="xs:string"/>
+        \<xs:element name="DestinationUrl" nillable="true" type="xs:string"/>
+        \<xs:element name="DisplayText" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="FinalAppUrls" nillable="true" type="q67:ArrayOfAppUrl"/>
+        \<xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q68:ArrayOfstring"/>
+        \<xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q69:ArrayOfstring"/>
+        \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V10" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q70:CustomParameters"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

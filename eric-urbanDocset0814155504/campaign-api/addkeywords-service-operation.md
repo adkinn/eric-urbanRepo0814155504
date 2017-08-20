@@ -15,7 +15,9 @@ manager: "ehansen"
 # AddKeywords Service Operation
 Adds one or more keywords to an ad group.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>AddKeywordsRequest Message
 
@@ -37,86 +39,86 @@ The *AddKeywordsRequest* object defines the elements of the request’s body. Th
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddKeywords</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <AddKeywordsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AdGroupId></AdGroupId>
-      <Keywords i:nil="false">
+      \<Keywords i:nil="false">
         <Keyword>
-          <Bid i:nil="false">
-            <Amount i:nil="false"></Amount>
+          \<Bid i:nil="false">
+            \<Amount i:nil="false"></Amount>
           </Bid>
-          <BiddingScheme i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-            <Type i:nil="false"></Type>
-            <!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
-            <MaxCpc i:nil="false">
-              <Amount i:nil="false"></Amount>
+          \<BiddingScheme i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+            \<Type i:nil="false"></Type>
+            \<!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
+            \<MaxCpc i:nil="false">
+              \<Amount i:nil="false"></Amount>
             </MaxCpc>
-            <!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
-            <MaxCpc i:nil="false">
-              <Amount i:nil="false"></Amount>
+            \<!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
+            \<MaxCpc i:nil="false">
+              \<Amount i:nil="false"></Amount>
             </MaxCpc>
-            <!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
-            <MaxCpc i:nil="false">
-              <Amount i:nil="false"></Amount>
+            \<!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
+            \<MaxCpc i:nil="false">
+              \<Amount i:nil="false"></Amount>
             </MaxCpc>
-            <TargetCpa i:nil="false"></TargetCpa>
-            <!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
-            <!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
-            <!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
-            <InheritedBidStrategyType i:nil="false"></InheritedBidStrategyType>
+            \<TargetCpa i:nil="false"></TargetCpa>
+            \<!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
+            \<!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
+            \<!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
+            \<InheritedBidStrategyType i:nil="false"></InheritedBidStrategyType>
           </BiddingScheme>
-          <DestinationUrl i:nil="false"></DestinationUrl>
-          <EditorialStatus i:nil="false"></EditorialStatus>
-          <FinalAppUrls xmlns:e37="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e37:AppUrl>
-              <e37:OsType i:nil="false"></e37:OsType>
-              <e37:Url i:nil="false"></e37:Url>
-            </e37:AppUrl>
+          \<DestinationUrl i:nil="false"></DestinationUrl>
+          \<EditorialStatus i:nil="false"></EditorialStatus>
+          \<FinalAppUrls xmlns:e37="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e37:AppUrl>
+              \<e37:OsType i:nil="false">\</e37:OsType>
+              \<e37:Url i:nil="false">\</e37:Url>
+            \</e37:AppUrl>
           </FinalAppUrls>
-          <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalMobileUrls>
-          <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e38="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e38:KeyValuePairOfstringstring>
-              <e38:key i:nil="false"></e38:key>
-              <e38:value i:nil="false"></e38:value>
-            </e38:KeyValuePairOfstringstring>
+          \<ForwardCompatibilityMap xmlns:e38="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e38:KeyValuePairOfstringstring>
+              \<e38:key i:nil="false">\</e38:key>
+              \<e38:value i:nil="false">\</e38:value>
+            \</e38:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id i:nil="false"></Id>
-          <MatchType i:nil="false"></MatchType>
-          <Param1 i:nil="false"></Param1>
-          <Param2 i:nil="false"></Param2>
-          <Param3 i:nil="false"></Param3>
-          <Status i:nil="false"></Status>
-          <Text i:nil="false"></Text>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e39="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e39:Parameters i:nil="false">
-              <e39:CustomParameter>
-                <e39:Key i:nil="false"></e39:Key>
-                <e39:Value i:nil="false"></e39:Value>
-              </e39:CustomParameter>
-            </e39:Parameters>
+          \<Id i:nil="false"></Id>
+          \<MatchType i:nil="false"></MatchType>
+          \<Param1 i:nil="false"></Param1>
+          \<Param2 i:nil="false"></Param2>
+          \<Param3 i:nil="false"></Param3>
+          \<Status i:nil="false"></Status>
+          \<Text i:nil="false"></Text>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e39="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e39:Parameters i:nil="false">
+              \<e39:CustomParameter>
+                \<e39:Key i:nil="false">\</e39:Key>
+                \<e39:Value i:nil="false">\</e39:Value>
+              \</e39:CustomParameter>
+            \</e39:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
     </AddKeywordsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>AddKeywordsResponse Message
@@ -134,41 +136,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <AddKeywordsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <KeywordIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:long></a1:long>
+      \<KeywordIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<a1:long>\</a1:long>
       </KeywordIds>
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e40="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e40:KeyValuePairOfstringstring>
-              <e40:key p4:nil="false"></e40:key>
-              <e40:value p4:nil="false"></e40:value>
-            </e40:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e40="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e40:KeyValuePairOfstringstring>
+              \<e40:key p4:nil="false">\</e40:key>
+              \<e40:value p4:nil="false">\</e40:value>
+            \</e40:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </AddKeywordsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

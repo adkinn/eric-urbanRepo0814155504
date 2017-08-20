@@ -18,13 +18,13 @@ Defines a criterion that you want to exclude from the specified ad group.
 ## Syntax
 
 ```xml
-<xs:complexType name="NegativeAdGroupCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:tns:AdGroupCriterion">
-      <xs:sequence />
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="NegativeAdGroupCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:tns:AdGroupCriterion">
+      \<xs:sequence />
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

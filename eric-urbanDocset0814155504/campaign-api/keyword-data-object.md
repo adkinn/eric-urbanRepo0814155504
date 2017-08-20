@@ -18,27 +18,27 @@ Defines a keyword.
 ## Syntax
 
 ```xml
-<xs:complexType name="Keyword">
-  <xs:sequence>
-    <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="BiddingScheme" nillable="true" type="q35:BiddingScheme"/>
-    <xs:element minOccurs="0" name="Bid" nillable="true" type="tns:Bid" />
-    <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:KeywordEditorialStatus" />
-    <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="FinalAppUrls" nillable="true" type="q36:ArrayOfAppUrl"/>
-    <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q37:ArrayOfstring"/>
-    <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q38:ArrayOfstring"/>
-    <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q39:ArrayOfKeyValuePairOfstringstring"/>
-    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="MatchType" nillable="true" type="tns:MatchType" />
-    <xs:element minOccurs="0" name="Param1" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Param2" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Param3" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Status" nillable="true" type="tns:KeywordStatus" />
-    <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
-    <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q40:CustomParameters"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Keyword">
+  \<xs:sequence>
+    \<xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="BiddingScheme" nillable="true" type="q35:BiddingScheme"/>
+    \<xs:element minOccurs="0" name="Bid" nillable="true" type="tns:Bid" />
+    \<xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:KeywordEditorialStatus" />
+    \<xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="FinalAppUrls" nillable="true" type="q36:ArrayOfAppUrl"/>
+    \<xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalMobileUrls" nillable="true" type="q37:ArrayOfstring"/>
+    \<xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FinalUrls" nillable="true" type="q38:ArrayOfstring"/>
+    \<xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q39:ArrayOfKeyValuePairOfstringstring"/>
+    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    \<xs:element minOccurs="0" name="MatchType" nillable="true" type="tns:MatchType" />
+    \<xs:element minOccurs="0" name="Param1" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Param2" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Param3" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Status" nillable="true" type="tns:KeywordStatus" />
+    \<xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string"/>
+    \<xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" minOccurs="0" name="UrlCustomParameters" nillable="true" type="q40:CustomParameters"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

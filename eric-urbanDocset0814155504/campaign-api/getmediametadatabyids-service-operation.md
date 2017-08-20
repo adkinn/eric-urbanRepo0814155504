@@ -18,7 +18,9 @@ Gets the specified media meta data from an account’s media library.
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-api/getmediabyids-service-operation.md).
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetMediaMetaDataByIdsRequest Message
 
@@ -42,25 +44,25 @@ The *GetMediaMetaDataByIdsRequest* object defines the elements of the request’
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetMediaMetaDataByIds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetMediaMetaDataByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <MediaIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long></a1:long>
+      \<MediaIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        \<a1:long>\</a1:long>
       </MediaIds>
     </GetMediaMetaDataByIdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetMediaMetaDataByIdsResponse Message
@@ -78,55 +80,55 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetMediaMetaDataByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <MediaMetaData p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<MediaMetaData p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <MediaMetaData>
           <Id></Id>
-          <MediaType p4:nil="false"></MediaType>
-          <Representations p4:nil="false">
-            <MediaRepresentation p4:type="-- specify derived type here with the appropriate prefix --">
-              <Name p4:nil="false"></Name>
-              <Type p4:nil="false"></Type>
-              <Url p4:nil="false"></Url>
-              <!--Keep these fields if you set the i:type attribute to ImageMediaRepresentation-->
+          \<MediaType p4:nil="false"></MediaType>
+          \<Representations p4:nil="false">
+            \<MediaRepresentation p4:type="-- specify derived type here with the appropriate prefix --">
+              \<Name p4:nil="false"></Name>
+              \<Type p4:nil="false"></Type>
+              \<Url p4:nil="false"></Url>
+              \<!--Keep these fields if you set the i:type attribute to ImageMediaRepresentation-->
               <Height></Height>
               <Width></Width>
             </MediaRepresentation>
           </Representations>
-          <Type p4:nil="false"></Type>
+          \<Type p4:nil="false"></Type>
         </MediaMetaData>
       </MediaMetaData>
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e134="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e134:KeyValuePairOfstringstring>
-              <e134:key p4:nil="false"></e134:key>
-              <e134:value p4:nil="false"></e134:value>
-            </e134:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e134="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e134:KeyValuePairOfstringstring>
+              \<e134:key p4:nil="false">\</e134:key>
+              \<e134:value p4:nil="false">\</e134:value>
+            \</e134:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </GetMediaMetaDataByIdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

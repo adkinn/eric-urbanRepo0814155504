@@ -20,16 +20,16 @@ For example, you track two conversions: leads and sales. You pick *Unique* for l
 ## Syntax
 
 ```xml
-<xs:simpleType name="ConversionGoalCountType">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="All" />
-        <xs:enumeration value="Unique" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="ConversionGoalCountType">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="All" />
+        \<xs:enumeration value="Unique" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

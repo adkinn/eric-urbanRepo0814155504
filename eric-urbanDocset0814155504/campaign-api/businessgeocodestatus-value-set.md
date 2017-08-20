@@ -18,14 +18,14 @@ Defines the possible status values that indicate the progress of determining the
 ## Syntax
 
 ```xml
-<xs:simpleType name="BusinessGeoCodeStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Pending" />
-    <xs:enumeration value="Complete" />
-    <xs:enumeration value="Invalid" />
-    <xs:enumeration value="Failed" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="BusinessGeoCodeStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Pending" />
+    \<xs:enumeration value="Complete" />
+    \<xs:enumeration value="Invalid" />
+    \<xs:enumeration value="Failed" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

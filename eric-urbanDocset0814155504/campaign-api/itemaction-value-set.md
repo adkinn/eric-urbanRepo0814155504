@@ -18,13 +18,13 @@ Defines the possible types of item actions, for example to add, delete, or updat
 ## Syntax
 
 ```xml
-<xs:simpleType name="ItemAction">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Add" />
-    <xs:enumeration value="Delete" />
-    <xs:enumeration value="Update" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="ItemAction">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Add" />
+    \<xs:enumeration value="Delete" />
+    \<xs:enumeration value="Update" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -18,11 +18,11 @@ Defines an object that contains a list of entity identifiers.
 ## Syntax
 
 ```xml
-<xs:complexType name="IdCollection">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Ids" nillable="true" type="q53:ArrayOfNullableOflong" xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="IdCollection">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Ids" nillable="true" type="q53:ArrayOfNullableOflong" xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

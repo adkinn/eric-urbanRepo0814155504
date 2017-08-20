@@ -18,7 +18,9 @@ Adds negative keywords to the shared negative keyword list.
 > [!NOTE]
 > The operation is only used for shared negative keyword lists. To add negative keywords that are exclusively used with one campaign or ad group, see [AddNegativeKeywordsToEntities](../campaign-api/addnegativekeywordstoentities-service-operation.md). 
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>AddListItemsToSharedListRequest Message
 
@@ -40,41 +42,41 @@ The *AddListItemsToSharedListRequest* object defines the elements of the request
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddListItemsToSharedList</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <AddListItemsToSharedListRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <ListItems i:nil="false">
-        <SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e38="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e38:KeyValuePairOfstringstring>
-              <e38:key i:nil="false"></e38:key>
-              <e38:value i:nil="false"></e38:value>
-            </e38:KeyValuePairOfstringstring>
+      \<ListItems i:nil="false">
+        \<SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
+          \<ForwardCompatibilityMap xmlns:e38="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e38:KeyValuePairOfstringstring>
+              \<e38:key i:nil="false">\</e38:key>
+              \<e38:value i:nil="false">\</e38:value>
+            \</e38:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Type i:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
-          <Id i:nil="false"></Id>
+          \<Type i:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
+          \<Id i:nil="false"></Id>
           <MatchType></MatchType>
-          <Text i:nil="false"></Text>
+          \<Text i:nil="false"></Text>
         </SharedListItem>
       </ListItems>
-      <SharedList i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-        <ItemCount i:nil="false"></ItemCount>
-        <!--Keep these fields if you set the i:type attribute to NegativeKeywordList-->
+      \<SharedList i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+        \<ItemCount i:nil="false"></ItemCount>
+        \<!--Keep these fields if you set the i:type attribute to NegativeKeywordList-->
       </SharedList>
     </AddListItemsToSharedListRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>AddListItemsToSharedListResponse Message
@@ -92,41 +94,41 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <AddListItemsToSharedListResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <ListItemIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:long></a1:long>
+      \<ListItemIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<a1:long>\</a1:long>
       </ListItemIds>
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e39="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e39:KeyValuePairOfstringstring>
-              <e39:key p4:nil="false"></e39:key>
-              <e39:value p4:nil="false"></e39:value>
-            </e39:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e39="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e39:KeyValuePairOfstringstring>
+              \<e39:key p4:nil="false">\</e39:key>
+              \<e39:value p4:nil="false">\</e39:value>
+            \</e39:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </AddListItemsToSharedListResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

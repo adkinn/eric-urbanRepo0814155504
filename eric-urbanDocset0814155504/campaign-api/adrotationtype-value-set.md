@@ -18,12 +18,12 @@ Defines the possible ad rotation types that you can apply to an ad group. For ad
 ## Syntax
 
 ```xml
-<xs:simpleType name="AdRotationType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="OptimizeForClicks" />
-    <xs:enumeration value="RotateAdsEvenly" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AdRotationType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="OptimizeForClicks" />
+    \<xs:enumeration value="RotateAdsEvenly" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

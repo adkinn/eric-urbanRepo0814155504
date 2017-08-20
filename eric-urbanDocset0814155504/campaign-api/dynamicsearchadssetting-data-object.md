@@ -21,16 +21,16 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
 ## Syntax
 
 ```xml
-<xs:complexType name="DynamicSearchAdsSetting">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Setting">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string"/>
-        <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="DynamicSearchAdsSetting">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Setting">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string"/>
+        \<xs:element minOccurs="0" name="Language" nillable="true" type="xs:string"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

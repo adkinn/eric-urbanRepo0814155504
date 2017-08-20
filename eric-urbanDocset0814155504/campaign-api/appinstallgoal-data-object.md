@@ -23,16 +23,16 @@ For other conversion goal types you create a Universal Event Tracking (UET) tag,
 ## Syntax
 
 ```xml
-<xs:complexType name="AppInstallGoal">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ConversionGoal">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="AppPlatform" nillable="true" type="xs:string"/>
-        <xs:element minOccurs="0" name="AppStoreId" nillable="true" type="xs:string"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="AppInstallGoal">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ConversionGoal">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="AppPlatform" nillable="true" type="xs:string"/>
+        \<xs:element minOccurs="0" name="AppStoreId" nillable="true" type="xs:string"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

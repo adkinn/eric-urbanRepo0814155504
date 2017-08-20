@@ -18,13 +18,13 @@ Defines a criterion that you want to exclude from the specified campaign.
 ## Syntax
 
 ```xml
-<xs:complexType name="NegativeCampaignCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:tns:CampaignCriterion">
-      <xs:sequence />
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="NegativeCampaignCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:tns:CampaignCriterion">
+      \<xs:sequence />
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

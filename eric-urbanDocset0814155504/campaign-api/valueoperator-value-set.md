@@ -18,17 +18,17 @@ Defines the operators that can be applied to values within a conversion event go
 ## Syntax
 
 ```xml
-<xs:simpleType name="ValueOperator">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Equals" />
-        <xs:enumeration value="LessThan" />
-        <xs:enumeration value="GreaterThan" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="ValueOperator">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Equals" />
+        \<xs:enumeration value="LessThan" />
+        \<xs:enumeration value="GreaterThan" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -20,15 +20,15 @@ Defines a duration conversion goal. Use this type of goal to count every time so
 ## Syntax
 
 ```xml
-<xs:complexType name="DurationGoal">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ConversionGoal">
-      <xs:sequence>
-        <xs:element name="MinimumDurationInSeconds" type="xs:int" nillable="true" minOccurs="0"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="DurationGoal">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ConversionGoal">
+      \<xs:sequence>
+        \<xs:element name="MinimumDurationInSeconds" type="xs:int" nillable="true" minOccurs="0"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -24,16 +24,16 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 ## Syntax
 
 ```xml
-<xs:complexType name="UetTag">
-  <xs:sequence>
-    <xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="TrackingNoScript" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="TrackingScript" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="TrackingStatus" type="tns:UetTagTrackingStatus" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="UetTag">
+  \<xs:sequence>
+    \<xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="TrackingNoScript" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="TrackingScript" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="TrackingStatus" type="tns:UetTagTrackingStatus" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

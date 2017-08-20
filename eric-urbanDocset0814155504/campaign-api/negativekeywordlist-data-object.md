@@ -18,13 +18,13 @@ Defines a negative keyword list. You can add negative keywords to a negative key
 ## Syntax
 
 ```xml
-<xs:complexType name="NegativeKeywordList">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SharedList">
-      <xs:sequence />
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="NegativeKeywordList">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SharedList">
+      \<xs:sequence />
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

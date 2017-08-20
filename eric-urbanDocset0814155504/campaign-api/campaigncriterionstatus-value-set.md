@@ -17,13 +17,13 @@ Defines the possible campaign criterion status values.
 ## Syntax
 
 ```xml
-<xs:simpleType name="CampaignCriterionStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Active" />
-    <xs:enumeration value="Paused" />
-    <xs:enumeration value="Deleted" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CampaignCriterionStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Active" />
+    \<xs:enumeration value="Paused" />
+    \<xs:enumeration value="Deleted" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

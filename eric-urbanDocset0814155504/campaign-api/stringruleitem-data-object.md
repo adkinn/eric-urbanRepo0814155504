@@ -18,17 +18,17 @@ Defines a rule expression that depends on the string values of the Url or Referr
 ## Syntax
 
 ```xml
-<xs:complexType name="StringRuleItem">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:RuleItem">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q8="https://bingads.microsoft.com/CampaignManagement/v10" minOccurs="0" name="Operator" type="q8:StringOperator"/>
-        <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="StringRuleItem">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:RuleItem">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q8="https://bingads.microsoft.com/CampaignManagement/v10" minOccurs="0" name="Operator" type="q8:StringOperator"/>
+        \<xs:element minOccurs="0" name="Value" nillable="true" type="xs:string"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

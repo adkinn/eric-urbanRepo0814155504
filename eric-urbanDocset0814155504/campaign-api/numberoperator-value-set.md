@@ -18,20 +18,20 @@ Defines the operators that can be applied to remarketing list rule item number v
 ## Syntax
 
 ```xml
-<xs:simpleType name="NumberOperator">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="None"/>
-        <xs:enumeration value="Equals"/>
-        <xs:enumeration value="GreaterThan"/>
-        <xs:enumeration value="LessThan"/>
-        <xs:enumeration value="GreaterThanEqualTo"/>
-        <xs:enumeration value="LessThanEqualTo"/>
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="NumberOperator">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="None"/>
+        \<xs:enumeration value="Equals"/>
+        \<xs:enumeration value="GreaterThan"/>
+        \<xs:enumeration value="LessThan"/>
+        \<xs:enumeration value="GreaterThanEqualTo"/>
+        \<xs:enumeration value="LessThanEqualTo"/>
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

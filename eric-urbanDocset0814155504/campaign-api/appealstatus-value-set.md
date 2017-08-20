@@ -18,31 +18,31 @@ Defines the values that you use to determine whether an editorial rejection is a
 ## Syntax
 
 ```xml
-<xs:simpleType name="AppealStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Appealable">
-      <xs:annotation>
-        <xs:appinfo>
+\<xs:simpleType name="AppealStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Appealable">
+      \<xs:annotation>
+        \<xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="AppealPending">
-      <xs:annotation>
-        <xs:appinfo>
+        \</xs:appinfo>
+      \</xs:annotation>
+    \</xs:enumeration>
+    \<xs:enumeration value="AppealPending">
+      \<xs:annotation>
+        \<xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="NotAppealable">
-      <xs:annotation>
-        <xs:appinfo>
+        \</xs:appinfo>
+      \</xs:annotation>
+    \</xs:enumeration>
+    \<xs:enumeration value="NotAppealable">
+      \<xs:annotation>
+        \<xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-  </xs:restriction>
-</xs:simpleType>
+        \</xs:appinfo>
+      \</xs:annotation>
+    \</xs:enumeration>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

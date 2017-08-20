@@ -20,14 +20,14 @@ Use the *StartDate* and *EndDate* elements for calendar level scheduling, and th
 ## Syntax
 
 ```xml
-<xs:complexType name="Schedule">
-  <xs:sequence>
-    <xs:element name="DayTimeRanges" type="tns:ArrayOfDayTime" nillable="true" minOccurs="0"/>
-    <xs:element name="EndDate" type="tns:Date" nillable="true" minOccurs="0"/>
-    <xs:element name="StartDate" type="tns:Date" nillable="true" minOccurs="0"/>
-    <xs:element name="UseSearcherTimeZone" type="xs:boolean" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Schedule">
+  \<xs:sequence>
+    \<xs:element name="DayTimeRanges" type="tns:ArrayOfDayTime" nillable="true" minOccurs="0"/>
+    \<xs:element name="EndDate" type="tns:Date" nillable="true" minOccurs="0"/>
+    \<xs:element name="StartDate" type="tns:Date" nillable="true" minOccurs="0"/>
+    \<xs:element name="UseSearcherTimeZone" type="xs:boolean" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

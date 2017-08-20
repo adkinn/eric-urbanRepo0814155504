@@ -15,7 +15,9 @@ manager: "ehansen"
 # AddAdExtensions Service Operation
 Adds one or more ad extensions to an account’s ad extension library.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>AddAdExtensionsRequest Message
 
@@ -37,32 +39,32 @@ The *AddAdExtensionsRequest* object defines the elements of the request’s body
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddAdExtensions</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <AddAdExtensionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId></AccountId>
-      <AdExtensions i:nil="false">
-        <AdExtension i:type="-- specify derived type here with the appropriate prefix --">
-          <DevicePreference i:nil="false"></DevicePreference>
-          <ForwardCompatibilityMap xmlns:e1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1:KeyValuePairOfstringstring>
-              <e1:key i:nil="false"></e1:key>
-              <e1:value i:nil="false"></e1:value>
-            </e1:KeyValuePairOfstringstring>
+      \<AdExtensions i:nil="false">
+        \<AdExtension i:type="-- specify derived type here with the appropriate prefix --">
+          \<DevicePreference i:nil="false"></DevicePreference>
+          \<ForwardCompatibilityMap xmlns:e1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e1:KeyValuePairOfstringstring>
+              \<e1:key i:nil="false">\</e1:key>
+              \<e1:value i:nil="false">\</e1:value>
+            \</e1:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id i:nil="false"></Id>
-          <Scheduling i:nil="false">
-            <DayTimeRanges i:nil="false">
+          \<Id i:nil="false"></Id>
+          \<Scheduling i:nil="false">
+            \<DayTimeRanges i:nil="false">
               <DayTime>
                 <Day></Day>
                 <EndHour></EndHour>
@@ -71,43 +73,43 @@ The following example shows the complete request envelope.
                 <StartMinute></StartMinute>
               </DayTime>
             </DayTimeRanges>
-            <EndDate i:nil="false">
+            \<EndDate i:nil="false">
               <Day></Day>
               <Month></Month>
               <Year></Year>
             </EndDate>
-            <StartDate i:nil="false">
+            \<StartDate i:nil="false">
               <Day></Day>
               <Month></Month>
               <Year></Year>
             </StartDate>
-            <UseSearcherTimeZone i:nil="false"></UseSearcherTimeZone>
+            \<UseSearcherTimeZone i:nil="false"></UseSearcherTimeZone>
           </Scheduling>
-          <Status i:nil="false"></Status>
-          <Type i:nil="false"></Type>
-          <Version i:nil="false"></Version>
-          <!--Keep these fields if you set the i:type attribute to SiteLinksAdExtension-->
-          <SiteLinks i:nil="false">
+          \<Status i:nil="false"></Status>
+          \<Type i:nil="false"></Type>
+          \<Version i:nil="false"></Version>
+          \<!--Keep these fields if you set the i:type attribute to SiteLinksAdExtension-->
+          \<SiteLinks i:nil="false">
             <SiteLink>
-              <Description1 i:nil="false"></Description1>
-              <Description2 i:nil="false"></Description2>
-              <DestinationUrl i:nil="false"></DestinationUrl>
-              <DevicePreference i:nil="false"></DevicePreference>
-              <DisplayText i:nil="false"></DisplayText>
-              <FinalAppUrls xmlns:e2="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-                <e2:AppUrl>
-                  <e2:OsType i:nil="false"></e2:OsType>
-                  <e2:Url i:nil="false"></e2:Url>
-                </e2:AppUrl>
+              \<Description1 i:nil="false"></Description1>
+              \<Description2 i:nil="false"></Description2>
+              \<DestinationUrl i:nil="false"></DestinationUrl>
+              \<DevicePreference i:nil="false"></DevicePreference>
+              \<DisplayText i:nil="false"></DisplayText>
+              \<FinalAppUrls xmlns:e2="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+                \<e2:AppUrl>
+                  \<e2:OsType i:nil="false">\</e2:OsType>
+                  \<e2:Url i:nil="false">\</e2:Url>
+                \</e2:AppUrl>
               </FinalAppUrls>
-              <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                <a1:string></a1:string>
+              \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                \<a1:string>\</a1:string>
               </FinalMobileUrls>
-              <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                <a1:string></a1:string>
+              \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                \<a1:string>\</a1:string>
               </FinalUrls>
-              <Scheduling i:nil="false">
-                <DayTimeRanges i:nil="false">
+              \<Scheduling i:nil="false">
+                \<DayTimeRanges i:nil="false">
                   <DayTime>
                     <Day></Day>
                     <EndHour></EndHour>
@@ -116,181 +118,181 @@ The following example shows the complete request envelope.
                     <StartMinute></StartMinute>
                   </DayTime>
                 </DayTimeRanges>
-                <EndDate i:nil="false">
+                \<EndDate i:nil="false">
                   <Day></Day>
                   <Month></Month>
                   <Year></Year>
                 </EndDate>
-                <StartDate i:nil="false">
+                \<StartDate i:nil="false">
                   <Day></Day>
                   <Month></Month>
                   <Year></Year>
                 </StartDate>
-                <UseSearcherTimeZone i:nil="false"></UseSearcherTimeZone>
+                \<UseSearcherTimeZone i:nil="false"></UseSearcherTimeZone>
               </Scheduling>
-              <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-              <UrlCustomParameters xmlns:e3="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-                <e3:Parameters i:nil="false">
-                  <e3:CustomParameter>
-                    <e3:Key i:nil="false"></e3:Key>
-                    <e3:Value i:nil="false"></e3:Value>
-                  </e3:CustomParameter>
-                </e3:Parameters>
+              \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+              \<UrlCustomParameters xmlns:e3="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+                \<e3:Parameters i:nil="false">
+                  \<e3:CustomParameter>
+                    \<e3:Key i:nil="false">\</e3:Key>
+                    \<e3:Value i:nil="false">\</e3:Value>
+                  \</e3:CustomParameter>
+                \</e3:Parameters>
               </UrlCustomParameters>
             </SiteLink>
           </SiteLinks>
-          <!--Keep these fields if you set the i:type attribute to LocationAdExtension-->
-          <Address i:nil="false">
-            <CityName i:nil="false"></CityName>
-            <CountryCode i:nil="false"></CountryCode>
-            <PostalCode i:nil="false"></PostalCode>
-            <ProvinceCode i:nil="false"></ProvinceCode>
-            <ProvinceName i:nil="false"></ProvinceName>
-            <StreetAddress i:nil="false"></StreetAddress>
-            <StreetAddress2 i:nil="false"></StreetAddress2>
+          \<!--Keep these fields if you set the i:type attribute to LocationAdExtension-->
+          \<Address i:nil="false">
+            \<CityName i:nil="false"></CityName>
+            \<CountryCode i:nil="false"></CountryCode>
+            \<PostalCode i:nil="false"></PostalCode>
+            \<ProvinceCode i:nil="false"></ProvinceCode>
+            \<ProvinceName i:nil="false"></ProvinceName>
+            \<StreetAddress i:nil="false"></StreetAddress>
+            \<StreetAddress2 i:nil="false"></StreetAddress2>
           </Address>
-          <CompanyName i:nil="false"></CompanyName>
-          <GeoCodeStatus i:nil="false"></GeoCodeStatus>
-          <GeoPoint i:nil="false">
+          \<CompanyName i:nil="false"></CompanyName>
+          \<GeoCodeStatus i:nil="false"></GeoCodeStatus>
+          \<GeoPoint i:nil="false">
             <LatitudeInMicroDegrees></LatitudeInMicroDegrees>
             <LongitudeInMicroDegrees></LongitudeInMicroDegrees>
           </GeoPoint>
-          <IconMediaId i:nil="false"></IconMediaId>
-          <ImageMediaId i:nil="false"></ImageMediaId>
-          <PhoneNumber i:nil="false"></PhoneNumber>
-          <!--Keep these fields if you set the i:type attribute to CallAdExtension-->
-          <CountryCode i:nil="false"></CountryCode>
-          <IsCallOnly i:nil="false"></IsCallOnly>
-          <IsCallTrackingEnabled i:nil="false"></IsCallTrackingEnabled>
-          <PhoneNumber i:nil="false"></PhoneNumber>
-          <RequireTollFreeTrackingNumber i:nil="false"></RequireTollFreeTrackingNumber>
-          <!--Keep these fields if you set the i:type attribute to ImageAdExtension-->
-          <AlternativeText i:nil="false"></AlternativeText>
-          <Description i:nil="false"></Description>
-          <DestinationUrl i:nil="false"></DestinationUrl>
-          <FinalAppUrls xmlns:e4="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e4:AppUrl>
-              <e4:OsType i:nil="false"></e4:OsType>
-              <e4:Url i:nil="false"></e4:Url>
-            </e4:AppUrl>
+          \<IconMediaId i:nil="false"></IconMediaId>
+          \<ImageMediaId i:nil="false"></ImageMediaId>
+          \<PhoneNumber i:nil="false"></PhoneNumber>
+          \<!--Keep these fields if you set the i:type attribute to CallAdExtension-->
+          \<CountryCode i:nil="false"></CountryCode>
+          \<IsCallOnly i:nil="false"></IsCallOnly>
+          \<IsCallTrackingEnabled i:nil="false"></IsCallTrackingEnabled>
+          \<PhoneNumber i:nil="false"></PhoneNumber>
+          \<RequireTollFreeTrackingNumber i:nil="false"></RequireTollFreeTrackingNumber>
+          \<!--Keep these fields if you set the i:type attribute to ImageAdExtension-->
+          \<AlternativeText i:nil="false"></AlternativeText>
+          \<Description i:nil="false"></Description>
+          \<DestinationUrl i:nil="false"></DestinationUrl>
+          \<FinalAppUrls xmlns:e4="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e4:AppUrl>
+              \<e4:OsType i:nil="false">\</e4:OsType>
+              \<e4:Url i:nil="false">\</e4:Url>
+            \</e4:AppUrl>
           </FinalAppUrls>
-          <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalMobileUrls>
-          <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalUrls>
-          <ImageMediaIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:long></a1:long>
+          \<ImageMediaIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:long>\</a1:long>
           </ImageMediaIds>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e5:Parameters i:nil="false">
-              <e5:CustomParameter>
-                <e5:Key i:nil="false"></e5:Key>
-                <e5:Value i:nil="false"></e5:Value>
-              </e5:CustomParameter>
-            </e5:Parameters>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e5:Parameters i:nil="false">
+              \<e5:CustomParameter>
+                \<e5:Key i:nil="false">\</e5:Key>
+                \<e5:Value i:nil="false">\</e5:Value>
+              \</e5:CustomParameter>
+            \</e5:Parameters>
           </UrlCustomParameters>
-          <!--Keep these fields if you set the i:type attribute to AppAdExtension-->
-          <AppPlatform i:nil="false"></AppPlatform>
-          <AppStoreId i:nil="false"></AppStoreId>
-          <DestinationUrl i:nil="false"></DestinationUrl>
-          <DisplayText i:nil="false"></DisplayText>
-          <FinalAppUrls xmlns:e6="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e6:AppUrl>
-              <e6:OsType i:nil="false"></e6:OsType>
-              <e6:Url i:nil="false"></e6:Url>
-            </e6:AppUrl>
+          \<!--Keep these fields if you set the i:type attribute to AppAdExtension-->
+          \<AppPlatform i:nil="false"></AppPlatform>
+          \<AppStoreId i:nil="false"></AppStoreId>
+          \<DestinationUrl i:nil="false"></DestinationUrl>
+          \<DisplayText i:nil="false"></DisplayText>
+          \<FinalAppUrls xmlns:e6="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e6:AppUrl>
+              \<e6:OsType i:nil="false">\</e6:OsType>
+              \<e6:Url i:nil="false">\</e6:Url>
+            \</e6:AppUrl>
           </FinalAppUrls>
-          <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalMobileUrls>
-          <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalUrls>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e7="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e7:Parameters i:nil="false">
-              <e7:CustomParameter>
-                <e7:Key i:nil="false"></e7:Key>
-                <e7:Value i:nil="false"></e7:Value>
-              </e7:CustomParameter>
-            </e7:Parameters>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e7="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e7:Parameters i:nil="false">
+              \<e7:CustomParameter>
+                \<e7:Key i:nil="false">\</e7:Key>
+                \<e7:Value i:nil="false">\</e7:Value>
+              \</e7:CustomParameter>
+            \</e7:Parameters>
           </UrlCustomParameters>
-          <!--Keep these fields if you set the i:type attribute to ReviewAdExtension-->
+          \<!--Keep these fields if you set the i:type attribute to ReviewAdExtension-->
           <IsExact></IsExact>
-          <Source i:nil="false"></Source>
-          <Text i:nil="false"></Text>
-          <Url i:nil="false"></Url>
-          <!--Keep these fields if you set the i:type attribute to CalloutAdExtension-->
-          <Text i:nil="false"></Text>
-          <!--Keep these fields if you set the i:type attribute to Sitelink2AdExtension-->
-          <Description1 i:nil="false"></Description1>
-          <Description2 i:nil="false"></Description2>
-          <DestinationUrl i:nil="false"></DestinationUrl>
-          <DisplayText i:nil="false"></DisplayText>
-          <FinalAppUrls xmlns:e8="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e8:AppUrl>
-              <e8:OsType i:nil="false"></e8:OsType>
-              <e8:Url i:nil="false"></e8:Url>
-            </e8:AppUrl>
+          \<Source i:nil="false"></Source>
+          \<Text i:nil="false"></Text>
+          \<Url i:nil="false"></Url>
+          \<!--Keep these fields if you set the i:type attribute to CalloutAdExtension-->
+          \<Text i:nil="false"></Text>
+          \<!--Keep these fields if you set the i:type attribute to Sitelink2AdExtension-->
+          \<Description1 i:nil="false"></Description1>
+          \<Description2 i:nil="false"></Description2>
+          \<DestinationUrl i:nil="false"></DestinationUrl>
+          \<DisplayText i:nil="false"></DisplayText>
+          \<FinalAppUrls xmlns:e8="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e8:AppUrl>
+              \<e8:OsType i:nil="false">\</e8:OsType>
+              \<e8:Url i:nil="false">\</e8:Url>
+            \</e8:AppUrl>
           </FinalAppUrls>
-          <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalMobileUrls>
-          <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalUrls>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e9="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e9:Parameters i:nil="false">
-              <e9:CustomParameter>
-                <e9:Key i:nil="false"></e9:Key>
-                <e9:Value i:nil="false"></e9:Value>
-              </e9:CustomParameter>
-            </e9:Parameters>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e9="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e9:Parameters i:nil="false">
+              \<e9:CustomParameter>
+                \<e9:Key i:nil="false">\</e9:Key>
+                \<e9:Value i:nil="false">\</e9:Value>
+              \</e9:CustomParameter>
+            \</e9:Parameters>
           </UrlCustomParameters>
-          <!--Keep these fields if you set the i:type attribute to StructuredSnippetAdExtension-->
-          <Header i:nil="false"></Header>
-          <Values i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<!--Keep these fields if you set the i:type attribute to StructuredSnippetAdExtension-->
+          \<Header i:nil="false"></Header>
+          \<Values i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </Values>
-          <!--Keep these fields if you set the i:type attribute to PriceAdExtension-->
-          <Language i:nil="false"></Language>
+          \<!--Keep these fields if you set the i:type attribute to PriceAdExtension-->
+          \<Language i:nil="false"></Language>
           <PriceExtensionType></PriceExtensionType>
-          <TableRows i:nil="false">
+          \<TableRows i:nil="false">
             <PriceTableRow>
-              <CurrencyCode i:nil="false"></CurrencyCode>
-              <Description i:nil="false"></Description>
-              <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                <a1:string></a1:string>
+              \<CurrencyCode i:nil="false"></CurrencyCode>
+              \<Description i:nil="false"></Description>
+              \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                \<a1:string>\</a1:string>
               </FinalMobileUrls>
-              <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                <a1:string></a1:string>
+              \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                \<a1:string>\</a1:string>
               </FinalUrls>
-              <Header i:nil="false"></Header>
+              \<Header i:nil="false"></Header>
               <Price></Price>
               <PriceQualifier></PriceQualifier>
               <PriceUnit></PriceUnit>
-              <TermsAndConditions i:nil="false"></TermsAndConditions>
-              <TermsAndConditionsUrl i:nil="false"></TermsAndConditionsUrl>
+              \<TermsAndConditions i:nil="false"></TermsAndConditions>
+              \<TermsAndConditionsUrl i:nil="false"></TermsAndConditionsUrl>
             </PriceTableRow>
           </TableRows>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e10="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e10:Parameters i:nil="false">
-              <e10:CustomParameter>
-                <e10:Key i:nil="false"></e10:Key>
-                <e10:Value i:nil="false"></e10:Value>
-              </e10:CustomParameter>
-            </e10:Parameters>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e10="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e10:Parameters i:nil="false">
+              \<e10:CustomParameter>
+                \<e10:Key i:nil="false">\</e10:Key>
+                \<e10:Value i:nil="false">\</e10:Value>
+              \</e10:CustomParameter>
+            \</e10:Parameters>
           </UrlCustomParameters>
         </AdExtension>
       </AdExtensions>
     </AddAdExtensionsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>AddAdExtensionsResponse Message
@@ -308,61 +310,61 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <AddAdExtensionsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <AdExtensionIdentities p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<AdExtensionIdentities p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <AdExtensionIdentity>
           <Id></Id>
-          <Version p4:nil="false"></Version>
+          \<Version p4:nil="false"></Version>
         </AdExtensionIdentity>
       </AdExtensionIdentities>
-      <NestedPartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<NestedPartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <BatchErrorCollection>
-          <BatchErrors p4:nil="false">
-            <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+          \<BatchErrors p4:nil="false">
+            \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
               <Code></Code>
-              <Details p4:nil="false"></Details>
-              <ErrorCode p4:nil="false"></ErrorCode>
-              <FieldPath p4:nil="false"></FieldPath>
-              <ForwardCompatibilityMap xmlns:e11="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-                <e11:KeyValuePairOfstringstring>
-                  <e11:key p4:nil="false"></e11:key>
-                  <e11:value p4:nil="false"></e11:value>
-                </e11:KeyValuePairOfstringstring>
+              \<Details p4:nil="false"></Details>
+              \<ErrorCode p4:nil="false"></ErrorCode>
+              \<FieldPath p4:nil="false"></FieldPath>
+              \<ForwardCompatibilityMap xmlns:e11="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+                \<e11:KeyValuePairOfstringstring>
+                  \<e11:key p4:nil="false">\</e11:key>
+                  \<e11:value p4:nil="false">\</e11:value>
+                \</e11:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index></Index>
-              <Message p4:nil="false"></Message>
-              <Type p4:nil="false"></Type>
-              <!--Keep these fields if you set the i:type attribute to EditorialError-->
-              <Appealable p4:nil="false"></Appealable>
-              <DisapprovedText p4:nil="false"></DisapprovedText>
-              <Location p4:nil="false"></Location>
-              <PublisherCountry p4:nil="false"></PublisherCountry>
+              \<Message p4:nil="false"></Message>
+              \<Type p4:nil="false"></Type>
+              \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+              \<Appealable p4:nil="false"></Appealable>
+              \<DisapprovedText p4:nil="false"></DisapprovedText>
+              \<Location p4:nil="false"></Location>
+              \<PublisherCountry p4:nil="false"></PublisherCountry>
               <ReasonCode></ReasonCode>
             </BatchError>
           </BatchErrors>
-          <Code p4:nil="false"></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e12:KeyValuePairOfstringstring>
-              <e12:key p4:nil="false"></e12:key>
-              <e12:value p4:nil="false"></e12:value>
-            </e12:KeyValuePairOfstringstring>
+          \<Code p4:nil="false"></Code>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e12:KeyValuePairOfstringstring>
+              \<e12:key p4:nil="false">\</e12:key>
+              \<e12:value p4:nil="false">\</e12:value>
+            \</e12:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
         </BatchErrorCollection>
       </NestedPartialErrors>
     </AddAdExtensionsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

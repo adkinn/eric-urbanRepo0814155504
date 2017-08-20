@@ -17,7 +17,9 @@ Updates the specified ads within an ad group.
 
 [!INCLUDE[deprecate_sta](../campaign-api/includes/deprecate-sta.md)]
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>UpdateAdsRequest Message
 
@@ -39,83 +41,83 @@ The *UpdateAdsRequest* object defines the elements of the request’s body. The 
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">UpdateAds</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <UpdateAdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AdGroupId></AdGroupId>
-      <Ads i:nil="false">
-        <Ad i:type="-- specify derived type here with the appropriate prefix --">
-          <AdFormatPreference i:nil="false"></AdFormatPreference>
-          <DevicePreference i:nil="false"></DevicePreference>
-          <EditorialStatus i:nil="false"></EditorialStatus>
-          <FinalAppUrls xmlns:e174="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e174:AppUrl>
-              <e174:OsType i:nil="false"></e174:OsType>
-              <e174:Url i:nil="false"></e174:Url>
-            </e174:AppUrl>
+      \<Ads i:nil="false">
+        \<Ad i:type="-- specify derived type here with the appropriate prefix --">
+          \<AdFormatPreference i:nil="false"></AdFormatPreference>
+          \<DevicePreference i:nil="false"></DevicePreference>
+          \<EditorialStatus i:nil="false"></EditorialStatus>
+          \<FinalAppUrls xmlns:e174="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e174:AppUrl>
+              \<e174:OsType i:nil="false">\</e174:OsType>
+              \<e174:Url i:nil="false">\</e174:Url>
+            \</e174:AppUrl>
           </FinalAppUrls>
-          <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalMobileUrls>
-          <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e175="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e175:KeyValuePairOfstringstring>
-              <e175:key i:nil="false"></e175:key>
-              <e175:value i:nil="false"></e175:value>
-            </e175:KeyValuePairOfstringstring>
+          \<ForwardCompatibilityMap xmlns:e175="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e175:KeyValuePairOfstringstring>
+              \<e175:key i:nil="false">\</e175:key>
+              \<e175:value i:nil="false">\</e175:value>
+            \</e175:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id i:nil="false"></Id>
-          <Status i:nil="false"></Status>
-          <TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
-          <Type i:nil="false"></Type>
-          <UrlCustomParameters xmlns:e176="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e176:Parameters i:nil="false">
-              <e176:CustomParameter>
-                <e176:Key i:nil="false"></e176:Key>
-                <e176:Value i:nil="false"></e176:Value>
-              </e176:CustomParameter>
-            </e176:Parameters>
+          \<Id i:nil="false"></Id>
+          \<Status i:nil="false"></Status>
+          \<TrackingUrlTemplate i:nil="false"></TrackingUrlTemplate>
+          \<Type i:nil="false"></Type>
+          \<UrlCustomParameters xmlns:e176="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            \<e176:Parameters i:nil="false">
+              \<e176:CustomParameter>
+                \<e176:Key i:nil="false">\</e176:Key>
+                \<e176:Value i:nil="false">\</e176:Value>
+              \</e176:CustomParameter>
+            \</e176:Parameters>
           </UrlCustomParameters>
-          <!--Keep these fields if you set the i:type attribute to TextAd-->
-          <DestinationUrl i:nil="false"></DestinationUrl>
-          <DisplayUrl i:nil="false"></DisplayUrl>
-          <Text i:nil="false"></Text>
-          <Title i:nil="false"></Title>
-          <!--Keep these fields if you set the i:type attribute to ProductAd-->
-          <PromotionalText i:nil="false"></PromotionalText>
-          <!--Keep these fields if you set the i:type attribute to AppInstallAd-->
-          <AppPlatform i:nil="false"></AppPlatform>
-          <AppStoreId i:nil="false"></AppStoreId>
-          <Text i:nil="false"></Text>
-          <Title i:nil="false"></Title>
-          <!--Keep these fields if you set the i:type attribute to ExpandedTextAd-->
-          <DisplayUrl i:nil="false"></DisplayUrl>
-          <Path1 i:nil="false"></Path1>
-          <Path2 i:nil="false"></Path2>
-          <Text i:nil="false"></Text>
-          <TitlePart1 i:nil="false"></TitlePart1>
-          <TitlePart2 i:nil="false"></TitlePart2>
-          <!--Keep these fields if you set the i:type attribute to DynamicSearchAd-->
-          <Path1 i:nil="false"></Path1>
-          <Path2 i:nil="false"></Path2>
-          <Text i:nil="false"></Text>
+          \<!--Keep these fields if you set the i:type attribute to TextAd-->
+          \<DestinationUrl i:nil="false"></DestinationUrl>
+          \<DisplayUrl i:nil="false"></DisplayUrl>
+          \<Text i:nil="false"></Text>
+          \<Title i:nil="false"></Title>
+          \<!--Keep these fields if you set the i:type attribute to ProductAd-->
+          \<PromotionalText i:nil="false"></PromotionalText>
+          \<!--Keep these fields if you set the i:type attribute to AppInstallAd-->
+          \<AppPlatform i:nil="false"></AppPlatform>
+          \<AppStoreId i:nil="false"></AppStoreId>
+          \<Text i:nil="false"></Text>
+          \<Title i:nil="false"></Title>
+          \<!--Keep these fields if you set the i:type attribute to ExpandedTextAd-->
+          \<DisplayUrl i:nil="false"></DisplayUrl>
+          \<Path1 i:nil="false"></Path1>
+          \<Path2 i:nil="false"></Path2>
+          \<Text i:nil="false"></Text>
+          \<TitlePart1 i:nil="false"></TitlePart1>
+          \<TitlePart2 i:nil="false"></TitlePart2>
+          \<!--Keep these fields if you set the i:type attribute to DynamicSearchAd-->
+          \<Path1 i:nil="false"></Path1>
+          \<Path2 i:nil="false"></Path2>
+          \<Text i:nil="false"></Text>
         </Ad>
       </Ads>
     </UpdateAdsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateAdsResponse Message
@@ -132,38 +134,38 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <UpdateAdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e171="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e171:KeyValuePairOfstringstring>
-              <e171:key p4:nil="false"></e171:key>
-              <e171:value p4:nil="false"></e171:value>
-            </e171:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e171="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e171:KeyValuePairOfstringstring>
+              \<e171:key p4:nil="false">\</e171:key>
+              \<e171:value p4:nil="false">\</e171:value>
+            \</e171:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </UpdateAdsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

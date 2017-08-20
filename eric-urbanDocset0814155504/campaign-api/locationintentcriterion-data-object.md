@@ -28,15 +28,15 @@ Also note that you must consider the location, negative location, and radius cri
 ## Syntax
 
 ```xml
-<xs:complexType name="LocationIntentCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Criterion">
-      <xs:sequence>
-        <xs:element name="IntentOption" type="tns:IntentOption" minOccurs="0" nillable="true"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="LocationIntentCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Criterion">
+      \<xs:sequence>
+        \<xs:element name="IntentOption" type="tns:IntentOption" minOccurs="0" nillable="true"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

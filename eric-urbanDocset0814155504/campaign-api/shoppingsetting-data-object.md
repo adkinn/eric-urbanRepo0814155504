@@ -18,18 +18,18 @@ Defines the campaign level settings for a Bing Shopping Campaign.
 ## Syntax
 
 ```xml
-<xs:complexType name="ShoppingSetting">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Setting">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="LocalInventoryAdsEnabled" nillable="true" type="xs:boolean"/>
-        <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:int"/>
-        <xs:element minOccurs="0" name="SalesCountryCode" nillable="true" type="xs:string"/>
-        <xs:element minOccurs="0" name="StoreId" nillable="true" type="xs:long"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ShoppingSetting">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Setting">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="LocalInventoryAdsEnabled" nillable="true" type="xs:boolean"/>
+        \<xs:element minOccurs="0" name="Priority" nillable="true" type="xs:int"/>
+        \<xs:element minOccurs="0" name="SalesCountryCode" nillable="true" type="xs:string"/>
+        \<xs:element minOccurs="0" name="StoreId" nillable="true" type="xs:long"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

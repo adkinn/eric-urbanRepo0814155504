@@ -18,14 +18,14 @@ Defines an object that contains association information for a campaign and share
 ## Syntax
 
 ```xml
-<xs:complexType name="SharedEntityAssociation">
-  <xs:sequence>
-    <xs:element name="EntityId" type="xs:long" />
-    <xs:element name="EntityType" type="xs:string" nillable="true"/>
-    <xs:element name="SharedEntityId" type="xs:long" />
-    <xs:element name="SharedEntityType" type="xs:string" nillable="true"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="SharedEntityAssociation">
+  \<xs:sequence>
+    \<xs:element name="EntityId" type="xs:long" />
+    \<xs:element name="EntityType" type="xs:string" nillable="true"/>
+    \<xs:element name="SharedEntityId" type="xs:long" />
+    \<xs:element name="SharedEntityType" type="xs:string" nillable="true"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

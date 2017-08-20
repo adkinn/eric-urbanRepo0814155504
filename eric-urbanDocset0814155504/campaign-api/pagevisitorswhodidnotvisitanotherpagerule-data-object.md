@@ -28,16 +28,16 @@ For a detailed example, see the [Remarks](#Remarks) section below.
 ## Syntax
 
 ```xml
-<xs:complexType name="PageVisitorsWhoDidNotVisitAnotherPageRule">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:RemarketingRule">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="ExcludeRuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
-        <xs:element minOccurs="0" name="IncludeRuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="PageVisitorsWhoDidNotVisitAnotherPageRule">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:RemarketingRule">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="ExcludeRuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
+        \<xs:element minOccurs="0" name="IncludeRuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -70,74 +70,74 @@ In other words the visitor will be added to your remarketing list if any of the 
 For example let's say that the following rule item groups are set.
 
 ```xml
-<Rule i:type="a:PageVisitorsWhoDidNotVisitAnotherPageRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
-  <a:Type>PageVisitorsWhoDidNotVisitAnotherPage</a:Type>
-  <a:ExcludeRuleItemGroups>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>BeginsWith</a:Operator>
-          <a:Value>A</a:Value>
-        </a:RuleItem>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>BeginsWith</a:Operator>
-          <a:Value>B</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>Contains</a:Operator>
-          <a:Value>C</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-  </a:ExcludeRuleItemGroups>
-  <a:IncludeRuleItemGroups>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>Contains</a:Operator>
-          <a:Value>X</a:Value>
-        </a:RuleItem>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>DoesNotContain</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>DoesNotBeginWith</a:Operator>
-          <a:Value>Y</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>Equals</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-  </a:IncludeRuleItemGroups>
+\<Rule i:type="a:PageVisitorsWhoDidNotVisitAnotherPageRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
+  \<a:Type>PageVisitorsWhoDidNotVisitAnotherPage\</a:Type>
+  \<a:ExcludeRuleItemGroups>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>BeginsWith\</a:Operator>
+          \<a:Value>A\</a:Value>
+        \</a:RuleItem>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>ReferrerUrl\</a:Operand>
+          \<a:Operator>BeginsWith\</a:Operator>
+          \<a:Value>B\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>Contains\</a:Operator>
+          \<a:Value>C\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+  \</a:ExcludeRuleItemGroups>
+  \<a:IncludeRuleItemGroups>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>Contains\</a:Operator>
+          \<a:Value>X\</a:Value>
+        \</a:RuleItem>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>ReferrerUrl\</a:Operand>
+          \<a:Operator>DoesNotContain\</a:Operator>
+          \<a:Value>Z\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>DoesNotBeginWith\</a:Operator>
+          \<a:Value>Y\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>ReferrerUrl\</a:Operand>
+          \<a:Operator>Equals\</a:Operator>
+          \<a:Value>Z\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+  \</a:IncludeRuleItemGroups>
 </Rule>
 ```
 

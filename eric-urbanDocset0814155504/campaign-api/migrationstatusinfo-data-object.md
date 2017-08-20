@@ -18,13 +18,13 @@ Defines an object that contains the migration type and status for an account.
 ## Syntax
 
 ```xml
-<xs:complexType name="MigrationStatusInfo">
-  <xs:sequence>
-    <xs:element name="MigrationType" nillable="true" type="xs:string"/>
-    <xs:element minOccurs="0" name="StartTimeInUtc" nillable="true" type="xs:dateTime"/>
-    <xs:element name="Status" type="tns:MigrationStatus"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="MigrationStatusInfo">
+  \<xs:sequence>
+    \<xs:element name="MigrationType" nillable="true" type="xs:string"/>
+    \<xs:element minOccurs="0" name="StartTimeInUtc" nillable="true" type="xs:dateTime"/>
+    \<xs:element name="Status" type="tns:MigrationStatus"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

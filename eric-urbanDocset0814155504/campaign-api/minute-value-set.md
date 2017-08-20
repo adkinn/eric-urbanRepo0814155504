@@ -18,14 +18,14 @@ Defines the possible minute values for ad extension scheduling or day and time c
 ## Syntax
 
 ```xml
-<xs:simpleType name="Minute">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Zero" />
-    <xs:enumeration value="Fifteen" />
-    <xs:enumeration value="Thirty" />
-    <xs:enumeration value="FortyFive" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="Minute">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Zero" />
+    \<xs:enumeration value="Fifteen" />
+    \<xs:enumeration value="Thirty" />
+    \<xs:enumeration value="FortyFive" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -17,20 +17,20 @@ Defines the possible types of price ad extensions.
 ## Syntax
 
 ```xml
-<xs:simpleType name="PriceAdExtensionType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Unknown" />
-    <xs:enumeration value="Brands" />
-    <xs:enumeration value="Events" />
-    <xs:enumeration value="Locations" />
-    <xs:enumeration value="Neighborhoods" />
-    <xs:enumeration value="ProductCategories" />
-    <xs:enumeration value="ProductTiers" />
-    <xs:enumeration value="ServiceCategories" />
-    <xs:enumeration value="Services" />
-    <xs:enumeration value="ServiceTiers" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="PriceAdExtensionType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Unknown" />
+    \<xs:enumeration value="Brands" />
+    \<xs:enumeration value="Events" />
+    \<xs:enumeration value="Locations" />
+    \<xs:enumeration value="Neighborhoods" />
+    \<xs:enumeration value="ProductCategories" />
+    \<xs:enumeration value="ProductTiers" />
+    \<xs:enumeration value="ServiceCategories" />
+    \<xs:enumeration value="Services" />
+    \<xs:enumeration value="ServiceTiers" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

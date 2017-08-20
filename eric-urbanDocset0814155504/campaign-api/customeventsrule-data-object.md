@@ -22,22 +22,22 @@ For a detailed example, see the [Remarks](#Remarks) section below.
 ## Syntax
 
 ```xml
-<xs:complexType name="CustomEventsRule">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:RemarketingRule">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q9="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="ActionOperator" type="q9:StringOperator"/>
-        <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q10="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="CategoryOperator" type="q10:StringOperator"/>
-        <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string"/>
-        <xs:element xmlns:q11="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="LabelOperator" type="q11:StringOperator"/>
-        <xs:element minOccurs="0" name="Value" nillable="true" type="xs:decimal"/>
-        <xs:element xmlns:q12="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="ValueOperator" type="q12:NumberOperator"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="CustomEventsRule">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:RemarketingRule">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Action" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q9="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="ActionOperator" type="q9:StringOperator"/>
+        \<xs:element minOccurs="0" name="Category" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q10="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="CategoryOperator" type="q10:StringOperator"/>
+        \<xs:element minOccurs="0" name="Label" nillable="true" type="xs:string"/>
+        \<xs:element xmlns:q11="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="LabelOperator" type="q11:StringOperator"/>
+        \<xs:element minOccurs="0" name="Value" nillable="true" type="xs:decimal"/>
+        \<xs:element xmlns:q12="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="ValueOperator" type="q12:NumberOperator"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -70,16 +70,16 @@ For the *CustomEvents* rule, you must include one or more of the following condi
 For example let's say that the following custom events are set.
 
 ```xml
-<Rule i:type="a:CustomEventsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
-  <a:Type>CustomEvents</a:Type>
-  <a:Action>play</a:Action>
-  <a:ActionOperator>Equals</a:ActionOperator>
-  <a:Category>video</a:Category>
-  <a:CategoryOperator>Equals</a:CategoryOperator>
-  <a:Label>trailer</a:Label>
-  <a:LabelOperator>Equals</a:LabelOperator>
-  <a:Value>5</a:Value>
-  <a:ValueOperator>Equals</a:ValueOperator>
+\<Rule i:type="a:CustomEventsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
+  \<a:Type>CustomEvents\</a:Type>
+  \<a:Action>play\</a:Action>
+  \<a:ActionOperator>Equals\</a:ActionOperator>
+  \<a:Category>video\</a:Category>
+  \<a:CategoryOperator>Equals\</a:CategoryOperator>
+  \<a:Label>trailer\</a:Label>
+  \<a:LabelOperator>Equals\</a:LabelOperator>
+  \<a:Value>5\</a:Value>
+  \<a:ValueOperator>Equals\</a:ValueOperator>
 </Rule>
 ```
 

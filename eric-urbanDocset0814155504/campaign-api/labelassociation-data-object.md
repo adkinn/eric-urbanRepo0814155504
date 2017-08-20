@@ -17,12 +17,12 @@ Defines the relationship between a label and campaign, ad group, ad, or keyword 
 ## Syntax
 
 ```xml
-<xs:complexType name="LabelAssociation">
-  <xs:sequence>
-    <xs:element name="EntityId" type="xs:long" />
-    <xs:element name="LabelId" type="xs:long" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="LabelAssociation">
+  \<xs:sequence>
+    \<xs:element name="EntityId" type="xs:long" />
+    \<xs:element name="LabelId" type="xs:long" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

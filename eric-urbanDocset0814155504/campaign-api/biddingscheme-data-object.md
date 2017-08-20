@@ -28,11 +28,11 @@ Do not try to instantiate a *BiddingScheme*. You can create one or more followin
 ## Syntax
 
 ```xml
-<xs:complexType name="BiddingScheme">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="BiddingScheme">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Type" nillable="true" type="xs:string"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -47,7 +47,7 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<BiddingScheme>` node as shown in the following example.
 
 ```xml
-<BiddingScheme xmlns:e12="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="EnhancedCpcBiddingScheme">
+\<BiddingScheme xmlns:e12="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="EnhancedCpcBiddingScheme">
 </BiddingScheme>
 ```
 

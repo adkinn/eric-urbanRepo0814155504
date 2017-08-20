@@ -18,13 +18,13 @@ Defines the possible intent options for location criterion, for example to targe
 ## Syntax
 
 ```xml
-<xs:simpleType name="IntentOption">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="PeopleInOrSearchingForOrViewingPages" />
-    <xs:enumeration value="PeopleIn" />
-    <xs:enumeration value="PeopleSearchingForOrViewingPages" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="IntentOption">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="PeopleInOrSearchingForOrViewingPages" />
+    \<xs:enumeration value="PeopleIn" />
+    \<xs:enumeration value="PeopleSearchingForOrViewingPages" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

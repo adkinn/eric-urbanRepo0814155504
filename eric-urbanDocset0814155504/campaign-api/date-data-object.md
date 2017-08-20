@@ -18,13 +18,13 @@ Represents a date.
 ## Syntax
 
 ```xml
-<xs:complexType name="Date">
-  <xs:sequence>
-    <xs:element name="Day" type="xs:int" />
-    <xs:element name="Month" type="xs:int" />
-    <xs:element name="Year" type="xs:int" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Date">
+  \<xs:sequence>
+    \<xs:element name="Day" type="xs:int" />
+    \<xs:element name="Month" type="xs:int" />
+    \<xs:element name="Year" type="xs:int" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

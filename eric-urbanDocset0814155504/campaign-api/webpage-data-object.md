@@ -23,15 +23,15 @@ The *Webpage* criterion can be included within [BiddableAdGroupCriterion](../cam
 ## Syntax
 
 ```xml
-<xs:complexType name="Webpage">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Criterion">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="Parameter" nillable="true" type="tns:WebpageParameter"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="Webpage">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Criterion">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="Parameter" nillable="true" type="tns:WebpageParameter"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

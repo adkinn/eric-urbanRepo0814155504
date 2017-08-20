@@ -30,17 +30,17 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 ## Syntax
 
 ```xml
-<xs:complexType name="AdExtension">
-  <xs:sequence>
-    <xs:element name="DevicePreference" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="ForwardCompatibilityMap" type="q53:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q53="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
-    <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
-    <xs:element name="Scheduling" type="tns:Schedule" nillable="true" minOccurs="0"/>
-    <xs:element name="Status" type="tns:AdExtensionStatus" nillable="true" minOccurs="0"/>
-    <xs:element name="Type" type="xs:string" nillable="true"/>
-    <xs:element name="Version" type="xs:int" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdExtension">
+  \<xs:sequence>
+    \<xs:element name="DevicePreference" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="ForwardCompatibilityMap" type="q53:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q53="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+    \<xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    \<xs:element name="Scheduling" type="tns:Schedule" nillable="true" minOccurs="0"/>
+    \<xs:element name="Status" type="tns:AdExtensionStatus" nillable="true" minOccurs="0"/>
+    \<xs:element name="Type" type="xs:string" nillable="true"/>
+    \<xs:element name="Version" type="xs:int" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -60,9 +60,9 @@ If you generate the SOAP manually, use the *type* attribute of the `<AdExtension
 
 ```
 xml
-<AdExtension i:type="ReviewAdExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <Id i:nil="true" />
-    <Status i:nil=”true” />
+\<AdExtension i:type="ReviewAdExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    \<Id i:nil="true" />
+    \<Status i:nil=”true” />
       . . .
 </AdExtension>
 ```

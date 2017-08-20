@@ -24,16 +24,16 @@ You can associate a structured snippet ad extension with one or more campaigns a
 ## Syntax
 
 ```xml
-<xs:complexType name="StructuredSnippetAdExtension">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:AdExtension">
-      <xs:sequence>
-        <xs:element name="Header" type="xs:string" nillable="true"/>
-        <xs:element name="Values" type="q66:ArrayOfstring" nillable="true" xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/> 
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="StructuredSnippetAdExtension">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:AdExtension">
+      \<xs:sequence>
+        \<xs:element name="Header" type="xs:string" nillable="true"/>
+        \<xs:element name="Values" type="q66:ArrayOfstring" nillable="true" xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/> 
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

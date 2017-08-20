@@ -18,7 +18,9 @@ Gets the negative keywords of a negative keyword list.
 > [!NOTE]
 > The operation is only used for shared negative keyword lists. To get negative keywords that are exclusively used with one campaign or ad group, see [GetNegativeKeywordsByEntityIds](../campaign-api/getnegativekeywordsbyentityids-service-operation.md). 
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetListItemsBySharedListRequest Message
 
@@ -39,26 +41,26 @@ The *GetListItemsBySharedListRequest* object defines the elements of the request
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetListItemsBySharedList</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetListItemsBySharedListRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <SharedList i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-        <ItemCount i:nil="false"></ItemCount>
-        <!--Keep these fields if you set the i:type attribute to NegativeKeywordList-->
+      \<SharedList i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+        \<ItemCount i:nil="false"></ItemCount>
+        \<!--Keep these fields if you set the i:type attribute to NegativeKeywordList-->
       </SharedList>
     </GetListItemsBySharedListRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetListItemsBySharedListResponse Message
@@ -75,30 +77,30 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetListItemsBySharedListResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <ListItems p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <SharedListItem p4:type="-- specify derived type here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e132="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e132:KeyValuePairOfstringstring>
-              <e132:key p4:nil="false"></e132:key>
-              <e132:value p4:nil="false"></e132:value>
-            </e132:KeyValuePairOfstringstring>
+      \<ListItems p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<SharedListItem p4:type="-- specify derived type here with the appropriate prefix --">
+          \<ForwardCompatibilityMap xmlns:e132="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e132:KeyValuePairOfstringstring>
+              \<e132:key p4:nil="false">\</e132:key>
+              \<e132:value p4:nil="false">\</e132:value>
+            \</e132:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
-          <Id p4:nil="false"></Id>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
+          \<Id p4:nil="false"></Id>
           <MatchType></MatchType>
-          <Text p4:nil="false"></Text>
+          \<Text p4:nil="false"></Text>
         </SharedListItem>
       </ListItems>
     </GetListItemsBySharedListResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

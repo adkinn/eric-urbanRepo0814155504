@@ -18,12 +18,12 @@ Defines a condition or criterion that helps determine whether you want to show d
 ## Syntax
 
 ```xml
-<xs:complexType name="WebpageCondition">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Argument" nillable="true" type="xs:string"/>
-    <xs:element xmlns:q7="https://bingads.microsoft.com/CampaignManagement/v10" minOccurs="0" name="Operand" type="q7:WebpageConditionOperand"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="WebpageCondition">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Argument" nillable="true" type="xs:string"/>
+    \<xs:element xmlns:q7="https://bingads.microsoft.com/CampaignManagement/v10" minOccurs="0" name="Operand" type="q7:WebpageConditionOperand"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

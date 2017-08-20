@@ -15,7 +15,9 @@ manager: "ehansen"
 # GetBMCStoresByCustomerId Service Operation
 Gets the [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] stores for the specified customer.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetBMCStoresByCustomerIdRequest Message
 
@@ -37,21 +39,21 @@ The request does not contain additional body elements.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetBMCStoresByCustomerId</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetBMCStoresByCustomerIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11" />
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBMCStoresByCustomerIdResponse Message
@@ -68,24 +70,24 @@ The following example shows the complete response envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetBMCStoresByCustomerIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <BMCStores p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<BMCStores p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <BMCStore>
           <HasCatalog></HasCatalog>
           <Id></Id>
           <IsActive></IsActive>
           <IsProductAdsEnabled></IsProductAdsEnabled>
-          <Name p4:nil="false"></Name>
+          \<Name p4:nil="false"></Name>
         </BMCStore>
       </BMCStores>
     </GetBMCStoresByCustomerIdResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

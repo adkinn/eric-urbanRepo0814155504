@@ -21,15 +21,15 @@ Do not try to instantiate a *SharedList*. You can create the following object th
 ## Syntax
 
 ```xml
-<xs:complexType name="SharedList">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:SharedEntity">
-      <xs:sequence>
-        <xs:element name="ItemCount" nillable="true" type="xs:int" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="SharedList">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:SharedEntity">
+      \<xs:sequence>
+        \<xs:element name="ItemCount" nillable="true" type="xs:int" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

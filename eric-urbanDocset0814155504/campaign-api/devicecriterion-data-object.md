@@ -29,16 +29,16 @@ The *DeviceCriterion* criterion can be included within [AdGroupCriterion](../cam
 ## Syntax
 
 ```xml
-<xs:complexType name="DeviceCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Criterion">
-      <xs:sequence>
-        <xs:element name="DeviceName" type="xs:string" nillable="true" />
-        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OSNames" nillable="true" type="q25:ArrayOfstring"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="DeviceCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Criterion">
+      \<xs:sequence>
+        \<xs:element name="DeviceName" type="xs:string" nillable="true" />
+        \<xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OSNames" nillable="true" type="q25:ArrayOfstring"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

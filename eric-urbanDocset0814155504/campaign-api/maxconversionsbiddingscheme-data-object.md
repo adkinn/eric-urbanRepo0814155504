@@ -27,15 +27,15 @@ Use this bid strategy to maximize the number of conversions given your maximum a
 ## Syntax
 
 ```xml
-<xs:complexType name="MaxConversionsBiddingScheme">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:BiddingScheme">
-      <xs:sequence>
-        <xs:element xmlns:q2="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="MaxCpc" nillable="true" type="q2:Bid"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="MaxConversionsBiddingScheme">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:BiddingScheme">
+      \<xs:sequence>
+        \<xs:element xmlns:q2="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="MaxCpc" nillable="true" type="q2:Bid"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

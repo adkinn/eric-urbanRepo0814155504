@@ -18,17 +18,17 @@ Defines the possible age range values that you can use to target ads to People.
 ## Syntax
 
 ```xml
-<xs:simpleType name="AgeRange">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="ZeroToSeventeen" />
-    <xs:enumeration value="ThirteenToSeventeen" />
-    <xs:enumeration value="EighteenToTwentyFour" />
-    <xs:enumeration value="TwentyFiveToThirtyFour" />
-    <xs:enumeration value="ThirtyFiveToFortyNine" />
-    <xs:enumeration value="FiftyToSixtyFour" />
-    <xs:enumeration value="SixtyFiveAndAbove" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AgeRange">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="ZeroToSeventeen" />
+    \<xs:enumeration value="ThirteenToSeventeen" />
+    \<xs:enumeration value="EighteenToTwentyFour" />
+    \<xs:enumeration value="TwentyFiveToThirtyFour" />
+    \<xs:enumeration value="ThirtyFiveToFortyNine" />
+    \<xs:enumeration value="FiftyToSixtyFour" />
+    \<xs:enumeration value="SixtyFiveAndAbove" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

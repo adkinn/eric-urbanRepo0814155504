@@ -18,13 +18,13 @@ Defines the entity types that can be associated with an ad extension.
 ## Syntax
 
 ```xml
-<xs:simpleType name="AssociationType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Campaign" />
-    <xs:enumeration value="AdGroup" />
-    <xs:enumeration value="Account" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="AssociationType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Campaign" />
+    \<xs:enumeration value="AdGroup" />
+    \<xs:enumeration value="Account" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

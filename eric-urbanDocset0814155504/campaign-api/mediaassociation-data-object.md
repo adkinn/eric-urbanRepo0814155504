@@ -20,13 +20,13 @@ You can get this object by calling [GetMediaAssociations](../campaign-api/getmed
 ## Syntax
 
 ```xml
-<xs:complexType name="MediaAssociation">
-  <xs:sequence>
-    <xs:element type="xs:long" name="EntityId" minOccurs="0"/>
-    <xs:element type="tns:MediaEnabledEntityFilter" name="MediaEnabledEntity" minOccurs="0"/>
-    <xs:element type="xs:long" name="MediaId" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="MediaAssociation">
+  \<xs:sequence>
+    \<xs:element type="xs:long" name="EntityId" minOccurs="0"/>
+    \<xs:element type="tns:MediaEnabledEntityFilter" name="MediaEnabledEntity" minOccurs="0"/>
+    \<xs:element type="xs:long" name="MediaId" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

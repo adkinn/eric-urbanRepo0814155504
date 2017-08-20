@@ -22,15 +22,15 @@ For a detailed example, see the [Remarks](#Remarks) section below.
 ## Syntax
 
 ```xml
-<xs:complexType name="PageVisitorsRule">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:RemarketingRule">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="RuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="PageVisitorsRule">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:RemarketingRule">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="RuleItemGroups" nillable="true" type="tns:ArrayOfRuleItemGroup"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -56,46 +56,46 @@ Remarketing rules are conditions used to determine who to add to your remarketin
 For example let's say that the following rule item groups are set.
 
 ```xml
-<Rule i:type="a:PageVisitorsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
-  <a:Type>PageVisitors</a:Type>
-  <a:RuleItemGroups>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>Contains</a:Operator>
-          <a:Value>X</a:Value>
-        </a:RuleItem>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>DoesNotContain</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>DoesNotBeginWith</a:Operator>
-          <a:Value>Y</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>Equals</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-  </a:RuleItemGroups>
+\<Rule i:type="a:PageVisitorsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
+  \<a:Type>PageVisitors\</a:Type>
+  \<a:RuleItemGroups>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>Contains\</a:Operator>
+          \<a:Value>X\</a:Value>
+        \</a:RuleItem>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>ReferrerUrl\</a:Operand>
+          \<a:Operator>DoesNotContain\</a:Operator>
+          \<a:Value>Z\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>Url\</a:Operand>
+          \<a:Operator>DoesNotBeginWith\</a:Operator>
+          \<a:Value>Y\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+    \<a:RuleItemGroup>
+      \<a:Items>
+        \<a:RuleItem i:type="a:StringRuleItem">
+          \<a:Type>String\</a:Type>
+          \<a:Operand>ReferrerUrl\</a:Operand>
+          \<a:Operator>Equals\</a:Operator>
+          \<a:Value>Z\</a:Value>
+        \</a:RuleItem>
+      \</a:Items>
+    \</a:RuleItemGroup>
+  \</a:RuleItemGroups>
 </Rule>
 ```
 

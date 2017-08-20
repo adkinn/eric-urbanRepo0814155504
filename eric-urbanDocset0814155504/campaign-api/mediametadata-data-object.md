@@ -18,14 +18,14 @@ Defines a media meta data object. The meta data includes download Urls for one o
 ## Syntax
 
 ```xml
-<xs:complexType name="MediaMetaData">
-  <xs:sequence>
-    <xs:element type="xs:long" name="Id"  minOccurs="0" />
-    <xs:element type="xs:string" name="MediaType" minOccurs="0" nillable="true"/>
-    <xs:element type="tns:ArrayOfMediaRepresentation" name="Representations" minOccurs="0" nillable="true"/>
-    <xs:element type="xs:string" name="Type" minOccurs="0" nillable="true"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="MediaMetaData">
+  \<xs:sequence>
+    \<xs:element type="xs:long" name="Id"  minOccurs="0" />
+    \<xs:element type="xs:string" name="MediaType" minOccurs="0" nillable="true"/>
+    \<xs:element type="tns:ArrayOfMediaRepresentation" name="Representations" minOccurs="0" nillable="true"/>
+    \<xs:element type="xs:string" name="Type" minOccurs="0" nillable="true"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

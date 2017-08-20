@@ -18,12 +18,12 @@ Defines the action to apply to a [BiddableAdGroupCriterion](../campaign-api/bidd
 ## Syntax
 
 ```xml
-<xs:complexType name="AdGroupCriterionAction">
-  <xs:sequence>
-    <xs:element name="Action" type="tns:ItemAction"/>
-    <xs:element name="AdGroupCriterion" nillable="true" type="tns:AdGroupCriterion"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdGroupCriterionAction">
+  \<xs:sequence>
+    \<xs:element name="Action" type="tns:ItemAction"/>
+    \<xs:element name="AdGroupCriterion" nillable="true" type="tns:AdGroupCriterion"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

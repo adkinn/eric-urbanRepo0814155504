@@ -18,16 +18,16 @@ Defines the possible status values of a campaign.
 ## Syntax
 
 ```xml
-<xs:simpleType name="CampaignStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Active" />
-    <xs:enumeration value="Paused" />
-    <xs:enumeration value="BudgetPaused" />
-    <xs:enumeration value="BudgetAndManualPaused" />
-    <xs:enumeration value="Deleted" />
-    <xs:enumeration value="Suspended" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="CampaignStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Active" />
+    \<xs:enumeration value="Paused" />
+    \<xs:enumeration value="BudgetPaused" />
+    \<xs:enumeration value="BudgetAndManualPaused" />
+    \<xs:enumeration value="Deleted" />
+    \<xs:enumeration value="Suspended" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -18,17 +18,17 @@ Defines a fault object that operations such as [AddAdGroupCriterions](../campaig
 ## Syntax
 
 ```xml
-<xs:complexType name="EditorialApiFaultDetail">
-  <xs:complexContent mixed="false">
-    <xs:extension xmlns:q14="https://adapi.microsoft.com" base="q14:ApplicationFault">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
-        <xs:element minOccurs="0" name="EditorialErrors" nillable="true" type="tns:ArrayOfEditorialError" />
-        <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="EditorialApiFaultDetail">
+  \<xs:complexContent mixed="false">
+    \<xs:extension xmlns:q14="https://adapi.microsoft.com" base="q14:ApplicationFault">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
+        \<xs:element minOccurs="0" name="EditorialErrors" nillable="true" type="tns:ArrayOfEditorialError" />
+        \<xs:element minOccurs="0" name="OperationErrors" nillable="true" type="tns:ArrayOfOperationError" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

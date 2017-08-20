@@ -24,13 +24,13 @@ Defines an in-market audience.
 ## Syntax
 
 ```xml
-<xs:complexType name="InMarketAudience">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Audience">
-      <xs:sequence />
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="InMarketAudience">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Audience">
+      \<xs:sequence />
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

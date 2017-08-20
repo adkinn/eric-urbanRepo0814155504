@@ -18,12 +18,12 @@ Defines an object that contains the negative site URLs of an ad group.
 ## Syntax
 
 ```xml
-<xs:complexType name="AdGroupNegativeSites">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
-    <xs:element minOccurs="0" name="NegativeSites" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdGroupNegativeSites">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AdGroupId" type="xs:long" />
+    \<xs:element minOccurs="0" name="NegativeSites" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

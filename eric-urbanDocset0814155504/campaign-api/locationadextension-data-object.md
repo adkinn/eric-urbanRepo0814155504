@@ -18,21 +18,21 @@ Defines an ad extension that specifies a business’ address and phone number to
 ## Syntax
 
 ```xml
-<xs:complexType name="LocationAdExtension">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:AdExtension">
-      <xs:sequence>
-        <xs:element name="Address" nillable="true" type="tns:Address" />
-        <xs:element name="CompanyName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="GeoCodeStatus" nillable="true" type="tns:BusinessGeoCodeStatus" />
-        <xs:element minOccurs="0" name="GeoPoint" nillable="true" type="tns:GeoPoint" />
-        <xs:element minOccurs="0" name="IconMediaId" nillable="true" type="xs:long" />
-        <xs:element minOccurs="0" name="ImageMediaId" nillable="true" type="xs:long" />
-        <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="LocationAdExtension">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:AdExtension">
+      \<xs:sequence>
+        \<xs:element name="Address" nillable="true" type="tns:Address" />
+        \<xs:element name="CompanyName" nillable="true" type="xs:string" />
+        \<xs:element minOccurs="0" name="GeoCodeStatus" nillable="true" type="tns:BusinessGeoCodeStatus" />
+        \<xs:element minOccurs="0" name="GeoPoint" nillable="true" type="tns:GeoPoint" />
+        \<xs:element minOccurs="0" name="IconMediaId" nillable="true" type="xs:long" />
+        \<xs:element minOccurs="0" name="ImageMediaId" nillable="true" type="xs:long" />
+        \<xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -19,13 +19,13 @@ For more information about networks and ad distribution, see the [About Ad Distr
 ## Syntax
 
 ```xml
-<xs:simpleType name="Network">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="OwnedAndOperatedAndSyndicatedSearch" />
-    <xs:enumeration value="OwnedAndOperatedOnly" />
-    <xs:enumeration value="SyndicatedSearchOnly" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="Network">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="OwnedAndOperatedAndSyndicatedSearch" />
+    \<xs:enumeration value="OwnedAndOperatedOnly" />
+    \<xs:enumeration value="SyndicatedSearchOnly" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

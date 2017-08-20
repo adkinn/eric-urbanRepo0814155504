@@ -15,7 +15,9 @@ manager: "ehansen"
 # GetCampaignsByAccountId Service Operation
 Gets the campaigns within an account.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetCampaignsByAccountIdRequest Message
 
@@ -37,24 +39,24 @@ The *GetCampaignsByAccountIdRequest* object defines the elements of the requestâ
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetCampaignsByAccountId</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId></AccountId>
       <CampaignType></CampaignType>
     </GetCampaignsByAccountIdRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetCampaignsByAccountIdResponse Message
@@ -71,79 +73,79 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetCampaignsByAccountIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Campaigns p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<Campaigns p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <Campaign>
-          <BiddingScheme p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
-            <Type p4:nil="false"></Type>
-            <!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
-            <MaxCpc p4:nil="false">
-              <Amount p4:nil="false"></Amount>
+          \<BiddingScheme p4:nil="false" p4:type="-- specify derived type here with the appropriate prefix --">
+            \<Type p4:nil="false"></Type>
+            \<!--Keep these fields if you set the i:type attribute to MaxClicksBiddingScheme-->
+            \<MaxCpc p4:nil="false">
+              \<Amount p4:nil="false"></Amount>
             </MaxCpc>
-            <!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
-            <MaxCpc p4:nil="false">
-              <Amount p4:nil="false"></Amount>
+            \<!--Keep these fields if you set the i:type attribute to MaxConversionsBiddingScheme-->
+            \<MaxCpc p4:nil="false">
+              \<Amount p4:nil="false"></Amount>
             </MaxCpc>
-            <!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
-            <MaxCpc p4:nil="false">
-              <Amount p4:nil="false"></Amount>
+            \<!--Keep these fields if you set the i:type attribute to TargetCpaBiddingScheme-->
+            \<MaxCpc p4:nil="false">
+              \<Amount p4:nil="false"></Amount>
             </MaxCpc>
-            <TargetCpa p4:nil="false"></TargetCpa>
-            <!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
-            <!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
-            <!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
+            \<TargetCpa p4:nil="false"></TargetCpa>
+            \<!--Keep these fields if you set the i:type attribute to ManualCpcBiddingScheme-->
+            \<!--Keep these fields if you set the i:type attribute to EnhancedCpcBiddingScheme-->
+            \<!--Keep these fields if you set the i:type attribute to InheritFromParentBiddingScheme-->
           </BiddingScheme>
-          <BudgetType p4:nil="false"></BudgetType>
-          <DailyBudget p4:nil="false"></DailyBudget>
-          <Description p4:nil="false"></Description>
-          <ForwardCompatibilityMap xmlns:e121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e121:KeyValuePairOfstringstring>
-              <e121:key p4:nil="false"></e121:key>
-              <e121:value p4:nil="false"></e121:value>
-            </e121:KeyValuePairOfstringstring>
+          \<BudgetType p4:nil="false"></BudgetType>
+          \<DailyBudget p4:nil="false"></DailyBudget>
+          \<Description p4:nil="false"></Description>
+          \<ForwardCompatibilityMap xmlns:e121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e121:KeyValuePairOfstringstring>
+              \<e121:key p4:nil="false">\</e121:key>
+              \<e121:value p4:nil="false">\</e121:value>
+            \</e121:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id p4:nil="false"></Id>
-          <Name p4:nil="false"></Name>
-          <NativeBidAdjustment p4:nil="false"></NativeBidAdjustment>
-          <Status p4:nil="false"></Status>
-          <TimeZone p4:nil="false"></TimeZone>
-          <TrackingUrlTemplate p4:nil="false"></TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e122="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false">
-            <e122:Parameters p4:nil="false">
-              <e122:CustomParameter>
-                <e122:Key p4:nil="false"></e122:Key>
-                <e122:Value p4:nil="false"></e122:Value>
-              </e122:CustomParameter>
-            </e122:Parameters>
+          \<Id p4:nil="false"></Id>
+          \<Name p4:nil="false"></Name>
+          \<NativeBidAdjustment p4:nil="false"></NativeBidAdjustment>
+          \<Status p4:nil="false"></Status>
+          \<TimeZone p4:nil="false"></TimeZone>
+          \<TrackingUrlTemplate p4:nil="false"></TrackingUrlTemplate>
+          \<UrlCustomParameters xmlns:e122="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" p4:nil="false">
+            \<e122:Parameters p4:nil="false">
+              \<e122:CustomParameter>
+                \<e122:Key p4:nil="false">\</e122:Key>
+                \<e122:Value p4:nil="false">\</e122:Value>
+              \</e122:CustomParameter>
+            \</e122:Parameters>
           </UrlCustomParameters>
-          <CampaignType p4:nil="false"></CampaignType>
-          <Settings p4:nil="false">
-            <Setting p4:type="-- specify derived type here with the appropriate prefix --">
-              <Type p4:nil="false"></Type>
-              <!--Keep these fields if you set the i:type attribute to ShoppingSetting-->
-              <LocalInventoryAdsEnabled p4:nil="false"></LocalInventoryAdsEnabled>
-              <Priority p4:nil="false"></Priority>
-              <SalesCountryCode p4:nil="false"></SalesCountryCode>
-              <StoreId p4:nil="false"></StoreId>
-              <!--Keep these fields if you set the i:type attribute to DynamicSearchAdsSetting-->
-              <DomainName p4:nil="false"></DomainName>
-              <Language p4:nil="false"></Language>
+          \<CampaignType p4:nil="false"></CampaignType>
+          \<Settings p4:nil="false">
+            \<Setting p4:type="-- specify derived type here with the appropriate prefix --">
+              \<Type p4:nil="false"></Type>
+              \<!--Keep these fields if you set the i:type attribute to ShoppingSetting-->
+              \<LocalInventoryAdsEnabled p4:nil="false"></LocalInventoryAdsEnabled>
+              \<Priority p4:nil="false"></Priority>
+              \<SalesCountryCode p4:nil="false"></SalesCountryCode>
+              \<StoreId p4:nil="false"></StoreId>
+              \<!--Keep these fields if you set the i:type attribute to DynamicSearchAdsSetting-->
+              \<DomainName p4:nil="false"></DomainName>
+              \<Language p4:nil="false"></Language>
             </Setting>
           </Settings>
-          <BudgetId p4:nil="false"></BudgetId>
-          <Languages p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <a1:string></a1:string>
+          \<BudgetId p4:nil="false"></BudgetId>
+          \<Languages p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            \<a1:string>\</a1:string>
           </Languages>
         </Campaign>
       </Campaigns>
     </GetCampaignsByAccountIdResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

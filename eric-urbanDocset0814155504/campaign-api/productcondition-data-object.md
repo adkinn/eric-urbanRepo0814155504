@@ -18,12 +18,12 @@ Defines a condition that determines whether a product is selected from a custome
 ## Syntax
 
 ```xml
-<xs:complexType name="ProductCondition">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Attribute" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ProductCondition">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Attribute" nillable="true" type="xs:string" />
+    \<xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

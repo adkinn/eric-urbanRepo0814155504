@@ -18,7 +18,9 @@ Deletes negative keywords from the specified campaign or ad group.
 > [!NOTE]
 > The operation does not modify shared negative keyword lists.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>DeleteNegativeKeywordsFromEntitiesRequest Message
 
@@ -39,35 +41,35 @@ The *DeleteNegativeKeywordsFromEntitiesRequest* object defines the elements of t
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">DeleteNegativeKeywordsFromEntities</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <DeleteNegativeKeywordsFromEntitiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <EntityNegativeKeywords i:nil="false">
+      \<EntityNegativeKeywords i:nil="false">
         <EntityNegativeKeyword>
           <EntityId></EntityId>
-          <EntityType i:nil="false"></EntityType>
-          <NegativeKeywords i:nil="false">
+          \<EntityType i:nil="false"></EntityType>
+          \<NegativeKeywords i:nil="false">
             <NegativeKeyword>
-              <Id i:nil="false"></Id>
+              \<Id i:nil="false"></Id>
               <MatchType></MatchType>
-              <Text i:nil="false"></Text>
+              \<Text i:nil="false"></Text>
             </NegativeKeyword>
           </NegativeKeywords>
         </EntityNegativeKeyword>
       </EntityNegativeKeywords>
     </DeleteNegativeKeywordsFromEntitiesRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>DeleteNegativeKeywordsFromEntitiesResponse Message
@@ -84,55 +86,55 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <DeleteNegativeKeywordsFromEntitiesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <NestedPartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+      \<NestedPartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
         <BatchErrorCollection>
-          <BatchErrors p4:nil="false">
-            <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+          \<BatchErrors p4:nil="false">
+            \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
               <Code></Code>
-              <Details p4:nil="false"></Details>
-              <ErrorCode p4:nil="false"></ErrorCode>
-              <FieldPath p4:nil="false"></FieldPath>
-              <ForwardCompatibilityMap xmlns:e65="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-                <e65:KeyValuePairOfstringstring>
-                  <e65:key p4:nil="false"></e65:key>
-                  <e65:value p4:nil="false"></e65:value>
-                </e65:KeyValuePairOfstringstring>
+              \<Details p4:nil="false"></Details>
+              \<ErrorCode p4:nil="false"></ErrorCode>
+              \<FieldPath p4:nil="false"></FieldPath>
+              \<ForwardCompatibilityMap xmlns:e65="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+                \<e65:KeyValuePairOfstringstring>
+                  \<e65:key p4:nil="false">\</e65:key>
+                  \<e65:value p4:nil="false">\</e65:value>
+                \</e65:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index></Index>
-              <Message p4:nil="false"></Message>
-              <Type p4:nil="false"></Type>
-              <!--Keep these fields if you set the i:type attribute to EditorialError-->
-              <Appealable p4:nil="false"></Appealable>
-              <DisapprovedText p4:nil="false"></DisapprovedText>
-              <Location p4:nil="false"></Location>
-              <PublisherCountry p4:nil="false"></PublisherCountry>
+              \<Message p4:nil="false"></Message>
+              \<Type p4:nil="false"></Type>
+              \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+              \<Appealable p4:nil="false"></Appealable>
+              \<DisapprovedText p4:nil="false"></DisapprovedText>
+              \<Location p4:nil="false"></Location>
+              \<PublisherCountry p4:nil="false"></PublisherCountry>
               <ReasonCode></ReasonCode>
             </BatchError>
           </BatchErrors>
-          <Code p4:nil="false"></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e66="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e66:KeyValuePairOfstringstring>
-              <e66:key p4:nil="false"></e66:key>
-              <e66:value p4:nil="false"></e66:value>
-            </e66:KeyValuePairOfstringstring>
+          \<Code p4:nil="false"></Code>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e66="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e66:KeyValuePairOfstringstring>
+              \<e66:key p4:nil="false">\</e66:key>
+              \<e66:value p4:nil="false">\</e66:value>
+            \</e66:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
         </BatchErrorCollection>
       </NestedPartialErrors>
     </DeleteNegativeKeywordsFromEntitiesResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

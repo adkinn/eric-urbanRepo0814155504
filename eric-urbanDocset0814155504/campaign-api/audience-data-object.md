@@ -22,18 +22,18 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 ## Syntax
 
 ```xml
-<xs:complexType name="Audience">
-  <xs:sequence>
-    <xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="ForwardCompatibilityMap" type="q105:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q105="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
-    <xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="MembershipDuration" type="xs:int" minOccurs="0"/>
-    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="ParentId" type="xs:long" minOccurs="0"/>
-    <xs:element name="Scope" type="tns:EntityScope" minOccurs="0"/>
-    <xs:element name="Type" nillable="true" type="tns:AudienceType" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Audience">
+  \<xs:sequence>
+    \<xs:element name="Description" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="ForwardCompatibilityMap" type="q105:ArrayOfKeyValuePairOfstringstring" nillable="true" minOccurs="0" xmlns:q105="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+    \<xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="MembershipDuration" type="xs:int" minOccurs="0"/>
+    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="ParentId" type="xs:long" minOccurs="0"/>
+    \<xs:element name="Scope" type="tns:EntityScope" minOccurs="0"/>
+    \<xs:element name="Type" nillable="true" type="tns:AudienceType" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -54,19 +54,19 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate a custom audience or another type of audience. If you generate the SOAP manually, use the *type* attribute of the *Audience* node as shown in the following example.
 
 ```xml
-<Audiences xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <Audience i:type="CustomAudience">
-    <Description i:nil="false">Custom Audience Description</Description>
-    <ForwardCompatibilityMap xmlns:e43="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-      <e43:KeyValuePairOfstringstring>
-        <e43:key i:nil="false"></e43:key>
-        <e43:value i:nil="false"></e43:value>
-      </e43:KeyValuePairOfstringstring>
+\<Audiences xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  \<Audience i:type="CustomAudience">
+    \<Description i:nil="false">Custom Audience Description</Description>
+    \<ForwardCompatibilityMap xmlns:e43="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+      \<e43:KeyValuePairOfstringstring>
+        \<e43:key i:nil="false">\</e43:key>
+        \<e43:value i:nil="false">\</e43:value>
+      \</e43:KeyValuePairOfstringstring>
     </ForwardCompatibilityMap>
-    <Id i:nil="true" />
-    <MembershipDuration i:nil="false">30</MembershipDuration>
-    <Name i:nil="false">Custom Audience Name</Name>
-    <ParentId i:nil="false">ParentIdHere</ParentId>
+    \<Id i:nil="true" />
+    \<MembershipDuration i:nil="false">30</MembershipDuration>
+    \<Name i:nil="false">Custom Audience Name</Name>
+    \<ParentId i:nil="false">ParentIdHere</ParentId>
     <Scope>Customer</Scope>
   </Audience>
 </Audiences>

@@ -27,16 +27,16 @@ Use this bid strategy to maximize conversions at the target cost per acquisition
 ## Syntax
 
 ```xml
-<xs:complexType name="TargetCpaBiddingScheme">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:BiddingScheme">
-      <xs:sequence>
-        <xs:element xmlns:q4="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="MaxCpc" nillable="true" type="q4:Bid"/>
-        <xs:element name="TargetCpa" nillable="true" type="xs:double"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="TargetCpaBiddingScheme">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:BiddingScheme">
+      \<xs:sequence>
+        \<xs:element xmlns:q4="https://bingads.microsoft.com/CampaignManagement/v11" minOccurs="0" name="MaxCpc" nillable="true" type="q4:Bid"/>
+        \<xs:element name="TargetCpa" nillable="true" type="xs:double"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

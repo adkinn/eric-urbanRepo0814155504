@@ -14,7 +14,9 @@ ms.author: "eur"
 # UpdateAudiences Service Operation
 Updates the specified audiences.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>UpdateAudiencesRequest Message
 
@@ -35,123 +37,123 @@ The *UpdateAudiencesRequest* object defines the elements of the request’s body
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">UpdateAudiences</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <UpdateAudiencesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Audiences i:nil="false">
-        <Audience i:type="-- specify derived type here with the appropriate prefix --">
-          <Description i:nil="false"></Description>
-          <ForwardCompatibilityMap xmlns:e172="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e172:KeyValuePairOfstringstring>
-              <e172:key i:nil="false"></e172:key>
-              <e172:value i:nil="false"></e172:value>
-            </e172:KeyValuePairOfstringstring>
+      \<Audiences i:nil="false">
+        \<Audience i:type="-- specify derived type here with the appropriate prefix --">
+          \<Description i:nil="false"></Description>
+          \<ForwardCompatibilityMap xmlns:e172="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            \<e172:KeyValuePairOfstringstring>
+              \<e172:key i:nil="false">\</e172:key>
+              \<e172:value i:nil="false">\</e172:value>
+            \</e172:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <Id i:nil="false"></Id>
-          <MembershipDuration i:nil="false"></MembershipDuration>
-          <Name i:nil="false"></Name>
-          <ParentId i:nil="false"></ParentId>
-          <Scope i:nil="false"></Scope>
+          \<Id i:nil="false"></Id>
+          \<MembershipDuration i:nil="false"></MembershipDuration>
+          \<Name i:nil="false"></Name>
+          \<ParentId i:nil="false"></ParentId>
+          \<Scope i:nil="false"></Scope>
           <Type></Type>
-          <!--Keep these fields if you set the i:type attribute to RemarketingList-->
-          <Rule xmlns:e173="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
-            <e173:Type i:nil="false"></e173:Type>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsRule-->
-            <e173:RuleItemGroups i:nil="false">
-              <e173:RuleItemGroup>
-                <e173:Items i:nil="false">
-                  <e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
-                    <e173:Type i:nil="false"></e173:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e173:Operand i:nil="false"></e173:Operand>
-                    <e173:Operator></e173:Operator>
-                    <e173:Value i:nil="false"></e173:Value>
-                  </e173:RuleItem>
-                </e173:Items>
-              </e173:RuleItemGroup>
-            </e173:RuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsWhoVisitedAnotherPageRule-->
-            <e173:AnotherRuleItemGroups i:nil="false">
-              <e173:RuleItemGroup>
-                <e173:Items i:nil="false">
-                  <e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
-                    <e173:Type i:nil="false"></e173:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e173:Operand i:nil="false"></e173:Operand>
-                    <e173:Operator></e173:Operator>
-                    <e173:Value i:nil="false"></e173:Value>
-                  </e173:RuleItem>
-                </e173:Items>
-              </e173:RuleItemGroup>
-            </e173:AnotherRuleItemGroups>
-            <e173:RuleItemGroups i:nil="false">
-              <e173:RuleItemGroup>
-                <e173:Items i:nil="false">
-                  <e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
-                    <e173:Type i:nil="false"></e173:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e173:Operand i:nil="false"></e173:Operand>
-                    <e173:Operator></e173:Operator>
-                    <e173:Value i:nil="false"></e173:Value>
-                  </e173:RuleItem>
-                </e173:Items>
-              </e173:RuleItemGroup>
-            </e173:RuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to PageVisitorsWhoDidNotVisitAnotherPageRule-->
-            <e173:ExcludeRuleItemGroups i:nil="false">
-              <e173:RuleItemGroup>
-                <e173:Items i:nil="false">
-                  <e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
-                    <e173:Type i:nil="false"></e173:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e173:Operand i:nil="false"></e173:Operand>
-                    <e173:Operator></e173:Operator>
-                    <e173:Value i:nil="false"></e173:Value>
-                  </e173:RuleItem>
-                </e173:Items>
-              </e173:RuleItemGroup>
-            </e173:ExcludeRuleItemGroups>
-            <e173:IncludeRuleItemGroups i:nil="false">
-              <e173:RuleItemGroup>
-                <e173:Items i:nil="false">
-                  <e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
-                    <e173:Type i:nil="false"></e173:Type>
-                    <!--Keep these fields if you set the i:type attribute to StringRuleItem-->
-                    <e173:Operand i:nil="false"></e173:Operand>
-                    <e173:Operator></e173:Operator>
-                    <e173:Value i:nil="false"></e173:Value>
-                  </e173:RuleItem>
-                </e173:Items>
-              </e173:RuleItemGroup>
-            </e173:IncludeRuleItemGroups>
-            <!--Keep these fields if you set the i:type attribute to CustomEventsRule-->
-            <e173:Action i:nil="false"></e173:Action>
-            <e173:ActionOperator></e173:ActionOperator>
-            <e173:Category i:nil="false"></e173:Category>
-            <e173:CategoryOperator></e173:CategoryOperator>
-            <e173:Label i:nil="false"></e173:Label>
-            <e173:LabelOperator></e173:LabelOperator>
-            <e173:Value i:nil="false"></e173:Value>
-            <e173:ValueOperator></e173:ValueOperator>
+          \<!--Keep these fields if you set the i:type attribute to RemarketingList-->
+          \<Rule xmlns:e173="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="-- specify derived type here with the appropriate prefix --">
+            \<e173:Type i:nil="false">\</e173:Type>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsRule-->
+            \<e173:RuleItemGroups i:nil="false">
+              \<e173:RuleItemGroup>
+                \<e173:Items i:nil="false">
+                  \<e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
+                    \<e173:Type i:nil="false">\</e173:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e173:Operand i:nil="false">\</e173:Operand>
+                    \<e173:Operator>\</e173:Operator>
+                    \<e173:Value i:nil="false">\</e173:Value>
+                  \</e173:RuleItem>
+                \</e173:Items>
+              \</e173:RuleItemGroup>
+            \</e173:RuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsWhoVisitedAnotherPageRule-->
+            \<e173:AnotherRuleItemGroups i:nil="false">
+              \<e173:RuleItemGroup>
+                \<e173:Items i:nil="false">
+                  \<e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
+                    \<e173:Type i:nil="false">\</e173:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e173:Operand i:nil="false">\</e173:Operand>
+                    \<e173:Operator>\</e173:Operator>
+                    \<e173:Value i:nil="false">\</e173:Value>
+                  \</e173:RuleItem>
+                \</e173:Items>
+              \</e173:RuleItemGroup>
+            \</e173:AnotherRuleItemGroups>
+            \<e173:RuleItemGroups i:nil="false">
+              \<e173:RuleItemGroup>
+                \<e173:Items i:nil="false">
+                  \<e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
+                    \<e173:Type i:nil="false">\</e173:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e173:Operand i:nil="false">\</e173:Operand>
+                    \<e173:Operator>\</e173:Operator>
+                    \<e173:Value i:nil="false">\</e173:Value>
+                  \</e173:RuleItem>
+                \</e173:Items>
+              \</e173:RuleItemGroup>
+            \</e173:RuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to PageVisitorsWhoDidNotVisitAnotherPageRule-->
+            \<e173:ExcludeRuleItemGroups i:nil="false">
+              \<e173:RuleItemGroup>
+                \<e173:Items i:nil="false">
+                  \<e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
+                    \<e173:Type i:nil="false">\</e173:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e173:Operand i:nil="false">\</e173:Operand>
+                    \<e173:Operator>\</e173:Operator>
+                    \<e173:Value i:nil="false">\</e173:Value>
+                  \</e173:RuleItem>
+                \</e173:Items>
+              \</e173:RuleItemGroup>
+            \</e173:ExcludeRuleItemGroups>
+            \<e173:IncludeRuleItemGroups i:nil="false">
+              \<e173:RuleItemGroup>
+                \<e173:Items i:nil="false">
+                  \<e173:RuleItem i:type="-- specify derived type here with the appropriate prefix --">
+                    \<e173:Type i:nil="false">\</e173:Type>
+                    \<!--Keep these fields if you set the i:type attribute to StringRuleItem-->
+                    \<e173:Operand i:nil="false">\</e173:Operand>
+                    \<e173:Operator>\</e173:Operator>
+                    \<e173:Value i:nil="false">\</e173:Value>
+                  \</e173:RuleItem>
+                \</e173:Items>
+              \</e173:RuleItemGroup>
+            \</e173:IncludeRuleItemGroups>
+            \<!--Keep these fields if you set the i:type attribute to CustomEventsRule-->
+            \<e173:Action i:nil="false">\</e173:Action>
+            \<e173:ActionOperator>\</e173:ActionOperator>
+            \<e173:Category i:nil="false">\</e173:Category>
+            \<e173:CategoryOperator>\</e173:CategoryOperator>
+            \<e173:Label i:nil="false">\</e173:Label>
+            \<e173:LabelOperator>\</e173:LabelOperator>
+            \<e173:Value i:nil="false">\</e173:Value>
+            \<e173:ValueOperator>\</e173:ValueOperator>
           </Rule>
-          <TagId i:nil="false"></TagId>
-          <!--Keep these fields if you set the i:type attribute to CustomAudience-->
-          <!--Keep these fields if you set the i:type attribute to InMarketAudience-->
+          \<TagId i:nil="false"></TagId>
+          \<!--Keep these fields if you set the i:type attribute to CustomAudience-->
+          \<!--Keep these fields if you set the i:type attribute to InMarketAudience-->
         </Audience>
       </Audiences>
     </UpdateAudiencesRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>UpdateAudiencesResponse Message
@@ -168,38 +170,38 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <UpdateAudiencesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchError p4:type="-- specify derived type here with the appropriate prefix --">
+      \<PartialErrors p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<BatchError p4:type="-- specify derived type here with the appropriate prefix --">
           <Code></Code>
-          <Details p4:nil="false"></Details>
-          <ErrorCode p4:nil="false"></ErrorCode>
-          <FieldPath p4:nil="false"></FieldPath>
-          <ForwardCompatibilityMap xmlns:e174="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
-            <e174:KeyValuePairOfstringstring>
-              <e174:key p4:nil="false"></e174:key>
-              <e174:value p4:nil="false"></e174:value>
-            </e174:KeyValuePairOfstringstring>
+          \<Details p4:nil="false"></Details>
+          \<ErrorCode p4:nil="false"></ErrorCode>
+          \<FieldPath p4:nil="false"></FieldPath>
+          \<ForwardCompatibilityMap xmlns:e174="http://schemas.datacontract.org/2004/07/System.Collections.Generic" p4:nil="false">
+            \<e174:KeyValuePairOfstringstring>
+              \<e174:key p4:nil="false">\</e174:key>
+              \<e174:value p4:nil="false">\</e174:value>
+            \</e174:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index></Index>
-          <Message p4:nil="false"></Message>
-          <Type p4:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to EditorialError-->
-          <Appealable p4:nil="false"></Appealable>
-          <DisapprovedText p4:nil="false"></DisapprovedText>
-          <Location p4:nil="false"></Location>
-          <PublisherCountry p4:nil="false"></PublisherCountry>
+          \<Message p4:nil="false"></Message>
+          \<Type p4:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to EditorialError-->
+          \<Appealable p4:nil="false"></Appealable>
+          \<DisapprovedText p4:nil="false"></DisapprovedText>
+          \<Location p4:nil="false"></Location>
+          \<PublisherCountry p4:nil="false"></PublisherCountry>
           <ReasonCode></ReasonCode>
         </BatchError>
       </PartialErrors>
     </UpdateAudiencesResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

@@ -18,19 +18,19 @@ Defines the possible match types for a keyword or negative keyword.
 ## Syntax
 
 ```xml
-<xs:simpleType name="MatchType">
-  <xs:annotation>
-    <xs:appinfo>
+\<xs:simpleType name="MatchType">
+  \<xs:annotation>
+    \<xs:appinfo>
       <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
-    </xs:appinfo>
-  </xs:annotation>
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Exact" />
-    <xs:enumeration value="Phrase" />
-    <xs:enumeration value="Broad" />
-    <xs:enumeration value="Content" />
-  </xs:restriction>
-</xs:simpleType>
+    \</xs:appinfo>
+  \</xs:annotation>
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Exact" />
+    \<xs:enumeration value="Phrase" />
+    \<xs:enumeration value="Broad" />
+    \<xs:enumeration value="Content" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -18,7 +18,9 @@ Gets a temporary URL that you can use to download a file that contains the suppo
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetGeoLocationsFileUrlRequest Message
 
@@ -40,24 +42,24 @@ The *GetGeoLocationsFileUrlRequest* object defines the elements of the requestâ€
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">GetGeoLocationsFileUrl</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetGeoLocationsFileUrlRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <Version i:nil="false"></Version>
-      <LanguageLocale i:nil="false"></LanguageLocale>
+      \<Version i:nil="false"></Version>
+      \<LanguageLocale i:nil="false"></LanguageLocale>
     </GetGeoLocationsFileUrlRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetGeoLocationsFileUrlResponse Message
@@ -76,18 +78,18 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetGeoLocationsFileUrlResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <FileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></FileUrl>
-      <FileUrlExpiryTimeUtc p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></FileUrlExpiryTimeUtc>
+      \<FileUrl p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></FileUrl>
+      \<FileUrlExpiryTimeUtc p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></FileUrlExpiryTimeUtc>
       <LastModifiedTimeUtc></LastModifiedTimeUtc>
     </GetGeoLocationsFileUrlResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

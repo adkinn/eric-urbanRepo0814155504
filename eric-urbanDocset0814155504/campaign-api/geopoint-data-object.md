@@ -18,12 +18,12 @@ Defines an object that contains the longitude and latitude coordinates of a geog
 ## Syntax
 
 ```xml
-<xs:complexType name="GeoPoint">
-  <xs:sequence>
-    <xs:element name="LatitudeInMicroDegrees" type="xs:int" />
-    <xs:element name="LongitudeInMicroDegrees" type="xs:int" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="GeoPoint">
+  \<xs:sequence>
+    \<xs:element name="LatitudeInMicroDegrees" type="xs:int" />
+    \<xs:element name="LongitudeInMicroDegrees" type="xs:int" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

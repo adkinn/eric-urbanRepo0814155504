@@ -18,12 +18,12 @@ The targeting setting that is applicable for all audiences e.g., custom audience
 ## Syntax
 
 ```xml
-<xs:simpleType name="RemarketingTargetingSetting">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="BidOnly" />
-    <xs:enumeration value="TargetAndBid" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="RemarketingTargetingSetting">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="BidOnly" />
+    \<xs:enumeration value="TargetAndBid" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

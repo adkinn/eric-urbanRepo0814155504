@@ -21,15 +21,15 @@ The *GenderCriterion* criterion can be included within [AdGroupCriterion](../cam
 ## Syntax
 
 ```xml
-<xs:complexType name="GenderCriterion">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:Criterion">
-      <xs:sequence>
-        <xs:element name="GenderType" type="tns:GenderType" minOccurs="0" nillable="true"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="GenderCriterion">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:Criterion">
+      \<xs:sequence>
+        \<xs:element name="GenderType" type="tns:GenderType" minOccurs="0" nillable="true"/>
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

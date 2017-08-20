@@ -22,15 +22,15 @@ Say you have a budget of $20 to be used uniformly between two campaigns every da
 ## Syntax
 
 ```xml
-<xs:complexType name="Budget">
-  <xs:sequence>
-    <xs:element name="Amount" type="xs:decimal" nillable="true" minOccurs="0"/>
-    <xs:element name="AssociationCount" type="xs:int" nillable="true" minOccurs="0"/>
-    <xs:element name="BudgetType" type="tns:BudgetLimitType" nillable="true" minOccurs="0"/>
-    <xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Budget">
+  \<xs:sequence>
+    \<xs:element name="Amount" type="xs:decimal" nillable="true" minOccurs="0"/>
+    \<xs:element name="AssociationCount" type="xs:int" nillable="true" minOccurs="0"/>
+    \<xs:element name="BudgetType" type="tns:BudgetLimitType" nillable="true" minOccurs="0"/>
+    \<xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements 

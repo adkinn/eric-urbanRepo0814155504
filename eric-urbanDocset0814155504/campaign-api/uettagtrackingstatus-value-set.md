@@ -21,17 +21,17 @@ Defines the possible system-determined status values of a UET tag. These are the
 ## Syntax
 
 ```xml
-<xs:simpleType name="UetTagTrackingStatus">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="Unverified" />
-        <xs:enumeration value="Active" />
-        <xs:enumeration value="Inactive" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="UetTagTrackingStatus">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="Unverified" />
+        \<xs:enumeration value="Active" />
+        \<xs:enumeration value="Inactive" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values

@@ -27,20 +27,20 @@ Do not try to instantiate a *ConversionGoal*. You can create one or more followi
 ## Syntax
 
 ```xml
-<xs:complexType name="ConversionGoal">
-  <xs:sequence>
-    <xs:element name="ConversionWindowInMinutes" type="xs:int" nillable="true" minOccurs="0"/>
-    <xs:element name="CountType" type="tns:ConversionGoalCountType" nillable="true" minOccurs="0"/>
-    <xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
-    <xs:element name="Revenue" type="tns:ConversionGoalRevenue" nillable="true" minOccurs="0"/>
-    <xs:element name="Scope" type="tns:EntityScope" nillable="true" minOccurs="0"/>
-    <xs:element name="Status" type="tns:ConversionGoalStatus" nillable="true" minOccurs="0"/>
-    <xs:element name="TagId" type="xs:long" nillable="true" minOccurs="0"/>
-    <xs:element name="TrackingStatus" type="tns:ConversionGoalTrackingStatus" nillable="true" minOccurs="0"/>
-    <xs:element name="Type" type="tns:ConversionGoalType" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="ConversionGoal">
+  \<xs:sequence>
+    \<xs:element name="ConversionWindowInMinutes" type="xs:int" nillable="true" minOccurs="0"/>
+    \<xs:element name="CountType" type="tns:ConversionGoalCountType" nillable="true" minOccurs="0"/>
+    \<xs:element name="Id" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="Name" type="xs:string" nillable="true" minOccurs="0"/>
+    \<xs:element name="Revenue" type="tns:ConversionGoalRevenue" nillable="true" minOccurs="0"/>
+    \<xs:element name="Scope" type="tns:EntityScope" nillable="true" minOccurs="0"/>
+    \<xs:element name="Status" type="tns:ConversionGoalStatus" nillable="true" minOccurs="0"/>
+    \<xs:element name="TagId" type="xs:long" nillable="true" minOccurs="0"/>
+    \<xs:element name="TrackingStatus" type="tns:ConversionGoalTrackingStatus" nillable="true" minOccurs="0"/>
+    \<xs:element name="Type" type="tns:ConversionGoalType" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -64,23 +64,23 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<ConversionGoal>` node as shown in the following example, to specify the type of the conversion goal.
 
 ```xml
-<ConversionGoals i:nil="false">
-  <ConversionGoal i:type="UrlGoal">
-    <ConversionWindowInMinutes i:nil="false"></ConversionWindowInMinutes>
-    <CountType i:nil="false">Unique</CountType>
-    <Id i:nil="true" />
-    <Name i:nil="false">My Url Conversion Goal</Name>
-    <Revenue i:nil="false">
-      <CurrencyCode i:nil="false">USDollar</CurrencyCode>
-      <Type i:nil="false">FixedValue</Type>
-      <Value i:nil="false">10.00</Value>
+\<ConversionGoals i:nil="false">
+  \<ConversionGoal i:type="UrlGoal">
+    \<ConversionWindowInMinutes i:nil="false"></ConversionWindowInMinutes>
+    \<CountType i:nil="false">Unique</CountType>
+    \<Id i:nil="true" />
+    \<Name i:nil="false">My Url Conversion Goal</Name>
+    \<Revenue i:nil="false">
+      \<CurrencyCode i:nil="false">USDollar</CurrencyCode>
+      \<Type i:nil="false">FixedValue</Type>
+      \<Value i:nil="false">10.00</Value>
     </Revenue>
-    <Scope i:nil="false">Customer</Scope>
-    <Status i:nil="true" />
-    <TagId i:nil="false"></TagId>
-    <TrackingStatus i:nil="true" />
-    <UrlExpression i:nil="false">contoso</UrlExpression>
-    <UrlOperator i:nil="false">Contains</UrlOperator>
+    \<Scope i:nil="false">Customer</Scope>
+    \<Status i:nil="true" />
+    \<TagId i:nil="false"></TagId>
+    \<TrackingStatus i:nil="true" />
+    \<UrlExpression i:nil="false">contoso</UrlExpression>
+    \<UrlOperator i:nil="false">Contains</UrlOperator>
   </ConversionGoal>
 </ConversionGoals>
 ```

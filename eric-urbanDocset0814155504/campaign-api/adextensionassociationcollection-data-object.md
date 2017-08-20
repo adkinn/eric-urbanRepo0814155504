@@ -18,11 +18,11 @@ Defines an array of objects that associate an ad extension and its editorial sta
 ## Syntax
 
 ```xml
-<xs:complexType name="AdExtensionAssociationCollection">
-  <xs:sequence>
-    <xs:element name="AdExtensionAssociations" nillable="true" type="tns:ArrayOfAdExtensionAssociation" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AdExtensionAssociationCollection">
+  \<xs:sequence>
+    \<xs:element name="AdExtensionAssociations" nillable="true" type="tns:ArrayOfAdExtensionAssociation" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

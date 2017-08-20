@@ -18,12 +18,12 @@ Defines values that you can use to determine whether the remarketing list can on
 ## Syntax
 
 ```xml
-<xs:simpleType name="EntityScope">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Account" />
-    <xs:enumeration value="Customer" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="EntityScope">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Account" />
+    \<xs:enumeration value="Customer" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

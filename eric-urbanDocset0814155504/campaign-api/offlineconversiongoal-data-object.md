@@ -25,13 +25,13 @@ To set up offine conversion tracking, create an [OfflineConversionGoal](../campa
 ## Syntax
 
 ```xml
-<xs:complexType name="OfflineConversionGoal">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ConversionGoal">
-      <xs:sequence/>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="OfflineConversionGoal">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ConversionGoal">
+      \<xs:sequence/>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

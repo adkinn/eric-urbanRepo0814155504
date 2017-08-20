@@ -17,12 +17,12 @@ Maps an account level property name to a string value.
 ## Syntax
 
 ```xml
-<xs:complexType name="AccountProperty">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="Name" type="tns:AccountPropertyName"/>
-    <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="AccountProperty">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="Name" type="tns:AccountPropertyName"/>
+    \<xs:element minOccurs="0" name="Value" nillable="true" type="xs:string"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

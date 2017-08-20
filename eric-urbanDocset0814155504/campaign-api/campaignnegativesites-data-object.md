@@ -18,12 +18,12 @@ Defines an object that contains the negative site URLs of a campaign.
 ## Syntax
 
 ```xml
-<xs:complexType name="CampaignNegativeSites">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
-    <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="NegativeSites" nillable="true" type="q53:ArrayOfstring" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="CampaignNegativeSites">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="CampaignId" type="xs:long" />
+    \<xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="NegativeSites" nillable="true" type="q53:ArrayOfstring" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

@@ -21,12 +21,12 @@ Do not try to instantiate a *SharedListItem*. You can create the following objec
 ## Syntax
 
 ```xml
-<xs:complexType name="SharedListItem">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q52:ArrayOfKeyValuePairOfstringstring" xmlns:q52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
-    <xs:element name="Type" nillable="true" type="xs:string" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="SharedListItem">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q52:ArrayOfKeyValuePairOfstringstring" xmlns:q52="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    \<xs:element name="Type" nillable="true" type="xs:string" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements
@@ -42,18 +42,18 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *Type* attribute of the `<SharedListItem>` node as shown in the following example, to specify whether the shared list item is a negative keyword.
 
 ```xml
-<SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
-  <ForwardCompatibilityMap xmlns:e6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-    <e6:KeyValuePairOfstringstring>
-      <e6:key i:nil="false"></e6:key>
-      <e6:value i:nil="false"></e6:value>
-    </e6:KeyValuePairOfstringstring>
+\<SharedListItem i:type="-- specify derived type here with the appropriate prefix --">
+  \<ForwardCompatibilityMap xmlns:e6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+    \<e6:KeyValuePairOfstringstring>
+      \<e6:key i:nil="false">\</e6:key>
+      \<e6:value i:nil="false">\</e6:value>
+    \</e6:KeyValuePairOfstringstring>
   </ForwardCompatibilityMap>
-  <Type i:nil="false"></Type>
-  <!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
-  <Id i:nil="false"></Id>
+  \<Type i:nil="false"></Type>
+  \<!--Keep these fields if you set the i:type attribute to NegativeKeyword-->
+  \<Id i:nil="false"></Id>
   <MatchType></MatchType>
-  <Text i:nil="false"></Text>
+  \<Text i:nil="false"></Text>
 </SharedListItem>
 ```
 

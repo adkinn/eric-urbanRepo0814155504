@@ -15,7 +15,9 @@ manager: "ehansen"
 # AddMedia Service Operation
 Adds the specified media to an account’s media library. Depending on the type of [Media](../campaign-api/media-data-object.md), you can then add the media to one or more [ImageAdExtension](../campaign-api/imageadextension-data-object.md) or [LocationAdExtension](../campaign-api/locationadextension-data-object.md) objects.
 
-[!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[camman_navigation_noremarks](../campaign-api/includes/camman-navigation-noremarks.md)]|
 
 ## <a name="request"></a>AddMediaRequest Message
 
@@ -37,32 +39,32 @@ The *AddMediaRequest* object defines the elements of the request’s body. The e
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
     <Action mustUnderstand="1">AddMedia</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <CustomerAccountId i:nil="false"></CustomerAccountId>
-    <CustomerId i:nil="false"></CustomerId>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<CustomerAccountId i:nil="false"></CustomerAccountId>
+    \<CustomerId i:nil="false"></CustomerId>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <AddMediaRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId></AccountId>
-      <Media i:nil="false">
-        <Media i:type="-- specify derived type here with the appropriate prefix --">
-          <Id i:nil="false"></Id>
-          <MediaType i:nil="false"></MediaType>
-          <Type i:nil="false"></Type>
-          <!--Keep these fields if you set the i:type attribute to Image-->
-          <Data i:nil="false"></Data>
+      \<Media i:nil="false">
+        \<Media i:type="-- specify derived type here with the appropriate prefix --">
+          \<Id i:nil="false"></Id>
+          \<MediaType i:nil="false"></MediaType>
+          \<Type i:nil="false"></Type>
+          \<!--Keep these fields if you set the i:type attribute to Image-->
+          \<Data i:nil="false"></Data>
         </Media>
       </Media>
     </AddMediaRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>AddMediaResponse Message
@@ -79,18 +81,18 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <AddMediaResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <MediaIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:long></a1:long>
+      \<MediaIds p4:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        \<a1:long>\</a1:long>
       </MediaIds>
     </AddMediaResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

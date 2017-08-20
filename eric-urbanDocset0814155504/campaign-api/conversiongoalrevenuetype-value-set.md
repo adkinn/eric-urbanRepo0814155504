@@ -18,17 +18,17 @@ Defines conversion goal revenue models that you can use to track how much each c
 ## Syntax
 
 ```xml
-<xs:simpleType name="ConversionGoalRevenueType">
-  <xs:list>
-    <xs:simpleType>
-      <xs:restriction base="xs:string">
-        <xs:enumeration value="FixedValue" />
-        <xs:enumeration value="VariableValue" />
-        <xs:enumeration value="NoValue" />
-      </xs:restriction>
-    </xs:simpleType>
-  </xs:list>
-</xs:simpleType>
+\<xs:simpleType name="ConversionGoalRevenueType">
+  \<xs:list>
+    \<xs:simpleType>
+      \<xs:restriction base="xs:string">
+        \<xs:enumeration value="FixedValue" />
+        \<xs:enumeration value="VariableValue" />
+        \<xs:enumeration value="NoValue" />
+      \</xs:restriction>
+    \</xs:simpleType>
+  \</xs:list>
+\</xs:simpleType>
 ```
 
 ## Values
