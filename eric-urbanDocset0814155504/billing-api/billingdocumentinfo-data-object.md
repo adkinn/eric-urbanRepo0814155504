@@ -18,17 +18,17 @@ Defines a billing document identification object that contains information about
 ## Syntax
 
 ```xml
-<xs:complexType name="BillingDocumentInfo">
-  <xs:sequence>
-    <xs:element minOccurs="0" name="AccountId" type="xsd:long" />
-    <xs:element minOccurs="0" name="AccountName" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="Amount" type="xsd:double" />
-    <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xsd:string" />
-    <xs:element minOccurs="0" name="DocumentDate" nillable="true" type="xsd:dateTime" />
-    <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xsd:long" />
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="BillingDocumentInfo">
+  \<xs:sequence>
+    \<xs:element minOccurs="0" name="AccountId" type="xsd:long" />
+    \<xs:element minOccurs="0" name="AccountName" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="Amount" type="xsd:double" />
+    \<xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xsd:string" />
+    \<xs:element minOccurs="0" name="DocumentDate" nillable="true" type="xsd:dateTime" />
+    \<xs:element minOccurs="0" name="DocumentId" nillable="true" type="xsd:long" />
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="elements"></a>Elements

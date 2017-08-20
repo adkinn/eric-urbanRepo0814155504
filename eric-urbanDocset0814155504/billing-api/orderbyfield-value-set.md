@@ -18,14 +18,14 @@ Defines the field order of insertion orders returned using [SearchInsertionOrder
 ## Syntax
 
 ```xml
-<xs:simpleType name="OrderByField">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Id" />
-    <xs:enumeration value="Name" />
-    <xs:enumeration value="Number" />
-    <xs:enumeration value="LifeCycleStatus" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="OrderByField">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Id" />
+    \<xs:enumeration value="Name" />
+    \<xs:enumeration value="Number" />
+    \<xs:enumeration value="LifeCycleStatus" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

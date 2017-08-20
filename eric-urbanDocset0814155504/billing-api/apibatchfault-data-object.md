@@ -18,15 +18,15 @@ Defines a fault object that operations return when web service-specific errors o
 ## Syntax
 
 ```xml
-<xs:complexType name="ApiBatchFault">
-  <xs:complexContent mixed="false">
-    <xs:extension base="tns:ApiFault">
-      <xs:sequence>
-        <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
+\<xs:complexType name="ApiBatchFault">
+  \<xs:complexContent mixed="false">
+    \<xs:extension base="tns:ApiFault">
+      \<xs:sequence>
+        \<xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
+      \</xs:sequence>
+    \</xs:extension>
+  \</xs:complexContent>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

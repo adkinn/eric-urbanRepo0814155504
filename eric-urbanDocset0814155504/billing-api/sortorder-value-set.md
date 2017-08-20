@@ -18,12 +18,12 @@ Defines the ascending or descending sort order of results for [SearchInsertionOr
 ## Syntax
 
 ```xml
-<xs:simpleType name="SortOrder">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Ascending" />
-    <xs:enumeration value="Descending" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="SortOrder">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Ascending" />
+    \<xs:enumeration value="Descending" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Members

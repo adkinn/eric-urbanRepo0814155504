@@ -18,12 +18,12 @@ Defines the possible formats in which to generate the billing document.
 ## Syntax
 
 ```xml
-<xs:simpleType name="DataType">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Xml"/>
-    <xs:enumeration value="Pdf"/>
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="DataType">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Xml"/>
+    \<xs:enumeration value="Pdf"/>
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values

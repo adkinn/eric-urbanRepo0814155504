@@ -18,7 +18,9 @@ Gets the specified billing documents.
 > [!NOTE]
 > This operation will not return billing documents associated with Yahoo!-managed accounts.
 
-[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
 
 ## <a name="request"></a>GetBillingDocumentsRequest Message
 
@@ -40,24 +42,24 @@ The *GetBillingDocumentsRequest* object defines the elements of the request’s 
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">GetBillingDocuments</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <GetBillingDocumentsRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <DocumentIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long></a1:long>
+      \<DocumentIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        \<a1:long>\</a1:long>
       </DocumentIds>
       <Type></Type>
     </GetBillingDocumentsRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>GetBillingDocumentsResponse Message
@@ -74,22 +76,22 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocuments xmlns:e2="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e2:BillingDocument>
-          <e2:Data p5:nil="false"></e2:Data>
-          <e2:Id></e2:Id>
-          <e2:Type></e2:Type>
-        </e2:BillingDocument>
+      \<BillingDocuments xmlns:e2="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e2:BillingDocument>
+          \<e2:Data p5:nil="false">\</e2:Data>
+          \<e2:Id>\</e2:Id>
+          \<e2:Type>\</e2:Type>
+        \</e2:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

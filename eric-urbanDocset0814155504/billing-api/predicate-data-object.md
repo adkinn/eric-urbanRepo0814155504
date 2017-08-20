@@ -18,13 +18,13 @@ Defines a predicate for the list of insertion orders returned using the [SearchI
 ## Syntax
 
 ```xml
-<xs:complexType name="Predicate">
-  <xs:sequence>
-    <xs:element name="Field" type="xs:string" nillable="true" minOccurs="0" />
-    <xs:element name="Operator" type="tns:PredicateOperator" minOccurs="0"/>
-    <xs:element name="Value" type="xs:string" nillable="true" minOccurs="0"/>
-  </xs:sequence>
-</xs:complexType>
+\<xs:complexType name="Predicate">
+  \<xs:sequence>
+    \<xs:element name="Field" type="xs:string" nillable="true" minOccurs="0" />
+    \<xs:element name="Operator" type="tns:PredicateOperator" minOccurs="0"/>
+    \<xs:element name="Value" type="xs:string" nillable="true" minOccurs="0"/>
+  \</xs:sequence>
+\</xs:complexType>
 ```
 
 ## <a name="Elements"></a>Elements

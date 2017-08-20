@@ -15,7 +15,9 @@ manager: "ehansen"
 # SearchInsertionOrders Service Operation
 Searches for insertion orders that match a specified criteria.
 
-[!INCLUDE[billing_service_namespace](../billing-api/includes/billing-service-namespace.md)]
+||
+|-|
+|[!INCLUDE[bill_navigation_noremarks](../billing-api/includes/bill-navigation-noremarks.md)]|
 
 ## <a name="request"></a>SearchInsertionOrdersRequest Message
 The *SearchInsertionOrdersRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
@@ -48,37 +50,37 @@ For this service operation, the following are supported *Field* element and *Ope
 The following example shows the complete request envelope.
 
 ```xml
-<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+\<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">SearchInsertionOrders</Action>
-    <ApplicationToken i:nil="false"></ApplicationToken>
-    <AuthenticationToken i:nil="false"></AuthenticationToken>
-    <DeveloperToken i:nil="false"></DeveloperToken>
-    <Password i:nil="false"></Password>
-    <UserName i:nil="false"></UserName>
-  </s:Header>
-  <s:Body>
+    \<ApplicationToken i:nil="false"></ApplicationToken>
+    \<AuthenticationToken i:nil="false"></AuthenticationToken>
+    \<DeveloperToken i:nil="false"></DeveloperToken>
+    \<Password i:nil="false"></Password>
+    \<UserName i:nil="false"></UserName>
+  \</s:Header>
+  \<s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <Predicates xmlns:e7="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e7:Predicate>
-          <e7:Field i:nil="false"></e7:Field>
-          <e7:Operator></e7:Operator>
-          <e7:Value i:nil="false"></e7:Value>
-        </e7:Predicate>
+      \<Predicates xmlns:e7="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e7:Predicate>
+          \<e7:Field i:nil="false">\</e7:Field>
+          \<e7:Operator>\</e7:Operator>
+          \<e7:Value i:nil="false">\</e7:Value>
+        \</e7:Predicate>
       </Predicates>
-      <Ordering xmlns:e8="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e8:OrderBy>
-          <e8:Field></e8:Field>
-          <e8:Order></e8:Order>
-        </e8:OrderBy>
+      \<Ordering xmlns:e8="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e8:OrderBy>
+          \<e8:Field>\</e8:Field>
+          \<e8:Order>\</e8:Order>
+        \</e8:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e9="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e9:Index></e9:Index>
-        <e9:Size></e9:Size>
+      \<PageInfo xmlns:e9="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        \<e9:Index>\</e9:Index>
+        \<e9:Size>\</e9:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="response"></a>SearchInsertionOrdersResponse Message
@@ -95,35 +97,35 @@ The following example shows the complete request envelope.
 The following example shows the complete response envelope.
 
 ```xml
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
-    <TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
-  </s:Header>
-  <s:Body>
+\<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  \<s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+    \<TrackingId p4:nil="false" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"></TrackingId>
+  \</s:Header>
+  \<s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e10="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
-        <e10:InsertionOrder>
-          <e10:AccountId></e10:AccountId>
-          <e10:BalanceAmount p5:nil="false"></e10:BalanceAmount>
-          <e10:BookingCountryCode p5:nil="false"></e10:BookingCountryCode>
-          <e10:Comment p5:nil="false"></e10:Comment>
-          <e10:EndDate></e10:EndDate>
-          <e10:InsertionOrderId p5:nil="false"></e10:InsertionOrderId>
-          <e10:LastModifiedByUserId p5:nil="false"></e10:LastModifiedByUserId>
-          <e10:LastModifiedTime p5:nil="false"></e10:LastModifiedTime>
-          <e10:NotificationThreshold p5:nil="false"></e10:NotificationThreshold>
-          <e10:ReferenceId p5:nil="false"></e10:ReferenceId>
-          <e10:SpendCapAmount></e10:SpendCapAmount>
-          <e10:StartDate></e10:StartDate>
-          <e10:Name p5:nil="false"></e10:Name>
-          <e10:Status p5:nil="false"></e10:Status>
-          <e10:PurchaseOrder p5:nil="false"></e10:PurchaseOrder>
-          <e10:ChangePendingReview p5:nil="false"></e10:ChangePendingReview>
-        </e10:InsertionOrder>
+      \<InsertionOrders xmlns:e10="https://bingads.microsoft.com/Customer/v11/Entities" p5:nil="false" xmlns:p5="http://www.w3.org/2001/XMLSchema-instance">
+        \<e10:InsertionOrder>
+          \<e10:AccountId>\</e10:AccountId>
+          \<e10:BalanceAmount p5:nil="false">\</e10:BalanceAmount>
+          \<e10:BookingCountryCode p5:nil="false">\</e10:BookingCountryCode>
+          \<e10:Comment p5:nil="false">\</e10:Comment>
+          \<e10:EndDate>\</e10:EndDate>
+          \<e10:InsertionOrderId p5:nil="false">\</e10:InsertionOrderId>
+          \<e10:LastModifiedByUserId p5:nil="false">\</e10:LastModifiedByUserId>
+          \<e10:LastModifiedTime p5:nil="false">\</e10:LastModifiedTime>
+          \<e10:NotificationThreshold p5:nil="false">\</e10:NotificationThreshold>
+          \<e10:ReferenceId p5:nil="false">\</e10:ReferenceId>
+          \<e10:SpendCapAmount>\</e10:SpendCapAmount>
+          \<e10:StartDate>\</e10:StartDate>
+          \<e10:Name p5:nil="false">\</e10:Name>
+          \<e10:Status p5:nil="false">\</e10:Status>
+          \<e10:PurchaseOrder p5:nil="false">\</e10:PurchaseOrder>
+          \<e10:ChangePendingReview p5:nil="false">\</e10:ChangePendingReview>
+        \</e10:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
-  </s:Body>
-</s:Envelope>
+  \</s:Body>
+\</s:Envelope>
 ```
 
 ## <a name="errors"></a>Error Codes

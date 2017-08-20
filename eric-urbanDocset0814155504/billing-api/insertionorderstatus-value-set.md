@@ -18,18 +18,18 @@ Defines the possible status values of an [InsertionOrder](../billing-api/inserti
 ## Syntax
 
 ```xml
-<xs:simpleType name="InsertionOrderStatus">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="Active" />
-    <xs:enumeration value="Exhausted" />
-    <xs:enumeration value="Expired" />
-    <xs:enumeration value="Pending" />
-    <xs:enumeration value="PendingSystemReview" />
-    <xs:enumeration value="PendingUserReview" />
-    <xs:enumeration value="Declined" />
-    <xs:enumeration value="Canceled" />
-  </xs:restriction>
-</xs:simpleType>
+\<xs:simpleType name="InsertionOrderStatus">
+  \<xs:restriction base="xs:string">
+    \<xs:enumeration value="Active" />
+    \<xs:enumeration value="Exhausted" />
+    \<xs:enumeration value="Expired" />
+    \<xs:enumeration value="Pending" />
+    \<xs:enumeration value="PendingSystemReview" />
+    \<xs:enumeration value="PendingUserReview" />
+    \<xs:enumeration value="Declined" />
+    \<xs:enumeration value="Canceled" />
+  \</xs:restriction>
+\</xs:simpleType>
 ```
 
 ## Values
