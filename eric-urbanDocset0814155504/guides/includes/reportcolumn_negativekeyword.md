@@ -1,2 +1,0 @@
-The negative keyword text.
-

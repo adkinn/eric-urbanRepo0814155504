@@ -1,0 +1,2 @@
+Set the required header elements for each service request. New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the UserName and Password header elements. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account authentication. For more information, see [Getting Started With the Bing Ads API](http://go.microsoft.com/fwlink/?LinkId=691017).
+

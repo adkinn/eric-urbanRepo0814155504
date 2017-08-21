@@ -1,1 +1,0 @@
-Bing Merchant Center

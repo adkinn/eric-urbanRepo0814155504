@@ -1,1 +1,0 @@
-The name of a metro area if the user's geographical intent can be determined. The metro area is set if the user's intent is a metro area or city within the metro area, and not necessarily if they are physically located in the metro area.

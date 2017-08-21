@@ -1,0 +1,1 @@
+**Note:** Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.

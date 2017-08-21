@@ -1,0 +1,1 @@
+This attribute reflects the current value of your ad group's audience bid adjustment, even if a different bid adjustment value was used when the ad was shown. This value is the requested percentage to increase or decrease the bid amount for the remarketing list.

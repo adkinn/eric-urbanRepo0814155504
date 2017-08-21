@@ -1,0 +1,2 @@
+The campaign status.
+
