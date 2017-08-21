@@ -15,32 +15,32 @@ ms.author: "scottwhi"
 To provide Bing your points of sale data, create an XML document that contains a point of sale (POS) for each booking site you support. A POS describes the POS's display name, URL, and criteria for matching the user to a POS.
 
 
-The document must use UTF-8 encoding and must conform to the [PointsOfSale XSD](#). 
+The document must use UTF-8 encoding and must conform to the [pointsofsale XSD](#). 
 
 > [!NOTE]
 > Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Points of Sale Reference](../hotel-api/points-of-sale-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
-> The document must specify the elements in the order defined in the PointsOfSale XSD (or as shown in the reference).
+> The document must specify the elements in the order defined in the pointsofsale XSD (or as shown in the reference).
 
 ## The top-level element in your feed
 
-The points of sale feed contains a single, top-level [PointsOfSale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. 
+The points of sale feed contains a single, top-level [pointsofsale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. 
 
 ```xml
-\<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
 ```
 
-The `PointsOfSale` element requires a [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) child element. Specify a `PointOfSale` element for each site that users can use to book a room. 
+The `pointsofsale` element requires a [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) child element. Specify a `PointOfSale` element for each site that users can use to book a room. 
 
 ```xml
-<PointsOfSale>
+<pointsofsale>
   <PointOfSale>
     . . .
   </PointOfSale>
   ...
-</PointsOfSale>
+</pointsofsale>
 ```
 
 
@@ -48,7 +48,7 @@ The `PointOfSale` element describes the POS's display name, URL, and criteria fo
 
 ## Defining a point of sale
 
-The `PointsOfSale` element contains a list of [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
+The `pointsofsale` element contains a list of [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
 
 The following shows a `PointOfSale` element that defines a POS for English or French speaking end-users in the US or France. The POS URL includes details about the transaction, such as the check-in and check-out dates, hotel ID, and user language. Bing uses the display name and POS URL to create a hyperlink that's added to the ad. When the user clicks the link, they're taken to the booking site.
 
@@ -68,7 +68,7 @@ The following shows a complete points of sale XML document.
 
 ```xml
 \<?xml version="1.0" encoding="UTF-8"?>
-\<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
   <PointOfSale id="English-French">
     <DisplayNames display_text="ContosoTravel.com" display_language="en" />
@@ -77,7 +77,7 @@ The following shows a complete points of sale XML document.
     <Match status="yes" language="fr" country="FR" currency="EUR" />
     <URL>http://partner.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
   </PointOfSale>
-</PointsOfSale>
+</pointsofsale>
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Creating a Transaction Message"
+title: "Creating a transaction Message"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -11,45 +11,45 @@ caps.latest.revision: 9
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Creating a Transaction Message
+# Creating a transaction Message
 To provide Bing your hotel pricing and availability data, create an XML document that contains a transaction message. The transaction message contains a list of check-in dates, lengths of stay, and pricing. 
 
-Transaction messages may contain up to 90 days of advanced booking, and each booking may specify up to a 14 nights stay. A check-in date and length of stay is referred to as an itinerary. If you specify the maximum number of itineraries, the message would contain 1,260 itineraries.
+transaction messages may contain up to 90 days of advanced booking, and each booking may specify up to a 14 nights stay. A check-in date and length of stay is referred to as an itinerary. If you specify the maximum number of itineraries, the message would contain 1,260 itineraries.
 
-Transaction messages are limited to 100 MB of uncompressed data or 10 MB of compressed data (using GZip compression). To reduce network traffic, you should send compressed data.
+transaction messages are limited to 100 MB of uncompressed data or 10 MB of compressed data (using GZip compression). To reduce network traffic, you should send compressed data.
 
 A transaction message should contain only itineraries that you're adding or updating&mdash;do not include itineraries that have not changed since the last time you sent a message. 
 
-The document must use UTF-8 encoding and must conform to the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd). 
+The document must use UTF-8 encoding and must conform to the [transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd). 
 
 > [!IMPORTANT]
 > You must read and follow all Hotel Ads policies. For the list of policies, see [Pilot programs policies](https://advertise.bingads.microsoft.com/en-us/resources/policies/pilot-programs#Hotel%20Ads).
 
 > [!NOTE]
-> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. The [Transaction Message Reference](../hotel-api/transaction-message-reference.md) includes only those elements and attributes that Bing supports. 
+> Bing does not support all transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. The [transaction Message Reference](../hotel-api/transaction-message-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
-> The message must specify the elements in the order defined in the Transaction XSD (or as shown in the reference).
+> The message must specify the elements in the order defined in the transaction XSD (or as shown in the reference).
 
 
-## The top-level Transaction element
+## The top-level transaction element
 
-Transaction messages contain a single, top-level [Transaction](../hotel-api/transaction-message-reference.md#transaction) element. 
+transaction messages contain a single, top-level [transaction](../hotel-api/transaction-message-reference.md#transaction) element. 
 
 ```xml
-<Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
+<transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
 ```
 
 You must specify the `timestamp` and `id` attributes.
 
-The `Transaction` element must specify the `timestamp` attribute. The time stamp should identify the time that you submit the message. Bing uses the time stamp to ensure that it processes only the latest itineraries. For example, if Bing processes a message with a time stamp of 14:10 and then processes a message with a time stamp of 14:09, Bing only processes the itineraries in the 14:09 message that were not included in the 14:10 message.
+The `transaction` element must specify the `timestamp` attribute. The time stamp should identify the time that you submit the message. Bing uses the time stamp to ensure that it processes only the latest itineraries. For example, if Bing processes a message with a time stamp of 14:10 and then processes a message with a time stamp of 14:09, Bing only processes the itineraries in the 14:09 message that were not included in the 14:10 message.
 
 The `id` attribute is a user-defined ID that uniquely identifies the message to the advertiser. The advertiser uses the ID to identify the message in the list of hotel feed status reports. 
 
 ## Specifying the list of itineraries
 
-The `Transaction` element contains a list of [Result](../hotel-api/transaction-message-reference.md#resulttype) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
+The `transaction` element contains a list of [Result](../hotel-api/transaction-message-reference.md#resulttype) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
 
 The following shows a `Result` element that specifies the required child elements.
 
@@ -72,7 +72,7 @@ If you allow five days advanced booking and stays of up to three-nights, your me
 
 ```xml
 \<?xml version="1.0" encoding="UTF-8"?>
-<Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
+<transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
     <Property>13579</Property>
@@ -110,7 +110,7 @@ If you allow five days advanced booking and stays of up to three-nights, your me
       <PointOfSale id="desktop"/>
     </AllowablePointsOfSale>
   </Result>
-</Transaction>
+</transaction>
 ```
 
 After your message that defines the 15 itineraries, each subsequent message would include only those itineraries that changed. For example, pricing or availability changes.
@@ -145,8 +145,8 @@ Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's
 
 ## Next steps
 
-Before sending transaction messages, first send your hotel feed file and points of sale file to your TAM. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
+Before sending transaction messages, first send your hotel feed file and points of sale file to your TAM. After they import the data into Bing, you may begin sending transaction messages. transaction messages sent before the data is imported will fail.
 
-Validate the transaction message before sending it to Bing. For information, see [Validating your Transaction Message](../hotel-api/validating-your-transaction-message.md).
+Validate the transaction message before sending it to Bing. For information, see [Validating your transaction Message](../hotel-api/validating-your-transaction-message.md).
 
-Send your transaction message to Bing. For information, see [Sending Bing Transaction Messages](../hotel-api/sending-bing-transaction-messages.md).
+Send your transaction message to Bing. For information, see [Sending Bing transaction Messages](../hotel-api/sending-bing-transaction-messages.md).

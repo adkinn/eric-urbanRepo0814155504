@@ -48,7 +48,7 @@ var headers = new WebHeaderCollection();
 headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 ```
 
-For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-api/travel-api-reference.md#headers). 
+For information about the Authorization header and other headers that the request and response may contain, see [headers](../hotel-api/travel-api-reference.md#headers). 
 
 > [!NOTE]
 > The Travel API uses the standard Authorization header; however, Bing Ads uses the AuthenticationToken header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
