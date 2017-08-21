@@ -8,6 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e5c2bbbd-42e7-49c9-9b04-1356e9adceda
 caps.latest.revision: 6
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Desktop Application in PHP
 This guide describes how you can download samples from the [GitHub source](https://go.microsoft.com/fwlink/?linkid=838593), edit with your credentials, and run in a local console. 
@@ -21,7 +24,7 @@ For more information about getting started with PHP, please see [Setting Up the 
 ## <a name="desktopapp"></a>Desktop Application Example Walk-Through
 
 1.  Download the Bing Ads examples or copy snippets as needed from the [GitHub source](https://go.microsoft.com/fwlink/?linkid=838593). For example open a command prompt and type `git clone https://github.com/BingAds/BingAds-PHP-SDK.git`. 
-2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](Get%20Started%20Using%20PHP%20with%20Bing%20Ads%20Services.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
+2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](getting-started-using-php-with-bing-ads-services#installation.md) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
 3.  Copy both *AuthHelper.php* and the *V11* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
     ![Sample PHP Project Directory](../concepts/media/sample-php-project-directory.PNG)  

@@ -20,7 +20,7 @@ Native ads are an extension of search network, and are targeted to user intent b
 
 You can set a bid adjustment for each campaign and ad group. The bid adjustment is the percent amount by which to adjust your bid for native ads above or below the base ad group or keyword bid. Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent native ads from showing for the campaign or ad group. If you do not set a bid adjustment for your ad groups they will inherit from the campaign bid adjustment setting by default.
 
-You can manage native ads settings with either the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) or [Campaign Management Service](~/customer-api/campaign-management-service-reference.md). You should use the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/customer-api/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections.
+You can manage native ads settings with either the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) or [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md). You should use the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections.
 
 -   [Managing Native Ads Settings with the Bulk Service](#bulkservice)  
 -   [Managing Native Ads Settings with the Campaign Management Service](#campaignservice)  
@@ -39,7 +39,7 @@ These are the [!INCLUDE[brand](../concepts/includes/brand.md)] entities with pro
 
 For example you can follow these steps to set up an image ad extension for native ads.
 
-**Note:** You can use the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) for most steps, but you will still need to use the [Campaign Management Service](~/customer-api/campaign-management-service-reference.md) to add media to your account's media library.
+**Note:** You can use the [Bulk Service](~/reporting-api/searchqueryperformancereportrequest-data-object.md) for most steps, but you will still need to use the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) to add media to your account's media library.
 
 1.  Add one to six [Image](~/campaign-api/image-data-object.md) items to your account's media library with the [AddMedia](~/campaign-api/addmedia-service-operation.md) operation. The images must be one of the supported [Media](https://msdn.microsoft.com/library/dn195580.aspx) types (aspect ratios) for an [Image Ad Extension](~/bulk-api/image-ad-extension.md).
 
@@ -56,7 +56,7 @@ For example you can follow these steps to set up an image ad extension for nativ
 4.  Optionally use the *Bid Adjustment* column of the [Campaign](~/bulk-api/campaign.md) and [Ad Group](~/bulk-api/ad-group.md) records to get and set the native ads bid adjustment.
 
 ## <a name="campaignservice"></a>Managing Native Ads Settings with the Campaign Management Service
-These are the Native ads entities that can be accessed using the [Campaign Management Service](~/customer-api/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
+These are the Native ads entities that can be accessed using the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
 > [!NOTE]
 > Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../concepts/handling-service-errors-and-exceptions.md#partialsuccess).

@@ -8,6 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 12de3dac-c799-467d-abbe-9913a1bea1d8
 caps.latest.revision: 9
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
 ---
 # Offline Conversion
 Defines an offline conversion that can be uploaded in a bulk file.

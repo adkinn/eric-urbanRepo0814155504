@@ -8,6 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2b1a4a8d-47bc-4b38-a694-4cdc0d04f7ab
 caps.latest.revision: 27
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
 ---
 # Upgrade Targets to Criterions
 Instead of using targets to show your ads based on age, day and time, device, gender, and location, starting with Bing Ads API version 11 you must use criterions. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  There are two architectural changes required to upgrade from targets to criterions. 

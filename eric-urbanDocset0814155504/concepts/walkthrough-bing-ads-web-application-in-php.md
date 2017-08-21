@@ -8,6 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d54c8b0d-3ec3-40cb-a606-797f0aa7e008
 caps.latest.revision: 7
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
 ---
 # Walkthrough: Bing Ads Web Application in PHP
 This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. 
