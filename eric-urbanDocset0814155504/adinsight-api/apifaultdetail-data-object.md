@@ -48,5 +48,5 @@ The *ApiFaultDetail* object inherits the following element from the [Application
 ## Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]
 ## See Also
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)  
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)  
 

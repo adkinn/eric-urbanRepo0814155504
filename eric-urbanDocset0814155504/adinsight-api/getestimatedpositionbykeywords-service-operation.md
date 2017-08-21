@@ -145,7 +145,7 @@ As a best practice for the most accurate bid estimates per country, you should s
     > [!NOTE]
     > If the target countries conflict with the specified *Language*, then the service will disregard the target countries and only use the set of all supported countries for the specified *Language*.
 
--   *Language* element of the [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx) corresponding to this operation's specified *AdGroupId* element. The service will use the set of all supported countries for this language.
+-   *Language* element of the [AdGroup](~/campaign-api/adgroup-data-object.md) corresponding to this operation's specified *AdGroupId* element. The service will use the set of all supported countries for this language.
 
 Given multiple countries from one of the property sets above, the service will then determine one country with the highest impression count to use as the source of data for estimating the bids. The response will not include details on the final filtered country.
 

@@ -27,7 +27,7 @@ Ad extensions are stored in a shared library at the account level. After adding 
 
 Ad extensions that are associated at a lower level e.g., ad group will override ad extensions of the same type that are associated at a higher level e.g., campaign. For example if you have 2 callout extensions set for *Campaign A*, zero callout extensions associated with *Ad Group AA*, and one callout extension associated with *Ad Group AB*, then only *Ad Group AA* is eligible to have its ads decorated with callouts. 
 
-You can manage ad extensions with either the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) or [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You should use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) if you need to upload or download a high volume of entity settings. For example you can update all ad extensions for your entire account in a single upload. In comparison, with the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) you can only update 100 ad extensions per call. For details see the following sections.
+You can manage ad extensions with either the [Bulk Service](~/bulk-api/bulk-service-reference.md) or [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-api/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad extensions for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) you can only update 100 ad extensions per call. For details see the following sections.
 
 -   [Ad Extension Types](#adextensiontypes)  
 -   [Managing Ad Extensions with the Bulk Service](#bulkservice)  
@@ -106,100 +106,100 @@ An ad will only include one structured snippet (one headline with 3 - 10 values)
 
 
 ## <a name="bulkservice"></a>Managing Ad Extensions with the Bulk Service
-You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../concepts/bulk-download-and-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
+You can use the [Bulk Service](~/bulk-api/bulk-service-reference.md) i.e., [Bulk Download and Upload](../concepts/bulk-download-and-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
 The following Bulk records are available for managing ad extensions and ad extension associations. 
 
 ### App Extensions
--   [App Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-app-ad-extension-record.aspx)
--   [Ad Group App Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-app-ad-extension-record.aspx)
--   [Campaign App Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-app-ad-extension-record.aspx)
+-   [App Ad Extension](~/bulk-api/app-ad-extension.md)
+-   [Ad Group App Ad Extension](~/bulk-api/ad-group-app-ad-extension.md)
+-   [Campaign App Ad Extension](~/bulk-api/campaign-app-ad-extension.md)
 
 ### Call Ad Extensions
--   [Call Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-call-ad-extension-record.aspx)
--   [Campaign Call Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-call-ad-extension-record.aspx)
+-   [Call Ad Extension](~/bulk-api/call-ad-extension.md)
+-   [Campaign Call Ad Extension](~/bulk-api/campaign-call-ad-extension.md)
 
 ### Callout Ad Extensions
--   [Callout Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-callout-ad-extension-record.aspx)
--   [Ad Group Callout Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-callout-ad-extension-record.aspx)
--   [Campaign Callout Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-callout-ad-extension-record.aspx)
+-   [Callout Ad Extension](~/bulk-api/callout-ad-extension.md)
+-   [Ad Group Callout Ad Extension](~/bulk-api/ad-group-callout-ad-extension.md)
+-   [Campaign Callout Ad Extension](~/bulk-api/campaign-callout-ad-extension.md)
 
 ### Image Ad Extensions
--   [Image Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-image-ad-extension-record.aspx)
--   [Ad Group Image Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-image-ad-extension-record.aspx)
--   [Campaign Image Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-image-ad-extension-record.aspx)
+-   [Image Ad Extension](~/bulk-api/image-ad-extension.md)
+-   [Ad Group Image Ad Extension](~/bulk-api/ad-group-image-ad-extension.md)
+-   [Campaign Image Ad Extension](~/bulk-api/campaign-image-ad-extension.md)
 
 ### Location Ad Extensions
--   [Location Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-location-ad-extension-record.aspx)
--   [Campaign Location Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-location-ad-extension-record.aspx)
+-   [Location Ad Extension](~/bulk-api/location-ad-extension.md)
+-   [Campaign Location Ad Extension](~/bulk-api/campaign-location-ad-extension.md)
 
 ### Price Ad Extensions
--   [Price Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-price-ad-extension-record.aspx)
--   [Ad Group Price Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-price-ad-extension-record.aspx)
--   [Campaign Price Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-price-ad-extension-record.aspx)
+-   [Price Ad Extension](~/bulk-api/price-ad-extension.md)
+-   [Ad Group Price Ad Extension](~/bulk-api/ad-group-price-ad-extension.md)
+-   [Campaign Price Ad Extension](~/bulk-api/campaign-price-ad-extension.md)
 
 ### Review Ad Extensions
--   [Review Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-review-ad-extension-record.aspx)
--   [Ad Group Review Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-review-ad-extension-record.aspx)
--   [Campaign Review Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-review-ad-extension-record.aspx)
+-   [Review Ad Extension](~/bulk-api/review-ad-extension.md)
+-   [Ad Group Review Ad Extension](~/bulk-api/ad-group-review-ad-extension.md)
+-   [Campaign Review Ad Extension](~/bulk-api/campaign-review-ad-extension.md)
 
 ### SiteLinks Ad Extensions
--   [Sitelink Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink-ad-extension-record.aspx)
--   [AdGroup Sitelink Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-sitelink-ad-extension-record.aspx)
--   [Campaign Sitelink Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-sitelink-ad-extension-record.aspx)
+-   [Sitelink Ad Extension](~/bulk-api/sitelink-ad-extension.md)
+-   [AdGroup Sitelink Ad Extension](~/bulk-api/adgroup-sitelink-ad-extension.md)
+-   [Campaign Sitelink Ad Extension](~/bulk-api/campaign-sitelink-ad-extension.md)
 
 ### Sitelink2 Ad Extensions
--   [Sitelink2 Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink2-ad-extension-record.aspx)
--   [Ad Group Sitelink2 Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-sitelink2-ad-extension-record.aspx)
--   [Campaign Sitelink2 Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-sitelink2-ad-extension-record.aspx)
+-   [Sitelink2 Ad Extension](~/bulk-api/sitelink2-ad-extension.md)
+-   [Ad Group Sitelink2 Ad Extension](~/bulk-api/ad-group-sitelink2-ad-extension.md)
+-   [Campaign Sitelink2 Ad Extension](~/bulk-api/campaign-sitelink2-ad-extension.md)
 
 ### Structured Snippet Ad Extensions
--   [Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-structured-snippet-ad-extension-record.aspx)
--   [Ad Group Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-structured-snippet-ad-extension-record.aspx)
--   [Campaign Structured Snippet Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-structured-snippet-ad-extension-record.aspx)
+-   [Structured Snippet Ad Extension](~/bulk-api/structured-snippet-ad-extension.md)
+-   [Ad Group Structured Snippet Ad Extension](~/bulk-api/ad-group-structured-snippet-ad-extension.md)
+-   [Campaign Structured Snippet Ad Extension](~/bulk-api/campaign-structured-snippet-ad-extension.md)
 
 For code examples that show how to set up ad extensions using the Bulk service, see [C&#35;](../concepts/bulk-ad-extensions-in-csharp.md)| [Java](../concepts/bulk-ad-extensions-in-java.md) | [Python](../concepts/bulk-ad-extensions-in-python.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
-You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both ad extensions and ad extension associations. 
+You can use the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
 For code examples that show how to set up ad extensions using the Campaign Management service, see [C&#35;](../concepts/ad-extensions-in-csharp.md) | [Java](../concepts/ad-extensions-in-java.md) | [PHP](../concepts/ad-extensions-in-php.md) | [Python](../concepts/ad-extensions-in-python.md).
 
 ### Entities
-These are the ad extension entities that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
+These are the ad extension entities that can be accessed using the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
--   [AppAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-appadextension.aspx)
--   [CallAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-calladextension.aspx)
--   [CalloutAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-calloutadextension.aspx)
--   [ImageAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-imageadextension.aspx)
--   [LocationAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-locationadextension.aspx)
--   [PriceAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-priceadextension.aspx)
--   [ReviewAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-reviewadextension.aspx)
--   [SiteLinksAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelinksadextension.aspx)
--   [Sitelink2AdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelink2adextension.aspx)
--   [StructuredSnippetAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-structuredsnippetadextension.aspx)
+-   [AppAdExtension](~/campaign-api/appadextension-data-object.md)
+-   [CallAdExtension](~/campaign-api/calladextension-data-object.md)
+-   [CalloutAdExtension](~/campaign-api/calloutadextension-data-object.md)
+-   [ImageAdExtension](~/campaign-api/imageadextension-data-object.md)
+-   [LocationAdExtension](~/campaign-api/locationadextension-data-object.md)
+-   [PriceAdExtension](~/campaign-api/priceadextension-data-object.md)
+-   [ReviewAdExtension](~/campaign-api/reviewadextension-data-object.md)
+-   [SiteLinksAdExtension](~/campaign-api/sitelinksadextension-data-object.md)
+-   [Sitelink2AdExtension](~/campaign-api/sitelink2adextension-data-object.md)
+-   [StructuredSnippetAdExtension](~/campaign-api/structuredsnippetadextension-data-object.md)
 
 > [!NOTE]
-> The [AdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-adextension.aspx) object is the base class from which all ad extensions are derived.
+> The [AdExtension](~/campaign-api/adextension-data-object.md) object is the base class from which all ad extensions are derived.
 
 ### Service Operations
-These are the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) service operations that can be used to add, get, update, and delete ad extensions.
+These are the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) service operations that can be used to add, get, update, and delete ad extensions.
 
--   [AddAdExtensions](https://msdn.microsoft.com/library/dn236319.aspx)  
--   [SetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-setadextensionsassociations.aspx)  
--   [GetAdExtensionsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionsbyids.aspx)  
--   [GetAdExtensionIdsByAccountId](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionidsbyaccountid.aspx)  
--   [GetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionsassociations.aspx)  
--   [UpdateAdExtensions](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateadextensions.aspx)
--   [DeleteAdExtensions](https://msdn.microsoft.com/library/bing-ads-campaign-management-deleteadextensions.aspx)  
--   [DeleteAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-deleteadextensionsassociations.aspx)
+-   [AddAdExtensions](~/campaign-api/addadextensions-service-operation.md)  
+-   [SetAdExtensionsAssociations](~/campaign-api/setadextensionsassociations-service-operation.md)  
+-   [GetAdExtensionsByIds](~/campaign-api/getadextensionsbyids-service-operation.md)  
+-   [GetAdExtensionIdsByAccountId](~/campaign-api/getadextensionidsbyaccountid-service-operation.md)  
+-   [GetAdExtensionsAssociations](~/campaign-api/getadextensionsassociations-service-operation.md)  
+-   [UpdateAdExtensions](~/campaign-api/updateadextensions-service-operation.md)
+-   [DeleteAdExtensions](~/campaign-api/deleteadextensions-service-operation.md)  
+-   [DeleteAdExtensionsAssociations](~/campaign-api/deleteadextensionsassociations-service-operation.md)
 
 > [!NOTE]
-> Partial update is not supported for ad extensions. Any optional elements which are not sent with the [UpdateAdExtensions](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateadextensions.aspx) request will in effect be deleted from the extension.
+> Partial update is not supported for ad extensions. Any optional elements which are not sent with the [UpdateAdExtensions](~/campaign-api/updateadextensions-service-operation.md) request will in effect be deleted from the extension.
 > 
 > Partial success is not supported when adding, updating, and deleting ad extensions. For example if you submit 10 ad extensions and 2 fail, the entire batch will fail.
 > 
-> Partial success is supported for [GetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadextensionsassociations.aspx) and [SetAdExtensionsAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-setadextensionsassociations.aspx). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../concepts/handling-service-errors-and-exceptions.md#partialsuccess).
+> Partial success is supported for [GetAdExtensionsAssociations](~/campaign-api/getadextensionsassociations-service-operation.md) and [SetAdExtensionsAssociations](~/campaign-api/setadextensionsassociations-service-operation.md). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../concepts/handling-service-errors-and-exceptions.md#partialsuccess).
 
 ## <a name="editorial"></a>Editorial Review
 When you associate an ad extension with a campaign or ad group, the extension goes through an initial editorial review. For more information, see [Ad Extension Editorial Review](../concepts/editorial-review-and-appeals.md#adextensioneditorialreview).
@@ -207,9 +207,9 @@ When you associate an ad extension with a campaign or ad group, the extension go
 ## <a name="reporting"></a>Reporting
 You can use the following reports to get statistics about the effectiveness of the ad extensions that you've included in your ads.
 
--   [AdExtensionByAdReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensionbyadreportrequest.aspx) – Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByAdReportRequest](~/reporting-api/adextensionbyadreportrequest-data-object.md) – Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionByKeywordReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensionbykeywordreportrequest.aspx) – Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByKeywordReportRequest](~/reporting-api/adextensionbykeywordreportrequest-data-object.md) – Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
 -   [AdExtensionDimensionReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensiondimensionreportrequest.aspx) – Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 

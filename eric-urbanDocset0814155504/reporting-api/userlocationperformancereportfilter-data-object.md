@@ -32,8 +32,8 @@ Defines the criteria to use to filter the user location performance report data.
 |Element|Description|Data Type|Required/Optional|
 |-----------|---------------|-------------|---------------------|
 |*AdDistribution*|The report will include data for only the specified distribution medium. For example, you can use the filter to include data for only search ads.<br /><br />You can specify one or more distribution mediums.|[AdDistributionReportFilter](../reporting-api/addistributionreportfilter-value-set.md)|Optional|
-|*CountryCode*|The report will include data for only the specified countries/regions where the user that clicked the ad is located.<br /><br />For a list of possible values, see [Geographical Location Codes](https://msdn.microsoft.com/library/bing-ads-geographical-location-codes.aspx).|*string* array|Optional|
-|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).|*string* array|Optional|
+|*CountryCode*|The report will include data for only the specified countries/regions where the user that clicked the ad is located.<br /><br />For a list of possible values, see [Geographical Location Codes](~/concepts/geographical-location-codes.md).|*string* array|Optional|
+|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/concepts/ad-languages.md).|*string* array|Optional|
 
 ## Remarks
 Setting all filter criteria elements to NULL is the same as setting the *Filter* element of [UserLocationPerformanceReportRequest](../reporting-api/userlocationperformancereportrequest-data-object.md) to NULL.

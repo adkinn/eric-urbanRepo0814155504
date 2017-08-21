@@ -46,5 +46,5 @@ The *ApiFault* object derives from the [ApplicationFault](../billing-api/applica
 ## Requirements
 [!INCLUDE[reqbilling](../billing-api/includes/reqbilling.md)]
 ## See Also
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)
 

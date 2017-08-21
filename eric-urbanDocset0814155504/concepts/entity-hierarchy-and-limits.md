@@ -17,7 +17,7 @@ The following figure shows the high level [!INCLUDE[brand](../concepts/includes/
 
 ![Entity Hierarchy](../concepts/media/entity-hierarchy.png)  
 
-A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](https://msdn.microsoft.com/library/bing-ads-api-reference.aspx) documentation. 
+A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](~/concepts/bing-ads-api-reference.md) documentation. 
 
 -   [Account](#account)
 -   [Ad Extensions](#adextensions)
@@ -40,7 +40,7 @@ A subset of entities with property limits (subject to change) are listed below. 
 ## <a name="account"></a>Account
 Organizes campaigns and identifies the payment instrument used to settle the account.  Three accounts are allowed per credit card.
 
-The following table defines limits for [AdvertiserAccount](https://msdn.microsoft.com/library/bing-ads-customer-management-advertiseraccount.aspx) properties.
+The following table defines limits for [AdvertiserAccount](~/customer-api/advertiseraccount-data-object.md) properties.
 
 |Property|Limit|
 |------------|---------|
@@ -75,7 +75,7 @@ The entity to ad extension association limit varies by ad extension type.
 > For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions.  
 
 ### <a name="appadextension"></a>App Ad Extension
-You can manage app ad extensions using the Bulk service ([App Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-app-ad-extension-record.aspx)) or Campaign Management service ([AppAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-appadextension.aspx)).
+You can manage app ad extensions using the Bulk service ([App Ad Extension Record](~/bulk-api/app-ad-extension.md)) or Campaign Management service ([AppAdExtension](~/campaign-api/appadextension-data-object.md)).
 
 The following table defines limits for app ad extension properties.
 
@@ -85,7 +85,7 @@ The following table defines limits for app ad extension properties.
 |Display Text|The string can contain a maximum of 35 characters.|
 
 ### <a name="calladextension"></a>Call Ad Extension
-You can manage call ad extensions using the Bulk service ([Call Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-call-ad-extension-record.aspx)) or Campaign Management service ([CallAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-calladextension.aspx)).
+You can manage call ad extensions using the Bulk service ([Call Ad Extension Record](~/bulk-api/call-ad-extension.md)) or Campaign Management service ([CallAdExtension](~/campaign-api/calladextension-data-object.md)).
 
 The following table defines limits for call ad extension properties.
 
@@ -94,7 +94,7 @@ The following table defines limits for call ad extension properties.
 |Phone Number|The string can contain a maximum of 35 characters.|
 
 ### <a name="calloutadextension"></a>Callout Ad Extension
-You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-callout-ad-extension-record.aspx)) or Campaign Management service ([CalloutAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-calloutadextension.aspx)).
+You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](~/bulk-api/callout-ad-extension.md)) or Campaign Management service ([CalloutAdExtension](~/campaign-api/calloutadextension-data-object.md)).
 
 The following table defines limits for call ad extension properties.
 
@@ -103,7 +103,7 @@ The following table defines limits for call ad extension properties.
 |Text|The string can contain a maximum of 25 characters. Note that for Traditional Chinese characters, the text is limited to 12 characters.|
 
 ### <a name="imageadextension"></a>Image Ad Extension
-You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-image-ad-extension-record.aspx)) or Campaign Management service ([ImageAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-imageadextension.aspx)).
+You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](~/bulk-api/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](~/campaign-api/imageadextension-data-object.md)).
 
 The following table defines limits for image ad extension properties.
 
@@ -113,7 +113,7 @@ The following table defines limits for image ad extension properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 
 ### <a name="locationadextension"></a>Location Ad Extension
-You can manage location ad extensions using the Bulk service ([Location Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-location-ad-extension-record.aspx)) or Campaign Management service ([LocationAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-locationadextension.aspx)).
+You can manage location ad extensions using the Bulk service ([Location Ad Extension Record](~/bulk-api/location-ad-extension.md)) or Campaign Management service ([LocationAdExtension](~/campaign-api/locationadextension-data-object.md)).
 
 The following table defines limits for location ad extension properties.
 
@@ -123,7 +123,7 @@ The following table defines limits for location ad extension properties.
 |Phone Number|The string can contain a maximum of 35 characters.|
 
 ### <a name="priceadextension"></a>Price Ad Extension
-You can manage price ad extensions using the Bulk service ([Price Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-price-ad-extension-record.aspx)) or Campaign Management service ([PriceAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-priceadextension.aspx)).
+You can manage price ad extensions using the Bulk service ([Price Ad Extension Record](~/bulk-api/price-ad-extension.md)) or Campaign Management service ([PriceAdExtension](~/campaign-api/priceadextension-data-object.md)).
 
 The following table defines limits for price ad extension properties.
 
@@ -132,7 +132,7 @@ The following table defines limits for price ad extension properties.
 |Table Rows|You must have between 3 and 8 price table rows.|
 
 ### <a name="reviewadextension"></a>Review Ad Extension
-You can manage review ad extensions using the Bulk service ([Review Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-review-ad-extension-record.aspx)) or Campaign Management service ([ReviewAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-reviewadextension.aspx)).
+You can manage review ad extensions using the Bulk service ([Review Ad Extension Record](~/bulk-api/review-ad-extension.md)) or Campaign Management service ([ReviewAdExtension](~/campaign-api/reviewadextension-data-object.md)).
 
 The following table defines limits for review ad extension properties.
 
@@ -143,7 +143,7 @@ The following table defines limits for review ad extension properties.
 |Url|The string can contain a maximum of 255 characters.|
 
 ### <a name="sitelinkadextension"></a>Sitelink Ad Extension
-You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink-ad-extension-record.aspx) or [Sitelink2 Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink2-ad-extension-record.aspx)) or Campaign Management service ([SiteLink2AdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelinksadextension.aspx) or [SiteLinksAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelink2adextension.aspx)).
+You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](~/bulk-api/sitelink-ad-extension.md) or [Sitelink2 Ad Extension Record](~/bulk-api/sitelink2-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](~/campaign-api/sitelinksadextension-data-object.md) or [SiteLinksAdExtension](~/campaign-api/sitelink2adextension-data-object.md)).
 
 > [!NOTE]
 > [!INCLUDE[sitelinks_migration_eta](../concepts/includes/sitelinks-migration-eta.md)]
@@ -161,7 +161,7 @@ The following table defines limits for sitelink ad extension properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ### <a name="structuredsnippetadextension"></a>Structured Snippet Ad Extension
-You can manage structured snippet ad extensions using the Bulk service ([Structured Snippet Ad Extension Record](https://msdn.microsoft.com/library/bing-ads-bulk-structured-snippet-ad-extension-record.aspx)) or Campaign Management service ([StructuredSnippetAdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-structuredsnippetadextension.aspx)).
+You can manage structured snippet ad extensions using the Bulk service ([Structured Snippet Ad Extension Record](~/bulk-api/structured-snippet-ad-extension.md)) or Campaign Management service ([StructuredSnippetAdExtension](~/campaign-api/structuredsnippetadextension-data-object.md)).
 
 The following table defines limits for structured snippet ad extension properties.
 
@@ -174,7 +174,7 @@ The ad group object specifies the default bid values for each match type, whethe
 
 Each campaign can have up to 20,000 ad groups. Each ad group may have multiple ads and keywords. You'll want to give these ad groups meaningful names and keep them tightly focused with related keywords and a small number of ads, for example 3 ads per ad group.
 
-You can manage ad groups using the Bulk service ([Ad Group Record](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx)) or Campaign Management service ([AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx)).
+You can manage ad groups using the Bulk service ([Ad Group Record](~/bulk-api/ad-group.md)) or Campaign Management service ([AdGroup](~/campaign-api/adgroup-data-object.md)).
 
 The following table defines limits for ad group properties.
 
@@ -192,7 +192,7 @@ Create an app install ad if your intention is to drive app downloads, and not ne
 > [!NOTE]
 > [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot-comingsoon.md)]
 
-You can manage dynamic search ads using the Bulk service ([App Install Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-app-install-ad-record.aspx)) or Campaign Management service ([AppInstallAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-appinstallad.aspx)).
+You can manage dynamic search ads using the Bulk service ([App Install Ad Record](~/bulk-api/app-install-ad.md)) or Campaign Management service ([AppInstallAd](~/campaign-api/appinstallad-data-object.md)).
 
 The following table defines limits for app install ad properties.
 
@@ -207,7 +207,7 @@ With a dynamic search ads campaign, the ad title and display URL are generated a
 > [!NOTE]
 > [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot-comingsoon.md)]
 
-You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-dynamic-search-ad-record.aspx)) or Campaign Management service ([DynamicSearchAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-dynamicsearchad.aspx)).
+You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](~/bulk-api/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](~/campaign-api/dynamicsearchad-data-object.md)).
 
 The following table defines limits for dynamic search ad properties.
 
@@ -221,7 +221,7 @@ The following table defines limits for dynamic search ad properties.
 ### <a name="expandedtextad"></a>Expanded Text Ad
 An expanded text ad specifies the creative, such as the titles and text of the ad.
 
-You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-expanded-text-ad-record.aspx)) or Campaign Management service ([TextAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-expandedtextad.aspx)).
+You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](~/bulk-api/expanded-text-ad.md)) or Campaign Management service ([TextAd](~/campaign-api/expandedtextad-data-object.md)).
 
 The following table defines limits for expanded text ad properties.
 
@@ -242,7 +242,7 @@ A product ad specifies the creative, such as the promotional text of the ad.
 
 Each ad group can contain between one and 100 ads combined, whether the type of ad is dynamic search, expanded text, or product ad.
 
-You can manage product ads using the Bulk service ([Product Ad Record](https://msdn.microsoft.com/library/bing-ads-bulk-product-ad-record.aspx)) or Campaign Management service ([ProductAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-productad.aspx)).
+You can manage product ads using the Bulk service ([Product Ad Record](~/bulk-api/product-ad.md)) or Campaign Management service ([ProductAd](~/campaign-api/productad-data-object.md)).
 
 The following table defines limits for product ad properties.
 
@@ -269,7 +269,7 @@ Represents a budget that can be shared by any campaigns in an account. You can s
 
 Each account can have up to 11,000 shared budgets. Each shared budget can be assigned to up to 10,000 campaigns; however, a campaign can only have one budget.
 
-You can manage shared budgets using the Bulk service ([Budget Record](https://msdn.microsoft.com/library/bing-ads-bulk-budget-record.aspx)) or Campaign Management service ([Budget](https://msdn.microsoft.com/library/bing-ads-campaign-management-budget.aspx)).
+You can manage shared budgets using the Bulk service ([Budget Record](~/bulk-api/budget.md)) or Campaign Management service ([Budget](~/campaign-api/budget-data-object.md)).
 
 The following table defines limits for budget properties.
 
@@ -280,7 +280,7 @@ The following table defines limits for budget properties.
 ## <a name="campaign"></a>Campaign
 The campaign object is the top level object of an advertising campaign and is where you specify the campaign’s budget. Each account can have up to 10,000 campaigns.
 
-You can manage campaigns using the Bulk service ([Campaign Record](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-record.aspx)) or Campaign Management service ([Campaign](https://msdn.microsoft.com/library/bing-ads-campaign-management-campaign.aspx)).
+You can manage campaigns using the Bulk service ([Campaign Record](~/bulk-api/campaign.md)) or Campaign Management service ([Campaign](~/campaign-api/campaign-data-object.md)).
 
 The following table defines limits for campaign properties.
 
@@ -293,7 +293,7 @@ The following table defines limits for campaign properties.
 ## <a name="customer"></a>Customer
 Defines a customer. All advertising activity is organized by customer. Each customer can have between one and six accounts, and be managed by up to 15 users.
 
-The following table defines limits for [Customer](https://msdn.microsoft.com/library/bing-ads-customer-management-customer.aspx) properties.
+The following table defines limits for [Customer](~/customer-api/customer-data-object.md) properties.
 
 |Property|Limit|
 |------------|---------|
@@ -308,7 +308,7 @@ Each account can contain 5,000,000 keywords.
 
 Each customer can contain 50,000,000 keywords.
 
-You can manage keywords using the Bulk service ([Keyword Record](https://msdn.microsoft.com/library/bing-ads-bulk-keyword-record.aspx)) or Campaign Management service ([Keyword](https://msdn.microsoft.com/library/bing-ads-campaign-management-keyword.aspx)).
+You can manage keywords using the Bulk service ([Keyword Record](~/bulk-api/keyword.md)) or Campaign Management service ([Keyword](~/campaign-api/keyword-data-object.md)).
 
 The following table defines limits for keyword properties.
 
@@ -330,7 +330,7 @@ Each account can contain 100,000 labels.
 
 Although not pictured above, labels can be associated with campaigns, ad groups, ads, and keywords. You can apply one label to multiple entities. The association count is only limited by the number of campaigns, ad groups, ads, and keywords in your account.
 
-You can manage labels using the Bulk service ([Label Record](https://msdn.microsoft.com/library/bing-ads-bulk-label-record.aspx)) or Campaign Management service ([Label](https://msdn.microsoft.com/library/bing-ads-campaign-management-label.aspx)).
+You can manage labels using the Bulk service ([Label Record](~/bulk-api/label.md)) or Campaign Management service ([Label](~/campaign-api/label-data-object.md)).
 
 
 |Property|Limit|
@@ -358,7 +358,7 @@ For more information about managing negative keywords and negative keyword lists
 ## <a name="negativesites"></a>Negative Site Placements
 To prevent your ad from appearing on specific web sites within the search network you can configure website exclusions, also known as negative site placements. To explicitly opt out from having your search ads displayed on partner websites sites, you can specify negative sites at the campaign and ad group level. For search ads, you can specify only syndicated search websites. Ad-group-level website exclusions override campaign-level website exclusions.
 
-You can manage negative site placements using the Campaign Management service ([AdGroupNegativeSites](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroupnegativesites.aspx)) and ([CampaignNegativeSites](https://msdn.microsoft.com/library/bing-ads-campaign-management-campaignnegativesites.aspx)).
+You can manage negative site placements using the Campaign Management service ([AdGroupNegativeSites](~/campaign-api/adgroupnegativesites-data-object.md)) and ([CampaignNegativeSites](~/campaign-api/campaignnegativesites-data-object.md)).
 
 Each ad group or campaign can contain up to 2,500 negative site placements. Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not.
 
@@ -369,7 +369,7 @@ After you create a shopping campaign, Bing Ads creates a default ad group. That 
 
 There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa.
 
-You can manage product groups using the Bulk service ([Ad Group Product Partition](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-product-partition-record.aspx)) or Campaign Management service ([ProductPartition](https://msdn.microsoft.com/library/bing-ads-campaign-management-productpartition.aspx)).
+You can manage product groups using the Bulk service ([Ad Group Product Partition](~/bulk-api/ad-group-product-partition.md)) or Campaign Management service ([ProductPartition](~/campaign-api/productpartition-data-object.md)).
 
 For more information, see the Bing Ads Help article [Understand and use product groups](https://help.bingads.microsoft.com/#apex/3/en/50901/1).
 

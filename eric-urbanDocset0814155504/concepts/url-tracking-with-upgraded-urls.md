@@ -30,7 +30,7 @@ For an overview of Final URLs and tracking templates, see the following Bing Ads
 -   [Can I use custom parameters?](http://help.bingads.microsoft.com/#apex/3/en/56774/-1)  
 -   [What are Upgraded URLs and how do I upgrade?](http://help.bingads.microsoft.com/#apex/3/en/56751/-1)  
 
-You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) or [Campaign Management Service](https://msdn.microsoft.com/library/bb671719.aspx). You should use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](https://msdn.microsoft.com/library/bb671719.aspx) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
+You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](~/bulk-api/bulk-service-reference.md) or [Campaign Management Service](~/customer-api/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-api/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/customer-api/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
 -   [Tracking Templates](#trackingtemplatevalidation)  
 -   [Final URLs](#finalurlvalidation)  
 -   [Custom Parameters](#customparametersvalidation)  
@@ -51,7 +51,7 @@ For an account, campaign, or ad group level tracking template, please note the f
 
 -   [!INCLUDE[validationrules_trackingurltemplate_account_through_adgroup](../concepts/includes/validationrules-trackingurltemplate-account-through-adgroup.md)]
 
-We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](https://msdn.microsoft.com/library/bb671588.aspx).
+We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](~/customer-api/account-data-object.md).
 
 **Important:** Only super admin and standard users can update an account.
 
@@ -75,35 +75,35 @@ Custom parameters are helpful with sharing dynamic information across multiple U
 [!INCLUDE[validationrules_customparameters](../concepts/includes/validationrules-customparameters.md)]
 
 ## <a name="bulkservice"></a>URL Tracking with the Bulk Service
-The [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
+The [Bulk Service](~/bulk-api/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](https://msdn.microsoft.com/library/dn539651.aspx) and [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
 
-These are the [!INCLUDE[brand](../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx).
+These are the [!INCLUDE[brand](../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Bulk Service](~/bulk-api/bulk-service-reference.md).
 
--   [Campaign](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-record.aspx)
--   [Ad Group](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx)
--   [Ad Group Dynamic Search Ad Target](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-dynamic-search-ad-target-record.aspx) 
--   [Ad Group Product Partition](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-product-partition-record.aspx) 
--   [App Install Ad](https://msdn.microsoft.com/library/bing-ads-bulk-app-install-ad-record.aspx)
--   [Expanded Text Ad](https://msdn.microsoft.com/library/bing-ads-bulk-expanded-text-ad-record.aspx)
--   [Text Ad](https://msdn.microsoft.com/library/bing-ads-bulk-text-ad-record.aspx)
--   [Keyword](https://msdn.microsoft.com/library/bing-ads-bulk-keyword-record.aspx)
--   [Sitelink Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink-ad-extension-record.aspx)
--   [Sitelink2 Ad Extension](https://msdn.microsoft.com/library/bing-ads-bulk-sitelink2-ad-extension-record.aspx)
+-   [Campaign](~/bulk-api/campaign.md)
+-   [Ad Group](~/bulk-api/ad-group.md)
+-   [Ad Group Dynamic Search Ad Target](~/bulk-api/ad-group-dynamic-search-ad-target.md) 
+-   [Ad Group Product Partition](~/bulk-api/ad-group-product-partition.md) 
+-   [App Install Ad](~/bulk-api/app-install-ad.md)
+-   [Expanded Text Ad](~/bulk-api/expanded-text-ad.md)
+-   [Text Ad](~/bulk-api/text-ad.md)
+-   [Keyword](~/bulk-api/keyword.md)
+-   [Sitelink Ad Extension](~/bulk-api/sitelink-ad-extension.md)
+-   [Sitelink2 Ad Extension](~/bulk-api/sitelink2-ad-extension.md)
 
 ## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
-These are the [!INCLUDE[brand](../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx). You can create, read, update, and delete these entities.
--  [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx)  
--  [AppInstallAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-appinstallad.aspx)  
--  [BiddableAdGroupCriterion](https://msdn.microsoft.com/library/bing-ads-campaign-management-biddableadgroupcriterion.aspx)  
--  [DynamicSearchAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-dynamicsearchad.aspx)  
--  [ExpandedTextAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-expandedtextad.aspx)  
--  [Keyword](https://msdn.microsoft.com/library/bing-ads-campaign-management-keyword.aspx)  
--  [SiteLink](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelink.aspx)  
--  [Sitelink2AdExtension](https://msdn.microsoft.com/library/bing-ads-campaign-management-sitelink2adextension.aspx)  
--  [TextAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-textad.aspx)  
+These are the [!INCLUDE[brand](../concepts/includes/brand.md)] entities with properties for managing URLs that can be accessed using the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
+-  [AdGroup](~/campaign-api/adgroup-data-object.md)  
+-  [AppInstallAd](~/campaign-api/appinstallad-data-object.md)  
+-  [BiddableAdGroupCriterion](~/campaign-api/biddableadgroupcriterion-data-object.md)  
+-  [DynamicSearchAd](~/campaign-api/dynamicsearchad-data-object.md)  
+-  [ExpandedTextAd](~/campaign-api/expandedtextad-data-object.md)  
+-  [Keyword](~/campaign-api/keyword-data-object.md)  
+-  [SiteLink](~/campaign-api/sitelink-data-object.md)  
+-  [Sitelink2AdExtension](~/campaign-api/sitelink2adextension-data-object.md)  
+-  [TextAd](~/campaign-api/textad-data-object.md)  
 
 ## <a name="reportingservice"></a>URL Tracking with the Reporting Service
-The following reports can be submitted and downloaded with the [Reporting Service](https://msdn.microsoft.com/library/bb671732.aspx) to get performance data for Final URLs and Tracking Templates. 
+The following reports can be submitted and downloaded with the [Reporting Service](~/reporting-api/reporting-service-reference.md) to get performance data for Final URLs and Tracking Templates. 
 
 The *TrackingTemplate* and *CustomParameters* columns for upgraded URLs are available in the following reports.
 

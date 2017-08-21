@@ -26,5 +26,5 @@ The Bulk service defines the following value sets.
 
 ## See Also 
 [Bulk Service Reference](../bulk-api/bulk-service-reference.md)  
-[Downloading and Uploading Campaigns](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx)  
+[Downloading and Uploading Campaigns](~/concepts/bulk-download-and-upload.md)  
 

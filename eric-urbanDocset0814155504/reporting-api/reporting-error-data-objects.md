@@ -34,5 +34,5 @@ The following error objects may be returned within reporting fault objects, and 
 |[OperationError](../reporting-api/operationerror-data-object.md)|Defines an error object that contains the details of why the service operation failed.|
 
 ## See Also
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)
 

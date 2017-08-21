@@ -34,10 +34,10 @@ Before you can track conversions or target audiences using a remarketing list, y
 > [!NOTE]
 > For each of the operations described in this section, you must specify the customer identifier in the *CustomerId* header element. 
 
-1. First you should call the [GetUetTagsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getuettagsbyids.aspx) operation to check whether a tag has already been created. You can leave the *TagIds* element null or empty to request all UET tags available for the customer.
-2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](https://msdn.microsoft.com/library/bing-ads-campaign-management-adduettags.aspx) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](https://msdn.microsoft.com/library/bing-ads-campaign-management-uettag.aspx) within the response message. **Note:** Later as needed you can update the name and description of a [UetTag](https://msdn.microsoft.com/library/bing-ads-campaign-management-uettag.aspx) with the [UpdateUetTags](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateuettags.aspx) operation.
+1. First you should call the [GetUetTagsByIds](~/campaign-api/getuettagsbyids-service-operation.md) operation to check whether a tag has already been created. You can leave the *TagIds* element null or empty to request all UET tags available for the customer.
+2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](~/campaign-api/adduettags-service-operation.md) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](~/campaign-api/uettag-data-object.md) within the response message. **Note:** Later as needed you can update the name and description of a [UetTag](~/campaign-api/uettag-data-object.md) with the [UpdateUetTags](~/campaign-api/updateuettags-service-operation.md) operation.
 
-After you retreive the tracking script from the [AddUetTags](https://msdn.microsoft.com/library/bing-ads-campaign-management-adduettags.aspx) or [GetUetTagsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getuettagsbyids.aspx) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](http://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
+After you retreive the tracking script from the [AddUetTags](~/campaign-api/adduettags-service-operation.md) or [GetUetTagsByIds](~/campaign-api/getuettagsbyids-service-operation.md) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](http://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
 
 Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or [remarketing in paid search](#remarketing).
 
@@ -49,20 +49,20 @@ However, not all actions are created equal. You probably have a subset of action
 
 ### <a name="conversiongoals_campaign"></a>Conversion Goal Campaign Management APIs
 
-There are five types of conversion goals. The [ConversionGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-conversiongoal.aspx) is the base class from which all goals are derived. 
-* [AppInstallGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-appinstallgoal.aspx)
-* [DurationGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-durationgoal.aspx)
-* [EventGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-eventgoal.aspx)
-* [PagesViewedPerVisitGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-pagesviewedpervisitgoal.aspx)
-* [UrlGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-urlgoal.aspx)
+There are five types of conversion goals. The [ConversionGoal](~/campaign-api/conversiongoal-data-object.md) is the base class from which all goals are derived. 
+* [AppInstallGoal](~/campaign-api/appinstallgoal-data-object.md)
+* [DurationGoal](~/campaign-api/durationgoal-data-object.md)
+* [EventGoal](~/campaign-api/eventgoal-data-object.md)
+* [PagesViewedPerVisitGoal](~/campaign-api/pagesviewedpervisitgoal-data-object.md)
+* [UrlGoal](~/campaign-api/urlgoal-data-object.md)
 
 
 The following operations are added for managing conversion goals.
 
-* [AddConversionGoals](https://msdn.microsoft.com/library/bing-ads-campaign-management-addconversiongoals.aspx)
-* [GetConversionGoalsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getconversiongoalsbyids.aspx)
-* [GetConversionGoalsByTagIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getconversiongoalsbytagids.aspx)
-* [UpdateConversionGoals](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateconversiongoals.aspx)
+* [AddConversionGoals](~/campaign-api/addconversiongoals-service-operation.md)
+* [GetConversionGoalsByIds](~/campaign-api/getconversiongoalsbyids-service-operation.md)
+* [GetConversionGoalsByTagIds](~/campaign-api/getconversiongoalsbytagids-service-operation.md)
+* [UpdateConversionGoals](~/campaign-api/updateconversiongoals-service-operation.md)
 
 
 ## <a name="remarketing"></a>Remarketing APIs
@@ -75,16 +75,16 @@ After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bi
 
 ### <a name="remarketing_bulk"></a>Remarketing Bulk APIs
 With the Bulk service you can use the following record types to download and upload remarketing lists and associate them with an ad group:
-- [Remarketing List](https://msdn.microsoft.com/library/bing-ads-bulk-remarketing-list-record.aspx) 
-- [Ad Group Remarketing List Association](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-remarketing-list-association-record.aspx)  
-- [Ad Group Negative Remarketing List Association](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-negative-remarketing-list-association-record.aspx)  
+- [Remarketing List](~/bulk-api/remarketing-list.md) 
+- [Ad Group Remarketing List Association](~/bulk-api/ad-group-remarketing-list-association.md)  
+- [Ad Group Negative Remarketing List Association](~/bulk-api/ad-group-negative-remarketing-list-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx) record to determine the targeting setting that is applicable for all remarketing lists that are associated with this ad group. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](~/bulk-api/ad-group.md) record to determine the targeting setting that is applicable for all remarketing lists that are associated with this ad group. 
 
 ### <a name="remarketing_campaign"></a>Remarketing Campaign Management APIs
-If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](https://msdn.microsoft.com/library/bing-ads-campaign-management-remarketinglist.aspx), with the respective [AddAudiences](https://msdn.microsoft.com/library/bing-ads-campaign-management-addaudiences.aspx), [GetAudiencesByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getaudiencesbyids.aspx), [UpdateAudiences](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateaudiences.aspx), and [DeleteAudiences](https://msdn.microsoft.com/library/bing-ads-campaign-management-deleteaudiences.aspx) operations.
+If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](~/campaign-api/remarketinglist-data-object.md), with the respective [AddAudiences](~/campaign-api/addaudiences-service-operation.md), [GetAudiencesByIds](~/campaign-api/getaudiencesbyids-service-operation.md), [UpdateAudiences](~/campaign-api/updateaudiences-service-operation.md), and [DeleteAudiences](~/campaign-api/deleteaudiences-service-operation.md) operations.
 
-To add, get, update, or delete the ad group remarketing list association between your remarketing list and ad group (whether associations or exclusions), use the [AdGroupCriterion](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroupcriterion.aspx) object with the respective [AddAdGroupCriterions](https://msdn.microsoft.com/library/bing-ads-campaign-management-addadgroupcriterions.aspx), [GetAdGroupCriterionsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getadgroupcriterionsbyids.aspx), [UpdateAdGroupCriterions](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateadgroupcriterions.aspx), and [DeleteAdGroupCriterions](https://msdn.microsoft.com/library/bing-ads-campaign-management-deleteadgroupcriterions.aspx) operations. 
+To add, get, update, or delete the ad group remarketing list association between your remarketing list and ad group (whether associations or exclusions), use the [AdGroupCriterion](~/campaign-api/adgroupcriterion-data-object.md) object with the respective [AddAdGroupCriterions](~/campaign-api/addadgroupcriterions-service-operation.md), [GetAdGroupCriterionsByIds](~/campaign-api/getadgroupcriterionsbyids-service-operation.md), [UpdateAdGroupCriterions](~/campaign-api/updateadgroupcriterions-service-operation.md), and [DeleteAdGroupCriterions](~/campaign-api/deleteadgroupcriterions-service-operation.md) operations. 
 
 
 ## See Also

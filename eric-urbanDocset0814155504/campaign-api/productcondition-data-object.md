@@ -30,13 +30,13 @@ Defines a condition that determines whether a product is selected from a custome
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*Attribute*|The condition’s attribute value.<br /><br />An attribute’s value must exactly match the value specified in the customer’s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-api/productscope-data-object.md) and [ProductPartition](../campaign-api/productpartition-data-object.md) conditions, see [Bing Shopping Product Conditions](https://msdn.microsoft.com/library/bing-ads-campaign-management-bing-shopping-campaigns.aspx#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
+|*Attribute*|The condition’s attribute value.<br /><br />An attribute’s value must exactly match the value specified in the customer’s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-api/productscope-data-object.md) and [ProductPartition](../campaign-api/productpartition-data-object.md) conditions, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
 |*Operand*|The condition’s operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
 
 ## Requirements
 [!INCLUDE[reqcamp](../campaign-api/includes/reqcamp.md)]
 ## See Also
-[Bing Shopping Campaigns](https://msdn.microsoft.com/library/bing-ads-campaign-management-bing-shopping-campaigns.aspx)  
+[Bing Shopping Campaigns](~/concepts/product-ads.md)  
 [ProductScope](../campaign-api/productscope-data-object.md)  
 [ProductPartition](../campaign-api/productpartition-data-object.md)  
 

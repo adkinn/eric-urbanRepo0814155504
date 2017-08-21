@@ -39,7 +39,7 @@ Defines the criteria to use to filter the DSA auto target performance report dat
 |*BidStrategyTypes*|The report will include data for only the specified bid strategy types.|[BidStrategyTypeReportFilter](../reporting-api/bidstrategytypereportfilter-value-set.md)|Optional|
 |*CampaignStatus*|The report will include data for campaigns that have the specified status value. You can specify one or more status values.|[CampaignStatusReportFilter](../reporting-api/campaignstatusreportfilter-value-set.md)|Optional|
 |*DynamicAdTargetStatus*|The report will include data for only the dynamic ad targets that have the specified status.|[DynamicAdTargetStatusReportFilter](../reporting-api/dynamicadtargetstatusreportfilter-value-set.md)|Optional|
-|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).|*string* array|Optional|
+|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/concepts/ad-languages.md).|*string* array|Optional|
 
 
 ## Remarks

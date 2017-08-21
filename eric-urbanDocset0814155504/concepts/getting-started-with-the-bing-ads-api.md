@@ -32,7 +32,7 @@ Many [!INCLUDE[brand](../concepts/includes/brand.md)] service operations require
 ### <a name="accountid"></a>Account Identifier
 The *account identifier* is a numeric identifier that identifies an account.
 
-Many of the campaign management operations require that you specify the account identifier in the body of the request message. For example, the [GetCampaignsByAccountId](https://msdn.microsoft.com/library/bing-ads-campaign-management-getcampaignsbyaccountid.aspx) operation returns all of the campaigns for the account that you specify in the body of the request message.
+Many of the campaign management operations require that you specify the account identifier in the body of the request message. For example, the [GetCampaignsByAccountId](~/campaign-api/getcampaignsbyaccountid-service-operation.md) operation returns all of the campaigns for the account that you specify in the body of the request message.
 
 Do not confuse the *account identifier* with the *account number*. The account number is the system generated account number that is used to identify the account in the [!INCLUDE[brand](../concepts/includes/brand.md)] web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters.
 The API uses only the account identifier, never the account number.

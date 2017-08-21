@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines a selection of language values.
 
 > [!NOTE]
-> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).
+> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](~/concepts/ad-languages.md).
 
 ## Syntax
 

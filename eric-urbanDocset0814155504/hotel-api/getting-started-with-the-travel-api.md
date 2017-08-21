@@ -21,16 +21,16 @@ Unlike the other Bing Ads APIs, the Travel API does not use a developer token. T
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Travel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx). 
+The Travel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](~/concepts/authentication-with-oauth.md). 
 
-You *can* use the [Bing Ads SDK](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-csharp-visual-basic-with-web-services(v=msads.100).aspx#oauth) | [Java](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-java-with-web-services(v=msads.100).aspx#oauth) | [Python](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-python-with-web-services(v=msads.100).aspx#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-csharp-visual-basic-with-web-services(v=msads.100).aspx#oauth) | [Java](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-java-with-web-services(v=msads.100).aspx#oauth) | [Python](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-python-with-web-services(v=msads.100).aspx#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-api/oauth-csharp-example.md) for an example OAuth implementation.
 
 > [!NOTE]
 > You cannot use the Bing Ads SDK in the SI environment to get the access token. For SI, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
 >
->For the SI environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx), substitute them with the following SI endpoints.
+>For the SI environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](~/concepts/authentication-with-oauth.md), substitute them with the following SI endpoints.
 >
 > - si.bingads.microsoft.com&mdash;Endpoint for Bing Ads
 > - account.microsoft-int.com&mdash;Endpoint for getting an SI Microsoft account 

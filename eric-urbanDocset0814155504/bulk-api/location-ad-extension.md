@@ -47,7 +47,7 @@ For a *Location Ad Extension* record, the following attribute fields are availab
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Location Ad Extension* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *LocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Location Ad Extension* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *LocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new Location Ad Extension to the account's shared library. 
 
@@ -57,7 +57,7 @@ Format Version,,,,,,,,,,,,,5,,,,,,,,,,,
 Location Ad Extension,Active,-15,0,,,ClientIdGoesHere,,,12/31/2018,Contoso Shoes,206-555-0100,,,(Monday[09:00-21:00]),FALSE,1234 Washington Place,Suite 1210,98608,Woodinville,,WA,0,0,US
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -222,7 +222,7 @@ The name can contain a maximum of 80 characters.
 ### <a name="countrycode"></a>Country Code
 The country where the street address is located. 
 
-The country code must contain a 2 character country code. For a list of possible country codes that you can specify, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).
+The country code must contain a 2 character country code. For a list of possible country codes that you can specify, see [Ad Languages](~/concepts/ad-languages.md).
 
 **Add:** Required  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    
@@ -236,7 +236,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](https://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/concepts/bing-ads-editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -245,7 +245,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](https://msdn.microsoft.com/library/bing-ads-campaign-management-adextensioneditorialstatus.aspx).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-api/adextensioneditorialstatus-value-set.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -272,7 +272,7 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 ### <a name="geocodestatus"></a>Geo Code Status
 A status value that indicates whether the business’ latitude and longitude coordinates have been determined.
 
-If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](https://msdn.microsoft.com/library/bing-ads-campaign-management-businessgeocodestatus.aspx).
+If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](~/campaign-api/businessgeocodestatus-value-set.md).
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -281,7 +281,7 @@ If you provide the coordinates, the status will be set to *Complete*; otherwise,
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Location Ad Extension](../bulk-api/campaign-location-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Location Ad Extension](../bulk-api/campaign-location-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -314,7 +314,7 @@ If you specify the known coordinates, the service does not confirm whether the s
 **Delete:** Read-only  
 
 ### <a name="mapicon"></a>Map Icon
-The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](https://msdn.microsoft.com/library/bing-ads-campaign-management-addmedia.aspx) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](https://msdn.microsoft.com/library/bing-ads-campaign-management-locationadextension.aspx#remarks).
+The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](~/campaign-api/addmedia-service-operation.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](~/campaign-api/locationadextension-data-object.md#remarks).
 
 **Add:** Optional. If you do not specify a map icon when you add the location ad extension, the icon will default to the predefined Generic predefined icon identifier (Production=18000000000115318; Sandbox=97000000000006420).    
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    

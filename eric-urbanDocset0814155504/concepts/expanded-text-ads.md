@@ -13,19 +13,19 @@ caps.latest.revision: 11
 The expanded text ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
 
 > [!NOTE]
-> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
+> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/concepts/url-tracking-with-upgraded-urls.md).
 
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
 The following Bulk record is added for managing expanded text ads.
-* [Expanded Text Ad](https://msdn.microsoft.com/library/bing-ads-bulk-expanded-text-ad-record.aspx)
+* [Expanded Text Ad](~/bulk-api/expanded-text-ad.md)
 
 ## <a name="campaign"></a>Campaign Management API for Expanded Text Ads
-The [ExpandedTextAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-expandedtextad.aspx) object is derived from the [Ad](https://msdn.microsoft.com/library/bing-ads-campaign-management-ad.aspx) base class and can be managed with any of the existing ad operations e.g. [AddAds](https://msdn.microsoft.com/library/bing-ads-campaign-management-addads.aspx), [DeleteAds](https://msdn.microsoft.com/library/bing-ads-campaign-management-deleteads.aspx), and [UpdateAds](https://msdn.microsoft.com/library/bing-ads-campaign-management-updateads.aspx). 
+The [ExpandedTextAd](~/campaign-api/expandedtextad-data-object.md) object is derived from the [Ad](~/campaign-api/ad-data-object.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](~/campaign-api/addads-service-operation.md), [DeleteAds](~/campaign-api/deleteads-service-operation.md), and [UpdateAds](~/campaign-api/updateads-service-operation.md). 
 
-You can include *ExpandedText* as an [AdType](https://msdn.microsoft.com/library/bing-ads-campaign-management-adtype.aspx) in the *AdTypes* request element of the following operations to retrieve expanded text ads.
-* [GetAdsByAdGroupId](https://msdn.microsoft.com/library/dn277534.aspx)
-* [GetAdsByEditorialStatus](https://msdn.microsoft.com/library/dn277538.aspx)
-* [GetAdsByIds](https://msdn.microsoft.com/library/dn236296.aspx)
+You can include *ExpandedText* as an [AdType](~/campaign-api/adtype-value-set.md) in the *AdTypes* request element of the following operations to retrieve expanded text ads.
+* [GetAdsByAdGroupId](~/campaign-api/getadsbyadgroupid-service-operation.md)
+* [GetAdsByEditorialStatus](~/campaign-api/getadsbyeditorialstatus-service-operation.md)
+* [GetAdsByIds](~/campaign-api/getadsbyids-service-operation.md)
 
 ## <a name="countdown"></a>Countdowns for Expanded Text Ads
 Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad. For example, you can use a countdown to draw attention to a sale that is ending or to promote an upcoming event.

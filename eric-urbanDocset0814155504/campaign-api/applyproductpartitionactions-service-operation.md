@@ -24,7 +24,7 @@ The *ApplyProductPartitionActionsRequest* object defines the elements of the req
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*CriterionActions*|A list of up to 5,000 *AdGroupCriterionAction* objects that each contain an *Action* element and either a [BiddableAdGroupCriterion](../campaign-api/biddableadgroupcriterion-data-object.md) or [NegativeAdGroupCriterion](../campaign-api/negativeadgroupcriterion-data-object.md). <br/><br/>All of the ad group criterion actions must be for the same ad group. For more information including validation rules, please see [Create a Bing Shopping Campaign with the Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-bing-shopping-campaigns.aspx#bingshopping_campaignservice).|[AdGroupCriterionAction](../campaign-api/adgroupcriterionaction-data-object.md) array|
+|*CriterionActions*|A list of up to 5,000 *AdGroupCriterionAction* objects that each contain an *Action* element and either a [BiddableAdGroupCriterion](../campaign-api/biddableadgroupcriterion-data-object.md) or [NegativeAdGroupCriterion](../campaign-api/negativeadgroupcriterion-data-object.md). <br/><br/>All of the ad group criterion actions must be for the same ad group. For more information including validation rules, please see [Create a Bing Shopping Campaign with the Campaign Management Service](~/concepts/product-ads.md#bingshopping_campaignservice).|[AdGroupCriterionAction](../campaign-api/adgroupcriterionaction-data-object.md) array|
 
 ### Request Headers
 [!INCLUDE[header_intro](../campaign-api/includes/header-intro.md)]

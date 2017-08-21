@@ -39,7 +39,7 @@ For an *Campaign Product Scope* record, the following attribute fields are avail
 - [Product Value 7](#productvalue7)
 - [Status](#status)
 
-You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new campaign product scope given a valid campaign ID (*Parent Id*). 
 
@@ -49,7 +49,7 @@ Format Version,,,,,,,,,,5,,,,,,,,,,,,,,,,,,
 Campaign Product Scope,Active,,-113,,,,ClientIdGoesHere,,,,Condition,New,CustomLabel0,MerchantDefinedCustomLabel,,,,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignProductScope* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignProductScope* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -148,7 +148,7 @@ The system generated identifier of the campaign that contains the product scope.
 
 This bulk field maps to the *Id* field of the [Campaign](../bulk-api/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new product scopes to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new product scopes to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -188,7 +188,7 @@ The condition’s attribute value.
 
 An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
 
-For available condition and value settings, see [Bing Shopping Product Conditions](https://msdn.microsoft.com/library/bing-ads-campaign-management-bing-shopping-campaigns.aspx#conditions).
+For available condition and value settings, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).
 
 **Add:** Required  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product scope and add a new one.    

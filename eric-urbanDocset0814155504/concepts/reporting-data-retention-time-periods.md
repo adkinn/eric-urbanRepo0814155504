@@ -43,7 +43,7 @@ If the data aggregation is not available for a given report, it will be noted as
 |[Ad Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-adperformancereportrequest.aspx)|Ad|6|36|36|36|36|36|
 |[Ad Dynamic Text Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-addynamictexxtperformancereportrequest.aspx)|Ad Dynamic Text|6|36|36|36|36|36|
 |[Ad Group Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-adgroupperformancereportrequest.aspx)|Ad Group|6|36|36|36|36|36|
-|[Audience Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-audienceperformancereportrequest.aspx)|Audiences|6|36|36|36|36|36|
+|[Audience Performance Report](~/reporting-api/audienceperformancereportrequest-data-object.md)|Audiences|6|36|36|36|36|36|
 |[Campaign Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-campaignperformancereportrequest.aspx)|Campaign|6|36|36|36|36|36|
 |[Destination Url Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-destinationurlperformancereportrequest.aspx)|Destination URL|6|36|36|36|36|36|
 |[Keyword Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-keywordperformancereportrequest.aspx)|Keyword|6|36|36|36|36|36|
@@ -64,9 +64,9 @@ If the data aggregation is not available for a given report, it will be noted as
 
 |API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
-|[Product Dimension Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-productdimensionperformancereportrequest.aspx)|Product Dimension|6|36|36|36|36|36|
-|[Product Partition Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-productpartitionperformancereportrequest.aspx)|Product Partition|6|36|36|36|36|36|
-|[Product Partition Unit Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-productpartitionunitperformancereportrequest.aspx)|Product Partition Unit|6|36|36|36|36|36|
+|[Product Dimension Performance Report](~/reporting-api/productdimensionperformancereportrequest-data-object.md)|Product Dimension|6|36|36|36|36|36|
+|[Product Partition Performance Report](~/reporting-api/productpartitionperformancereportrequest-data-object.md)|Product Partition|6|36|36|36|36|36|
+|[Product Partition Unit Performance Report](~/reporting-api/productpartitionunitperformancereportrequest-data-object.md)|Product Partition Unit|6|36|36|36|36|36|
 |[Product Search Query Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-searchqueryperformancereportrequest.aspx)|Product Search Term|1|36|36|36|36|36|
 
 
@@ -74,8 +74,8 @@ If the data aggregation is not available for a given report, it will be noted as
 
 |API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
-|[DSA Auto Target Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-dsaautotargetperformancereportrequest.aspx)|(Coming soon)|6|36|36|36|36|36|
-|[DSA Category Performance Report](https://msdn.microsoft.com/library/bing-ads-reporting-dsacategoryperformancereportrequest.aspx)|(Coming soon)|6|36|36|36|36|36|
+|[DSA Auto Target Performance Report](~/reporting-api/dsaautotargetperformancereportrequest-data-object.md)|(Coming soon)|6|36|36|36|36|36|
+|[DSA Category Performance Report](~/reporting-api/dsacategoryperformancereportrequest-data-object.md)|(Coming soon)|6|36|36|36|36|36|
 |[DSA Search Query Performance Report](http://msdn.microsoft.com/library/bing-ads-reporting-dsasearchqueryperformancereportrequest.aspx)|(Coming soon)|1|36|36|36|36|36|
 
 ## <a name="changehistory"></a>Change History

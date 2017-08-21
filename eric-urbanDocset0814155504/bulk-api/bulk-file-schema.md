@@ -15,7 +15,7 @@ manager: "ehansen"
 # Bulk File Schema
 The bulk schema defines the contents of the file for download or upload with the [!INCLUDE[brand](../bulk-api/includes/brand.md)] Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value set.
 
-For more information about using the Bulk service to manage your campaigns, see [Downloading and Uploading Campaigns](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx). For more information about understanding the data file contents, see the sections below.
+For more information about using the Bulk service to manage your campaigns, see [Downloading and Uploading Campaigns](~/concepts/bulk-download-and-upload.md). For more information about understanding the data file contents, see the sections below.
 
 -   [File Schema](#fileschema)  
 -   [Format Versions](#formatversions)  
@@ -220,7 +220,7 @@ The bulk download file or the bulk upload results file may contain records where
 > [!NOTE]
 > The upload results file may include multiple error records corresponding to the same uploaded record.
 
-Errors related to new features such as Final URLs will include additional details about where the error occurred in the *Field Path* column. Each field path name corresponds to an element of one of the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) data objects. For example if the *Tracking Template* field of a [Campaign](../bulk-api/campaign.md) record does not begin with http:// or https://, {lpurl}, or {unescapedlpurl}, the value of this *Field Path* value is TrackingTemplate. The  *TrackingUrlTemplate* is an element of the [Campaign](https://msdn.microsoft.com/library/bing-ads-campaign-management-campaign.aspx) data object available with the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx).
+Errors related to new features such as Final URLs will include additional details about where the error occurred in the *Field Path* column. Each field path name corresponds to an element of one of the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) data objects. For example if the *Tracking Template* field of a [Campaign](../bulk-api/campaign.md) record does not begin with http:// or https://, {lpurl}, or {unescapedlpurl}, the value of this *Field Path* value is TrackingTemplate. The  *TrackingUrlTemplate* is an element of the [Campaign](~/campaign-api/campaign-data-object.md) data object available with the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md).
 
 |Type|Tracking Template|Error|Error Number|Field Path|
 |--------|---------------------|---------|----------------|--------------|
@@ -237,5 +237,5 @@ For example if you attempt to set the *Promotion* for *Product Ad* to www.bing.c
 |Type|Promotion|Editorial Location|Editorial Term|Editorial Reason Code|Error|Error Number|
 |--------|-------------|----------------------|------------------|-------------------------|---------|----------------|
 |Product Ad Error|www.bing.com|AdDescription|bing|17|CampaignServiceEditorialValidationError|1042|
-For more information, see [Bing Ads Operation Error Codes](https://msdn.microsoft.com/library/bing-ads-operation-error-codes.aspx) and [Bing Ads Editorial Failure Reason Codes](https://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx).
+For more information, see [Bing Ads Operation Error Codes](~/concepts/bing-ads-operation-error-codes.md) and [Bing Ads Editorial Failure Reason Codes](~/concepts/bing-ads-editorial-failure-reason-codes.md).
 

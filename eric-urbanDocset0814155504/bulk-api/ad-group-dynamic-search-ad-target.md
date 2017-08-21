@@ -39,7 +39,7 @@ For an *Ad Group Dynamic Search Ad Target* record, the following attribute field
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Ad Group Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroupDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Ad Group Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroupDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new ad group dynamic search ad target given a valid ad group ID (*Parent Id*). 
 
@@ -49,7 +49,7 @@ Format Version,,,,,,,,,5,,,,,,,,
 Ad Group Dynamic Search Ad Target,Paused,,-1113,,,ClientIdGoesHere,,0.5,Bulk Ad Group Dynamic Search Ad Target,,{_promoCode}=PROMO1; {_season}=summer,Url,Category,PageContent,contoso.com,US/CA/SFO,flowers
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -271,7 +271,7 @@ The system generated identifier of the ad group that contains the dynamic ad tar
 
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are adding new dynamic ad targets to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are adding new dynamic ad targets to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

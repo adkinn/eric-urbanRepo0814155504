@@ -15,7 +15,7 @@ manager: "ehansen"
 # ClientLinkStatus Value Set
 Defines the possible status values of a [ClientLink](../customer-api/clientlink-data-object.md).
 
-For more information about the client link lifecycle, see [Link to Client Accounts](https://msdn.microsoft.com/library/bing-ads-agency-management-model-guide.aspx#clientlink).
+For more information about the client link lifecycle, see [Link to Client Accounts](~/concepts/management-model-for-agencies.md#clientlink).
 
 ## Syntax
 

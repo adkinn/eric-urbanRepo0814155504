@@ -32,7 +32,7 @@ Defines an object that contains the migration type and status for an account.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*MigrationType*|The migration type.|*string*|
-|*StartTimeInUtc*|The date and time when the migration began. The value is in Coordinated Universal Time (UTC).<br/><br/>**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://msdn.microsoft.com/library/ms256220.aspx).|*dateTime*|
+|*StartTimeInUtc*|The date and time when the migration began. The value is in Coordinated Universal Time (UTC).<br/><br/>**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://docs.microsoft.com/en-us/dotnet/framework/data/index).|*dateTime*|
 |*Status*|The migration status.|[MigrationStatus](../campaign-api/migrationstatus-value-set.md)|
 
 ## Requirements

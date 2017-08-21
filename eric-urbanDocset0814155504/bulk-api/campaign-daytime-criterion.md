@@ -37,7 +37,7 @@ For a *Campaign DayTime Criterion* record, the following attribute fields are av
 - [To Hour](#tohour)
 - [To Minute](#tominute)
 
-You can download all fields of the *Campaign DayTime Criterion* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Campaign DayTime Criterion* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new campaign day and time criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -47,7 +47,7 @@ Format Version,,,,,,,,,,5,,,,,,,,
 Campaign DayTime Criterion,Active,,-111,,,ClientIdGoesHere,,Monday,20,,,,0,0,4,0,,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignDayTimeCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignDayTimeCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -178,7 +178,7 @@ The identifier of the campaign where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Campaign](../bulk-api/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

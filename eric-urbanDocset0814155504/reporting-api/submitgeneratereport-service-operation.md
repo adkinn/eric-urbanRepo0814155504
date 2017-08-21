@@ -1315,5 +1315,5 @@ The following example shows the complete response envelope.
 
 ## See Also
 [PollGenerateReport](../reporting-api/pollgeneratereport-service-operation.md)  
-[Request and Download a Report](https://msdn.microsoft.com/library/bing-ads-reporting-request-and-download-a-report.aspx)  
+[Request and Download a Report](~/concepts/request-and-download-a-report.md)  
 

@@ -20,30 +20,30 @@ The following currency values are supported for [!INCLUDE[brand](../concepts/inc
  
 ## <a name="bidandbudget"></a>Bid and Budget Currencies
 
-You must first set up an [AdvertiserAccount](https://msdn.microsoft.com/library/bing-ads-customer-management-advertiseraccount.aspx) with one of the supported currency values listed below.
+You must first set up an [AdvertiserAccount](~/customer-api/advertiseraccount-data-object.md) with one of the supported currency values listed below.
 
 > [!NOTE]
 > The possible range of values for bid and budget are subject to change.
 
-Using the [Campaign Management](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Amount* element of a [Budget](https://msdn.microsoft.com/library/bing-ads-campaign-management-budget.aspx) object
-- The *DailyBudget* element of a [Campaign](https://msdn.microsoft.com/library/bing-ads-campaign-management-campaign.aspx) object
-- The *SearchBid* and *ContentMatchBid* element of an [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx) object
-- The *Bid* element of a [Keyword](https://msdn.microsoft.com/library/bing-ads-campaign-management-keyword.aspx) object
-- The *CriterionBid* element of a [BiddableAdGroupCriterion](https://msdn.microsoft.com/library/bing-ads-campaign-management-biddableadgroupcriterion.aspx) object
+Using the [Campaign Management](~/campaign-api/campaign-management-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
+- The *Amount* element of a [Budget](~/campaign-api/budget-data-object.md) object
+- The *DailyBudget* element of a [Campaign](~/campaign-api/campaign-data-object.md) object
+- The *SearchBid* and *ContentMatchBid* element of an [AdGroup](~/campaign-api/adgroup-data-object.md) object
+- The *Bid* element of a [Keyword](~/campaign-api/keyword-data-object.md) object
+- The *CriterionBid* element of a [BiddableAdGroupCriterion](~/campaign-api/biddableadgroupcriterion-data-object.md) object
 
-Using the [Bulk](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Budget* field of a [Budget](https://msdn.microsoft.com/library/bing-ads-bulk-budget-record.aspx) record
-- The *Budget* field of a [Campaign](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-record.aspx) record
-- The *Search Bid* and *Content Bid* field of an [AdGroup](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-record.aspx) record
-- The *Bid* field of a [Keyword](https://msdn.microsoft.com/library/bing-ads-bulk-keyword-record.aspx) record
-- The *Bid* field of an [Ad Group Product Partition](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-record.aspx) record
+Using the [Bulk](~/bulk-api/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
+- The *Budget* field of a [Budget](~/bulk-api/budget.md) record
+- The *Budget* field of a [Campaign](~/bulk-api/campaign.md) record
+- The *Search Bid* and *Content Bid* field of an [AdGroup](~/bulk-api/ad-group.md) record
+- The *Bid* field of a [Keyword](~/bulk-api/keyword.md) record
+- The *Bid* field of an [Ad Group Product Partition](~/bulk-api/campaign.md) record
 
-With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](https://msdn.microsoft.com/library/bing-ads-ad-insight-service-reference.aspx) service.
+With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](~/adinsight-api/ad-insight-service-reference.md) service.
 
-- The *Currency* element of the [BidLandscapePoint](https://msdn.microsoft.com/library/bing-ads-ad-insight-bidlandscapepoint.aspx) object is available in the response from the [GetBidLandscapeByAdGroupIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getbidlandscapebyadgroupids.aspx) and [GetBidLandscapeByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getbidlandscapebykeywordids.aspx) operations.
-- The *Currency* element of the [EstimatedBidAndTraffic](https://msdn.microsoft.com/library/bing-ads-ad-insight-estimatedbidandtraffic.aspx) object is available in the response from the [GetEstimatedBidByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywordids.aspx) and [GetEstimatedBidByKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywords.aspx) operations.
-- The *Currency* element of the [EstimatedPositionAndTraffic](https://msdn.microsoft.com/library/bing-ads-ad-insight-estimatedpositionandtraffic.aspx) object is available in the response from the [GetEstimatedPositionByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedpositionbykeywordids.aspx) and [GetEstimatedPositionByKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedpositionbykeywords.aspx) operations.
+- The *Currency* element of the [BidLandscapePoint](~/adinsight-api/bidlandscapepoint-data-object.md) object is available in the response from the [GetBidLandscapeByAdGroupIds](~/adinsight-api/getbidlandscapebyadgroupids-service-operation.md) and [GetBidLandscapeByKeywordIds](~/adinsight-api/getbidlandscapebykeywordids-service-operation.md) operations.
+- The *Currency* element of the [EstimatedBidAndTraffic](~/adinsight-api/estimatedbidandtraffic-data-object.md) object is available in the response from the [GetEstimatedBidByKeywordIds](~/adinsight-api/getestimatedbidbykeywordids-service-operation.md) and [GetEstimatedBidByKeywords](~/adinsight-api/getestimatedbidbykeywords-service-operation.md) operations.
+- The *Currency* element of the [EstimatedPositionAndTraffic](~/adinsight-api/estimatedpositionandtraffic-data-object.md) object is available in the response from the [GetEstimatedPositionByKeywordIds](~/adinsight-api/getestimatedpositionbykeywordids-service-operation.md) and [GetEstimatedPositionByKeywords](~/adinsight-api/getestimatedpositionbykeywords-service-operation.md) operations.
 
 
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
@@ -77,7 +77,7 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 
 ## <a name="conversiongoalrevenue"></a>Conversion Goal Revenue Currencies
 
-The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](https://msdn.microsoft.com/library/bing-ads-campaign-management-conversiongoalrevenue.aspx) object.
+The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](~/campaign-api/conversiongoalrevenue-data-object.md) object.
 
 |Currency Code|Currency Name|
 |------------------|---------------|

@@ -33,7 +33,7 @@ The location criterion that you can include when requesting keyword ideas or tra
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*LocationId*|The Bing Ads identifier of the location that you want to target.<br/><br/>You can get keyword ideas and traffic estimates for country, state, metro area, and city locations. Postal code location identifiers are not supported for keyword ideas and traffic estimate requests.<br/><br/>Currently this feature is available in the United States, United Kingdom, Canada, Australia, France, and Germany. To get a list of geographical location identifiers use the Campaign Management service i.e., the [GetGeoLocationsFileUrl](https://msdn.microsoft.com/library/bing-ads-campaign-management-getgeolocationsfileurl.aspx) service operation.|*long*|
+|*LocationId*|The Bing Ads identifier of the location that you want to target.<br/><br/>You can get keyword ideas and traffic estimates for country, state, metro area, and city locations. Postal code location identifiers are not supported for keyword ideas and traffic estimate requests.<br/><br/>Currently this feature is available in the United States, United Kingdom, Canada, Australia, France, and Germany. To get a list of geographical location identifiers use the Campaign Management service i.e., the [GetGeoLocationsFileUrl](~/campaign-api/getgeolocationsfileurl-service-operation.md) service operation.|*long*|
 
 ## Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]

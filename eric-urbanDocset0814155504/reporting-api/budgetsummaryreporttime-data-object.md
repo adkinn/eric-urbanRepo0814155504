@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines the date range values of a budget summary report request.
 
 > [!NOTE]
-> The *CustomDateRangeStart* and *CustomDateRangeEnd* elements versus the *PredefinedTime* element are mutually exclusive. For information about how the time zone of the campaign affects the date range that you specify, see [Time Zones in Reporting](https://msdn.microsoft.com/library/bing-ads-time-zones.aspx).
+> The *CustomDateRangeStart* and *CustomDateRangeEnd* elements versus the *PredefinedTime* element are mutually exclusive. For information about how the time zone of the campaign affects the date range that you specify, see [Time Zones in Reporting](~/concepts/time-zones.md).
 
 ## Syntax
 

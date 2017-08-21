@@ -43,5 +43,5 @@ Defines an error object that identifies the item within the batch of items in th
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]
 ## See Also
 [ApiFaultDetail](../adinsight-api/apifaultdetail-data-object.md)  
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)  
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)  
 

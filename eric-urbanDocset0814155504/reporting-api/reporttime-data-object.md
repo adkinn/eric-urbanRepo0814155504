@@ -40,7 +40,7 @@ The *PredefinedTime* element and the custom date range elements are mutually exc
 
 For information about how the time zone of the campaign affects the date range that you specify, see [Time Zones in Reporting](http://go.microsoft.com/fwlink/?LinkId=691015).
 
-For information about how long reporting data is available, see [Reporting Data Retention Time Periods](https://msdn.microsoft.com/library/bing-ads-report-data-retention.aspx).
+For information about how long reporting data is available, see [Reporting Data Retention Time Periods](~/concepts/reporting-data-retention-time-periods.md).
 
 ## Requirements
 [!INCLUDE[reqrep](../reporting-api/includes/reqrep.md)]

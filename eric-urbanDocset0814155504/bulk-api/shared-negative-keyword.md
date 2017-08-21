@@ -26,7 +26,7 @@ For an *Shared Negative Keyword* record, the following attribute fields are avai
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Shared Negative Keyword* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *SharedNegativeKeywords* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Shared Negative Keyword* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *SharedNegativeKeywords* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new negative keyword to a negative keyword list given a valid negative keyword list ID (*Parent Id*). 
 
@@ -36,7 +36,7 @@ Format Version,,,,,,,,,,5
 Shared Negative Keyword,Active,,-19,,,ClientIdGoesHere,,shoes,Exact,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSharedNegativeKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSharedNegativeKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -125,7 +125,7 @@ The system generated identifier of the negative keyword list that contains the n
 
 This bulk field maps to the *Id* field of the [Negative Keyword List](../bulk-api/negative-keyword-list.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](../bulk-api/negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](../bulk-api/negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 

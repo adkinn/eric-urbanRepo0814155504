@@ -82,18 +82,18 @@ Ad Insight service operations differ from production, and limitations are descri
 
 |Service Operation|Sandbox Limitations|
 |---------------------|-----------------------|
-|[GetBidLandscapeByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getbidlandscapebykeywordids.aspx)|Not supported. You can call the operation with existing keyword identifiers, but no data is returned.|
-|[GetEstimatedBidByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywordids.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedBidByKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywords.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedPositionByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedpositionbykeywordids.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetEstimatedPositionByKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedpositionbykeywords.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetHistoricalKeywordPerformance](https://msdn.microsoft.com/library/bing-ads-ad-insight-gethistoricalkeywordperformance.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetHistoricalSearchCount](https://msdn.microsoft.com/library/bing-ads-ad-insight-gethistoricalsearchcount.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is June 10, 2013, the end month should be May 2013.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetKeywordCategories](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordcategories.aspx)|There should be no difference in sandbox versus production.|
-|[GetKeywordDemographics](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeyworddemographics.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetKeywordLocations](https://msdn.microsoft.com/library/bing-ads-ad-insight-getkeywordlocations.aspx)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[SuggestKeywordsForUrl](https://msdn.microsoft.com/library/bing-ads-ad-insight-suggestkeywordsforurl.aspx)|There should be no difference in sandbox versus production.|
-|[SuggestKeywordsFromExistingKeywords](https://msdn.microsoft.com/library/bing-ads-ad-insight-suggestkeywordsfromexistingkeywords.aspx)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetBidLandscapeByKeywordIds](~/adinsight-api/getbidlandscapebykeywordids-service-operation.md)|Not supported. You can call the operation with existing keyword identifiers, but no data is returned.|
+|[GetEstimatedBidByKeywordIds](~/adinsight-api/getestimatedbidbykeywordids-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetEstimatedBidByKeywords](~/adinsight-api/getestimatedbidbykeywords-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetEstimatedPositionByKeywordIds](~/adinsight-api/getestimatedpositionbykeywordids-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetEstimatedPositionByKeywords](~/adinsight-api/getestimatedpositionbykeywords-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetHistoricalKeywordPerformance](~/adinsight-api/gethistoricalkeywordperformance-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetHistoricalSearchCount](~/adinsight-api/gethistoricalsearchcount-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is June 10, 2013, the end month should be May 2013.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordCategories](~/adinsight-api/getkeywordcategories-service-operation.md)|There should be no difference in sandbox versus production.|
+|[GetKeywordDemographics](~/adinsight-api/getkeyworddemographics-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordLocations](~/adinsight-api/getkeywordlocations-service-operation.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[SuggestKeywordsForUrl](~/adinsight-api/suggestkeywordsforurl-service-operation.md)|There should be no difference in sandbox versus production.|
+|[SuggestKeywordsFromExistingKeywords](~/adinsight-api/suggestkeywordsfromexistingkeywords-service-operation.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
 ## <a name="bulk"></a>Bulk Service
 The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
@@ -107,7 +107,7 @@ The file size limit for upload in production is 100MB or 2.5 million rows. For s
 Sandbox supports limited editorial reviews and appeals.
 
 > [!NOTE]
-> Sandbox does not support testing of editorial rejections reason operations, for example [GetEditorialReasonsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-geteditorialreasonsbyids.aspx).
+> Sandbox does not support testing of editorial rejections reason operations, for example [GetEditorialReasonsByIds](~/campaign-api/geteditorialreasonsbyids-service-operation.md).
 
 #### Magic Terms
 If you know of editorial terms that will fail editorial review, you can use them. Otherwise, to test your application’s editorial logic, use the following format to construct a *magic* term that determines, by country, whether editorial will approve or reject the ad or keyword, or put it in a pending state. These magic terms are supported in sandbox only.
@@ -165,22 +165,22 @@ Product ads are supported in sandbox in the United States. To be auto-approved y
 The Customer Billing service is not supported in sandbox.
 
 ## <a name="customer"></a>Customer Management Service
-Most customer management service operations are supported in sandbox. Unsupported features include [AddClientLinks](https://msdn.microsoft.com/library/bing-ads-customer-management-addclientlinks.aspx) and [UpdateClientLinks](https://msdn.microsoft.com/library/bing-ads-customer-management-updateclientlinks.aspx).
+Most customer management service operations are supported in sandbox. Unsupported features include [AddClientLinks](~/customer-api/addclientlinks-service-operation.md) and [UpdateClientLinks](~/customer-api/updateclientlinks-service-operation.md).
 
 ## <a name="reporting"></a>Reporting Service
 When you create a keyword, test performance data should be generated within a few hours. The data is provided to test generating, retrieving, and parsing reports in the sandbox. For a given keyword identifier, the test data is not updated over time. The data will show example performance for one month prior to the creation of your keyword by design. You should not use the test data to infer or expect similar performance for your keywords in production. 
 
 The following reports can return performance data in sandbox.
 
--   [AccountPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-accountperformancereportrequest.aspx)
--   [AdDynamicTextPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-addynamictextperformancereportrequest.aspx)
--   [AdGroupPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adgroupperformancereportrequest.aspx)
--   [AdPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adperformancereportrequest.aspx)
--   [CallDetailReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-calldetailreportrequest.aspx)
--   [CampaignPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-campaignperformancereportrequest.aspx)
--   [DestinationUrlPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-destinationurlperformancereportrequest.aspx)
+-   [AccountPerformanceReportRequest](~/reporting-api/accountperformancereportrequest-data-object.md)
+-   [AdDynamicTextPerformanceReportRequest](~/reporting-api/addynamictextperformancereportrequest-data-object.md)
+-   [AdGroupPerformanceReportRequest](~/reporting-api/adgroupperformancereportrequest-data-object.md)
+-   [AdPerformanceReportRequest](~/reporting-api/adperformancereportrequest-data-object.md)
+-   [CallDetailReportRequest](~/reporting-api/calldetailreportrequest-data-object.md)
+-   [CampaignPerformanceReportRequest](~/reporting-api/campaignperformancereportrequest-data-object.md)
+-   [DestinationUrlPerformanceReportRequest](~/reporting-api/destinationurlperformancereportrequest-data-object.md)
 -   [GeographicalLocationReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-geographicallocationreportrequest.aspx)
--   [KeywordPerformanceReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-keywordperformancereportrequest.aspx)
+-   [KeywordPerformanceReportRequest](~/reporting-api/keywordperformancereportrequest-data-object.md)
 
 > [!NOTE]
 > All other report types can be submitted successfully, and the sandbox service will return an empty report.

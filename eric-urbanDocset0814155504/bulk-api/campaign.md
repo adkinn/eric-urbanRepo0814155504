@@ -45,7 +45,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|DynamicSearchAds|
 
-You can download all fields of the *Campaign* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Campaign* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add one campaign of each type i.e. Search and Content, Shopping, and Dynamic Search Ads campaign. 
 
@@ -57,7 +57,7 @@ Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTi
 Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaign* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaign* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -331,7 +331,7 @@ For example, the following country code values are supported.
 * *FR* - France
 * *US* - United States
 
-To get the current list of supported country codes use the [GetBSCCountries](https://msdn.microsoft.com/library/bing-ads-campaign-management-getbsccountries.aspx) operation via the Campaign Management service.
+To get the current list of supported country codes use the [GetBSCCountries](~/campaign-api/getbsccountries-service-operation.md) operation via the Campaign Management service.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only    
@@ -359,7 +359,7 @@ Currently the only supported language code is *EN*.
 ### <a name="id"></a>Id
 The system generated identifier of the campaign.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the campaign can then be referenced in the *Parent Id* field of dependent record types such as ad groups or criterion. This is recommended if you are adding new campaigns and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the campaign can then be referenced in the *Parent Id* field of dependent record types such as ad groups or criterion. This is recommended if you are adding new campaigns and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -369,10 +369,10 @@ The system generated identifier of the campaign.
 ### <a name="language"></a>Language
 The campaign languages.
 
-For possible values, see the Language column within [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
+For possible values, see the Language column within [Ad Languages](~/concepts/ad-languages.md). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](https://msdn.microsoft.com/library/bing-ads-customer-management-getcustomerpilotfeatures.aspx) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-api/getcustomerpilotfeatures-service-operation.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
 
 **Add:** Optional  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)] Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
@@ -431,7 +431,7 @@ Possible values are *Active*, *Paused*, and *Deleted*.
 ### <a name="storeid"></a>Store Id
 The unique identifier for the [!INCLUDE[storebrand](../bulk-api/includes/storebrand.md)] store that your product catalog feed belongs to.
 
-To get your store identifiers, call the [GetBMCStoresByCustomerId](https://msdn.microsoft.com/library/bing-ads-campaign-management-getbmcstoresbycustomerid.aspx) operation.
+To get your store identifiers, call the [GetBMCStoresByCustomerId](~/campaign-api/getbmcstoresbycustomerid-service-operation.md) operation.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only  

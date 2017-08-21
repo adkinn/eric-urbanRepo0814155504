@@ -37,7 +37,7 @@ Defines the criteria to use to filter the DSA category performance report data.
 |*AdGroupStatus*|The report will include data for only the ad group status. For example, you can use the filter to include data for only active ad groups.<br /><br />You can specify one or more ad group statuses.|[AdGroupStatusReportFilter](../reporting-api/adgroupstatusreportfilter-value-set.md)|Optional|
 |*AdStatus*|The report will include data for ads that have the specified status value. You can specify one or more status values.|[AdStatusReportFilter](../reporting-api/adstatusreportfilter-value-set.md)|Optional|
 |*CampaignStatus*|The report will include data for campaigns that have the specified status value. You can specify one or more status values.|[CampaignStatusReportFilter](../reporting-api/campaignstatusreportfilter-value-set.md)|Optional|
-|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).|*string* array|Optional|
+|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/concepts/ad-languages.md).|*string* array|Optional|
 
 ## Remarks
 Setting all filter criteria elements to NULL is the same as setting the *Filter* element of [DSACategoryPerformanceReportRequest](../reporting-api/dsacategoryperformancereportrequest-data-object.md) to NULL.

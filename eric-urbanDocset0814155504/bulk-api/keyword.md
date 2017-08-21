@@ -45,7 +45,7 @@ For a *Keyword* record, the following attribute fields are available in the [Bul
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Keyword* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Keyword* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new keyword given a valid ad group ID (*Parent Id*). 
 
@@ -55,7 +55,7 @@ Format Version,,,,,,,,,,,,,,5,,,,,
 Keyword,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,red shoes,Broad,0.5,,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,ManualCpc
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -157,7 +157,7 @@ The name of the ad group that contains the keyword.
 ### <a name="bid"></a>Bid
 The bid to use when the user’s search term and the keyword match.
 
-**Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](../bulk-api/ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](https://msdn.microsoft.com/library/bing-ads-budget-and-bid-strategies.aspx).  
+**Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](../bulk-api/ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](~/concepts/budget-and-bid-strategies.md).  
 **Update:** [!INCLUDE[update_optional_delete_all](../bulk-api/includes/update-optional-delete-all.md)]  
 **Delete:** Read-only  
 
@@ -202,7 +202,7 @@ Your custom collection of key and value parameters for URL tracking.
 The URL of the webpage to take the user to when they click the ad. The keyword’s destination URL is used if specified; otherwise, the ad’s destination URL is used.
 
 > [!IMPORTANT]
-> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
+> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](~/concepts/url-tracking-with-upgraded-urls.md).
 
 **Add:** Optional  
 **Update:** [!INCLUDE[update_optional_delete_all](../bulk-api/includes/update-optional-delete-all.md)]     
@@ -211,7 +211,7 @@ The URL of the webpage to take the user to when they click the ad. The keyword�
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](https://msdn.microsoft.com/library/bing-ads-campaign-management-appealstatus.aspx).
+Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](~/campaign-api/appealstatus-value-set.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -225,7 +225,7 @@ The component or property of the keyword that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](https://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/concepts/bing-ads-editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -234,7 +234,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the keyword.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](https://msdn.microsoft.com/library/bing-ads-campaign-management-keywordeditorialstatus.aspx).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](~/campaign-api/keywordeditorialstatus-value-set.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -284,7 +284,7 @@ The text can contain a maximum of 100 characters.
 
 You should specify the keyword in the locale of the Language value that you specified for the ad group to which the keyword belongs.
 
-If the *Match Type* is Broad, your application should handle broad match modifiers. Broad match modified keywords can be modified or prefixed with a plus sign (+), to require that specific terms in your keyword be present in the search query. In the download file, broad match modified terms are preceded by an extra space character. For example if the keyword text is "+Hawaii +hotel", the text included in the bulk download file is " +Hawaii +hotel". For bulk upload you may specify the keyword with or without the preceding space. For more information about broad match modifiers, see [Budget and Bid Strategies](https://msdn.microsoft.com/library/bing-ads-budget-and-bid-strategies.aspx).
+If the *Match Type* is Broad, your application should handle broad match modifiers. Broad match modified keywords can be modified or prefixed with a plus sign (+), to require that specific terms in your keyword be present in the search query. In the download file, broad match modified terms are preceded by an extra space character. For example if the keyword text is "+Hawaii +hotel", the text included in the bulk download file is " +Hawaii +hotel". For bulk upload you may specify the keyword with or without the preceding space. For more information about broad match modifiers, see [Budget and Bid Strategies](~/concepts/budget-and-bid-strategies.md).
 
 **Add:** Required  
 **Update:** Optional    
@@ -368,7 +368,7 @@ The system generated identifier of the ad group that contains the keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

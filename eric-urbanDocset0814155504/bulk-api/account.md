@@ -30,7 +30,7 @@ The *Account* record is included in the Bulk download file automatically everyti
 The system generated identifier of the account.
 
 > [!IMPORTANT]
-> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](https://msdn.microsoft.com/library/bing-ads-bulk-getbulkuploadurl.aspx) service request.
+> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](~/bulk-api/getbulkuploadurl-service-operation.md) service request.
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -42,7 +42,7 @@ You might want to enable auto-tagging of MSCLKID for tracking leads via offline 
 If the value is *True*, then the MSCLKID auto tagging feature is enabled. Otherwise the MSCLKID auto tagging feature is not enabled.
 
 > [!IMPORTANT]
-> Every time you create a new [OfflineConversionGoal](https://msdn.microsoft.com/library/bing-ads-campaign-management-offlineconversiongoal.aspx) via either the Bing Ads web application or Campaign Management API, the *MSCLKID Auto Tagging Enabled* field is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
+> Every time you create a new [OfflineConversionGoal](~/campaign-api/offlineconversiongoal-data-object.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKID Auto Tagging Enabled* field is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
 **Add:** Optional  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    

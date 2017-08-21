@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines a keyword's estimated first page bid that can be downloaded in a bulk file.
 
 ## <a name="keywordfirstpagebid"></a>Keyword First Page Bid Record
-For a *Keyword First Page Bid* record, the following bulk fields are available for download. The keyword first page bid is equivalent to calling the [GetEstimatedBidByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywordids.aspx) operation with the Ad Insight service, and specifying *SideBar* as the [TargetAdPosition](http://msdn.microsoft.com/library/bing-ads-ad-insight-targetadposition.aspx) value.
+For a *Keyword First Page Bid* record, the following bulk fields are available for download. The keyword first page bid is equivalent to calling the [GetEstimatedBidByKeywordIds](~/adinsight-api/getestimatedbidbykeywordids-service-operation.md) operation with the Ad Insight service, and specifying *SideBar* as the [TargetAdPosition](http://msdn.microsoft.com/library/bing-ads-ad-insight-targetadposition.aspx) value.
 
 |Column Header|Description|
 |-----------------|---------------|

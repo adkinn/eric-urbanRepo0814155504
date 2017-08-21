@@ -19,7 +19,7 @@ Reference documentation for the [Bing Ads Client Libraries](../concepts/bing-ads
 
 |Title|Description|
 |---------|---------------|
-|[Microsoft.BingAds Namespaces](https://msdn.microsoft.com/library/mt757010.aspx)|The *Microsoft.BingAds* namespaces contain classes corresponding to all [Bing Ads Web Service Addresses](../concepts/bing-ads-web-service-addresses.md).|
+|[Microsoft.BingAds Namespaces](~/concepts/bing-ads-net-sdk-reference.md)|The *Microsoft.BingAds* namespaces contain classes corresponding to all [Bing Ads Web Service Addresses](../concepts/bing-ads-web-service-addresses.md).|
 
 ## See Also
 [Bing Ads Client Libraries](../concepts/bing-ads-client-libraries.md)  

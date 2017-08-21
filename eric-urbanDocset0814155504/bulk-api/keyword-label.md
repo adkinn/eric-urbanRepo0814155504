@@ -26,7 +26,7 @@ For a *Keyword Label* record, the following attribute fields are available in th
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Keyword Label* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *KeywordLabels* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Keyword Label* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *KeywordLabels* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would apply a label to a keyword if the valid *Id* and *Parent Id* are provided. 
 
@@ -36,7 +36,7 @@ Format Version,,,,,,,,5,,,
 Keyword Label,,-22,-11113,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkKeywordLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkKeywordLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -87,7 +87,7 @@ The identifier of the label that is applied or removed from the keyword.
 
 This bulk field maps to the *Id* field of the [Label](../bulk-api/label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-api/label.md) record. This is recommended if you are applying new labels to keywords in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-api/label.md) record. This is recommended if you are applying new labels to keywords in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -101,7 +101,7 @@ The identifier of the keyword where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Keyword](../bulk-api/keyword.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing keyword identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Keyword](../bulk-api/keyword.md) record. This is recommended if you are applying labels to a new keyword in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing keyword identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Keyword](../bulk-api/keyword.md) record. This is recommended if you are applying labels to a new keyword in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status

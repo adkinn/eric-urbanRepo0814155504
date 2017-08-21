@@ -40,7 +40,7 @@ The *PriceAdExtension* object inherits elements from the [AdExtension](../campai
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*Language*|The language for the ad copy of your price ad extension.<br/><br/>For possible values, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).<br/><br/>**Add:** Required<br/>**Update:** Optional|*string*|
+|*Language*|The language for the ad copy of your price ad extension.<br/><br/>For possible values, see [Ad Languages](~/concepts/ad-languages.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|*string*|
 |*PriceAdExtensionType*|The type of the price ad extension.<br/><br/>Possible values include: *Brands*, *Events*, *Locations*, *Neighborhoods*, *ProductCategories*, *ProductTiers*, *ServiceCategories*, *Services*, *ServiceTiers*, and *Unknown*.<br /><br />**Add:** Required<br />**Update:** Read-only|[PriceAdExtensionType](../campaign-api/priceadextensiontype-value-set.md)|
 |*TableRows*|The price table rows.<br/><br/>You must have between 3 and 8 price table rows.<br/><br/>**Add:** Required<br/>**Update:** Optional|[PriceTableRow](../campaign-api/pricetablerow-data-object.md)|
 |*TrackingUrlTemplate*|The tracking template to use as a default for all landing page URLs.<br /><br />[!INCLUDE[validationrules_trackingurltemplate](../campaign-api/includes/validationrules-trackingurltemplate.md)]<br /><br />**Add:** Optional<br />**Update:** Optional|*string*|

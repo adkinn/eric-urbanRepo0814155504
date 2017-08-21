@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines a keyword's estimated best position bid that can be downloaded in a bulk file.
 
 ## <a name="keywordbestpositionbid"></a>Keyword Best Position Bid Record
-For a *Keyword Best Position Bid* record, the following bulk fields are available for download. The keyword best position bid is equivalent to calling the [GetEstimatedBidByKeywordIds](https://msdn.microsoft.com/library/bing-ads-ad-insight-getestimatedbidbykeywordids.aspx) operation with the Ad Insight service, and specifying *MainLine1* as the [TargetAdPosition](http://msdn.microsoft.com/library/bing-ads-ad-insight-targetadposition.aspx) value.
+For a *Keyword Best Position Bid* record, the following bulk fields are available for download. The keyword best position bid is equivalent to calling the [GetEstimatedBidByKeywordIds](~/adinsight-api/getestimatedbidbykeywordids-service-operation.md) operation with the Ad Insight service, and specifying *MainLine1* as the [TargetAdPosition](http://msdn.microsoft.com/library/bing-ads-ad-insight-targetadposition.aspx) value.
 
 |Column Header|Description|
 |-----------------|---------------|

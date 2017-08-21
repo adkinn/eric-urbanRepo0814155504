@@ -42,7 +42,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Ad Group* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Ad Group* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new ad group if the correct campaign Id would be provided. 
 
@@ -53,7 +53,7 @@ Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdG
 ```
 
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -231,7 +231,7 @@ The bid to use when the keywords that the service extracts from the content page
 > [!NOTE]
 > This feature is not supported for ad groups in Bing Shopping campaigns or Dynamic Search Ads campaigns.
 
-The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx)
+The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](~/concepts/currencies.md)
 
 You can set a content bid if the *Content Network* ad distribution channel is set to *On*.
 
@@ -253,7 +253,7 @@ only, the ad distribution will be Search only.
 
 Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-api/adgroup-data-object.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    
@@ -282,7 +282,7 @@ The end date is inclusive. For example, if you set *End Date* to 12/31/2020, the
 ### <a name="id"></a>Id
 The system generated identifier of the ad group.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -299,10 +299,10 @@ The bid strategy type that is inherited from the parent campaign. This value is 
 ### <a name="language"></a>Language
 The ad group language.
 
-For possible values, see the Language column within [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx)
+For possible values, see the Language column within [Ad Languages](~/concepts/ad-languages.md)
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](https://msdn.microsoft.com/library/bing-ads-customer-management-getcustomerpilotfeatures.aspx) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-api/getcustomerpilotfeatures-service-operation.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. 
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
@@ -322,7 +322,7 @@ Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly
 
 You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
 
-If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](https://msdn.microsoft.com/library/bing-ads-campaign-management-setnegativesitestoadgroups.aspx) or [SetNegativeSitesToCampaigns](https://msdn.microsoft.com/library/bing-ads-campaign-management-setnegativesitestocampaigns.aspx) operation to prevent the ads from displaying on specific syndicated search websites.
+If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](~/campaign-api/setnegativesitestoadgroups-service-operation.md) or [SetNegativeSitesToCampaigns](~/campaign-api/setnegativesitestocampaigns-service-operation.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    
@@ -333,7 +333,7 @@ The system generated identifier of the campaign that contains the ad group.
 
 This bulk field maps to the *Id* field of the [Camnpaign](../bulk-api/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -368,7 +368,7 @@ Set this field to *BidOnly* if you want to show ads to people searching for your
 ### <a name="searchbid"></a>Search Bid
 The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
 
-The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx).
+The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](~/concepts/currencies.md).
 
 You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
 
@@ -383,7 +383,7 @@ Determines whether the ads within this ad group will be displayed on the search 
 
 Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](https://msdn.microsoft.com/library/bing-ads-campaign-management-adgroup.aspx) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-api/adgroup-data-object.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    

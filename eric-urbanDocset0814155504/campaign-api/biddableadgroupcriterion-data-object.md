@@ -68,7 +68,7 @@ The *BiddableAdGroupCriterion* object derives from the [AdGroupCriterion](../cam
 If the *Criterion* property that is [inherited](#InheritedElements) from the [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object is a [ProductPartition](../campaign-api/productpartition-data-object.md) criterion, please note the following usage of *BiddableAdGroupCriterion* properties.
 
 ### <a name="productpartition_destinationurl"></a>DestinationUrl
-If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](https://msdn.microsoft.com/library/bing-ads-tracking-template-urls-guide.aspx).
+If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](~/concepts/url-tracking-with-upgraded-urls.md).
 
 The URL can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
@@ -82,7 +82,7 @@ The destination URL is used if specified; otherwise, the destination URL is dete
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../campaign-api/includes/update-optional-setting-unchanged.md)]  
 
 ### <a name="productpartition_trackingurltemplate"></a>TrackingUrlTemplate
-The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](https://msdn.microsoft.com/library/bing-ads-content-api.aspx). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *TrackingUrlTemplate* element to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
+The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](~/content-api/https://msdn.microsoft.com/library/bing-ads-content-api.md). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *TrackingUrlTemplate* element to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
 
 [!INCLUDE[validationrules_trackingurltemplate_bsc](../campaign-api/includes/validationrules-trackingurltemplate-bsc.md)]
 

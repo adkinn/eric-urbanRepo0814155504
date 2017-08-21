@@ -30,7 +30,7 @@ For an *Ad Group Negative Remarketing List Association* record, the following at
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Negative Remarketing List Association* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroupNegativeRemarketingListAssociations* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Ad Group Negative Remarketing List Association* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *AdGroupNegativeRemarketingListAssociations* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new Ad Group Negative Remarketing List Association given a valid ad group ID (*Parent Id*). 
 
@@ -40,7 +40,7 @@ Format Version,,,,,,,,,5,,,
 Ad Group Negative Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,RemarketingListIdHere,My Remarketing List,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -106,7 +106,7 @@ The name of the remarketing list.
 
 This bulk field maps to the *Audience* field of the [Remarketing List](../bulk-api/remarketing-list.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you are adding new Ad Group Negative Remarketing List Associations with new remarketing lists in the same Bulk file, and if you do not set the *Audience Id* field, then this *Audience* field must be set as a logical key to the same value as the *Audience* field of the [Remarketing List](../bulk-api/remarketing-list.md) record. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you are adding new Ad Group Negative Remarketing List Associations with new remarketing lists in the same Bulk file, and if you do not set the *Audience Id* field, then this *Audience* field must be set as a logical key to the same value as the *Audience* field of the [Remarketing List](../bulk-api/remarketing-list.md) record. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -115,7 +115,7 @@ The Bing Ads identifier of the remarketing list associated with the ad group.
 
 This bulk field maps to the *Id* field of the [Remarketing List](../bulk-api/remarketing-list.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you set the *Audience Id* field, you must either specify an existing remarketing list identifier or specify a negative identifier that is equal to the *Id* field of the parent [Remarketing List](../bulk-api/remarketing-list.md) record. If the *Audience Id* field is not set, then you must set the *Audience* field as a logical key to the same value as the *Audience* field of the [Remarketing List](../bulk-api/remarketing-list.md) record. Any of these options are recommended if you are adding new Ad Group Negative Remarketing List Associations with new remarketing lists in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you set the *Audience Id* field, you must either specify an existing remarketing list identifier or specify a negative identifier that is equal to the *Id* field of the parent [Remarketing List](../bulk-api/remarketing-list.md) record. If the *Audience Id* field is not set, then you must set the *Audience* field as a logical key to the same value as the *Audience* field of the [Remarketing List](../bulk-api/remarketing-list.md) record. Any of these options are recommended if you are adding new Ad Group Negative Remarketing List Associations with new remarketing lists in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -152,7 +152,7 @@ The system generated identifier of the ad group that is associated to the remark
 
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are associating remarketing lists to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-api/ad-group.md) record. This is recommended if you are associating remarketing lists to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

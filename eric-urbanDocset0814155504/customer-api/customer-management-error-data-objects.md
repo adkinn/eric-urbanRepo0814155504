@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Customer Management Error Data Objects
-[!INCLUDE[brand](../customer-api/includes/brand.md)] customer management service operations may throw fault exceptions that include one or more error objects. The error objects contain the details of why the service operation failed. For more information, see [Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx).
+[!INCLUDE[brand](../customer-api/includes/brand.md)] customer management service operations may throw fault exceptions that include one or more error objects. The error objects contain the details of why the service operation failed. For more information, see [Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md).
 
 ## Fault Objects
 The following fault objects may be thrown by the customer management service, and should be caught within your application.

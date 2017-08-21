@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # ClientLink Data Object
-Defines a client link object. Acceptance of a client link invitation enables an agency to  manage the corresponding client accounts. To send an invitation to manage a client account, call the [AddClientLinks](../customer-api/addclientlinks-service-operation.md) operation and specify one client link per account to manage. For more information about the client link lifecycle, see [Link to Client Accounts](https://msdn.microsoft.com/library/bing-ads-agency-management-model-guide.aspx#clientlink).
+Defines a client link object. Acceptance of a client link invitation enables an agency to  manage the corresponding client accounts. To send an invitation to manage a client account, call the [AddClientLinks](../customer-api/addclientlinks-service-operation.md) operation and specify one client link per account to manage. For more information about the client link lifecycle, see [Link to Client Accounts](~/concepts/management-model-for-agencies.md#clientlink).
 
 > [!NOTE]
 > This object does not have a system defined identifier. To uniquely identify a client link, use either the *ClientAccountId* or *ClientAccountNumber* paired with either the *ManagingCustomerId* or *ManagingCustomerNumber*.

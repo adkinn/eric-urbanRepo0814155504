@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines a selection of currency values.
 
 > [!NOTE]
-> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx).
+> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](~/concepts/currencies.md).
 
 ## Syntax
 

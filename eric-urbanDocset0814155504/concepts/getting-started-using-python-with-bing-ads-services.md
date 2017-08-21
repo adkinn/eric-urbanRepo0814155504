@@ -172,7 +172,7 @@ user = customer_service.GetUser(UserId = None).User
 You can pass Suds factory created objects to each service client, for example Campaign and TextAd. For more information, see [Using Suds](#suds).
 
 ## <a name="bulkservicemanager"></a>Using BulkServiceManager
-Take advantage of the [Bulk service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) to efficiently manage ads and keywords for all campaigns in an account. The SDK provides classes to accelerate productivity for downloading and uploading entities. For example the *download_file* method of the *BulkServiceManager* class will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. Use the *BulkFileReader* class instead of writing a file parser to read the download results. The *BulkFileReader* provides access to the bulk file records in *BulkEntity* derived classes, which contain data objects and values sets corresponding to the [Campaign Management service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx).
+Take advantage of the [Bulk service](~/bulk-api/bulk-service-reference.md) to efficiently manage ads and keywords for all campaigns in an account. The SDK provides classes to accelerate productivity for downloading and uploading entities. For example the *download_file* method of the *BulkServiceManager* class will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. Use the *BulkFileReader* class instead of writing a file parser to read the download results. The *BulkFileReader* provides access to the bulk file records in *BulkEntity* derived classes, which contain data objects and values sets corresponding to the [Campaign Management service](~/campaign-api/campaign-management-service-reference.md).
 
 The *BulkServiceManager* class handles common request header fields for you, allowing to specify the *Authentication*, *customer_id*, *account_id*, and *developer_token* properties in the *AuthorizationData* object once for each service. For more information, see [Using AuthorizationData](#authorizationdata).
 
@@ -188,7 +188,7 @@ The *BulkServiceManager* supports the following workflows.
 
 -   If for any reason you have to resume from a previous application state, you can use an existing download or upload request identifier and use it to download the result file. For more information, see [Download Results with BulkServiceManager](#downloadresults).
 
--   If you are migrating from a deprecated bulk file format version, you can use an instance of *ServiceClient*, where its *service* property is set to *BulkService*, to upload and download campaigns using any format version [Bulk File Schema](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient](#serviceclient) and [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
+-   If you are migrating from a deprecated bulk file format version, you can use an instance of *ServiceClient*, where its *service* property is set to *BulkService*, to upload and download campaigns using any format version [Bulk File Schema](~/bulk-api/bulk-file-schema.md). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient](#serviceclient) and [Bulk Download and Upload](../concepts/bulk-download-and-upload.md).
 
 ### <a name="backgroundcompletion"></a>Background Completion with BulkServiceManager
 You can submit a download or upload request and the *BulkServiceManager* will automatically return results. The *BulkServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling.
@@ -293,7 +293,7 @@ print("Status: {0}\n".format(bulk_operation_status.status))
 ```
 
 ## <a name="reportingservicemanager"></a>Using ReportingServiceManager
-The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](https://msdn.microsoft.com/library/bing-ads-reporting-service-reference.aspx) service.
+The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](~/reporting-api/reporting-service-reference.md) service.
 It also provides classes to accelerate productivity for downloading reports. For example an instance of the *ReportingServiceManager* class can submit your download request to the reporting service, poll the service until completed, and download the file to the local directory that you specified in the request.
 
 The *ReportingServiceManager* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using AuthorizationData](#authorizationdata).
@@ -463,7 +463,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
         }
     ```
 
--   For derived types such as [ExpandedTextAd](https://msdn.microsoft.com/library/bing-ads-campaign-management-expandedtextad.aspx), [NegativeKeyword](https://msdn.microsoft.com/library/bing-ads-campaign-management-negativekeyword.aspx), and [NegativeKeywordList](https://msdn.microsoft.com/library/bing-ads-campaign-management-negativekeywordlist.aspx), the Suds library requires that you use factory.create.
+-   For derived types such as [ExpandedTextAd](~/campaign-api/expandedtextad-data-object.md), [NegativeKeyword](~/campaign-api/negativekeyword-data-object.md), and [NegativeKeywordList](~/campaign-api/negativekeywordlist-data-object.md), the Suds library requires that you use factory.create.
 
     ```python
     ads = campaign_service.factory.create('ArrayOfAd')
@@ -514,7 +514,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ads.Ad.append(expanded_text_ad)
     ```
 
--   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](https://msdn.microsoft.com/library/bing-ads-campaign-management-adeditorialstatus.aspx), even though the [!INCLUDE[brand](../concepts/includes/brand.md)] services do not require such elements.
+-   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](~/campaign-api/adeditorialstatus-value-set.md), even though the [!INCLUDE[brand](../concepts/includes/brand.md)] services do not require such elements.
 
 -   [!INCLUDE[brand](../concepts/includes/brand.md)] Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
 

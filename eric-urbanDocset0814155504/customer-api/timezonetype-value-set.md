@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines the possible time zones for the customer management service.
 
 > [!NOTE]
-> The value set defines the full set of time zones. For more information, see [Time Zones](https://msdn.microsoft.com/library/bing-ads-time-zones.aspx).
+> The value set defines the full set of time zones. For more information, see [Time Zones](~/concepts/time-zones.md).
 
 ## Syntax
 

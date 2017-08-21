@@ -22,7 +22,7 @@ The following table describes the possible campaign time zone values.
 |AbuDhabiMuscat|Abu Dhabi and Muscat time zone.|UTC+4|
 |Adelaide|Adelaide, Australia time zone.|UTC+9.5|
 |Alaska|Alaska time zone.|UTC-9|
-|Almaty_Novosibirsk<br /><br />**Note:** Use *AlmatyNovosibirsk* for the [Customer Management service](https://msdn.microsoft.com/library/bing-ads-customer-management-service-reference.aspx).|Almaty and Novosibirsk time zone.|UTC+6|
+|Almaty_Novosibirsk<br /><br />**Note:** Use *AlmatyNovosibirsk* for the [Customer Management service](~/customer-api/customer-management-service-reference.md).|Almaty and Novosibirsk time zone.|UTC+6|
 |AmsterdamBerlinBernRomeStockholmVienna|Amsterdam, Berlin, Bern, Rome, Stockholm, and Vienna time zone.|UTC+1|
 |Arizona|Arizona time zone.|UTC-7|
 |AstanaDhaka|Astana and Dhaka time zone.|UTC+6|
@@ -63,7 +63,7 @@ The following table describes the possible campaign time zone values.
 |HelsinkiKyivRigaSofiaTallinnVilnius|Helsinki, Kyiv, Riga, Sofia, Tallinn, and Vilnius time zone.|UTC+2|
 |Hobart|Hobart time zone.|UTC+10|
 |IndianaEast|Indiana (East) time zone.|UTC-5|
-|InternationalDateLineWest<br /><br />**Note:** Use *InternationalDatelineWest* for the [Customer Management service](https://msdn.microsoft.com/library/bing-ads-customer-management-service-reference.aspx).|International Date Line (West) time zone.|UTC-12|
+|InternationalDateLineWest<br /><br />**Note:** Use *InternationalDatelineWest* for the [Customer Management service](~/customer-api/customer-management-service-reference.md).|International Date Line (West) time zone.|UTC-12|
 |IrkutskUlaanBataar|Irkutsk and Ulaanbaatar time zone.|UTC+8|
 |IslandamabadKarachiTashkent|Islamabad, Karachi, and Tashkent time zone.|UTC+5|
 |Jerusalem|Jerusalem time zone.|UTC+2|
@@ -74,9 +74,9 @@ The following table describes the possible campaign time zone values.
 |KuwaitRiyadh|Kuwait and Riyadh time zone.|UTC+3|
 |MagadanSolomonIslandNewCaledonia|Magadan, Solomon Islands, and New Caledonia time zone.|UTC+11|
 |MidAtlantic|Mid-Atlantic time zone.|UTC-2|
-|MidwayIslandand_Samoa<br /><br />**Note:** Use *MidwayIslandAndSamoa* for the [Customer Management service](https://msdn.microsoft.com/library/bing-ads-customer-management-service-reference.aspx).|Midway Island and Samoa time zone.|UTC-11|
+|MidwayIslandand_Samoa<br /><br />**Note:** Use *MidwayIslandAndSamoa* for the [Customer Management service](~/customer-api/customer-management-service-reference.md).|Midway Island and Samoa time zone.|UTC-11|
 |MoscowStPetersburgVolgograd|Moscow, St Petersburg, and Volgograd time zone.|UTC+3|
-|MountainTime_US_Canada<br /><br />**Note:** Use *MountainTimeUSCanada* for the [Customer Management service](https://msdn.microsoft.com/library/bing-ads-customer-management-service-reference.aspx).|Mountain Time U.S. and Canada time zone.|UTC-7|
+|MountainTime_US_Canada<br /><br />**Note:** Use *MountainTimeUSCanada* for the [Customer Management service](~/customer-api/customer-management-service-reference.md).|Mountain Time U.S. and Canada time zone.|UTC-7|
 |Nairobi|Nairobi time zone.|UTC+3|
 |Newfoundland|Newfoundland time zone.|UTC-3.5|
 |Nukualofa|Nuku'alofa time zone.|UTC+13|

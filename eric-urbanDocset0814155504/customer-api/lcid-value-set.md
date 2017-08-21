@@ -16,7 +16,7 @@ manager: "ehansen"
 Defines a selection of locale values.
 
 > [!NOTE]
-> The value set defines a broad selection of locales; however, not all languages are supported in each market. For a list of supported languages by market country, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).
+> The value set defines a broad selection of locales; however, not all languages are supported in each market. For a list of supported languages by market country, see [Ad Languages](~/concepts/ad-languages.md).
 
 ## Syntax
 

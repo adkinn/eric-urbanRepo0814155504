@@ -58,7 +58,7 @@ Defines the criteria to use to filter the keyword performance report data.
 |*Keywords*|The report will include data for only the specified keywords. You can specify a maximum of 75 keywords. Each keyword can contain a maximum of 100 characters.|*string* array|Optional|
 |*LandingPageRelevance*|[!INCLUDE[reportcolumn_landingpageuserexperience](../reporting-api/includes/reportcolumn-landingpageuserexperience.md)]|*int* array||
 |*LandingPageUserExperience*|[!INCLUDE[reportcolumn_landingpageuserexperience](../reporting-api/includes/reportcolumn-landingpageuserexperience.md)]|*int* array||
-|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](https://msdn.microsoft.com/library/bing-ads-ad-languages.aspx).|*string* array|Optional|
+|*LanguageCode*|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/concepts/ad-languages.md).|*string* array|Optional|
 |*QualityScore*|The report will include data for only keywords with the specified quality scores. You can filter the report based on one or more of the following relevance values:<br /><br />0 – N/A (as shown in the web application)<br /><br />1 – Underperforming<br /><br />2 – Underperforming<br /><br />3 – Underperforming<br /><br />4 – Underperforming<br /><br />5 – Underperforming<br /><br />6 – Average performance<br /><br />7 – Competitive<br /><br />8 – Competitive<br /><br />9 – Competitive<br /><br />10 – Competitive|*int* array|Optional|
 
 ## Remarks

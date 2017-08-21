@@ -39,7 +39,7 @@ For a *Campaign Location Criterion* record, the following attribute fields are a
 - [Sub Type](#subtype)
 - [Target](#target)
 
-You can download all fields of the *Campaign Location Criterion* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](https://msdn.microsoft.com/library/bing-ads-bulk-download-and-upload-guide.aspx).
+You can download all fields of the *Campaign Location Criterion* record by including the [DownloadEntity](../bulk-api/downloadentity-value-set.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](../bulk-api/downloadcampaignsbycampaignids-service-operation.md) service request. Additionally the download request must include the [DataScope](../bulk-api/datascope-value-set.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/concepts/bulk-download-and-upload.md).
 
 The following Bulk CSV example would add a new campaign location criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -49,7 +49,7 @@ Format Version,,,,,,,,,,5,,,,,,,,
 Campaign Location Criterion,Active,,-111,Country,,ClientIdGoesHere,,190,20,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/concepts/bing-ads-client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -150,7 +150,7 @@ The identifier of the a campaign where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Campaign](../bulk-api/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing a campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new criterions to a new a campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](https://msdn.microsoft.com/library/bing-ads-bulk-file-schema.aspx#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing a campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-api/campaign.md) record. This is recommended if you are adding new criterions to a new a campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -171,7 +171,7 @@ Possible values are *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you want to target with the corresponding *Bid Adjustment*. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](https://msdn.microsoft.com/library/bing-ads-geographical-location-codes.aspx) and [GetGeoLocationsFileUrl](https://msdn.microsoft.com/library/bing-ads-campaign-management-getgeolocationsfileurl.aspx).
+The identifier of the location that you want to target with the corresponding *Bid Adjustment*. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](~/concepts/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-api/getgeolocationsfileurl-service-operation.md).
 
 **Add:** Required  
 **Update:** Required  

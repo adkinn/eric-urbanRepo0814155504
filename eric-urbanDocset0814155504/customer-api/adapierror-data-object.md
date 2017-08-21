@@ -40,5 +40,5 @@ Defines an error object that contains the details that explain why the service o
 ## Requirements
 [!INCLUDE[reqcus](../customer-api/includes/reqcus.md)]
 ## See Also
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)
 

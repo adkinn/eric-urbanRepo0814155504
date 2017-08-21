@@ -42,7 +42,7 @@ The `EditorialError` object inherits elements from the [BatchError](../bulk-api/
 |`DisapprovedText`|The text that caused the entity to be disapproved.<br /><br />For text length violations, this element specifies the number of characters by which the specified text exceeds the maximum.|`string`|
 |`Location`|The element or property of the entity that caused the entity to be disapproved.|`string`|
 |`PublisherCountry`|The corresponding country or region for the flagged editorial issue.|`string`|
-|`ReasonCode`|A numeric code that identifies the error. For more information, see [Editorial Failure Reason Codes](https://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx).|`int`|
+|`ReasonCode`|A numeric code that identifies the error. For more information, see [Editorial Failure Reason Codes](~/concepts/bing-ads-editorial-failure-reason-codes.md).|`int`|
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The `EditorialError` object inherits the following elements from the [BatchError](../bulk-api/batcherror-data-object.md) object. 
@@ -61,5 +61,5 @@ The `EditorialError` object inherits the following elements from the [BatchError
 ## Requirements
 [!INCLUDE[reqbulk](../bulk-api/includes/reqbulk.md)]
 ## See Also
-[Editorial Failure Reason Codes](https://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx)  
+[Editorial Failure Reason Codes](~/concepts/bing-ads-editorial-failure-reason-codes.md)  
 

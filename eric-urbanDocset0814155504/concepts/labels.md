@@ -30,19 +30,19 @@ The important thing is that it’s all up to you. You decide what your labels me
 ![Labels in the Bing Ads Web Application](../concepts/media/labels-in-the-bing-ads-web-application.png)
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
-You can use the [Bulk Service](https://msdn.microsoft.com/library/bing-ads-bulk-service-reference.aspx) i.e., [Bulk Download and Upload](../concepts/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Bulk Service](~/bulk-api/bulk-service-reference.md) i.e., [Bulk Download and Upload](../concepts/bulk-download-and-upload.md) to create, get, update, and delete both labels and label associations. 
 
 The following Bulk records are available for managing labels and label associations. 
 
--   [Label](https://msdn.microsoft.com/library/bing-ads-bulk-label-record.aspx)  
--   [Campaign Label](https://msdn.microsoft.com/library/bing-ads-bulk-campaign-label-record.aspx)  
--   [Ad Group Label](https://msdn.microsoft.com/library/bing-ads-bulk-ad-group-label-record.aspx)  
--   [Keyword Label](https://msdn.microsoft.com/library/bing-ads-bulk-keyword-label-record.aspx)  
--   [App Install Ad Label](https://msdn.microsoft.com/library/bing-ads-bulk-app-install-ad-label-record.aspx)  
--   [Dynamic Search Ad Label](https://msdn.microsoft.com/library/bing-ads-bulk-dynamic-search-ad-label-record.aspx)  
+-   [Label](~/bulk-api/label.md)  
+-   [Campaign Label](~/bulk-api/campaign-label.md)  
+-   [Ad Group Label](~/bulk-api/ad-group-label.md)  
+-   [Keyword Label](~/bulk-api/keyword-label.md)  
+-   [App Install Ad Label](~/bulk-api/app-install-ad-label.md)  
+-   [Dynamic Search Ad Label](~/bulk-api/dynamic-search-ad-label.md)  
 -   [Expanded Text Ad Label](https://msdn.microsoft.com/library/bing-ads-bulk-exapanded-text-ad-label-record.aspx)  
--   [Product Ad Label](https://msdn.microsoft.com/library/bing-ads-bulk-product-ad-label-record.aspx)  
--   [Text Ad Label](https://msdn.microsoft.com/library/bing-ads-bulk-text-ad-label-record.aspx)  
+-   [Product Ad Label](~/bulk-api/product-ad-label.md)  
+-   [Text Ad Label](~/bulk-api/text-ad-label.md)  
 
 For example, the following Bulk CSV example would apply a label to the campaign, ad group, keyword, and expanded text ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -57,19 +57,19 @@ Keyword Label,Active,-22,-11113,,,ClientIdGoesHere,,,,,
 ```
 
 ## <a name="campaignservice"></a>Managing Labels with the Campaign Management Service
-You can use the [Campaign Management Service](https://msdn.microsoft.com/library/bing-ads-campaign-management-service-reference.aspx) to create, get, update, and delete both labels and label associations. 
+You can use the [Campaign Management Service](~/campaign-api/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
 
-You can add, delete, get, and update labels ([Label](https://msdn.microsoft.com/library/bing-ads-campaign-management-label.aspx) objects) with the corresponding operations.
--  [AddLabels](https://msdn.microsoft.com/library/bing-ads-campaign-management-addlabels.aspx)  
--  [DeleteLabels](https://msdn.microsoft.com/library/bing-ads-campaign-management-deletelabels.aspx)  
--  [GetLabelsByIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getlabelsbyids.aspx)  
--  [UpdateLabels](https://msdn.microsoft.com/library/bing-ads-campaign-management-updatelabels.aspx)  
+You can add, delete, get, and update labels ([Label](~/campaign-api/label-data-object.md) objects) with the corresponding operations.
+-  [AddLabels](~/campaign-api/addlabels-service-operation.md)  
+-  [DeleteLabels](~/campaign-api/deletelabels-service-operation.md)  
+-  [GetLabelsByIds](~/campaign-api/getlabelsbyids-service-operation.md)  
+-  [UpdateLabels](~/campaign-api/updatelabels-service-operation.md)  
 
-You can set, get, and delete label associations ([LabelAssociation](https://msdn.microsoft.com/library/bing-ads-campaign-management-labelassociation.aspx) objects) with the corresponding operations.
--  [DeleteLabelAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-deletelabelassociations.aspx)  
--  [GetLabelAssociationsByEntityIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getlabelassociationsbyentityids.aspx)  
--  [GetLabelAssociationsByLabelIds](https://msdn.microsoft.com/library/bing-ads-campaign-management-getlabelassociationsbylabelids.aspx)  
--  [SetLabelAssociations](https://msdn.microsoft.com/library/bing-ads-campaign-management-setlabelassociations.aspx)  
+You can set, get, and delete label associations ([LabelAssociation](~/campaign-api/labelassociation-data-object.md) objects) with the corresponding operations.
+-  [DeleteLabelAssociations](~/campaign-api/deletelabelassociations-service-operation.md)  
+-  [GetLabelAssociationsByEntityIds](~/campaign-api/getlabelassociationsbyentityids-service-operation.md)  
+-  [GetLabelAssociationsByLabelIds](~/campaign-api/getlabelassociationsbylabelids-service-operation.md)  
+-  [SetLabelAssociations](~/campaign-api/setlabelassociations-service-operation.md)  
 
 
 

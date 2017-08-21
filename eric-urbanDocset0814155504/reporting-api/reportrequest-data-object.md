@@ -15,7 +15,7 @@ manager: "ehansen"
 # ReportRequest Data Object
 Defines the base object for all report requests.
 
-Do not instantiate this object. Instead, you may instantiate one of the report request objects which derives from this object, for example the [CampaignPerformanceReportRequest](../reporting-api/campaignperformancereportrequest-data-object.md). For a list of reports, see the [Report Types](https://msdn.microsoft.com/library/bing-ads-reporting-report-types.aspx) guide.
+Do not instantiate this object. Instead, you may instantiate one of the report request objects which derives from this object, for example the [CampaignPerformanceReportRequest](../reporting-api/campaignperformancereportrequest-data-object.md). For a list of reports, see the [Report Types](~/concepts/report-types.md) guide.
 
 ## Syntax
 

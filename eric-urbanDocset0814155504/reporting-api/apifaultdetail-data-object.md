@@ -48,5 +48,5 @@ The *ApiFaultDetail* object derives from the [ApplicationFault](../reporting-api
 ## Requirements
 [!INCLUDE[reqrep](../reporting-api/includes/reqrep.md)]
 ## See Also
-[Handling Service Errors and Exceptions](https://msdn.microsoft.com/library/bing-ads-error-handling-guide.aspx)
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)
 

@@ -21,7 +21,7 @@ Since a recipient can accept the invitation and sign into Bing Ads with a Micros
 
 After the invitation has been accepted, you can call [GetUsersInfo](../customer-api/getusersinfo-service-operation.md) and [GetUser](../customer-api/getuser-service-operation.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from *UserInvitation* to accepted [User](../customer-api/user-data-object.md). With the user ID returned by [GetUsersInfo](../customer-api/getusersinfo-service-operation.md) or [GetUser](../customer-api/getuser-service-operation.md), you can call [DeleteUser](../customer-api/deleteuser-service-operation.md) to remove the user.
 
-For more information about user authentication, see [Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).
+For more information about user authentication, see [Authentication with OAuth](~/concepts/authentication-with-oauth.md).
 
 
 ## Syntax
