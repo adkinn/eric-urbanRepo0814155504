@@ -1,0 +1,2 @@
+The current entity  status.
+

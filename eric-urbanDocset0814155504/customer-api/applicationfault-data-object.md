@@ -1,0 +1,38 @@
+---
+title: "ApplicationFault Data Object"
+ms.custom: ""
+ms.date: "04/03/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: 14eacbfb-fc23-4de8-a8c0-13c4dc17c98e
+caps.latest.revision: 4
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
+---
+# ApplicationFault Data Object
+Defines the base object from which all fault detail objects derive.
+
+## Syntax
+
+```xml
+<xs:complexType name="ApplicationFault">
+  <xs:sequence>
+    <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
+```
+
+## <a name="Elements"></a>Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|*TrackingId*|The identifier of the log entry that contains the details of the API call.|*string*|
+
+## Requirements
+[!INCLUDE[reqcus](../customer-api/includes/reqcus.md)]
+## See Also
+[Handling Service Errors and Exceptions](~/concepts/handling-service-errors-and-exceptions.md)
+

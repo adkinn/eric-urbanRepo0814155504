@@ -1,4 +1,0 @@
-This example has been developed and run within the environment described in [Getting Started Using PHP with Bing Ads Services](../../guides/getting-started-using-php-with-bing-ads-services.md). To get started developing Bing Ads applications with PHP, [install the SDK](../../guides/getting-started-using-php-with-bing-ads-services.md#installation) and either start with the [provided examples](http://go.microsoft.com/fwlink/?LinkId=838593) or follow one of the application walkthroughs for a [Web](../../guides/walkthrough--bing-ads-web-application-in-php.md) or [Desktop](../../guides/walkthrough--bing-ads-desktop-application-in-php.md) application.
-
-> [!NOTE]
-> This example depends on additional classes such as *AuthHelper.php* that you can download from [GitHub](http://go.microsoft.com/fwlink/?LinkId=838593).
