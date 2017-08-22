@@ -41,7 +41,7 @@ The points of sale feed contains a single, top-level [pointsofsale](../hotel-api
 ```
 
 
-The `PointOfSale` element describes the POS's display name, URL, and criteria for matching the user to a POS. For information about defining a POS, see [Defining a point of sale](#Defining-a-point-of-sale).
+The `PointOfSale` element describes the POS's display name, URL, and criteria for matching the user to a POS. For information about defining a POS, see [Defining a point of sale](#defining-a-point-of-sale).
 
 ## Defining a point of sale
 

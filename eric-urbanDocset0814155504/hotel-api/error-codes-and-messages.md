@@ -27,13 +27,13 @@ When you send Bing your transaction message to process, Bing may return one of t
 If an HTTP error occurs, the body of the response contains an XML document that contains a description of the error.
 
 ```xml
-\<ArrayOfApiError xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <ApiError>
+\<ArrayOfapierror xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <apierror>
     <Code>IPAddressNotAllowed</Code>
     <Message>Customer 4 is not authorized to use IP address 167.220.24.77.</Message>
     \<Property i:nil="true"/>
-  </ApiError>
-</ArrayOfApiError>
+  </apierror>
+</ArrayOfapierror>
 ```
 
 The following tables describe the elements found in the error response.
@@ -43,10 +43,10 @@ Defines the top-level element of an error response.
 
 |Element|Description|Children
 |-|-|-
-|ArrayOfApiError|The top-level element of an error response. This element contains a list of errors that occurred.|Array of [ApiError](#apierror)
+|ArrayOfapierror|The top-level element of an error response. This element contains a list of errors that occurred.|Array of [apierror](#apierror)
 
 <a name="apierror" />
-### ApiError
+### apierror
 Defines an error that occurred.
 
 |Element|Description|Children

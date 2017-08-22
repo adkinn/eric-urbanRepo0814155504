@@ -54,7 +54,7 @@ The `language` element specifies the language that the data in the feed is writt
 > [!NOTE]
 > The hotel feed supports only the English language.
 
-The [listing](../hotel-api/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#Defining-a-hotel-listing).
+The [listing](../hotel-api/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#defining-a-hotel-listing).
 
 
 ## Defining a hotel listing

@@ -12,26 +12,26 @@ author: "eric-urban"
 ms.author: "scottwhi"
 ---
 # ref copy with all defined
-If you create hotel ads in Bing, you use transaction messages to provide Bing your itinerary data. This section describes the elements of a transaction message defined by the [Transaction XSD](../hotel-api/transaction-message-schemas.md). 
+If you create hotel ads in Bing, you use transaction messages to provide Bing your itinerary data. This section describes the elements of a transaction message defined by the [transaction XSD](../hotel-api/transaction-message-schemas.md). 
 
-For information about creating a transaction message, see [Creating a Transaction Message](../Topic/Creating%20an%20Itinerary%20Transaction%20Message.md).
-
-> [!NOTE]
-> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. To determine which elements and attributes that Bing does not support, see [Transaction Message Reference](../hotel-api/transaction-message-reference.md) (the elements and attributes are marked as *Not supported*). 
+For information about creating a transaction message, see [Creating a transaction Message](../Topic/Creating%20an%20Itinerary%20transaction%20Message.md).
 
 > [!NOTE]
-> The elements must be specified in the order defined in the Transaction XSD.
+> Bing does not support all transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. To determine which elements and attributes that Bing does not support, see [transaction Message Reference](../hotel-api/transaction-message-reference.md) (the elements and attributes are marked as *Not supported*). 
+
+> [!NOTE]
+> The elements must be specified in the order defined in the transaction XSD.
 
 ----
 
-The following are the top-level elements that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
+The following are the top-level elements that the [transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
-|[Transaction](#transaction)|Defines the top-level element of the transaction message.
+|[transaction](#transaction)|Defines the top-level element of the transaction message.
 
 
-The following are the complex types that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
+The following are the complex types that the [transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
@@ -43,7 +43,7 @@ The following are the complex types that the [Transaction Schema](../hotel-api/t
 
 
 
-The following are the simple types that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
+The following are the simple types that the [transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
@@ -51,7 +51,7 @@ The following are the simple types that the [Transaction Schema](../hotel-api/tr
 
 
 
-The following are the groups that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
+The following are the groups that the [transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
@@ -177,17 +177,17 @@ InternetIncluded|A Boolean value that determines whether the room includes Inter
 
  
 <a name="transaction" /> 
-## Transaction
+## transaction
 Defines the top-level element of a transaction message.
 
 |Element|Description|Type
 |-|-|-
-|Transaction|The top-level element in a transaction message.<br /><br />**Attributes**:<ul><li>timestamp&mdash;Required. The UTC date and time that you sent the message. The time stamp format is: YYYY-MM-DDThh:mm:ss[+/-hh:mm]. The UTC offset is optional. For example, 2017-06-14T08:00:34 or 2017-06-14T01:00:34+07:00.<br />The time stamp applies to each record in the message. Bing processes a record only if the record's time stamp is later than the time stamp of the same record currently in Bing. For example, if Bing processes a message with time stamp 14:10 and then processes a message with time stamp 14:09, only those records not included in the 14:10 message are processed.<br />Messages with a time stamp older than 24 hours are not processed. </li><li>id&mdash;Optional. An opaque, user-defined ID that advertisers use to identify the message.</li><li>partner&mdash;Not supported. An ID that uniquely identifies a partner.</li></ul> |[Transaction Type](#transactiontype)
+|transaction|The top-level element in a transaction message.<br /><br />**Attributes**:<ul><li>timestamp&mdash;Required. The UTC date and time that you sent the message. The time stamp format is: YYYY-MM-DDThh:mm:ss[+/-hh:mm]. The UTC offset is optional. For example, 2017-06-14T08:00:34 or 2017-06-14T01:00:34+07:00.<br />The time stamp applies to each record in the message. Bing processes a record only if the record's time stamp is later than the time stamp of the same record currently in Bing. For example, if Bing processes a message with time stamp 14:10 and then processes a message with time stamp 14:09, only those records not included in the 14:10 message are processed.<br />Messages with a time stamp older than 24 hours are not processed. </li><li>id&mdash;Optional. An opaque, user-defined ID that advertisers use to identify the message.</li><li>partner&mdash;Not supported. An ID that uniquely identifies a partner.</li></ul> |[transaction Type](#transactiontype)
 
 
  
 <a name="transactiontype" /> 
-## Transaction Type
+## transaction Type
 Defines the transaction message.
 
 |Element|Description|Type
