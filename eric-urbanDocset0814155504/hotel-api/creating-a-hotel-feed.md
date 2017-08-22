@@ -39,8 +39,8 @@ If your property has missing or incorrect information, Bing may not be able to m
 The hotel feed contains a single, top-level [listings](../hotel-api/hotel-feed-reference.md#listings) element. The `listings` element contains two required child elements: `language` and `listing`. 
 
 ```
-\<?xml version="1.0" encoding="UTF-8"?>
-\<listings  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<listings  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <language>en</language>
   <listing>
     . . .

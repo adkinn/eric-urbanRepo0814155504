@@ -28,7 +28,7 @@ The document must use UTF-8 encoding and must conform to the [pointsofsale XSD](
 The points of sale feed contains a single, top-level [pointsofsale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. 
 
 ```xml
-\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
 ```
 
@@ -67,8 +67,8 @@ For information about how Bing matches users to a POS, see [Matching points of s
 The following shows a complete points of sale XML document.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
-\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
   <PointOfSale id="English-French">
     <DisplayNames display_text="ContosoTravel.com" display_language="en" />
@@ -105,7 +105,7 @@ Points of sale include a `Match` element that contains the criteria used by Bing
 The `Match` element's status attribute determines whether to include or exclude the POS based on matching. If status is *never* and Bing matches all criterion, Bing will not use the POS. To exclude a POS, all criterion must match. In the following example, Bing explicitly excludes the POS if the user is from the United States or France, and implicitly includes it if the user is from any other country.
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='never' country='US' />
   \<Match status='never' country='FR' />
@@ -116,7 +116,7 @@ The `Match` element's status attribute determines whether to include or exclude 
 If status is *yes*, Bing will not eliminate any points of sale from consideration that do not explicitly match all criterion, but preference is given to the POS that matches the most criterion. In the following example, Bing explicitly matches the user to the POS if the user's country is France.
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='yes' country='FR' />
   . . .

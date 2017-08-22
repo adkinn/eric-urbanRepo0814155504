@@ -48,7 +48,7 @@ POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions 
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com
 
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
@@ -71,7 +71,7 @@ The POST request places the message in a queue to be processed and then returns.
 If the request succeeds (the message is successfully placed in the queue), the response's body includes an XML document that specifies the number of bytes read (`BytesReceived`) from the request's body (the transaction message). 
 
 ```xml
-\<TxnResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models">
+<TxnResponse xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models">
   <BytesReceived>184381</BytesReceived>
   <FeedId>6165579</FeedId>
 </TxnResponse>

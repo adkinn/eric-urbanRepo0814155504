@@ -31,8 +31,8 @@ The document must use UTF-8 encoding and must conform to the [pointsofsale XSD](
 The points of sale feed contains a single, top-level [pointsofsale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. The `pointsofsale` element requires a [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) child element for each site that users can use to book a room. 
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
-\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance>
+<?xml version="1.0" encoding="UTF-8"?>
+<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance>
   <PointOfSale>
     . . .
   </PointOfSale>
@@ -78,8 +78,8 @@ The `URL` element specifies the link to the site where the user can book the roo
 The following shows a complete points of sale XML document.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
-\<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<pointsofsale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
   <PointOfSale id="English">
     <DisplayNames display_text="ContosoTravel.com" display_language="en" />
@@ -121,7 +121,7 @@ Bing uses the following rules to find the best POS match.
 The `Match` element's status attribute determines whether to include or exclude the POS based on matching. If status is *never* and Bing matches all criterion, Bing will not use the POS. To exclude a POS, all criterion must match. In the following example, Bing explicitly excludes the POS if the user is from the United States or France, and implicitly includes it if the user is from any other country.
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='never' country='US' />
   \<Match status='never' country='FR' />
@@ -133,7 +133,7 @@ If status is *yes*, Bing will not eliminate any points of sale from consideratio
 
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='yes' country='FR' />
   . . .
