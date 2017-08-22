@@ -35,11 +35,11 @@ The following are the complex types that the [transaction Schema](../hotel-api/t
 
 |Type|Description
 |-|-
-|[allowablePointsOfSaleType](#allowablepointsofsaletype)|Defines a list of points of sale where the room may be sold.
-|[localizedText](#localizedtext)|Defines a text string in a localized language.
-|[multipleRatesType](#multipleratestype)|Defines a list of room rates.
-|[photoUrlType](#photourltype)|Defines a photo.
-|[roomPriceDataType](#roompricedatatype)|Defines the details of a hotel room, package, or bundle, depending on the context where the type is used.
+|[allowablepointsofsaletype](#allowablepointsofsaletype)|Defines a list of points of sale where the room may be sold.
+|[localizedtext](#localizedtext)|Defines a text string in a localized language.
+|[multipleratestype](#multipleratestype)|Defines a list of room rates.
+|[photourltype](#photourltype)|Defines a photo.
+|[roompricedatatype](#roompricedatatype)|Defines the details of a hotel room, package, or bundle, depending on the context where the type is used.
 
 
 
@@ -47,7 +47,7 @@ The following are the simple types that the [transaction Schema](../hotel-api/tr
 
 |Type|Description
 |-|-
-|[chargeCurrencyType](#chargecurrencytype)|Defines the possible values .
+|[chargecurrencytype](#chargecurrencytype)|Defines the possible values .
 
 
 
@@ -55,11 +55,11 @@ The following are the groups that the [transaction Schema](../hotel-api/transact
 
 |Type|Description
 |-|-
-|[basicRateInfoGroup](#basicrateinfogroup)|Defines the rate, taxes, and fees of a room.
-|[packageInfoGroup](#packageinfogroup)|Defines the available amenities for a room.
-|[customFieldsGroup](#customfieldsgroup)|Defines custom fields for user-defined metadata.
-|[hotelRateGroup](#hotelrategroup)|Defines rate metadata for a room.
-|[roomRateGroup](#roomrategroup)|Defines rate metadata for a room bundle.
+|[basicrateinfogroup](#basicrateinfogroup)|Defines the rate, taxes, and fees of a room.
+|[packageinfogroup](#packageinfogroup)|Defines the available amenities for a room.
+|[customfieldsgroup](#customfieldsgroup)|Defines custom fields for user-defined metadata.
+|[hotelrategroup](#hotelrategroup)|Defines rate metadata for a room.
+|[roomrategroup](#roomrategroup)|Defines rate metadata for a room bundle.
  
  
 <a name="basicrateinfogroup" /> 
@@ -102,7 +102,7 @@ Defines a list of room rates.
 
 |Element|Description|Type
 |-|-|-
-|Rate|<br /><br />**Attributes**:<ul><li>rate_rule_id&mdash;Required. An opaque, user-defined ID that identities the rule that determines whether the rate applies.</li></ul> |[roomRateGroup Type](#roomrategroup)
+|Rate|<br /><br />**Attributes**:<ul><li>rate_rule_id&mdash;Required. An opaque, user-defined ID that identities the rule that determines whether the rate applies.</li></ul> |[roomrategroup Type](#roomrategroup)
 
 
 <a name="photourltype" /> 
@@ -111,7 +111,7 @@ Defines a photo.
 
 |Element|Description|Type
 |-|-|-
-|Caption| |[localizedText](#localizedtext)
+|Caption| |[localizedtext](#localizedtext)
 |URL| |String
 
  
@@ -123,14 +123,14 @@ Defines the details of a hotel room, package, or bundle, depending on the contex
 |-|-|-
 |RoomData| |roomPriceDataType
 |PackageData| |roomPriceDataType
-|Tagline1| |[localizedText](#localizedtext)
-|Tagline2| |[localizedText](#localizedtext)
+|Tagline1| |[localizedtext](#localizedtext)
+|Tagline2| |[localizedtext](#localizedtext)
 |RoomID| |String
 |RatePlanID| |String
 |PackageID| |String
-|Name| |[localizedText](#localizedtext)
-|Description| |[localizedText](#localizedtext)
-|PhotoURL| |[photoUrlType](#photourltype)
+|Name| |[localizedtext](#localizedtext)
+|Description| |[localizedtext](#localizedtext)
+|PhotoURL| |[photourltype](#photourltype)
 |Capacity|The maximum number of people that the room may hold.<br /><br />**Notes**:<ul><li>The value must be in the range 1 through 30.</li><li>The value must not be less than `Occupancy`.</li></ul>|Unsigned Integer
 |Occupancy|The number of people registered to stay in the room.<br /><br />**Notes**:<ul><li>The value must be in the range 1 through 30.</li><li>The value must not be greater than `Capacity`.</li></ul>|Unsigned Integer
 |ChargeCurrency|The following are the possible values.<ul><li>deposit</li><li>hotel</li><li>installment</li><li>web</li></ul>|String
@@ -147,8 +147,8 @@ InternetIncluded|A Boolean value that determines whether the room includes Inter
 |Custome3| |String
 |Custome4| |String
 |Custome5| |String
-|AllowablePointsOfSale|A list of points of sale where users can book the room.|[allowablePointsOfSaleType](#allowablepointsofsaletype)
-|Rates|A list of |[multipleRatesType](#multipleratestype)
+|AllowablePointsOfSale|A list of points of sale where users can book the room.|[allowablepointsofsaletype](#allowablepointsofsaletype)
+|Rates|A list of |[multipleratestype](#multipleratestype)
 
 
  
@@ -172,7 +172,7 @@ InternetIncluded|A Boolean value that determines whether the room includes Inter
 |Custome3| |String
 |Custome4| |String
 |Custome5| |String
-|AllowablePointsOfSale|A list of points of sale where users can book the room.|[allowablePointsOfSaleType](#allowablepointsofsaletype)
+|AllowablePointsOfSale|A list of points of sale where users can book the room.|[allowablepointsofsaletype](#allowablepointsofsaletype)
 
 
  
@@ -192,8 +192,8 @@ Defines the transaction message.
 
 |Element|Description|Type
 |-|-|-
-|PartnerData|**Not supported**. |[roomPriceDataType](#roompricedatatype)
-|PropertyDataSet|**Not supported**. |[PropertyDataSet Type](#propertydataset)
+|PartnerData|**Not supported**. |[roompricedatatype](#roompricedatatype)
+|propertydataset|**Not supported**. |[propertydataset Type](#propertydataset)
 |Result|A  |Array of [Result Type](#resulttype)
 
 
@@ -205,9 +205,9 @@ Defines the property's metadata.
 |Element|Description|Type
 |-|-|-
 |Property| |String
-|PropertyData| |[roomPriceDataType](#roompricedatatype)
-|RoomData| |[roomPriceDataType](#roompricedatatype)
-|PackageData| |[roomPriceDataType](#roompricedatatype)
+|PropertyData| |[roompricedatatype](#roompricedatatype)
+|RoomData| |[roompricedatatype](#roompricedatatype)
+|PackageData| |[roompricedatatype](#roompricedatatype)
 
 
  
@@ -231,9 +231,9 @@ Defines the room's metadata.
 |Custom3|Optional.<br /><br />A user-defined string. Bing uses the string as a substitution value of a simarly named dynamic query parameter in a point of sale URL. For example, http://www.partnerdomain.com?promo=(CUSTOM1). For more information, see ???.|String
 |Custom4|Optional.<br /><br />A user-defined string. Bing uses the string as a substitution value of a simarly named dynamic query parameter in a point of sale URL. For example, http://www.partnerdomain.com?promo=(CUSTOM1). For more information, see ???.|String
 |Custom5|Optional.<br /><br />A user-defined string. Bing uses the string as a substitution value of a simarly named dynamic query parameter in a point of sale URL. For example, http://www.partnerdomain.com?promo=(CUSTOM1). For more information, see ???.|String
-|AllowablePointsOfSale|A list of points of sale (POS) where users can book the room. A POS is a website where the user can book the room. By default, the user can use any POS defined in the Points of Sale feed file. Specify this element only if you want to limit the points of sale. |Array of [allowablePointsOfSaleType](#allowablepointsofsaletype)
-|Rates|Not supported.|[multipleRatesType](#multipleratestype)
-|RoomBundle|Not supported.|[roomPriceDataType](#roompricedatatype)
+|AllowablePointsOfSale|A list of points of sale (POS) where users can book the room. A POS is a website where the user can book the room. By default, the user can use any POS defined in the Points of Sale feed file. Specify this element only if you want to limit the points of sale. |Array of [allowablepointsofsaletype](#allowablepointsofsaletype)
+|Rates|Not supported.|[multipleratestype](#multipleratestype)
+|RoomBundle|Not supported.|[roompricedatatype](#roompricedatatype)
 
 
 

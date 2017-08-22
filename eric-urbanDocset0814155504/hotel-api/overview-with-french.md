@@ -62,7 +62,7 @@ The following shows a `PointOfSale` element that defines a POS for English or Fr
   </PointOfSale>
 ```
 
-For information about how Bing matches users to a POS, see [Matching points of sale](#Matching points of sale).
+For information about how Bing matches users to a POS, see [matching points of sale](#matching points of sale).
 
 The following shows a complete points of sale XML document.
 
