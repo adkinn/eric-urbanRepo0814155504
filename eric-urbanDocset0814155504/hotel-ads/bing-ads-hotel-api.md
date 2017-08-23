@@ -25,4 +25,4 @@ The hotel feed is an XML document that describes the hotels that you want to adv
 
 After importing your hotel and points of sale feeds into Bing, you need to send Bing your pricing and availability data for your hotel properties. For details about sending this information, see [Transaction Message](../transaction-message/transaction-message.md).
 
-Lastly, you need to specify create hotel ad campaigns and specifying bids for your hotel ads. For information, see [Travel API](../hotel-api/travel-api.md).
+Lastly, you need to specify create hotel ad campaigns and specifying bids for your hotel ads. For information, see [Hotel API](../hotel-api/hotel-api.md).

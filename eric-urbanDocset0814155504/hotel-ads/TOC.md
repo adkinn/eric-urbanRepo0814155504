@@ -1,1 +1,5 @@
 # [Bing Ads Hotel API](bing-ads-hotel-api.md)
+# [Hotel API](../hotel-api/TOC.md)
+# [Transaction Message](../transaction-message/TOC.md)
+# [Hotel Feed](../hotel-feed/TOC.md)
+# [Points of Sale Feed](../pos-feed/TOC.md)

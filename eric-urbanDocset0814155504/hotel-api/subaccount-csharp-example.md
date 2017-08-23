@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 # Subaccount C# Example
 The following example shows the requests you use to list, get, and update subaccounts. 
 
-For details about the elements used in this example, see the [reference](../hotel-api/travel-api-reference.md) section. 
+For details about the elements used in this example, see the [reference](../hotel-api/hotel-api-reference.md) section. 
 
 For additional information, see [Working with subaccounts](../hotel-api/overview.md#workingwithsubaccounts). 
 

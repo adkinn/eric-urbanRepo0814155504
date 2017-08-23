@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with the Travel API"
+title: "Getting Started with the Hotel API"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -11,17 +11,17 @@ caps.latest.revision: 17
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Getting Started with the Travel API
+# Getting Started with the Hotel API
 <a name="doyouhavecredentials"/> 
 ## Do you have your Bing Ads credentials?
-To use the Travel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign up option and continue with the sign up process.
+To use the Hotel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign up option and continue with the sign up process.
 
-Unlike the other Bing Ads APIs, the Travel API does not use a developer token. The API ignores it if you include it.
+Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. The API ignores it if you include it.
 
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Travel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx). 
 
 You *can* use the [Bing Ads SDK](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-csharp-visual-basic-with-web-services(v=msads.100).aspx#oauth) | [Java](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-java-with-web-services(v=msads.100).aspx#oauth) | [Python](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-python-with-web-services(v=msads.100).aspx#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
@@ -48,15 +48,15 @@ var headers = new WebHeaderCollection();
 headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 ```
 
-For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-api/travel-api-reference.md#Headers). 
+For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-api/hotel-api-reference.md#Headers). 
 
 > [!NOTE]
-> The Travel API uses the standard Authorization header; however, Bing Ads uses the AuthenticationToken header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
+> The Hotel API uses the standard Authorization header; however, Bing Ads uses the AuthenticationToken header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
 
 <a name="feeds"/>
 ## Do you have your hotel feed set up?
 
-Before using the Travel API, you should have your hotel feeds set up. For details, see:
+Before using the Hotel API, you should have your hotel feeds set up. For details, see:
 
 - [Hotel Feed](../hotel-feed/hotel-feed.md)
 - [Points of Sale Feed](../pos-feed/points-of-sale-feed.md) 

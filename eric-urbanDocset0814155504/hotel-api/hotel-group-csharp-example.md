@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 # Hotel Group C# Example
 The following example shows the requests you use to list, get, add, and update hotel groups. 
 
-For details about the elements used in this example, see the [reference](../hotel-api/travel-api-reference.md) section. 
+For details about the elements used in this example, see the [reference](../hotel-api/hotel-api-reference.md) section. 
 
 For additional information, see [Working with hotel groups](../hotel-api/overview.md#workingwithhotelgroups). 
 

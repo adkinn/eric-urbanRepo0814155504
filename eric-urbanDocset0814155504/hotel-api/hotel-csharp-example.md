@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 # Hotel C# Example
 The following example shows the requests you use to list, get, and update hotels. The example also shows how to associate a hotel with a hotel group. 
 
-For details about the elements used in this example, see the [reference](../hotel-api/travel-api-reference.md) section. 
+For details about the elements used in this example, see the [reference](../hotel-api/hotel-api-reference.md) section. 
 
 For additional information, see [Working with hotels](../hotel-api/overview.md#workingwithhotels). 
 

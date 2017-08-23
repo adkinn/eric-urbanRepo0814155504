@@ -1,5 +1,5 @@
 ---
-title: "Travel API Reference"
+title: "Hotel API Reference"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -11,13 +11,13 @@ caps.latest.revision: 29
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Travel API Reference
+# Hotel API Reference
 > [!NOTE]
 > Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
 >
 > The API and documentation are subject to change.
 
-The Travel API lets you manage your hotel ad campaigns and bidding.
+The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 ## Endpoint
 
