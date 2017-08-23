@@ -20,7 +20,7 @@ To provide Bing your hotel listings, create an XML document that contains a list
 The document must use UTF-8 encoding and must conform to the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotel.xsd). 
 
 > [!NOTE]
-> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-feed/hotel-feed-reference.md) includes only those elements and attributes that Bing supports. 
+> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-api/hotel-feed-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
 > The document must specify the elements in the order defined in the Hotel XSD (or as shown in the reference).
@@ -36,7 +36,7 @@ If your property has missing or incorrect information, Bing may not be able to m
 
 ## The top-level element in your feed
 
-The hotel feed contains a single, top-level [listings](../hotel-feed/hotel-feed-reference.md#listings) element. The `listings` element contains two required child elements: `language` and `listing`. 
+The hotel feed contains a single, top-level [listings](../hotel-api/hotel-feed-reference.md#listings) element. The `listings` element contains two required child elements: `language` and `listing`. 
 
 ```
 \<?xml version="1.0" encoding="UTF-8"?>
@@ -54,7 +54,7 @@ The `language` element specifies the language that the data in the feed is writt
 > [!NOTE]
 > The hotel feed supports only the English language.
 
-The [listing](../hotel-feed/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#Defining-a-hotel-listing).
+The [listing](../hotel-api/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#Defining-a-hotel-listing).
 
 
 ## Defining a hotel listing
@@ -98,7 +98,7 @@ The listing must specify at least the hotel's main telephone number. The main nu
     <phone type="mobile">123-456-7890</phone>
 ```
 
-For more information about specifying telephone numbers, see the [phone](../hotel-feed/hotel-feed-reference.md#phone) element.
+For more information about specifying telephone numbers, see the [phone](../hotel-api/hotel-feed-reference.md#phone) element.
  
 
 ## General rules
@@ -127,6 +127,6 @@ After creating your feed file, use the [Hotel XSD](https://bhacstatic.blob.core.
 
 Ask your account manager to import the feed file.
 
-Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../pos-feed/points-of-sale-feed.md).
+Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../hotel-api/points-of-sale-feed.md).
 
-After Bing successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
+After Bing successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../hotel-api/transaction-message.md). 

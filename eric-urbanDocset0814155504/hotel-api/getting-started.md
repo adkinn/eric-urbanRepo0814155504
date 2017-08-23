@@ -61,7 +61,7 @@ You may specify up to 90 days advanced booking with stays of up to 14 nights. Fo
 
 The document must use UTF-8 encoding.
 
-[Read more](../transaction-message/creating-a-transaction-message.md).
+[Read more](../hotel-api/creating-a-transaction-message.md).
 
 
 ## Validate the message before sending it
@@ -79,7 +79,7 @@ xmllint.exe --schema transaction.xsd SampleTransaction.xml
 
 ## Before sending your message...
 
-Before sending transaction messages, provide your [hotel feed file](../hotel-feed/hotel-feed.md) and [points of sale file](../pos-feed/points-of-sale-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
+Before sending transaction messages, provide your [hotel feed file](../hotel-api/hotel-feed.md) and [points of sale file](../hotel-api/points-of-sale-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
 
 ## Where to send the message?
 
@@ -126,7 +126,7 @@ The POST request places the message in a queue to be processed and then returns.
 
 To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
 
-[Read more](../transaction-message/sending-bing-transaction-messages.md).
+[Read more](../hotel-api/sending-bing-transaction-messages.md).
 
 
 ## How often do I need to send messages

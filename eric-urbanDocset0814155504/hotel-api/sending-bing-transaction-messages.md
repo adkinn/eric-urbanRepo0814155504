@@ -38,7 +38,7 @@ You may also specify the following optional headers:
   Specify this header if you compress the transaction message (recommended).
   
 - X-Transaction-ID: \<user-defined ID\>  
-  An opaque, user-defined ID that advertisers use to uniquely identifies the message. If you include this header, the ID must match the ID in the [Transaction](../transaction-message/transaction-message-reference.md) element's `id` attribute. 
+  An opaque, user-defined ID that advertisers use to uniquely identifies the message. If you include this header, the ID must match the ID in the [Transaction](../hotel-api/transaction-message-reference.md) element's `id` attribute. 
 
 
 The following shows an example POST request.
@@ -80,6 +80,6 @@ If the request succeeds (the message is successfully placed in the queue), the r
 The `FeedId` element contains a Bing-generated ID that uniquely identifies the feed. The transaction status report includes this ID.
 
 
-If the request fails, the response body will include an XML document that contains a list of error codes and messages that identify why the request failed. For a list of error codes and messages, see [Error Codes and Messages](../transaction-message/error-codes-and-messages.md).
+If the request fails, the response body will include an XML document that contains a list of error codes and messages that identify why the request failed. For a list of error codes and messages, see [Error Codes and Messages](../hotel-api/error-codes-and-messages.md).
 
 The response includes the WebRequestActivityId response header. The header contains the ID associated with the request in the log files. Whenever a request fails, capture the ID. If you're unable to resolve the issue, provide this ID when you contact Support.

@@ -12,26 +12,26 @@ author: "eric-urban"
 ms.author: "scottwhi"
 ---
 # ref copy with all defined
-If you create hotel ads in Bing, you use transaction messages to provide Bing your itinerary data. This section describes the elements of a transaction message defined by the [Transaction XSD](../transaction-message/transaction-message-schemas.md). 
+If you create hotel ads in Bing, you use transaction messages to provide Bing your itinerary data. This section describes the elements of a transaction message defined by the [Transaction XSD](../hotel-api/transaction-message-schemas.md). 
 
 For information about creating a transaction message, see [Creating a Transaction Message](../Topic/Creating%20an%20Itinerary%20Transaction%20Message.md).
 
 > [!NOTE]
-> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. To determine which elements and attributes that Bing does not support, see [Transaction Message Reference](../transaction-message/transaction-message-reference.md) (the elements and attributes are marked as *Not supported*). 
+> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. To determine which elements and attributes that Bing does not support, see [Transaction Message Reference](../hotel-api/transaction-message-reference.md) (the elements and attributes are marked as *Not supported*). 
 
 > [!NOTE]
 > The elements must be specified in the order defined in the Transaction XSD.
 
 ----
 
-The following are the top-level elements that the [Transaction Schema](../transaction-message/transaction-message-schemas.md) defines.
+The following are the top-level elements that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
 |[Transaction](#transaction)|Defines the top-level element of the transaction message.
 
 
-The following are the complex types that the [Transaction Schema](../transaction-message/transaction-message-schemas.md) defines.
+The following are the complex types that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
@@ -43,7 +43,7 @@ The following are the complex types that the [Transaction Schema](../transaction
 
 
 
-The following are the simple types that the [Transaction Schema](../transaction-message/transaction-message-schemas.md) defines.
+The following are the simple types that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-
@@ -51,7 +51,7 @@ The following are the simple types that the [Transaction Schema](../transaction-
 
 
 
-The following are the groups that the [Transaction Schema](../transaction-message/transaction-message-schemas.md) defines.
+The following are the groups that the [Transaction Schema](../hotel-api/transaction-message-schemas.md) defines.
 
 |Type|Description
 |-|-

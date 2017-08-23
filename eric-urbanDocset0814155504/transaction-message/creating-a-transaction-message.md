@@ -26,7 +26,7 @@ The document must use UTF-8 encoding and must conform to the [Transaction XSD](h
 > You must read and follow all Hotel Ads policies. For the list of policies, see [Pilot programs policies](https://advertise.bingads.microsoft.com/en-us/resources/policies/pilot-programs#Hotel%20Ads).
 
 > [!NOTE]
-> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. The [Transaction Message Reference](../transaction-message/transaction-message-reference.md) includes only those elements and attributes that Bing supports. 
+> Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. The [Transaction Message Reference](../hotel-api/transaction-message-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
 > The message must specify the elements in the order defined in the Transaction XSD (or as shown in the reference).
@@ -34,7 +34,7 @@ The document must use UTF-8 encoding and must conform to the [Transaction XSD](h
 
 ## The top-level Transaction element
 
-Transaction messages contain a single, top-level [Transaction](../transaction-message/transaction-message-reference.md#transaction) element. 
+Transaction messages contain a single, top-level [Transaction](../hotel-api/transaction-message-reference.md#transaction) element. 
 
 ```xml
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
@@ -49,7 +49,7 @@ The `id` attribute is a user-defined ID that uniquely identifies the message to 
 
 ## Specifying the list of itineraries
 
-The `Transaction` element contains a list of [Result](../transaction-message/transaction-message-reference.md#resulttype) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
+The `Transaction` element contains a list of [Result](../hotel-api/transaction-message-reference.md#resulttype) elements, one for each itinerary it defines. The message should include only new itineraries or those that have changed.
 
 The following shows a `Result` element that specifies the required child elements.
 
@@ -139,7 +139,7 @@ The following shows a `Result` element that includes the optional child elements
 
 Use the `ChargeCurrency` element to specify when the user is charged for the booking. By default, the user pays when they book (this is the Web option). This example uses Deposit, which asks the user to pay a portion at booking and the remainder later (for example, when they check out).
 
-Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https://www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https://www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/creating-a-points-of-sale-feed.md#Using-dynamic-query-parameters).
+Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https://www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https://www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../hotel-api/creating-a-points-of-sale-feed.md#Using-dynamic-query-parameters).
 
 Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's can use for booking. By default, the user may use any POS in the partner's points of sale feed file. The `id` attribute must match a POS in the feed file.
 
@@ -147,6 +147,6 @@ Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's
 
 Before sending transaction messages, first send your hotel feed file and points of sale file to your TAM. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
 
-Validate the transaction message before sending it to Bing. For information, see [Validating your Transaction Message](../transaction-message/validating-your-transaction-message.md).
+Validate the transaction message before sending it to Bing. For information, see [Validating your Transaction Message](../hotel-api/validating-your-transaction-message.md).
 
-Send your transaction message to Bing. For information, see [Sending Bing Transaction Messages](../transaction-message/sending-bing-transaction-messages.md).
+Send your transaction message to Bing. For information, see [Sending Bing Transaction Messages](../hotel-api/sending-bing-transaction-messages.md).

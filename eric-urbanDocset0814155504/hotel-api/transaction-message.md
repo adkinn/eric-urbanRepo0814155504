@@ -19,13 +19,13 @@ If you create hotel ad campaigns in Bing Ads, use transaction messages to update
 
 |Topic|Description
 |-|-
-|[Getting Started](../transaction-message/getting-started.md)|Provides details about getting permissions, basic transaction messages, validating messages, sending messages to Bing, and checking the status of a queued message.
+|[Getting Started](../hotel-api/getting-started.md)|Provides details about getting permissions, basic transaction messages, validating messages, sending messages to Bing, and checking the status of a queued message.
 |[Hotel Ads Policies](https://advertise.bingads.microsoft.com/en-us/resources/policies/pilot-programs#Hotel%20Ads)|Describes the policies that you must adhere to if you use Hotel Ads.
-|[Creating a Transaction Message](../transaction-message/creating-a-transaction-message.md)|Provides details about building a transaction message using the required and optional elements.
-|[Sending Transaction Messages](../transaction-message/sending-bing-transaction-messages.md)|Provides details about the endpoint that you send messages to and required headers.
-|[Validating Transaction Messages](../transaction-message/validating-your-transaction-message.md)|Provides details about using the Transaction XSD to validate your message before sending it to Bing.
-|[Transaction Message Reference](../transaction-message/transaction-message-reference.md)|Provides descriptions of the elements and attributes of the Transaction XSD.
-|[Transaction Message Schemas](../transaction-message/transaction-message-schemas.md)|Provides links to the XSD schemas that define a transaction message.
+|[Creating a Transaction Message](../hotel-api/creating-a-transaction-message.md)|Provides details about building a transaction message using the required and optional elements.
+|[Sending Transaction Messages](../hotel-api/sending-bing-transaction-messages.md)|Provides details about the endpoint that you send messages to and required headers.
+|[Validating Transaction Messages](../hotel-api/validating-your-transaction-message.md)|Provides details about using the Transaction XSD to validate your message before sending it to Bing.
+|[Transaction Message Reference](../hotel-api/transaction-message-reference.md)|Provides descriptions of the elements and attributes of the Transaction XSD.
+|[Transaction Message Schemas](../hotel-api/transaction-message-schemas.md)|Provides links to the XSD schemas that define a transaction message.
 
 
 

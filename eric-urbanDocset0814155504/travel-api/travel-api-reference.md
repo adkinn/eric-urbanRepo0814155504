@@ -75,7 +75,7 @@ The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authorization-hdr"/>Authorization|Request header.<br/><br/>Set this header to a bearer OAuth access token. For example, "Authorization: Bearer QTkxRUFBRjEzOTUyNEIx...". For information about getting a token, see [Getting Started](../transaction-message/getting-started.md).
+|<a name="authorization-hdr"/>Authorization|Request header.<br/><br/>Set this header to a bearer OAuth access token. For example, "Authorization: Bearer QTkxRUFBRjEzOTUyNEIx...". For information about getting a token, see [Getting Started](../hotel-api/getting-started.md).
 |<a name="contenttype-hdr" />Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. For POST and PATCH, set this header to `application/json`.
 |<a name="requestid-hdr" />X-MS-RequestId|Response header.<br/><br/>The ID of the log entry that contains the details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 

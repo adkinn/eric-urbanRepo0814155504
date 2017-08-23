@@ -21,14 +21,14 @@ To provide Bing your points of sale data, create an XML document that contains a
 The document must use UTF-8 encoding and must conform to the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd). 
 
 > [!NOTE]
-> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Points of Sale Reference](../pos-feed/points-of-sale-reference.md) includes only those elements and attributes that Bing supports. 
+> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Points of Sale Reference](../hotel-api/points-of-sale-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
 > The document must specify the elements in the order defined in the PointsOfSale XSD (or as shown in the reference).
 
 ## The top-level element in your feed
 
-The points of sale feed contains a single, top-level [PointsOfSale](../pos-feed/points-of-sale-reference.md#pointsofsale) element. The `PointsOfSale` element requires a [PointOfSale](../pos-feed/points-of-sale-reference.md#pointofsaletype) child element for each site that users can use to book a room. 
+The points of sale feed contains a single, top-level [PointsOfSale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. The `PointsOfSale` element requires a [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) child element for each site that users can use to book a room. 
 
 ```xml
 \<?xml version="1.0" encoding="UTF-8"?>
@@ -45,7 +45,7 @@ The `PointOfSale` element describes the POS's display name, URL, and criteria fo
 
 ## Defining a point of sale
 
-The `PointsOfSale` element contains a list of [PointOfSale](../pos-feed/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
+The `PointsOfSale` element contains a list of [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
 
 The following shows `PointOfSale` elements that define points of sale for English speaking users. The first `PointOfSale` element defines a POS for English speaking end users on any device, and the second `PointOfSale` element defines a POS for English speaking end users on mobile devices. The POS URL includes details about the transaction, such as the check-in and check-out dates, hotel ID, and user language. Bing uses the display name and POS URL to create a hyperlink that's added to the ad. When the user clicks the link, they're taken to the booking site.
 
@@ -66,7 +66,7 @@ Include the `DisplayNames` element only for online travel agencies. Don't includ
 
 If you include `DisplayNames`, you must include a `Match` element that has the language criterion set to the same language.
 
-Bing uses the POS that best matches the user based on the POS's matching criteria. Based on the above matching criteria, users on mobile devices will use the English-Mobile POS and everyone else will use the English POS. For information about how Bing matches users to a POS, see [Matching points of sale](#Matching-points-of-sale). For a list of criterion that you can match on, see the [Match](../pos-feed/points-of-sale-reference.md#match) element.
+Bing uses the POS that best matches the user based on the POS's matching criteria. Based on the above matching criteria, users on mobile devices will use the English-Mobile POS and everyone else will use the English POS. For information about how Bing matches users to a POS, see [Matching points of sale](#Matching-points-of-sale). For a list of criterion that you can match on, see the [Match](../hotel-api/points-of-sale-reference.md#match) element.
 
 The `URL` element specifies the link to the site where the user can book the room. The example shows using dynamic query parameters. Bing substitutes values for the dynamic variables at runtime. For information about using dynamic query parameters, see [Using dynamic query parameters](#Using-dynamic-query-parameters).
 
@@ -278,6 +278,6 @@ After creating your feed file, use the [PointsOfSale XSD](https://bhacstatic.blo
 
 Ask your account manager to import the feed file.
 
-Be sure to also import your hotel data. For information about creating your hotel feed file, see [Hotel Feed](../hotel-feed/hotel-feed.md).
+Be sure to also import your hotel data. For information about creating your hotel feed file, see [Hotel Feed](../hotel-api/hotel-feed.md).
 
-After successfully importing your points of sale feed and hotel feed, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
+After successfully importing your points of sale feed and hotel feed, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../hotel-api/transaction-message.md). 

@@ -25,7 +25,7 @@ The Travel API uses the OAuth authentication scheme. For details about authentic
 
 You *can* use the [Bing Ads SDK](https://msdn.microsoft.com/library/bing-ads-client-libraries.aspx) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-csharp-visual-basic-with-web-services(v=msads.100).aspx#oauth) | [Java](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-java-with-web-services(v=msads.100).aspx#oauth) | [Python](https://msdn.microsoft.com/library/bing-ads-overview-getting-started-python-with-web-services(v=msads.100).aspx#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
-If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../travel-api/oauth-csharp-example.md) for an example OAuth implementation.
+If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-api/oauth-csharp-example.md) for an example OAuth implementation.
 
 > [!NOTE]
 > You cannot use the Bing Ads SDK in the SI environment to get the access token. For SI, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
@@ -48,7 +48,7 @@ var headers = new WebHeaderCollection();
 headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 ```
 
-For information about the Authorization header and other headers that the request and response may contain, see [Headers](../travel-api/travel-api-reference.md#Headers). 
+For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-api/travel-api-reference.md#Headers). 
 
 > [!NOTE]
 > The Travel API uses the standard Authorization header; however, Bing Ads uses the AuthenticationToken header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
@@ -58,9 +58,9 @@ For information about the Authorization header and other headers that the reques
 
 Before using the Travel API, you should have your hotel feeds set up. For details, see:
 
-- [Hotel Feed](../hotel-feed/hotel-feed.md)
-- [Points of Sale Feed](../pos-feed/points-of-sale-feed.md) 
-- [Transaction Message](../transaction-message/transaction-message.md) 
+- [Hotel Feed](../hotel-api/hotel-feed.md)
+- [Points of Sale Feed](../hotel-api/points-of-sale-feed.md) 
+- [Transaction Message](../hotel-api/transaction-message.md) 
 
 
 

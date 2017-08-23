@@ -15,9 +15,9 @@ ms.author: "scottwhi"
 > [!NOTE]
 > Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
 
-If you create hotel ads in Bing, you must use a hotel feed to provide Bing information about the hotels that you advertise. You must define and import your hotel feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md). 
+If you create hotel ads in Bing, you must use a hotel feed to provide Bing information about the hotels that you advertise. You must define and import your hotel feed prior to sending Bing [Transaction Messages](../hotel-api/transaction-message.md). 
 
-For information about creating a hotel feed, see [Creating a Hotel Feed](../hotel-feed/creating-a-hotel-feed.md).
+For information about creating a hotel feed, see [Creating a Hotel Feed](../hotel-api/creating-a-hotel-feed.md).
 
 > [!NOTE]
 > The elements must be specified in the order defined by the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotel.xsd) (and as listed in this topic).

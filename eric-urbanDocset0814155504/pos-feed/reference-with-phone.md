@@ -12,9 +12,9 @@ author: "eric-urban"
 ms.author: "scottwhi"
 ---
 # reference with phone
-If you create hotel ads in Bing, you will use a Points of Sale feed to provide Bing the point of sale URLs to include in ads. You must define and import your points of sale feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md). 
+If you create hotel ads in Bing, you will use a Points of Sale feed to provide Bing the point of sale URLs to include in ads. You must define and import your points of sale feed prior to sending Bing [Transaction Messages](../hotel-api/transaction-message.md). 
 
-For information about creating a points of sale feed, see [Creating a Poinsts of Sale Feed](../pos-feed/creating-a-points-of-sale-feed.md).
+For information about creating a points of sale feed, see [Creating a Poinsts of Sale Feed](../hotel-api/creating-a-points-of-sale-feed.md).
 
 > [!NOTE]
 > The elements must be specified in the order defined by the Points of Sale XSD (and as listed in this topic).
