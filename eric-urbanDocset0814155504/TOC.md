@@ -1,5 +1,3 @@
-# [travel-api](travel-api\TOC.md)
-# [transaction-message](transaction-message\TOC.md)
-# [pos-feed](pos-feed\TOC.md)
-# [hotel-feed](hotel-feed\TOC.md)
-# [hotel-api](hotel-api\TOC.md)
+# [Bing Ads API Overview](concepts\TOC.md)
+# [Content API](content-api\TOC.md)
+# [Hotel API](hotel-api\TOC.md)
