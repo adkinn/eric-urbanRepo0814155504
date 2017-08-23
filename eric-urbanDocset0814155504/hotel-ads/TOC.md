@@ -10,8 +10,8 @@
 ### [Hotel Group C# Example](../hotel-api/hotel-group-csharp-example.md)
 ### [Hotel C# Example](../hotel-api/hotel-csharp-example.md)
 ### [OAuth C# Example](../hotel-api/oauth-csharp-example.md)
-### [CodeGrantFlow C# Example](../hotel-api/codegrantflow-csharp-example.md)
-### [Call CodeGrantFlow in C# Example](../hotel-api/call-codegrantflow-in-csharp-example.md)
+#### [CodeGrantFlow C# Example](../hotel-api/codegrantflow-csharp-example.md)
+#### [Call CodeGrantFlow in C# Example](../hotel-api/call-codegrantflow-in-csharp-example.md)
 
 
 # [Transaction Message](../transaction-message/transaction-message.md)
