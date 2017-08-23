@@ -27,7 +27,7 @@ Before you can send Bing transaction messages, you must contact your account man
 A transaction message is an XML document that contains pricing and availability data for one or more hotel properties. For each hotel property, specify one `Result` element for each `Checkin` and `Nights` combination (also know as an itinerary) in your advanced booking window. If you allow five days advanced booking and stays of up to three-nights, your message would contain 15 `Result` elements. The following example shows one day's worth of itineraries.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
@@ -61,7 +61,7 @@ You may specify up to 90 days advanced booking with stays of up to 14 nights. Fo
 
 The document must use UTF-8 encoding.
 
-[Read more](../hotel-api/creating-a-transaction-message.md).
+[Read more](../transaction-message/creating-a-transaction-message.md).
 
 
 ## Validate the message before sending it
@@ -79,7 +79,7 @@ xmllint.exe --schema transaction.xsd SampleTransaction.xml
 
 ## Before sending your message...
 
-Before sending transaction messages, provide your [hotel feed file](../hotel-api/hotel-feed.md) and [points of sale file](../hotel-api/points-of-sale-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
+Before sending transaction messages, provide your [hotel feed file](../hotel-feed/hotel-feed.md) and [points of sale file](../pos-feed/points-of-sale-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
 
 ## Where to send the message?
 
@@ -104,7 +104,7 @@ POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions 
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com
 
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
@@ -126,7 +126,7 @@ The POST request places the message in a queue to be processed and then returns.
 
 To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
 
-[Read more](../hotel-api/sending-bing-transaction-messages.md).
+[Read more](../transaction-message/sending-bing-transaction-messages.md).
 
 
 ## How often do I need to send messages

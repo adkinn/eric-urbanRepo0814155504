@@ -14,11 +14,11 @@ ms.author: "scottwhi"
 # Subaccount C# Example
 The following example shows the requests you use to list, get, and update subaccounts. 
 
-For details about the elements used in this example, see the [reference](../hotel-api/travel-api-reference.md) section. 
+For details about the elements used in this example, see the [reference](../hotel-api/hotel-api-reference.md) section. 
 
 For additional information, see [Working with subaccounts](../hotel-api/overview.md#workingwithsubaccounts). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-api/getting-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/oauth-csharp-example.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../transaction-message/getting-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/oauth-csharp-example.md).
 
 ```csharp
 using System;

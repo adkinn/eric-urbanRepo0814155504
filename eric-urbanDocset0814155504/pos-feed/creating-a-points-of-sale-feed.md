@@ -1,41 +1,38 @@
 ---
-title: "overview with french"
+title: "Creating a Points of Sale Feed"
 ms.custom: ""
-ms.date: "08/01/2017"
+ms.date: "08/16/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-ms.assetid: be5fb821-4f23-4cd4-bc84-60332114868b
-caps.latest.revision: 2
+ms.assetid: 57d55a00-c55e-478b-a3fe-b237644e20db
+caps.latest.revision: 11
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# overview with french
+# Creating a Points of Sale Feed
+> [!NOTE]
+> Hotel Ads is now under pilot and available to pilot participants only.  Please contact your account manager for details.
+
 To provide Bing your points of sale data, create an XML document that contains a point of sale (POS) for each booking site you support. A POS describes the POS's display name, URL, and criteria for matching the user to a POS.
 
 
-The document must use UTF-8 encoding and must conform to the [PointsOfSale XSD](#). 
+The document must use UTF-8 encoding and must conform to the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd). 
 
 > [!NOTE]
-> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Points of Sale Reference](../hotel-api/points-of-sale-reference.md) includes only those elements and attributes that Bing supports. 
+> Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Points of Sale Reference](../pos-feed/points-of-sale-reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
 > The document must specify the elements in the order defined in the PointsOfSale XSD (or as shown in the reference).
 
 ## The top-level element in your feed
 
-The points of sale feed contains a single, top-level [PointsOfSale](../hotel-api/points-of-sale-reference.md#pointsofsale) element. 
+The points of sale feed contains a single, top-level [PointsOfSale](../pos-feed/points-of-sale-reference.md#pointsofsale) element. The `PointsOfSale` element requires a [PointOfSale](../pos-feed/points-of-sale-reference.md#pointofsaletype) child element for each site that users can use to book a room. 
 
 ```xml
-\<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
-```
-
-The `PointsOfSale` element requires a [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) child element. Specify a `PointOfSale` element for each site that users can use to book a room. 
-
-```xml
-<PointsOfSale>
+<?xml version="1.0" encoding="UTF-8"?>
+<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance>
   <PointOfSale>
     . . .
   </PointOfSale>
@@ -44,38 +41,55 @@ The `PointsOfSale` element requires a [PointOfSale](../hotel-api/points-of-sale-
 ```
 
 
-The `PointOfSale` element describes the POS's display name, URL, and criteria for matching the user to a POS. For information about defining a POS, see [Defining a point of sale).
+The `PointOfSale` element describes the POS's display name, URL, and criteria for matching the user to a POS. For information about defining a POS, see [Defining a point of sale](#Defining-a-point-of-sale).
 
 ## Defining a point of sale
 
-The `PointsOfSale` element contains a list of [PointOfSale](../hotel-api/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
+The `PointsOfSale` element contains a list of [PointOfSale](../pos-feed/points-of-sale-reference.md#pointofsaletype) elements, one for each POS site that users can use to book rooms. The list must contain points of sale for a single partner.
 
-The following shows a `PointOfSale` element that defines a POS for English or French speaking end-users in the US or France. The POS URL includes details about the transaction, such as the check-in and check-out dates, hotel ID, and user language. Bing uses the display name and POS URL to create a hyperlink that's added to the ad. When the user clicks the link, they're taken to the booking site.
+The following shows `PointOfSale` elements that define points of sale for English speaking users. The first `PointOfSale` element defines a POS for English speaking end users on any device, and the second `PointOfSale` element defines a POS for English speaking end users on mobile devices. The POS URL includes details about the transaction, such as the check-in and check-out dates, hotel ID, and user language. Bing uses the display name and POS URL to create a hyperlink that's added to the ad. When the user clicks the link, they're taken to the booking site.
 
 ```xml
-  <PointOfSale id="English-French">
+  <PointOfSale id="English">
     <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-    <DisplayNames display_text="ContosoTravel.com.fr" display_language="fr" />
-    <Match status="yes" language="en" country="US" currency="USD" />
-    <Match status="yes" language="fr" country="FR" currency="EUR" />
-    <URL>http://partner.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+    <Match status="yes" language="en" />
+    <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
+  <PointOfSale id="English-Mobile">
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" device="mobile" />
+    <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
   </PointOfSale>
 ```
 
-For information about how Bing matches users to a POS, see [Matching points of sale](#Matching points of sale).
+Include the `DisplayNames` element only for online travel agencies. Don't include `DisplayNames` for central reservations system (CRS) suppliers (also known as integration partners) and direct suppliers (such as hotel owners or chains). For CRS suppliers and direct suppliers, Bing uses the hotel's name from the hotel feed.
+
+If you include `DisplayNames`, you must include a `Match` element that has the language criterion set to the same language.
+
+Bing uses the POS that best matches the user based on the POS's matching criteria. Based on the above matching criteria, users on mobile devices will use the English-Mobile POS and everyone else will use the English POS. For information about how Bing matches users to a POS, see [Matching points of sale](#Matching-points-of-sale). For a list of criterion that you can match on, see the [Match](../pos-feed/points-of-sale-reference.md#match) element.
+
+The `URL` element specifies the link to the site where the user can book the room. The example shows using dynamic query parameters. Bing substitutes values for the dynamic variables at runtime. For information about using dynamic query parameters, see [Using dynamic query parameters](#Using-dynamic-query-parameters).
+
+
+> [!NOTE]
+> If you specify the language and country matching criterion, they must be set to **en** and **US** only.
+
 
 The following shows a complete points of sale XML document.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
-\<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
-  <PointOfSale id="English-French">
+  <PointOfSale id="English">
     <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-    <DisplayNames display_text="ContosoTravel.com.fr" display_language="fr" />
-    <Match status="yes" language="en" country="US" currency="USD" />
-    <Match status="yes" language="fr" country="FR" currency="EUR" />
-    <URL>http://partner.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+    <Match status="yes" language="en" />
+    <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
+  <PointOfSale id="English-Mobile">
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" device="mobile" />
+    <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
   </PointOfSale>
 </PointsOfSale>
 ```
@@ -83,29 +97,31 @@ The following shows a complete points of sale XML document.
 
 ## Matching points of sale
 
-Points of sale include a `Match` element that contains the criteria used by Bing to match a user to a POS. Bing uses the following rules to find the best POS match.
+Points of sale include a `Match` element that contains the criteria that Bing uses to match a user to a POS. The following are the criterion that Bing uses to match users to points of sale. The list is in order of preference.
 
-- The following lists the criterion that Bing uses to match users to points of sale. 
-  - country
-  - currency
-  - language
-  - device
+- country
+- currency
+- language
+- device
+
+Bing uses the following rules to find the best POS match.
+
   
-- The list is in order of preference&mdash;Bing gives the highest preference to country matches and the least preference to device matches. 
+- Bing gives the highest preference to country matches and the least preference to device matches. 
 
-- If `Match` does not specify a criterion, Bing implicitly matches all values. For example, if `Match` specifies language and currency, Bing implicitly matches any country and device. 
+- If `Match` does not specify one of the criterion, Bing implicitly matches all values for the criterion. For example, if `Match` specifies language and currency, Bing implicitly matches any country and device. 
   
 - If `Match` specifies one or more criterion, Bing uses the POS with the most explicit matches.  
    
 - If the user matches multiple points of sale, Bing uses the POS with the best match quality. If multiple points of sale have the same match quality, Bing uses the first POS that it found with that match quality. Match quality is based on:  
-  - Criterion preferred order. For example, if one POS matches only on the user's currency and another matches only on the user's device, Bing uses the POS that matches the user's currency because it's higher in the preferred order.  
-  - Explicit match is preferred over an implicit match. For example, if one POS matches explicitly to the user's country and another matches only implicitly to the user's country, Bing uses the POS that explicitly matches.
+  - Matches with the highest preference. For example, if one POS matches only on the user's currency and another matches only on the user's device, Bing uses the POS that matches the user's currency because it's higher in the preferred order.  
+  - Explicit matches are preferred over implicit matches. For example, if one POS matches explicitly to the user's country and another matches implicitly to the user's country, Bing uses the POS that explicitly matches.
 
 
 The `Match` element's status attribute determines whether to include or exclude the POS based on matching. If status is *never* and Bing matches all criterion, Bing will not use the POS. To exclude a POS, all criterion must match. In the following example, Bing explicitly excludes the POS if the user is from the United States or France, and implicitly includes it if the user is from any other country.
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='never' country='US' />
   \<Match status='never' country='FR' />
@@ -113,25 +129,23 @@ The `Match` element's status attribute determines whether to include or exclude 
 </PointOfSale>
 ``` 
 
-If status is *yes*, Bing will not eliminate any points of sale from consideration that do not explicitly match all criterion, but preference is given to the POS that matches the most criterion. In the following example, Bing explicitly matches the user to the POS if the user's country is France.
+If status is *yes*, Bing will not eliminate any points of sale from consideration that do not explicitly match all criterion, but preference is given to the POS that matches the most criterion. In the following example, Bing explicitly matches the user to the POS if the user's country is France. If the user's country is not France, the POS will still be considered until a better match is found. If a better match is not found, Bing will use the POS.
+
 
 ```
-\<PointOfSale id='exclude-example'>
+<PointOfSale id='exclude-example'>
   . . .
   \<Match status='yes' country='FR' />
   . . .
 </PointOfSale>
 ``` 
 
-If the user's country is not France, the POS will still be considered until a better match is found. If a better match is not found, Bind will use the URL.
-
-
 Bing recommends using the same matching criteria for each POS. This minimizes the complexity in determining why one POS matched over another.
 
 
 ## Using dynamic query parameters
 
-A point of sale (POS) contains a `URL` element that identifies the site where users can book rooms. The URL may contain dynamic query parameters, which are parameters that contain a predefined token for its value. Bing then substitutes the token with a value before adding the URL to the ad. By using dynamic query parameters, you can include the hotel's ID, check-in date, length of stay, and more in the URL.
+A point of sale (POS) contains a `URL` element that identifies the site where users can book rooms. The URL may contain dynamic query parameters, which are user-defined parameters that contain a predefined token for its value. Bing then substitutes the token with a value before adding the URL to the ad. By using dynamic query parameters, you can include the hotel's ID, check-in date, length of stay, and more in the URL.
 
 The following shows the syntax that you use to specify dynamic query parameters in your POS URL.
 
@@ -152,8 +166,8 @@ The following are the possible dynamic variable names that you may specify in th
 |CHECKOUTMONTH|The two-digit month that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the month. For example, 07.
 |CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the year. For example, 2017.
 |CLICK-TYPE|Indicates whether the user clicked on a hotel ad or a room bundle ad. The following are the possible values.<ul><li>hotel&mdash;The user clicked on a hotel ad.</li><li>room&mdash;The user clicked on a room bundle ad.</li></ul> **NOTE:** Bing does not support the room option.
-|CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in `Result` element of the Transaction message.
-|DATE-TYPE|Indicates whether the user selected the default date or specified a date when searching. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specified dates.</li></ul>
+|CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the `Result` element of the Transaction message.
+|DATE-TYPE|Indicates whether the user specified check-in and check-out dates. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specific check-in and check-out dates.</li></ul>
 |BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>unknown&mdash;The ad originated from an undetermined source.</li></ul>
 |LENGTH|The length of stay specified in the `Nights` element of the Transaction Message. For example, 3.
 |NUM-ADULTS|The number of adults occupying the room. The default value is 2.
@@ -213,7 +227,7 @@ In addition to the variables listed above, you can also use the following direct
 
 - IF-DEFAULT-DATE&mdash;Resolves to **true** if the user clicked on a hotel ad that used default dates (the user did not pick the dates). If **true**, Bing inserts the values that follow this directive into the URL. Otherwise, Bing inserts the values following the ELSE directive.  
   
-- ELSE&mdash;If the previous condition is not met, then the values that follow this directive are inserted into the URL.  
+- ELSE&mdash;If the previous condition is not met, Bing inserts the values that follow this directive.  
   
 - ENDIF&mdash;Ends the conditional block.
 
@@ -237,3 +251,33 @@ Otherwise, Bing renders the URL as:
 ```
 http://partner.com?hotelID=123&checkinDay=23&checkinMonth=07&checkinYear=2017&nights=2&popup_datepicker=false
 ```
+
+## General rules
+
+- Use the PointsOfSale XSD to validate your Points of Sale feed file before sending it to Bing.
+  
+- The points of sale feed document must use UTF-8 encoding.
+  
+- The feed must include points of sale for all sites that users use to book rooms&mdash; the feed process does not support partial updates.
+  
+- Bing ignores any element or attribute that it does not support.
+  
+- Elements must be in the order specified in the PointsOfSale XSD.
+  
+- If your data includes special characters such as apostrophies or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
+  
+- Do not include elements that do not contain data. For example, if you do not provide a display name for a hotel, do not include an empty \<DisplayNames/\> element.
+    
+- Do not use HTML in your XML elements.
+  
+
+
+## Next steps
+
+After creating your feed file, use the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd) to validate it.
+
+Ask your account manager to import the feed file.
+
+Be sure to also import your hotel data. For information about creating your hotel feed file, see [Hotel Feed](../hotel-feed/hotel-feed.md).
+
+After successfully importing your points of sale feed and hotel feed, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 

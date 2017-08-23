@@ -27,7 +27,7 @@ When you send Bing your transaction message to process, Bing may return one of t
 If an HTTP error occurs, the body of the response contains an XML document that contains a description of the error.
 
 ```xml
-\<ArrayOfApiError xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<ArrayOfApiError xmlns="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.BHAC.HotelAdsAPIs.Models" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
   <ApiError>
     <Code>IPAddressNotAllowed</Code>
     <Message>Customer 4 is not authorized to use IP address 167.220.24.77.</Message>

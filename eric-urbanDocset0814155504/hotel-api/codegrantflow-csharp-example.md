@@ -12,7 +12,7 @@ author: "eric-urban"
 ms.author: "scottwhi"
 ---
 # CodeGrantFlow C# Example
-The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Managing User Authentication with OAuth](~/concepts/authentication-with-oauth.md).
+The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Managing User Authentication with OAuth](https://msdn.microsoft.com/library/bing-ads-user-authentication-oauth-guide.aspx).
 
 > [!NOTE]
 > The example currently points to the SI environment for getting Bing Ads access tokens. To use the example for the production environment, please remove the *Production OAuth server endpoints* from comments and place the *SI OAuth server endpoints* in comments.
