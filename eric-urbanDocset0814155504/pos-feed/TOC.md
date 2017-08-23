@@ -1,0 +1,6 @@
+# [overview with french](overview-with-french.md)
+# [Validating your Points of Sale Feed](validating-your-points-of-sale-feed.md)
+# [reference with phone](reference-with-phone.md)
+# [Creating a Points of Sale Feed](creating-a-points-of-sale-feed.md)
+# [Points of Sale Feed](points-of-sale-feed.md)
+# [Points of Sale Reference](points-of-sale-reference.md)
