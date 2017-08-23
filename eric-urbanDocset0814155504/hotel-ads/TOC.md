@@ -1,5 +1,6 @@
 # [Bing Ads Hotel API](bing-ads-hotel-api.md)
-# [Hotel API](../hotel-api/TOC.md)
+
+# [Hotel API](../hotel-api/hotel-api.md)
 ## [Overview](../hotel-api/overview.md)
 ## [Throttling Requests](../hotel-api/throttling-requests.md)
 ## [Hotel C# Example](../hotel-api/hotel-csharp-example.md)
@@ -10,10 +11,10 @@
 ## [Subaccount C# Example](../hotel-api/subaccount-csharp-example.md)
 ## [OAuth C# Example](../hotel-api/oauth-csharp-example.md)
 ## [Hotel API Reference](../hotel-api/hotel-api-reference.md)
-## [Hotel API](../hotel-api/hotel-api.md)
 ## [Examples](../hotel-api/examples.md)
 
-# [Transaction Message](../transaction-message/TOC.md)
+
+# [Transaction Message](../transaction-message/transaction-message.md)
 ## [Sending Bing Transaction Messages](../transaction-message/sending-bing-transaction-messages.md)
 ## [Differences Between Google's and Bing's Transaction Message Usage](../transaction-message/differences-between-google-s-and-bing-s-transaction-message-usage.md)
 ## [Error Codes and Messages](../transaction-message/error-codes-and-messages.md)
@@ -21,24 +22,21 @@
 ## [Creating a Transaction Message](../transaction-message/creating-a-transaction-message.md)
 ## [junk](../transaction-message/junk.md)
 ## [Validating your Transaction Message](../transaction-message/validating-your-transaction-message.md)
-## [Transaction Message](../transaction-message/transaction-message.md)
 ## [Getting Started](../transaction-message/getting-started.md)
 ## [Transaction Message Reference](../transaction-message/transaction-message-reference.md)
 ## [Transaction Message Schemas](../transaction-message/transaction-message-schemas.md)
 ## [ref copy with all defined](../transaction-message/ref-copy-with-all-defined.md)
 
 
-# [Hotel Feed](../hotel-feed/TOC.md)
-## [Hotel Feed](../hotel-feed/hotel-feed.md)
+# [Hotel Feed](../hotel-feed/hotel-feed.md)
 ## [Validating your Hotel Feed](../hotel-feed/validating-your-hotel-feed.md)
 ## [Hotel Feed Reference](../hotel-feed/hotel-feed-reference.md)
 ## [Creating a Hotel Feed](../hotel-feed/creating-a-hotel-feed.md)
 
 
-# [Points of Sale Feed](../pos-feed/TOC.md)
+# [Points of Sale Feed](../pos-feed/points-of-sale-feed.md)
 ## [Points of Sale Reference](../pos-feed/points-of-sale-reference.md)
 ## [Creating a Points of Sale Feed](../pos-feed/creating-a-points-of-sale-feed.md)
 ## [reference with phone](../pos-feed/reference-with-phone.md)
 ## [Validating your Points of Sale Feed](../pos-feed/validating-your-points-of-sale-feed.md)
-## [Points of Sale Feed](../pos-feed/points-of-sale-feed.md)
 ## [overview with french](../pos-feed/overview-with-french.md)
