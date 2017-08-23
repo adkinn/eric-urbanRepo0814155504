@@ -71,7 +71,7 @@ The `Baserate` specifies the cost of the entire length of stay and not the night
 If you allow five days advanced booking and stays of up to three-nights, your message would contain 15 `Result` elements. The following example shows one day's worth of itineraries.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>

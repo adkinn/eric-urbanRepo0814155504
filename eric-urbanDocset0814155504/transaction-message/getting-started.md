@@ -27,7 +27,7 @@ Before you can send Bing transaction messages, you must contact your account man
 A transaction message is an XML document that contains pricing and availability data for one or more hotel properties. For each hotel property, specify one `Result` element for each `Checkin` and `Nights` combination (also know as an itinerary) in your advanced booking window. If you allow five days advanced booking and stays of up to three-nights, your message would contain 15 `Result` elements. The following example shows one day's worth of itineraries.
 
 ```xml
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
@@ -104,7 +104,7 @@ POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions 
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com
 
-\<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
 8027-724309deb373">
   <Result>
