@@ -52,7 +52,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [CollectionResponse](../hotel-api/hotel-api-reference.md#CollectionResponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [SubAccount](../hotel-api/hotel-api-reference.md#SubAccount) objects.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [SubAccount](../hotel-api/hotel-api-reference.md#SubAccount) objects.
 
 ```
 HTTP/1.1 200 OK
@@ -91,7 +91,7 @@ For details about the valid bid range and budget for your market, see the Curren
 
 To pause a subaccount, set the `Bid` or `Budget` property to zero (0.0). All hotels in the paused subaccount will not serve. To activate the subaccount, set `Bid` and `Budget` to a value greater than zero.  
 
-To update any of these properties, send the following request. The body of the request contains a [SubAccount](../hotel-api/hotel-api-reference.md#SubAccount) object with only the properties that you want to update. This example shows adding multipliers.
+To update any of these properties, send the following request. The body of the request contains a [subaccount](../hotel-api/hotel-api-reference.md#subaccount) object with only the properties that you want to update. This example shows adding multipliers.
 
 ```
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>') HTTP/1.1
@@ -154,7 +154,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a contains a [SubAccount](../hotel-api/hotel-api-reference.md#SubAccount) object.
+The response contains a contains a [subaccount](../hotel-api/hotel-api-reference.md#subaccount) object.
 
 ```
 HTTP/1.1 200 OK
@@ -241,7 +241,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [CollectionResponse](../hotel-api/hotel-api-reference.md#CollectionResponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) objects. This example shows the default Ungrouped group.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) objects. This example shows the default Ungrouped group.
 
 ```
 HTTP/1.1 200 OK
@@ -279,7 +279,7 @@ x-ms-trackingid: 21fafae0-4053-46e0-8271-87bc5fce6312
 <a name="addingahotelgroup" />
 ### Adding a hotel group
 
-You would create a new hotel group if you want to create a new logical grouping of hotels. To specify the hotel group, use the [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) object. The only required field is `Name`. Use a descriptive name that indicates the grouping. The `Bid` and `BidMultipliers` fields are optional. If you don't specify them, the group uses the bid and bid multipliers from the subaccount. Specify them if you want to override the subaccount values. You can specify the bid, multipliers, or both.
+You would create a new hotel group if you want to create a new logical grouping of hotels. To specify the hotel group, use the [hotelgroup](../hotel-api/hotel-api-reference.md#hotelgroup) object. The only required field is `Name`. Use a descriptive name that indicates the grouping. The `Bid` and `BidMultipliers` fields are optional. If you don't specify them, the group uses the bid and bid multipliers from the subaccount. Specify them if you want to override the subaccount values. You can specify the bid, multipliers, or both.
 
 For details about the valid bid range for your market, see the Currency Value table in the [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx) topic.
 
@@ -295,7 +295,7 @@ Content-Length: 26
 {"Name":"test-3"}
 ```
 
-The response is an [AddResponse](../hotel-api/hotel-api-reference.md#AddResponse) object that contains the ID of the added hotel group.
+The response is an [addresponse](../hotel-api/hotel-api-reference.md#addresponse) object that contains the ID of the added hotel group.
 
 ```
 HTTP/1.1 200 OK
@@ -323,7 +323,7 @@ If the subaccount specifies the a maximum bid, the hotel group's bid must be les
 
 To pause a hotel group, set the `Bid` property to zero (0.0). All hotels in the paused hotel group will not serve. To activate the hotel group, set `Bid` to a value greater than zero.  
 
-To update any of these properties, send the following request. The body of the request contains a [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) object with only the properties that you want to update. This example shows adding a bid and multipliers.
+To update any of these properties, send the following request. The body of the request contains a [hotelgroup](../hotel-api/hotel-api-reference.md#hotelgroup) object with only the properties that you want to update. This example shows adding a bid and multipliers.
 
 ```
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>') HTTP/1.1
@@ -375,7 +375,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) object.
+The response contains a [hotelgroup](../hotel-api/hotel-api-reference.md#hotelgroup) object.
 
 ```
 HTTP/1.1 200 OK
@@ -447,7 +447,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [CollectionResponse](../hotel-api/hotel-api-reference.md#CollectionResponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [Hotel](../hotel-api/hotel-api-reference.md#Hotel) objects.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [Hotel](../hotel-api/hotel-api-reference.md#Hotel) objects.
 
 ```
 HTTP/1.1 200 OK
@@ -536,7 +536,7 @@ If the subaccount specifies the a maximum bid, the hotel's bid must be less than
 
 To pause a hotel, set the `Bid` property to zero (0.0). Paused hotels will not serve. To activate the hotel, set `Bid` to a value greater than zero. A hotel will also not serve if the hotel group or subaccount that it belongs to is paused. 
 
-To update any of these properties, send the following request. The body of the request contains a [Hotel](../hotel-api/hotel-api-reference.md#Hotel) object with only the properties that you want to update. This example shows updating the multipliers.
+To update any of these properties, send the following request. The body of the request contains a [hotel](../hotel-api/hotel-api-reference.md#hotel) object with only the properties that you want to update. This example shows updating the multipliers.
 
 ```
 {
@@ -567,7 +567,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [Hotel](../hotel-api/hotel-api-reference.md#Hotel) object.
+The response contains a [hotel](../hotel-api/hotel-api-reference.md#hotel) object.
 
 ```
 HTTP/1.1 200 OK
@@ -605,7 +605,7 @@ x-ms-trackingid: ceb70eb3-36ca-4b99-a5f7-b1a04de1e4ae
 
 When you import your hotel feed file, the hotels go in the default Ungrouped hotel group. If you create new hotel groups so you can logically organize your hotel, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
 
-To move a hotel from one group to another, send the following request. The body of the request is an [AssociationCollection](../hotel-api/hotel-api-reference.md#AssociationCollection) object. 
+To move a hotel from one group to another, send the following request. The body of the request is an [associationcollection](../hotel-api/hotel-api-reference.md#associationcollection) object. 
 ```
 POST https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associate HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
@@ -629,7 +629,7 @@ Content-Length: 169
 
 The Associate method should always return success. If one or more of the associations fail, the response will contain the input association of the failed associations, and the reason for the failure. 
 
-The response contains a [CollectionResponse](../hotel-api/hotel-api-reference.md#CollectionResponse) object. If the all associations succeeded, the `value` array is empty. Otherwise, `value` contains a [HotelAssociation](../hotel-api/hotel-api-reference.md#HotelAssociation) object for each association that failed. The association's `Errors` field contains the reasons for the failure.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. If the all associations succeeded, the `value` array is empty. Otherwise, `value` contains a [HotelAssociation](../hotel-api/hotel-api-reference.md#HotelAssociation) object for each association that failed. The association's `Errors` field contains the reasons for the failure.
 
 ```
 HTTP/1.1 200 OK
@@ -667,7 +667,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [CollectionResponse](../hotel-api/hotel-api-reference.md#CollectionResponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelAsssociation](../hotel-api/hotel-api-reference.md#HotelAssociation) objects.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelAsssociation](../hotel-api/hotel-api-reference.md#HotelAssociation) objects.
 
 ```
 HTTP/1.1 200 OK
