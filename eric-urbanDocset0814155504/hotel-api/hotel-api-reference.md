@@ -1,5 +1,5 @@
 ---
-title: "Travel API Reference"
+title: "Hotel API Reference"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -11,13 +11,13 @@ caps.latest.revision: 29
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Travel API Reference
+# Hotel API Reference
 > [!NOTE]
 > Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
 >
 > The API and documentation are subject to change.
 
-The Travel API lets you manage your hotel ad campaigns and bidding.
+The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 ## Endpoint
 
@@ -75,7 +75,7 @@ The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authorization-hdr"/>Authorization|Request header.<br/><br/>Set this header to a bearer OAuth access token. For example, "Authorization: Bearer QTkxRUFBRjEzOTUyNEIx...". For information about getting a token, see [Getting Started](../hotel-api/getting-started.md).
+|<a name="authorization-hdr"/>Authorization|Request header.<br/><br/>Set this header to a bearer OAuth access token. For example, "Authorization: Bearer QTkxRUFBRjEzOTUyNEIx...". For information about getting a token, see [Getting Started](../transaction-message/getting-started.md).
 |<a name="contenttype-hdr" />Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. For POST and PATCH, set this header to `application/json`.
 |<a name="requestid-hdr" />X-MS-RequestId|Response header.<br/><br/>The ID of the log entry that contains the details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
@@ -164,7 +164,7 @@ Do not specify this class, instead specify the [FixedBid](#FixedBid) or [Percent
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](~/concepts/currencies.md) topic. The customer's account specifies the currency used.|Double|Required|Optional
+|Amount|The dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx) topic. The customer's account specifies the currency used.|Double|Required|Optional
 
 
 ### Budget
@@ -173,7 +173,7 @@ Defines the daily budget for hotel ads in a subaccount.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The daily budget amount. For details about valid budgets for your market, see the Currency Value table in the [Currencies](~/concepts/currencies.md) topic. The customer's account specifies the currency used for the budget.|Double|Required|Optional
+|Amount|The daily budget amount. For details about valid budgets for your market, see the Currency Value table in the [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx) topic. The customer's account specifies the currency used for the budget.|Double|Required|Optional
 
 
 ### CheckinDayOfWeekMultiplier
@@ -227,7 +227,7 @@ Defines a fixed bid amount.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Amount|The fixed dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](~/concepts/currencies.md) topic. The customer's account specifies the currency used.<br /><br />The bid amount is the per-night bid. For example, if the bid is $3.50 and the itinerary is for a 3-night stay, the final bid is $10.50.|Double|Required|Optional
+|Amount|The fixed dollar bid amount. For details about the valid bid range for your market, see the Currency Value table in the [Currencies](https://msdn.microsoft.com/library/bing-ads-currencies.aspx) topic. The customer's account specifies the currency used.<br /><br />The bid amount is the per-night bid. For example, if the bid is $3.50 and the itinerary is for a 3-night stay, the final bid is $10.50.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.FixedBid".|String|Required|Required
 
 

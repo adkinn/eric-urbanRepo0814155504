@@ -12,7 +12,7 @@ author: "eric-urban"
 ms.author: "scottwhi"
 ---
 # Examples
-This section provides code examples that show how to use the resources available in the Travel API.
+This section provides code examples that show how to use the resources available in the Hotel API.
 
 
 * Get, list, and update subaccounts: [C#](../hotel-api/subaccount-csharp-example.md)

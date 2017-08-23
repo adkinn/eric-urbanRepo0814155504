@@ -1,5 +1,5 @@
 ---
-title: "Travel API"
+title: "Hotel API"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -11,13 +11,13 @@ caps.latest.revision: 15
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Travel API
+# Hotel API
 > [!NOTE]
 > Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
 >
 > The API and documentation are subject to change.
 
-The Travel API lets you manage your hotel ad campaigns and bidding.
+The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 <a name="thebasics"/>
 ## The basics...
@@ -30,7 +30,7 @@ Hotel groups provide another level for you to logically group hotel ads. A hotel
  
 A hotel group specifies the default bid and bid multipliers for ads that don't specify bids or multipliers. If you don't specify bids and multipliers, the group inherits them from the subaccount.
 
-After you have your subaccount and hotel group set up, you can begin importing your hotel feed data. For information, see [Do you have your hotel feed set up?](../hotel-api/getting-started-with-the-travel-api.md#feeds)
+After you have your subaccount and hotel group set up, you can begin importing your hotel feed data. For information, see [Do you have your hotel feed set up?](../hotel-api/getting-started-with-the-hotel-api.md#feeds)
 
 Hotels belong to a single hotel group. Hotels specify the bid and bid multipliers to use for the hotel ad. If you don't specify bids and multipliers, the hotel inherits them from the hotel group or subaccount, in that order.
 
@@ -39,12 +39,12 @@ For information about moving the hotel to a different hotel group, see [Associat
 
 ## What needs in place before I start?
 
-You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../hotel-api/getting-started.md)
+You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../transaction-message/getting-started.md)
 
 
 ## How do I manage my resources?
 
-The following sections show how to manage your subaccounts, hotel groups, and hotels. For information about the endpoints, header, query parameters, and resources, see [Travel API Reference](../hotel-api/travel-api-reference.md).
+The following sections show how to manage your subaccounts, hotel groups, and hotels. For information about the endpoints, header, query parameters, and resources, see [Hotel API Reference](../hotel-api/hotel-api-reference.md).
 
 |Topic|Description
 |-|-

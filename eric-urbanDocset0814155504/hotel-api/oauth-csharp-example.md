@@ -14,7 +14,7 @@ ms.author: "scottwhi"
 # OAuth C# Example
 The following topics break out a simple desktop implementation used to get an access and refresh token. The example does not support the recommended state query parameter.
 
-If you use the Bing Ads C# SDK, you should use it to get your OAuth access and refresh tokens. For information, see [Getting Started](../hotel-api/getting-started.md).
+If you use the Bing Ads C# SDK, you should use it to get your OAuth access and refresh tokens. For information, see [Getting Started](../transaction-message/getting-started.md).
 
 |Module|Description
 |-|-
