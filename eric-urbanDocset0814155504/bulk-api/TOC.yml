@@ -1,0 +1,248 @@
+- name: Ad Group Negative Dynamic Search Ad Target
+  href: ad-group-negative-dynamic-search-ad-target.md
+- name: Campaign Negative Site
+  href: campaign-negative-site.md
+- name: Ad Group Negative In Market Audience Association
+  href: ad-group-negative-in-market-audience-association.md
+- name: Campaign Negative Keyword
+  href: campaign-negative-keyword.md
+- name: Campaign Location Intent Criterion
+  href: campaign-location-intent-criterion.md
+- name: Account Callout Ad Extension
+  href: account-callout-ad-extension.md
+- name: Campaign Call Ad Extension
+  href: campaign-call-ad-extension.md
+- name: Bulk Data Objects
+  href: bulk-data-objects.md
+- name: Review Ad Extension
+  href: review-ad-extension.md
+- name: GetBulkUploadStatus
+  href: getbulkuploadstatus-service-operation.md
+- name: PerformanceStatsDateRange
+  href: performancestatsdaterange-data-object.md
+- name: Image Ad Extension
+  href: image-ad-extension.md
+- name: Account
+  href: account.md
+- name: Campaign Price Ad Extension
+  href: campaign-price-ad-extension.md
+- name: Ad Group DeviceOS Criterion
+  href: ad-group-deviceos-criterion.md
+- name: Bulk Service Operations
+  href: bulk-service-operations.md
+- name: Shared Negative Keyword
+  href: shared-negative-keyword.md
+- name: Price Ad Extension
+  href: price-ad-extension.md
+- name: EditorialError
+  href: editorialerror-data-object.md
+- name: Structured Snippet Ad Extension
+  href: structured-snippet-ad-extension.md
+- name: Location Ad Extension
+  href: location-ad-extension.md
+- name: Campaign DeviceOS Criterion
+  href: campaign-deviceos-criterion.md
+- name: Campaign Negative Keyword List Association
+  href: campaign-negative-keyword-list-association.md
+- name: Campaign Location Criterion
+  href: campaign-location-criterion.md
+- name: Ad Group Product Partition
+  href: ad-group-product-partition.md
+- name: BatchError
+  href: batcherror-data-object.md
+- name: Bulk Error Data Objects
+  href: bulk-error-data-objects.md
+- name: Call Ad Extension
+  href: call-ad-extension.md
+- name: Account App Ad Extension
+  href: account-app-ad-extension.md
+- name: Campaign DayTime Criterion
+  href: campaign-daytime-criterion.md
+- name: Campaign Negative Dynamic Search Ad Target
+  href: campaign-negative-dynamic-search-ad-target.md
+- name: Campaign Gender Criterion
+  href: campaign-gender-criterion.md
+- name: Ad Group Review Ad Extension
+  href: ad-group-review-ad-extension.md
+- name: Campaign Review Ad Extension
+  href: campaign-review-ad-extension.md
+- name: Product Ad Label
+  href: product-ad-label.md
+- name: Ad Group Sitelink2 Ad Extension
+  href: ad-group-sitelink2-ad-extension.md
+- name: Format Version
+  href: format-version.md
+- name: Date
+  href: date-data-object.md
+- name: App Install Ad Label
+  href: app-install-ad-label.md
+- name: Bulk File Schema
+  href: bulk-file-schema.md
+- name: CompressionType
+  href: compressiontype-value-set.md
+- name: DownloadFileType
+  href: downloadfiletype-value-set.md
+- name: Campaign Callout Ad Extension
+  href: campaign-callout-ad-extension.md
+- name: Keyword
+  href: keyword.md
+- name: Ad Group DayTime Criterion
+  href: ad-group-daytime-criterion.md
+- name: Account Location Ad Extension
+  href: account-location-ad-extension.md
+- name: GetBulkDownloadStatus
+  href: getbulkdownloadstatus-service-operation.md
+- name: Keyword Main Line Bid
+  href: keyword-main-line-bid.md
+- name: Ad Group Negative Keyword
+  href: ad-group-negative-keyword.md
+- name: Campaign Structured Snippet Ad Extension
+  href: campaign-structured-snippet-ad-extension.md
+- name: App Install Ad
+  href: app-install-ad.md
+- name: Ad Group Custom Audience Association
+  href: ad-group-custom-audience-association.md
+- name: Ad Group Negative Custom Audience Association
+  href: ad-group-negative-custom-audience-association.md
+- name: Negative Keyword List
+  href: negative-keyword-list.md
+- name: Dynamic Search Ad
+  href: dynamic-search-ad.md
+- name: Ad Group Structured Snippet Ad Extension
+  href: ad-group-structured-snippet-ad-extension.md
+- name: Account Sitelink2 Ad Extension
+  href: account-sitelink2-ad-extension.md
+- name: Ad Group Location Intent Criterion
+  href: ad-group-location-intent-criterion.md
+- name: Expanded Text Ad Label
+  href: expanded-text-ad-label.md
+- name: Account Image Ad Extension
+  href: account-image-ad-extension.md
+- name: Campaign App Ad Extension
+  href: campaign-app-ad-extension.md
+- name: Account Review Ad Extension
+  href: account-review-ad-extension.md
+- name: GetBulkUploadUrl
+  href: getbulkuploadurl-service-operation.md
+- name: DataScope
+  href: datascope-value-set.md
+- name: Custom Audience
+  href: custom-audience.md
+- name: Campaign Negative Location Criterion
+  href: campaign-negative-location-criterion.md
+- name: OperationError
+  href: operationerror-data-object.md
+- name: AdGroup Sitelink Ad Extension
+  href: adgroup-sitelink-ad-extension.md
+- name: AdApiError
+  href: adapierror-data-object.md
+- name: Text Ad
+  href: text-ad.md
+- name: Bulk Value Sets
+  href: bulk-value-sets.md
+- name: Keyword Best Position Bid
+  href: keyword-best-position-bid.md
+- name: Campaign Product Scope
+  href: campaign-product-scope.md
+- name: Ad Group
+  href: ad-group.md
+- name: Ad Group Image Ad Extension
+  href: ad-group-image-ad-extension.md
+- name: DownloadCampaignsByAccountIds
+  href: downloadcampaignsbyaccountids-service-operation.md
+- name: ApplicationFault
+  href: applicationfault-data-object.md
+- name: Text Ad Label
+  href: text-ad-label.md
+- name: Dynamic Search Ad Label
+  href: dynamic-search-ad-label.md
+- name: Ad Group Location Criterion
+  href: ad-group-location-criterion.md
+- name: Bulk Service Reference
+  href: bulk-service-reference.md
+- name: Ad Group Gender Criterion
+  href: ad-group-gender-criterion.md
+- name: Ad Group Negative Remarketing List Association
+  href: ad-group-negative-remarketing-list-association.md
+- name: Ad Group Label
+  href: ad-group-label.md
+- name: Ad Group Price Ad Extension
+  href: ad-group-price-ad-extension.md
+- name: Ad Group Remarketing List Association
+  href: ad-group-remarketing-list-association.md
+- name: AdApiFaultDetail
+  href: adapifaultdetail-data-object.md
+- name: Campaign Image Ad Extension
+  href: campaign-image-ad-extension.md
+- name: Sitelink2 Ad Extension
+  href: sitelink2-ad-extension.md
+- name: Keyword First Page Bid
+  href: keyword-first-page-bid.md
+- name: Campaign Age Criterion
+  href: campaign-age-criterion.md
+- name: Campaign Sitelink2 Ad Extension
+  href: campaign-sitelink2-ad-extension.md
+- name: Expanded Text Ad
+  href: expanded-text-ad.md
+- name: Ad Group Negative Location Criterion
+  href: ad-group-negative-location-criterion.md
+- name: Product Ad
+  href: product-ad.md
+- name: Ad Group App Ad Extension
+  href: ad-group-app-ad-extension.md
+- name: Sitelink Ad Extension
+  href: sitelink-ad-extension.md
+- name: Ad Group Radius Criterion
+  href: ad-group-radius-criterion.md
+- name: Label
+  href: label.md
+- name: Ad Group Dynamic Search Ad Target
+  href: ad-group-dynamic-search-ad-target.md
+- name: DownloadCampaignsByCampaignIds
+  href: downloadcampaignsbycampaignids-service-operation.md
+- name: Account Price Ad Extension
+  href: account-price-ad-extension.md
+- name: Callout Ad Extension
+  href: callout-ad-extension.md
+- name: Account Structured Snippet Ad Extension
+  href: account-structured-snippet-ad-extension.md
+- name: Ad Group Negative Site
+  href: ad-group-negative-site.md
+- name: Campaign Label
+  href: campaign-label.md
+- name: Remarketing List
+  href: remarketing-list.md
+- name: Offline Conversion
+  href: offline-conversion.md
+- name: ApiFaultDetail
+  href: apifaultdetail-data-object.md
+- name: DownloadEntity
+  href: downloadentity-value-set.md
+- name: Ad Group Callout Ad Extension
+  href: ad-group-callout-ad-extension.md
+- name: Campaign
+  href: campaign.md
+- name: Campaign Radius Criterion
+  href: campaign-radius-criterion.md
+- name: Campaign Location Ad Extension
+  href: campaign-location-ad-extension.md
+- name: Budget
+  href: budget.md
+- name: Keyword Label
+  href: keyword-label.md
+- name: CampaignScope
+  href: campaignscope-data-object.md
+- name: Campaign Sitelink Ad Extension
+  href: campaign-sitelink-ad-extension.md
+- name: Ad Group Age Criterion
+  href: ad-group-age-criterion.md
+- name: ReportTimePeriod
+  href: reporttimeperiod-value-set.md
+- name: ResponseMode
+  href: responsemode-value-set.md
+- name: Ad Group In Market Audience Association
+  href: ad-group-in-market-audience-association.md
+- name: In Market Audience
+  href: in-market-audience.md
+- name: App Ad Extension
+  href: app-ad-extension.md

@@ -1,0 +1,222 @@
+- name: Ad Insight Service Operations
+  href: ad-insight-service-operations.md
+  items:
+  - name: GetKeywordLocations
+    href: getkeywordlocations-service-operation.md
+  - name: GetBidOpportunities
+    href: getbidopportunities-service-operation.md
+  - name: GetKeywordIdeaCategories
+    href: getkeywordideacategories-service-operation.md
+  - name: GetEstimatedPositionByKeywordIds
+    href: getestimatedpositionbykeywordids-service-operation.md
+  - name: GetEstimatedBidByKeywords
+    href: getestimatedbidbykeywords-service-operation.md
+  - name: SuggestKeywordsFromExistingKeywords
+    href: suggestkeywordsfromexistingkeywords-service-operation.md
+  - name: GetHistoricalSearchCount
+    href: gethistoricalsearchcount-service-operation.md
+  - name: GetEstimatedPositionByKeywords
+    href: getestimatedpositionbykeywords-service-operation.md
+  - name: GetBidLandscapeByAdGroupIds
+    href: getbidlandscapebyadgroupids-service-operation.md
+  - name: GetBidLandscapeByKeywordIds
+    href: getbidlandscapebykeywordids-service-operation.md
+  - name: GetKeywordIdeas
+    href: getkeywordideas-service-operation.md
+  - name: GetKeywordCategories
+    href: getkeywordcategories-service-operation.md
+  - name: GetEstimatedBidByKeywordIds
+    href: getestimatedbidbykeywordids-service-operation.md
+  - name: GetBudgetOpportunities
+    href: getbudgetopportunities-service-operation.md
+  - name: SuggestKeywordsForUrl
+    href: suggestkeywordsforurl-service-operation.md
+  - name: GetKeywordOpportunities
+    href: getkeywordopportunities-service-operation.md
+  - name: GetKeywordTrafficEstimates
+    href: getkeywordtrafficestimates-service-operation.md
+  - name: GetHistoricalKeywordPerformance
+    href: gethistoricalkeywordperformance-service-operation.md
+  - name: GetKeywordDemographics
+    href: getkeyworddemographics-service-operation.md
+  - name: GetDomainCategories
+    href: getdomaincategories-service-operation.md
+- name: Ad Insight Data Objects
+  href: ad-insight-data-objects.md
+  items:
+  - name: Criterion
+    href: criterion-data-object.md
+  - name: EstimatedPositionAndTraffic
+    href: estimatedpositionandtraffic-data-object.md
+  - name: BidLandscapePoint
+    href: bidlandscapepoint-data-object.md
+  - name: KeywordSuggestion
+    href: keywordsuggestion-data-object.md
+  - name: KeywordIdEstimatedBid
+    href: keywordidestimatedbid-data-object.md
+  - name: DateRangeSearchParameter
+    href: daterangesearchparameter-data-object.md
+  - name: NetworkCriterion
+    href: networkcriterion-data-object.md
+  - name: ImpressionShareSearchParameter
+    href: impressionsharesearchparameter-data-object.md
+  - name: DayMonthAndYear
+    href: daymonthandyear-data-object.md
+  - name: AdApiFaultDetail
+    href: adapifaultdetail-data-object.md
+  - name: KeywordCategoryResult
+    href: keywordcategoryresult-data-object.md
+  - name: DomainCategory
+    href: domaincategory-data-object.md
+  - name: LocationCriterion
+    href: locationcriterion-data-object.md
+  - name: HistoricalSearchCountPeriodic
+    href: historicalsearchcountperiodic-data-object.md
+  - name: KeywordAndConfidence
+    href: keywordandconfidence-data-object.md
+  - name: KeywordIdea
+    href: keywordidea-data-object.md
+  - name: Ad Insight Service Reference
+    href: ad-insight-service-reference.md
+  - name: SearchParameter
+    href: searchparameter-data-object.md
+  - name: BroadMatchSearchQueryKPI
+    href: broadmatchsearchquerykpi-data-object.md
+  - name: BroadMatchKeywordOpportunity
+    href: broadmatchkeywordopportunity-data-object.md
+  - name: QuerySearchParameter
+    href: querysearchparameter-data-object.md
+  - name: Opportunity
+    href: opportunity-data-object.md
+  - name: ApplicationFault
+    href: applicationfault-data-object.md
+  - name: DeviceSearchParameter
+    href: devicesearchparameter-data-object.md
+  - name: CompetitionSearchParameter
+    href: competitionsearchparameter-data-object.md
+  - name: KeywordEstimate
+    href: keywordestimate-data-object.md
+  - name: BudgetOpportunity
+    href: budgetopportunity-data-object.md
+  - name: KeywordOpportunity
+    href: keywordopportunity-data-object.md
+  - name: KeywordKPI
+    href: keywordkpi-data-object.md
+  - name: KeywordDemographic
+    href: keyworddemographic-data-object.md
+  - name: Keyword
+    href: keyword-data-object.md
+  - name: KeywordDemographicResult
+    href: keyworddemographicresult-data-object.md
+  - name: CampaignEstimate
+    href: campaignestimate-data-object.md
+  - name: AdGroupEstimate
+    href: adgroupestimate-data-object.md
+  - name: ApiFaultDetail
+    href: apifaultdetail-data-object.md
+  - name: AdGroupBidLandscapeInput
+    href: adgroupbidlandscapeinput-data-object.md
+  - name: CampaignEstimator
+    href: campaignestimator-data-object.md
+  - name: KeywordCategory
+    href: keywordcategory-data-object.md
+  - name: ExcludeAccountKeywordsSearchParameter
+    href: excludeaccountkeywordssearchparameter-data-object.md
+  - name: KeywordAndMatchType
+    href: keywordandmatchtype-data-object.md
+  - name: DeviceCriterion
+    href: devicecriterion-data-object.md
+  - name: LocationSearchParameter
+    href: locationsearchparameter-data-object.md
+  - name: KeywordLocationResult
+    href: keywordlocationresult-data-object.md
+  - name: CategorySearchParameter
+    href: categorysearchparameter-data-object.md
+  - name: BidOpportunity
+    href: bidopportunity-data-object.md
+  - name: IdeaTextSearchParameter
+    href: ideatextsearchparameter-data-object.md
+  - name: SearchVolumeSearchParameter
+    href: searchvolumesearchparameter-data-object.md
+  - name: KeywordHistoricalPerformance
+    href: keywordhistoricalperformance-data-object.md
+  - name: LanguageCriterion
+    href: languagecriterion-data-object.md
+  - name: SearchCountsByAttributes
+    href: searchcountsbyattributes-data-object.md
+  - name: KeywordEstimatedBid
+    href: keywordestimatedbid-data-object.md
+  - name: LanguageSearchParameter
+    href: languagesearchparameter-data-object.md
+  - name: AdGroupEstimator
+    href: adgroupestimator-data-object.md
+  - name: EstimatedBidAndTraffic
+    href: estimatedbidandtraffic-data-object.md
+  - name: BudgetPoint
+    href: budgetpoint-data-object.md
+  - name: SuggestedBidSearchParameter
+    href: suggestedbidsearchparameter-data-object.md
+  - name: KeywordEstimator
+    href: keywordestimator-data-object.md
+  - name: KeywordIdEstimatedPosition
+    href: keywordidestimatedposition-data-object.md
+  - name: KeywordLocation
+    href: keywordlocation-data-object.md
+  - name: TrafficEstimate
+    href: trafficestimate-data-object.md
+  - name: NetworkSearchParameter
+    href: networksearchparameter-data-object.md
+  - name: UrlSearchParameter
+    href: urlsearchparameter-data-object.md
+  - name: NegativeKeyword
+    href: negativekeyword-data-object.md
+  - name: KeywordBidLandscape
+    href: keywordbidlandscape-data-object.md
+  - name: KeywordIdeaCategory
+    href: keywordideacategory-data-object.md
+  - name: KeywordSearchCount
+    href: keywordsearchcount-data-object.md
+  - name: AdGroupBidLandscape
+    href: adgroupbidlandscape-data-object.md
+  - name: KeywordEstimatedPosition
+    href: keywordestimatedposition-data-object.md
+- name: Ad Insight Error Data Objects
+  href: ad-insight-error-data-objects.md
+  items:
+  - name: BatchError
+    href: batcherror-data-object.md
+  - name: OperationError
+    href: operationerror-data-object.md
+  - name: AdApiError
+    href: adapierror-data-object.md
+- name: Ad Insight Value Sets
+  href: ad-insight-value-sets.md
+  items:
+  - name: BudgetPointType
+    href: budgetpointtype-value-set.md
+  - name: SourceType
+    href: sourcetype-value-set.md
+  - name: BidOpportunityType
+    href: bidopportunitytype-value-set.md
+  - name: MatchType
+    href: matchtype-value-set.md
+  - name: TargetAdPosition
+    href: targetadposition-value-set.md
+  - name: KeywordOpportunityType
+    href: keywordopportunitytype-value-set.md
+  - name: CompetitionLevel
+    href: competitionlevel-value-set.md
+  - name: NetworkType
+    href: networktype-value-set.md
+  - name: TimeInterval
+    href: timeinterval-value-set.md
+  - name: AdPosition
+    href: adposition-value-set.md
+  - name: Currency
+    href: currency-value-set.md
+  - name: AdGroupBidLandscapeType
+    href: adgroupbidlandscapetype-value-set.md
+  - name: KeywordIdeaAttribute
+    href: keywordideaattribute-value-set.md
+  - name: BudgetLimitType
+    href: budgetlimittype-value-set.md

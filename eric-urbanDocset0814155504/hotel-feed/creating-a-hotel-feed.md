@@ -41,11 +41,11 @@ The hotel feed contains a single, top-level [listings](../hotel-feed/hotel-feed-
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <listings  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <language>en</language>
-  <listing>
-    . . .
-  </listing>
-  ...
+? <language>en</language>
+? <listing>
+? ? . . .
+? </listing>
+? ...
 </listings>
 ```
 
@@ -54,7 +54,7 @@ The `language` element specifies the language that the data in the feed is writt
 > [!NOTE]
 > The hotel feed supports only the English language.
 
-The [listing](../hotel-feed/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#Defining-a-hotel-listing).
+The [listing](../hotel-feed/hotel-feed-reference.md#listingstype) element contains information about the hotel, such as it's name, address, and phone number. For information about defining a listing, see [Defining a hotel listing](#defining-a-hotel-listing).
 
 
 ## Defining a hotel listing
@@ -62,20 +62,20 @@ The [listing](../hotel-feed/hotel-feed-reference.md#listingstype) element contai
 The `listing` element defines a hotel. You must specify a `listing` element for each hotel that you advertise. The listing must specify all elements. The exception is that you may specify either the geographical coordinates or a telephone number. Although you may specify either the coordinates or telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
 
 ```
-  <listing>
-    <id>abc123</id>
-    <name>Great Ambers Getaway</name>
-    <address>
-      <component name="addr1">1234 Porter Road</component>
-      <component name="city">Goldendale</component>
-      <component name="province">WA</component>
-      <component name="postal_code">98234</component>
-    </address>
-    <country>US</country>
-    <latitude>47.694351</latitude>
-    <longitude>-122.451782</longitude>
-    <phone type="main">123-456-7890</phone>
-  </listing>
+? <listing>
+? ? <id>abc123</id>
+? ? <name>Great Ambers Getaway</name>
+? ? <address>
+? ? ? <component name="addr1">1234 Porter Road</component>
+? ? ? <component name="city">Goldendale</component>
+? ? ? <component name="province">WA</component>
+? ? ? <component name="postal_code">98234</component>
+? ? </address>
+? ? <country>US</country>
+? ? <latitude>47.694351</latitude>
+? ? <longitude>-122.451782</longitude>
+? ? <phone type="main">123-456-7890</phone>
+? </listing>
 ```
 
 The ID in the `id` element is user-defined and must be unique within the feed.
@@ -83,7 +83,7 @@ The ID in the `id` element is user-defined and must be unique within the feed.
 The address in the `address` element is the hotel's street address. The address must be a street address and not a post office box. You can specify the hotel's address using the `component` element seen in the above example or by using a free-form string seen in the below example. The preference is to use `component` elements.
 
 ```
-    <address>1234 Porter Road, Goldendale, WA, 98234</address>
+? ? <address>1234 Porter Road, Goldendale, WA, 98234</address>
 ```
 
 The `latitude` and `longitude` element specify the hotel's geographical coordinates. Use a geocoding API such as [Location API](https://msdn.microsoft.com/library/ff701715.aspx) to generate the coordinates from a street address.
@@ -91,11 +91,11 @@ The `latitude` and `longitude` element specify the hotel's geographical coordina
 The listing must specify at least the hotel's main telephone number. The main number should be the front desk's phone number and not a central reservations phone number. The more contact phone numbers that you provide the better. The following example shows the other phone options.
 
 ```
-    <phone type="main">123-456-7890</phone>
-    <phone type="tollfree">800-456-7890</phone>
-    <phone type="fax">123-456-7890</phone>
-    <phone type="tdd">123-456-7890</phone>
-    <phone type="mobile">123-456-7890</phone>
+? ? <phone type="main">123-456-7890</phone>
+? ? <phone type="tollfree">800-456-7890</phone>
+? ? <phone type="fax">123-456-7890</phone>
+? ? <phone type="tdd">123-456-7890</phone>
+? ? <phone type="mobile">123-456-7890</phone>
 ```
 
 For more information about specifying telephone numbers, see the [phone](../hotel-feed/hotel-feed-reference.md#phone) element.

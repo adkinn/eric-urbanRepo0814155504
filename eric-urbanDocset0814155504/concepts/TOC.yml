@@ -1,0 +1,275 @@
+- name: Overview
+  href: index.md
+- name: Entity Hierarchy and Limits
+  href: entity-hierarchy-and-limits.md
+- name: Getting Started With the Bing Ads API
+  href: getting-started-with-the-bing-ads-api.md
+  items:
+  - name: Getting Started Using C# with Bing Ads Services
+    href: getting-started-using-csharp-with-bing-ads-services.md
+    items:
+    - name: Walkthrough: Bing Ads Desktop Application in C#
+      href: walkthrough-bing-ads-desktop-application-in-csharp.md
+    - name: Walkthrough: Bing Ads Web Application in C#
+      href: walkthrough-bing-ads-web-application-in-csharp.md
+  - name: Getting Started Using Java with Bing Ads Services
+    href: getting-started-using-java-with-bing-ads-services.md
+    items:
+    - name: Walkthrough: Bing Ads Desktop Application in Java
+      href: walkthrough-bing-ads-desktop-application-in-java.md
+    - name: Walkthrough: Bing Ads Web Application in Java
+      href: walkthrough-bing-ads-web-application-in-java.md
+  - name: Getting Started Using PHP with Bing Ads Services
+    href: getting-started-using-php-with-bing-ads-services.md
+    items:
+    - name: Walkthrough: Bing Ads Desktop Application in PHP
+      href: walkthrough-bing-ads-desktop-application-in-php.md
+    - name: Walkthrough: Bing Ads Web Application in PHP
+      href: walkthrough-bing-ads-web-application-in-php.md
+  - name: Getting Started Using Python with Bing Ads Services
+    href: getting-started-using-python-with-bing-ads-services.md
+    items:
+    - name: Walkthrough: Bing Ads Desktop Application in Python
+      href: walkthrough-bing-ads-desktop-application-in-python.md
+    - name: Walkthrough: Bing Ads Web Application in Python
+      href: walkthrough-bing-ads-web-application-in-python.md
+- name: Sandbox
+  href: sandbox.md
+- name: Bing Ads Code Examples
+  href: bing-ads-code-examples.md
+  items:
+  - name: C# Examples for Bing Ads
+    href: csharp-examples-for-bing-ads.md
+    items:
+    - name: Bulk Target Criterions in C#
+      href: bulk-target-criterions-in-csharp.md
+    - name: Bulk Ads and Keywords in C#
+      href: bulk-ads-and-keywords-in-csharp.md
+    - name: Geographical Locations in C#
+      href: geographical-locations-in-csharp.md
+    - name: Optimize Budget in C#
+      href: optimize-budget-in-csharp.md
+    - name: Report Requests in C#
+      href: report-requests-in-csharp.md
+    - name: Search Accounts by User in C#
+      href: search-accounts-by-user-in-csharp.md
+    - name: Link to Client Accounts in C#
+      href: link-to-client-accounts-in-csharp.md
+    - name: Negative Keywords in C#
+      href: negative-keywords-in-csharp.md
+    - name: Shopping Campaigns in C#
+      href: shopping-campaigns-in-csharp.md
+    - name: Ad Extensions in C#
+      href: ad-extensions-in-csharp.md
+    - name: Targets in C#
+      href: targets-in-csharp.md
+    - name: Ads and Keywords in C#
+      href: ads-and-keywords-in-csharp.md
+    - name: Bulk Ad Extensions in C#
+      href: bulk-ad-extensions-in-csharp.md
+    - name: Bulk Shopping Campaigns in C#
+      href: bulk-shopping-campaigns-in-csharp.md
+  - name: Java Examples for Bing Ads
+    href: java-examples-for-bing-ads.md
+    items:
+    - name: Bulk Shopping Campaigns in Java
+      href: bulk-shopping-campaigns-in-java.md
+    - name: Bulk Ads and Keywords in Java
+      href: bulk-ads-and-keywords-in-java.md
+    - name: Geographical Locations in Java
+      href: geographical-locations-in-java.md
+    - name: Bulk Ad Extensions in Java
+      href: bulk-ad-extensions-in-java.md
+    - name: Ads and Keywords in Java
+      href: ads-and-keywords-in-java.md
+    - name: Report Requests in Java
+      href: report-requests-in-java.md
+    - name: Shopping Campaigns in Java
+      href: shopping-campaigns-in-java.md
+    - name: Targets in Java
+      href: targets-in-java.md
+    - name: Optimize Budget in Java
+      href: optimize-budget-in-java.md
+    - name: Ad Extensions in Java
+      href: ad-extensions-in-java.md
+    - name: Search Accounts by User in Java
+      href: search-accounts-by-user-in-java.md
+    - name: Link to Client Accounts in Java
+      href: link-to-client-accounts-in-java.md
+    - name: Negative Keywords in Java
+      href: negative-keywords-in-java.md
+  - name: PHP Examples for Bing Ads
+    href: php-examples-for-bing-ads.md
+    items:
+    - name: Shopping Campaigns in PHP
+      href: shopping-campaigns-in-php.md
+    - name: Optimize Budget in PHP
+      href: optimize-budget-in-php.md
+    - name: Report Requests in PHP
+      href: report-requests-in-php.md
+    - name: Ads and Keywords in PHP
+      href: ads-and-keywords-in-php.md
+    - name: Search Accounts by User in PHP
+      href: search-accounts-by-user-in-php.md
+    - name: Negative Keywords in PHP
+      href: negative-keywords-in-php.md
+    - name: Link to Client Accounts in PHP
+      href: link-to-client-accounts-in-php.md
+    - name: Download and Upload Campaigns in PHP
+      href: download-and-upload-campaigns-in-php.md
+    - name: Targets in PHP
+      href: targets-in-php.md
+    - name: Ad Extensions in PHP
+      href: ad-extensions-in-php.md
+    - name: Geographical Locations in PHP
+      href: geographical-locations-in-php.md
+  - name: Python Examples for Bing Ads
+    href: python-examples-for-bing-ads.md
+    items:
+    - name: Report Requests in Python
+      href: report-requests-in-python.md
+    - name: Negative Keywords in Python
+      href: negative-keywords-in-python.md
+    - name: Bulk Shopping Campaigns in Python
+      href: bulk-shopping-campaigns-in-python.md
+    - name: Targets in Python
+      href: targets-in-python.md
+    - name: Search Accounts by User in Python
+      href: search-accounts-by-user-in-python.md
+    - name: Ad Extensions in Python
+      href: ad-extensions-in-python.md
+    - name: Link to Client Accounts in Python
+      href: link-to-client-accounts-in-python.md
+    - name: Ads and Keywords in Python
+      href: ads-and-keywords-in-python.md
+    - name: Geographical Locations in Python
+      href: geographical-locations-in-python.md
+    - name: Bulk Ad Extensions in Python
+      href: bulk-ad-extensions-in-python.md
+    - name: Optimize Budget in Python
+      href: optimize-budget-in-python.md
+    - name: Shopping Campaigns in Python
+      href: shopping-campaigns-in-python.md
+    - name: Bulk Targets in Python
+      href: bulk-targets-in-python.md
+    - name: Bulk Ads and Keywords in Python
+      href: bulk-ads-and-keywords-in-python.md
+- name: Bing Ads Client Libraries
+  href: bing-ads-client-libraries.md
+- name: Bing Ads Technical Guides
+  href: bing-ads-technical-guides.md
+  items:
+  - name: Authentication with OAuth
+    href: authentication-with-oauth.md
+  - name: Bing Ads Services Protocol
+    href: bing-ads-services-protocol.md
+  - name: Handling Service Errors and Exceptions
+    href: handling-service-errors-and-exceptions.md
+  - name: Customer Accounts
+    href: customer-accounts.md
+    items:
+    - name: Management Model for Direct Advertisers
+      href: management-model-for-direct-advertisers.md
+    - name: Management Model for Agencies
+      href: management-model-for-agencies.md
+    - name: Management Model for Resellers
+      href: management-model-for-resellers.md
+    - name: Management Model for Tool Providers
+      href: management-model-for-tool-providers.md
+  - name: Campaigns
+    href: campaigns.md
+    items:
+    - name: Budget and Bid Opportunities
+      href: budget-and-bid-opportunities.md
+    - name: Budget and Bid Strategies
+      href: budget-and-bid-strategies.md
+    - name: Bulk Download and Upload
+      href: bulk-download-and-upload.md
+    - name: Labels
+      href: labels.md
+    - name: Keyword Ideas and Traffic Estimates
+      href: keyword-ideas-and-traffic-estimates.md
+    - name: Negative Keywords
+      href: negative-keywords.md
+    - name: Show Ads to Your Target Audience
+      href: show-ads-to-your-target-audience.md
+    - name: Universal Event Tracking
+      href: universal-event-tracking.md
+    - name: Upgrade Targets to Criterions
+      href: upgrade-targets-to-criterions.md
+    - name: URL Tracking with Upgraded URLs
+      href: url-tracking-with-upgraded-urls.md
+  - name: Ads
+    href: ads.md
+    items:
+    - name: Ad Extensions
+      href: ad-extensions.md
+    - name: App Install Ads
+      href: app-install-ads.md
+    - name: Dynamic Search Ads
+      href: dynamic-search-ads.md
+    - name: Editorial Review and Appeals
+      href: editorial-review-and-appeals.md
+    - name: Expanded Text Ads
+      href: expanded-text-ads.md
+    - name: Native Ads
+      href: native-ads.md
+    - name: Product Ads
+      href: product-ads.md
+    - name: Upgrade from Multiple Sitelinks to One Sitelink Per Extension
+      href: upgrade-from-multiple-sitelinks-to-one-sitelink-per-extension.md
+  - name: Reports
+    href: reports.md
+    items:
+    - name: Report Attributes and Performance Statistics
+      href: report-attributes-and-performance-statistics.md
+    - name: Report Types
+      href: report-types.md
+    - name: Request and Download a Report
+      href: request-and-download-a-report.md
+    - name: Reporting Data Retention Time Periods
+      href: reporting-data-retention-time-periods.md
+- name: Bing Ads API Reference
+  href: bing-ads-api-reference.md
+  items:
+  - name: Bing Ads Web Service Addresses
+    href: bing-ads-web-service-addresses.md
+  - name: Version 11 API Reference
+    href: version-11-api-reference.md
+    items:
+    - name: Ad Insight Version 11
+      href: ..\adinsight-api\TOC.yml
+    - name: Bulk Version 11
+      href: ..\bulk-api\TOC.yml
+    - name: Campaign Management Version 11
+      href: ..\campaign-api\TOC.yml
+    - name: Customer Billing Version 11
+      href: ..\billing-api\TOC.yml
+    - name: Customer Management Version 11
+      href: ..\customer-api\TOC.yml
+    - name: Reporting Version 11
+      href: ..\reporting-api\TOC.yml
+  - name: Bing Ads API Error Codes
+    href: bing-ads-api-error-codes.md
+    items:
+    - name: Bing Ads Operation Error Codes
+      href: bing-ads-operation-error-codes.md
+    - name: Bing Ads Editorial Failure Reason Codes
+      href: bing-ads-editorial-failure-reason-codes.md
+  - name: Common Market Values
+    href: common-market-values.md
+    items:
+    - name: Ad Languages
+      href: ad-languages.md
+    - name: Currencies
+      href: currencies.md
+    - name: Geographical Location Codes
+      href: geographical-location-codes.md
+    - name: Time Zones
+      href: time-zones.md
+  - name: Bing Ads .NET SDK Reference
+    href: bing-ads-net-sdk-reference.md
+- name: Release Notes
+  href: release-notes.md
+- name: Migrating to Bing Ads API Version 11
+  href: migrating-to-bing-ads-api-version-11.md
