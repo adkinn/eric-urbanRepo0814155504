@@ -8,7 +8,7 @@
       "build_output_subfolder": "eric-urbanDocset0814155504",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": ["> bingads-11.5.3", "< bingads-11.5.5"],
+      "moniker_ranges": [">= bingads-11.5.4", "<= bingads-11.5.4"],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
