@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # GetMediaByIds Service Operation
-Gets the specified media from an account’s media library.
+Gets the specified media from an account?s media library.
 
 > [!NOTE]
 > This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](../campaign-api/getmediametadatabyids-service-operation.md).
@@ -23,7 +23,7 @@ Gets the specified media from an account’s media library.
 ## <a name="request"></a>GetMediaByIdsRequest Message
 
 ### Request Body
-The *GetMediaByIdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetMediaByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

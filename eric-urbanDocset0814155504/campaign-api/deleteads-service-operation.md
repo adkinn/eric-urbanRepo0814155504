@@ -20,7 +20,7 @@ Deletes one or more ads from the specified ad group.
 ## <a name="request"></a>DeleteAdsRequest Message
 
 ### Request Body
-The *DeleteAdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteAdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

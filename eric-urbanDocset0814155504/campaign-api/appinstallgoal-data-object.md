@@ -36,7 +36,7 @@ For other conversion goal types you create a Universal Event Tracking (UET) tag,
 ```
 
 ## <a name="Elements"></a>Elements
-The *AppInstallGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *AppInstallGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

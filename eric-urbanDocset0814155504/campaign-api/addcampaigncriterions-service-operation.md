@@ -20,7 +20,7 @@ Adds one or more campaign criterions that help determine whether ads in each cam
 ## <a name="request"></a>AddCampaignCriterionsRequest Message
 
 ### Request Body
-The *AddCampaignCriterionsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddCampaignCriterionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

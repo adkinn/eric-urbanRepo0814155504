@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Image Data Object
-Defines an image object that can be added to an account’s media library.
+Defines an image object that can be added to an account?s media library.
 
 The *Image* object derives from the *Media* object. For a list of the inherited elements, see the [Media](../campaign-api/media-data-object.md) object.
 
@@ -32,7 +32,7 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
 ```
 
 ## <a name="Elements"></a>Elements
-The *Image* object derives from the [Media](../campaign-api/media-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *Image* object derives from the [Media](../campaign-api/media-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -155,7 +155,7 @@ The name of the ad group that contains the keyword.
 > For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
 
 ### <a name="bid"></a>Bid
-The bid to use when the user’s search term and the keyword match.
+The bid to use when the user?s search term and the keyword match.
 
 **Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](../bulk-api/ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](~/concepts/budget-and-bid-strategies.md).  
 **Update:** [!INCLUDE[update_optional_delete_all](../bulk-api/includes/update-optional-delete-all.md)]  
@@ -199,7 +199,7 @@ Your custom collection of key and value parameters for URL tracking.
 **Delete:** Read-only  
 
 ### <a name="destinationurl"></a>Destination Url
-The URL of the webpage to take the user to when they click the ad. The keyword’s destination URL is used if specified; otherwise, the ad’s destination URL is used.
+The URL of the webpage to take the user to when they click the ad. The keyword?s destination URL is used if specified; otherwise, the ad?s destination URL is used.
 
 > [!IMPORTANT]
 > If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](~/concepts/url-tracking-with-upgraded-urls.md).
@@ -250,7 +250,7 @@ This field will not be set if a combination of terms caused the failure or if th
 **Delete:** Read-only  
 
 ### <a name="finalurl"></a>Final Url
-The landing page URL. The keyword’s final URL is used if specified; otherwise, the ad’s final URL is used.
+The landing page URL. The keyword?s final URL is used if specified; otherwise, the ad?s final URL is used.
 
 [!INCLUDE[validationrules_finalurls_bulk](../bulk-api/includes/validationrules-finalurls-bulk.md)] 
 
@@ -300,7 +300,7 @@ The supported match type values for a keyword are *Broad*, *Exact* and *Phrase*.
 **Delete:** Read-only  
 
 ### <a name="mobilefinalurl"></a>Mobile Final Url
-The mobile landing page URL. The keyword’s final mobile URL is used if specified; otherwise, the ad’s final mobile URL is used.
+The mobile landing page URL. The keyword?s final mobile URL is used if specified; otherwise, the ad?s final mobile URL is used.
 
 [!INCLUDE[validationrules_finalurls_bulk](../bulk-api/includes/validationrules-finalurls-bulk.md)] 
 
@@ -318,14 +318,14 @@ Also note that if the TrackingUrlTemplate or UrlCustomParameters element are set
 **Delete:** Read-only  
 
 ### <a name="param1"></a>Param1
-The string to use as the substitution value in an ad if the ad’s title, text, display URL, or destination URL contains the {Param1} dynamic substitution string.
+The string to use as the substitution value in an ad if the ad?s title, text, display URL, or destination URL contains the {Param1} dynamic substitution string.
 
 > [!NOTE]
-> Although you can use {Param1} to specify an ad’s destination URL, you are encouraged not to. Instead, you should set the keyword's DestinationUrl element.
+> Although you can use {Param1} to specify an ad?s destination URL, you are encouraged not to. Instead, you should set the keyword's DestinationUrl element.
 
-The string can contain a maximum of 1,022 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.
+The string can contain a maximum of 1,022 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.
 
-When implementing dynamic text in your ad copy you should provide a default string e.g. {Param1:default} that the system will use if Param1 for a keyword is null or empty, or if including the Param1 substitution value will cause the expanded string to exceed the element’s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
+When implementing dynamic text in your ad copy you should provide a default string e.g. {Param1:default} that the system will use if Param1 for a keyword is null or empty, or if including the Param1 substitution value will cause the expanded string to exceed the element?s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
 Also note that if the ad group only has one ad, and if that ad uses {Param1} but does not provide a default string e.g. {Param1:default}, then you must supply a valid Param1 value for that substitution. Otherwise this keyword cannot be added or updated.
 
@@ -338,9 +338,9 @@ The string to use as the substitution value in an ad if the title, text, display
 
 Typically, you use the {Param2} substitution string in the title or text (ad copy description) elements of an ad.
 
-The string can contain a maximum of 70 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.
+The string can contain a maximum of 70 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.
 
-When implementing dynamic text in your ad copy you should provide a default string e.g. {Param2:default} that the system will use if Param2 for a keyword is null or empty, or if including the Param2 substitution value will cause the expanded string to exceed the element’s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
+When implementing dynamic text in your ad copy you should provide a default string e.g. {Param2:default} that the system will use if Param2 for a keyword is null or empty, or if including the Param2 substitution value will cause the expanded string to exceed the element?s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
 Also note that if the ad group only has one ad, and if that ad uses {Param2} but does not provide a default string e.g. {Param2:default}, then you must supply a valid *Param2* value for that substitution. Otherwise this keyword cannot be added or updated. 
 
@@ -353,9 +353,9 @@ The string to use as the substitution value in an ad if the title, text, display
 
 Typically, you use the {Param3} substitution string in the title or text (ad copy description) elements of an ad.
 
-The string can contain a maximum of 70 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.
+The string can contain a maximum of 70 characters. The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.
 
-When implementing dynamic text in your ad copy you should provide a default string e.g. {Param3:default} that the system will use if Param3 for a keyword is null or empty, or if including the Param3 substitution value will cause the expanded string to exceed the element’s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
+When implementing dynamic text in your ad copy you should provide a default string e.g. {Param3:default} that the system will use if Param3 for a keyword is null or empty, or if including the Param3 substitution value will cause the expanded string to exceed the element?s limit; otherwise the ad will not serve with this keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
 Also note that if the ad group only has one ad, and if that ad uses {Param3} but does not provide a default string e.g. {Param3:default}, then you must supply a valid *Param3* value for that substitution. Otherwise this keyword cannot be added or updated. 
 

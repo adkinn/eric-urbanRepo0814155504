@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in Python
-The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
+The following example shows how to add, get, and delete extensions for an account?s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
 [!INCLUDE[python_header](../concepts/includes/python-header.md)]
 

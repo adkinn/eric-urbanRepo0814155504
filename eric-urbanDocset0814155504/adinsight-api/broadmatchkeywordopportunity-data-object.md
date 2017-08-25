@@ -37,7 +37,7 @@ Defines an object that contains the marketplace impact statistics of including b
 ```
 
 ## <a name="Elements"></a>Elements
-The *BroadMatchKeywordOpportunity* object inherits elements from the [KeywordOpportunity](../adinsight-api/keywordopportunity-data-object.md) and [Opportunity](../adinsight-api/opportunity-data-object.md) objects. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *BroadMatchKeywordOpportunity* object inherits elements from the [KeywordOpportunity](../adinsight-api/keywordopportunity-data-object.md) and [Opportunity](../adinsight-api/opportunity-data-object.md) objects. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -47,7 +47,7 @@ The *BroadMatchKeywordOpportunity* object inherits elements from the [KeywordOpp
 |*ImpressionShare*|Broad match impression share in the marketplace.|*double*|
 |*ReferenceKeywordBid*|The bid of an existing reference keyword used by the service to offer the keyword opportunity.|*double*|
 |*ReferenceKeywordId*|The identifier of an existing reference keyword used by the service to offer the keyword opportunity.|*long*|
-|*ReferenceKeywordMatchType*|The match type of an existing reference keyword used by the service to offer the keyword opportunity.<br /><br />The following are the possible match-type values:<br /><br />1 – Exact match<br /><br />2 – Phrase match|*int*|
+|*ReferenceKeywordMatchType*|The match type of an existing reference keyword used by the service to offer the keyword opportunity.<br /><br />The following are the possible match-type values:<br /><br />1 ? Exact match<br /><br />2 ? Phrase match|*int*|
 |*SearchQueryKPIs*|A list of up to three broad match search query KPI objects. Each item contains search query statistics of including broad match type keyword bids|[BroadMatchSearchQueryKPI](../adinsight-api/broadmatchsearchquerykpi-data-object.md) array|
 
 ## <a name="InheritedElements"></a>Inherited Elements
@@ -70,7 +70,7 @@ The *BroadMatchKeywordOpportunity* object inherits the following elements from t
 |*EstimatedIncreaseInClicks*|Estimated increase in clicks if the opportunity is applied.|*long*|
 |*EstimatedIncreaseInCost*|Estimated increase in cost if the opportunity is applied.|*long*|
 |*EstimatedIncreaseInImpressions*|Estimated increase in impressions if the opportunity is applied.|*long*|
-|*MatchType*|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 – Exact match<br /><br />2 – Phrase match<br /><br />3 – Broad match|*int*|
+|*MatchType*|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 ? Exact match<br /><br />2 ? Phrase match<br /><br />3 ? Broad match|*int*|
 |*MonthlySearches*|The estimated monthly volume of user search queries that may match the suggested keyword for the corresponding *MatchType* element.|*long*|
 |*SuggestedBid*|The suggested bid that may result in your ads serving on the first page of the search query results.|*double*|
 |*SuggestedKeyword*|The suggested keyword.|*string*|

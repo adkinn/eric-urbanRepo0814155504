@@ -1,0 +1,60 @@
+- name: ApiFault
+  href: apifault-data-object.md
+- name: OrderBy
+  href: orderby-data-object.md
+- name: Customer Billing Service Reference
+  href: customer-billing-service-reference.md
+- name: BatchError
+  href: batcherror-data-object.md
+- name: AdApiError
+  href: adapierror-data-object.md
+- name: Customer Billing Error Data Objects
+  href: customer-billing-error-data-objects.md
+- name: BillingDocumentInfo
+  href: billingdocumentinfo-data-object.md
+- name: GetAccountMonthlySpend
+  href: getaccountmonthlyspend-service-operation.md
+- name: Customer Billing Data Objects
+  href: customer-billing-data-objects.md
+- name: OrderByField
+  href: orderbyfield-value-set.md
+- name: OperationError
+  href: operationerror-data-object.md
+- name: Customer Billing Service Operations
+  href: customer-billing-service-operations.md
+- name: UpdateInsertionOrder
+  href: updateinsertionorder-service-operation.md
+- name: GetBillingDocumentsInfo
+  href: getbillingdocumentsinfo-service-operation.md
+- name: ApplicationFault
+  href: applicationfault-data-object.md
+- name: DataType
+  href: datatype-value-set.md
+- name: AddInsertionOrder
+  href: addinsertionorder-service-operation.md
+- name: Predicate
+  href: predicate-data-object.md
+- name: AdApiFaultDetail
+  href: adapifaultdetail-data-object.md
+- name: Paging
+  href: paging-data-object.md
+- name: InsertionOrderStatus
+  href: insertionorderstatus-value-set.md
+- name: SortOrder
+  href: sortorder-value-set.md
+- name: GetInsertionOrdersByAccount
+  href: getinsertionordersbyaccount-service-operation.md
+- name: BillingDocument
+  href: billingdocument-data-object.md
+- name: PredicateOperator
+  href: predicateoperator-value-set.md
+- name: ApiBatchFault
+  href: apibatchfault-data-object.md
+- name: InsertionOrder
+  href: insertionorder-data-object.md
+- name: SearchInsertionOrders
+  href: searchinsertionorders-service-operation.md
+- name: Customer Billing Value Sets
+  href: customer-billing-value-sets.md
+- name: GetBillingDocuments
+  href: getbillingdocuments-service-operation.md

@@ -24,7 +24,7 @@ Language options in Bing Ads give you control over your advertising campaign and
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
 > [!NOTE] 
-> Not everyone has the Campaign languages feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has the Campaign languages feature yet. If you don?t, don?t worry. It?s coming soon.
 
 Your ad language in combination with your location targeting determines who will see your ads. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
 
@@ -65,7 +65,7 @@ The following country codes are supported per customer language e.g. you can use
 
 		
 ## <a name="countdownlanguage"></a>Countdown Language
-Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The following language codes are supported for [countdown functions](../concepts/expanded-text-ads.md#countdown).
+Countdown customizers let you easily add a countdown ? by day, hour, and then minute ? to an event in your Expanded Text Ad. The following language codes are supported for [countdown functions](../concepts/expanded-text-ads.md#countdown).
 
 |Language Code|Language|Countdown Length|
 |------------|------------|------------------|
@@ -93,13 +93,13 @@ Structured Snippet headers must be specified in the same language that you inten
 
 ```csv
 Language,Amenities,Brands,Courses,Degree programs,Destinations,Featured hotels,Goods,Insurance coverage,Items,Models,Neighborhoods,Services,Service catalog,Shows,Styles,Types
-Chinese (Traditional),設施,品牌,課程,學位課程,目的地,精選旅館,商品,保險涵蓋範圍,項目,型號,鄰近地點,服務,服務目錄,節目,風格,類型
+Chinese (Traditional),??,??,??,????,???,????,??,??????,??,??,????,??,????,??,??,??
 English,Amenities,Brands,Courses,Degree programs,Destinations,Featured hotels,Goods,Insurance coverage,Items,Models,Neighborhoods,Services,Service catalog,Shows,Styles,Types
-French,Équipements,Marques,Cours,Programmes d’études,Destinations,Sélection d’hôtels,Biens,Couverture d’assurance,Éléments,Modèles,Quartiers,Services,Catalogue de services,Émissions,Styles,Types
-German,Ausstattung,Marken,Kurse,Studiengänge,Ziele,Vorgestellte Hotels,Waren,Versicherungsleistung,Artikel,Modelle,Viertel,Services,Dienstleistungen,Sendungen,Stile,Typen
+French,?quipements,Marques,Cours,Programmes d??tudes,Destinations,S?lection d?h?tels,Biens,Couverture d?assurance,?l?ments,Mod?les,Quartiers,Services,Catalogue de services,?missions,Styles,Types
+German,Ausstattung,Marken,Kurse,Studieng?nge,Ziele,Vorgestellte Hotels,Waren,Versicherungsleistung,Artikel,Modelle,Viertel,Services,Dienstleistungen,Sendungen,Stile,Typen
 Italian,Attrattive,Marchi,Corsi,Corsi di studio,Destinazioni,Hotel consigliati,Beni,Copertura assicurativa,Articoli,Modelli,Quartieri,Servizi,Catalogo servizi,Programmi,Stili,Tipi
 Dutch,Voorzieningen,Merken,Cursussen,Studieprogramma's,Bestemmingen,Aanbevolen hotels,Producten,Dekking,Items,Modellen,Buurten,Services,Servicecatalogus,Shows,Stijlen,Typen
-Portuguese (Brazil),Comodidades,Marcas,Cursos,Programas de graduação,Destinos,Hotéis em destaque,Bens,Cobertura do seguro,Itens,Modelos,Arredores,Serviços,Catálogo de serviços,Programas,Estilos,Tipos
-Spanish,Servicios adicionales,Marcas,Cursos,Carreras universitarias,Destinos,Hoteles destacados,Artículos,Cobertura de seguros,Elementos,Modelos,Vecindarios,Servicios,Catálogo de servicios,Espectáculos,Estilos,Tipos
-Swedish,Bekvämligheter,Varumärken,Kurser,Utbildningar,Resmål,Hotellval,Varor,Försäkring,Objekt,Modeller,Områden,Tjänster,Servicekatalog,Föreställningar,Stilar,Typer
+Portuguese (Brazil),Comodidades,Marcas,Cursos,Programas de gradua??o,Destinos,Hot?is em destaque,Bens,Cobertura do seguro,Itens,Modelos,Arredores,Servi?os,Cat?logo de servi?os,Programas,Estilos,Tipos
+Spanish,Servicios adicionales,Marcas,Cursos,Carreras universitarias,Destinos,Hoteles destacados,Art?culos,Cobertura de seguros,Elementos,Modelos,Vecindarios,Servicios,Cat?logo de servicios,Espect?culos,Estilos,Tipos
+Swedish,Bekv?mligheter,Varum?rken,Kurser,Utbildningar,Resm?l,Hotellval,Varor,F?rs?kring,Objekt,Modeller,Omr?den,Tj?nster,Servicekatalog,F?rest?llningar,Stilar,Typer
 ```

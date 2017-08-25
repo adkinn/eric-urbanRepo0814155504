@@ -31,8 +31,8 @@ Defines the possible time periods that determine the pool of data that the servi
 
 |Value|Description|
 |---------|---------------|
-|LastMonth|Use data from the previous calendar month. Note that it can take up to 72 hours for the previous calendar month’s data to be available. For example, if you request data on August 1st, 2nd or 3rd, and July’s data is not ready, the response will be based on June’s data.|
-|LastWeek|Use data from last week, Sunday through Saturday. The data is refreshed every Sunday. Note that it can take up to 72 hours for the previous week’s data to be available. For example, if you request data on the 4th Monday of the month, and data for the 3rd Sunday through 3rd Saturday is not ready, the response will be based on data for the 2nd Sunday through 2nd Saturday.|
+|LastMonth|Use data from the previous calendar month. Note that it can take up to 72 hours for the previous calendar month?s data to be available. For example, if you request data on August 1st, 2nd or 3rd, and July?s data is not ready, the response will be based on June?s data.|
+|LastWeek|Use data from last week, Sunday through Saturday. The data is refreshed every Sunday. Note that it can take up to 72 hours for the previous week?s data to be available. For example, if you request data on the 4th Monday of the month, and data for the 3rd Sunday through 3rd Saturday is not ready, the response will be based on data for the 2nd Sunday through 2nd Saturday.|
 |LastDay|Use data from yesterday. If data from yesterday is not yet available, data from the most recently completed day is provided. Note that it can take up to 72 hours for the most recent day's data to be available.|
 
 ## Requirements

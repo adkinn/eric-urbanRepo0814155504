@@ -51,7 +51,7 @@ To install the Bing Ads Python SDK for the first time, run the following either 
 ```powershell
 pip.exe install bingads
 ```
-To confirm that the Bing Ads Python SDK is installed, run the following. You should see ‘bingads (&lt;version&gt;)’ in the output list.
+To confirm that the Bing Ads Python SDK is installed, run the following. You should see ?bingads (&lt;version&gt;)? in the output list.
 
 ```powershell
 pip.exe list

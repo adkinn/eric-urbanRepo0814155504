@@ -53,7 +53,7 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 |*Scheduling*|Determines the calendar day and time ranges when the ad extension is eligible to be shown in ads.<br/><br/>**Note:** This element is not applicable for the [SiteLinksAdExtension](../campaign-api/sitelinksadextension-data-object.md) type; You can specify a *Scheduling* element for each [SiteLink](../campaign-api/sitelink-data-object.md) object (nested list within the [SiteLinksAdExtension](../campaign-api/sitelinksadextension-data-object.md)) instead. For all other ad extension types including [Sitelink2AdExtension](../campaign-api/sitelink2adextension-data-object.md), the [AdExtension](../campaign-api/adextension-data-object.md) object will include the *Scheduling* element.|[Schedule](../campaign-api/schedule-data-object.md)|
 |*Status*|The status of the ad extension. The value will always be *Active* because the Campaign Management service does not return deleted ad extensions.|[AdExtensionStatus](../campaign-api/adextensionstatus-value-set.md)|
 |*Type*|The type of ad extension. <br/><br/>For more information, see [Remarks](#remarks).|*string*|
-|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.|*int*|
+|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.|*int*|
 
 ## <a name="remarks"></a>Remarks
 If you generate the SOAP manually, use the *type* attribute of the `<AdExtension>` node as shown in the following example to specify the type of ad extension.
@@ -62,7 +62,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<AdExtension
 xml
 <AdExtension i:type="ReviewAdExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <Id i:nil="true" />
-    <Status i:nil=”true” />
+    <Status i:nil=?true? />
       . . .
 </AdExtension>
 ```

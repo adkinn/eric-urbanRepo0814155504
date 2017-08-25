@@ -30,7 +30,7 @@ Defines a fault object that operations return when generic errors occur, such as
 ```
 
 ## <a name="Elements"></a>Elements
-The `AdApiFaultDetail` object inherits elements from the [ApplicationFault](../bulk-api/applicationfault-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The `AdApiFaultDetail` object inherits elements from the [ApplicationFault](../bulk-api/applicationfault-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

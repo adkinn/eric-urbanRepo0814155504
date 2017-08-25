@@ -22,7 +22,7 @@ Gets the specified conversion goals.
 ## <a name="request"></a>GetConversionGoalsByIdsRequest Message
 
 ### Request Body
-The *GetConversionGoalsByIdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
+The *GetConversionGoalsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

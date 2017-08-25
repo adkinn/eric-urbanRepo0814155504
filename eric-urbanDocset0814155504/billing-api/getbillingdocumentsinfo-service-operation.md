@@ -23,13 +23,13 @@ Gets a list of objects that contains billing document identification information
 ## <a name="request"></a>GetBillingDocumentsInfoRequest Message
 
 ### Request Body
-The *GetBillingDocumentsInfoRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBillingDocumentsInfoRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*AccountIds*|A list of identifiers of the accounts whose billing document information you want to get.|*long* array|
 |*StartDate*|The start date to use for specifying the billing documents to get.<br /><br />The start date cannot be later than the end date. You must specify the date in Coordinated Universal Time (UTC).|*dateTime*|
-|*EndDate*|The end date to use for specifying the billing documents to get.<br /><br />To specify today’s date as the end date, set *EndDate* to NULL.<br /><br />The end date cannot be earlier than the start date. You must specify the date in Coordinated Universal Time (UTC).|*dateTime*|
+|*EndDate*|The end date to use for specifying the billing documents to get.<br /><br />To specify today?s date as the end date, set *EndDate* to NULL.<br /><br />The end date cannot be earlier than the start date. You must specify the date in Coordinated Universal Time (UTC).|*dateTime*|
 
 ### Request Headers
 [!INCLUDE[header_intro](../billing-api/includes/header-intro.md)]

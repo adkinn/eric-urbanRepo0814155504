@@ -40,7 +40,7 @@ This ad format works seamlessly on mobile, tablet and desktop devices so you can
 ```
 
 ## <a name="Elements"></a>Elements
-The *ExpandedTextAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ExpandedTextAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 > [!NOTE]
 > The combination of the *FinalUrls*, *Path1*, *Path2*, *Text*, *TitlePart1* and *TitlePart2* elements make the expanded text ad unique.

@@ -34,7 +34,7 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
 ```
 
 ## <a name="Elements"></a>Elements
-The *DynamicSearchAdsSetting* object derives from the [Setting](../campaign-api/setting-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *DynamicSearchAdsSetting* object derives from the [Setting](../campaign-api/setting-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 
 |Element|Description|Data Type|

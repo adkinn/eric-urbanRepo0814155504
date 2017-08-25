@@ -20,7 +20,7 @@ Gets the [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] stores f
 ## <a name="request"></a>GetBMCStoresByCustomerIdRequest Message
 
 ### Request Body
-The *GetBMCStoresByCustomerId* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBMCStoresByCustomerId* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 The request does not contain additional body elements.
 

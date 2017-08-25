@@ -52,7 +52,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [SubAccount](../hotel-api/hotel-api-reference.md#SubAccount) objects.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [SubAccount](../hotel-api/hotel-api-reference.md#subaccount) objects.
 
 ```
 HTTP/1.1 200 OK
@@ -241,7 +241,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelGroup](../hotel-api/hotel-api-reference.md#HotelGroup) objects. This example shows the default Ungrouped group.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelGroup](../hotel-api/hotel-api-reference.md#hotelgroup) objects. This example shows the default Ungrouped group.
 
 ```
 HTTP/1.1 200 OK
@@ -447,7 +447,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [Hotel](../hotel-api/hotel-api-reference.md#Hotel) objects.
+The response contains a [collectionresponse](../hotel-api/hotel-api-reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [Hotel](../hotel-api/hotel-api-reference.md#hotel) objects.
 
 ```
 HTTP/1.1 200 OK

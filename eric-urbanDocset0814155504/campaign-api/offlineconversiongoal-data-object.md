@@ -35,7 +35,7 @@ To set up offine conversion tracking, create an [OfflineConversionGoal](../campa
 ```
 
 ## <a name="Elements"></a>Elements
-The *OfflineConversionGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *OfflineConversionGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *OfflineConversionGoal* object inherits the following elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. 

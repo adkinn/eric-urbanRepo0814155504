@@ -28,7 +28,7 @@ Defines a criterion that you want to exclude from the specified ad group.
 ```
 
 ## <a name="Elements"></a>Elements
-The *NegativeAdGroupCriterion* object derives from the [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *NegativeAdGroupCriterion* object derives from the [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *NegativeAdGroupCriterion* object derives from the [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object, and inherits the following elements. 

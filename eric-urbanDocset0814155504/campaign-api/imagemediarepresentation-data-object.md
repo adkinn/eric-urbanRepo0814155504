@@ -31,7 +31,7 @@ Defines an image media representation with height and width.
 ```
 
 ## <a name="Elements"></a>Elements
-The *ImageMediaRepresentation* object derives from the [MediaRepresentation](../campaign-api/mediarepresentation-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ImageMediaRepresentation* object derives from the [MediaRepresentation](../campaign-api/mediarepresentation-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

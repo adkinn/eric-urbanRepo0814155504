@@ -20,7 +20,7 @@ Deletes negative keyword lists from the account's library.
 ## <a name="request"></a>DeleteSharedEntitiesRequest Message
 
 ### Request Body
-The *DeleteSharedEntitiesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteSharedEntitiesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

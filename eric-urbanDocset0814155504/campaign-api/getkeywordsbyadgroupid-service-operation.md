@@ -20,7 +20,7 @@ Gets the keywords within an ad group.
 ## <a name="request"></a>GetKeywordsByAdGroupIdRequest Message
 
 ### Request Body
-The *GetKeywordsByAdGroupIdRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetKeywordsByAdGroupIdRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|-------------|

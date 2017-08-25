@@ -30,12 +30,12 @@ The following are the header elements and the corresponding identifiers that a d
 
 |Header Element|Owner|
 |------------------|---------|
-|AuthenticationToken|The OAuth access token corresponding to the direct advertiser’s linked Microsoft Account.|
-|UserName|The direct advertiser’s user name.|
+|AuthenticationToken|The OAuth access token corresponding to the direct advertiser?s linked Microsoft Account.|
+|UserName|The direct advertiser?s user name.|
 |Password|The sign-in password of the user specified in UserName.|
-|DeveloperToken|The direct advertiser’s token.<br /><br />**Note:** A single-user (SU) developer token is sufficient to authenticate with the corresponding user. For more information on token types, see [Account Permissions and the Developer Token](../concepts/customer-accounts.md#accountpermissions).|
-|CustomerId|The direct advertiser’s customer ID.|
-|CustomerAccountId|A direct advertiser’s account ID.|
+|DeveloperToken|The direct advertiser?s token.<br /><br />**Note:** A single-user (SU) developer token is sufficient to authenticate with the corresponding user. For more information on token types, see [Account Permissions and the Developer Token](../concepts/customer-accounts.md#accountpermissions).|
+|CustomerId|The direct advertiser?s customer ID.|
+|CustomerAccountId|A direct advertiser?s account ID.|
 For more information about customer and account identifiers, see [Getting Started With the Bing Ads API](../concepts/getting-started-with-the-bing-ads-api.md).
 
 ## See Also

@@ -19,7 +19,7 @@ Updates the specified audiences.
 ## <a name="request"></a>UpdateAudiencesRequest Message
 
 ### Request Body
-The *UpdateAudiencesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateAudiencesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

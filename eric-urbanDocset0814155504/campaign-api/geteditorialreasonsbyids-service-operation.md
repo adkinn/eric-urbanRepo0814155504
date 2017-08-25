@@ -20,12 +20,12 @@ Gets the reasons why the specified entities failed editorial review and whether 
 ## <a name="request"></a>GetEditorialReasonsByIdsRequest Message
 
 ### Request Body
-The *GetEditorialReasonsByIdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetEditorialReasonsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*AccountId*|The identifier of the account that contains the specified entities.|*long*|
-|*EntityIdToParentIdAssociations*|A list of  [EntityIdToParentIdAssociation](../campaign-api/entityidtoparentidassociation-data-object.md) objects that each contain the unique system identifier of an entity such as ad or keyword, and the identifier of its parent. An ad group is the parent of an ad or keyword.<br /><br />The list must include all ads or all keywords which failed editorial review – the list cannot include a mix ads and keywords. The list can contain a maximum of 1,000 identifiers.|[EntityIdToParentIdAssociation](../campaign-api/entityidtoparentidassociation-data-object.md) array|
+|*EntityIdToParentIdAssociations*|A list of  [EntityIdToParentIdAssociation](../campaign-api/entityidtoparentidassociation-data-object.md) objects that each contain the unique system identifier of an entity such as ad or keyword, and the identifier of its parent. An ad group is the parent of an ad or keyword.<br /><br />The list must include all ads or all keywords which failed editorial review ? the list cannot include a mix ads and keywords. The list can contain a maximum of 1,000 identifiers.|[EntityIdToParentIdAssociation](../campaign-api/entityidtoparentidassociation-data-object.md) array|
 |*EntityType*|The type of entities that the entity list contains.|[EntityType](../campaign-api/entitytype-value-set.md)|
 
 ### Request Headers

@@ -20,7 +20,7 @@ Adds one or more audiences.
 ## <a name="request"></a>AddAudiencesRequest Message
 
 ### Request Body
-The *AddAudiencesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddAudiencesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

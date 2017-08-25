@@ -33,7 +33,7 @@ Defines the campaign level settings for a Bing Shopping Campaign.
 ```
 
 ## <a name="Elements"></a>Elements
-The *ShoppingSetting* object derives from the [Setting](../campaign-api/setting-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ShoppingSetting* object derives from the [Setting](../campaign-api/setting-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 
 |Element|Description|Data Type|

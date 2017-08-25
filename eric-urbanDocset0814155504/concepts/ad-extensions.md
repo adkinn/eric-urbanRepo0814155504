@@ -60,7 +60,7 @@ If the campaign is also associated with a [Location Extensions](#locationextensi
 ![overview_calladextension](../concepts/media/overview-calladextension.png "overview_calladextension")
 
 ### <a name="calloutextensions"></a>Callout Extensions
-With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad’s description. Providing additional details about your store can make your ad more relevant to potential customers.
+With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad?s description. Providing additional details about your store can make your ad more relevant to potential customers.
 
 Each account, campaign, or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your account, campaign, or ad group, no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
@@ -84,7 +84,7 @@ You can use Price Extensions to display your products or services with their cor
 ![Price Ad Extension](../concepts/media/price-ad-extension.png)
 
 ### <a name="reviewextensions"></a>Review Extensions
-Potential customers like to know about other customers’ experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
+Potential customers like to know about other customers? experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
 
 ![Review ad extension](../concepts/media/review-ad-extension.png)
 
@@ -96,13 +96,13 @@ You may associate site links ad extensions with your campaigns or ad groups, and
 ![overview_sitelinkadextension](../concepts/media/overview-sitelinkadextension.png "overview_sitelinkadextension")
 
 ### <a name="structuredsnippetextensions"></a>Structured Snippet Extensions
-Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header “Brands:” and the values “Windows, Xbox, Skype” to let customers know about what brands are available at your store.
+Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header ?Brands:? and the values ?Windows, Xbox, Skype? to let customers know about what brands are available at your store.
 
 ![Structured Snippet Ad Extension](../concepts/media/structured-snippet-ad-extension.png)
 
-This extension is not clickable and, similar to other extensions, will appear beneath your ad’s description. Structured Snippets have no impact on the other extensions you’re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
+This extension is not clickable and, similar to other extensions, will appear beneath your ad?s description. Structured Snippets have no impact on the other extensions you?re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
-An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won’t always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Bing Ads markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
+An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won?t always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Bing Ads markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
 
 
 ## <a name="bulkservice"></a>Managing Ad Extensions with the Bulk Service
@@ -207,11 +207,11 @@ When you associate an ad extension with a campaign or ad group, the extension go
 ## <a name="reporting"></a>Reporting
 You can use the following reports to get statistics about the effectiveness of the ad extensions that you've included in your ads.
 
--   [AdExtensionByAdReportRequest](~/reporting-api/adextensionbyadreportrequest-data-object.md) – Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByAdReportRequest](~/reporting-api/adextensionbyadreportrequest-data-object.md) ? Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionByKeywordReportRequest](~/reporting-api/adextensionbykeywordreportrequest-data-object.md) – Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByKeywordReportRequest](~/reporting-api/adextensionbykeywordreportrequest-data-object.md) ? Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionDimensionReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensiondimensionreportrequest.aspx) – Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
+-   [AdExtensionDimensionReportRequest](https://msdn.microsoft.com/library/bing-ads-reporting-adextensiondimensionreportrequest.aspx) ? Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 
 For more information about reporting, see [Reports](../concepts/reports.md) and [Request and Download a Report](../concepts/request-and-download-a-report.md).
 

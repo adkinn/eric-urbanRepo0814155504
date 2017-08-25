@@ -40,7 +40,7 @@ Use this bid strategy to maximize conversions at the target cost per acquisition
 ```
 
 ## <a name="Elements"></a>Elements
-The *TargetCpaBiddingScheme* object inherits elements from the [BiddingScheme](../campaign-api/biddingscheme-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *TargetCpaBiddingScheme* object inherits elements from the [BiddingScheme](../campaign-api/biddingscheme-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

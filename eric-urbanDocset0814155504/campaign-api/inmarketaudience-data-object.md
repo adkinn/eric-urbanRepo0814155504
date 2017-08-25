@@ -34,7 +34,7 @@ Defines an in-market audience.
 ```
 
 ## <a name="Elements"></a>Elements
-The *InMarketAudience* object inherits elements from the [Audience](../campaign-api/audience-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *InMarketAudience* object inherits elements from the [Audience](../campaign-api/audience-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *InMarketAudience* object inherits the following elements from the [Audience](../campaign-api/audience-data-object.md) object. 

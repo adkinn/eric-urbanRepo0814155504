@@ -15,7 +15,7 @@ manager: "ehansen"
 # Product Ad
 Defines a product ad that can be downloaded and uploaded in a bulk file.
 
-A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer’s Bing Merchant Center store catalog.
+A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer?s Bing Merchant Center store catalog.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Product Ad* record, the following attribute fields are available in the [Bulk File Schema](../bulk-api/bulk-file-schema.md). 

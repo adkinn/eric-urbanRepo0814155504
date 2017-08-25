@@ -37,7 +37,7 @@ The *DayTimeCriterion* criterion can be included within [AdGroupCriterion](../ca
 ```
 
 ## <a name="Elements"></a>Elements
-The *DayTimeCriterion* object derives from the [Criterion](../campaign-api/criterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *DayTimeCriterion* object derives from the [Criterion](../campaign-api/criterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

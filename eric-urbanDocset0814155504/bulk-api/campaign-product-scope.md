@@ -156,7 +156,7 @@ This bulk field maps to the *Id* field of the [Campaign](../bulk-api/campaign.md
 > For add, update, and delete, you must specify either the *Parent Id* or *Campaign* field.
 
 ### <a name="productcondition1"></a>Product Condition 1
-The condition’s operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
+The condition?s operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
 
 > [!NOTE]
 > For add and update, at least one product condition and value pair are required, and the index number has no relevance. For example you can specify valid values for *Product Condition 2* and *Product Value 2* and leave the remaining condition and value fields empty.
@@ -184,9 +184,9 @@ Supports the same values and rules as [Product Condition 1](#productcondition1).
 Supports the same values and rules as [Product Condition 1](#productcondition1).
 
 ### <a name="productvalue1"></a>Product Value 1
-The condition’s attribute value.
+The condition?s attribute value.
 
-An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
+An attribute?s value must exactly match the value specified in the customer?s Bing Merchant Center catalog file.
 
 For available condition and value settings, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).
 

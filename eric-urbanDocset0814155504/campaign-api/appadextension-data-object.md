@@ -40,7 +40,7 @@ You can associate an app ad extension with one or more campaigns and ad groups. 
 ```
 
 ## <a name="Elements"></a>Elements
-The *AppAdExtension* object inherits elements from the [AdExtension](../campaign-api/adextension-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *AppAdExtension* object inherits elements from the [AdExtension](../campaign-api/adextension-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 > [!IMPORTANT]
 > If you set *AppPlatform* to a platform that conflicts with the *AppStoreId* or vice versa, the service operation will not throw an error; however, the app ad extension will not deliver. For example if you set the *AppPlatform* to Windows and used an *AppStoreId* provisioned for the iOS app store, the ad extension will not deliver.
@@ -71,7 +71,7 @@ The *AppAdExtension* object inherits the following elements from the [AdExtensio
 |*Scheduling*|Determines the calendar day and time ranges when the ad extension is eligible to be shown in ads.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If you set this element null, any existing scheduling set for the ad extension will remain unchanged. If you set this to any non-null [Schedule](../campaign-api/schedule-data-object.md) object, you are effectively replacing existing scheduling settings for the ad extension. To remove all scheduling set this element to an empty [Schedule](../campaign-api/schedule-data-object.md) object.|[Schedule](../campaign-api/schedule-data-object.md)|
 |*Status*|The status of the ad extension. The value will always be *Active* because the Campaign Management service does not return deleted ad extensions.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdExtensionStatus](../campaign-api/adextensionstatus-value-set.md)|
 |*Type*|The type of the ad extension. This value is *AppAdExtension* when you retrieve an app ad extension.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only<br/><br/>For more information about ad extension types, see the [Ad Extension Data Object Remarks](../campaign-api/adextension-data-object.md#remarks).|*string*|
-|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|*int*|
+|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|*int*|
 
 ## Requirements
 [!INCLUDE[reqcamp](../campaign-api/includes/reqcamp.md)]

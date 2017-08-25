@@ -20,7 +20,7 @@ Updates the keywords within a specified ad group.
 ## <a name="request"></a>UpdateKeywordsRequest Message
 
 ### Request Body
-The *UpdateKeywordsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateKeywordsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

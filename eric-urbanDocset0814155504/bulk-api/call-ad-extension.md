@@ -283,7 +283,7 @@ Possible values are *Active* or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ### <a name="tollfree"></a>Toll Free
-You can either use your own phone number or use a Bing Ads forwarding phone number. A Bing Ads forwarding phone number is a unique phone number that is routed to your business phone number. With a Bing Ads forwarding number, you can track all calls from your ad so that you can analyze the ad’s performance. This field determines whether a toll-free Bing Ads forwarding phone number should be created for call tracking. This field can only be set if *Call Tracking Enabled* field is also *TRUE*.
+You can either use your own phone number or use a Bing Ads forwarding phone number. A Bing Ads forwarding phone number is a unique phone number that is routed to your business phone number. With a Bing Ads forwarding number, you can track all calls from your ad so that you can analyze the ad?s performance. This field determines whether a toll-free Bing Ads forwarding phone number should be created for call tracking. This field can only be set if *Call Tracking Enabled* field is also *TRUE*.
 
 Set this property to *TRUE* if a Bing Ads forwarding phone number should be created for call tracking, and otherwise set it to *FALSE*.
 
@@ -304,7 +304,7 @@ Set this property to *TRUE* if you want the ad extensions to be shown in the sea
 **Delete:** Read-only  
 
 ### <a name="version"></a>Version
-The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.
+The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.
 
 **Add:** Read-only  
 **Update:** Read-only    

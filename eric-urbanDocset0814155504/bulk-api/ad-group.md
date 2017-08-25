@@ -226,7 +226,7 @@ The name of the campaign that contains the ad group.
 **Delete:** Read-only  
 
 ### <a name="contentbid"></a>Content Bid
-The bid to use when the keywords that the service extracts from the content page and the ad group’s keywords match by using an exact match comparison. An exact match results when all of the words in the keyword exactly match the user's query.
+The bid to use when the keywords that the service extracts from the content page and the ad group?s keywords match by using an exact match comparison. An exact match results when all of the words in the keyword exactly match the user's query.
     
 > [!NOTE]
 > This feature is not supported for ad groups in Bing Shopping campaigns or Dynamic Search Ads campaigns.
@@ -235,7 +235,7 @@ The minimum and maximum bid range depends on the account's currency. For more in
 
 You can set a content bid if the *Content Network* ad distribution channel is set to *On*.
 
-Specifying a content match bid at the keyword level overrides the ad group’s content match bid value.
+Specifying a content match bid at the keyword level overrides the ad group?s content match bid value.
 
 **Add:** Optional  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    
@@ -366,13 +366,13 @@ Set this field to *BidOnly* if you want to show ads to people searching for your
 **Delete:** Read-only  
 
 ### <a name="searchbid"></a>Search Bid
-The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
+The default bid to use when the user?s query and the ad group?s keywords match by using either a broad, exact, or phrase match comparison.
 
 The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](~/concepts/currencies.md).
 
 You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
 
-Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group’s search bid value for the corresponding match type.
+Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group?s search bid value for the corresponding match type.
 
 **Add:** Optional. If you do not set a bid, it will be set to the minimum depending on your account's currency.  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    

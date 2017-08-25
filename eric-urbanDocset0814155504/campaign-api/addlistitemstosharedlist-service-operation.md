@@ -23,7 +23,7 @@ Adds negative keywords to the shared negative keyword list.
 ## <a name="request"></a>AddListItemsToSharedListRequest Message
 
 ### Request Body
-The *AddListItemsToSharedListRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddListItemsToSharedListRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

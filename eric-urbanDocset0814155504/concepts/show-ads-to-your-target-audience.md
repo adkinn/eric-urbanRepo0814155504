@@ -29,13 +29,13 @@ For details about managing your targets, see the following sections.
 
 -   [Default Target Settings](#defaulttargets)
 
--   [Adding Targets](../concepts/show-ads-to-your-target-audience.md#Adding_Targets)
+-   [Adding Targets](../concepts/show-ads-to-your-target-audience.md#adding_targets)
 
--   [Getting Targets](../concepts/show-ads-to-your-target-audience.md#Get_Target)
+-   [Getting Targets](../concepts/show-ads-to-your-target-audience.md#get_target)
 
--   [Updating Targets](../concepts/show-ads-to-your-target-audience.md#Update_Targets)
+-   [Updating Targets](../concepts/show-ads-to-your-target-audience.md#update_targets)
 
--   [Deleting Targets](../concepts/show-ads-to-your-target-audience.md#Delete_Targets)
+-   [Deleting Targets](../concepts/show-ads-to-your-target-audience.md#delete_targets)
 
 -   [Bid Adjustments](#bidadjust)
 

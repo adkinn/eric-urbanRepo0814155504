@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # GetMediaMetaDataByAccountId Service Operation
-Gets the media meta data of the specified entity type from an account’s media library.
+Gets the media meta data of the specified entity type from an account?s media library.
 
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-api/getmediabyids-service-operation.md).
@@ -23,7 +23,7 @@ Gets the media meta data of the specified entity type from an account’s media 
 ## <a name="request"></a>GetMediaMetaDataByAccountIdRequest Message
 
 ### Request Body
-The *GetMediaMetaDataByAccountIdRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetMediaMetaDataByAccountIdRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

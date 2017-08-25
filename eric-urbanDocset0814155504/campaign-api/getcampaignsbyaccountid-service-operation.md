@@ -20,7 +20,7 @@ Gets the campaigns within an account.
 ## <a name="request"></a>GetCampaignsByAccountIdRequest Message
 
 ### Request Body
-The *GetCampaignsByAccountIdRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetCampaignsByAccountIdRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

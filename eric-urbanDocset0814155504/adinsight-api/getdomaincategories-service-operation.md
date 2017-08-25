@@ -20,7 +20,7 @@ Gets the list of categories available for the website domain and language.
 ## <a name="request"></a>GetDomainCategoriesRequest Message
 
 ### Request Body
-The *GetDomainCategoriesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetDomainCategoriesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

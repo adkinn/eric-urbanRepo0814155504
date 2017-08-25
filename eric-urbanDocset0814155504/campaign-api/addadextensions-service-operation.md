@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # AddAdExtensions Service Operation
-Adds one or more ad extensions to an account’s ad extension library.
+Adds one or more ad extensions to an account?s ad extension library.
 
 [!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddAdExtensionsRequest Message
 
 ### Request Body
-The *AddAdExtensionsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddAdExtensionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

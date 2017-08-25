@@ -17,7 +17,7 @@ Defines a custom events remarketing rule.
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. For the custom events rule, you must include one or more of the following conditional event operator pairs: (*ActionOperator* and *Action*), (*CategoryOperator* and *Category*), (*LabelOperator* and *Label*), (*ValueOperator* and *Value*). If more than one condition is specified, the conditions are joined using the logical *AND* operator. In other words the visitor will only be added to your remarketing list if all of the specified rule conditions are met.
 
-For a detailed example, see the [Remarks](#Remarks) section below.
+For a detailed example, see the [Remarks](#remarks) section below.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ For a detailed example, see the [Remarks](#Remarks) section below.
 ```
 
 ## <a name="Elements"></a>Elements
-The *CustomEventsRule* object inherits elements from the [RemarketingRule](../campaign-api/remarketingrule-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *CustomEventsRule* object inherits elements from the [RemarketingRule](../campaign-api/remarketingrule-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

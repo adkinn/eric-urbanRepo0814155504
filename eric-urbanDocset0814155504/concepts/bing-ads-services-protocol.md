@@ -60,7 +60,7 @@ Because of the costs associated with establishing a connection to a web service,
 Throttling extremely high-volume usage maintains fair usage for all [!INCLUDE[brand](../concepts/includes/brand.md)] clients.
 
 ### Ad Insight and Campaign Management
-For Ad Insight and Campaign services, throttling limits the number of calls to the API that any one user can make in a minute’s time.
+For Ad Insight and Campaign services, throttling limits the number of calls to the API that any one user can make in a minute?s time.
 
 At the customer level, the number of calls a customer can make to the customer data is restricted using a sliding protocol with a 60 second window.
 

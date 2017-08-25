@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in PHP
-The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
+The following example shows how to add, get, and delete extensions for an account?s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
@@ -468,7 +468,7 @@ try
     	AssociationType::Campaign
     );
     
-    // Deletes the ad extensions from the account�s ad extension library.
+    // Deletes the ad extensions from the account?s ad extension library.
     DeleteAdExtensions(
     	$GLOBALS['AuthorizationData']->AccountId, 
     	$adExtensionIds

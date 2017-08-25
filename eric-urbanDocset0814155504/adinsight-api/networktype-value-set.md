@@ -34,8 +34,8 @@ You can specify a network type when calling the [GetKeywordIdeas](../adinsight-a
 |Value|Description|
 |---------|---------------|
 |OwnedAndOperatedAndSyndicatedSearch|Indicates that you want keyword ideas or traffic estimates for ads on owned and operated networks, as well as syndicated search networks.|
-|OwnedAndOperatedOnly|Indicates that you want keyword ideas or traffic estimates for ads on only owned and operated networks.<br /><br />Owned and operated networks refer to the Bing™, AOL, and Yahoo search networks.|
-|SyndicatedSearchOnly|Indicates that you want keyword ideas or traffic estimates for ads on only syndicated search networks.<br /><br />Syndicated search refers to partner sites that host Bing™, AOL, and Yahoo search.|
+|OwnedAndOperatedOnly|Indicates that you want keyword ideas or traffic estimates for ads on only owned and operated networks.<br /><br />Owned and operated networks refer to the Bing?, AOL, and Yahoo search networks.|
+|SyndicatedSearchOnly|Indicates that you want keyword ideas or traffic estimates for ads on only syndicated search networks.<br /><br />Syndicated search refers to partner sites that host Bing?, AOL, and Yahoo search.|
 
 ## Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]

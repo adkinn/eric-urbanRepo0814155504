@@ -45,7 +45,7 @@ Finally you can [add](../campaign-api/addads-service-operation.md) a [DynamicSea
 ```
 
 ## <a name="Elements"></a>Elements
-The *DynamicSearchAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *DynamicSearchAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 > [!NOTE]
 > The combination of the *Path1*, *Path2*, and *Text* elements make the dynamic search ad unique.

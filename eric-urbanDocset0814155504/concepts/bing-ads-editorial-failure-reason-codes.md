@@ -56,7 +56,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |50|Editorial Guidelines: Bing Ads requires the ad title and ad text to be punctuated correctly and not excessively.|
 |51|Quality Guidelines: Your website does not contain the offer indicated in the ad text.|
 |52|Editorial Guidelines: The phone number in your ad text is not valid.|
-|53|Non-specific calls-to-action (e.g. “click here”) are not allowed.|
+|53|Non-specific calls-to-action (e.g. ?click here?) are not allowed.|
 |54|Editorial Guidelines: Bing Ads requires the ad title and ad text to be spelled correctly.|
 |55|Editorial Guidelines: Your website exhibits behavior that is not allowed on Bing Ads.|
 |56|Pop-up/pop-under ads are not allowed on landing page.|
@@ -190,7 +190,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |259|Policy Violation: Adult content that is extreme, shocking, or obscene is not allowed. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|
 |260|Policy Violation: Certain types of adult content are not allowed. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|
 |261|Policy Violation: Bing Ads does not allow advertising for electronic cigarettes, including the cartridges and liquid nicotine solutions that are used in such devices.|
-|262|Policy Violation: Bing Ads does not allow advertising that installs, copies, or downloads programs without the search user’s express prior consent.|
+|262|Policy Violation: Bing Ads does not allow advertising that installs, copies, or downloads programs without the search user?s express prior consent.|
 |263|Policy Violation: Advertising promoting contests and competitions must comply with all applicable legislation.|
 |264|Policy Violation: Advertising promoting contests and competitions must comply with all applicable legislation.|
 |265|Policy Violation: Bing Ads does not allow the advertising of sites that offer access to Usenet newsgroups.|

@@ -20,7 +20,7 @@ Gets a list of keyword suggestions that are relevant to the specified ad group. 
 ## <a name="request"></a>GetKeywordOpportunitiesRequest Message
 
 ### Request Body
-The *GetKeywordOpportunitiesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetKeywordOpportunitiesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

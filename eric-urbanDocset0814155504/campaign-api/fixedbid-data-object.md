@@ -30,7 +30,7 @@ Defines the fixed bid to use in the auction.
 ```
 
 ## <a name="Elements"></a>Elements
-The *FixedBid* object derives from the [CriterionBid](../campaign-api/criterionbid-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *FixedBid* object derives from the [CriterionBid](../campaign-api/criterionbid-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

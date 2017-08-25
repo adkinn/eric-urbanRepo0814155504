@@ -34,7 +34,7 @@ Defines an error object that identifies the entity with the batch of entities th
 ```
 
 ## <a name="Elements"></a>Elements
-The `EditorialError` object inherits elements from the [BatchError](../bulk-api/batcherror-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The `EditorialError` object inherits elements from the [BatchError](../bulk-api/batcherror-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

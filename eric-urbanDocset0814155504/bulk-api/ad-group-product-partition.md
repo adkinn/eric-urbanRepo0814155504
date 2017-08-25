@@ -231,16 +231,16 @@ This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md
 > For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
 
 ### <a name="productcondition1"></a>Product Condition 1
-The condition’s operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
+The condition?s operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
 
 **Add:** Required  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product partition and add a new one.    
 **Delete:** Read-only  
 
 ### <a name="productvalue1"></a>Product Value 1
-The condition’s attribute value.
+The condition?s attribute value.
 
-An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
+An attribute?s value must exactly match the value specified in the customer?s Bing Merchant Center catalog file.
 
 For available condition and value settings, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).
 

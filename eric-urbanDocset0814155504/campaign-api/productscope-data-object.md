@@ -34,7 +34,7 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 ```
 
 ## <a name="Elements"></a>Elements
-The *ProductScope* object derives from the [Criterion](../campaign-api/criterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ProductScope* object derives from the [Criterion](../campaign-api/criterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -33,7 +33,7 @@ Do not try to instantiate a *SharedList*. You can create the following object th
 ```
 
 ## <a name="Elements"></a>Elements
-The *SharedList* object derives from the *SharedEntity* object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *SharedList* object derives from the *SharedEntity* object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

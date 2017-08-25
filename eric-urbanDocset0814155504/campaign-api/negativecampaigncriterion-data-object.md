@@ -28,7 +28,7 @@ Defines a criterion that you want to exclude from the specified campaign.
 ```
 
 ## <a name="Elements"></a>Elements
-The *NegativeCampaignCriterion* object derives from the [CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *NegativeCampaignCriterion* object derives from the [CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *NegativeCampaignCriterion* object derives from the [CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) object, and inherits the following elements. 
