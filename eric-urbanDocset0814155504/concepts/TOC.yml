@@ -1,5 +1,5 @@
 - name: Overview
-  href: index.md
+  href: bing-ads-api-overview.md
 - name: Entity Hierarchy and Limits
   href: entity-hierarchy-and-limits.md
 - name: Getting Started With the Bing Ads API
@@ -8,30 +8,30 @@
   - name: Getting Started Using C# with Bing Ads Services
     href: getting-started-using-csharp-with-bing-ads-services.md
     items:
-    - name: Walkthrough: Bing Ads Desktop Application in C#
+    - name: Walkthrough - Bing Ads Desktop Application in C#
       href: walkthrough-bing-ads-desktop-application-in-csharp.md
-    - name: Walkthrough: Bing Ads Web Application in C#
+    - name: Walkthrough - Bing Ads Web Application in C#
       href: walkthrough-bing-ads-web-application-in-csharp.md
   - name: Getting Started Using Java with Bing Ads Services
     href: getting-started-using-java-with-bing-ads-services.md
     items:
-    - name: Walkthrough: Bing Ads Desktop Application in Java
+    - name: Walkthrough - Bing Ads Desktop Application in Java
       href: walkthrough-bing-ads-desktop-application-in-java.md
-    - name: Walkthrough: Bing Ads Web Application in Java
+    - name: Walkthrough - Bing Ads Web Application in Java
       href: walkthrough-bing-ads-web-application-in-java.md
   - name: Getting Started Using PHP with Bing Ads Services
     href: getting-started-using-php-with-bing-ads-services.md
     items:
-    - name: Walkthrough: Bing Ads Desktop Application in PHP
+    - name: Walkthrough - Bing Ads Desktop Application in PHP
       href: walkthrough-bing-ads-desktop-application-in-php.md
-    - name: Walkthrough: Bing Ads Web Application in PHP
+    - name: Walkthrough - Bing Ads Web Application in PHP
       href: walkthrough-bing-ads-web-application-in-php.md
   - name: Getting Started Using Python with Bing Ads Services
     href: getting-started-using-python-with-bing-ads-services.md
     items:
-    - name: Walkthrough: Bing Ads Desktop Application in Python
+    - name: Walkthrough - Bing Ads Desktop Application in Python
       href: walkthrough-bing-ads-desktop-application-in-python.md
-    - name: Walkthrough: Bing Ads Web Application in Python
+    - name: Walkthrough - Bing Ads Web Application in Python
       href: walkthrough-bing-ads-web-application-in-python.md
 - name: Sandbox
   href: sandbox.md
