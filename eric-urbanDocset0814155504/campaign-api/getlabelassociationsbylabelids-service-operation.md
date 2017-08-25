@@ -19,7 +19,7 @@ Gets label associations by label identifiers.
 ## <a name="request"></a>GetLabelAssociationsByLabelIdsRequest Message
 
 ### Request Body
-The *GetLabelAssociationsByLabelIdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetLabelAssociationsByLabelIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

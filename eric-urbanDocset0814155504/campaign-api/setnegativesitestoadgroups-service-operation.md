@@ -20,7 +20,7 @@ Sets the negative site URLs of the specified ad groups.
 ## <a name="request"></a>SetNegativeSitesToAdGroupsRequest Message
 
 ### Request Body
-The *SetNegativeSitesToAdGroupsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *SetNegativeSitesToAdGroupsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

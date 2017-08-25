@@ -20,14 +20,14 @@ Updates one or more ad group criterions.
 ## <a name="request"></a>UpdateAdGroupCriterionsRequest Message
 
 ### Request Body
-The *UpdateAdGroupCriterionsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateAdGroupCriterionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*AdGroupCriterions*|The list of criterions to update.<br/><br/>You can include up to 1,000 ad group criterions per request.<br /><br />Within each [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object, you must specify the criterion’s ID and the ID of the ad group that it belongs to.|[AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) array|
+|*AdGroupCriterions*|The list of criterions to update.<br/><br/>You can include up to 1,000 ad group criterions per request.<br /><br />Within each [AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) object, you must specify the criterion?s ID and the ID of the ad group that it belongs to.|[AdGroupCriterion](../campaign-api/adgroupcriterion-data-object.md) array|
 |*CriterionType*|The type of criterion to update, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetAdGroupCriterionsByIds](../campaign-api/getadgroupcriterionsbyids-service-operation.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *CriterionType* value as *Audience*.  You can add, delete, and update multiple target criterion types in the same operation. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-api/getadgroupcriterionsbyids-service-operation.md) you must request the specific type individually i.e., *Custom*, *InMarket*, and *RemarketingList*.<br/><br/>**Note:** You cannot update a [ProductPartition](../campaign-api/productpartition-data-object.md) with this operation. Instead, you should use [ApplyProductPartitionActions](../campaign-api/applyproductpartitionactions-service-operation.md).|[AdGroupCriterionType](../campaign-api/adgroupcriteriontype-value-set.md)|
 
 ### Request Headers

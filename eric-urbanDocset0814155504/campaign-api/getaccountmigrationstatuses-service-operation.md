@@ -20,7 +20,7 @@ Gets the migration status info for the specified accounts.
 ## <a name="request"></a>GetAccountMigrationStatusesRequest Message
 
 ### Request Body
-The *GetAccountMigrationStatusesRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAccountMigrationStatusesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

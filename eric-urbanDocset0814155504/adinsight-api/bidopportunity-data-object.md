@@ -41,7 +41,7 @@ Defines an object that contains the suggested bid with estimated clicks and impr
 ```
 
 ## <a name="Elements"></a>Elements
-The *BidOpportunity* object inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *BidOpportunity* object inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in C# #
-The following example shows how to add, get, and delete extensions for an account’s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
+The following example shows how to add, get, and delete extensions for an account?s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
 [!INCLUDE[csharp_header](../concepts/includes/csharp-header.md)]
 

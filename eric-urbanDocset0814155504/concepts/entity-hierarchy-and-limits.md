@@ -278,7 +278,7 @@ The following table defines limits for budget properties.
 |Name|The name must be unique among all budgets within the account. The name can contain a maximum of 255 characters.|
 
 ## <a name="campaign"></a>Campaign
-The campaign object is the top level object of an advertising campaign and is where you specify the campaign’s budget. Each account can have up to 10,000 campaigns.
+The campaign object is the top level object of an advertising campaign and is where you specify the campaign?s budget. Each account can have up to 10,000 campaigns.
 
 You can manage campaigns using the Bulk service ([Campaign Record](~/bulk-api/campaign.md)) or Campaign Management service ([Campaign](~/campaign-api/campaign-data-object.md)).
 
@@ -317,9 +317,9 @@ The following table defines limits for keyword properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
-|Param1|The string can contain a maximum of 1,022 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.|
-|Param2|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.|
-|Param3|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad’s title can contain a maximum of 25 characters.|
+|Param1|The string can contain a maximum of 1,022 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.|
+|Param2|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.|
+|Param3|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad?s title can contain a maximum of 25 characters.|
 |Text|The string can contain a maximum of 100 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
@@ -351,7 +351,7 @@ Additionally a campaign can be associated with any or all negative keyword lists
 > [!NOTE]
 > The maximum number associations between campaigns and negative keyword lists is 50,000 per account. For example if you have five negative keyword lists and associate all of them with each of your 10,000 campaigns, then you are not allowed to associate a sixth negative keyword list with any campaign.
 
-If you specify negative keywords at both levels, both lists will be used in comparison to the user’s query. Thus an ad group could effectively have 140,000 negative keywords applied via the sum of the 20,000 negative keywords exclusively set for that ad group, the 20,000 negative keywords exclusively set for the ad group's parent campaign, and the 100,000 negative keywords in lists shared with the ad group's parent campaign.
+If you specify negative keywords at both levels, both lists will be used in comparison to the user?s query. Thus an ad group could effectively have 140,000 negative keywords applied via the sum of the 20,000 negative keywords exclusively set for that ad group, the 20,000 negative keywords exclusively set for the ad group's parent campaign, and the 100,000 negative keywords in lists shared with the ad group's parent campaign.
 
 For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](../concepts/negative-keywords.md).
 

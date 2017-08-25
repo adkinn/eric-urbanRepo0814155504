@@ -28,7 +28,7 @@ You can include *ExpandedText* as an [AdType](~/campaign-api/adtype-value-set.md
 * [GetAdsByIds](~/campaign-api/getadsbyids-service-operation.md)
 
 ## <a name="countdown"></a>Countdowns for Expanded Text Ads
-Countdown customizers let you easily add a countdown — by day, hour, and then minute — to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad. For example, you can use a countdown to draw attention to a sale that is ending or to promote an upcoming event.
+Countdown customizers let you easily add a countdown ? by day, hour, and then minute ? to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad. For example, you can use a countdown to draw attention to a sale that is ending or to promote an upcoming event.
 
 > [!NOTE]
 > [!INCLUDE[pilot_comingsoon](../concepts/includes/pilot-comingsoon.md)]

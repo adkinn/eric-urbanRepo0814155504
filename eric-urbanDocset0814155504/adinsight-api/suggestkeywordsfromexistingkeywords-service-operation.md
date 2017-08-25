@@ -20,7 +20,7 @@ Suggests keywords that could perform better than the specified keywords.
 ## <a name="request"></a>SuggestKeywordsFromExistingKeywordsRequest Message
 
 ### Request Body
-The *SuggestKeywordsFromExistingKeywordsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *SuggestKeywordsFromExistingKeywordsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

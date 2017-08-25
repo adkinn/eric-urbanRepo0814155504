@@ -5405,7 +5405,7 @@ The device target specified is invalid.
 CampaignServiceDuplicateDeviceTarget
 
 **Description**
-The customer’s target library already contains the device target.
+The customer?s target library already contains the device target.
 
 ***
 
@@ -6313,7 +6313,7 @@ The list of site links cannot contain a null site link. The Details element cont
 CampaignServiceSiteLinkDestinationUrlNullOrEmpty
 
 **Description**
-The site link’s destination URL cannot be null or empty. The Details element contains the index of the site link.
+The site link?s destination URL cannot be null or empty. The Details element contains the index of the site link.
 
 ***
 
@@ -6324,7 +6324,7 @@ The site link’s destination URL cannot be null or empty. The Details element c
 CampaignServiceSiteLinkDisplayTextNullOrEmpty
 
 **Description**
-The site link’s display text cannot be null or empty. The Details element contains the index of the site link.
+The site link?s display text cannot be null or empty. The Details element contains the index of the site link.
 
 ***
 
@@ -6335,7 +6335,7 @@ The site link’s display text cannot be null or empty. The Details element cont
 CampaignServiceSiteLinkDestinationUrlTooLong
 
 **Description**
-The site link’s destination URL is too long. The Details element contains the index of the site link.
+The site link?s destination URL is too long. The Details element contains the index of the site link.
 
 ***
 
@@ -6346,7 +6346,7 @@ The site link’s destination URL is too long. The Details element contains the 
 CampaignServiceSiteLinkDisplayTextTooLong
 
 **Description**
-The site link’s display text is too long. The Details element contains the index of the site link.
+The site link?s display text is too long. The Details element contains the index of the site link.
 
 ***
 
@@ -6467,7 +6467,7 @@ The list of ad extension IDs contains duplicates.
 CampaignServiceCannotAssignMoreThanOneAdExtensionTypeToAnEntity
 
 **Description**
-The entity to which you’re trying to associate the ad extension already has an ad extension of the same type associated with it.
+The entity to which you?re trying to associate the ad extension already has an ad extension of the same type associated with it.
 
 ***
 
@@ -6843,7 +6843,7 @@ The phone number contains content that is not valid.
 CampaignServiceAdExtensionIconMediaIdInvalid
 
 **Description**
-An icon with the specified ID was not found in the account’s media library.
+An icon with the specified ID was not found in the account?s media library.
 
 ***
 
@@ -6854,7 +6854,7 @@ An icon with the specified ID was not found in the account’s media library.
 CampaignServiceAdExtensionIconTooLarge
 
 **Description**
-The width and height of the icon that you’re adding to the location extension is greater than the maximum allowed.
+The width and height of the icon that you?re adding to the location extension is greater than the maximum allowed.
 
 ***
 
@@ -6865,7 +6865,7 @@ The width and height of the icon that you’re adding to the location extension 
 CampaignServiceAdExtensionImageMediaIdInvalid
 
 **Description**
-An image with the specified ID was not found in the account’s media library.
+An image with the specified ID was not found in the account?s media library.
 
 ***
 
@@ -6876,7 +6876,7 @@ An image with the specified ID was not found in the account’s media library.
 CampaignServiceAdExtensionImageTooLarge
 
 **Description**
-The width and height of the image that you’re adding to the location extension is greater than the maximum allowed.
+The width and height of the image that you?re adding to the location extension is greater than the maximum allowed.
 
 ***
 

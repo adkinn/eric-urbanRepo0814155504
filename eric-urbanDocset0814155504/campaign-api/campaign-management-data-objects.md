@@ -77,7 +77,7 @@ The Campaign Management service defines the following data objects.
 |[GenderCriterion](../campaign-api/gendercriterion-data-object.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
 |[GeoPoint](../campaign-api/geopoint-data-object.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|
 |[IdCollection](../campaign-api/idcollection-data-object.md)|Defines an object that contains a list of entity identifiers.|
-|[Image](../campaign-api/image-data-object.md)|Defines an image object that can be added to an account’s media library.|
+|[Image](../campaign-api/image-data-object.md)|Defines an image object that can be added to an account?s media library.|
 |[ImageAdExtension](../campaign-api/imageadextension-data-object.md)|Defines an ad extension that specifies an image with alternative text to include in a text ad.|
 |[ImageMediaRepresentation](../campaign-api/imagemediarepresentation-data-object.md)|Defines an image media representation with height and width.|
 |[InheritFromParentBiddingScheme](../campaign-api/inheritfromparentbiddingscheme-data-object.md)|Defines an object that represents the inherit from parent bid strategy type.|
@@ -86,7 +86,7 @@ The Campaign Management service defines the following data objects.
 |[Keyword](../campaign-api/keyword-data-object.md)|Defines a keyword.|
 |[Label](../campaign-api/label-data-object.md)|Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.|
 |[LabelAssociation](../campaign-api/labelassociation-data-object.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
-|[LocationAdExtension](../campaign-api/locationadextension-data-object.md)|Defines an ad extension that specifies a business’ address and phone number to include in a text ad.|
+|[LocationAdExtension](../campaign-api/locationadextension-data-object.md)|Defines an ad extension that specifies a business? address and phone number to include in a text ad.|
 |[LocationCriterion](../campaign-api/locationcriterion-data-object.md)|Defines a criterion that can be used to show ads to users in a specific location.|
 |[LocationIntentCriterion](../campaign-api/locationintentcriterion-data-object.md)|Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group.|
 |[ManualCpcBiddingScheme](../campaign-api/manualcpcbiddingscheme-data-object.md)|Defines an object that represents the manual CPC bid strategy type.|

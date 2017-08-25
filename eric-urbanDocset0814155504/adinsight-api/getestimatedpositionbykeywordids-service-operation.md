@@ -23,7 +23,7 @@ Gets the estimated position in the search results if the specified bid value had
 ## <a name="request"></a>GetEstimatedPositionByKeywordIdsRequest Message
 
 ### Request Body
-The *GetEstimatedPositionByKeywordIdsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetEstimatedPositionByKeywordIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

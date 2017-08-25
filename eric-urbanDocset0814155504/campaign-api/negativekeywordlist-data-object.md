@@ -28,7 +28,7 @@ Defines a negative keyword list. You can add negative keywords to a negative key
 ```
 
 ## <a name="Elements"></a>Elements
-The *NegativeKeywordList* object inherits elements from the [SharedList](../campaign-api/sharedlist-data-object.md) and [SharedEntity](../campaign-api/sharedentity-data-object.md) objects. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *NegativeKeywordList* object inherits elements from the [SharedList](../campaign-api/sharedlist-data-object.md) and [SharedEntity](../campaign-api/sharedentity-data-object.md) objects. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 ### <a name="InheritedElementsSharedList"></a>Inherited Elements from SharedList

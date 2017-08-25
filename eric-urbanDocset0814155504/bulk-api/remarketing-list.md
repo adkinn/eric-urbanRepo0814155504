@@ -165,7 +165,7 @@ The system generated identifier of the account or customer. If the *Scope* is se
 ### <a name="remarketingrule"></a>Remarketing Rule
 A rule template includes conditions used to determine who to add to your remarketing list.
 
-You can choose one of the four types of rules to target different audiences: *CustomEventsRule*, *PageVisitorsRule*, *PageVisitorsWhoDidNotVisitAnotherPageRule*, and *PageVisitorsWhoVisitedAnotherPageRule*. For details on the format of each rule in the bulk file, see the [CustomEvents](#CustomEvents), [PageVisitors](#PageVisitors), [PageVisitorsWhoDidNotVisitAnotherPage](#PageVisitorsWhoDidNotVisitAnotherPage), and [PageVisitorsWhoVisitedAnotherPage](#PageVisitorsWhoVisitedAnotherPage) rule template remarks sections below.
+You can choose one of the four types of rules to target different audiences: *CustomEventsRule*, *PageVisitorsRule*, *PageVisitorsWhoDidNotVisitAnotherPageRule*, and *PageVisitorsWhoVisitedAnotherPageRule*. For details on the format of each rule in the bulk file, see the [CustomEvents](#customevents), [PageVisitors](#PageVisitors), [PageVisitorsWhoDidNotVisitAnotherPage](#PageVisitorsWhoDidNotVisitAnotherPage), and [PageVisitorsWhoVisitedAnotherPage](#PageVisitorsWhoVisitedAnotherPage) rule template remarks sections below.
 
 **Add:** Required  
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)] If you want to keep any of the previous rule items, then you must explicitly set them again during update. You can choose to change the type of rule during update.    

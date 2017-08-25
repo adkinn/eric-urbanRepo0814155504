@@ -100,7 +100,7 @@ The following currency codes are supported for conversion goals by setting the *
 |CLP|Chilean Peso|
 |CNY|Chinese Yuan|
 |COP|Colombian Peso|
-|CRC|Costa Rican Colón|
+|CRC|Costa Rican Col?n|
 |CZK|Czech Republic Koruna|
 |DKK|Danish Krone|
 |DOP|Dominican Peso|
@@ -121,7 +121,7 @@ The following currency codes are supported for conversion goals by setting the *
 |ILS|Israeli New Shekel|
 |INR|Indian Rupee|
 |IQD|Iraqi Dinar|
-|ISK|Icelandic Króna|
+|ISK|Icelandic Kr?na|
 |JMD|Jamaican Dollar|
 |JOD|Jordanian Dinar|
 |JPY|Japanese Yen|
@@ -143,7 +143,7 @@ The following currency codes are supported for conversion goals by setting the *
 |MXN|Mexican Peso|
 |MYR|Malaysian Ringgit|
 |NGN|Nigerian Naira|
-|NIO|Nicaraguan Córdoba|
+|NIO|Nicaraguan C?rdoba|
 |NOK|Norwegian Krone|
 |NZD|New Zealand Dollar|
 |OMR|Omani Rial|
@@ -173,7 +173,7 @@ The following currency codes are supported for conversion goals by setting the *
 |USD|US Dollar|
 |UYU|Uruguayan Peso|
 |UZS|Uzbekistani Som|
-|VEF|Venezuelan Bolívar|
+|VEF|Venezuelan Bol?var|
 |VND|Vietnamese Dong|
 |XAF|Central African CFA Franc|
 |XCD|Eastern Caribbean Dollar|

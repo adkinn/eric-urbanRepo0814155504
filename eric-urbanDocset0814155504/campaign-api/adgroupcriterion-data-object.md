@@ -51,7 +51,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<AdGroupCrit
 ```xml
 <AdGroupCriterion i:type="BiddableAdGroupCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <Id i:nil="true" />
-    <Status i:nil=”true” />
+    <Status i:nil=?true? />
      . . .
 </AdGroupCriterion>
 ```

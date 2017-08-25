@@ -41,14 +41,14 @@ Defines an object that contains the suggested budget with estimated clicks and i
 ```
 
 ## <a name="Elements"></a>Elements
-The *BudgetOpportunity* object inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *BudgetOpportunity* object inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*BudgetPoints*|The list of budget points with weekly impressions, clicks and cost estimates for the given budget amount.|[BudgetPoint](../adinsight-api/budgetpoint-data-object.md) array|
 |*BudgetType*|The type of budget that the campaign uses.|[BudgetLimitType](../adinsight-api/budgetlimittype-value-set.md)|
 |*CampaignId*|The identifier of the campaign to which the suggested budget applies.|*long*|
-|*CurrentBudget*|The campaign’s current budget.|*double*|
+|*CurrentBudget*|The campaign?s current budget.|*double*|
 |*IncreaseInClicks*|The estimated clicks opportunities corresponding to the suggested budget.|*double*|
 |*IncreaseInImpressions*|The estimated impressions opportunities corresponding to the suggested budget.|*long*|
 |*PercentageIncreaseInClicks*|The estimated percentage increase in clicks corresponding to the suggested budget.|*int*|

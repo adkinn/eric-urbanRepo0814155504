@@ -18,13 +18,13 @@ The Reporting service contains the operations that you use to submit report requ
 ## Reporting Service Overview
 When submitting a report request, you choose the [Report Attributes and Performance Statistics](../concepts/report-attributes-and-performance-statistics.md) to determine the contents of the report. For example, you may want to include impressions, clicks, and click-through rate. The report uses the column names as the column headers. The report includes the columns in the same order that you include them in the *Columns* element of the report request. For information about how columns affect data output, see [Columns that Group the Data](#columnsdata) below. For information about restrictions on column combinations in the same report request, see [Column Restrictions](#columnrestrictions) below.
 
-You will also specify the report parameters that restrict or limit the returned data set. For example, you can set the aggregation level to group the data by day or month; specify the time period of the data to include in the report by using specific dates or predefined date ranges, such as today or the last seven days; specify the scope of the data by identifying the accounts, campaigns, and ad groups to include in the report; and set filter criteria to filter the report data. For information about time periods that you can specify for each aggregation value, see [Aggregation and Time](#Aggregation_Time) below.
+You will also specify the report parameters that restrict or limit the returned data set. For example, you can set the aggregation level to group the data by day or month; specify the time period of the data to include in the report by using specific dates or predefined date ranges, such as today or the last seven days; specify the scope of the data by identifying the accounts, campaigns, and ad groups to include in the report; and set filter criteria to filter the report data. For information about time periods that you can specify for each aggregation value, see [Aggregation and Time](#aggregation_time) below.
 
 For a list of reports that you can request, see [Report Types](../concepts/report-types.md). For a complete list of report parameters that you can set, see each report request object and the [ReportRequest](http://msdn.microsoft.com/library/bing-ads-reporting-reportrequest.aspx) base object.
 
 For information about how to request and download a report, see [Request and Download a Report](../concepts/request-and-download-a-report.md)When the report completes successfully, you can download the report from the URL that the service returns. The report file is compressed, so you must unzip the file to read the report. There is no limit to the number of reports that the system can store; however, the length of time that the reports are stored is undefined. The service does not check for duplicate report requests.
 
-For information about how the campaign’s time zone affects the time period that you specify, see [Time Zones in Reporting](#reptimezones) below.
+For information about how the campaign?s time zone affects the time period that you specify, see [Time Zones in Reporting](#reptimezones) below.
 
 For information about when the books are closed for reporting, see [Determining When the Books Close](#booksclose) below.
 
@@ -48,7 +48,7 @@ For information about when the books are closed for reporting, see [Determining 
 "YourAccountId","YourCampaignId","shoe sale","345","Computer","80"
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 
-"©2017 Microsoft Corporation. All rights reserved. "
+"?2017 Microsoft Corporation. All rights reserved. "
 ```
 
 ## <a name="columnsdata"></a>Columns that Group the Data
@@ -70,7 +70,7 @@ The attribute columns that you include in a report affects the values within the
 "YourAccountId","YourCampaignId","shoes delivered","234","1"
 "YourAccountId","YourCampaignId","shoe sale","345","98"
 
-"©2017 Microsoft Corporation. All rights reserved. "
+"?2017 Microsoft Corporation. All rights reserved. "
 ```
 
 
@@ -96,7 +96,7 @@ If you then include the *DeviceType* column, the report will contain a row for e
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 "YourAccountId","YourCampaignId","shoe sale","345","Tablet","13"
 
-"©2017 Microsoft Corporation. All rights reserved. "
+"?2017 Microsoft Corporation. All rights reserved. "
 ```
 
 For more information about each type of available columns, see [Report Attributes and Performance Statistics](../concepts/report-attributes-and-performance-statistics.md).
@@ -174,7 +174,7 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 > [!NOTE]
 > Data is generally considered complete with books closed after 3 hours. In some exception cases due to invalid traffic, there could be unexpected adjustments that might take a week or more to resolve.
 > 
-> For example, if an advertiser complaint identifies invalid click activity that escaped the automated filtration system, the Traffic Quality and support teams will process a credit to the advertiser’s account, and will partner with internal teams to determine whether they can update automated systems in order to improve detection in the future. For more information, please see [Traffic Quality Center](https://advertise.bingads.microsoft.com/en-us/resources/policies/traffic-quality).
+> For example, if an advertiser complaint identifies invalid click activity that escaped the automated filtration system, the Traffic Quality and support teams will process a credit to the advertiser?s account, and will partner with internal teams to determine whether they can update automated systems in order to improve detection in the future. For more information, please see [Traffic Quality Center](https://advertise.bingads.microsoft.com/en-us/resources/policies/traffic-quality).
 
 If you request a report that includes campaigns that span multiple time zones, the data is considered complete only after all of the click data is processed for the campaign that has the time zone that is closest to PDT as you are facing towards the west. For example, say you request a report that includes Campaign A (which specifies the PST time zone), and Campaign B (which specifies the EST time zone), the data is not complete until all of the click data for Campaign A has processed for the specified time period.
 

@@ -41,7 +41,7 @@ Defines an object that contains a suggested keyword and bid value.
 ```
 
 ## <a name="Elements"></a>Elements
-The *KeywordOpportunity* object  inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *KeywordOpportunity* object  inherits elements from the [Opportunity](../adinsight-api/opportunity-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
@@ -56,7 +56,7 @@ The *KeywordOpportunity* object  inherits elements from the [Opportunity](../adi
 |*EstimatedIncreaseInClicks*|Estimated increase in clicks if the opportunity is applied.|*long*|
 |*EstimatedIncreaseInCost*|Estimated increase in cost if the opportunity is applied.|*long*|
 |*EstimatedIncreaseInImpressions*|Estimated increase in impressions if the opportunity is applied.|*long*|
-|*MatchType*|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 – Exact match<br /><br />2 – Phrase match<br /><br />3 – Broad match|*int*|
+|*MatchType*|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 ? Exact match<br /><br />2 ? Phrase match<br /><br />3 ? Broad match|*int*|
 |*MonthlySearches*|The estimated monthly volume of user search queries that may match the suggested keyword for the corresponding *MatchType* element.|*long*|
 |*SuggestedBid*|The suggested bid that may result in your ads serving on the first page of the search query results.|*double*|
 |*SuggestedKeyword*|The suggested keyword.|*string*|

@@ -33,7 +33,7 @@ Defines a URL conversion goal. Use this type of goal to count every time someone
 ```
 
 ## <a name="Elements"></a>Elements
-The *UrlGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *UrlGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

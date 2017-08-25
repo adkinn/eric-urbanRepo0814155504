@@ -40,7 +40,7 @@ Defines the possible system-determined status values of a UET tag. These are the
 |---------|---------------|
 |Active| Your UET tag is working and sending user activity data to Bing Ads.|
 |Inactive|Bing Ads has not received any user activity data from the UET tag in the last 24 hours. Make sure that the UET tag tracking code is still on your website.|
-|Unverified|Bing Ads hasn’t received any user activity data from the UET tag on your website. It can take up to 24 hours for Bing Ads to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.|
+|Unverified|Bing Ads hasn?t received any user activity data from the UET tag on your website. It can take up to 24 hours for Bing Ads to verify. If you still see this status, you either have not added the UET tag tracking code to your website or there is an issue with the setup that you need to fix.|
 
 ## Requirements
 [!INCLUDE[reqcamp](../campaign-api/includes/reqcamp.md)]

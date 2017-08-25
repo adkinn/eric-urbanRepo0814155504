@@ -39,7 +39,7 @@ The Bing Ads .NET, Java, and Python SDKs are updated with support for the follow
 * The [Reporting](~/concepts/release-notes.md#reporting_bsc_july2017) service proxies are updated to support new columns for Bing Shopping campaigns.
 * New version 11 bulk labels objects are added i.e., *BulkLabel*, *BulkCampaignLabel*, *BulkAdGroupLabel*, *BulkKeywordLabel*, *BulkAppInstallAdLabel*, *BulkDynamicSearchAdLabel*, *BulkExpandedTextAdLabel*, *BulkProductAdLabel*, and *BulkTextAdLabel* objects are added to the SDK for reading and writing the corresponding [Bulk file records](~/concepts/release-notes.md#bulk_v11_labels_july2017).
 * A new version 11 bulk offline conversion object is added i.e., the *BulkOfflineConversion* object is added to the SDK for writing and uploading the corresponding [Bulk file record](~/concepts/release-notes.md#bulk_v11_offline_conversions_july2017).  
-* For the Bing Ads .NET SDK - Fixed the mapping for expired ad groups in the *BulkAdGroup* object. Previously if the ad group status in the bulk file was *Expired*, the SDK mapped and returned the value as *Deleted*.  Prior to Bing Ads API version 10, expired ad groups were returned with a deleted status by design for backwards compatibility. 
+* For the Bing Ads .NET SDK - Fixed the mapping for expired ad groups in the *BulkAdGroup* object. Previously if the ad group status in the bulk file was *Expired*, the SDK mapped and returned the value as *Deleted*. ?Prior to Bing Ads API version 10, expired ad groups were returned with a deleted status by design for backwards compatibility. 
 
 
 ### <a name="negativesites_august2017"></a>Increase in subdomain limit for website exclusions
@@ -377,7 +377,7 @@ For information about the changes to the Bing Ads services included in this rele
 -   [Expanded Device Targeting](#devicetarget_october2016)
 
 ### <a name="devicetarget_october2016"></a>Expanded Device Targeting 
-We are now giving you more control in setting bid adjustments by device, so you can more effectively manage your campaigns across each device type. Most significantly, you will be able to target tablets separately from PC with different bid adjustments. We are expanding the range to +900% for each device type – PC, Tablet, and Mobile, as well as adding the ability to completely opt out (set to -100%) from displaying ads on Tablet and Mobile. 
+We are now giving you more control in setting bid adjustments by device, so you can more effectively manage your campaigns across each device type. Most significantly, you will be able to target tablets separately from PC with different bid adjustments. We are expanding the range to +900% for each device type ? PC, Tablet, and Mobile, as well as adding the ability to completely opt out (set to -100%) from displaying ads on Tablet and Mobile. 
 
 #### <a name="bulk_v10_devicetarget_october2016"></a>Bulk API for Expanded Device Targeting
 You can use the *Bid Adjustment* field within the following Bulk record types to manage device targeting with the Bulk API.

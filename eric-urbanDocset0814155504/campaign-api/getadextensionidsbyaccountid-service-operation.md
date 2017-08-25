@@ -13,20 +13,20 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # GetAdExtensionIdsByAccountId Service Operation
-Gets the ad extensions from the account’s ad extension library.
+Gets the ad extensions from the account?s ad extension library.
 
 [!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdExtensionIdsByAccountIdRequest Message
 
 ### Request Body
-The *GetAdExtensionIdsByAccountIdRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAdExtensionIdsByAccountIdRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*AccountId*|The identifier of the account that contains the ad extensions to get.|*long*|
 |*AdExtensionType*|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](../campaign-api/adextensionstypefilter-value-set.md).|[AdExtensionsTypeFilter](../campaign-api/adextensionstypefilter-value-set.md)|
-|*AssociationType*|A value that filters the extensions based on whether they’re associated with a specific entity type. For possible values, see [AssociationType](../campaign-api/associationtype-value-set.md).<br /><br />**Note:** To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](../campaign-api/associationtype-value-set.md)|
+|*AssociationType*|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](../campaign-api/associationtype-value-set.md).<br /><br />**Note:** To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](../campaign-api/associationtype-value-set.md)|
 
 ### Request Headers
 [!INCLUDE[header_intro](../campaign-api/includes/header-intro.md)]

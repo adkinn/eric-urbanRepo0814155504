@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Negative Keywords
-A *negative keyword* is a specific word or phrase that helps to prevent your ad from being displayed to customers who are unlikely to click your ad. You can use negative keywords to prevent your ad from being displayed if the user’s search query contains one of your negative keywords. The following types of comparisons are used to determine whether a negative keyword applies to the search query.
+A *negative keyword* is a specific word or phrase that helps to prevent your ad from being displayed to customers who are unlikely to click your ad. You can use negative keywords to prevent your ad from being displayed if the user?s search query contains one of your negative keywords. The following types of comparisons are used to determine whether a negative keyword applies to the search query.
 
 |Match Type|Description|
 |--------------|---------------|

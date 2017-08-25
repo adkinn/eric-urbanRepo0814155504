@@ -41,7 +41,7 @@ For more information about managing negative keywords and negative keyword lists
 ```
 
 ## <a name="Elements"></a>Elements
-The *NegativeKeyword* object derives from the [SharedListItem](../campaign-api/sharedlistitem-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *NegativeKeyword* object derives from the [SharedListItem](../campaign-api/sharedlistitem-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

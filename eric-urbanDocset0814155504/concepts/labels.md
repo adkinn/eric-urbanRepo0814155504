@@ -20,12 +20,12 @@ Labels let you organize campaigns, ad groups, ads, and keywords into groups base
 > Reporting for labels is not yet available via Bing Ads API. You can use Reporting in the Bing Ads web applicationn. 
 
 With labels, you could:
-* Run a report to compare “Holiday 2015” and “Holiday 2016” performance, across campaigns, ad groups, ads, and keywords.
+* Run a report to compare ?Holiday 2015? and ?Holiday 2016? performance, across campaigns, ad groups, ads, and keywords.
 * Run a report to compare ads and keywords that include brand names against ads and keywords that use generic terms.
-* Quickly filter and view performance for keywords labeled “Suggested by Bing Ads.”
-* Create an automated rule to change bids on keywords labeled “CPA bidding.”
+* Quickly filter and view performance for keywords labeled ?Suggested by Bing Ads.?
+* Create an automated rule to change bids on keywords labeled ?CPA bidding.?
 
-The important thing is that it’s all up to you. You decide what your labels mean and how to apply them to your campaigns, ad groups, ads, and keywords.
+The important thing is that it?s all up to you. You decide what your labels mean and how to apply them to your campaigns, ad groups, ads, and keywords.
 
 ![Labels in the Bing Ads Web Application](../concepts/media/labels-in-the-bing-ads-web-application.png)
 

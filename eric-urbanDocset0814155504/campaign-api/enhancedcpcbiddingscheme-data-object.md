@@ -32,7 +32,7 @@ Use the enhanced CPC bid strategy type to set your ad group and keyword bids, an
 ```
 
 ## <a name="Elements"></a>Elements
-The *EnhancedCpcBiddingScheme* object inherits elements from the [BiddingScheme](../campaign-api/biddingscheme-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *EnhancedCpcBiddingScheme* object inherits elements from the [BiddingScheme](../campaign-api/biddingscheme-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *EnhancedCpcBiddingScheme* object inherits the following element from the [BiddingScheme](../campaign-api/biddingscheme-data-object.md) object. 

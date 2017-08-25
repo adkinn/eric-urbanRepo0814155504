@@ -19,7 +19,7 @@ Updates the labels within the account.
 ## <a name="request"></a>UpdateLabelsRequest Message
 
 ### Request Body
-The *UpdateLabelsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateLabelsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

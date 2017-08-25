@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # ProductAd Data Object
-Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer’s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] store.
+Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer?s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] store.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ Defines a product ad. A product ad is not used directly for delivered ad copy.  
 ```
 
 ## <a name="Elements"></a>Elements
-The *ProductAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md). object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ProductAd* object inherits elements from the [Ad](../campaign-api/ad-data-object.md). object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

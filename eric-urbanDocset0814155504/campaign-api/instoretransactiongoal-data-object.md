@@ -32,7 +32,7 @@ In-store transactions empower retail advertisers with a holistic view of return 
 ```
 
 ## <a name="Elements"></a>Elements
-The *InStoreTransactionGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *InStoreTransactionGoal* object inherits elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *InStoreTransactionGoal* object inherits the following elements from the [ConversionGoal](../campaign-api/conversiongoal-data-object.md) object. 

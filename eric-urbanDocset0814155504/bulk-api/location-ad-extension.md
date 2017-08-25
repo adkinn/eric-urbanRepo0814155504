@@ -270,9 +270,9 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 **Delete:** Read-only  
 
 ### <a name="geocodestatus"></a>Geo Code Status
-A status value that indicates whether the business’ latitude and longitude coordinates have been determined.
+A status value that indicates whether the business? latitude and longitude coordinates have been determined.
 
-If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](~/campaign-api/businessgeocodestatus-value-set.md).
+If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business? address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](~/campaign-api/businessgeocodestatus-value-set.md).
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -288,9 +288,9 @@ The system generated identifier of the ad extension.
 ### <a name="latitude"></a>Latitude
 The latitude specified in micro degrees. The latitude must be greater than or equal to -85000000 and less than or equal to +85000000.
 
-The latitude and longitude coordinates are used to mark the business’ location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+The latitude and longitude coordinates are used to mark the business? location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
 
-If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses’ address to determine the coordinates.
+If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses? address to determine the coordinates.
 
 > [!NOTE]
 > When adding more than 10 location ad extensions, the service resolves coordinates offline, and otherwise resolves coordinates up front during execution of the service operation. The location will not be used in an ad until the coordinates are determined, which can take from seconds to minutes depending on the number of location ad extensions being added and the current demand.
@@ -302,9 +302,9 @@ If you specify the known coordinates, the service does not confirm whether the s
 ### <a name="longitude"></a>Longitude
 The longitude specified in micro degrees. The longitude must be greater than or equal to -180000000 and less than or equal to +180000000.
 
-The latitude and longitude coordinates are used to mark the business’ location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+The latitude and longitude coordinates are used to mark the business? location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
 
-If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses’ address to determine the coordinates.
+If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses? address to determine the coordinates.
 
 > [!NOTE]
 > When adding more than 10 location ad extensions, the service resolves coordinates offline, and otherwise resolves coordinates up front during execution of the service operation. The location will not be used in an ad until the coordinates are determined, which can take from seconds to minutes depending on the number of location ad extensions being added and the current demand.
@@ -314,7 +314,7 @@ If you specify the known coordinates, the service does not confirm whether the s
 **Delete:** Read-only  
 
 ### <a name="mapicon"></a>Map Icon
-The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](~/campaign-api/addmedia-service-operation.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](~/campaign-api/locationadextension-data-object.md#remarks).
+The identifier of an icon used to mark the business? location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](~/campaign-api/addmedia-service-operation.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](~/campaign-api/locationadextension-data-object.md#remarks).
 
 **Add:** Optional. If you do not specify a map icon when you add the location ad extension, the icon will default to the predefined Generic predefined icon identifier (Production=18000000000115318; Sandbox=97000000000006420).    
 **Update:** [!INCLUDE[update_optional_setting_unchanged](../bulk-api/includes/update-optional-setting-unchanged.md)]    
@@ -337,7 +337,7 @@ This bulk field maps to the *Id* field of the [Account](../bulk-api/account.md) 
 **Delete:** Read-only  
   
 ### <a name="phonenumber"></a>Phone Number
-The business’ clickable phone number to include in the ad. 
+The business? clickable phone number to include in the ad. 
 
 The phone number can contain a maximum of 35 characters and must be valid for the specified country.
 
@@ -421,7 +421,7 @@ Set this property to *TRUE* if you want the ad extensions to be shown in the sea
 **Delete:** Read-only  
 
 ### <a name="version"></a>Version
-The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.
+The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.
 
 **Add:** Read-only  
 **Update:** Read-only    

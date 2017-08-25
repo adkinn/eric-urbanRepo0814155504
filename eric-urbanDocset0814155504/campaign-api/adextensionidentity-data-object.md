@@ -31,7 +31,7 @@ Defines an object that identifies an ad extension revision.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*Id*|The system-generated identifier of the ad extension.|*long*|
-|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.|*int*|
+|*Version*|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.|*int*|
 
 ## Requirements
 [!INCLUDE[reqcamp](../campaign-api/includes/reqcamp.md)]

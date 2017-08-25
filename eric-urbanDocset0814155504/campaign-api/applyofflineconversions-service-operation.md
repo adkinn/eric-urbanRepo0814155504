@@ -14,13 +14,13 @@ ms.author: "eur"
 # ApplyOfflineConversions Service Operation
 Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 
-Let’s say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.
+Let?s say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.
 
-After creating an [OfflineConversionGoal](../campaign-api/offlineconversiongoal-data-object.md), you’ll need to wait two hours before sending Bing Ads any offline conversions. If you do not wait two hours, then your offline conversion data might not be applied. After you send Bing Ads the offline conversions, it can take up to five hours to view conversion data.
+After creating an [OfflineConversionGoal](../campaign-api/offlineconversiongoal-data-object.md), you?ll need to wait two hours before sending Bing Ads any offline conversions. If you do not wait two hours, then your offline conversion data might not be applied. After you send Bing Ads the offline conversions, it can take up to five hours to view conversion data.
 
 Each offline conversion needs to be associated to a single click ID. A single click ID can, however, be associated with multiple conversion goals and also be associated with the same goal multiple times, as long as the conversion time is different. Also, the same conversion can't be imported more than once. If more than one is attempted, the first instance will be used and the others will be ignored.
 
-The value of the conversion can be included in the import file along with a custom currency. If no currency is stated, the conversion goal’s default will be used.
+The value of the conversion can be included in the import file along with a custom currency. If no currency is stated, the conversion goal?s default will be used.
 
 For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
@@ -29,7 +29,7 @@ For more information, see [Tracking offline conversions](https://help.bingads.mi
 ## <a name="request"></a>ApplyOfflineConversionsRequest Message
 
 ### Request Body
-The *ApplyOfflineConversionsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *ApplyOfflineConversionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

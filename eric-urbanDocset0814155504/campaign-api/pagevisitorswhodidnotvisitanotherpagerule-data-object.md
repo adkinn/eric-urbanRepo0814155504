@@ -23,7 +23,7 @@ Likewise for each rule item group within *ExcludeRuleItemGroups*, the rule item 
 
 In other words the visitor will be added to your remarketing list if any of the include rule item group conditions are met, and none of the exclude rule item group conditions are met. 
 
-For a detailed example, see the [Remarks](#Remarks) section below.
+For a detailed example, see the [Remarks](#remarks) section below.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ For a detailed example, see the [Remarks](#Remarks) section below.
 ```
 
 ## <a name="Elements"></a>Elements
-The *PageVisitorsWhoDidNotVisitAnotherPageRule* object inherits elements from the [RemarketingRule](../campaign-api/remarketingrule-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *PageVisitorsWhoDidNotVisitAnotherPageRule* object inherits elements from the [RemarketingRule](../campaign-api/remarketingrule-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

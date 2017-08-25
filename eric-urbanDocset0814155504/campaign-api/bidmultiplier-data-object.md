@@ -29,7 +29,7 @@ Defines the multiplier by which to adjust your base bid for the corresponding cr
 ```
 
 ## <a name="Elements"></a>Elements
-The *BidMultiplier* object derives from the [CriterionBid](../campaign-api/criterionbid-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *BidMultiplier* object derives from the [CriterionBid](../campaign-api/criterionbid-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

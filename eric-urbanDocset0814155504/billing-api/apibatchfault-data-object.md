@@ -30,7 +30,7 @@ Defines a fault object that operations return when web service-specific errors o
 ```
 
 ## <a name="Elements"></a>Elements
-The *ApiBatchFault* object derives from the [ApiFault](../billing-api/apifault-data-object.md) object, that derives from the [ApplicationFault](../billing-api/applicationfault-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *ApiBatchFault* object derives from the [ApiFault](../billing-api/apifault-data-object.md) object, that derives from the [ApplicationFault](../billing-api/applicationfault-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

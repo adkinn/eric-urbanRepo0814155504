@@ -12,7 +12,7 @@ author: "eric-urban"
 ms.author: "eur"
 ---
 # Budget and Bid Strategies
-Before your ads can run, you need to set your campaign’s budget. You'll also need to choose a bid strategy type, and optionally set keyword level match type bids. Depending on the type of campaign you are running, see the following sections for more details.
+Before your ads can run, you need to set your campaign?s budget. You'll also need to choose a bid strategy type, and optionally set keyword level match type bids. Depending on the type of campaign you are running, see the following sections for more details.
 
 |Exact Match Bid Value|Campaign Types|
 |-------------------------|--------------------------|
@@ -36,14 +36,14 @@ Show your ads for every relevant search, spending at an accelerated rate until y
 Consider using this option if you want your ads to show more frequently earlier in the day until your budget is reached, to maximize the number of impressions.
 
 ### <a name="dailystandard"></a>DailyBudgetStandard
-Show your ads evenly every day throughout the month so you don’t run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won’t exceed the estimated monthly budget.
+Show your ads evenly every day throughout the month so you don?t run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won?t exceed the estimated monthly budget.
 
-This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won’t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
+This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won?t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](http://help.bingads.microsoft.com/#apex/3/en/51006/1) 
 
-If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign’s time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](../concepts/currencies.md).
+If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign?s time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](../concepts/currencies.md).
 
 If you update a campaign that specifies a daily budget on the first day of the month, the service also calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. However, if you update the daily budget after the first day of the month, the service uses the following formula to calculate the monthly budget.
 
@@ -53,7 +53,7 @@ For example, if you change the daily budget to $10 on July 15th, and you have sp
 
 The service will use the new monthly budget for the remainder of the current month, but for subsequent months, it will calculate the monthly budget by multiplying the daily budget amount by the number of days in the month.
 
-The service will update the monthly budget of an existing campaign by using the new formula only if you update the campaign’s budget; otherwise, the monthly budget remains unchanged and is enforced.
+The service will update the monthly budget of an existing campaign by using the new formula only if you update the campaign?s budget; otherwise, the monthly budget remains unchanged and is enforced.
 
 ## <a name="bidstrategytypes"></a>Bid Strategy Types
 Your bid strategy setting tells Bing Ads how you want to manage your bids. Whichever bid strategy you use, Bing Ads will always respect your budget limit. 
@@ -72,7 +72,7 @@ The following bid strategy types are available per campaign type. For more infor
 |[TargetCpa](#targetcpa)|SearchAndContent<br/>DynamicSearchAds|
 
 > [!IMPORTANT] 
-> If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group’s or keyword’s bid strategy to *ManualCpc*. 
+> If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group?s or keyword?s bid strategy to *ManualCpc*. 
 > -  You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
 > -  Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
 > -  You can continue to set bid adjustments e.g. for age, gender, or location; however with one exception they will not be used by Bing Ads. Bing Ads will not honor any bid adjustments, unless you have set a bid adjustment of -100% (opt out).
@@ -83,7 +83,7 @@ The following bid strategy types are available per campaign type. For more infor
 > To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!TIP] 
-> You can set your campaign’s bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group’s or keyword’s bid strategy to *ManualCpc*.
+> You can set your campaign?s bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group?s or keyword?s bid strategy to *ManualCpc*.
 
 
 ### <a name="manualcpc"></a>ManualCpc
@@ -110,7 +110,7 @@ With the *EnhancedCpc* (enhanced cost per click) bid strategy, you set your ad g
 
 Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies, with the *EnhancedCpc* bid strategy, Bing Ads will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity; however, assuming the *EnhancedCpc* bid strategy remains in place, we will continue to modify the new bid from negative 100% through positive 30%.
 
-The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note that we will only “enhance” your bids when your ads serve in the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries, your manual bids are unaffected.
+The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note that we will only ?enhance? your bids when your ads serve in the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries, your manual bids are unaffected.
 
 ### <a name="targetcpa"></a>TargetCpa
 With the *TargetCpa* bid strategy, Bing Ads automatically sets your bids such that the target average CPA (cost per acquisition) is attained. 
@@ -121,12 +121,12 @@ With the *TargetCpa* bid strategy, Bing Ads automatically sets your bids such th
 > The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
-Match type bids help [!INCLUDE[brand](../concepts/includes/brand.md)] determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user’s search term in the order of *Exact*, *Phrase*, and then *Broad*.
+Match type bids help [!INCLUDE[brand](../concepts/includes/brand.md)] determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user?s search term in the order of *Exact*, *Phrase*, and then *Broad*.
 
 ### <a name="exactmatchtype"></a>Exact
 An exact match results when all of the words in the keyword exactly match the user's search term.
 
-If the plural form is not in your keyword list, the plural form of a keyword is also used in an exact match comparison. For example, if you specify an exact-match bid for the keyword, *car*, both *car* and *cars* will match. To prevent plural form of a keyword from matching, add the plural form to the campaign or ad group’s negative keyword list.
+If the plural form is not in your keyword list, the plural form of a keyword is also used in an exact match comparison. For example, if you specify an exact-match bid for the keyword, *car*, both *car* and *cars* will match. To prevent plural form of a keyword from matching, add the plural form to the campaign or ad group?s negative keyword list.
 
 If your keyword list does not contain the plural form of the keyword, all search results for the plural form will be included in the singular form of the keyword in the keyword performance report.
 
@@ -142,7 +142,7 @@ Because the search engine can vary its algorithms to expand queries to find broa
 
 To reduce the chance of irrelevant ads being served to users and the quality score of those ads being affected due to low CTR, you can add any irrelevant queries to your list of negative keywords. To determine the irrelevant queries, see the [Report Types](../concepts/report-types.md).
 
-You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on “Hawaii hotels”, your ad could be served for the search queries, “Hawaii beach hotels” and “Hawaii rentals.” However, if you changed the keyword to “+Hawaii +hotel”, the keyword would match only “Hawaii beach hotels.”
+You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on ?Hawaii hotels?, your ad could be served for the search queries, ?Hawaii beach hotels? and ?Hawaii rentals.? However, if you changed the keyword to ?+Hawaii +hotel?, the keyword would match only ?Hawaii beach hotels.?
 
 If you include the broad match modifier on a keyword that specifies a phrase or exact match-type bid, the plus sign will be treated as part of the keyword and not as a modifier.
 
@@ -156,7 +156,7 @@ Exact match is the most restrictive and broad match is the least restrictive mat
 
 If there is not an exact match, the phrase-match type comparison is used. If there is a match, the phrase-match bid value is used if it exists; otherwise, the broad-match bid value is used (set at the keyword broad match bid or ad group level search bid). If there is not a phrase match, the broad-match type comparison is used. If there is a match, the broad-match bid value is used (set at the keyword broad match bid or ad group level search bid).
 
-The following table shows example keyword bid values for each match type, as well as the bid value that would be used based on the delivered match type if the keyword participated in the auction. The delivered match type (exact, phrase, or broad) identifies the comparison used to match the keyword to the user’s query. For example, if the keyword is “red shoes” and the user’s query is “pretty red shoes,” the delivered match type would be phrase. The delivered match type may differ from the match type you bid, for example if you bid on a broad match and the search term was an exact match.
+The following table shows example keyword bid values for each match type, as well as the bid value that would be used based on the delivered match type if the keyword participated in the auction. The delivered match type (exact, phrase, or broad) identifies the comparison used to match the keyword to the user?s query. For example, if the keyword is ?red shoes? and the user?s query is ?pretty red shoes,? the delivered match type would be phrase. The delivered match type may differ from the match type you bid, for example if you bid on a broad match and the search term was an exact match.
 
 |Exact Match Bid Value|Phrase Match Bid Value|Broad Match Bid Value|Delivered Match Type|Bid Value Used|
 |-------------------------|--------------------------|-------------------------|------------------------|------------------|
@@ -169,9 +169,9 @@ The following table shows example keyword bid values for each match type, as wel
 |0.20|No bid|No bid|Exact|0.20|
 |0.20|No bid|No bid|Phrase|None. Would not participate in auction.|
 
-For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](~/adinsight-api/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../concepts/budget-and-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you’ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword’s match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
+For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](~/adinsight-api/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../concepts/budget-and-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword?s match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
 
-You can also use negative keywords to prevent you ads from being served if the user’s search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](../concepts/negative-keywords.md).
+You can also use negative keywords to prevent you ads from being served if the user?s search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](../concepts/negative-keywords.md).
 
 ### <a name="normalization"></a>Keyword Normalization
 A keyword is considered a duplicate if it is the same as another keyword, but its punctuation varies. This is called keyword normalization, a process where extraneous characters like punctuation marks and accents are removed from keywords and customer queries. Keywords are normalized when you add them to an ad group to avoid duplicates of keywords that normalize into the same form. Bing Ads flags duplicate keywords so you can remove them. Removing the duplicate keywords will save you time while still giving you thorough keyword coverage. If one of your keywords is marked as a duplicate, there is no reason to manage both of them. You can remove either the duplicate or the original keyword without impacting your campaign.

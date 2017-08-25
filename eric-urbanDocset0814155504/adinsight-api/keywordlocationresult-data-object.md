@@ -31,7 +31,7 @@ Defines an object that contains the locations where users were located when they
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*Keyword*|The keyword.|*string*|
-|*KeywordLocations*|An array of [KeywordLocation](../adinsight-api/keywordlocation-data-object.md) objects that contains the users’ geographical locations and the percentage of times that users searched for the keyword from that location.|[KeywordLocation](../adinsight-api/keywordlocation-data-object.md) array|
+|*KeywordLocations*|An array of [KeywordLocation](../adinsight-api/keywordlocation-data-object.md) objects that contains the users? geographical locations and the percentage of times that users searched for the keyword from that location.|[KeywordLocation](../adinsight-api/keywordlocation-data-object.md) array|
 
 ## Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]

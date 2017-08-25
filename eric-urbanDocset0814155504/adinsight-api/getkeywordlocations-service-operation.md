@@ -20,14 +20,14 @@ Gets the geographical locations of users who have searched for the specified key
 ## <a name="request"></a>GetKeywordLocationsRequest Message
 
 ### Request Body
-The *GetKeywordLocationsRequest* object defines the elements of the request’s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetKeywordLocationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|
 |*Device*|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword locations data for only the device types that you specify, if available.|*string* array|No|
 |*Keywords*|An array of keywords for which you want to get geographical location information. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|*string* array|Yes|
 |*Language*|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](http://go.microsoft.com/fwlink/?LinkId=691113).|*string*|Yes|
-|*Level*|The level at which to aggregate the geographical location data. The following are the possible values:<br /><br />0 - Country<br /><br />1 – State/Province<br /><br />2 – Metropolitan area<br /><br />3 - City<br /><br />The default value is 1 (State/Province).|*int*|No|
+|*Level*|The level at which to aggregate the geographical location data. The following are the possible values:<br /><br />0 - Country<br /><br />1 ? State/Province<br /><br />2 ? Metropolitan area<br /><br />3 - City<br /><br />The default value is 1 (State/Province).|*int*|No|
 |*MaxLocations*|The maximum number of locations to return. You can request a maximum of 10 locations.<br /><br />The default value is 10.|*int*|No|
 |*ParentCountry*|The country from which the search originated.<br /><br />For possible values, see [Geographical Location Codes](http://go.microsoft.com/fwlink/?LinkId=691115).<br /><br />The default is US.|*string*|No|
 |*PublisherCountry*|The country code of the country/region to use as the source of the location data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](http://go.microsoft.com/fwlink/?LinkId=691115).<br /><br />If null, the specified language determines the default publisher country. For a list of default publisher countries by language, see [Ad Languages](http://go.microsoft.com/fwlink/?LinkId=691113).|*string*|No|

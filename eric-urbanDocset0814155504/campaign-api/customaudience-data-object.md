@@ -34,7 +34,7 @@ Defines a custom audience.
 ```
 
 ## <a name="Elements"></a>Elements
-The *CustomAudience* object inherits elements from the [Audience](../campaign-api/audience-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#InheritedElements) below.
+The *CustomAudience* object inherits elements from the [Audience](../campaign-api/audience-data-object.md) object. For a list of the inherited elements, see [Inherited Elements](#inheritedelements) below.
 
 ## <a name="InheritedElements"></a>Inherited Elements
 The *CustomAudience* object inherits the following elements from the [Audience](../campaign-api/audience-data-object.md) object. 
