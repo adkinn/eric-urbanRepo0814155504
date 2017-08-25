@@ -41,11 +41,11 @@
     "groups": {
       "group1": {
         "dest": "group1-dest",
-        "moniker_range": "> netcore-1.0"
+        "moniker_range": ">= bingads-11.5.4"
       },
       "group2": {
         "dest": "group2-dest",
-        "moniker_range": "< netframework-5.0"
+        "moniker_range": "<= bingads-11.5.4"
       }
     }
   }
