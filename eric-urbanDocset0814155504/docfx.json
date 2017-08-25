@@ -6,6 +6,8 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "group1",
+        "src": "folder1",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -22,6 +24,8 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "group": "group1",
+        "src": "folder1",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -33,6 +37,16 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "eric-urbanDocset0814155504"
+    "dest": "eric-urbanDocset0814155504",
+    "groups": {
+      "group1": {
+        "dest": "group1-dest",
+        "moniker_range": "> netcore-1.0"
+      },
+      "group2": {
+        "dest": "group2-dest",
+        "moniker_range": "< netframework-5.0"
+      }
+    }
   }
 }
