@@ -1,9 +1,10 @@
 - name: Overview
-  href: bing-ads-api-overview.md
+  href: index.md
 - name: Entity Hierarchy and Limits
   href: entity-hierarchy-and-limits.md
 - name: Getting Started With the Bing Ads API
   href: getting-started-with-the-bing-ads-api.md
+  expanded: true
   items:
   - name: Getting Started Using C# with Bing Ads Services
     href: getting-started-using-csharp-with-bing-ads-services.md
@@ -156,6 +157,7 @@
       href: bulk-ads-and-keywords-in-python.md
 - name: Bing Ads Client Libraries
   href: bing-ads-client-libraries.md
+  displayName: SDK
 - name: Bing Ads Technical Guides
   href: bing-ads-technical-guides.md
   items:

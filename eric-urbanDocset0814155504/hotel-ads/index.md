@@ -1,4 +1,4 @@
-# Bing Ads Hotel API
+# Hotel Ads
 > [!NOTE]
 > Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
 >

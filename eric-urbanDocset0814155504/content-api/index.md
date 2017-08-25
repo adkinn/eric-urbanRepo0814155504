@@ -1,4 +1,4 @@
-# Bing Ads Content API
+# Content API
 Bing Ads Content API is a RESTful API that allows advertisers to programmatically 
 manage their [Bing Merchant Center](http://help.bingads.microsoft.com/#apex/3/en/51083/1) catalogs. The Content API is an alternative to managing your catalog using the Bing Merchant Center web page or by using FTP. The Content API has the following advantages:
 

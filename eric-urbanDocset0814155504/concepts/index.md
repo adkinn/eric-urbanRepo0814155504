@@ -1,4 +1,4 @@
-# Bing Ads API Overview
+# Bing Ads API
 [!INCLUDE[brand](./includes/brand.md)] is a pay-per-click (PPC) advertising platform used to display ads based on the keywords used in a user?s search query.  For advertisers placing a large number of ads or developers building advertising tools, the [!INCLUDE[brand](./includes/brand.md)] API provides a programmatic interface to [!INCLUDE[brand](./includes/brand.md)]. Using the [!INCLUDE[brand](./includes/brand.md)] API is the most efficient way to manage many large campaigns or to integrate your marketing with other in-house systems. The [!INCLUDE[brand](./includes/brand.md)] API also supports multiple customer accounts making it easy for ad agencies to manage campaigns for many clients. Some organizations may choose a hybrid approach; using the web UI for most tasks but automating reporting or campaign optimization with the API.
 
 -   [Who should use the Bing Ads API](#who)  
