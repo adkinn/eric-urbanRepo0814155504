@@ -35,6 +35,8 @@ With the Bing Ads web application's Keyword Planner tool you can refine the sear
 
 Each of the [CompetitionSearchParameter](~/adinsight-api/competitionsearchparameter-data-object.md), [DateRangeSearchParameter](~/adinsight-api/daterangesearchparameter-data-object.md), [ExcludeAccountKeywordsSearchParameter](~/adinsight-api/excludeaccountkeywordssearchparameter-data-object.md), [IdeaTextSearchParameter](~/adinsight-api/ideatextsearchparameter-data-object.md), [ImpressionShareSearchParameter](~/adinsight-api/impressionsharesearchparameter-data-object.md), [SearchVolumeSearchParameter](~/adinsight-api/searchvolumesearchparameter-data-object.md), and [SuggestedBidSearchParameter](~/adinsight-api/suggestedbidsearchparameter-data-object.md) are optional. Use these search options to refine what keywords we suggest. You can limit the keywords by historical data, hide keywords already in your account, and include or exclude specific keywords.
 
+[!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/KeywordPlanner.cs?start=5&end=9 "Table insert")]
+
 The result is a [KeywordIdea](~/adinsight-api/keywordidea-data-object.md) list. Each keyword idea includes historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. Whereas the Bing Ads web application returns a 12 month average of the historical monthly search counts, each [KeywordIdea](~/adinsight-api/keywordidea-data-object.md) includes a list of monthly search counts. You can use each count individually or average them for parity with the Bing Ads web application's calculation.
 
 ## <a name="keywordtrafficestimates"></a>Keyword Traffic Estimates
