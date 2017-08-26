@@ -35,7 +35,7 @@
     },
     "fileMetadata": {
         "langs": {
-        "concepts/**.yml": ["csharp", "java", "php", "python"]
+        "concepts/**.md": ["csharp", "java", "php", "python"]
       }
     },
     "template": [],
