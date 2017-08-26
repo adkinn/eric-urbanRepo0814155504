@@ -36,29 +36,32 @@ Defines an object that contains a suggested keyword with historical statistics, 
 # <a name="Elements"></a>Elements
 
 ## AdGroupId
-<code><xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/></code>
+```xml
+<xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
+```
 The negative ad group identifier that groups keyword ideas into suggested new ad groups. Keyword ideas for existing ad group identifiers is not supported.
 
 If the ad group ID is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
 
-**Data Type** long
-
 ## AdGroupName
+**Type** xs:string
+
 The suggested name of the ad group for the keyword idea.
 
 If the ad group name is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
 
-**Data Type** string
 
 ## AdImpressionShare
+**Type** xs:double
+
 Ad impression share is the number of impressions you've received divided by the total number of searches for the location and network you're targeting that matched the keyword exactly in the last calendar month.
 
-**Data Type** double
 
 ## Competition
+**Type**: [CompetitionLevel](../adinsight-api/competitionlevel-value-set.md)
+
 Determined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.
 
-[CompetitionLevel](../adinsight-api/competitionlevel-value-set.md)
 
 ## Keyword
 The suggested keyword.
