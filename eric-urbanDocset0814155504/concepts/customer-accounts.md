@@ -96,11 +96,63 @@ To get a list of the accounts that you own or manage, call the [GetAccountsInfo]
   <code>[!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]</code>
 </pre>
 <pre>
-  <code>[!code-java[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]</code>
+  <code>[!code-java[tableinsert](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]</code>
 </pre>
 <pre>
-  <code>[!code-python[tableinsert](../../examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]</code>
+  <code>[!code-python[tableinsert](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]</code>
 </pre>
+
+<pre>
+  [!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]
+</pre>
+<pre>
+  [!code-java[tableinsert](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]
+</pre>
+<pre>
+  [!code-python[tableinsert](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]
+</pre>
+
+<pre>
+  <code>
+```csharp
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+<pre>
+  <code>
+```java
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+<pre>
+  <code>
+```python
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+
+
 
 For code examples that show how to search for accounts that can be managed by the current authenticated user, see [C&#35;](../concepts/search-accounts-by-user-in-csharp.md) | [Java](../concepts/search-accounts-by-user-in-java.md) | [PHP](../concepts/search-accounts-by-user-in-php.md) | [Python](../concepts/search-accounts-by-user-in-python.md).
 
