@@ -23,7 +23,7 @@
           "**/*.yml"
         ],
         "group": "group2",
-        "src": "content-api",
+        "src": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -52,8 +52,8 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "group": "group1",
-        "src": "content-api",
+        "group": "group2",
+        "src": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
