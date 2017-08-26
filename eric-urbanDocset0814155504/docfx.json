@@ -7,7 +7,23 @@
           "**/*.yml"
         ],
         "group": "group1",
-        "src": "folder1",
+        "src": "concepts",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "group2",
+        "src": "content-api",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -25,7 +41,19 @@
           "**/*.jpg"
         ],
         "group": "group1",
-        "src": "folder1",
+        "src": "concepts",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "group1",
+        "src": "content-api",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
