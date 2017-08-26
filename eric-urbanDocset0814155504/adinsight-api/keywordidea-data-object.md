@@ -15,7 +15,7 @@ manager: "ehansen"
 # KeywordIdea Data Object
 Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 
-## Syntax
+# Syntax
 
 ```xml
 <xs:complexType name="KeywordIdea">
@@ -33,15 +33,20 @@ Defines an object that contains a suggested keyword with historical statistics, 
 </xs:complexType>
 ```
 
-## <a name="Elements"></a>Elements
+# <a name="Elements"></a>Elements
 
 ## AdGroupId
-The negative ad group identifier that groups keyword ideas into suggested new ad groups. Keyword ideas for existing ad group identifiers is not supported.<br/><br/>If the ad group ID is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
+<code><xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/></code>
+The negative ad group identifier that groups keyword ideas into suggested new ad groups. Keyword ideas for existing ad group identifiers is not supported.
+
+If the ad group ID is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
 
 **Data Type** long
 
 ## AdGroupName
-The suggested name of the ad group for the keyword idea.<br/><br/>If the ad group name is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
+The suggested name of the ad group for the keyword idea.
+
+If the ad group name is null then the keyword idea *Source* element is set to *Seed*, and there is not any specific recommended ad group.
 
 **Data Type** string
 
@@ -51,13 +56,22 @@ Ad impression share is the number of impressions you've received divided by the 
 **Data Type** double
 
 ## Competition
-|Determined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.|[CompetitionLevel](../adinsight-api/competitionlevel-value-set.md)|
-|*Keyword*|The suggested keyword.
+Determined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.
 
-**Data Type** string
+[CompetitionLevel](../adinsight-api/competitionlevel-value-set.md)
+
+## Keyword
+The suggested keyword.
+
+<code>string</code>
 
 ## MonthlySearchCounts
-The number of times this keyword was used as a search term for each month within the date range and targeting settings you?ve selected.<br/><br/>By default the size of the list is 12 and the last 12 months of available data are returned. The search counts are sorted in order starting with the most recent month's data at <code>MonthlySeachCounts[0]</code>.<br/><br/>**Note:** It can take up to 72 hours for the previous calendar month?s data to be available. For example, if you request keyword ideas on August 1st, 2nd or 3rd, and July?s data is not ready, the response will be based on June?s data. If you do not include the [DateRangeSearchParameter](../adinsight-api/daterangesearchparameter-data-object.md) in the [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) request, then you will not be able to confirm whether the first list item is data for the previous month, or the month prior. If the date range is specified and the most recent month's data is not yet available, then [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) will return an error.
+The number of times this keyword was used as a search term for each month within the date range and targeting settings you've selected.
+
+By default the size of the list is 12 and the last 12 months of available data are returned. The search counts are sorted in order starting with the most recent month's data at <code>MonthlySeachCounts[0]</code>.
+
+> [!NOTE] 
+> It can take up to 72 hours for the previous calendar month's data to be available. For example, if you request keyword ideas on August 1st, 2nd or 3rd, and July's data is not ready, the response will be based on June's data. If you do not include the [DateRangeSearchParameter](../adinsight-api/daterangesearchparameter-data-object.md) in the [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) request, then you will not be able to confirm whether the first list item is data for the previous month, or the month prior. If the date range is specified and the most recent month's data is not yet available, then [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) will return an error.
 
 **Data Type** long array
 
@@ -76,7 +90,7 @@ The suggested minimum bid for this keyword. We create this suggestion using the 
 
 **Data Type** double
 
-## Requirements
+# Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]
-## See Also
+# See Also
 [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md)  
