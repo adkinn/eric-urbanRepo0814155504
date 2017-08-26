@@ -101,11 +101,11 @@
       },
       "group-active": {
         "dest": "group-active-dest",
-        "moniker_range": ">= netcore-2.0 || >= netframework-4.5.1"
+        "moniker_range": ">= netcore-2.0"
       },
       "group-adinsight": {
         "dest": "group-adinsight-dest",
-        "moniker_range": ">= netcore-2.0 || >= netframework-4.5.1"
+        "moniker_range": ">= netcore-2.0"
       }
     }
   }
