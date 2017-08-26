@@ -31,7 +31,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {},
-    "fileMetadata": {},
+    "fileMetadata": {
+        "langs": {
+        "concepts/**.md": ["csharp", "java", "php", "python"]
+      }
+    },
     "template": [],
     "dest": "eric-urbanDocset0814155504"
   }
