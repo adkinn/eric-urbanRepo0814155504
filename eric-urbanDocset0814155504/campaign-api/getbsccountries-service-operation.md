@@ -20,7 +20,7 @@ Gets the list of supported sales country codes for Bing Shopping campaigns.
 ## <a name="request"></a>GetBSCCountriesRequest Message
 
 ### Request Body
-The *GetBSCCountries* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBSCCountries* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 The request does not contain additional body elements.
 

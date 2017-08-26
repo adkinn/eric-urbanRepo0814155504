@@ -26,7 +26,7 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 ## <a name="request"></a>AddUetTagsRequest Message
 
 ### Request Body
-The *AddUetTagsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
+The *AddUetTagsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the customer identifier in the *CustomerId* header element.

@@ -31,7 +31,7 @@ Defines the date range values for the requested performance data in a bulk downl
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|`CustomDateRangeEnd`|The end date of the custom date range. The end date cannot be later than today?s date.|[Date](../bulk-api/date-data-object.md)|
+|`CustomDateRangeEnd`|The end date of the custom date range. The end date cannot be later than today's date.|[Date](../bulk-api/date-data-object.md)|
 |`CustomDateRangeStart`|The start date of the custom date range. The start date must be earlier than or the same as the end date.|[Date](../bulk-api/date-data-object.md)|
 |`PredefinedTime`|A predefined date range value.|[ReportTimePeriod](../bulk-api/reporttimeperiod-value-set.md)|
 

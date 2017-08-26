@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in C# #
-The following example shows how to add, get, and delete extensions for an account?s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
+The following example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
 [!INCLUDE[csharp_header](../concepts/includes/csharp-header.md)]
 
@@ -124,7 +124,7 @@ namespace BingAdsExamplesLibrary.V11
 
                         // Used with FinalUrls shown in the sitelinks that we will add below.
                         TrackingUrlTemplate =
-                            "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
+                            "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
                     }
                 };
 
@@ -512,7 +512,7 @@ namespace BingAdsExamplesLibrary.V11
 
                             // If you are currently using Destination URLs, you must replace them with Final URLs. 
                             // Here is an example of a DestinationUrl you might have used previously. 
-                            // DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123",
+                            // DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123",
 
                             // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
                             // to an empty string when updating the sitelink. If you are removing DestinationUrl,
@@ -559,7 +559,7 @@ namespace BingAdsExamplesLibrary.V11
 
                             // If you are currently using Destination URLs, you must replace them with Final URLs. 
                             // Here is an example of a DestinationUrl you might have used previously. 
-                            // DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123",
+                            // DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123",
 
                             // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
                             // to an empty string when updating the sitelink. If you are removing DestinationUrl,
@@ -615,7 +615,7 @@ namespace BingAdsExamplesLibrary.V11
 
                     // If you are currently using Destination URLs, you must replace them with Final URLs. 
                     // Here is an example of a DestinationUrl you might have used previously. 
-                    // DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123",
+                    // DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123",
 
                     // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
                     // to an empty string when updating the ad extension. If you are removing DestinationUrl,
@@ -663,7 +663,7 @@ namespace BingAdsExamplesLibrary.V11
 
                     // If you are currently using Destination URLs, you must replace them with Final URLs. 
                     // Here is an example of a DestinationUrl you might have used previously. 
-                    // DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123",
+                    // DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123",
 
                     // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
                     // to an empty string when updating the ad extension. If you are removing DestinationUrl,

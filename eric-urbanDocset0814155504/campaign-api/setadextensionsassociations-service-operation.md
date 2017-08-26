@@ -23,7 +23,7 @@ Associates the specified ad extensions with the respective campaigns or ad group
 ## <a name="request"></a>SetAdExtensionsAssociationsRequest Message
 
 ### Request Body
-The *SetAdExtensionsAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *SetAdExtensionsAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

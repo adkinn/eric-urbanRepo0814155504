@@ -13,19 +13,19 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # AddMedia Service Operation
-Adds the specified media to an account?s media library. Depending on the type of [Media](../campaign-api/media-data-object.md), you can then add the media to one or more [ImageAdExtension](../campaign-api/imageadextension-data-object.md) or [LocationAdExtension](../campaign-api/locationadextension-data-object.md) objects.
+Adds the specified media to an account's media library. Depending on the type of [Media](../campaign-api/media-data-object.md), you can then add the media to one or more [ImageAdExtension](../campaign-api/imageadextension-data-object.md) or [LocationAdExtension](../campaign-api/locationadextension-data-object.md) objects.
 
 [!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>AddMediaRequest Message
 
 ### Request Body
-The *AddMediaRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddMediaRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*AccountId*|The identifier of the account that owns the media library.|*long*|
-|*Media*|An array of *Media* to add to the account?s media library.<br /><br />You can add a maximum of 10 media in a single call.|[Media](../campaign-api/media-data-object.md) array|
+|*Media*|An array of *Media* to add to the account's media library.<br /><br />You can add a maximum of 10 media in a single call.|[Media](../campaign-api/media-data-object.md) array|
 
 ### Request Headers
 [!INCLUDE[header_intro](../campaign-api/includes/header-intro.md)]

@@ -19,7 +19,7 @@ Deletes label associations.
 ## <a name="request"></a>DeleteLabelAssociationsRequest Message
 
 ### Request Body
-The *DeleteLabelAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteLabelAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

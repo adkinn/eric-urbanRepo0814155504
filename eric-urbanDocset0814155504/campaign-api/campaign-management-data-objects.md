@@ -77,7 +77,7 @@ The Campaign Management service defines the following data objects.
 |[GenderCriterion](../campaign-api/gendercriterion-data-object.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
 |[GeoPoint](../campaign-api/geopoint-data-object.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|
 |[IdCollection](../campaign-api/idcollection-data-object.md)|Defines an object that contains a list of entity identifiers.|
-|[Image](../campaign-api/image-data-object.md)|Defines an image object that can be added to an account?s media library.|
+|[Image](../campaign-api/image-data-object.md)|Defines an image object that can be added to an account's media library.|
 |[ImageAdExtension](../campaign-api/imageadextension-data-object.md)|Defines an ad extension that specifies an image with alternative text to include in a text ad.|
 |[ImageMediaRepresentation](../campaign-api/imagemediarepresentation-data-object.md)|Defines an image media representation with height and width.|
 |[InheritFromParentBiddingScheme](../campaign-api/inheritfromparentbiddingscheme-data-object.md)|Defines an object that represents the inherit from parent bid strategy type.|

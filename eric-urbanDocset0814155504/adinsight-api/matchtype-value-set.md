@@ -35,7 +35,7 @@ Defines the possible keyword match type values.
 |---------|---------------|
 |Aggregate|Aggregates the data across all match types.|
 |Broad|A broad match results when words in the keyword are present in the user's search query; however, the word order can vary.|
-|Content|A content match results when the keywords extracted from the content webpage match the keywords in the user?s search query by using an exact match comparison. An exact match results when all of the words in the keyword exactly match the user's query.|
+|Content|A content match results when the keywords extracted from the content webpage match the keywords in the user's search query by using an exact match comparison. An exact match results when all of the words in the keyword exactly match the user's query.|
 |Exact|An exact match results when all of the words in the keyword exactly match the user's search query.|
 |Phrase|A phrase match results when all of the words in the keyword are present in the user's search query and are in the same order.|
 

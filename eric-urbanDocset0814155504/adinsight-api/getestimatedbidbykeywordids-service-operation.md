@@ -23,7 +23,7 @@ Gets the estimated bid value of one or more keywords - specified by keyword iden
 ## <a name="request"></a>GetEstimatedBidByKeywordIdsRequest Message
 
 ### Request Body
-The *GetEstimatedBidByKeywordIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetEstimatedBidByKeywordIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

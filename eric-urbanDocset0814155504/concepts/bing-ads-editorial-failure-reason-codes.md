@@ -190,7 +190,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |259|Policy Violation: Adult content that is extreme, shocking, or obscene is not allowed. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|
 |260|Policy Violation: Certain types of adult content are not allowed. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|
 |261|Policy Violation: Bing Ads does not allow advertising for electronic cigarettes, including the cartridges and liquid nicotine solutions that are used in such devices.|
-|262|Policy Violation: Bing Ads does not allow advertising that installs, copies, or downloads programs without the search user?s express prior consent.|
+|262|Policy Violation: Bing Ads does not allow advertising that installs, copies, or downloads programs without the search user's express prior consent.|
 |263|Policy Violation: Advertising promoting contests and competitions must comply with all applicable legislation.|
 |264|Policy Violation: Advertising promoting contests and competitions must comply with all applicable legislation.|
 |265|Policy Violation: Bing Ads does not allow the advertising of sites that offer access to Usenet newsgroups.|

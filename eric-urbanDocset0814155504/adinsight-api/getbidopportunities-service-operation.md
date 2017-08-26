@@ -23,13 +23,13 @@ Gets the keyword bid opportunities of the specified ad group.
 ## <a name="request"></a>GetBidOpportunitiesRequest Message
 
 ### Request Body
-The *GetBidOpportunitiesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBidOpportunitiesRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|
 |*AdGroupId*|The identifier of the ad group for which you want to determine keyword bid opportunities.<br /><br />If this element is nil or empty, the operation will return all bid opportunities for the specified campaign.|*long*|No|
 |*CampaignId*|The identifier of the campaign that owns the ad group specified in the *AdGroupId* element.<br /><br />If this element is nil or empty, then the *AdGroupId* must also be nil or empty, and the operation will return all bid opportunities for the account.|*long*|No|
-|*OpportunityType*|Determines the type or types of bid opportunities corresponding to your ad position goals.<br /><br />**Note:** The operation will only return opportunities if there?s a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](../adinsight-api/bidopportunitytype-value-set.md)|Yes|
+|*OpportunityType*|Determines the type or types of bid opportunities corresponding to your ad position goals.<br /><br />**Note:** The operation will only return opportunities if there's a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](../adinsight-api/bidopportunitytype-value-set.md)|Yes|
 
 ### Request Headers
 [!INCLUDE[header_intro](../adinsight-api/includes/header-intro.md)]

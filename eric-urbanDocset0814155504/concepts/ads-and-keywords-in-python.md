@@ -67,7 +67,7 @@ def main(authorization_data):
         campaign.BiddingScheme=campaign_bidding_scheme
 
         # Used with FinalUrls shown in the expanded text ads that we will add below.
-        campaign.TrackingUrlTemplate="http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
+        campaign.TrackingUrlTemplate="http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
         
         campaigns.Campaign.append(campaign)
 

@@ -20,7 +20,7 @@ Adds one or more keywords to an ad group.
 ## <a name="request"></a>AddKeywordsRequest Message
 
 ### Request Body
-The *AddKeywordsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddKeywordsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

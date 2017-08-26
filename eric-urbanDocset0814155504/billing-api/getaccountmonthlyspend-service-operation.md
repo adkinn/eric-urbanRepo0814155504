@@ -20,7 +20,7 @@ Gets the amount spent by the account in the specified month.
 ## <a name="request"></a>GetAccountMonthlySpendRequest Message
 
 ### Request Body
-The *GetAccountMonthlySpendRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAccountMonthlySpendRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 ||||
 |-|-|-|

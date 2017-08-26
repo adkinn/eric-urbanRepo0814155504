@@ -20,7 +20,7 @@ Appeals the editorial rejections of one or more ads or keywords that failed edit
 ## <a name="request"></a>AppealEditorialRejectionsRequest Message
 
 ### Request Body
-The *AppealEditorialRejectionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AppealEditorialRejectionsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

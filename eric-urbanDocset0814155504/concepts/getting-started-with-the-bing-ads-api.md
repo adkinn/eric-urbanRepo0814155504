@@ -23,7 +23,7 @@ The sandbox and production environments use separate credentials. For informatio
 ## <a name="where_to_use"></a>Where to Use the API Credentials
 [!INCLUDE[brand](../concepts/includes/brand.md)] services use Simple Object Access Protocol (SOAP) to exchange the request and response messages with the service operation. For more information, see [Bing Ads Services Protocol](../concepts/bing-ads-services-protocol.md).
 
-Each SOAP request must include the following SOAP headers, which contain the user?s credentials.
+Each SOAP request must include the following SOAP headers, which contain the user's credentials.
 
 [!INCLUDE[headerelementdetails](../concepts/includes/headerelementdetails.md)]
 ## <a name="accountcustomerid"></a>Account and Customer Identifiers
@@ -48,7 +48,7 @@ The *customer identifier* is the numeric identifier that identifies a customer. 
 As a best practice you should always specify the identifier of the customer that owns the account in the *CustomerId* header element. Only operations that store data in the customer library for example targets, require you to set the *CustomerId* header element. Operations that require you to specify the customer ID will state this in the corresponding service operation topic.
 
 ### Getting Your Account ID and Customer ID
-To get a user?s customer ID and account ID, you can sign in to the [!INCLUDE[brand](../concepts/includes/brand.md)] web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.bingads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
+To get a user's customer ID and account ID, you can sign in to the [!INCLUDE[brand](../concepts/includes/brand.md)] web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.bingads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
 
 ## <a name="need_help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](../concepts/handling-service-errors-and-exceptions.md).

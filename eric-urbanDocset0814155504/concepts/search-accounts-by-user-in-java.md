@@ -67,7 +67,7 @@ public class SearchUserAccounts extends ExampleBase {
                 //ArrayOfKeyValuePairOfstringstring accountFCM = new ArrayOfKeyValuePairOfstringstring();
                 //KeyValuePairOfstringstring trackingUrlTemplate = new KeyValuePairOfstringstring();
                 //trackingUrlTemplate.setKey("TrackingUrlTemplate");
-                //trackingUrlTemplate.setValue("http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}");
+                //trackingUrlTemplate.setValue("http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}");
                 //accountFCM.getKeyValuePairOfstringstrings().add(trackingUrlTemplate);
             
                 //account.setForwardCompatibilityMap(accountFCM);

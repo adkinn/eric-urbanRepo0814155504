@@ -90,7 +90,7 @@ def main(authorization_data):
         campaign.Status='Paused'
 
         # Used with FinalUrls shown in the sitelinks that we will add below.
-        campaign.TrackingUrlTemplate="http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
+        campaign.TrackingUrlTemplate="http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
 
         bulk_campaign.campaign=campaign
 
@@ -468,7 +468,7 @@ def get_sample_bulk_sitelink2_ad_extensions(account_id):
 
         # If you are currently using the Destination URL, you must upgrade to Final URLs. 
         # Here is an example of a DestinationUrl you might have used previously. 
-        # sitelink2_ad_extension.DestinationUrl='http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123'
+        # sitelink2_ad_extension.DestinationUrl='http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123'
 
         # To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         # to an empty string when updating the ad extension. If you are removing DestinationUrl,
@@ -541,7 +541,7 @@ def get_sample_bulk_site_links_ad_extensions(account_id):
 
         # If you are currently using the Destination URL, you must upgrade to Final URLs. 
         # Here is an example of a DestinationUrl you might have used previously. 
-        # site_link.DestinationUrl='http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123'
+        # site_link.DestinationUrl='http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123'
 
         # To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         # to an empty string when updating the sitelink. If you are removing DestinationUrl,

@@ -20,12 +20,12 @@ Gets the number of times the normalized term was used in a search during the spe
 ## <a name="request"></a>GetHistoricalSearchCountRequest Message
 
 ### Request Body
-The *GetHistoricalSearchCountRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetHistoricalSearchCountRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|
 |*Devices*|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes search counts for the device types that you specify only, if available.|*string* array|No|
-|*EndDate*|The end date of the date range that identifies the data that you want to use to determine the historical search count.<br /><br />The date cannot be later than today?s date, and must be later than or the same as the specified start date.<br /><br />The effective *EndDate* may be adjusted if the specified *TimePeriodRollup* is Weekly or Monthly.|[DayMonthAndYear](../adinsight-api/daymonthandyear-data-object.md)|Yes|
+|*EndDate*|The end date of the date range that identifies the data that you want to use to determine the historical search count.<br /><br />The date cannot be later than today's date, and must be later than or the same as the specified start date.<br /><br />The effective *EndDate* may be adjusted if the specified *TimePeriodRollup* is Weekly or Monthly.|[DayMonthAndYear](../adinsight-api/daymonthandyear-data-object.md)|Yes|
 |*Keywords*|An array of keywords for which you want to determine the number of times that the keyword was used in a search query. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|*string* array|Yes|
 |*Language*|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](http://go.microsoft.com/fwlink/?LinkId=691113).|*string*|Yes|
 |*PublisherCountries*|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](http://go.microsoft.com/fwlink/?LinkId=691115).<br /><br />If Null, the default is all countries/regions that support the specified language.|*string* array|No|

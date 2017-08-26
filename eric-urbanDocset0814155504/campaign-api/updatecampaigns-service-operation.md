@@ -20,7 +20,7 @@ Updates specified campaigns in a specified account.
 ## <a name="request"></a>UpdateCampaignsRequest Message
 
 ### Request Body
-The *UpdateCampaignsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateCampaignsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

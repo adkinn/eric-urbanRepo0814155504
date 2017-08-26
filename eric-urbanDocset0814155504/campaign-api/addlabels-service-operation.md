@@ -19,7 +19,7 @@ Adds one or more labels to an account.
 ## <a name="request"></a>AddLabelsRequest Message
 
 ### Request Body
-The *AddLabelsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *AddLabelsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

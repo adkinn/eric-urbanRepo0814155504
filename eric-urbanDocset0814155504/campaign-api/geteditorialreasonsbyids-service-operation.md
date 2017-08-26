@@ -20,7 +20,7 @@ Gets the reasons why the specified entities failed editorial review and whether 
 ## <a name="request"></a>GetEditorialReasonsByIdsRequest Message
 
 ### Request Body
-The *GetEditorialReasonsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetEditorialReasonsByIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

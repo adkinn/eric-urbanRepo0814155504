@@ -20,7 +20,7 @@ Gets the specified budgets from the account's shared budget library.
 ## <a name="request"></a>GetBudgetsByIdsRequest Message
 
 ### Request Body
-The *GetBudgetsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBudgetsByIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|-------------|

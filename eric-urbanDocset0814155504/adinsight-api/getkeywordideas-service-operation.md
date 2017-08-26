@@ -22,7 +22,7 @@ Suggests new ad groups and keywords based on your existing keywords, website, an
 ## <a name="request"></a>GetKeywordIdeasRequest Message
 
 ### Request Body
-The *GetKeywordIdeasRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetKeywordIdeasRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

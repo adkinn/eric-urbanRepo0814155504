@@ -23,7 +23,7 @@ Given a list of existing ad groups, this operation returns for each a list of su
 ## <a name="request"></a>GetBidLandscapeByAdGroupIdsRequest Message
 
 ### Request Body
-The *GetBidLandscapeByAdGroupIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetBidLandscapeByAdGroupIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

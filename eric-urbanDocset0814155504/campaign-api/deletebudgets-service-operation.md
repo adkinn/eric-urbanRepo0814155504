@@ -20,7 +20,7 @@ Deletes budgets from the account's shared budget library.
 ## <a name="request"></a>DeleteBudgetsRequest Message
 
 ### Request Body
-The *DeleteBudgetsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteBudgetsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

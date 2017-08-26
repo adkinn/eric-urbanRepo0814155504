@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # UpdateAdExtensions Service Operation
-Updates one or more ad extensions within an account?s ad extension library.
+Updates one or more ad extensions within an account's ad extension library.
 
 [!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>UpdateAdExtensionsRequest Message
 
 ### Request Body
-The *UpdateAdExtensionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateAdExtensionsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

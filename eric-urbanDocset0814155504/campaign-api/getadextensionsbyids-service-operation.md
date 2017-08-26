@@ -13,14 +13,14 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # GetAdExtensionsByIds Service Operation
-Gets the specified ad extensions from the account?s ad extension library.
+Gets the specified ad extensions from the account's ad extension library.
 
 [!INCLUDE[campaign_service_namespace](../campaign-api/includes/campaign-service-namespace.md)]
 
 ## <a name="request"></a>GetAdExtensionsByIdsRequest Message
 
 ### Request Body
-The *GetAdExtensionsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAdExtensionsByIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|-------------|

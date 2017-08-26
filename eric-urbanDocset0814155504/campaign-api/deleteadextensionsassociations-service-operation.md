@@ -20,7 +20,7 @@ Removes the specified association from the respective campaigns or ad groups.
 ## <a name="request"></a>DeleteAdExtensionsAssociationsRequest Message
 
 ### Request Body
-The *DeleteAdExtensionsAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteAdExtensionsAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

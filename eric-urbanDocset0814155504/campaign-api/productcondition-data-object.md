@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # ProductCondition Data Object
-Defines a condition that determines whether a product is selected from a customer?s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.
+Defines a condition that determines whether a product is selected from a customer's [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.
 
 ## Syntax
 
@@ -30,8 +30,8 @@ Defines a condition that determines whether a product is selected from a custome
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*Attribute*|The condition?s attribute value.<br /><br />An attribute?s value must exactly match the value specified in the customer?s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-api/productscope-data-object.md) and [ProductPartition](../campaign-api/productpartition-data-object.md) conditions, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
-|*Operand*|The condition?s operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
+|*Attribute*|The condition's attribute value.<br /><br />An attribute's value must exactly match the value specified in the customer's [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-api/productscope-data-object.md) and [ProductPartition](../campaign-api/productpartition-data-object.md) conditions, see [Bing Shopping Product Conditions](~/concepts/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
+|*Operand*|The condition's operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|*string*|
 
 ## Requirements
 [!INCLUDE[reqcamp](../campaign-api/includes/reqcamp.md)]

@@ -20,14 +20,14 @@ Updates one or more campaign criterions.
 ## <a name="request"></a>UpdateCampaignCriterionsRequest Message
 
 ### Request Body
-The *UpdateCampaignCriterionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *UpdateCampaignCriterionsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|*CampaignCriterions*|The list of campaign criterions to update.<br/><br/>You can include up to 100 campaign criterions per request.<br /><br />Within each [CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) object, you must specify the criterion?s ID and the ID of the campaign that it belongs to.|[CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) array|
+|*CampaignCriterions*|The list of campaign criterions to update.<br/><br/>You can include up to 100 campaign criterions per request.<br /><br />Within each [CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) object, you must specify the criterion's ID and the ID of the campaign that it belongs to.|[CampaignCriterion](../campaign-api/campaigncriterion-data-object.md) array|
 |*CriterionType*|The type of criterion to update, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetCampaignCriterionsByIds](../campaign-api/getcampaigncriterionsbyids-service-operation.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.|[CampaignCriterionType](../campaign-api/campaigncriteriontype-value-set.md)|
 
 ### Request Headers

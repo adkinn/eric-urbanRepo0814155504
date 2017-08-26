@@ -170,7 +170,7 @@ try
         
     // Used with FinalUrls shown in the ads that we will add below.
     $campaign->TrackingUrlTemplate = 
-       "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}";
+       "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}";
 
     $campaigns[] = $campaign;
     

@@ -22,7 +22,7 @@ Gets the specified Universal Event Tracking (UET) tags.
 ## <a name="request"></a>GetUetTagsByIdsRequest Message
 
 ### Request Body
-The *GetUetTagsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
+The *GetUetTagsByIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the customer identifier in the *CustomerId* header element.

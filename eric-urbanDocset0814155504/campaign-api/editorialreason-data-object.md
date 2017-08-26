@@ -33,7 +33,7 @@ Defines an object that you can use to determine the component of an ad or keywor
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*Location*|The component of the ad or keyword that failed editorial review.|*string*|
-|*PublisherCountries*|A list of countries where the ad or keyword failed editorial review. The string contains the country?s two character country code.|*string* array|
+|*PublisherCountries*|A list of countries where the ad or keyword failed editorial review. The string contains the country's two character country code.|*string* array|
 |*ReasonCode*|A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](http://msdn.microsoft.com/library/bing-ads-editorialfailurereasoncodes.aspx).|int|
 |*Term*|The term that failed editorial review.<br /><br />This element cannot be set if a combination of terms caused the failure or if the failure was based on a policy violation.|string|
 

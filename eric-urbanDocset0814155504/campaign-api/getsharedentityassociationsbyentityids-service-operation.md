@@ -20,7 +20,7 @@ Gets negative keyword list associations for the specified campaigns.
 ## <a name="request"></a>GetSharedEntityAssociationsByEntityIdsRequest Message
 
 ### Request Body
-The *GetSharedEntityAssociationsByEntityIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetSharedEntityAssociationsByEntityIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

@@ -20,7 +20,7 @@ Gets the geographical locations of users who have searched for the specified key
 ## <a name="request"></a>GetKeywordLocationsRequest Message
 
 ### Request Body
-The *GetKeywordLocationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetKeywordLocationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|

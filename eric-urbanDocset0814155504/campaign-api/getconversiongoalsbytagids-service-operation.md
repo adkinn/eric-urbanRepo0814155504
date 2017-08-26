@@ -22,7 +22,7 @@ Gets the conversion goals that use the specified UET tags.
 ## <a name="request"></a>GetConversionGoalsByTagIdsRequest Message
 
 ### Request Body
-The *GetConversionGoalsByTagIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
+The *GetConversionGoalsByTagIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

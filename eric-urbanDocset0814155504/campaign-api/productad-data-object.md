@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # ProductAd Data Object
-Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer?s [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] store.
+Defines a product ad. A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer's [!INCLUDE[storebrand](../campaign-api/includes/storebrand.md)] store.
 
 ## Syntax
 

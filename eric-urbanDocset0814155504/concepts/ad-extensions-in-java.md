@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in Java
-The following example shows how to add extensions to an account?s ad extension library, get extensions from the library, associate the extensions with a campaign, get the extensions that are associated with a campaign, and determine why an extension failed editorial review.
+The following example shows how to add extensions to an account's ad extension library, get extensions from the library, associate the extensions with a campaign, get the extensions that are associated with a campaign, and determine why an extension failed editorial review.
 
 [!INCLUDE[java_header](../concepts/includes/java-header.md)]
 
@@ -119,7 +119,7 @@ public class AdExtensions extends ExampleBase {
 
             // Used with FinalUrls shown in the sitelinks that we will add below.
             campaign.setTrackingUrlTemplate(
-                        "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}");
+                        "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}");
 
             campaigns.getCampaigns().add(campaign);
 
@@ -315,7 +315,7 @@ public class AdExtensions extends ExampleBase {
             adExtensionsTypeFilter.add(AdExtensionsTypeFilter.REVIEW_AD_EXTENSION);
             adExtensionsTypeFilter.add(AdExtensionsTypeFilter.STRUCTURED_SNIPPET_AD_EXTENSION);
                         
-            // Get the specified ad extensions from the account?s ad extension library.
+            // Get the specified ad extensions from the account's ad extension library.
             GetAdExtensionsByIdsResponse getAdExtensionsByIdsResponse = getAdExtensionsByIds(
                 authorizationData.getAccountId(),
                 adExtensionIds, 
@@ -389,7 +389,7 @@ public class AdExtensions extends ExampleBase {
 
             outputStatusMessage("Deleted ad extension associations.\n");
 
-            // Deletes the ad extensions from the account?s ad extension library.
+            // Deletes the ad extensions from the account's ad extension library.
             deleteAdExtensions(
                 authorizationData.getAccountId(),
                 adExtensionIds
@@ -548,7 +548,7 @@ public class AdExtensions extends ExampleBase {
         return CampaignService.getService().addAdExtensions(request);
     }
 
-    // Deletes one or more ad extensions from the account?s ad extension library.
+    // Deletes one or more ad extensions from the account's ad extension library.
 
     static void deleteAdExtensions(
             long accountId, 
@@ -647,7 +647,7 @@ public class AdExtensions extends ExampleBase {
 
         // If you are currently using the Destination URL, you must upgrade to Final URLs. 
         // Here is an example of a DestinationUrl you might have used previously. 
-        // siteLink1.setDestinationUrl("http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123");
+        // siteLink1.setDestinationUrl("http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123");
 
         // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         // to an empty string when updating the sitelink. If you are removing DestinationUrl,
@@ -731,7 +731,7 @@ public class AdExtensions extends ExampleBase {
 
         // If you are currently using the Destination URL, you must upgrade to Final URLs. 
         // Here is an example of a DestinationUrl you might have used previously. 
-        // sitelink2AdExtensionA.setDestinationUrl("http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123");
+        // sitelink2AdExtensionA.setDestinationUrl("http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123");
 
         // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         // to an empty string when updating the ad extension. If you are removing DestinationUrl,

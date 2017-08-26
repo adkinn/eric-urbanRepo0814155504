@@ -141,7 +141,7 @@ public class BulkAdExtensions extends BulkExampleBase {
             campaign.setStatus(CampaignStatus.PAUSED);
 
             // Used with FinalUrls shown in the sitelinks that we will add below.
-            campaign.setTrackingUrlTemplate("http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}");
+            campaign.setTrackingUrlTemplate("http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}");
 
             bulkCampaign.setCampaign(campaign);
 
@@ -751,7 +751,7 @@ public class BulkAdExtensions extends BulkExampleBase {
 
             // If you are currently using the Destination URL, you must upgrade to Final URLs. 
             // Here is an example of a DestinationUrl you might have used previously. 
-            // siteLink.setDestinationUrl("http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123");
+            // siteLink.setDestinationUrl("http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123");
 
             // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
             // to an empty string when updating the sitelink. If you are removing DestinationUrl,
@@ -831,7 +831,7 @@ public class BulkAdExtensions extends BulkExampleBase {
 
             // If you are currently using the Destination URL, you must upgrade to Final URLs. 
             // Here is an example of a DestinationUrl you might have used previously. 
-            // sitelink2AdExtension.setDestinationUrl("http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123");
+            // sitelink2AdExtension.setDestinationUrl("http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123");
 
             // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
             // to an empty string when updating the ad extension. If you are removing DestinationUrl,

@@ -23,7 +23,7 @@ Gets the negative keywords that are only associated with the specified campaigns
 ## <a name="request"></a>GetNegativeKeywordsByEntityIdsRequest Message
 
 ### Request Body
-The *GetNegativeKeywordsByEntityIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetNegativeKeywordsByEntityIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

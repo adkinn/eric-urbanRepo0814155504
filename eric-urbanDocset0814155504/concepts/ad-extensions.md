@@ -60,7 +60,7 @@ If the campaign is also associated with a [Location Extensions](#locationextensi
 ![overview_calladextension](../concepts/media/overview-calladextension.png "overview_calladextension")
 
 ### <a name="calloutextensions"></a>Callout Extensions
-With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad?s description. Providing additional details about your store can make your ad more relevant to potential customers.
+With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad's description. Providing additional details about your store can make your ad more relevant to potential customers.
 
 Each account, campaign, or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your account, campaign, or ad group, no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
@@ -100,7 +100,7 @@ Structured Snippet Extensions give potential customers more context on a specifi
 
 ![Structured Snippet Ad Extension](../concepts/media/structured-snippet-ad-extension.png)
 
-This extension is not clickable and, similar to other extensions, will appear beneath your ad?s description. Structured Snippets have no impact on the other extensions you?re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
+This extension is not clickable and, similar to other extensions, will appear beneath your ad's description. Structured Snippets have no impact on the other extensions you?re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
 An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won?t always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Bing Ads markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
 

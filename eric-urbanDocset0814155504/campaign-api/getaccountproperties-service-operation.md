@@ -19,7 +19,7 @@ Gets account level properties by name.
 ## <a name="request"></a>GetAccountPropertiesRequest Message
 
 ### Request Body
-The *GetAccountPropertiesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAccountPropertiesRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

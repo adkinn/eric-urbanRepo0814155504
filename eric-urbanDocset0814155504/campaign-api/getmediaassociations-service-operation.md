@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # GetMediaAssociations Service Operation
-Gets the media associations of the specified entity type from an account?s media library.
+Gets the media associations of the specified entity type from an account's media library.
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
@@ -23,7 +23,7 @@ Gets the media associations of the specified entity type from an account?s media
 ## <a name="request"></a>GetMediaAssociationsRequest Message
 
 ### Request Body
-The *GetMediaAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetMediaAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

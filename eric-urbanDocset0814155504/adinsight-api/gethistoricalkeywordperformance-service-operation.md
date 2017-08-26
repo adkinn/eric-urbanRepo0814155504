@@ -20,11 +20,11 @@ Gets the historical performance of the normalized search term. The results are a
 ## <a name="request"></a>GetHistoricalKeywordPerformanceRequest Message
 
 ### Request Body
-The *GetHistoricalKeywordPerformanceRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetHistoricalKeywordPerformanceRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|------------|
-|*Devices*|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword?s performance on the specified device types.|*string* array|No|
+|*Devices*|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword's performance on the specified device types.|*string* array|No|
 |*Keywords*|An array of keywords for which you want to get historical performance statistics. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|*string* array|Yes|
 |*Language*|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](http://go.microsoft.com/fwlink/?LinkId=691113).|*string*|Yes|
 |*MatchTypes*|The match types for which you want to get historical data.<br /><br />You may not specify the Content match type.|[MatchType](../adinsight-api/matchtype-value-set.md) array|Yes|

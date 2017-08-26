@@ -173,7 +173,7 @@ The following currency codes are supported for conversion goals by setting the *
 |USD|US Dollar|
 |UYU|Uruguayan Peso|
 |UZS|Uzbekistani Som|
-|VEF|Venezuelan Bol?var|
+|VEF|Venezuelan Bol'var|
 |VND|Vietnamese Dong|
 |XAF|Central African CFA Franc|
 |XCD|Eastern Caribbean Dollar|

@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # Ad Extensions in PHP
-The following example shows how to add, get, and delete extensions for an account?s ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
+The following example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial review.
 
 [!INCLUDE[php_header](../concepts/includes/php-header.md)]
 
@@ -194,7 +194,7 @@ try
 
     // Used with FinalUrls shown in the sitelinks that we will add below.
     $campaign->TrackingUrlTemplate =
-        "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}";
+        "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}";
 
     $campaigns[] = $campaign;
 
@@ -468,7 +468,7 @@ try
     	AssociationType::Campaign
     );
     
-    // Deletes the ad extensions from the account?s ad extension library.
+    // Deletes the ad extensions from the account's ad extension library.
     DeleteAdExtensions(
     	$GLOBALS['AuthorizationData']->AccountId, 
     	$adExtensionIds
@@ -959,7 +959,7 @@ function GetSampleSiteLinksAdExtensions()
         // Destination URLs are deprecated. 
         // If you are currently using the Destination URL, you must upgrade to Final URLs. 
         // Here is an example of a DestinationUrl you might have used previously. 
-        // $extension->SiteLinks[$index]->DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123";
+        // $extension->SiteLinks[$index]->DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123";
 
         // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         // to an empty string when updating the sitelink. If you are removing DestinationUrl,
@@ -1018,7 +1018,7 @@ function GetSampleSitelink2AdExtensions()
         // Destination URLs are deprecated. 
         // If you are currently using the Destination URL, you must upgrade to Final URLs. 
         // Here is an example of a DestinationUrl you might have used previously. 
-        // $extension->DestinationUrl = "http://www.contoso.com/womenshoesale/?season=spring&promocode=PROMO123";
+        // $extension->DestinationUrl = "http://www.contoso.com/womenshoesale/'season=spring&promocode=PROMO123";
 
         // To migrate from DestinationUrl to FinalUrls, you can set DestinationUrl
         // to an empty string when updating the sitelink. If you are removing DestinationUrl,

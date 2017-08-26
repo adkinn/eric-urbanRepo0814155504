@@ -23,7 +23,7 @@ Deletes negative keywords from the specified campaign or ad group.
 ## <a name="request"></a>DeleteNegativeKeywordsFromEntitiesRequest Message
 
 ### Request Body
-The *DeleteNegativeKeywordsFromEntitiesRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *DeleteNegativeKeywordsFromEntitiesRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

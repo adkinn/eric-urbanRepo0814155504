@@ -20,7 +20,7 @@ Gets the negative site URLs of the specified ad groups.
 ## <a name="request"></a>GetNegativeSitesByAdGroupIdsRequest Message
 
 ### Request Body
-The *GetNegativeSitesByAdGroupIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetNegativeSitesByAdGroupIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

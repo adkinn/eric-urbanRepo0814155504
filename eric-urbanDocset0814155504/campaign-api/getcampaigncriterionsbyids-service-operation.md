@@ -20,7 +20,7 @@ Gets the specified campaign criterions.
 ## <a name="request"></a>GetCampaignCriterionsByIdsRequest Message
 
 ### Request Body
-The *GetCampaignCriterionsByIdsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetCampaignCriterionsByIdsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

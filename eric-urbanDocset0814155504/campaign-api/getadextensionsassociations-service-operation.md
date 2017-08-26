@@ -20,7 +20,7 @@ Gets the respective ad extension associations by the specified campaign and ad g
 ## <a name="request"></a>GetAdExtensionsAssociationsRequest Message
 
 ### Request Body
-The *GetAdExtensionsAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *GetAdExtensionsAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|Required|
 |-----------|---------------|-------------|-------------|

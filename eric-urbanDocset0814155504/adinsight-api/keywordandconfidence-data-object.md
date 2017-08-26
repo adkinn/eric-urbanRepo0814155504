@@ -13,7 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 ---
 # KeywordAndConfidence Data Object
-Defines an object that contains a suggested keyword and a confidence score. The confidence score indicates the probability that the keyword would match a user?s search query.
+Defines an object that contains a suggested keyword and a confidence score. The confidence score indicates the probability that the keyword would match a user's search query.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ Defines an object that contains a suggested keyword and a confidence score. The 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |*SuggestedKeyword*|The suggested keyword.|*string*|
-|*ConfidenceScore*|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user?s search query.|*double*|
+|*ConfidenceScore*|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user's search query.|*double*|
 
 ## Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]

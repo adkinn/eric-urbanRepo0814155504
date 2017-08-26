@@ -20,7 +20,7 @@ Applies an add, update, or delete action to each of the specified [BiddableAdGro
 ## <a name="request"></a>ApplyProductPartitionActionsRequest Message
 
 ### Request Body
-The *ApplyProductPartitionActionsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *ApplyProductPartitionActionsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

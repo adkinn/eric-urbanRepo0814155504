@@ -23,10 +23,10 @@ If you are using a .NET language, Java, or Python, you should use the [Bing Ads 
 For a code example that shows how to download and upload campaigns using the Bulk service with the workflow described below, see [Download and Upload Campaigns in PHP](../concepts/download-and-upload-campaigns-in-php.md).
 
 ## <a name="bulkdownload"></a>Bulk Download
-To download an account?s campaign data, call the [DownloadCampaignsByAccountIds](~/bulk-api/downloadcampaignsbyaccountids-service-operation.md) operation. To download the data of specific campaigns, call the [DownloadCampaignsByCampaignIds](~/bulk-api/downloadcampaignsbycampaignids-service-operation.md) operation.
+To download an account's campaign data, call the [DownloadCampaignsByAccountIds](~/bulk-api/downloadcampaignsbyaccountids-service-operation.md) operation. To download the data of specific campaigns, call the [DownloadCampaignsByCampaignIds](~/bulk-api/downloadcampaignsbycampaignids-service-operation.md) operation.
 
 ### Downloading a Bulk File
-You may request all of the campaign?s data or only the data that has changed since the last time you downloaded the campaign?s data. For either download operation, the following is an overview of the request settings and download workflow.
+You may request all of the campaign's data or only the data that has changed since the last time you downloaded the campaign's data. For either download operation, the following is an overview of the request settings and download workflow.
   > [!IMPORTANT]
   > You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](~/bulk-api/downloadcampaignsbyaccountids-service-operation.md) or [DownloadCampaignsByCampaignIds](~/bulk-api/downloadcampaignsbycampaignids-service-operation.md)) and the [GetBulkDownloadStatus](~/bulk-api/getbulkdownloadstatus-service-operation.md) polling operation.
    
@@ -62,7 +62,7 @@ You may request all of the campaign?s data or only the data that has changed sin
     > [!IMPORTANT]
     > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
--   Perform a full download one time only. Thereafter, perform delta downloads. Set the *LastSyncTimeInUTC* to the time stamp of the last download. The download file contains the time stamp of the download in the *SyncTime* column of the *Account* record. There is no advantage to performing a full download every time and it decreases everyone?s performance including yours.
+-   Perform a full download one time only. Thereafter, perform delta downloads. Set the *LastSyncTimeInUTC* to the time stamp of the last download. The download file contains the time stamp of the download in the *SyncTime* column of the *Account* record. There is no advantage to performing a full download every time and it decreases everyone's performance including yours.
 
 -   Poll for downloads at reasonable intervals. You know your data better than anyone. If you download an account that is well less than one million keywords, consider polling at 15 to 20 second intervals. If the account contains about one million keywords, consider polling at one minute intervals after waiting five minutes. For accounts with about four million keywords, consider polling at one minute intervals after waiting 10 minutes.
 

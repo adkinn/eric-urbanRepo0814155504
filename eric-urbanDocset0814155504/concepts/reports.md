@@ -24,7 +24,7 @@ For a list of reports that you can request, see [Report Types](../concepts/repor
 
 For information about how to request and download a report, see [Request and Download a Report](../concepts/request-and-download-a-report.md)When the report completes successfully, you can download the report from the URL that the service returns. The report file is compressed, so you must unzip the file to read the report. There is no limit to the number of reports that the system can store; however, the length of time that the reports are stored is undefined. The service does not check for duplicate report requests.
 
-For information about how the campaign?s time zone affects the time period that you specify, see [Time Zones in Reporting](#reptimezones) below.
+For information about how the campaign's time zone affects the time period that you specify, see [Time Zones in Reporting](#reptimezones) below.
 
 For information about when the books are closed for reporting, see [Determining When the Books Close](#booksclose) below.
 
@@ -174,7 +174,7 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 > [!NOTE]
 > Data is generally considered complete with books closed after 3 hours. In some exception cases due to invalid traffic, there could be unexpected adjustments that might take a week or more to resolve.
 > 
-> For example, if an advertiser complaint identifies invalid click activity that escaped the automated filtration system, the Traffic Quality and support teams will process a credit to the advertiser?s account, and will partner with internal teams to determine whether they can update automated systems in order to improve detection in the future. For more information, please see [Traffic Quality Center](https://advertise.bingads.microsoft.com/en-us/resources/policies/traffic-quality).
+> For example, if an advertiser complaint identifies invalid click activity that escaped the automated filtration system, the Traffic Quality and support teams will process a credit to the advertiser's account, and will partner with internal teams to determine whether they can update automated systems in order to improve detection in the future. For more information, please see [Traffic Quality Center](https://advertise.bingads.microsoft.com/en-us/resources/policies/traffic-quality).
 
 If you request a report that includes campaigns that span multiple time zones, the data is considered complete only after all of the click data is processed for the campaign that has the time zone that is closest to PDT as you are facing towards the west. For example, say you request a report that includes Campaign A (which specifies the PST time zone), and Campaign B (which specifies the EST time zone), the data is not complete until all of the click data for Campaign A has processed for the specified time period.
 

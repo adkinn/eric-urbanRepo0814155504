@@ -19,7 +19,7 @@ Sets label associations.
 ## <a name="request"></a>SetLabelAssociationsRequest Message
 
 ### Request Body
-The *SetLabelAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *SetLabelAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.

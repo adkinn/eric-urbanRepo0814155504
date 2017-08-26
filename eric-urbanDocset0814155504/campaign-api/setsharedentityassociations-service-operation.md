@@ -20,7 +20,7 @@ Sets the association between a campaign and a negative keyword list.
 ## <a name="request"></a>SetSharedEntityAssociationsRequest Message
 
 ### Request Body
-The *SetSharedEntityAssociationsRequest* object defines the elements of the request?s body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
+The *SetSharedEntityAssociationsRequest* object defines the elements of the request's body. The elements must be in the same order as shown in the SOAP [Request SOAP](#request_soap).
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
