@@ -36,7 +36,7 @@ Defines an object that contains a suggested keyword with historical statistics, 
 # <a name="Elements"></a>Elements
 
 ## AdGroupId
-<xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long"/>
+**xs:long** 
 
 The negative ad group identifier that groups keyword ideas into suggested new ad groups. Keyword ideas for existing ad group identifiers is not supported.
 
@@ -63,11 +63,11 @@ Determined by the number of advertisers bidding on this keyword, relative to all
 
 
 ## Keyword
+**xs:string** 
 The suggested keyword.
 
-<code>string</code>
-
 ## MonthlySearchCounts
+**q4:ArrayOflong** 
 The number of times this keyword was used as a search term for each month within the date range and targeting settings you've selected.
 
 By default the size of the list is 12 and the last 12 months of available data are returned. The search counts are sorted in order starting with the most recent month's data at <code>MonthlySeachCounts[0]</code>.
@@ -75,22 +75,21 @@ By default the size of the list is 12 and the last 12 months of available data a
 > [!NOTE] 
 > It can take up to 72 hours for the previous calendar month's data to be available. For example, if you request keyword ideas on August 1st, 2nd or 3rd, and July's data is not ready, the response will be based on June's data. If you do not include the [DateRangeSearchParameter](../adinsight-api/daterangesearchparameter-data-object.md) in the [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) request, then you will not be able to confirm whether the first list item is data for the previous month, or the month prior. If the date range is specified and the most recent month's data is not yet available, then [GetKeywordIdeas](../adinsight-api/getkeywordideas-service-operation.md) will return an error.
 
-**Data Type** long array
-
 ## Relevance
+**xs:double** 
+
 The keyword relevance score.
 
-**Data Type** double
-
 ## Source
+[SourceType](../adinsight-api/sourcetype-value-set.md)
+
 The source or seed for the keyword.
 
-**Data Type** [SourceType](../adinsight-api/sourcetype-value-set.md)
-
 ## SuggestedBid
+**xs:double** 
+
 The suggested minimum bid for this keyword. We create this suggestion using the location and network criterion you included, along with the average cost-per-click (CPC) advertisers are paying for this keyword. This amount is only an estimate and your actual CPC may vary.
 
-**Data Type** double
 
 # Requirements
 [!INCLUDE[reqadint](../adinsight-api/includes/reqadint.md)]
