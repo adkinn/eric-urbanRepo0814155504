@@ -91,6 +91,17 @@ Resellers can create an account for a managed customer by calling the [SignupCus
 ### Getting Accounts
 To get a list of the accounts that you own or manage, call the [GetAccountsInfo](~/customer-api/getaccountsinfo-service-operation.md) operation. The operation returns an array of objects that contain the name, identifier, and status of each account. To get the details of each account in the list, such as the account's financial status, pass the account identifier to the [GetAccount](~/customer-api/getaccount-service-operation.md) operation. You can also search for accounts that match a specified filter criteria using the [SearchAccounts](https://msdn.microsoft.com/library/dn743757.aspx) operation.
 
+
+<pre>
+  <code>[!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]</code>
+</pre>
+<pre>
+  <code>[!code-java[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]</code>
+</pre>
+<pre>
+  <code>[!code-python[tableinsert](../../examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]</code>
+</pre>
+
 For code examples that show how to search for accounts that can be managed by the current authenticated user, see [C&#35;](../concepts/search-accounts-by-user-in-csharp.md) | [Java](../concepts/search-accounts-by-user-in-java.md) | [PHP](../concepts/search-accounts-by-user-in-php.md) | [Python](../concepts/search-accounts-by-user-in-python.md).
 
 ### Updating Accounts
