@@ -63,11 +63,13 @@ Determined by the number of advertisers bidding on this keyword, relative to all
 
 
 ## Keyword
-**xs:string** 
+**xs:string**  
+
 The suggested keyword.
 
 ## MonthlySearchCounts
-**q4:ArrayOflong** 
+**q4:ArrayOflong**  
+
 The number of times this keyword was used as a search term for each month within the date range and targeting settings you've selected.
 
 By default the size of the list is 12 and the last 12 months of available data are returned. The search counts are sorted in order starting with the most recent month's data at <code>MonthlySeachCounts[0]</code>.

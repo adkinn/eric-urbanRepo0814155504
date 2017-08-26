@@ -167,6 +167,7 @@
     href: ../concepts/bing-ads-services-protocol.md
   - name: Handling Service Errors and Exceptions
     href: ../concepts/handling-service-errors-and-exceptions.md
+    displayName: support help debug
   - name: Customer Accounts
     href: ../concepts/customer-accounts.md
     items:
