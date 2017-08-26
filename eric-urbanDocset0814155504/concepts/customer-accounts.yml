@@ -1,0 +1,80 @@
+---
+title: "Customer Accounts YML"
+ms.custom: ""
+ms.date: "08/12/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: 279db7c6-e119-48dc-9ea8-2586443a9fed2
+caps.latest.revision: 19
+author: "eric-urban"
+ms.author: "eur"
+manager: "ehansen"
+langs:
+  - csharp
+  - java
+  - php
+  - python
+---
+
+<pre>
+  <code>[!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]</code>
+</pre>
+<pre>
+  <code>[!code-java[tableinsert](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]</code>
+</pre>
+<pre>
+  <code>[!code-python[tableinsert](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]</code>
+</pre>
+
+<pre>
+  [!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]
+</pre>
+<pre>
+  [!code-java[tableinsert](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]
+</pre>
+<pre>
+  [!code-python[tableinsert](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]
+</pre>
+
+<pre>
+  <code>
+```csharp
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+<pre>
+  <code>
+```java
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+<pre>
+  <code>
+```python
+CustomerService = new ServiceClient<ICustomerManagementService>(authorizationData);
+
+var getUserResponse = await GetUserAsync(null);
+var user = getUserResponse.User;
+
+// Search for the Bing Ads accounts that the user can access.
+
+var accounts = await SearchAccountsByUserIdAsync(user.Id);
+  </code>
+</pre>
+
