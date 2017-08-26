@@ -32,6 +32,22 @@
         ],
         "group": "group-active",
         "src": "concepts"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ],
+        "group": "group-adinsight",
+        "src": "adinsight-api"
       }
     ],
     "resource": [
@@ -58,6 +74,18 @@
         ],
         "group": "group-active",
         "src": "concepts"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "group-adinsight",
+        "src": "adinsight-api"
       }
     ],
     "overwrite": [],
@@ -73,6 +101,10 @@
       },
       "group-active": {
         "dest": "group-active-dest",
+        "moniker_range": ">= netcore-2.0 || >= netframework-4.5.1"
+      },
+      "group-adinsight": {
+        "dest": "group-adinsight-dest",
         "moniker_range": ">= netcore-2.0 || >= netframework-4.5.1"
       }
     }
