@@ -6,24 +6,6 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group1",
-        "src": "concepts",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "group": "group2",
-        "src": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -40,20 +22,6 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "group": "group1",
-        "src": "concepts",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "group": "group2",
-        "src": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -65,16 +33,6 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "eric-urbanDocset0814155504",
-    "groups": {
-      "group1": {
-        "dest": "group1-dest",
-        "moniker_range": ">= bingads-11.5.4"
-      },
-      "group2": {
-        "dest": "group2-dest",
-        "moniker_range": "<= bingads-11.5.4"
-      }
-    }
+    "dest": "eric-urbanDocset0814155504"
   }
 }
