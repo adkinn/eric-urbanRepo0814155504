@@ -13,41 +13,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ],
-        "group": "group-legacy",
-        "src": "content-api"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ],
-        "group": "group-active",
-        "src": "concepts"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ],
-        "group": "group-adinsight",
-        "src": "adinsight-api"
+        ]
       }
     ],
     "resource": [
@@ -60,32 +26,6 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "group-legacy",
-        "src": "content-api"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "group": "group-active",
-        "src": "concepts"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "group": "group-adinsight",
-        "src": "adinsight-api"
       }
     ],
     "overwrite": [],
@@ -93,20 +33,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "eric-urbanDocset0814155504",
-    "groups": {
-      "group-legacy": {
-        "dest": "group-legacy-dest",
-        "moniker_range": "< netcore-2.0"
-      },
-      "group-active": {
-        "dest": "group-active-dest",
-        "moniker_range": ">= netcore-2.0"
-      },
-      "group-adinsight": {
-        "dest": "group-adinsight-dest",
-        "moniker_range": ">= netcore-2.0"
-      }
+    "dest": "eric-urbanDocset0814155504"
     }
   }
 }
