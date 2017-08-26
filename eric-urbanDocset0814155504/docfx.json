@@ -30,7 +30,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "defaultDevLang": "csharp"
+    },
     "fileMetadata": {
         "langs": {
         "concepts/**.md": ["csharp", "java", "php", "python"]
