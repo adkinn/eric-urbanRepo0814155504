@@ -78,7 +78,7 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+## <a name="adgroup"></a>Ad Group
 The name of the ad group where this label is applied or removed.  
 
 **Add:** Read-only  
@@ -87,7 +87,7 @@ The name of the ad group where this label is applied or removed.
 > [!NOTE]
 > For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. For bulk download the *Ad Group* and *Campaign* fields are not returned.
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group where this label is applied or removed.
 
 **Add:** Read-only  
@@ -96,13 +96,13 @@ The name of the campaign that contains the ad group where this label is applied 
 > [!NOTE]
 > For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. For bulk download the *Ad Group* and *Campaign* fields are not returned.
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 [!INCLUDE[bulkcolumn_clientid](../bulk-api/includes/bulkcolumn-clientid.md)]
 
 **Add:** Optional  
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The identifier of the label that is applied or removed from the ad group.
 
 This bulk field maps to the *Id* field of the [Label](../bulk-api/label.md) record. 
@@ -110,13 +110,13 @@ This bulk field maps to the *Id* field of the [Label](../bulk-api/label.md) reco
 **Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-api/label.md) record. This is recommended if you are applying new labels to ad groups in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-api/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 [!INCLUDE[bulkcolumn_modifiedtime](../bulk-api/includes/bulkcolumn-modifiedtime.md)]
 
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The identifier of the ad group where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md) record. 
@@ -127,7 +127,7 @@ This bulk field maps to the *Id* field of the [Ad Group](../bulk-api/ad-group.md
 > [!NOTE]
 > For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. For bulk download the *Ad Group* and *Campaign* fields are not returned.
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the applied status between the ad group and the label. 
 
 Possible values are *Active* and *Deleted*. If the label is applied to the ad group, this field's value is *Active*.
