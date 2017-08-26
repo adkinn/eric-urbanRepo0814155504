@@ -141,7 +141,7 @@ public class BulkAdExtensions extends BulkExampleBase {
             campaign.setStatus(CampaignStatus.PAUSED);
 
             // Used with FinalUrls shown in the sitelinks that we will add below.
-            campaign.setTrackingUrlTemplate("http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}");
+            campaign.setTrackingUrlTemplate("http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}");
 
             bulkCampaign.setCampaign(campaign);
 

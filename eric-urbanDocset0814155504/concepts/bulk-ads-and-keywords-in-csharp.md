@@ -103,7 +103,7 @@ namespace BingAdsExamplesLibrary.V11
                         
                         // Used with FinalUrls shown in the expanded text ads that we will add below.
                         TrackingUrlTemplate =
-                            "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
+                            "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
                     }
                 };
 

@@ -74,7 +74,7 @@ def main(authorization_data):
         campaign.Status='Paused'
 
         # Used with FinalUrls shown in the sitelinks that we will add below.
-        campaign.TrackingUrlTemplate="http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
+        campaign.TrackingUrlTemplate="http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
 
         campaigns.Campaign.append(campaign)
 

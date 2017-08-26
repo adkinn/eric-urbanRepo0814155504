@@ -68,7 +68,7 @@ namespace BingAdsExamplesLibrary.V11
                     var accountFCM = new List<KeyValuePair<string, string>>();
                     accountFCM.Add(new KeyValuePair<string, string>(
                         "TrackingUrlTemplate",
-                        "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"));
+                        "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"));
 
                     account.ForwardCompatibilityMap = accountFCM;
                     await UpdateAccountAsync(account);

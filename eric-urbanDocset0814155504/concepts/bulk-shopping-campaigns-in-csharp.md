@@ -114,7 +114,7 @@ namespace BingAdsExamplesLibrary.V11
 
                         // Used with CustomParameters defined in lower level entities such as ad group criterion.
                         TrackingUrlTemplate =
-                            "http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
+                            "http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
                     }
                 };
 

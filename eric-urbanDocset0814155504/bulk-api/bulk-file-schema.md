@@ -224,8 +224,8 @@ Errors related to new features such as Final URLs will include additional detail
 
 |Type|Tracking Template|Error|Error Number|Field Path|
 |--------|---------------------|---------|----------------|--------------|
-|Campaign Error|tracker.example.com/'season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|InvalidUrlScheme|4600|TrackingTemplate|
-|Campaign Error|tracker.example.com/'season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|CampaignServiceInvalidUrl|2611|TrackingTemplate|
+|Campaign Error|tracker.example.com/?season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|InvalidUrlScheme|4600|TrackingTemplate|
+|Campaign Error|tracker.example.com/?season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|CampaignServiceInvalidUrl|2611|TrackingTemplate|
 > [!IMPORTANT]
 > The  *Field Path* value is subject to change, so you should not take a dependency on the current string format.
 > The *Field Path* is not supported for all errors. It is supported for *Mobile Final Url*, *Final Url*, *Tracking Template*, and *Custom Parameter* fields of the respective [Campaign](../bulk-api/campaign.md), [Ad Group](../bulk-api/ad-group.md), [Expanded Text Ad](../bulk-api/expanded-text-ad.md), [Product Ad](../bulk-api/product-ad.md), [Ad Group Product Partition](../bulk-api/ad-group-product-partition.md), [Keyword](../bulk-api/keyword.md), and [Sitelink Ad Extension](../bulk-api/sitelink-ad-extension.md) records. It is also supported for errors related to all fields of the [Callout Ad Extension](../bulk-api/callout-ad-extension.md) and [Review Ad Extension](../bulk-api/review-ad-extension.md) records.

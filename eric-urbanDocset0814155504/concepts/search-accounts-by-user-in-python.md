@@ -48,7 +48,7 @@ def main(authorization_data):
             #account_FCM = customer_service.factory.create('ns0:ArrayOfKeyValuePairOfstringstring')
             #tracking_url_template=customer_service.factory.create('ns0:KeyValuePairOfstringstring')
             #tracking_url_template.key="TrackingUrlTemplate"
-            #tracking_url_template.value="http://tracker.example.com/'season={_season}&promocode={_promocode}&u={lpurl}"
+            #tracking_url_template.value="http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}"
             #account_FCM.KeyValuePairOfstringstring.append(tracking_url_template)
 
             #account.ForwardCompatibilityMap = account_FCM
