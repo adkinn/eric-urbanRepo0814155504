@@ -128,6 +128,7 @@ var user = getUserResponse.User;
 // Search for the Bing Ads accounts that the user can access.
 
 var accounts = await SearchAccountsByUserIdAsync(user.Id);
+```
   </code>
 </pre>
 <pre>
@@ -141,6 +142,7 @@ var user = getUserResponse.User;
 // Search for the Bing Ads accounts that the user can access.
 
 var accounts = await SearchAccountsByUserIdAsync(user.Id);
+```
   </code>
 </pre>
 <pre>
@@ -154,6 +156,7 @@ var user = getUserResponse.User;
 // Search for the Bing Ads accounts that the user can access.
 
 var accounts = await SearchAccountsByUserIdAsync(user.Id);
+```
   </code>
 </pre>
 
