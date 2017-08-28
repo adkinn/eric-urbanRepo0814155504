@@ -151,8 +151,6 @@
       href: ../concepts/optimize-budget-in-python.md
     - name: Shopping Campaigns in Python
       href: ../concepts/shopping-campaigns-in-python.md
-    - name: Bulk Targets in Python
-      href: ../concepts/bulk-targets-in-python.md
     - name: Bulk Ads and Keywords in Python
       href: ../concepts/bulk-ads-and-keywords-in-python.md
 - name: Bing Ads Client Libraries
