@@ -11,6 +11,11 @@ caps.latest.revision: 19
 author: "eric-urban"
 ms.author: "eur"
 manager: "ehansen"
+langs:
+  - csharp
+  - java
+  - php
+  - python
 ---
 # Customer Accounts
 Whether you are managing your own [!INCLUDE[brand](../concepts/includes/brand.md)] account as a direct advertiser, building commercial tools, or managing campaigns on behalf of other customers, we will introduce opportunities and quickly get you oriented. Manage customer, account, and user entities programmatically with the Customer Management service. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../concepts/entity-hierarchy-and-limits.md).
