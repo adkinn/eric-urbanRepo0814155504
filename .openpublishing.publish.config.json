@@ -7,7 +7,7 @@
       "build_source_folder": "eric-urbanDocset0814155504",
       "build_output_subfolder": "eric-urbanDocset0814155504",
       "locale": "en-us",
-      "monikers": [],
+      "monikers": ["netcore-1.0", "netcore-2.0"],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -52,5 +52,6 @@
       "branch": "master"
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "need_generate_intellisense": true
 }
