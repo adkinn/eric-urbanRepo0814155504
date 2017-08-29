@@ -20,7 +20,7 @@
       "version": 0
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": ["eric.urban@microsoft.com"],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
