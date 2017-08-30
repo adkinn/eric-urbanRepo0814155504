@@ -161,6 +161,7 @@
   items:
   - name: Authentication with OAuth
     href: ../concepts/authentication-with-oauth.md
+    displayName: access refresh token scope
   - name: Bing Ads Services Protocol
     href: ../concepts/bing-ads-services-protocol.md
     displayName: wsdl
