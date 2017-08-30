@@ -31,7 +31,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "defaultDevLang": "csharp"
+      "defaultDevLang": "csharp",
+       "uhfHeaderId": "MSDocsHeader-BingAds"
     },
     "fileMetadata": {
         "langs": {
