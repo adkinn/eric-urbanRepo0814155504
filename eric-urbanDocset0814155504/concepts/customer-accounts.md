@@ -13,6 +13,7 @@ ms.author: "eur"
 manager: "ehansen"
 langs:
   - csharp
+  - vb
   - java
   - php
   - python
@@ -101,6 +102,33 @@ Attempt from external repositories:
 [!code-csharp[tableinsert](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs?start=26&end=33 "Search accounts")]
 [!code-java[tableinsert](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java?start=25&end=35 "Search accounts")]
 [!code-python[tableinsert](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py?start=11&end=14 "Search accounts")]
+
+From Adam:
+
+
+```csharp
+bool wipSupported = ApiInformation.IsApiContractPresent("Windows.Security.EnterpriseData.EnterpriseDataContract", 3);
+
+if (wipSupported)
+{
+    // WIP is supported on the platform
+}
+else
+{
+    // WIP is not supported on the platform
+}
+```
+
+```vb
+'Declare a single-dimension array of 5 values
+Dim numbers(4) As Integer
+
+‘Declare a single-dimension array and set array element values
+Dim numbers = New Integer() {1, 2, 4, 8}
+
+ ‘Redefine the size of an existing array retaining the current values
+ReDim Preserve numbers(15)
+```
 
 Attempt inline:
 
