@@ -5,7 +5,7 @@
   href: ../concepts/entity-hierarchy-and-limits.md
 - name: Getting Started With the Bing Ads API
   href: ../concepts/getting-started-with-the-bing-ads-api.md
-  displayName: dev developer token
+  displayName: dev token developer token
   expanded: true
   items:
   - name: Getting Started Using C# with Bing Ads Services
